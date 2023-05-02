@@ -29,6 +29,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
 .slider-banner .banner .banner-detail .container{
     width: 100%;

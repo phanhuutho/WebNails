@@ -13,10 +13,10 @@
     width: 100%;
     height: 100%;
 }
-.bg-contact{
+.bg-contact {
     padding-top: 230px;
     padding-bottom: 200px;
-    background-image: url(../images/contact/girl-s-hands-with-delicate-purple-manicure-orchid-flowers-scaled.jpg);
+    background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -35,8 +35,8 @@
     width: 100%;
     height: 100%;
 }
-.bg-about-us{
-    background-image: url(../images/about-us/pink-nail-design-female-hands-with-glitter-manicure-scaled.jpg);
+.bg-about-us {
+    background-image: url(../images/about-us/about-us_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -48,4 +48,12 @@
 }
 .bg-linear-blue{
     background: linear-gradient(to right, RGBA(13,194,237,1) 0%,RGBA(69,85,239,1) 100%);
+}
+
+.bg-linear-yellow-red {
+    background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
+}
+
+.bg-linear-red-yellow {
+    background: linear-gradient(to right, RGB(241,33,33) 0%,RGB(240,200,15) 100%);
 }

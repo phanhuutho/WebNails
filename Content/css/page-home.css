@@ -14,19 +14,19 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     width: 100%;
 }
 .slider-home .sliders .slider-1.background{
-    background: linear-gradient(to right, rgba(46,204,113,1) 0%,rgba(69,85,239,1) 100%);
+    background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
 .slider-home .sliders .slider-2.background{
-    background: linear-gradient(to right, rgba(13,194,237,1) 0%,rgba(69,85,239,1) 100%)
+    background: linear-gradient(to right, RGB(241,33,33) 0%,RGB(240,200,15) 100%);
 }
 .slider-home .sliders .slider-3.background{
-    background: linear-gradient(to right, rgba(200,204,113,1) 0%,rgba(69,85,239,1) 100%)
+    background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
 .slider-home .sliders .slider-4.background{
-    background: linear-gradient(to right, rgb(238, 89, 89) 0%,rgba(69,85,239,1) 100%)
+    background: linear-gradient(to right, RGB(241,33,33) 0%,RGB(240,200,15) 100%);
 }
 .slider-home .sliders .slider-5.background{
-    background: linear-gradient(to right, rgb(255, 82, 241) 0%,rgba(69,85,239,1) 100%)
+    background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
 .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-3 .box-image{
     max-width: 1500px;
@@ -56,10 +56,9 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/manicured-woman-hands-holding-colorful-flowers-scaled.jpg);
+    background-image: url(../images/banner/home/home_banner_manicure_2.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
-    background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,12 +69,12 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/home_banner_manicure_2.jpg);
+    background-image: url(../images/banner/home/home_banner_wellness_and_spa.jpg);
     background-repeat: no-repeat !important;
+    background-position: 0% 50%;
     display: flex;
     align-items: center;
     justify-content: right;
-    padding-right: 100px;
 }
 .slider-home .sliders .slider-4 .box-image,.slider-home .sliders .slider-5 .box-image{
     height: 700px;
@@ -156,6 +155,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 .slider-home .sliders .slider-2 .box-image .image .box-inner h1{
     font-size: 48px;
+    color: #FFFFFF;
 }
 .slider-home .sliders .slider-2 .box-image .image .box-inner p{
     font-family: "Fira Sans";
