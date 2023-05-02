@@ -126,29 +126,38 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="box-image">
                             <div class="image1">
                                 <div class="text-center">
-                                    <h2 class="font-Prata">CLASSIC MANICURE</h2>
+                                    <h2 class="font-Prata">PEDICURE</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="box-image">
                             <div class="image2">
                                 <div class="text-center">
-                                    <h2 class="font-Prata">CLASSIC PEDICURE</h2>
+                                    <h2 class="font-Prata">MANICURE</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="box-image">
                             <div class="image3">
                                 <div class="text-center">
-                                    <h2 class="font-Prata">DIP POWDER NAILS</h2>
+                                    <h2 class="font-Prata">EYELASH EXTENSIONS</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box-image">
+                            <div class="image4">
+                                <div class="text-center">
+                                    <h2 class="font-Prata">WAXING</h2>
                                 </div>
                             </div>
                         </div>
@@ -199,10 +208,8 @@
                             <div class="text-center">
                                 <h2 class="font-Prata">BUSINESS HOUR</h2>
                                 <div class="divider mb-3"></div>
-                                <p>Mon: Closed</p>
-                                <p>Tue-Fri: 10:00am – 07:00pm</p>
-                                <p>Sat: 09:00am – 06:00pm</p>
-                                <p>Sun: 12:00pm – 06:00pm</p>
+                                <p>Mon-Sat: 09:00am - 08:30pm</p>
+                                <p>Sun: 10:00am - 08:00pm</p>
                                 <a class="btn btn-default btn-more btn-border btn-border-black" href="@ViewBag.HyperLinkTell" target="_blank">call us <i class="fa fa-phone"></i></a>
                             </div>
                         </div>
@@ -275,7 +282,7 @@
     </section>
     <section class="map">
         <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12621.937423930476!2d-97.2040419!3d37.7317797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bafdbb8fcf7509%3A0x8ea98cad5d5927b8!2sAdvanced%20Nails%20(%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1680412639150!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.2190808781265!2d-97.04800245040128!3d33.010296200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2c54fff04755%3A0x2af057b6c754274!2sFlower%20Mound%20Nail%20Spa%20(10%25%20OFF%20Coupon)!5e0!3m2!1svi!2s!4v1682955841412!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </p>
     </section>
 </main>
@@ -287,7 +294,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="~/Content/images/popup/Advanced.jpg" class="img-fluid" />
+                    <div class="slider-coupon">
+                        <div class="coupon">
+                            <img src="~/Content/images/popup/Coupon.jpg" class="img-fluid" />
+                        </div>
+                        <div class="coupon" style="display:none;">
+                            <img src="~/Content/images/popup/Coupon2.jpg" class="img-fluid" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,6 +314,7 @@
         ActiveMenu("menu-home");
 
         var sliderInit = $('.sliders');
+        var sliderCoupon = $('.slider-coupon');
 
         $(document).ready(function () {
             sliderInit.slick({
@@ -314,6 +329,20 @@
             sliderInit.slickAnimation();
 
             $("#ModalCoupon").modal("show");
+
+            $("#ModalCoupon").on('shown.bs.modal', function () {
+                $("#ModalCoupon .modal-body .slider-coupon .coupon").show();
+                sliderCoupon.slick({
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    arrows: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    fade: true
+                });
+            });
+            
         });
     </script>
 }

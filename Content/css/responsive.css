@@ -76,6 +76,9 @@
     .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
         height: 280px;
     }
+    .beauty-spa .box-image h2{
+        font-size: 1.2em;
+    }
     .business{
         padding-bottom: 500px;
     }
@@ -186,6 +189,9 @@
     .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
         padding-left: 120px;
         padding-right: 120px;
+    }
+    .beauty-spa .box-image h2{
+        font-size: 1.6em;
     }
     .beauty-spa .beauty-spa-inner .box-inner p{
         font-size: 250%;

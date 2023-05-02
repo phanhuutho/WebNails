@@ -8,8 +8,8 @@ namespace WebNails.Controllers
 {
     public class BaseController : Controller
     {
-        private string HyperLinkTell = "tel:(316)2396349";
-        private string TextTell = "(316)-239-6349";
+        private string HyperLinkTell = "tel:(972)3556701";
+        private string TextTell = "(972)-355-6701";
         public BaseController()
         {
             ViewBag.HyperLinkTell = HyperLinkTell;

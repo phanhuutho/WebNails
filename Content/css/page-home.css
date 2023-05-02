@@ -184,7 +184,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     font-size: 42px;
 }
 
-.about-us{
+.about-us {
     background-color: rgb(246, 241, 233);
 }
 .about-us .about-us-inner{
@@ -237,7 +237,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     width: 100%;
     height: 160px;
     background-color: rgb(246, 241, 233);
-    top: 40%;
+    top: 35%;
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
@@ -260,30 +260,37 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     padding-right: 15px;
     padding-left: 15px;
 }
-.beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
-    height: 400px;
+.beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .beauty-spa .box-image .image1{
-    background-image: url(../images/home/female-hand-with-white-dandelion-nail-design-scaled.jpg);
+    background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
-    background-image: url(../images/home/womans-wellgroomed-legs-during-skin-treatment1-scaled.jpeg);
+    background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
-    background-image: url(../images/home/beautiful-woman-hands-with-cream-scaled.jpg);
+    background-image: url(../images/home/home_service_eyelash_extensions.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.beauty-spa .box-image .image4{
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
