@@ -1,17 +1,66 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@section css{
+    <link href="~/Content/css/page-contact.css" rel="stylesheet">
+}
+<main class="bg-main">
+    <section class="bg">
+        <div class="bg-contact">
+            <div class="overlay"></div>
+            <div class="text-center">
+                <h1><span class="description">Advanced Nails</span></h1>
+            </div>
+        </div>
+    </section>
+    <div class="page-main">
+        <section class="py-5 container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box-tel">
+                        <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel">
+                            <span>@ViewBag.TextTell</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-contact">
+                        <a href="@string.Format("https://www.google.com/maps/place/Advanced+Nails+($5+OFF+Coupon)/@37.7317797,-97.2040419,15z/data=!4m6!3m5!1s0x87bafdbb8fcf7509:0x8ea98cad5d5927b8!8m2!3d37.7317797!4d-97.2040419!16s%2Fg%2F11f547g0bg")" target="_blank" class="btn btn-success btn-contact">
+                            <span>2684 N Greenwich Rd, Wichita, KS 67226</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box-map my-4">
+                        <div class="px-2 py-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12621.937423930476!2d-97.2040419!3d37.7317797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bafdbb8fcf7509%3A0x8ea98cad5d5927b8!2sAdvanced%20Nails%20(%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1680412639150!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 my-3">
+                        <div class="bg bg-close-up"></div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="bg bg-dandelion"></div>
+                    </div>
+                    <div class="col-md-4 my-3">
+                        <div class="bg bg-hand-flowers"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+@section scripts{
+    <script type="text/javascript">
+        ActiveMenu("menu-contact");
+    </script>
+}
