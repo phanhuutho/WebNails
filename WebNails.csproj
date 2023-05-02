@@ -204,6 +204,10 @@
     <Content Include="Content\images\home\female-hand-with-glitter-beige-nail-design-female-hand-hold-dry-autumn-flower-woman-hand-beige-fabric-background-scaled.jpg" />
     <Content Include="Content\images\home\female-hand-with-white-dandelion-nail-design-scaled.jpg" />
     <Content Include="Content\images\home\hands-woman-with-pink-manicure-nails-roses-against-white-background-scaled.jpg" />
+    <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_manicure.jpg" />
+    <Content Include="Content\images\home\home_service_pedicure.jpg" />
+    <Content Include="Content\images\home\home_service_waxing.jpg" />
     <Content Include="Content\images\home\manicure-female-hands-with-pink-gypsophila-flowers-gel-polish-beige-long-nails-white-background-scaled.jpg" />
     <Content Include="Content\images\home\manicure-master-massaging-clients-female-fingers-after-nail-polishing-nail-salon-scaled.jpeg" />
     <Content Include="Content\images\home\pink-nail-design-female-hands-with-glitter-manicure-2-scaled.jpg" />
@@ -212,7 +216,8 @@
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
-    <Content Include="Content\images\popup\Advanced.jpg" />
+    <Content Include="Content\images\popup\Coupon.jpg" />
+    <Content Include="Content\images\popup\Coupon2.jpg" />
     <Content Include="Content\images\price-list\AvancedNails-01-scaled.jpg" />
     <Content Include="Content\images\price-list\AvancedNails-02-scaled.jpg" />
     <Content Include="Content\images\services\1559127650_avatarsv_2.png" />

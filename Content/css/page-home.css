@@ -43,10 +43,9 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/bigstock-Beauty-Young-Woman-Blowing-Mag-117340928.jpg);
+    background-image: url(../images/banner/home/home_banner_manicure.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
-    background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,10 +70,8 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/black-silver-manicure-with-cherry-blossom-black-background-woman-with-black-nails-surrounded-with-white-flowers-scaled.jpg);
+    background-image: url(../images/banner/home/home_banner_manicure_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
-    background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -122,7 +119,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 .slider-home .sliders .slider-1 .box-image .image .line-svg{
     position: relative;
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     height: 50px;
 }
 .slider-home .sliders .slider-1 .box-image .image .line-svg svg {   
@@ -140,8 +137,8 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     stroke-opacity: 1;
     stroke-width: 10;
     fill: none;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
     -webkit-animation: dash 5s linear forwards;
     animation: dash 5s linear forwards;
     animation-delay: 1s;
@@ -151,8 +148,8 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     stroke-opacity: 1;
     stroke-width: 10;
     fill: none;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
     -webkit-animation: dash 5s linear forwards;
     animation: dash 5s linear forwards;
     animation-delay: 2s;
