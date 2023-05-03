@@ -311,6 +311,7 @@
     <Content Include="Views\Home\services.cshtml" />
     <Content Include="Views\Home\gifts.cshtml" />
     <Content Include="Views\Home\prices.cshtml" />
+    <Content Include="Views\Home\_SliderSub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
