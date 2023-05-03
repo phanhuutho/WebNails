@@ -42,21 +42,21 @@
     max-width: 1300px;
 }
 .bg-contact-1 {
-    background-image: url(../images/contact/manicure_1.jpg);
+    background-image: url(../images/contact/contact_image_1.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     height: 413px;
 }
 .bg-contact-2 {
-    background-image: url(../images/contact/manicure_3.jpg);
+    background-image: url(../images/contact/contact_image_2.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     height: 413px;
 }
 .bg-contact-3 {
-    background-image: url(../images/contact/manicure_4.jpg);
+    background-image: url(../images/contact/contact_image_3.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;

@@ -43,7 +43,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/home_banner_manicure.jpg);
+    background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     display: flex;
@@ -56,7 +56,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/home_banner_manicure_2.jpg);
+    background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     display: flex;
@@ -69,7 +69,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 700px;
-    background-image: url(../images/banner/home/home_banner_wellness_and_spa.jpg);
+    background-image: url(../images/banner/home/home_banner_manicure.jpg);
     background-repeat: no-repeat !important;
     background-position: 0% 50%;
     display: flex;
@@ -218,7 +218,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 950px;
-    background-image: url(../images/home/pink-nail-design-female-hands-with-glitter-manicure-2-scaled.jpg);
+    background-image: url(../images/home/home_about_us.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -315,7 +315,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 600px;
-    background-image: url(../images/home/manicure-master-massaging-clients-female-fingers-after-nail-polishing-nail-salon-scaled.jpeg);
+    background-image: url(../images/home/home_service_bg.jpeg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -385,7 +385,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 340px;
     height: 450px;
-    background-image: url(../images/home/closeup-beautiful-sophisticated-female-hands-with-pink-flowers-white-scaled.jpeg);
+    background-image: url(../images/home/home_business.jpeg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -412,7 +412,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 80px;
     width: 600px;
     height: 600px;
-    background-image: url(../images/home/manicure-female-hands-with-pink-gypsophila-flowers-gel-polish-beige-long-nails-white-background-scaled.jpg);
+    background-image: url(../images/home/home_e_gift.jpeg);
     background-repeat: no-repeat !important;
     background-position: 20% 50%;
     background-size: cover !important;
@@ -462,28 +462,28 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 301px;
 }
 .contact-images .image1{
-    background-image: url(../images/home/hands-woman-with-pink-manicure-nails-roses-against-white-background-scaled.jpg);
+    background-image: url(../images/home/home_contact_image_1.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .contact-images .image2{
-    background-image: url(../images/home/beautiful-legs-different-spa-items-scaled.jpg);
+    background-image: url(../images/home/home_contact_image_2.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .contact-images .image3{
-    background-image: url(../images/home/female-hand-with-glitter-beige-nail-design-female-hand-hold-dry-autumn-flower-woman-hand-beige-fabric-background-scaled.jpg);
+    background-image: url(../images/home/home_contact_image_3.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .contact-images .image4{
-    background-image: url(../images/home/closeup-photo-female-feet-spa-salon-pedicure-manicure-procedure-soft-focus-image-1-scaled.jpg);
+    background-image: url(../images/home/home_contact_image_4.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
