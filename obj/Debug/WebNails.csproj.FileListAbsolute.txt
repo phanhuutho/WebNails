@@ -72,7 +72,6 @@ E:\WebNails\bin\System.Web.WebPages.Razor.xml
 E:\WebNails\bin\Newtonsoft.Json.xml
 E:\WebNails\bin\Antlr3.Runtime.pdb
 E:\WebNails\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\WebNails\obj\Debug\WebNails.csproj.AssemblyReference.cache
 E:\WebNails\obj\Debug\WebNails.csproj.CoreCompileInputs.cache
 E:\WebNails\obj\Debug\WebNails.csproj.CopyComplete
 E:\WebNails\obj\Debug\WebNails.dll
