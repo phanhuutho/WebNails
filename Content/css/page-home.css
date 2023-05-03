@@ -29,13 +29,14 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
 .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-3 .box-image{
-    max-width: 1500px;
     width: 100%;
     position: relative;
     height: 700px;
     margin: 0 auto;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
+}
+.slider-home .sliders .slider-3 .box-image{
 }
 .slider-home .sliders .slider-1 .box-image .image{
     position: absolute;
@@ -71,10 +72,11 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 0% 50%;
+    background-position: 50% 50%;
+    background-size: cover !important;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 .slider-home .sliders .slider-4 .box-image,.slider-home .sliders .slider-5 .box-image{
     height: 700px;
@@ -178,7 +180,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     font-size: 24px;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
-    font-size: 42px;
+    font-size: 28px;
 }
 
 .about-us {
@@ -391,11 +393,11 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background-size: cover !important;
 }
 
-.e-gift .box-inner{
+.e-gift .box-inner {
     height: 550px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 .e-gift .box-image{
     position: relative;
@@ -425,7 +427,6 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background-color: rgb(246, 241, 233);
     width: 100%;
     height: 160px;
-    margin-left:-15px;
 }
 
 .contact h2, .e-gift h2, .business h2{

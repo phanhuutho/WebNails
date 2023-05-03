@@ -29,7 +29,7 @@
     .menu-mobile-tablet .logo-brand{
         text-align: center;
     }
-    .slider-banner, .slider-banner .banner, .slider-banner .banner .banner-image{
+    .slider-banner .banner, .slider-banner .banner .banner-image{
         height: 430px;
     }
     .slider-banner .banner .banner-detail .container{
@@ -44,7 +44,7 @@
     .slider-banner .banner .banner-detail .container .banner-detail-first{
         height: 130px;
     }
-    .slider-banner .banner .banner-detail .container .banner-detail-first .banner-text .btn-call{
+    .btn-call{
         padding: 10px 15px 10px 15px;
     }
     
@@ -204,7 +204,6 @@
     }
     .e-gift .box-inner{
         height: 250px;
-        align-items: end;
     }
     .e-gift .box-image .image-e-gift{
         right: 2% !important;

@@ -17,6 +17,8 @@ footer .circle{
     border-radius: 50%;
     background: #d93e2d;
     text-align: center;
+    float:left;
+    margin-right: 5px;
 }
 footer .circle span{
     color: #FFFFFF;

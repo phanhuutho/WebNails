@@ -118,17 +118,17 @@
     <!--Main-->
     <!--Footer-->
     <footer>
-        <div class="container py-4">
+        <div class="container pt-4">
             <div class="row">
-                <div class="col-lg-3 mb-5">
+                <div class="col-lg-3 mb-3">
                     <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
                 </div>
-                <div class="col-lg-3 mb-5">
+                <div class="col-lg-3 mb-3">
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left">Address: <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left">Tel:  <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
                 </div>
-                <div class="col-lg-3 mb-5">
+                <div class="col-lg-3 mb-3">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>
                     @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
                 </div>
@@ -137,6 +137,16 @@
                     <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
                         <div class="circle">
                             <span class="fa fa-google-plus"></span>
+                        </div>
+                    </a>
+                    <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
+                        <div class="circle bg-primary">
+                            <span class="fa fa-mobile-phone"></span>
+                        </div>
+                    </a>
+                    <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
+                        <div class="circle bg-success">
+                            <span class="fa fa-map-marker"></span>
                         </div>
                     </a>
                 </div>
