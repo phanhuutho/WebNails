@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Flower Mound Nail Spa";
+    ViewBag.Title = ViewBag.Name;
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -16,7 +16,7 @@
                     <div class="image">
                         <div class="box-inner text-center">
                             <h1 data-animation-in="animate__animated animate__fadeInDown">WELCOME TO</h1>
-                            <h2 data-animation-in="animate__animated animate__fadeInDown"><strong>Flower Mound Nail Spa</strong></h2>
+                            <h2 data-animation-in="animate__animated animate__fadeInDown"><strong>@ViewBag.Name</strong></h2>
                             <div class="line-svg" data-animate="1" data-delay="3000" data-duration="1000" data-loop-delay="2000" data-animated="true" data-animation-in="animate__animated animate__fadeInDown">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" preserveAspectRatio="none">
                                     <path class="path1" d="M11,173 C41,169 101,167 115,166 C137,165 337,160 339,162"></path>
@@ -98,7 +98,7 @@
                         <div class="col-xl-8 offset-xl-4 about-us-inner">
                             <div class="box-inner">
                                 <h1>About Us</h1>
-                                <p>Welcome to Flower Mound Nail Spa in Flower Mound, TX 75028, we are more than just a conventional nail salon, we are the place where you can come and escape from your everyday stress and busy lifestyle, clients could enjoy the luxurious and comfortable atmosphere at affordable prices!</p>
+                                @Html.Raw(string.Format("{0}", ViewBag.HomeAboutUs))
                                 <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
                             </div>
                         </div>
@@ -209,36 +209,7 @@
                             <div class="text-center">
                                 <h2 class="font-Prata">BUSINESS HOUR</h2>
                                 <div class="divider mb-3"></div>
-                                <table class="table table-borderless">
-                                    <tr>
-                                        <td align="left">Monday</td>
-                                        <td align="left">09:00am - 08:30pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Tuesday</td>
-                                        <td align="left">09:00am - 08:30pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Wednesday</td>
-                                        <td align="left">09:00am - 08:30pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Thursday</td>
-                                        <td align="left">09:00am - 08:30pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Friday</td>
-                                        <td align="left">09:00am - 08:30pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Saturday</td>
-                                        <td align="left">09:00am - 08:30pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left">Sunday</td>
-                                        <td align="left">10:00am - 08:00pm</td>
-                                    </tr>
-                                </table>
+                                @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
                                 <a class="btn btn-default btn-more btn-border btn-border-black" href="@ViewBag.HyperLinkTell" target="_blank">call us <i class="fa fa-phone"></i></a>
                             </div>
                         </div>
@@ -311,7 +282,7 @@
     </section>
     <section class="map">
         <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.2190808781265!2d-97.04800245040128!3d33.010296200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2c54fff04755%3A0x2af057b6c754274!2sFlower%20Mound%20Nail%20Spa%20(10%25%20OFF%20Coupon)!5e0!3m2!1svi!2s!4v1682955841412!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="@ViewBag.LinkIFrameGoogleMap" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </p>
     </section>
 </main>

@@ -1,0 +1,30 @@
+﻿<table class="table table-borderless">
+	<tr>
+		<td align="left">Monday</td>
+		<td align="left">09:00am - 08:30pm</td>
+	</tr>
+	<tr>
+		<td align="left">Tuesday</td>
+		<td align="left">09:00am - 08:30pm</td>
+	</tr>
+	<tr>
+		<td align="left">Wednesday</td>
+		<td align="left">09:00am - 08:30pm</td>
+	</tr>
+	<tr>
+		<td align="left">Thursday</td>
+		<td align="left">09:00am - 08:30pm</td>
+	</tr>
+	<tr>
+		<td align="left">Friday</td>
+		<td align="left">09:00am - 08:30pm</td>
+	</tr>
+	<tr>
+		<td align="left">Saturday</td>
+		<td align="left">09:00am - 08:30pm</td>
+	</tr>
+	<tr>
+		<td align="left">Sunday</td>
+		<td align="left">10:00am - 08:00pm</td>
+	</tr>
+</table>
