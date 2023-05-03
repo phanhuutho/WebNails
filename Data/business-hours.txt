@@ -1,10 +1,14 @@
 ﻿<table class="table table-borderless">
 	<tr>
-		<td align="left">Mon - Sat</td>
-		<td align="left">9:00am - 8:30pm</td>
+		<td align="left">Mon - Fri</td>
+		<td align="left">9:30am - 7:00pm</td>
+	</tr>
+	<tr>
+		<td align="left">Sat</td>
+		<td align="left">9:30am - 6:00pm</td>
 	</tr>
 	<tr>
 		<td align="left">Sun</td>
-		<td align="left">10:00am - 8:00pm</td>
+		<td align="left">11:00am - 5:00pm</td>
 	</tr>
 </table>

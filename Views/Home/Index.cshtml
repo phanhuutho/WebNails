@@ -294,13 +294,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="slider-coupon">
-                        <div class="coupon">
-                            <img src="~/Content/images/popup/Coupon.jpg" class="img-fluid" />
-                        </div>
-                        <div class="coupon" style="display:none;">
-                            <img src="~/Content/images/popup/Coupon2.jpg" class="img-fluid" />
-                        </div>
+                    <div class="coupon">
+                        <img src="~/Content/images/popup/Coupon.jpg" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -314,7 +309,6 @@
         ActiveMenu("menu-home");
 
         var sliderInit = $('.sliders');
-        var sliderCoupon = $('.slider-coupon');
 
         $(document).ready(function () {
             sliderInit.slick({
@@ -329,20 +323,6 @@
             sliderInit.slickAnimation();
 
             $("#ModalCoupon").modal("show");
-
-            $("#ModalCoupon").on('shown.bs.modal', function () {
-                $("#ModalCoupon .modal-body .slider-coupon .coupon").show();
-                sliderCoupon.slick({
-                    dots: false,
-                    infinite: true,
-                    slidesToShow: 1,
-                    arrows: true,
-                    autoplay: true,
-                    autoplaySpeed: 3000,
-                    fade: true
-                });
-            });
-            
         });
     </script>
 }
