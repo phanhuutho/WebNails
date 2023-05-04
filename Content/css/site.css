@@ -32,10 +32,10 @@ a:active,a:hover {
 .btn-none-border{
     border: 0 !important;
 }
-.btn-border{
-    border-width: 2px !important;
+.btn-border, .border {
+    border-width: 1px !important;
 }
-.btn-border-black{
+.btn-border-black, .border-black {
     border-color: #666666 !important;
 }
 .btn-bg-white{
@@ -58,4 +58,8 @@ a:active,a:hover {
 .modal-content {
     border-width: 5px;
     border-color: #000000;
+}
+.left-10-percent{
+    left:10%;
+    width: 60%;
 }

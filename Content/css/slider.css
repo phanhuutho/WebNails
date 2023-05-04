@@ -1,6 +1,5 @@
 .slider-banner{
     width: 100%;
-    height: 700px;
 }
 
 .slider-banner .banner{
@@ -79,7 +78,6 @@
 .slider-banner .box-slider{
     width: 100%;
     position: relative;
-    height: 700px;
     margin: 0 auto;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
@@ -93,7 +91,7 @@
     height: 700px;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
-    background-size: cover !important;
+    background-size: auto !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,6 +114,20 @@
 
 .slider-banner .slider-4 .box-slider .image{
     background-image: url(../images/banner/slider/waxing.jpg);
+}
+
+.slider-banner .box-slider .slider-image{
+    text-align:center;
+    width: 100%;
+    z-index: 1;
+    filter: blur(2px);
+    opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-banner .box-slider .slider-image img{
+    width: 100%;
 }
 
 .slider-banner .box-slider .box-inner {
