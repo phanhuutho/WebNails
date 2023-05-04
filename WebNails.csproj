@@ -320,6 +320,7 @@
     <Content Include="Views\Home\_SliderSub.cshtml" />
     <Content Include="Views\Home\_SliderHome_1.cshtml" />
     <Content Include="Views\Home\_SliderHome_2.cshtml" />
+    <Content Include="Views\Home\_SliderPageSub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
