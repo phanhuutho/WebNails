@@ -28,7 +28,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 .slider-home .sliders .slider-5.background{
     background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
-.slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-3 .box-image{
+.slider-home .sliders .box-image{
     width: 100%;
     position: relative;
     height: 700px;
@@ -36,8 +36,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
 }
-.slider-home .sliders .slider-3 .box-image{
-}
+
 .slider-home .sliders .slider-1 .box-image .image{
     position: absolute;
     right: 0;
@@ -80,39 +79,39 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     align-items: center;
     justify-content: center;
 }
-.slider-home .sliders .slider-4 .box-image{
-    background-color: #fdfdfd;
-}
-.slider-home .sliders .slider-4 .box-image,.slider-home .sliders .slider-5 .box-image{
+.slider-home .sliders .slider-4 .box-image .image{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
     height: 700px;
+    background-image: url(../images/banner/home/home_banner_4.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.slider-home .sliders .slider-4 .box-image .container,.slider-home .sliders .slider-5 .box-image .container{
-    height: 600px;
-    max-width: 1500px;
+.slider-home .sliders .slider-5 .box-image .image{
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 100%;
-    background-color: #FDFDFD;
-}
-.slider-home .sliders .slider-4 .box-image img,.slider-home .sliders .slider-5 .box-image img{
-    width: auto;
-    max-height: 600px;
-}
-.slider-home .sliders .slider-4 .box-inner,.slider-home .sliders .slider-5 .box-inner{
-    height: 600px;
+    height: 700px;
+    background-image: url(../images/banner/home/home_banner_5.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
-.slider-home .sliders .slider-5 .box-image .container{
-    background-color: #FFFFFF;
-}
-
 .slider-home .sliders .slider-1 .box-inner h1,.slider-home .sliders .slider-1 .box-inner h2{
     color: #FFFFFF;
     font-family: 'Fira Sans';
     font-size: 48px;
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
@@ -160,32 +159,42 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     animation: dash 5s linear forwards;
     animation-delay: 2s;
 }
-.slider-home .sliders .slider-2 .box-image .image .box-inner h1{
+.slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
     color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
-.slider-home .sliders .slider-2 .box-image .image .box-inner p{
+.slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 20px;
     color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
-.slider-home .sliders .slider-3 .box-image .image .box-inner h1{
+.slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
     color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
-.slider-home .sliders .slider-3 .box-image .image .box-inner p{
+.slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
     color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 42px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
-    font-size: 24px;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
-    font-size: 28px;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #888888;
 }
 
 .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {

@@ -151,13 +151,13 @@
         justify-content: center;
     }
     .slider-home .sliders .slider-4 .box-image .box-inner h1{
-        font-size: 24px;
+        font-size: 32px;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1{
-        font-size: 16px;
+        font-size: 32px;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner p{
-        font-size: 24px;
+        font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-inner h1, .slider-home .sliders .slider-3 .box-inner p{
         text-align: center !important;
