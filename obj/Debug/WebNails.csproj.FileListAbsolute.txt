@@ -76,3 +76,4 @@ E:\WebNails\obj\Debug\WebNails.csproj.CoreCompileInputs.cache
 E:\WebNails\obj\Debug\WebNails.csproj.CopyComplete
 E:\WebNails\obj\Debug\WebNails.dll
 E:\WebNails\obj\Debug\WebNails.pdb
+E:\WebNails\obj\Debug\WebNails.csproj.AssemblyReference.cache

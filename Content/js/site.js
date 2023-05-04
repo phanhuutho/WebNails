@@ -32,3 +32,11 @@ $(document).ready(function(){
 function ActiveMenu(ElementId){
     $("#" + ElementId).addClass("active");
 }
+
+function ReloadSliderImageMobile(){
+    var windowWidth = $(window).width();
+    if (windowWidth < 768) {
+        $("img", ".slider-4").attr("src", "/Content/images/banner/home/home_banner_4_mobile.jpg");
+        $("img", ".slider-5").attr("src", "/Content/images/banner/home/home_banner_5_mobile.jpg");
+    }
+}

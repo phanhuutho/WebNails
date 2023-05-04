@@ -20,7 +20,9 @@ namespace WebNails.Controllers
             ViewBag.Address = dataInfo.Address;
             ViewBag.GooglePlus = dataInfo.GooglePlus;
             ViewBag.LinkGoogleMapAddress = dataInfo.LinkGoogleMapAddress;
-            ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap ;
+            ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
+            ViewBag.ShowCoupon = dataInfo.ShowCoupon;
+            ViewBag.Coupons = dataInfo.Coupons ?? new List<string>();
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;

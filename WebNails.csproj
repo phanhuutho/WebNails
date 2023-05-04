@@ -175,7 +175,9 @@
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.jpeg" />
+    <Content Include="Content\images\banner\home\home_banner_4_mobile.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.jpeg" />
+    <Content Include="Content\images\banner\home\home_banner_5_mobile.jpg" />
     <Content Include="Content\images\banner\home\home_banner_manicure.jpg" />
     <Content Include="Content\images\banner\home\home_banner_manicure_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_services.png" />
@@ -316,6 +318,8 @@
     <Content Include="Views\Home\gifts.cshtml" />
     <Content Include="Views\Home\prices.cshtml" />
     <Content Include="Views\Home\_SliderSub.cshtml" />
+    <Content Include="Views\Home\_SliderHome_1.cshtml" />
+    <Content Include="Views\Home\_SliderHome_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
