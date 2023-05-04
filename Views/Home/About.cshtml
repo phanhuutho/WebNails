@@ -37,11 +37,12 @@
         $(document).ready(function () {
             sliderInit.slick({
                 dots: false,
+                infinite: true,
                 slidesToShow: 1,
                 arrows: false,
                 autoplay: true,
-                autoplaySpeed: 3000,
-                easing: 'linear'
+                autoplaySpeed: 4000,
+                fade: true
             });
             sliderInit.slickAnimation();
         });
