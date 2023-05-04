@@ -175,8 +175,10 @@
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.jpeg" />
+    <Content Include="Content\images\banner\home\home_banner_4.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4_mobile.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.jpeg" />
+    <Content Include="Content\images\banner\home\home_banner_5.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5_mobile.jpg" />
     <Content Include="Content\images\banner\home\home_banner_manicure.jpg" />
     <Content Include="Content\images\banner\home\home_banner_manicure_2.jpg" />
