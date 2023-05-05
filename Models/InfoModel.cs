@@ -17,5 +17,10 @@ namespace WebNails.Models
         public string BusinessHours { get; set; }
         public bool ShowCoupon { get; set; }
         public List<string> Coupons { get; set; }
+        public SocialModel Telegram { get; set; }
+        public SocialModel Facebook { get; set; }
+        public SocialModel Instagram { get; set; }
+        public SocialModel Twitter { get; set; }
+        public SocialModel Youtube { get; set; }
     }
 }

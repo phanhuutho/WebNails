@@ -23,6 +23,11 @@ namespace WebNails.Controllers
             ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
             ViewBag.ShowCoupon = dataInfo.ShowCoupon;
             ViewBag.Coupons = dataInfo.Coupons ?? new List<string>();
+            ViewBag.Telegram = dataInfo.Telegram ?? new SocialModel();
+            ViewBag.Facebook = dataInfo.Facebook ?? new SocialModel();
+            ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
+            ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
+            ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;

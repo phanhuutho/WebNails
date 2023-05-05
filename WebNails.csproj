@@ -126,6 +126,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -230,8 +231,8 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\popup\Coupon.jpg" />
     <Content Include="Content\images\popup\Coupon2.jpg" />
-    <Content Include="Content\images\price-list\AvancedNails-01-scaled.jpg" />
-    <Content Include="Content\images\price-list\AvancedNails-02-scaled.jpg" />
+    <Content Include="Content\images\price-list\Flower-Mound-01.jpg" />
+    <Content Include="Content\images\price-list\Flower-Mound-02.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpeg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpeg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpeg" />

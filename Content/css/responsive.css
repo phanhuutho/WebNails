@@ -50,7 +50,7 @@
     
     .about-us .box-inner{
         padding-left: 15px;
-        padding-right: 160px !important;
+        padding-right: 15px;
     }
     .about-us .box-image, .about-us .box-image .image-about-us{
         height: 500px;
@@ -62,6 +62,7 @@
     .about-us .about-us-inner{
         height: 500px;
         align-items: center;
+        justify-content: center;
     }
     .beauty-spa .beauty-spa-inner{
         height: 580px;
@@ -289,7 +290,7 @@
 }
 @media (max-width: 1024px){
     .about-us .box-inner{
-        padding-right: 130px
+
     }
     .e-gift .box-inner{
         justify-content: center;

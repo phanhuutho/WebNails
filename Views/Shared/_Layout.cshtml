@@ -125,10 +125,10 @@
                 </div>
                 <div class="col-lg-3 mb-3">
                     <p class="legend"><strong>CONTACT US:</strong></p>
-                    <p class="text-left">Address: <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
-                    <p class="text-left">Tel:  <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
+                    <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
+                    <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
                 </div>
-                <div class="col-lg-3 mb-3">
+                <div class="col-lg-3 mb-3 px-lg-5">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>
                     @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
                 </div>
@@ -149,6 +149,25 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                     </a>
+                    @{
+                        var ListSocials = new List<WebNails.Models.SocialModel>();
+                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Telegram);
+                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Facebook);
+                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Instagram);
+                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Twitter);
+                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Youtube);
+
+                        ListSocials = ListSocials.Where(x => !string.IsNullOrEmpty(x.Url)).OrderBy(x => x.Position).ToList();
+                        foreach (var social in ListSocials)
+                        {
+                            <a href="@social.Url" class="social-icon-link" title="@social.Title">
+                                <div class="circle" style="background: @social.BackgroundColor">
+                                    <span class="@social.ClassIcon"></span>
+                                </div>
+                            </a>
+                        }
+
+                    }
                 </div>
             </div>
         </div>
