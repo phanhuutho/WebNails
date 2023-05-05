@@ -42,9 +42,17 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: true
+                fade: true,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
             });
             sliderInit.slickAnimation();
+
+            sliderInit.on('touchstart', e => {
+                sliderInit.slick('slickPlay');
+            });
         });
     </script>
 }
