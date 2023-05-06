@@ -3,9 +3,10 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
     color: #000000;
+    background-color: var(--bg-site);
 }
 footer .legend {
-    color: #9b2c2c;
+    color: var(--color-menu-legen);
 }
 footer a{
     color: #000000;

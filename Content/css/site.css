@@ -1,9 +1,20 @@
 /*root*/
-main{
-    overflow-x:hidden;
+:root {
+    --bg-site: #fef4f5;
+    --color-menu-legen: #c02a98;
 }
-header, main .container{
+
+/*main*/
+header {
+    background: var(--bg-site);
+}
+header .container {
     max-width: 1080px;
+}
+main {
+    overflow-x: hidden;
+}
+main .container{
     margin: 0 auto;
 }
 a:active,a:hover {
