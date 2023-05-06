@@ -1,8 +1,15 @@
 /*root*/
+:root {
+    --bg-site: #FFFFFF;
+    --color-menu-legen: #c02a98;
+}
 main{
     overflow-x:hidden;
 }
-header, main .container{
+header {
+    background: var(--bg-site);
+}
+main .container{
     max-width: 1080px;
     margin: 0 auto;
 }
