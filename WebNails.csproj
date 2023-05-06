@@ -228,6 +228,7 @@
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
+    <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\popup\Coupon.jpg" />
     <Content Include="Content\images\popup\Coupon2.jpg" />
