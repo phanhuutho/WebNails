@@ -1,7 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #FFFFFF;
-    --color-menu-legen: #c02a98;
+    --bg-site: #141414;
+    --color-theme: #d39c35;
+    --color-menu-legend: #d39c35;
+}
+body {
+    background: var(--bg-site);
 }
 main{
     overflow-x:hidden;
@@ -57,8 +61,12 @@ a:active,a:hover {
     background-color: #000000;
     border: 0;
     border-radius: 5px;
-    color: #FFFFFF;
+    color: var(--color-theme);
     font-weight: bold;
+}
+.btn-call:hover{
+    background-color: var(--color-theme);
+    color: #000000;
 }
 .modal-dialog {
     display: flex;
@@ -67,7 +75,7 @@ a:active,a:hover {
 }
 .modal-content {
     border-width: 5px;
-    border-color: #000000;
+    border-color: var(--color-theme);
 }
 .left-10-percent{
     left:10%;
