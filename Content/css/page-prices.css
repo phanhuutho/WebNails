@@ -1,3 +1,26 @@
 ﻿main .container{
     min-height: 285px;
 }
+.bg-main {
+    background-image: url(../images/price-list/bg-price-list.jpg);
+    background-position: 45% 59%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-color: rgba(255, 255, 255, 0.83);
+    position: relative;
+}
+
+.overlay {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: 0;
+}
+
+.page-main {
+    position: relative;
+}
