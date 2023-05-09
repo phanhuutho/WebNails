@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = ViewBag.Name;
     var showCoupon = (bool)ViewBag.ShowCoupon;
-    var Coupons = (List<string>)ViewBag.Coupons;
+    var Coupons = (List<WebNails.Models.CouponModel>)ViewBag.Coupons;
+    Coupons = Coupons.Where(x => x.Src != "" && x.Status).ToList();
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -12,7 +13,7 @@
 }
 <main>
     @{ Html.RenderPartial("_SliderHome_1"); }
-    <section class="about-us my-5">
+    <section class="about-us">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 order-lg-1 order-2 py-3">
@@ -145,58 +146,58 @@
             </div>
         </div>
     </section>
-    <section class="e-gift my-5">
-        <div class="container-fluid py-md-5">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="box-image">
-                                <div class="image-e-gift"></div>
-                            </div>
+    <section class="e-gift">
+        <div class="e-gift-inner">
+            <div class="container py-md-3">
+                <div class="row">
+                    <div class="col-lg-6 py-3">
+                        <div class="box-image">
+                            <div class="image-e-gift"></div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="box-inner">
-                                <div class="text-center">
-                                    <h2>E-gift Purchase</h2>
-                                    <div class="divider mb-3"></div>
-                                    <a class="btn btn-default btn-more btn-border btn-border-black" href="e-gift.html">VIEW MORE</a>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 py-3">
+                        <div class="box-inner">
+                            <div class="text-center">
+                                <h2>E-gift Purchase</h2>
+                                <div class="divider mb-3"></div>
+                                <a class="btn btn-default btn-more btn-border btn-border-black" href="e-gift.html">VIEW MORE</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="line-bottom"></div>
             </div>
         </div>
     </section>
-    <section class="contact my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 offset-md-4 pb-5 text-center">
-                    <h2 class="font-Prata">CONTACT US</h2>
-                    <a class="btn btn-default btn-more" href="contact.html">VIEW MORE</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 py-3">
-                    <div class="contact-images">
-                        <div class="image1"></div>
+    <section class="contact">
+        <div class="bg-contact">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4 pb-5 text-center">
+                        <h2 class="font-Prata">CONTACT US</h2>
+                        <a class="btn btn-default btn-more" href="contact.html">VIEW MORE</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 py-3">
-                    <div class="contact-images">
-                        <div class="image2"></div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <div class="contact-images">
+                            <div class="image1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 py-3">
-                    <div class="contact-images">
-                        <div class="image3"></div>
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <div class="contact-images">
+                            <div class="image2"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 py-3">
-                    <div class="contact-images">
-                        <div class="image4"></div>
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <div class="contact-images">
+                            <div class="image3"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 py-3">
+                        <div class="contact-images">
+                            <div class="image4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,7 +225,7 @@
                                 @foreach(var item in Coupons)
                                 {
                                     <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
-                                        <img src="@item" class="img-fluid" />
+                                        <img src="@item.Src" class="img-fluid" />
                                     </div>
                                     index++;
                                 }

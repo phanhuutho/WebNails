@@ -7,7 +7,7 @@
   "LinkGoogleMapAddress": "https://goo.gl/maps/wmANL1T9FxriWtC98",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418.2190808781265!2d-97.04800245040128!3d33.010296200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2c54fff04755%3A0x2af057b6c754274!2sFlower%20Mound%20Nail%20Spa%20(10%25%20OFF%20Coupon)!5e0!3m2!1svi!2s!4v1682955841412!5m2!1svi!2s",
   "ShowCoupon": true,
-  "Coupons": [ "/Content/images/popup/Coupon.jpg", "/Content/images/popup/Coupon2.jpg" ],
+  "Coupons": [ { "Status": true, "Src": "/Content/images/popup/Coupon.jpg" }, { "Status": true, "Src": "/Content/images/popup/Coupon2.jpg" } ],
   "Telegram": { "Title": "Telegram", "Url": "", "Position": 1, "ClassIcon": "fa fa-telegram", "BackgroundColor": "#34a9e4" },
   "Facebook": { "Title": "Facebook", "Url": "https://www.facebook.com/flowermoundnailspa75028/", "Position": 2, "ClassIcon": "fa fa-facebook-f", "BackgroundColor": "#1877f2" },
   "Instagram": { "Title": "Instagram", "Url": "", "Position": 3, "ClassIcon": "fa fa-instagram", "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)" },

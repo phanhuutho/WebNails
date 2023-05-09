@@ -16,7 +16,7 @@ namespace WebNails.Models
         public string LinkIFrameGoogleMap { get; set; }
         public string BusinessHours { get; set; }
         public bool ShowCoupon { get; set; }
-        public List<string> Coupons { get; set; }
+        public List<CouponModel> Coupons { get; set; }
         public SocialModel Telegram { get; set; }
         public SocialModel Facebook { get; set; }
         public SocialModel Instagram { get; set; }

@@ -81,12 +81,11 @@
         font-size: 1.2em;
     }
     .business{
-        padding-bottom: 500px;
     }
     .business .business-inner{
         background:none;
-        height:650px;
         align-items:unset;
+        height:auto;
     }
     .business .business-inner .box-inner{
         padding-top: 10%;
@@ -96,19 +95,38 @@
     }
     .business .business-inner .box-image{
         margin: 25px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .business .business-inner .box-image .image-business
     {
-        right: 25%;
-        bottom: 40px;
-        top: 0;
+        position:relative;
     }
-    .e-gift .box-image .image-e-gift{
-        width: 360px !important;
+    .e-gift .e-gift-inner{
+        background: none;
+        height: auto;
+    }
+    .e-gift .box-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .e-gift .box-inner {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background: #FFFFFF;
+    }
+    .e-gift .box-image .image-e-gift {
         background-position: 25% 50%;
     }
     .line-bottom{
         display: none;
+    }
+    .contact .bg-contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 767px) {
@@ -132,8 +150,9 @@
         height: 550px;
     }
 
-    .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image{
+    .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
         height: 550px;
+        background-position: 45% 35%;
     }
     .slider-home, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-2 .box-image .image{
         height: 550px;
@@ -237,7 +256,7 @@
         height: auto;
     }
     .business{
-        padding-bottom: 350px !important;
+
     }
     .e-gift .box-inner{
         height: 250px;
@@ -253,22 +272,32 @@
     }
     .services .bg-services{
         height: 960px;
+        background-position: 65% 50%;
     }
     .business{
-        padding-bottom: 500px !important;
-        padding-top: 50px;
+
     }
     .business .business-inner{
         justify-content: center !important;
-        height: 500px !important;
     }
     .business .business-inner .box-image .image-business{
-        right: 2% !important;
-        width: 96% !important;
+        
     }
     .business .business-inner .box-inner{
         margin-left: -15px;
         margin-right: -15px;
+    }
+    .slider-banner .slider-1 .box-slider .image {
+        background-position: 15% 50%;
+    }
+    .slider-banner .slider-2 .box-slider .image {
+        background-position: 40% 50%;
+    }
+    .slider-banner .slider-4 .box-slider .image {
+        background-position: 5% 50%;
+    }
+    .bg-contact .description {
+        font-size: 115%;
     }
 }
 @media (min-width: 769px) {
@@ -282,6 +311,7 @@
 @media (min-width: 992px) {
 
 }
+
 @media (min-width: 1200px) {
 
 }
@@ -296,8 +326,6 @@
         justify-content: center;
     }
     .e-gift .box-image .image-e-gift{
-        width: 480px;
-        right: unset;
-        left: 15px;
+        position: relative;
     }
 }
