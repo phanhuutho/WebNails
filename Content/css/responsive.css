@@ -54,7 +54,7 @@
         padding-right: 15px;
     }
     .about-us .box-image, .about-us .box-image .image-about-us{
-        height: 500px;
+        height: 360px;
         margin-top: 10px;
     }
     .about-us .box-image .image-about-us{
@@ -69,24 +69,24 @@
         height: 580px;
     }
     .beauty-spa .beauty-spa-inner:before{
-        top: 32.5%;
+        top: 40%;
     }
     .beauty-spa .box-image{
         padding-left: 0;
         padding-right: 0;
     }
-    .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
+    .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
         height: 280px;
     }
     .beauty-spa .box-image h2{
         font-size: 1.2em;
     }
     .business{
-        padding-bottom: 500px;
+
     }
     .business .business-inner{
         background:none;
-        height:650px;
+        height:auto;
         align-items:unset;
     }
     .business .business-inner .box-inner{
@@ -100,13 +100,13 @@
     }
     .business .business-inner .box-image .image-business
     {
-        right: 25%;
+        width: 100%;
         bottom: 40px;
         top: 0;
     }
-    .e-gift .box-image .image-e-gift{
-        width: 360px !important;
-        background-position: 25% 50%;
+    .e-gift .box-image .image-e-gift {
+        background-position: 72% 50%;
+        top:0;
     }
     .line-bottom{
         display: none;
@@ -248,17 +248,11 @@
     .bg-about-us{
         height: auto;
     }
-    .business{
-        padding-bottom: 350px !important;
-    }
     .e-gift .box-inner{
-        height: 250px;
+        height: 200px !important;
     }
     .e-gift .box-image .image-e-gift{
-        right: 2% !important;
-        left: 2% !important;
-        width: 96% !important;
-        top: 0 !important;
+        top: 0;
     }
     .services{
         height: 960px;
@@ -267,12 +261,11 @@
         height: 960px;
     }
     .business{
-        padding-bottom: 500px !important;
-        padding-top: 50px;
+
     }
     .business .business-inner{
         justify-content: center !important;
-        height: 500px !important;
+        height: auto !important;
     }
     .business .business-inner .box-image .image-business{
         right: 2% !important;
@@ -307,9 +300,14 @@
     .e-gift .box-inner{
         justify-content: center;
     }
-    .e-gift .box-image .image-e-gift{
-        width: 480px;
+    .e-gift .box-image, .e-gift .box-inner {
+        height: 400px;
+    }
+    .e-gift .box-image .image-e-gift {
         right: unset;
-        left: 15px;
+        left: unset;
+        width: 400px;
+        height: 400px;
+        max-width: 100%;
     }
 }
