@@ -569,7 +569,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 .contact .bg-contact .overlay{
     background-color: #FFFFFF;
-    opacity:.8;
+    opacity:.5;
 }
 .contact .bg-contact .container{
     position: relative;
