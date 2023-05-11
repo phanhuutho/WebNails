@@ -1,6 +1,3 @@
-main .contact{
-    padding-bottom: 25px;
-}
 main .contact .container, .beauty-spa .beauty-spa-inner{
     max-width: 1300px;
     margin: 0 auto;
@@ -286,7 +283,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 .about-us .box-inner{
     text-align: justify;
-    width: 470px;
+    width: 530px;
     max-width: 100%;
 }
 .about-us .box-inner h1{
@@ -320,9 +317,11 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background-position: 50% 50%;
     background-size: cover !important;
 }
-
-.beauty-spa .beauty-spa-inner{
-    height: 700px;
+.beauty-spa {
+    background-color: var(--color-theme);
+}
+.beauty-spa .beauty-spa-inner {
+    height: 570px;
     position: relative;
 }
 .beauty-spa .beauty-spa-inner:before{
@@ -330,23 +329,23 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     position: absolute;
     width: 100%;
     height: 160px;
-    background-color: rgb(246, 241, 233);
-    top: 35%;
+    background-color: var(--color-theme);
+    top: 42.5%;
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
     font-family: "Parisienne"; 
-    color: #000000;
+    color: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner .box-inner h2{
     font-size: 150%; 
-    color: #000000;
+    color: var(--bg-site);
     line-height: 2.5;
 }
 .beauty-spa .box-image{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 300px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
@@ -524,7 +523,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider{
     max-width:100px;
-    background-color:rgb(246, 241, 233);
+    background-color: var(--bg-site);
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -612,6 +611,9 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
+}
+.map {
+    background-color: var(--color-theme);
 }
 
 @-webkit-keyframes dash {
