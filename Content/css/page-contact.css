@@ -7,11 +7,10 @@
 }
 .box-tel, .box-contact{
     background-color: #FFFFFF;
-    padding: 80px 40px 80px 40px;
+    padding: 20px 20px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 200px;
 }
 .btn-tel, .btn-contact {
     background-color: var(--color-theme);
@@ -19,12 +18,17 @@
     border-color: var(--color-theme);
     font-family: "Carme";
     text-transform: uppercase;
-    font-size: .835em;
-    letter-spacing: .03em;
+    font-size: 1em;
+    letter-spacing: .05em;
     font-weight: bolder;
     box-sizing: border-box;
     padding-left: 1.2em;
     padding-right: 1.2em;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-tel:hover, .btn-contact:hover{
     background-color: var(--bg-site);
