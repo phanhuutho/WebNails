@@ -85,7 +85,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 10%;
+    background-position: 50% 35%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 10%;
+    background-position: 50% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -505,7 +505,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 .e-gift .box-image .image-e-gift{
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 80px;
     width: 450px;
     height: 450px;

@@ -1,3 +1,6 @@
+main {
+    background: var(--color-theme);
+}
 .box-image {
     position: relative;
     height: auto;
@@ -21,8 +24,8 @@
     line-height: 1.3;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
-    color: var(--color-theme);
+    color: var(--bg-site);
 }
 .divider {
-    background-color: var(--color-theme);
+    background-color: var(--bg-site);
 }

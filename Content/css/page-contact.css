@@ -1,9 +1,9 @@
-.page-main{
-    margin-top: -130px !important;
+.page-main {
     position: relative;
+    background: var(--bg-site);
 }
-.bg-main{
-    background-color: rgb(244, 244, 244);
+.bg-main {
+
 }
 .box-tel, .box-contact{
     background-color: #FFFFFF;
@@ -13,10 +13,10 @@
     margin-bottom: 10px;
     height: 200px;
 }
-.btn-tel, .btn-contact{
-    background-color: #7a9c59;
+.btn-tel, .btn-contact {
+    background-color: var(--color-theme);
     border-radius: 0;
-    border-color: #7a9c59;
+    border-color: var(--color-theme);
     font-family: "Carme";
     text-transform: uppercase;
     font-size: .835em;
@@ -26,17 +26,21 @@
     padding-left: 1.2em;
     padding-right: 1.2em;
 }
+.btn-tel:hover, .btn-contact:hover{
+    background-color: var(--bg-site);
+    border-color: var(--bg-site);
+}
 .btn-tel span, .btn-contact span{
     line-height: 1.6;
 }
 .box-map{
-    padding: 40px 40px 40px 40px;
+    padding: 15px 15px;
     background-color: rgb(255,255,255);
 }
-.gallery{
-    padding-top: 60px;
-    padding-bottom: 100px;
-    background-color: #FFFFFF;
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--color-theme);
 }
 .gallery .container{
     max-width: 1300px;

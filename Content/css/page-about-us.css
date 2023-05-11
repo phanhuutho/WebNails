@@ -1,3 +1,8 @@
+.bg-about-us {
+    background-image: none;
+    background: var(--color-theme);
+}
+
 .page-main.container {
     position: relative;
     font-family: "Vesper Libre";
@@ -5,8 +10,12 @@
 .page-main h1{
     font-size: 200%;
     color: #000000;
+    font-weight: 900;
 }
 .page-main h1 span{
     padding-bottom: 35px;
-    border-bottom: 2px solid #777777;
+    border-bottom: 2px solid #000000;
+}
+.page-main p {
+    color: #000000;
 }
