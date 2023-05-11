@@ -22,7 +22,7 @@ namespace WebNails.Controllers
             ViewBag.LinkGoogleMapAddress = dataInfo.LinkGoogleMapAddress;
             ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
             ViewBag.ShowCoupon = dataInfo.ShowCoupon;
-            ViewBag.Coupons = dataInfo.Coupons ?? new List<string>();
+            ViewBag.Coupons = dataInfo.Coupons ?? new List<CouponModel>();
             ViewBag.Telegram = dataInfo.Telegram ?? new SocialModel();
             ViewBag.Facebook = dataInfo.Facebook ?? new SocialModel();
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();

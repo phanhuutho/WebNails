@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = ViewBag.Name;
     var showCoupon = (bool)ViewBag.ShowCoupon;
-    var Coupons = (List<string>)ViewBag.Coupons;
+    var Coupons = (List<WebNails.Models.CouponModel>)ViewBag.Coupons;
+    Coupons = Coupons.Where(x => x.Src != "" && x.Status).ToList();
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -227,7 +228,7 @@
                                 @foreach(var item in Coupons)
                                 {
                                     <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
-                                        <img src="@item" class="img-fluid" />
+                                        <img src="@item.Src" class="img-fluid" />
                                     </div>
                                     index++;
                                 }

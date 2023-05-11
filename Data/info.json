@@ -7,7 +7,12 @@
   "LinkGoogleMapAddress": "https://goo.gl/maps/nrVygELdTR6AkKZ6A",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13833.191673787585!2d-95.6317901!3d29.9133243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a5b9305adf6ba17!2sEuphoria%20Nails%20%26%20Lashes!5e0!3m2!1sen!2s!4v1632661952981!5m2!1sen!2s",
   "ShowCoupon": true,
-  "Coupons": [ "/Content/images/popup/Coupon.jpg" ],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/Coupon.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
