@@ -120,7 +120,7 @@
         background: #FFFFFF;
     }
     .e-gift .box-image .image-e-gift {
-        background-position: 25% 50%;
+        background-position: 90% 50%;
     }
     .line-bottom{
         display: none;
@@ -265,8 +265,12 @@
     .e-gift .box-inner{
         height: 250px;
     }
-    .e-gift .box-image .image-e-gift{
+    .e-gift .box-image {
+        height: 380px;
+    }
+    .e-gift .box-image .image-e-gift {
         top: 0 !important;
+        height: 380px;
     }
     .services{
         height: 960px;
@@ -282,7 +286,7 @@
         justify-content: center !important;
     }
     .business .business-inner .box-image .image-business{
-        
+        background-position: 88% 70%;
     }
     .business .business-inner .box-inner{
         margin-left: -15px;
