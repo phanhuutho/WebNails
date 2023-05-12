@@ -82,7 +82,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 25%;
+    background-position: 10% 25%;
     background-size: cover !important;
     display: flex;
     align-items: center;

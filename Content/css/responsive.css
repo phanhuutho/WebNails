@@ -153,7 +153,7 @@
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
         height: 550px;
-        background-position: 45% 35%;
+        background-position: 25% 35%;
     }
     .slider-home, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-2 .box-image .image{
         height: 550px;
@@ -166,6 +166,9 @@
     }
     .slider-home .sliders .slider-4 .box-image .container, .slider-home .sliders .slider-5 .box-image .container{
         height: 550px;
+    }
+    .slider-home .sliders .slider-4 .box-image .image{
+        background-position: 0% 25%;
     }
     .slider-home .sliders .slider-4 .box-inner, .slider-home .sliders .slider-5 .box-inner{
         height: auto;
@@ -286,7 +289,7 @@
         margin-right: -15px;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 15% 50%;
+        background-position: 45% 50%;
     }
     .slider-banner .slider-2 .box-slider .image {
         background-position: 40% 50%;
