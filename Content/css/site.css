@@ -2,7 +2,7 @@
 :root {
     --bg-site: #000000;
     --color-theme: #FFFFFF;
-    --color-menu-legend: #d39c35;
+    --color-menu-legend: #f5e7a5;
 }
 body {
     background: var(--bg-site);
