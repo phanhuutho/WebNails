@@ -26,6 +26,7 @@
     font-size: 170%; 
     color: #FFFFFF;
     font-weight: bold;
+    text-shadow: 2px 2px 10px #000000;
 }
 .bg-overlay{
     background-color: rgba(255, 255, 255, 0.73);
