@@ -1,7 +1,4 @@
-main .contact{
-    padding-bottom: 25px;
-}
-main .contact .container, .beauty-spa .beauty-spa-inner{
+main .contact .container{
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -43,7 +40,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 40%;
+    background-position: 50% 30%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -57,7 +54,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 80%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -71,7 +68,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 10% 10%;
+    background-position: 50% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -85,7 +82,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 20%;
+    background-position: 10% 25%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -99,7 +96,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 10%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -277,7 +274,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 
 .about-us {
-    background-color: rgb(246, 241, 233);
+    background-color: var(--color-menu-legend);
 }
 .about-us .about-us-inner{
     height: 850px;
@@ -286,7 +283,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 }
 .about-us .box-inner{
     text-align: justify;
-    width: 470px;
+    width: 530px;
     max-width: 100%;
 }
 .about-us .box-inner h1{
@@ -320,9 +317,11 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background-position: 50% 50%;
     background-size: cover !important;
 }
-
-.beauty-spa .beauty-spa-inner{
-    height: 700px;
+.beauty-spa {
+    background-color: var(--color-theme);
+}
+.beauty-spa .beauty-spa-inner {
+    height: 570px;
     position: relative;
 }
 .beauty-spa .beauty-spa-inner:before{
@@ -330,23 +329,23 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     position: absolute;
     width: 100%;
     height: 160px;
-    background-color: rgb(246, 241, 233);
-    top: 35%;
+    background-color: var(--color-menu-legend);
+    top: 42.5%;
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
     font-family: "Parisienne"; 
-    color: #000000;
+    color: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner .box-inner h2{
     font-size: 150%; 
-    color: #000000;
+    color: var(--bg-site);
     line-height: 2.5;
 }
 .beauty-spa .box-image{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 300px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
@@ -365,7 +364,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 30% 50%;
     background-size: cover !important;
 }
 
@@ -412,7 +411,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     top: 0;
     width: 100%;
     height: 600px;
-    background-image: url(../images/home/home_service_bg.jpeg);
+    background-image: url(../images/home/home_service_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -445,7 +444,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 .business .business-inner{
     width: 100%;
     height: 600px;
-    background: linear-gradient(90deg, #FFFFFF 50%, rgb(246, 241, 233) 50%);
+    background: linear-gradient(90deg, #FFFFFF 50%, var(--color-menu-legend) 50%);
     display: flex;
     align-items: center;
     justify-content: right;
@@ -481,7 +480,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     width: 515px;
     max-width:100%;
     height: 500px;
-    background-image: url(../images/home/home_business.jpeg);
+    background-image: url(../images/home/home_business.jpg);
     background-repeat: no-repeat !important;
     background-position: 0% 70%;
     background-size: cover !important;
@@ -492,7 +491,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 .e-gift .e-gift-inner{
     width: 100%;
     height: 600px;
-    background: linear-gradient(90deg, rgb(246, 241, 233) 50%, #FFFFFF 50%);
+    background: linear-gradient(90deg, var(--color-menu-legend) 50%, #FFFFFF 50%);
     display: flex;
     align-items: center;
 }
@@ -514,17 +513,17 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
 .e-gift .box-image .image-e-gift{
     position: absolute;
     right: 0;
-    width: 600px;
+    width: 500px;
     max-width:100%;
     height: 500px;
-    background-image: url(../images/home/home_e_gift.jpeg);
+    background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 50%;
+    background-position: 90% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider{
     max-width:100px;
-    background-color:rgb(246, 241, 233);
+    background-color: var(--bg-site);
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -562,7 +561,7 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     position: relative;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/home/beautiful-woman-hands-with-cream-scaled.jpg);
+    background-image: url(../images/home/home_contact_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -612,6 +611,9 @@ main .contact .container, .beauty-spa .beauty-spa-inner{
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
+}
+.map {
+    background-color: var(--color-theme);
 }
 
 @-webkit-keyframes dash {

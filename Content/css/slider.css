@@ -103,18 +103,22 @@
 
 .slider-banner .slider-1 .box-slider .image{
     background-image: url(../images/banner/slider/pedicure.jpg);
+    background-position: 50% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image{
     background-image: url(../images/banner/slider/manicure.jpg);
+    background-position: 50% 90%;
 }
 
 .slider-banner .slider-3 .box-slider .image{
     background-image: url(../images/banner/slider/eyelash_extensions.jpg);
+    background-position: 50% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image{
     background-image: url(../images/banner/slider/waxing.jpg);
+    background-position: 50% 75%;
 }
 
 .slider-banner .box-slider .slider-image{
