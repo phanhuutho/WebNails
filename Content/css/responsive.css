@@ -53,9 +53,10 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .about-us .box-image, .about-us .box-image .image-about-us{
+    .about-us .box-image, .about-us .box-image .image-about-us {
         height: 500px;
         margin-top: 10px;
+        border-radius: unset;
     }
     .about-us .box-image .image-about-us{
         right: 0;
@@ -69,13 +70,15 @@
         height: 580px;
     }
     .beauty-spa .beauty-spa-inner:before{
-        top: 32.5%;
+        top: 42.5%;
     }
     .beauty-spa .box-image{
-        padding-left: 0;
-        padding-right: 0;
+        
     }
-    .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
+    .beauty-spa .box-image{
+        height: 310px;
+    }
+    .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
         height: 280px;
     }
     .beauty-spa .box-image h2{
@@ -120,7 +123,7 @@
         background: #FFFFFF;
     }
     .e-gift .box-image .image-e-gift {
-        background-position: 88% 50%;
+
     }
     .line-bottom{
         display: none;
@@ -141,7 +144,7 @@
         text-align: center !important;
     }
 
-    .slider-banner, .slider-banner .sliders .box-image, .slider-banner .sliders .box-image .image {
+    .slider-banner, .slider-banner .sliders .box-image, .slider-banner .sliders .box-image .image, .slider-banner .sliders, .slider-banner .box-slider {
         height: 550px;
     }
     .slider-banner .sliders .box-image .container{
@@ -271,6 +274,7 @@
     .e-gift .box-image .image-e-gift {
         top: 0 !important;
         height: 380px;
+        border-radius:unset;
     }
     .services{
         height: 960px;
@@ -287,6 +291,7 @@
     }
     .business .business-inner .box-image .image-business{
         background-position: 90% 70%;
+        border-radius:unset;
     }
     .business .business-inner .box-inner{
         margin-left: -15px;

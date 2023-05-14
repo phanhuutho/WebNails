@@ -274,7 +274,7 @@ main .contact .container{
 }
 
 .about-us {
-    background-color: var(--color-menu-legend);
+    background-color: var(--color-theme);
 }
 .about-us .about-us-inner{
     height: 850px;
@@ -283,17 +283,20 @@ main .contact .container{
 }
 .about-us .box-inner{
     text-align: justify;
-    width: 530px;
+    width: 450px;
     max-width: 100%;
 }
 .about-us .box-inner h1{
     font-size: 5em; 
     font-family: "Parisienne"; 
-    color: #000000;
+    color: var(--color-white);
     font-weight: bold;
 }
+.about-us .box-inner{
+    color: var(--color-white);
+}
 .about-us .box-inner p{
-    color: #000000;
+    color: var(--color-white);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
 }
@@ -316,9 +319,10 @@ main .contact .container{
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
+    border-radius: 50% 0% 0% 50%;
 }
 .beauty-spa {
-    background-color: var(--color-theme);
+    background-color: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner {
     height: 570px;
@@ -329,29 +333,30 @@ main .contact .container{
     position: absolute;
     width: 100%;
     height: 160px;
-    background-color: var(--color-menu-legend);
-    top: 42.5%;
+    background-color: var(--color-theme);
+    top: 44.5%;
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
     font-family: "Parisienne"; 
-    color: var(--bg-site);
+    color: var(--color-black);
 }
 .beauty-spa .beauty-spa-inner .box-inner h2{
     font-size: 150%; 
-    color: var(--bg-site);
+    color: var(--color-black);
     line-height: 2.5;
 }
 .beauty-spa .box-image{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 330px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 10px var(--color-black);
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 300px;
@@ -439,12 +444,12 @@ main .contact .container{
 }
 
 .business, .e-gift {
-    background-color: rgb(246, 241, 233);
+    background-color: var(--color-theme);
 }
 .business .business-inner{
     width: 100%;
     height: 600px;
-    background: linear-gradient(90deg, #FFFFFF 50%, var(--color-menu-legend) 50%);
+    background: linear-gradient(90deg, #FFFFFF 50%, var(--color-theme) 50%);
     display: flex;
     align-items: center;
     justify-content: right;
@@ -484,6 +489,8 @@ main .contact .container{
     background-repeat: no-repeat !important;
     background-position: 0% 70%;
     background-size: cover !important;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--color-black);
 }
 .e-gift {
     width: 100%;
@@ -491,7 +498,7 @@ main .contact .container{
 .e-gift .e-gift-inner{
     width: 100%;
     height: 600px;
-    background: linear-gradient(90deg, var(--color-menu-legend) 50%, #FFFFFF 50%);
+    background: linear-gradient(90deg, var(--color-theme) 50%, #FFFFFF 50%);
     display: flex;
     align-items: center;
 }
@@ -518,12 +525,14 @@ main .contact .container{
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 50%;
+    background-position: 0% 50%;
     background-size: cover !important;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--color-black);
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider{
     max-width:100px;
-    background-color: var(--bg-site);
+    background-color: var(--color-black);
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -573,17 +582,20 @@ main .contact .container{
 .contact .bg-contact .container{
     position: relative;
 }
-.contact-images{
+.contact-images {
     position: relative;
     width: 100%;
-    height: 301px;
+    height: 330px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
+    padding: 15px;
+    box-shadow: 0 0 10px var(--color-black);
+    background-color: var(--color-white);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4{
-    height: 301px;
+    height: 300px;
 }
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);

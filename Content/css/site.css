@@ -1,8 +1,10 @@
 /*root*/
 :root {
-    --bg-site: #000000;
-    --color-theme: #FFFFFF;
-    --color-menu-legend: #f5e7a5;
+    --bg-site: #FFFFFF;
+    --color-theme: #af2e33;
+    --color-menu-legend: #af2e33;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
 }
 body {
     background: var(--bg-site);
@@ -20,7 +22,7 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 180px;
+    max-width: 90px;
 }
 
 /*font*/
@@ -68,7 +70,7 @@ a:active,a:hover {
 }
 .modal-content {
     border-width: 5px;
-    border-color: #000000;
+    border-color: var(--color-theme);
 }
 .left-10-percent{
     left:10%;

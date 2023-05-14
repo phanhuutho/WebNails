@@ -1,6 +1,12 @@
 main {
     background-color: var(--color-menu-legend);
 }
+.page-main .box-inner {
+    border-radius: 50%;
+    padding: 15px;
+    background: var(--color-white);
+    box-shadow: 0 0 10px var(--color-black);
+}
 .box-image {
     position: relative;
     height: auto;
