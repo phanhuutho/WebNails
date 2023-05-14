@@ -7,3 +7,5 @@
 /bin/WebNails.pdb
 /obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 /obj/Debug/WebNails.csproj.CoreCompileInputs.cache
+/.vs/WebNails/config/applicationhost.config
+/obj/Debug/WebNails.csproj.FileListAbsolute.txt
