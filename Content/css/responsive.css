@@ -171,7 +171,7 @@
         height: 550px;
     }
     .slider-home .sliders .slider-4 .box-image .image{
-        background-position: 0% 25%;
+        background-position: 45% 25%;
     }
     .slider-home .sliders .slider-4 .box-inner, .slider-home .sliders .slider-5 .box-inner{
         height: auto;
@@ -179,6 +179,9 @@
     }
     .slider-home .sliders .slider-4 .box-image .box-inner h1{
         font-size: 32px;
+    }
+    .slider-home .sliders .slider-5 .box-image .image{
+        background-position: 60% 40%;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1{
         font-size: 32px;
@@ -188,7 +191,6 @@
     }
     .slider-home .sliders .slider-3 .box-inner h1, .slider-home .sliders .slider-3 .box-inner p{
         text-align: center !important;
-        color: #FFFFFF !important;
     }
     .slider-home .sliders .slider-2 .box-image .image .box-inner h1{
         font-size: 32px;
@@ -294,17 +296,16 @@
         border-radius:unset;
     }
     .business .business-inner .box-inner{
-        margin-left: -15px;
-        margin-right: -15px;
+
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 45% 50%;
+        background-position: 55% 50%;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 40% 50%;
+        background-position: 55% 50%;
     }
     .slider-banner .slider-4 .box-slider .image {
-        background-position: 5% 50%;
+        background-position: 53% 50%;
     }
     .bg-contact .description {
         font-size: 140%;

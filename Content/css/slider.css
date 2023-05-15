@@ -108,17 +108,17 @@
 
 .slider-banner .slider-2 .box-slider .image{
     background-image: url(../images/banner/slider/manicure.jpg);
-    background-position: 50% 90%;
+    background-position: 50% 10%;
 }
 
 .slider-banner .slider-3 .box-slider .image{
     background-image: url(../images/banner/slider/eyelash_extensions.jpg);
-    background-position: 50% 50%;
+    background-position: 50% 30%;
 }
 
 .slider-banner .slider-4 .box-slider .image{
     background-image: url(../images/banner/slider/waxing.jpg);
-    background-position: 50% 75%;
+    background-position: 50% 25%;
 }
 
 .slider-banner .box-slider .slider-image{
@@ -146,6 +146,6 @@
 .slider-banner .box-slider .box-inner h1 {
     font-family: 'Inter','Arial';
     font-size: 36px;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #888888;
+    color: var(--color-white);
+    text-shadow: 2px 2px 2px var(--color-black);
 }
