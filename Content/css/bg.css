@@ -52,7 +52,7 @@
     background-size: cover !important;
     min-height: 990px;
 }
-.bg-services {
+.bg-services-page {
     background-color: var(--color-theme);
     background-image: url(../images/services/services_bg.jpg);
     background-repeat: no-repeat !important;
