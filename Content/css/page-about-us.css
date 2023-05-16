@@ -3,14 +3,16 @@
     font-family: "Vesper Libre";
 }
 .page-main {
-    color: var(--color-white);
+    color: var(--color-black);
+    text-shadow: 1px 0px 1px var(--color-black);
 }
 .page-main h1 {
     font-size: 250%;
-    color: var(--bg-site);
+    color: var(--color-theme);
 }
 .page-main h1 span{
     padding-bottom: 25px;
-    border-bottom: 2px solid var(--bg-site);
+    border-bottom: 2px solid var(--color-theme);
     font-weight: 900;
+    text-shadow: 2px 0px 2px var(--color-black);
 }

@@ -1,8 +1,11 @@
 ﻿main {
-    background-color: var(--color-menu-legend);
+    background-color: var(--color-theme);
+}
+.page-main {
+    position: relative;
 }
 .page-main .box-inner {
     padding: 15px;
     background: var(--color-white);
-    box-shadow: 0 0 10px var(--color-black);
+    box-shadow: 0 0 10px var(--color-theme);
 }

@@ -41,9 +41,8 @@
     background-color: rgb(255,255,255);
 }
 .gallery {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: var(--color-menu-legend);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .gallery .container{
     max-width: 1300px;
@@ -51,7 +50,7 @@
 .gallery .box-inner{
     height: 430px;
     padding: 15px;
-    box-shadow: 0 0 10px var(--color-black);
+    box-shadow: 0 0 10px var(--color-theme);
     background-color: var(--color-white);
 }
 .bg-contact-1 {

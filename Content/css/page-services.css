@@ -1,11 +1,14 @@
 main {
-    background-color: var(--color-menu-legend);
+    background-color: var(--color-theme);
+}
+.page-main {
+    position: relative;
 }
 .page-main .box-inner {
     border-radius: 50%;
     padding: 15px;
     background: var(--color-white);
-    box-shadow: 0 0 10px var(--color-black);
+    box-shadow: 0 0 10px var(--color-theme);
 }
 .box-image {
     position: relative;
@@ -30,5 +33,5 @@ main {
     line-height: 1.3;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
-    color: var(--bg-site);
+    color: var(--color-theme);
 }

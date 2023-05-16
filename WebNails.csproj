@@ -192,10 +192,12 @@
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
     <Content Include="Content\images\banner\woman-hands-with-beautiful-rose-petals-towel-close-up-scaled.jpg" />
+    <Content Include="Content\images\contact\contact_bg.jpg" />
     <Content Include="Content\images\contact\contact_image_1.jpg" />
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
     <Content Include="Content\images\dots.png" />
+    <Content Include="Content\images\e-gift\e-gift_bg.jpg" />
     <Content Include="Content\images\e-gift\gift_1.jpg" />
     <Content Include="Content\images\e-gift\gift_10.jpg" />
     <Content Include="Content\images\e-gift\gift_11.jpg" />
@@ -245,6 +247,7 @@
     <Content Include="Content\images\price-list\Hi-Demand-02.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpeg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
+    <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpeg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpeg" />
