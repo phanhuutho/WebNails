@@ -7,5 +7,5 @@
 .page-main .box-inner {
     padding: 15px;
     background: var(--color-white);
-    box-shadow: 0 0 10px var(--color-theme);
+    box-shadow: 0 0 10px var(--color-black);
 }

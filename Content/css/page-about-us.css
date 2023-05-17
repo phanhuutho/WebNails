@@ -4,15 +4,13 @@
 }
 .page-main {
     color: var(--color-black);
-    text-shadow: 1px 0px 1px var(--color-black);
 }
 .page-main h1 {
     font-size: 250%;
-    color: var(--color-theme);
+    color: var(--color-black);
 }
 .page-main h1 span{
     padding-bottom: 25px;
-    border-bottom: 2px solid var(--color-theme);
+    border-bottom: 2px solid var(--color-black);
     font-weight: 900;
-    text-shadow: 2px 0px 2px var(--color-black);
 }

@@ -56,7 +56,6 @@
     .about-us .box-image, .about-us .box-image .image-about-us {
         height: 500px;
         margin-top: 10px;
-        border-radius: unset;
     }
     .about-us .box-image .image-about-us{
         right: 0;
