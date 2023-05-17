@@ -7,7 +7,7 @@
     float: right;
 }
 .menu-desktop .list-inline > li > a {
-    color: var(--color-theme);
+    color: var(--color-menu-legend);
     font-weight: 700;
     font-family: "Lato", sans-serif;
     font-size: 1em;
@@ -27,7 +27,7 @@
     left: 50%;
     width: 0%;
     height: 3px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     transition: all 0.3s;
     transform: translateX(-50%);
 }
@@ -43,7 +43,7 @@
 }
 .top-divider {
     margin-bottom: 20px;
-    border-top: 1px solid var(--color-theme);
+    border-top: 1px solid var(--color-menu-legend);
     opacity: 1;
 }
 .call-us, .list-menu .call-us {
@@ -51,7 +51,7 @@
     text-transform: uppercase;
     font-family: "Carme";
     text-decoration: none;
-    color: var(--color-theme);
+    color: var(--color-menu-legend);
     transition: all 0.3s;
     letter-spacing: .03em;
     font-size: 1em;
@@ -66,7 +66,7 @@
 .call-us:before, .list-menu .call-us:before{
     content: "";
     height: 2px;
-    background-color: var(--color-theme);
+    background-color: var(--color-menu-legend);
     transition: all .3s;
     position: absolute;
     bottom: -10px;
@@ -80,7 +80,7 @@
     color: var(--color-black);
 }
 .list-menu .call-us:hover{
-    color: var(--color-theme);
+    color: var(--color-menu-legend);
 }
 .call-us:hover:before, .list-menu .call-us:hover:before{
     background-color: var(--color-black);
