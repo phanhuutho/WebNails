@@ -22,7 +22,7 @@
     .menu-mobile-tablet .menu-bars button{
         border: none;
         background: none;
-        color: var(--color-theme);
+        color: var(--color-menu-legend);
     }
     .menu-mobile-tablet .menu-bars .fa{
         font-size: 18px;
@@ -54,14 +54,13 @@
         padding-right: 15px;
     }
     .about-us .box-image, .about-us .box-image .image-about-us {
-        height: 500px;
-        margin-top: 10px;
+
     }
     .about-us .box-image .image-about-us{
-        right: 0;
+
     }
     .about-us .about-us-inner{
-        height: 500px;
+        height: 350px;
         align-items: center;
         justify-content: center;
     }
@@ -170,7 +169,7 @@
         height: 550px;
     }
     .slider-home .sliders .slider-4 .box-image .image{
-        background-position: 45% 25%;
+        background-position: 40% 25%;
     }
     .slider-home .sliders .slider-4 .box-inner, .slider-home .sliders .slider-5 .box-inner{
         height: auto;

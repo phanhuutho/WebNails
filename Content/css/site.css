@@ -5,6 +5,7 @@
     --color-menu-legend: #af2e33;
     --color-black: #000000;
     --color-white: #FFFFFF;
+    --color-grey: #888888;
 }
 body {
     background: var(--bg-site);
@@ -36,7 +37,7 @@ a:active,a:hover {
 /*divider*/
 .divider {
     max-width: 200px;
-    background-color: var(--bg-site);
+    background-color: var(--color-black);
     height: 3px;
     margin: 0 auto;
 }
