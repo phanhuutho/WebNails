@@ -385,7 +385,7 @@ main .contact .container{
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 50%;
+    background-position: 50% 100%;
     background-size: cover !important;
 }
 
