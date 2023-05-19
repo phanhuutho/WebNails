@@ -6,6 +6,7 @@
     --color-black: #000000;
     --color-white: #FFFFFF;
     --color-grey: #888888;
+    --color-box: #FFFFFF;
 }
 body {
     background: var(--bg-site);
@@ -13,7 +14,7 @@ body {
 main{
     overflow-x:hidden;
 }
-header, main .container{
+header{
     max-width: 1080px;
     margin: 0 auto;
 }

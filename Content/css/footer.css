@@ -2,13 +2,13 @@
 footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
-    color: var(--color-black);
+    color: #888888;
 }
 footer .legend {
-    color: var(--color-menu-legend);
+    color: var(--color-black);
 }
 footer a{
-    color: var(--color-black);
+    color: #888888;
     text-decoration: none;
 }
 footer .circle{

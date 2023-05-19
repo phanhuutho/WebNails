@@ -40,9 +40,9 @@
     background-color: var(--color-theme);
     background-image: url(../images/about-us/about-us_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15% 10%;
+    background-position: 45% 50%;
     background-size: cover !important;
-    height: 600px;
+    height: 650px;
 }
 .bg-gift {
     background-color: var(--color-theme);

@@ -127,8 +127,23 @@
         display: none;
     }
     .contact .bg-contact {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-image: none;
+        background-color: var(--color-theme);
+    }
+    .contact .bg-contact .overlay{
+        display: none;
+    }
+    .contact .bg-contact .box-inner{
         padding-top: 50px;
         padding-bottom: 50px;
+        background-color: var(--color-white);
+    }
+    .btn-tel, .btn-contact {
+        letter-spacing: .07em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 @media (max-width: 767px) {

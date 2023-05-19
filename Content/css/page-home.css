@@ -316,20 +316,20 @@ main .contact .container{
 .about-us .box-image{
     position: relative;
     max-width: 100%;
-    width: 520px;
-    height: 520px;
+    width: 510px;
+    height: 510px;
     margin: 50px auto;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
-    background-color: #FFFFFF;
-    padding: 10px;
+    background-color: var(--color-box);
+    padding: 5px;
     box-shadow: 0px 0px 10px var(--color-black);
 }
 .about-us .box-image .image-about-us{
     position: absolute;
-    right: 10px;
-    top: 10px;
-    max-width: calc(100% - 20px);
+    right: 5px;
+    top: 5px;
+    max-width: calc(100% - 10px);
     width: 500px;
     height: 500px;
     background-image: url(../images/home/home_about_us.jpg);
@@ -365,13 +365,13 @@ main .contact .container{
 .beauty-spa .box-image{
     position: relative;
     width: 100%;
-    height: 330px;
+    height: 310px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
-    padding: 15px;
-    background-color: var(--color-white);
+    padding: 5px;
+    background-color: var(--color-box);
     box-shadow: 0px 0px 10px var(--color-black);
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
@@ -584,8 +584,8 @@ main .contact .container{
 }
 .contact .bg-contact {
     position: relative;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 150px;
     background-image: url(../images/home/home_contact_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -601,14 +601,14 @@ main .contact .container{
 .contact-images {
     position: relative;
     width: 100%;
-    height: 330px;
+    height: 310px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
-    padding: 15px;
+    padding: 5px;
     box-shadow: 0 0 10px var(--color-black);
-    background-color: var(--color-white);
+    background-color: var(--color-box);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4{
     height: 300px;
