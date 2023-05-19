@@ -1,16 +1,51 @@
 {
-  "Name": "Hi Demand Nails",
-  "HyperLinkTell": "tel:(586)2005104",
-  "TextTell": "(586)-200-5104",
-  "GooglePlus": "https://www.google.com.vn/search?hl=en&_ga=2.164290367.1897498791.1667244097-995705852.1665412800&q=HI+DEMAND+NAILS+($5+OFF+New+Customers)&ludocid=10179570535525998056&localrlb=1&lsig=AB86z5XwyI6uzNuI5ZgzXqlV331Y",
-  "Address": "23983 Harper Ave, St Clair Shores, MI 48080",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/pmDZocdrAgrYxokaA",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.9317134996795!2d-82.9060796!3d42.47174100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d451977e80f5de8!2sHI%20DEMAND%20NAILS!5e0!3m2!1sen!2s!4v1663828689171!5m2!1sen!2s",
-  "ShowCoupon": true,
-  "Coupons": [ { "Status": true, "Src": "/Content/images/popup/Coupon.jpg" } ],
-  "Telegram": { "Title": "Telegram", "Url": "", "Position": 1, "ClassIcon": "fa fa-telegram", "BackgroundColor": "#34a9e4" },
-  "Facebook": { "Title": "Facebook", "Url": "", "Position": 2, "ClassIcon": "fa fa-facebook-f", "BackgroundColor": "#1877f2" },
-  "Instagram": { "Title": "Instagram", "Url": "", "Position": 3, "ClassIcon": "fa fa-instagram", "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)" },
-  "Twitter": { "Title": "Twitter", "Url": "", "Position": 4, "ClassIcon": "fa fa-twitter", "BackgroundColor": "#1d9bf0" },
-  "Youtube": { "Title": "Youtube", "Url": "", "Position": 5 , "ClassIcon": "fa fa-youtube-play", "BackgroundColor": "#ff0000" }
+  "Name": "Vogue Nails",
+  "HyperLinkTell": "tel:(586)4988850",
+  "TextTell": "(586)-498-8850",
+  "GooglePlus": "https://www.google.com/search?q=Vogue+Nails+48080",
+  "Address": "24830 Harper, St Clair Shores, MI 48080",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/99PqowQswHfHFu5W6?coh=178572&entry=tt",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11770.41465347761!2d-82.9018935!3d42.4787174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88252804a8385159%3A0xd29524eef32ddbbf!2sVogue%20Nails!5e0!3m2!1svi!2s!4v1684513606781!5m2!1svi!2s",
+  "ShowCoupon": false,
+  "Coupons": [
+    {
+      "Status": false,
+      "Src": "/Content/images/popup/Coupon.jpg"
+    }
+  ],
+  "Telegram": {
+    "Title": "Telegram",
+    "Url": "",
+    "Position": 1,
+    "ClassIcon": "fa fa-telegram",
+    "BackgroundColor": "#34a9e4"
+  },
+  "Facebook": {
+    "Title": "Facebook",
+    "Url": "",
+    "Position": 2,
+    "ClassIcon": "fa fa-facebook-f",
+    "BackgroundColor": "#1877f2"
+  },
+  "Instagram": {
+    "Title": "Instagram",
+    "Url": "",
+    "Position": 3,
+    "ClassIcon": "fa fa-instagram",
+    "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
+  },
+  "Twitter": {
+    "Title": "Twitter",
+    "Url": "",
+    "Position": 4,
+    "ClassIcon": "fa fa-twitter",
+    "BackgroundColor": "#1d9bf0"
+  },
+  "Youtube": {
+    "Title": "Youtube",
+    "Url": "",
+    "Position": 5,
+    "ClassIcon": "fa fa-youtube-play",
+    "BackgroundColor": "#ff0000"
+  }
 }

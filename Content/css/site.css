@@ -2,7 +2,7 @@
 :root {
     --bg-site: #000000;
     --color-theme: #FFFFFF;
-    --color-menu-legend: #f5e7a5;
+    --color-menu-legend: #e49e34;
 }
 body {
     background: var(--bg-site);
@@ -11,8 +11,7 @@ main{
     overflow-x:hidden;
 }
 header, main .container{
-    max-width: 1080px;
-    margin: 0 auto;
+
 }
 a:active,a:hover {
     outline-width: 0
