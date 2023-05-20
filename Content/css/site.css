@@ -3,6 +3,8 @@
     --bg-site: #000000;
     --color-theme: #FFFFFF;
     --color-menu-legend: #e49e34;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
 }
 body {
     background: var(--bg-site);

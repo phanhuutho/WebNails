@@ -1,12 +1,12 @@
 .page-main{
     position: relative;
 }
-.bg-main{
-    background-color: rgb(244, 244, 244);
+.bg-main {
+    background-color: var(--bg-site);
 }
 .box-tel, .box-contact {
     background-color: #FFFFFF;
-    padding: 20px 20px;
+    padding: 5px 5px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -32,23 +32,22 @@
 .btn-tel span, .btn-contact span{
     line-height: 1.6;
     color: #000000;
-    text-shadow: 2px 2px 2px #FFFFFF
 }
 .btn-tel:hover, .btn-contact:hover{
     background-color: var(--color-menu-legend);
     border-color: var(--color-menu-legend);
 }
 .box-map{
-    padding: 15px 15px;
+    padding: 5px 5px 0px 5px;
     background-color: rgb(255,255,255);
 }
 .gallery {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: var(--color-menu-legend);
 }
 .gallery .container{
-    max-width: 1300px;
+
 }
 .bg-contact-1 {
     background-image: url(../images/contact/contact_image_1.jpg);
