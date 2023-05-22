@@ -129,6 +129,10 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .gallery {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 @media (max-width: 767px) {
     .slider-banner .banner .banner-detail .container .img-dot img{

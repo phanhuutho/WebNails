@@ -1,6 +1,7 @@
 .page-main.container {
     position: relative;
     font-family: "Vesper Libre";
+    color: var(--color-black);
 }
 .page-main h1 {
     font-size: 250%;

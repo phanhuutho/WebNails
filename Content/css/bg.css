@@ -6,7 +6,7 @@
     position: relative;
 }
 .overlay{
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     padding-bottom: 350px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 10%;
+    background-position: 50% 45%;
     background-size: cover !important;
 }
 .bg-contact .description{
@@ -29,7 +29,7 @@
     text-shadow: 2px 2px 10px #000000;
 }
 .bg-overlay{
-    background-color: rgba(255, 255, 255, 0.73);
+    background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -37,10 +37,21 @@
     height: 100%;
 }
 .bg-about-us {
-    background-color: var(--color-menu-legend);
+    background-color: var(--color-theme);
+    background-image: url(../images/about-us/about-us_bg.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 45%;
+    background-size: cover !important;
     height: 600px;
 }
-
+.bg-gift {
+    background-color: var(--color-theme);
+    background-image: url(../images/e-gift/gift_bg.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 0% 50%;
+    background-size: cover !important;
+    min-height: 990px;
+}
 .bg-linear-green-blue{
     background: linear-gradient(to right, RGBA(46,204,113,1) 0%,RGBA(69,85,239,1) 100%);
 }
