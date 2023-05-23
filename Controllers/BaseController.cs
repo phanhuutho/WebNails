@@ -16,6 +16,7 @@ namespace WebNails.Controllers
             var dataInfo = JsonConvert.DeserializeObject<InfoModel>(jsonText);
             ViewBag.HyperLinkTell = dataInfo.HyperLinkTell;
             ViewBag.TextTell = dataInfo.TextTell;
+            ViewBag.LinkBookingAppointment = dataInfo.LinkBookingAppointment;
             ViewBag.Name = dataInfo.Name;
             ViewBag.Address = dataInfo.Address;
             ViewBag.GooglePlus = dataInfo.GooglePlus;

@@ -11,6 +11,7 @@ namespace WebNails.Models
         public string Address { get; set; }
         public string TextTell { get; set; }
         public string HyperLinkTell { get; set; }
+        public string LinkBookingAppointment { get; set; }
         public string GooglePlus { get; set; }
         public string LinkGoogleMapAddress { get; set; }
         public string LinkIFrameGoogleMap { get; set; }

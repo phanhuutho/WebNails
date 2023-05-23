@@ -133,7 +133,9 @@
                                 <h2>Business Hour</h2>
                                 <div class="divider mb-3"></div>
                                 @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
-                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@ViewBag.HyperLinkTell" target="_blank">call us <i class="fa fa-phone"></i></a>
+                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                                    @(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? "Book Appointment" : "call us") <i class="@(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? "fa fa-calendar" : "fa fa-phone")"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

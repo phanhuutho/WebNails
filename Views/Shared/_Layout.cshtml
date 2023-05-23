@@ -76,8 +76,8 @@
                 <div class="col-md-12">
                     <div class="top-divider"></div>
                     <div class="text-center">
-                        <a href="@ViewBag.HyperLinkTell" target="_blank" class="call-us">
-                            <span>call us</span>
+                        <a href="@(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
+                            <span>@(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? "Book Appointment" : "call us")</span>
                         </a>
                     </div>
                 </div>
@@ -104,8 +104,8 @@
                     <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="@ViewBag.HyperLinkTell" target="_blank" class="call-us">
-                        <span>call us</span>
+                    <a href="@(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
+                        <span>@(ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "" ? "Book Appointment" : "call us")</span>
                     </a>
                 </li>
             </ul>
@@ -180,9 +180,17 @@
     <!--Footer-->
     <div class="tel">
         <a href="@ViewBag.HyperLinkTell">
-            <i class="fa fa-phone"></i>
+            <i class="fa fa-phone-square"></i> @ViewBag.TextTell
         </a>
     </div>
+    @if (ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "")
+    {
+        <div class="booking">
+            <a href="@ViewBag.LinkBookingAppointment">
+                <i class="fa fa-calendar"></i> Booking
+            </a>
+        </div>
+    }
     @RenderSection("modal", required: false)
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/js/site.js"></script>
