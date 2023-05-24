@@ -14,22 +14,23 @@
 <main>
     @{ Html.RenderPartial("_SliderHome_1"); }
     <section class="about-us">
-        <div class="container-fluid">
+        <div class="overlay"></div>
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-lg-1 order-2 py-3">
-                    <div class="row">
-                        <div class="col-xl-8 offset-xl-4 about-us-inner">
-                            <div class="box-inner">
-                                <h1>About Us</h1>
-                                @Html.Raw(string.Format("{0}", ViewBag.HomeAboutUs))
-                                <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
-                            </div>
+                    <div class="about-us-inner">
+                        <div class="box-inner">
+                            <h1>About Us</h1>
+                            @Html.Raw(string.Format("{0}", ViewBag.HomeAboutUs))
+                            <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-2 order-1">
                     <div class="box-image">
-                        <div class="image-about-us"></div>
+                        <div class="box-inner">
+                            <div class="image-about-us"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,43 +53,39 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="box-image">
-                            <div class="image1">
-                                <div class="text-center">
-                                    <h2 class="font-Prata">PEDICURE</h2>
-                                </div>
-                            </div>
+                            <div class="image1"></div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h2 class="font-Prata">PEDICURE</h2>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="box-image">
-                            <div class="image2">
-                                <div class="text-center">
-                                    <h2 class="font-Prata">MANICURE</h2>
-                                </div>
-                            </div>
+                            <div class="image2"></div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h2 class="font-Prata">MANICURE</h2>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="box-image">
-                            <div class="image3">
-                                <div class="text-center">
-                                    <h2 class="font-Prata">EYELASH EXTENSIONS</h2>
-                                </div>
-                            </div>
+                            <div class="image3"></div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h2 class="font-Prata">EYELASH EXTENSIONS</h2>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="box-image">
-                            <div class="image4">
-                                <div class="text-center">
-                                    <h2 class="font-Prata">WAXING</h2>
-                                </div>
-                            </div>
+                            <div class="image4"></div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h2 class="font-Prata">WAXING</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 py-5">
+                    <div class="col-lg-12 pb-5">
                         <div class="text-center">
                             <a class="btn btn-default btn-more btn-border btn-border-black" href="services.html">VIEW MORE</a>
                         </div>
@@ -203,10 +200,8 @@
             </div>
         </div>
     </section>
-    <section class="map pt-4 pb-1">
-        <p>
-            <iframe src="@ViewBag.LinkIFrameGoogleMap" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </p>
+    <section class="map">
+        <iframe src="@ViewBag.LinkIFrameGoogleMap" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 </main>
 @section modal{

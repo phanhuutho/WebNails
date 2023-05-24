@@ -6,6 +6,6 @@
 }
 .page-main .box-inner {
     padding: 5px;
-    background-color: var(--color-theme);
+    background-color: var(--color-white);
     box-shadow: 2px 2px 10px var(--color-black);
 }
