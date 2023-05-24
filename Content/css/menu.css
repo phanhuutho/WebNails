@@ -58,7 +58,7 @@
     font-weight: bolder;
 }
 .list-menu .call-us {
-    color: var(--bg-site);
+    color: var(--color-black);
 }
 .call-us span, .list-menu .call-us span{
     line-height: 1.6;
@@ -74,7 +74,7 @@
     width: 60%;
 }
 .list-menu .call-us:before{
-    background-color: var(--bg-site);
+    background-color: var(--color-black);
 }
 .call-us:hover, .list-menu .call-us:hover{
     color: var(--color-text-theme);

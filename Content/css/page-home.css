@@ -54,7 +54,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 40% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -115,6 +115,10 @@ main .contact .container{
     letter-spacing: 3px;
     padding: 15px 30px;
     border-radius: 30px;
+}
+.slider-home .sliders .rectangle{
+    border: 10px solid #FFFFFF;
+    padding: 15px;
 }
 .slider-home .sliders .line-svg{
     position: relative;
@@ -327,11 +331,11 @@ main .contact .container{
     justify-content: center;
 }
 .about-us .box-image .box-inner{
-    padding: 5px;
+    padding: var(--padding-box);
     background: #FFFFFF;
     max-width: unset;
     width: unset;
-    box-shadow: 2px 2px 10px var(--color-black);
+    box-shadow: var(--box-shadow);
 }
 .about-us .box-image .image-about-us{
     width: 450px;
@@ -372,9 +376,8 @@ main .contact .container{
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
-    padding: 5px;
+    padding: var(--padding-box);
     background: var(--color-theme);
-    box-shadow: 2px 2px 10px #000
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 300px;
@@ -420,7 +423,6 @@ main .contact .container{
 }
 
 .services{
-    position: relative;
     width: 100%;
     height: 600px;
     margin: 0 auto;
@@ -429,9 +431,7 @@ main .contact .container{
     -webkit-transition: opacity 1s;
 }
 .services .bg-services{
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
     width: 100%;
     height: 600px;
     background-image: url(../images/home/home_service_bg.jpg);
@@ -441,6 +441,17 @@ main .contact .container{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.services .bg-services .overlay{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.services .bg-services .container{
+    position: relative;
 }
 .services .box-inner{
     background-color: #FFFFFF;
@@ -462,18 +473,18 @@ main .contact .container{
 }
 
 .business, .e-gift {
-    background-color: rgb(246, 241, 233);
+
 }
 .business .business-inner{
     width: 100%;
-    height: 600px;
-    background: linear-gradient(90deg, #FFFFFF 50%, var(--color-menu-legend) 50%);
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    background-color: var(--color-white);
 }
 .business .business-inner .box-inner{
-    padding-top: 20%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 .business .business-inner .box-inner i{
     font-weight: bold;
@@ -490,16 +501,15 @@ main .contact .container{
 .business .business-inner .box-image{
     position: relative;
     width: 100%;
-    height: 500px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .business .business-inner .box-image .image-business{
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 515px;
     max-width:100%;
     height: 500px;
@@ -513,35 +523,33 @@ main .contact .container{
 }
 .e-gift .e-gift-inner{
     width: 100%;
-    height: 600px;
-    background: linear-gradient(90deg, var(--color-menu-legend) 50%, #FFFFFF 50%);
-    display: flex;
-    align-items: center;
+    background-color: var(--color-white);
 }
 .e-gift .box-inner {
-    height: 100%;
+    height: 270px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
 }
 .e-gift .box-image{
     position: relative;
     width: 100%;
-    height: 500px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .e-gift .box-image .image-e-gift{
-    position: absolute;
-    right: 0;
     width: 500px;
     max-width:100%;
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 50%;
+    background-position: 45% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider{
@@ -556,7 +564,7 @@ main .contact .container{
 
 .contact h2 {
     font-weight: bold;
-    color: #000000;
+    color: var(--color-text-theme);
     text-transform: uppercase;
     font-size: 1.6em;
     line-height: 2;
@@ -566,6 +574,7 @@ main .contact .container{
     font-family: "Parisienne";
     font-size: 2.5em;
     line-height: 2;
+    color: var(--color-text-theme);
 }
 .contact .btn-more, .e-gift .btn-more, .business .btn-more, .beauty-spa .btn-more, .about-us .btn-more{
     background-color: #fff !important;
@@ -590,8 +599,12 @@ main .contact .container{
     background-size: cover !important;
 }
 .contact .bg-contact .overlay{
-    background-color: #FFFFFF;
-    opacity:.5;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .contact .bg-contact .container{
     position: relative;
@@ -599,14 +612,17 @@ main .contact .container{
 .contact-images{
     position: relative;
     width: 100%;
-    height: 301px;
+    height: 310px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
+    padding: var(--padding-box);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4{
-    height: 301px;
+    height: 300px;
 }
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);

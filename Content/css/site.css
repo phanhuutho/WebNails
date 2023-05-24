@@ -6,6 +6,8 @@
     --color-black: #000000;
     --color-white: #FFFFFF;
     --color-text-theme: #377700;
+    --box-shadow: 0px 0px 10px #000000;
+    --padding-box: 5px;
 }
 body {
     background: var(--bg-site);
