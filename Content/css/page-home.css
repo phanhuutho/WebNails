@@ -68,7 +68,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 40%;
+    background-position: 30% 70%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 10% 25%;
+    background-position: 60% 95%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -565,9 +565,9 @@ main .contact .container{
 .contact h2 {
     font-weight: bold;
     color: var(--color-text-theme);
-    text-transform: uppercase;
-    font-size: 1.6em;
+    font-size: 2.5em;
     line-height: 2;
+    font-family: "Parisienne";
 }
 .e-gift h2, .business h2 {
     font-weight: bold;
