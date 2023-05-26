@@ -627,7 +627,7 @@ main .contact .container{
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover !important;
 }
 
@@ -641,7 +641,7 @@ main .contact .container{
 .contact-images .image3{
     background-image: url(../images/home/home_contact_image_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 65%;
     background-size: cover !important;
 }
 
