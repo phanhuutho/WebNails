@@ -30,7 +30,14 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="logo py-3">
-                        <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                        @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
+                        {
+                            <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                        }
+                        else
+                        {
+                            <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
+                        }
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -42,7 +49,14 @@
                         </div>
                         <div class="logo-brand">
                             <a class="navbar-brand" href="javascript:void(0)">
-                                <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                                @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
+                                {
+                                    <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                                }
+                                else
+                                {
+                                    <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
+                                }
                             </a>
                         </div>
                     </div>
@@ -121,7 +135,14 @@
         <div class="container pt-4">
             <div class="row">
                 <div class="col-lg-3 mb-3 text-md-center">
-                    <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                    @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
+                    {
+                        <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                    }
+                    else
+                    {
+                        <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
+                    }
                 </div>
                 <div class="col-lg-3 mb-3">
                     <p class="legend"><strong>CONTACT US:</strong></p>
@@ -178,9 +199,16 @@
         </div>
     </footer>
     <!--Footer-->
-    <div class="tel">
+    <div class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "tel-withtext" : "tel")">
         <a href="@ViewBag.HyperLinkTell">
-            <i class="fa fa-phone-square"></i> @ViewBag.TextTell
+            @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+            {
+                <i class="fa fa-phone-square"></i> @ViewBag.TextTell
+            }
+            else
+            {
+                <i class="fa fa-phone"></i>
+            }
         </a>
     </div>
     @if (ViewBag.LinkBookingAppointment != null && ViewBag.LinkBookingAppointment != "")

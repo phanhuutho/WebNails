@@ -16,7 +16,8 @@ namespace WebNails.Controllers
             var dataInfo = JsonConvert.DeserializeObject<InfoModel>(jsonText);
             ViewBag.HyperLinkTell = dataInfo.HyperLinkTell;
             ViewBag.TextTell = dataInfo.TextTell;
-            ViewBag.LinkBookingAppointment = dataInfo.LinkBookingAppointment;
+            ViewBag.Logo = dataInfo.Logo ?? "";
+            ViewBag.LinkBookingAppointment = dataInfo.LinkBookingAppointment ?? "";
             ViewBag.Name = dataInfo.Name;
             ViewBag.Address = dataInfo.Address;
             ViewBag.GooglePlus = dataInfo.GooglePlus;
@@ -24,6 +25,7 @@ namespace WebNails.Controllers
             ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
             ViewBag.ShowCoupon = dataInfo.ShowCoupon;
             ViewBag.Coupons = dataInfo.Coupons ?? new List<CouponModel>();
+            ViewBag.Prices = dataInfo.Prices ?? new List<PricesModel>();
             ViewBag.Telegram = dataInfo.Telegram ?? new SocialModel();
             ViewBag.Facebook = dataInfo.Facebook ?? new SocialModel();
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
