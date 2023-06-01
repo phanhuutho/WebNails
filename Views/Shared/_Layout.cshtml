@@ -49,7 +49,14 @@
                         </div>
                         <div class="logo-brand">
                             <a class="navbar-brand" href="javascript:void(0)">
-                                <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                                @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
+                                {
+                                    <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                                }
+                                else
+                                {
+                                    <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
+                                }
                             </a>
                         </div>
                     </div>
