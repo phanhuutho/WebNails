@@ -133,7 +133,9 @@
                                 <h2>Business Hour</h2>
                                 <div class="divider mb-3"></div>
                                 @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
-                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@ViewBag.HyperLinkTell" target="_blank">call us <i class="fa fa-phone"></i></a>
+                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                                    @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us") <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -210,31 +212,29 @@
     </section>
 </main>
 @section modal{
-    @{
-        if (showCoupon && Coupons.Count > 0)
-        {
-            var index = 1;
-            <div class="modal fade" id="ModalCoupon" tabindex="-1" aria-labelledby="ModalCouponLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="slider-coupon">
-                                @foreach(var item in Coupons)
-                                {
-                                    <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
-                                        <img src="@item.Src" class="img-fluid" />
-                                    </div>
-                                    index++;
-                                }
-                            </div>
+    @if (showCoupon && Coupons.Count > 0)
+    {
+        var index = 1;
+        <div class="modal fade" id="ModalCoupon" tabindex="-1" aria-labelledby="ModalCouponLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="slider-coupon">
+                            @foreach (var item in Coupons)
+                            {
+                                <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
+                                    <img src="@item.Src" class="img-fluid" />
+                                </div>
+                                index++;
+                            }
                         </div>
                     </div>
                 </div>
             </div>
-        }
+        </div>
     }
 }
 @section scripts{
@@ -267,9 +267,9 @@
                 sliderInit.slick('slickPlay');
             });
 
-            @{ 
-                if (showCoupon && Coupons.Count > 0) 
-                { 
+            @{
+                if (showCoupon && Coupons.Count > 0)
+                {
                     <text>
                     $("#ModalCoupon").modal("show");
 
@@ -296,7 +296,7 @@
                     </text>
                 }
             }
-            
+
         });
     </script>
 }

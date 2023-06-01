@@ -1,5 +1,7 @@
 ﻿@{
     ViewBag.Title = "Price List";
+    var Prices = (List<WebNails.Models.PricesModel>)ViewBag.Prices;
+    Prices = Prices.Where(x => !string.IsNullOrEmpty(x.Src) && x.Status).ToList();
 }
 @section css{
     <link href="~/Content/css/page-prices.css" rel="stylesheet">
@@ -9,12 +11,24 @@
     <div class="page-main">
         <section class="py-2 container">
             <div class="row">
-                <div class="col-lg-12 py-2">
-                    <img class="img-fluid" src="~/Content/images/price-list/Flower-Mound-01.jpg" alt="" />
-                </div>
-                <div class="col-lg-12 py-2">
-                    <img class="img-fluid" src="~/Content/images/price-list/Flower-Mound-02.jpg" alt="" />
-                </div>
+                @if (Prices.Count > 0)
+                {
+                    foreach (var item in Prices)
+                    {
+                        <div class="col-lg-12 py-2">
+                            <img class="img-fluid" src="@item.Src" alt="" />
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-lg-12 py-2">
+                        <img class="img-fluid" src="~/Content/images/price-list/Flower-Mound-01.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-12 py-2">
+                        <img class="img-fluid" src="~/Content/images/price-list/Flower-Mound-02.jpg" alt="" />
+                    </div>
+                }
             </div>
         </section>
     </div>

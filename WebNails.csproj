@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
