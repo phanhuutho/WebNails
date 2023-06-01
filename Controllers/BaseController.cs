@@ -17,12 +17,15 @@ namespace WebNails.Controllers
             ViewBag.HyperLinkTell = dataInfo.HyperLinkTell;
             ViewBag.TextTell = dataInfo.TextTell;
             ViewBag.Name = dataInfo.Name;
+            ViewBag.Logo = dataInfo.Logo ?? "";
+            ViewBag.LinkBookingAppointment = dataInfo.LinkBookingAppointment ?? "";
             ViewBag.Address = dataInfo.Address;
             ViewBag.GooglePlus = dataInfo.GooglePlus;
             ViewBag.LinkGoogleMapAddress = dataInfo.LinkGoogleMapAddress;
             ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
             ViewBag.ShowCoupon = dataInfo.ShowCoupon;
             ViewBag.Coupons = dataInfo.Coupons ?? new List<CouponModel>();
+            ViewBag.Prices = dataInfo.Prices ?? new List<PricesModel>();
             ViewBag.Telegram = dataInfo.Telegram ?? new SocialModel();
             ViewBag.Facebook = dataInfo.Facebook ?? new SocialModel();
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();

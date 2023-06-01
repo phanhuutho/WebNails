@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -236,7 +237,6 @@
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\popup\Coupon.jpg" />
-    <Content Include="Content\images\popup\Coupon2.jpg" />
     <Content Include="Content\images\price-list\Flower-Mound-01.jpg" />
     <Content Include="Content\images\price-list\Flower-Mound-02.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpeg" />
