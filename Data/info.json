@@ -1,18 +1,14 @@
 {
-  "Name": "Tips & Toes Wichita KS",
-  "HyperLinkTell": "tel:(316)6123000",
-  "TextTell": "(316)-612-3000",
-  "GooglePlus": "https://www.google.com/search?q=tips+and+toes+wichita+67206",
-  "Address": "8340 E 21st St N #800, Wichita, KS 67206",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/kHeS5Tyk7o64KfYA9?coh=178572&entry=tt",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12623.279304321239!2d-97.2401188!3d37.7239068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bafd19b825ac6b%3A0xc62f8aa57e876e3!2sTips%20%26%20Toes%20Wichita%20KS!5e0!3m2!1svi!2s!4v1684914578420!5m2!1svi!2s",
+  "Name": "Pamper Nail Spa",
+  "HyperLinkTell": "tel:(845)6749787",
+  "TextTell": "(845)-674-9787",
+  "GooglePlus": "https://www.google.com/search?q=Pamper+Nail+Spa+12553",
+  "Address": "317 Windsor Hwy suite #300, New Windsor, NY 12553",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/5KmYcDor47cQaSR3A",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.863342759992!2d-74.0506278!3d41.4638792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd2dc7eaca2c87%3A0xbaf95f81bd963871!2sPamper%20Nail%20Spa!5e0!3m2!1svi!2s!4v1685699177558!5m2!1svi!2s",
   "ShowCoupon": false,
-  "Coupons": [
-    {
-      "Status": false,
-      "Src": "/Content/images/popup/Coupon.jpg"
-    }
-  ],
+  "Coupons": [],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

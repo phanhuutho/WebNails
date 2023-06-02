@@ -1,21 +1,25 @@
-﻿<p>Welcome to Tips & Toes Wichita KS in 8340 E 21st St N #800, Wichita, KS 67206, 
-we are more than just a conventional nail salon, we are the place where you can come and escape from your everyday stress and busy lifestyle, 
-clients could enjoy the luxurious and comfortable atmosphere at affordable prices!  </p>
+﻿<p>Welcome to Pamper Nail Spa in New Windsor, NY 12553.  
+We are more than just a conventional nail salon. 
+We are the place where you can come and escape from your everyday stress and busy lifestyle, clients could enjoy the luxurious and comfortable atmosphere at affordable prices!</p>
 
 <p>Come and relax in our bright and sweet space with modern equipment. 
-We pride ourselves in providing our customer with fabulously indulgent nail care while maintaining the highest level of cleanliness and sterilization.  </p>
+We pride ourselves in providing our customer with fabulously indulgent nail care while maintaining the highest level of cleanliness and sterilization.</p>
 
 <p>Our manicurists are here to ensure that you always have a positive and high quality experience. 
 We are always up to date with the latest trends and techniques. 
-We sterilize all the tools and equipment after every use to ensure sanitation because your safety is one of our top priorities.  </p>
+We sterilize all the tools and equipment after every use to ensure sanitation because your safety is one of our top priorities.</p>
 
-<p>Come to visit to Vogue Nails to experience the difference!</p>
+<p>Come to visit to  Pamper Nail Spa to experience the difference!</p>
 <p>
-    <span>Nail salons near me</span>
+    <spanNails salons near me</span>
     <br>
-    <span>Nails spa near me</span>
+    <span>Nail spa near me</span>
     <br>
-    <span>Nails salon </span>
+    <span>Nail salon 12553</span>
     <br>
-    <span>Nails spa</span>
+    <span>Nails spa 12553</span>
+    <br>
+    <span>Nails salon New Windsor</span>
+    <br>
+    <span>Nails spa New Windsor</span>
 </p>
