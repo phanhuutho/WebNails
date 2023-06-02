@@ -15,9 +15,10 @@ body {
 main{
     overflow-x:hidden;
 }
-header, main .container{
-
+header {
+    background: var(--color-white);
 }
+
 a:active,a:hover {
     outline-width: 0
 }
