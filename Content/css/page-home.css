@@ -68,7 +68,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 70%;
+    background-position: 10% 75%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 25%;
+    background-position: 40% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@ main .contact .container{
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 85%;
+    background-position: 50% 30%;
     background-size: cover !important;
     display: flex;
     align-items: center;
