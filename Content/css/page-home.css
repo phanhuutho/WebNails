@@ -281,7 +281,7 @@ main .contact .container{
     background-color: var(--color-theme);
     background-image: url(../images/home/home_about_us_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 45%;
+    background-position: 50% 25%;
     background-size: cover !important;
     min-height: 600px;
     position: relative;
@@ -342,7 +342,7 @@ main .contact .container{
     height: 450px;
     background-image: url(../images/home/home_about_us.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 70% 50%;
     background-size: cover !important;
 }
 .beauty-spa {
@@ -390,14 +390,14 @@ main .contact .container{
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 50%;
+    background-position: 30% 80%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 80%;
     background-size: cover !important;
 }
 
@@ -627,7 +627,7 @@ main .contact .container{
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 30%;
+    background-position: 50% 70%;
     background-size: cover !important;
 }
 
@@ -641,14 +641,14 @@ main .contact .container{
 .contact-images .image3{
     background-image: url(../images/home/home_contact_image_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 65%;
+    background-position: 50% 20%;
     background-size: cover !important;
 }
 
 .contact-images .image4{
     background-image: url(../images/home/home_contact_image_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 60%;
     background-size: cover !important;
 }
 .map {
