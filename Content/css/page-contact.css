@@ -75,20 +75,20 @@
     background-image: url(../images/contact/contact_image_1.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 35% 50%;
+    background-position: 10% 50%;
     height: 400px;
 }
 .bg-contact-2 {
     background-image: url(../images/contact/contact_image_2.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 60% 50%;
     height: 400px;
 }
 .bg-contact-3 {
     background-image: url(../images/contact/contact_image_3.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 80% 50%;
     height: 400px;
 }
