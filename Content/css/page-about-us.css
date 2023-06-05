@@ -1,13 +1,14 @@
 .page-main.container {
     position: relative;
     font-family: "Vesper Libre";
+    color: var(--color-black);
 }
 .page-main h1 {
     font-size: 250%;
-    color: var(--bg-site);
+    color: var(--color-black);
 }
 .page-main h1 span{
     padding-bottom: 25px;
-    border-bottom: 2px solid var(--bg-site);
+    border-bottom: 2px solid var(--color-black);
     font-weight: 900;
 }

@@ -1,12 +1,17 @@
 main {
     background-color: var(--color-menu-legend);
 }
+.page-main {
+    position: relative;
+}
 .box-image {
     position: relative;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 50%;
+    padding: var(--padding-box);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
 }
 .box-image img {
     max-width: 100%;
@@ -24,5 +29,8 @@ main {
     line-height: 1.3;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
-    color: var(--bg-site);
+    color: var(--color-black);
+}
+.divider {
+    background-color: var(--color-black);
 }

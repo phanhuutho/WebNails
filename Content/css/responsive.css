@@ -12,8 +12,9 @@
     .menu-desktop{
         display: none;
     }
-    .menu-mobile-tablet{
+    .menu-mobile-tablet {
         position: relative;
+        padding-bottom: 15px;
     }
     .menu-mobile-tablet .menu-bars{
         position: absolute;
@@ -48,35 +49,32 @@
     .btn-call{
         padding: 10px 15px 10px 15px;
     }
-    
-    .about-us .box-inner{
-        padding-left: 15px;
-        padding-right: 15px;
+
+    .about-us .box-image .box-inner {
+        width: 100% !important;
     }
     .about-us .box-image, .about-us .box-image .image-about-us{
         height: 500px;
-        margin-top: 10px;
     }
     .about-us .box-image .image-about-us{
-        right: 0;
+        width: 100%;
     }
     .about-us .about-us-inner{
-        height: 500px;
+        height: 350px;
         align-items: center;
         justify-content: center;
     }
     .beauty-spa .beauty-spa-inner{
-        height: 580px;
+
     }
     .beauty-spa .beauty-spa-inner:before{
         top: 32.5%;
     }
     .beauty-spa .box-image{
-        padding-left: 0;
-        padding-right: 0;
+
     }
     .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
-        height: 280px;
+
     }
     .beauty-spa .box-image h2{
         font-size: 1.2em;
@@ -88,14 +86,13 @@
         align-items:unset;
         height:auto;
     }
-    .business .business-inner .box-inner{
-        padding-top: 10%;
-        margin-right:0;
+    .business .business-inner .box-inner {
+        padding-top: 15px;
+        margin-right: 0;
         background: #FFFFFF;
-        padding-bottom: 10%;
+        padding-bottom: 15px;
     }
     .business .business-inner .box-image{
-        margin: 25px auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -103,6 +100,7 @@
     .business .business-inner .box-image .image-business
     {
         position:relative;
+        width: 100%;
     }
     .e-gift .e-gift-inner{
         background: none;
@@ -115,12 +113,12 @@
     }
     .e-gift .box-inner {
         height: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 15px;
+        padding-bottom: 15px;
         background: #FFFFFF;
     }
     .e-gift .box-image .image-e-gift {
-        background-position: 88% 50%;
+        width: 100%;
     }
     .line-bottom{
         display: none;
@@ -128,6 +126,10 @@
     .contact .bg-contact {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .gallery {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 @media (max-width: 767px) {
@@ -152,23 +154,23 @@
     }
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
-        height: 550px;
-        background-position: 25% 35%;
+        height: 700px;
+        background-position: 55% 35%;
     }
     .slider-home, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-2 .box-image .image{
-        height: 550px;
+        height: 700px;
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image{
-        height: 550px;
+        height: 700px;
     }
     .slider-home, .slider-home .sliders .slider-4 .box-image, .slider-home .sliders .slider-5 .box-image{
-        height: 550px;
+        height: 700px;
     }
     .slider-home .sliders .slider-4 .box-image .container, .slider-home .sliders .slider-5 .box-image .container{
-        height: 550px;
+        height: 700px;
     }
     .slider-home .sliders .slider-4 .box-image .image{
-        background-position: 0% 25%;
+
     }
     .slider-home .sliders .slider-4 .box-inner, .slider-home .sliders .slider-5 .box-inner{
         height: auto;
@@ -227,11 +229,9 @@
         font-size: 14px;
     }
 
-    .about-us .box-inner {
-        padding-right: 6px !important;
-    }
-    .about-us .box-inner{
-        padding-left: 0;
+    .about-us .box-image .box-inner {
+        max-width: 100%;
+        width: 100%;
     }
     .about-us .box-inner h1{
         font-size: 4.2em;
@@ -286,20 +286,19 @@
         justify-content: center !important;
     }
     .business .business-inner .box-image .image-business{
-        background-position: 90% 70%;
+        background-position: 60% 70%;
     }
     .business .business-inner .box-inner{
-        margin-left: -15px;
-        margin-right: -15px;
+
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 45% 50%;
+        background-position: 55% 50%;
     }
     .slider-banner .slider-2 .box-slider .image {
         background-position: 40% 50%;
     }
     .slider-banner .slider-4 .box-slider .image {
-        background-position: 5% 50%;
+
     }
     .bg-contact .description {
         font-size: 140%;

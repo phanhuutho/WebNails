@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -168,12 +169,7 @@
     <Content Include="Content\fonts\slick.svg" />
     <Content Include="Content\images\about-us\about-us_bg.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
-    <Content Include="Content\images\banner\7-scaled.jpeg" />
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
-    <Content Include="Content\images\banner\female-hands-with-beautiful-manicure-chrysanthemum-flowers-scaled.jpeg" />
-    <Content Include="Content\images\banner\female-hands-with-beautiful-manicure-chrysanthemum-flowers6-scaled.jpeg" />
-    <Content Include="Content\images\banner\girl-s-hands-with-delicate-purple-manicure-orchid-flowers-scaled.jpg" />
-    <Content Include="Content\images\banner\hands-woman-with-pink-manicure-nails-pink-flowers-scaled.jpg" />
     <Content Include="Content\images\banner\home\home_banner_1.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
@@ -191,10 +187,10 @@
     <Content Include="Content\images\banner\slider\manicure.jpg" />
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
-    <Content Include="Content\images\banner\woman-hands-with-beautiful-rose-petals-towel-close-up-scaled.jpg" />
     <Content Include="Content\images\contact\contact_image_1.jpg" />
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
+    <Content Include="Content\images\contact\service_bg.jpg" />
     <Content Include="Content\images\dots.png" />
     <Content Include="Content\images\e-gift\gift_1.jpg" />
     <Content Include="Content\images\e-gift\gift_10.jpg" />
@@ -210,10 +206,10 @@
     <Content Include="Content\images\e-gift\gift_7.jpg" />
     <Content Include="Content\images\e-gift\gift_8.jpg" />
     <Content Include="Content\images\e-gift\gift_9.jpg" />
+    <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
-    <Content Include="Content\images\home\beautiful-woman-hands-with-cream-scaled.jpg" />
-    <Content Include="Content\images\home\female-hand-with-white-dandelion-nail-design-scaled.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
+    <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpeg" />
     <Content Include="Content\images\home\home_business.jpg" />
     <Content Include="Content\images\home\home_contact_bg.jpg" />
@@ -221,6 +217,10 @@
     <Content Include="Content\images\home\home_contact_image_2.jpg" />
     <Content Include="Content\images\home\home_contact_image_3.jpg" />
     <Content Include="Content\images\home\home_contact_image_4.jpg" />
+    <Content Include="Content\images\home\home_contact_image_5.jpg" />
+    <Content Include="Content\images\home\home_contact_image_6.jpg" />
+    <Content Include="Content\images\home\home_contact_image_7.jpg" />
+    <Content Include="Content\images\home\home_contact_image_8.jpg" />
     <Content Include="Content\images\home\home_e_gift.jpeg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
     <Content Include="Content\images\home\home_e_gift.png" />
@@ -230,30 +230,22 @@
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
-    <Content Include="Content\images\home\manicure-female-hands-with-pink-gypsophila-flowers-gel-polish-beige-long-nails-white-background-scaled.jpg" />
     <Content Include="Content\images\icon1-01-300x300.png" />
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\popup\Coupon.jpg" />
-    <Content Include="Content\images\popup\Coupon2.jpg" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
-    <Content Include="Content\images\price-list\Hi-Demand-01.jpg" />
-    <Content Include="Content\images\price-list\Hi-Demand-02.jpg" />
-    <Content Include="Content\images\services\services_additional_services.jpeg" />
+    <Content Include="Content\images\price-list\voguenail-01.jpg" />
+    <Content Include="Content\images\price-list\voguenail-02.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
-    <Content Include="Content\images\services\services_dip_powder_nails.jpeg" />
+    <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
-    <Content Include="Content\images\services\services_eyelash_extension.jpeg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
-    <Content Include="Content\images\services\services_gel_polish.jpeg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
-    <Content Include="Content\images\services\services_manicure.png" />
-    <Content Include="Content\images\services\services_nails_enhancements.jpeg" />
     <Content Include="Content\images\services\services_nails_enhancements.jpg" />
-    <Content Include="Content\images\services\services_pedicure.jpeg" />
     <Content Include="Content\images\services\services_pedicure.jpg" />
     <Content Include="Content\images\services\services_waxing.jpg" />
     <Content Include="Content\js\bootstrap.bundle.js" />
@@ -339,6 +331,16 @@
     <Content Include="Views\Home\_SliderHome_1.cshtml" />
     <Content Include="Views\Home\_SliderHome_2.cshtml" />
     <Content Include="Views\Home\_SliderPageSub.cshtml" />
+    <Content Include="Views\Home\_Home_About_Us_1.cshtml" />
+    <Content Include="Views\Home\_Home_Beauty_Spa_1.cshtml" />
+    <Content Include="Views\Home\_Home_Services_1.cshtml" />
+    <Content Include="Views\Home\_Home_Business_Gift_1.cshtml" />
+    <Content Include="Views\Home\_Home_Contact_1.cshtml" />
+    <Content Include="Views\Home\_Home_Map_1.cshtml" />
+    <Content Include="Views\Home\_Contact_Address_1.cshtml" />
+    <Content Include="Views\Home\_Contact_Gallery_1.cshtml" />
+    <Content Include="Views\Home\_Home_Beauty_Spa_2.cshtml" />
+    <Content Include="Views\Home\_Home_Contact_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
