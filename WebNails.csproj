@@ -217,6 +217,10 @@
     <Content Include="Content\images\home\home_contact_image_2.jpg" />
     <Content Include="Content\images\home\home_contact_image_3.jpg" />
     <Content Include="Content\images\home\home_contact_image_4.jpg" />
+    <Content Include="Content\images\home\home_contact_image_5.jpg" />
+    <Content Include="Content\images\home\home_contact_image_6.jpg" />
+    <Content Include="Content\images\home\home_contact_image_7.jpg" />
+    <Content Include="Content\images\home\home_contact_image_8.jpg" />
     <Content Include="Content\images\home\home_e_gift.jpeg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
     <Content Include="Content\images\home\home_e_gift.png" />
@@ -327,6 +331,16 @@
     <Content Include="Views\Home\_SliderHome_1.cshtml" />
     <Content Include="Views\Home\_SliderHome_2.cshtml" />
     <Content Include="Views\Home\_SliderPageSub.cshtml" />
+    <Content Include="Views\Home\_Home_About_Us_1.cshtml" />
+    <Content Include="Views\Home\_Home_Beauty_Spa_1.cshtml" />
+    <Content Include="Views\Home\_Home_Services_1.cshtml" />
+    <Content Include="Views\Home\_Home_Business_Gift_1.cshtml" />
+    <Content Include="Views\Home\_Home_Contact_1.cshtml" />
+    <Content Include="Views\Home\_Home_Map_1.cshtml" />
+    <Content Include="Views\Home\_Contact_Address_1.cshtml" />
+    <Content Include="Views\Home\_Contact_Gallery_1.cshtml" />
+    <Content Include="Views\Home\_Home_Beauty_Spa_2.cshtml" />
+    <Content Include="Views\Home\_Home_Contact_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

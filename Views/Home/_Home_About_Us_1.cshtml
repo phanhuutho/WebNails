@@ -1,0 +1,24 @@
+﻿<section class="about-us">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 order-lg-1 order-2 py-3">
+                <div class="about-us-inner">
+                    <div class="box-inner">
+                        <h1>About Us</h1>
+                        <div class="divider mb-3"></div>
+                        @Html.Raw(string.Format("{0}", ViewBag.HomeAboutUs))
+                        <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 py-5">
+                <div class="box-image">
+                    <div class="box-inner">
+                        <div class="image-about-us"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

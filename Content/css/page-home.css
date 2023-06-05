@@ -1,4 +1,4 @@
-main .contact .container{
+﻿main .contact .container{
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -319,6 +319,9 @@ main .contact .container{
     font-family: "Vesper Libre";
     padding-bottom: 15px;
 }
+.about-us .box-inner .divider{
+    margin-left: 0;
+}
 .about-us .box-image{
     width: 100%;
     height: 750px;
@@ -357,16 +360,27 @@ main .contact .container{
     width: 100%;
     height: 160px;
     top: 42.5%;
+    display: none;
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
     font-family: "Parisienne"; 
     color: var(--color-text-theme);
 }
-.beauty-spa .beauty-spa-inner .box-inner h2{
-    font-size: 150%; 
+.beauty-spa .beauty-spa-inner .box-inner div{
+    margin-bottom: 1rem;
+}
+.beauty-spa .beauty-spa-inner .box-inner div span{
     color: var(--color-text-theme);
-    line-height: 2.5;
+    font-size: 110%; 
+}
+.beauty-spa .beauty-spa-inner .box-inner h2{
+    color: var(--color-text-theme);
+    font-weight: bold;
+    font-family: "Parisienne";
+    font-size: 2.0em;
+    line-height: 2;
+    text-transform: unset;
 }
 .beauty-spa .box-image{
     position: relative;
@@ -384,8 +398,6 @@ main .contact .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_pedicure.jpg);
@@ -418,8 +430,8 @@ main .contact .container{
     text-transform: uppercase;
     color: var(--color-text-theme);
     font-weight: bold;
-    font-size: 1.6em;
-    line-height: 40px;
+    font-size: 1.1em;
+    line-height: 20px;
 }
 
 .services{
@@ -552,8 +564,8 @@ main .contact .container{
     background-position: 45% 50%;
     background-size: cover !important;
 }
-.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider{
-    max-width:100px;
+.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
+    max-width: 350px;
     background-color: var(--color-text-theme);
 }
 .e-gift .line-bottom{
@@ -591,8 +603,8 @@ main .contact .container{
 }
 .contact .bg-contact {
     position: relative;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 30px;
+    padding-bottom: 60px;
     background-image: url(../images/home/home_contact_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -621,7 +633,7 @@ main .contact .container{
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
 }
-.contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4{
+.contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
     height: 300px;
 }
 .contact-images .image1{
@@ -649,6 +661,34 @@ main .contact .container{
     background-image: url(../images/home/home_contact_image_4.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 60%;
+    background-size: cover !important;
+}
+
+.contact-images .image5{
+    background-image: url(../images/home/home_contact_image_5.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.contact-images .image6{
+    background-image: url(../images/home/home_contact_image_6.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.contact-images .image7{
+    background-image: url(../images/home/home_contact_image_7.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.contact-images .image8{
+    background-image: url(../images/home/home_contact_image_8.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 .map {
