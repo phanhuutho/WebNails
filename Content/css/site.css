@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #fff6e0;
-    --color-theme: #b79335;
+    --bg-site: #f6ece2;
+    --color-theme: #cc674d;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #b79335;
+    --color-text-theme: #cc674d;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
 }
@@ -16,7 +16,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: var(--color-white);
+    background: var(--bg-site);
 }
 
 a:active,a:hover {
