@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 50%;
+    background-position: 52% 60%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 10% 75%;
+    background-position: 65% 80%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 40%;
+    background-position: 65% 65%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 30%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -160,14 +160,12 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #888888;
+    color: var(--color-theme);
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 20px;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #888888;
+    color: var(--color-theme);
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
@@ -281,7 +279,7 @@
     background-color: var(--color-theme);
     background-image: url(../images/home/home_about_us_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 25%;
+    background-position: 15% 50%;
     background-size: cover !important;
     min-height: 600px;
     position: relative;
@@ -345,7 +343,7 @@
     height: 450px;
     background-image: url(../images/home/home_about_us.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 50%;
+    background-position: 0% 50%;
     background-size: cover !important;
 }
 .beauty-spa {
@@ -378,7 +376,7 @@
     color: var(--color-text-theme);
     font-weight: bold;
     font-family: "Parisienne";
-    font-size: 2.0em;
+    font-size: 1.375em;
     line-height: 2;
     text-transform: unset;
 }
@@ -402,21 +400,21 @@
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 80%;
+    background-position: 25% 80%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 80%;
+    background-position: 50% 0%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
     background-image: url(../images/home/home_service_eyelash_extensions.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 60% 50%;
     background-size: cover !important;
 }
 
@@ -430,8 +428,8 @@
     text-transform: uppercase;
     color: var(--color-text-theme);
     font-weight: bold;
-    font-size: 1.1em;
-    line-height: 20px;
+    font-size: 1.5em;
+    line-height: 40px;
 }
 
 .services{
