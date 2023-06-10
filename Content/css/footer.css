@@ -4,6 +4,7 @@ footer {
     font-family: "PT Serif Caption";
     color: var(--color-black);
     background: var(--bg-site);
+    font-size: 15px;
 }
 footer .legend {
     color: var(--color-text-theme);

@@ -70,25 +70,27 @@
     padding: var(--padding-box);
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
+    max-width: 400px;
+    margin: 0 auto;
 }
 .bg-contact-1 {
     background-image: url(../images/contact/contact_image_1.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 10% 50%;
+    background-position: 70% 50%;
     height: 400px;
 }
 .bg-contact-2 {
     background-image: url(../images/contact/contact_image_2.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 60% 50%;
+    background-position: 50% 50%;
     height: 400px;
 }
 .bg-contact-3 {
     background-image: url(../images/contact/contact_image_3.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 80% 50%;
+    background-position: 50% 50%;
     height: 400px;
 }
