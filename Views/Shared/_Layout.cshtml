@@ -26,9 +26,9 @@
 <body>
     <!--Menu - Header-->
     <header>
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-md-2">
                     <div class="logo py-2">
                         @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                         {
@@ -40,7 +40,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-10">
                     <div class="menu-mobile-tablet">
                         <div class="menu-bars">
                             <button type="button">
@@ -85,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <div class="container pb-4">
+        <div class="container-lg pb-4">
             <div class="row">
                 <div class="col-md-12">
                     <div class="top-divider"></div>
@@ -132,9 +132,9 @@
     <!--Main-->
     <!--Footer-->
     <footer>
-        <div class="container pt-4">
+        <div class="container-lg pt-4">
             <div class="row">
-                <div class="col-lg-3 mb-3 text-center text-lg-start">
+                <div class="col-lg-3 col-md-12 mb-3 text-center text-lg-start">
                     @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                     {
                         <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
@@ -144,16 +144,16 @@
                         <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
                     }
                 </div>
-                <div class="col-lg-3 mb-3">
+                <div class="col-lg-3 col-md-4 mb-3">
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
                 </div>
-                <div class="col-lg-3 mb-3 px-lg-5">
+                <div class="col-lg-3 col-md-4 mb-3">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>
                     @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
                 </div>
-                <div class="col-lg-3 mb-3">
+                <div class="col-lg-3 col-md-4 mb-3">
                     <p class="legend"><strong>FOLLOW US:</strong></p>
                     <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
                         <div class="circle">

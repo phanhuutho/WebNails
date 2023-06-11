@@ -6,6 +6,104 @@
 
 }
 @media (max-width: 768px) {
+    .slider-banner .banner, .slider-banner .banner .banner-image{
+        height: 430px;
+    }
+    .slider-banner .banner .banner-detail .container{
+        height: 410px;
+    }
+    .slider-banner .banner .banner-detail .container .img-dot img{
+        height: 330px;
+    }
+    .slider-banner .banner .banner-detail .container .banner-title{
+        font-size: 225%;
+    }
+    .slider-banner .banner .banner-detail .container .banner-detail-first{
+        height: 130px;
+    }
+    .btn-call{
+        padding: 10px 15px 10px 15px;
+    }
+
+    .about-us .box-image .box-inner {
+        width: 100% !important;
+    }
+    .about-us .box-image, .about-us .box-image .image-about-us{
+
+    }
+    .about-us .box-image .image-about-us{
+        width: 100%;
+    }
+    .about-us .about-us-inner{
+        align-items: center;
+        justify-content: center;
+    }
+    .beauty-spa .beauty-spa-inner{
+
+    }
+    .beauty-spa .beauty-spa-inner:before{
+        top: 32.5%;
+    }
+    .beauty-spa .box-image{
+
+    }
+    .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
+
+    }
+    .beauty-spa .box-image h2{
+        font-size: 1.2em;
+    }
+    .business{
+    }
+    .business .business-inner{
+        align-items:unset;
+        height:auto;
+    }
+    .business .business-inner .box-inner {
+        padding-top: 15px;
+        margin-right: 0;
+        background: #FFFFFF;
+        padding-bottom: 15px;
+    }
+    .business .business-inner .box-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .business .business-inner .box-image .image-business
+    {
+        position:relative;
+        width: 100%;
+    }
+    .e-gift .e-gift-inner{
+        height: auto;
+    }
+    .e-gift .box-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .e-gift .box-inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: #FFFFFF;
+    }
+    .e-gift .box-image .image-e-gift {
+        width: 100%;
+    }
+    .line-bottom{
+        display: none;
+    }
+    .contact .bg-contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gallery {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 767px) {
     .logo img {
         display: none;
     }
@@ -31,108 +129,6 @@
     .menu-mobile-tablet .logo-brand{
         text-align: center;
     }
-    .slider-banner .banner, .slider-banner .banner .banner-image{
-        height: 430px;
-    }
-    .slider-banner .banner .banner-detail .container{
-        height: 410px;
-    }
-    .slider-banner .banner .banner-detail .container .img-dot img{
-        height: 330px;
-    }
-    .slider-banner .banner .banner-detail .container .banner-title{
-        font-size: 225%;
-    }
-    .slider-banner .banner .banner-detail .container .banner-detail-first{
-        height: 130px;
-    }
-    .btn-call{
-        padding: 10px 15px 10px 15px;
-    }
-
-    .about-us .box-image .box-inner {
-        width: 100% !important;
-    }
-    .about-us .box-image, .about-us .box-image .image-about-us{
-        height: 500px;
-    }
-    .about-us .box-image .image-about-us{
-        width: 100%;
-    }
-    .about-us .about-us-inner{
-        height: 350px;
-        align-items: center;
-        justify-content: center;
-    }
-    .beauty-spa .beauty-spa-inner{
-
-    }
-    .beauty-spa .beauty-spa-inner:before{
-        top: 32.5%;
-    }
-    .beauty-spa .box-image{
-
-    }
-    .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
-
-    }
-    .beauty-spa .box-image h2{
-        font-size: 1.2em;
-    }
-    .business{
-    }
-    .business .business-inner{
-        background:none;
-        align-items:unset;
-        height:auto;
-    }
-    .business .business-inner .box-inner {
-        padding-top: 15px;
-        margin-right: 0;
-        background: #FFFFFF;
-        padding-bottom: 15px;
-    }
-    .business .business-inner .box-image{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .business .business-inner .box-image .image-business
-    {
-        position:relative;
-        width: 100%;
-    }
-    .e-gift .e-gift-inner{
-        background: none;
-        height: auto;
-    }
-    .e-gift .box-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .e-gift .box-inner {
-        height: auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background: #FFFFFF;
-    }
-    .e-gift .box-image .image-e-gift {
-        width: 100%;
-    }
-    .line-bottom{
-        display: none;
-    }
-    .contact .bg-contact {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .gallery {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-@media (max-width: 767px) {
     .slider-banner .banner .banner-detail .container .img-dot img{
         height: 200px !important;
     }
@@ -155,7 +151,7 @@
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
         height: 700px;
-        background-position: 55% 35%;
+        background-position: 30% 50%;
     }
     .slider-home, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-2 .box-image .image{
         height: 700px;
@@ -266,11 +262,9 @@
         height: 250px;
     }
     .e-gift .box-image {
-        height: 380px;
     }
     .e-gift .box-image .image-e-gift {
         top: 0 !important;
-        height: 380px;
     }
     .services{
         height: 960px;
@@ -292,10 +286,10 @@
 
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 55% 50%;
+
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 40% 50%;
+
     }
     .slider-banner .slider-4 .box-slider .image {
 
@@ -304,7 +298,7 @@
         font-size: 140%;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .menu-mobile-tablet{
         display: none;
     }

@@ -48,9 +48,9 @@
     background-color: var(--color-theme);
     background-image: url(../images/e-gift/gift_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 0% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
-    min-height: 990px;
+    min-height: 850px;
 }
 .bg .bg-services {
     background-color: var(--color-theme);
