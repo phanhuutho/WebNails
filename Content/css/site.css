@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #f6ece2;
-    --color-theme: #cc674d;
+    --bg-site: #fff3ff;
+    --color-theme: #f38094;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #cc674d;
+    --color-text-theme: #f38094;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
 }
@@ -25,7 +25,7 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 80px;
+    max-width: 200px;
 }
 
 /*font*/

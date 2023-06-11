@@ -295,21 +295,25 @@
 .about-us .container-lg{
     position: relative;
 }
-.about-us .row{
+.about-us{
     min-height: 600px;
 }
 .about-us .about-us-inner{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
+}
+.about-us .box-inner-title{
+    text-align: justify;
+    width: 100%;
 }
 .about-us .box-inner{
     text-align: justify;
     width: 530px;
     max-width: 100%;
 }
-.about-us .box-inner h1{
+.about-us .box-inner h1, .about-us .box-inner-title h1{
     font-size: 5em; 
     font-family: "Parisienne"; 
     color: var(--color-text-theme);
@@ -320,7 +324,7 @@
     font-family: "Vesper Libre";
     padding-bottom: 15px;
 }
-.about-us .box-inner .divider{
+.about-us .box-inner .divider, .about-us .box-inner-title .divider{
     margin-left: 0;
 }
 .about-us .box-image{
@@ -568,7 +572,7 @@
     background-position: 45% 50%;
     background-size: cover !important;
 }
-.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
+.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider, .about-us .box-inner-title .divider{
     max-width: 350px;
     background-color: var(--color-text-theme);
 }

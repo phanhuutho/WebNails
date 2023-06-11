@@ -1,3 +1,42 @@
-﻿<p>Welcome to Focus Nails in 10611 Sheldon Rd, Tampa, FL 33626,
-we are more than just a conventional nail salon, we are the place where you can come and escape from your everyday stress and busy lifestyle, 
-clients could enjoy the luxurious and comfortable atmosphere at affordable prices!</p>
+﻿<div class="row">
+	<div class="col-12">
+		<div class="box-inner">
+			<p>Welcome to Focus Nails in 10611 Sheldon Rd, Tampa, FL 33626,
+			we are more than just a conventional nail salon, we are the place where you can come and escape from your everyday stress and busy lifestyle, 
+			clients could enjoy the luxurious and comfortable atmosphere at affordable prices!</p>
+			<p>Candle Nail Spa’s new vision is to serve your beauty need with Eco-Friendly and Toxin-Free environment and products as much as we can. We are proudly in partners with organic and natural brands like Farm House Fresh to bring you the best treatment and care for your body.			</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">REJUVENATE</h5>
+				<p class="card-text">
+					Whether you’re looking for a relaxing manicure or pedicure, a glamorous set of nail enhancements, or a soothing massage or facial, our skilled technicians are here to help you rejuvenate your body, mind, and spirit.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">CALM</h5>
+				<p class="card-text">
+					We believe that “CALM” is more than just a state of mind – it’s a feeling that we strive to create for each and every one of our clients. From the moment you step through our doors, our goal is to help you unwind, relax, and feel at peace.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">REVIVE</h5>
+				<p class="card-text">
+					We understand that self-care is important, and that’s why we’ve created a welcoming, relaxing environment where you can escape from the stresses of everyday life and focus on your own well-being.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
