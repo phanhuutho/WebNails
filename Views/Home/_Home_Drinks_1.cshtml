@@ -1,0 +1,19 @@
+﻿<section class="drinks">
+    <div class="bg-drinks">
+        <div class="overlay"></div>
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 pt-3 text-center">
+                    <div class="box-inner">
+                        <h2>Complimentary Drinks</h2>
+                        <div class="divider mb-3"></div>
+                        @Html.Raw(string.Format("{0}", ViewBag.HomeDrinks))
+                    </div>
+                    <div class="pt-3 text-center">
+                        <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

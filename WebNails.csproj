@@ -210,6 +210,9 @@
     <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
+    <Content Include="Content\images\home\home_about_us_calm.jpg" />
+    <Content Include="Content\images\home\home_about_us_rejuvenate.jpg" />
+    <Content Include="Content\images\home\home_about_us_revive.jpg" />
     <Content Include="Content\images\home\home_business.jpeg" />
     <Content Include="Content\images\home\home_business.jpg" />
     <Content Include="Content\images\home\home_contact_bg.jpg" />
@@ -262,6 +265,7 @@
     <Content Include="Data\about-us.txt" />
     <Content Include="Data\business-hours.txt" />
     <Content Include="Data\home-about-us.txt" />
+    <Content Include="Data\home-drinks.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -342,6 +346,7 @@
     <Content Include="Views\Home\_Home_Beauty_Spa_2.cshtml" />
     <Content Include="Views\Home\_Home_Contact_2.cshtml" />
     <Content Include="Views\Home\_Home_About_Us_2.cshtml" />
+    <Content Include="Views\Home\_Home_Drinks_1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

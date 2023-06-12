@@ -40,6 +40,9 @@ namespace WebNails.Controllers
 
             var txtAboutUs = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/about-us.txt"));
             ViewBag.AboutUs = txtAboutUs;
+
+            var txtHomeDrinks = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/home-drinks.txt"));
+            ViewBag.HomeDrinks = txtHomeDrinks;
         }
     }
 }
