@@ -1,108 +1,4 @@
 /*---------------- Responsive ---------------*/
-@media (min-width: 576px) {
-    
-}
-@media (min-width: 768px) {
-
-}
-@media (max-width: 768px) {
-    .slider-banner .banner, .slider-banner .banner .banner-image{
-        height: 430px;
-    }
-    .slider-banner .banner .banner-detail .container{
-        height: 410px;
-    }
-    .slider-banner .banner .banner-detail .container .img-dot img{
-        height: 330px;
-    }
-    .slider-banner .banner .banner-detail .container .banner-title{
-        font-size: 225%;
-    }
-    .slider-banner .banner .banner-detail .container .banner-detail-first{
-        height: 130px;
-    }
-    .btn-call{
-        padding: 10px 15px 10px 15px;
-    }
-
-    .about-us .box-image .box-inner {
-        width: 100% !important;
-    }
-    .about-us .box-image, .about-us .box-image .image-about-us{
-
-    }
-    .about-us .box-image .image-about-us{
-        width: 100%;
-    }
-    .about-us .about-us-inner{
-        align-items: center;
-        justify-content: center;
-    }
-    .beauty-spa .beauty-spa-inner{
-
-    }
-    .beauty-spa .beauty-spa-inner:before{
-        top: 32.5%;
-    }
-    .beauty-spa .box-image{
-
-    }
-    .beauty-spa .box-image, .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3{
-
-    }
-    .beauty-spa .box-image h2{
-        font-size: 1.2em;
-    }
-    .business{
-    }
-    .business .business-inner{
-        align-items:unset;
-        height:auto;
-    }
-    .business .business-inner .box-inner {
-        padding-top: 15px;
-        margin-right: 0;
-        background: #FFFFFF;
-        padding-bottom: 15px;
-    }
-    .business .business-inner .box-image{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .business .business-inner .box-image .image-business
-    {
-        position:relative;
-        width: 100%;
-    }
-    .e-gift .e-gift-inner{
-        height: auto;
-    }
-    .e-gift .box-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .e-gift .box-inner {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background: #FFFFFF;
-    }
-    .e-gift .box-image .image-e-gift {
-        width: 100%;
-    }
-    .line-bottom{
-        display: none;
-    }
-    .contact .bg-contact {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .gallery {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
 @media (max-width: 767px) {
     .logo img {
         display: none;
@@ -232,7 +128,10 @@
     .about-us .box-inner h1{
         font-size: 4.2em;
     }
-    .beauty-spa .beauty-spa-inner{
+    .about-us .card .card-text {
+        font-size: 18px;
+    }
+    .beauty-spa .beauty-spa-inner {
         height: auto;
     }
     .beauty-spa .beauty-spa-inner:before{
@@ -306,8 +205,10 @@
         display: none;
     }
 }
-@media (min-width: 992px) {
-
+@media (max-width: 991px) {
+    .about-us .card .card-body{
+        height: auto;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -317,13 +218,5 @@
 
 }
 @media (max-width: 1024px){
-    .about-us .box-inner{
 
-    }
-    .e-gift .box-inner{
-        justify-content: center;
-    }
-    .e-gift .box-image .image-e-gift{
-        position: relative;
-    }
 }

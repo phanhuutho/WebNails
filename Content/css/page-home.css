@@ -292,7 +292,7 @@
     width: 100%;
     height: 100%;
 }
-.about-us .container-lg{
+.about-us .container-xl{
     position: relative;
 }
 .about-us{
@@ -358,7 +358,7 @@
 }
 .about-us .card .card-body {
     position: relative;
-    height: 300px;
+    height: 260px;
 }
 .about-us .card .card-body .img-title{
     position: absolute;
@@ -491,26 +491,35 @@
     font-size: 1.25em;
     line-height: 40px;
 }
+.beauty-spa .beauty-spa-item:hover .box-image{
+    box-shadow: 0px 0px 10px #888888;
+    cursor: pointer;
+}
+.beauty-spa .beauty-spa-item:hover h2{
+    text-shadow: 0px 0px 2px #888888;
+    cursor: pointer;
+}
 
 .drinks{
     width: 100%;
-    height: 600px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
+    background: var(--color-white);
 }
 .drinks .bg-drinks{
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 360px;
     background-image: url(../images/home/home_drinks_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 0%;
+    background-position: 40% 0%;
     background-size: cover !important;
     display: flex;
     align-items: start;
     justify-content: center;
+    box-shadow: var(--box-shadow);
 }
 .drinks .bg-drinks .overlay {
     position: absolute;
@@ -525,7 +534,7 @@
 }
 .drinks .box-inner{
     padding: 5px 0px;
-    height: 280px;
+    height: 290px;
     width: 100%;
     color: var(--color-text-theme);
 }
@@ -539,15 +548,15 @@
 .drinks .box-inner li{
     font-family: "Vesper Libre";
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 40px;
     color: var(--color-text-theme);
 }
 .drinks .box-inner li:before{
     font: normal normal normal 14px/1 FontAwesome;
     content: "\f005";
-    padding-right: 5px;
-    font-size: 20px;
+    padding-right: 2px;
+    font-size: 14px;
 }
 .drinks .box-inner img{
     height: 85px;

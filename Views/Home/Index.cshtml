@@ -14,11 +14,11 @@
 <main>
     @{ Html.RenderPartial("_SliderHome_1"); }
     @{ Html.RenderPartial("_Home_About_Us_2"); }
-    @{ Html.RenderPartial("_Home_Drinks_1"); }
+    @{ Html.RenderPartial("_Home_Drinks_2"); }
     @{ Html.RenderPartial("_Home_Beauty_Spa_2"); }
     @{ Html.RenderPartial("_Home_Services_1"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
-    @{ Html.RenderPartial("_Home_Contact_2"); }
+    @{ Html.RenderPartial("_Home_Contact_3"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
 @section modal{
@@ -46,6 +46,18 @@
             </div>
         </div>
     }
+
+    <div class="modal fade" id="ModalService" tabindex="-1" aria-labelledby="ModalServiceLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
 }
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
@@ -106,7 +118,15 @@
                     </text>
                 }
             }
-            
+
+            $(".beauty-spa-item").on("click", function () {
+                var title = $(this).find("[data-title]").attr("data-title");
+                var description = $(this).find("[data-description]").attr("data-description");
+
+                $(".modal-title", "#ModalService").html(title);
+                $(".modal-body", "#ModalService").html(description);
+                $("#ModalService").modal("show");
+            });
         });
     </script>
 }

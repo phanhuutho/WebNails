@@ -73,7 +73,7 @@ a:active,a:hover {
 }
 .modal-content {
     border-width: 5px;
-    border-color: #000000;
+    border-color: var(--color-theme);
 }
 .left-10-percent{
     left:10%;
