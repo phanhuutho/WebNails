@@ -126,6 +126,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CouponModel.cs" />
+    <Compile Include="Models\GoogleClientSayModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
@@ -187,6 +188,11 @@
     <Content Include="Content\images\banner\slider\manicure.jpg" />
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
+    <Content Include="Content\images\brands-favorite\barbicide-logo.png" />
+    <Content Include="Content\images\brands-favorite\dazzle-dry-logo.png" />
+    <Content Include="Content\images\brands-favorite\essie-logo.png" />
+    <Content Include="Content\images\brands-favorite\farm-house-fresh-logo.png" />
+    <Content Include="Content\images\brands-favorite\opi-logo.png" />
     <Content Include="Content\images\contact\contact_image_1.jpg" />
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
@@ -208,6 +214,13 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\google-clients\google-client-1.png" />
+    <Content Include="Content\images\google-clients\google-client-2.png" />
+    <Content Include="Content\images\google-clients\google-client-3.png" />
+    <Content Include="Content\images\google-clients\google-client-4.png" />
+    <Content Include="Content\images\google-clients\google-client-5.png" />
+    <Content Include="Content\images\google-clients\google-client-6.png" />
+    <Content Include="Content\images\google-clients\google-client-7.png" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_about_us_calm.jpg" />
@@ -234,6 +247,7 @@
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
+    <Content Include="Content\images\icon-google.png" />
     <Content Include="Content\images\icon1-01-300x300.png" />
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
@@ -304,6 +318,7 @@
     <Content Include="Content\js\bootstrap.js.map" />
     <Content Include="Content\js\bootstrap.min.js.map" />
     <Content Include="Data\info.json" />
+    <Content Include="Data\home-google-clients.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -350,6 +365,7 @@
     <Content Include="Views\Home\_Home_Drinks_1.cshtml" />
     <Content Include="Views\Home\_Home_Drinks_2.cshtml" />
     <Content Include="Views\Home\_Home_Contact_3.cshtml" />
+    <Content Include="Views\Home\_Home_Google_Clients_1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

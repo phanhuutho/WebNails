@@ -43,6 +43,10 @@ namespace WebNails.Controllers
 
             var txtHomeDrinks = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/home-drinks.txt"));
             ViewBag.HomeDrinks = txtHomeDrinks;
+
+            var jsonGoogleClients = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/home-google-clients.json"));
+            var dataGoogleClients = JsonConvert.DeserializeObject<List<GoogleClientSayModel>>(jsonGoogleClients);
+            ViewBag.GoogleClients = dataGoogleClients;
         }
     }
 }

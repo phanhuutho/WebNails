@@ -18,6 +18,7 @@
     @{ Html.RenderPartial("_Home_Beauty_Spa_2"); }
     @{ Html.RenderPartial("_Home_Services_1"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
+    @{ Html.RenderPartial("_Home_Google_Clients_1"); }
     @{ Html.RenderPartial("_Home_Contact_3"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
@@ -127,6 +128,43 @@
                 $(".modal-body", "#ModalService").html(description);
                 $("#ModalService").modal("show");
             });
+
+
+            $('.slider-google-clients').slick({
+                dots: false,
+                infinite: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                draggable: false,
+                slidesToShow: 5,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                slidesToScroll: 1
+            });
         });
+
+        function readmore(obj) {
+            var dots = $(obj).parents(".card-text").find(".dots");
+            var moreText = $(obj).parents(".card-text").find(".more");
+            var btnText = $(obj).parents(".card-text").find(".btn-read-more");
+
+            if (dots.css('display') == 'none') {
+                dots.css('display', 'inline');
+                btnText.text("Read more");
+                moreText.css('display', 'none');
+            }
+            else {
+                dots.css('display', 'none');
+                btnText.text("Hide");
+                moreText.css('display', 'inline');
+            }
+
+            setTimeout(function () {
+                dots.css('display', 'inline');
+                btnText.text("Read more");
+                moreText.css('display', 'none');
+            }, 5000);
+        }
     </script>
 }

@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #fff3ff;
+    --bg-site: #fff9ff;
     --color-theme: #f38094;
     --color-menu-legend: #000000;
     --color-black: #000000;
@@ -82,4 +82,12 @@ a:active,a:hover {
 
 .text-justify{
     text-align: justify;
+}
+
+.more {
+    display: none;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--color-theme) !important;
 }

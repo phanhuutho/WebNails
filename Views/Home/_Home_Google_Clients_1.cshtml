@@ -1,0 +1,44 @@
+﻿@using WebNails.Models;
+
+<section class="google-client py-5">
+    <div class="bg-google-client">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center pb-5">
+                    <div class="box-inner">
+                        <div class="text-center">
+                            <h2>What our clients say on Google</h2>
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 py-3">
+                    <div class="slider-google-clients">
+                        @{
+                            var GoogleClients = (List<GoogleClientSayModel>)ViewBag.GoogleClients ?? new List<GoogleClientSayModel>();
+                            foreach (var item in GoogleClients.OrderBy(x => x.Position))
+                            {
+                                <div class="item-google-client mx-3">
+                                    <div class="card">
+                                        <div class="card-thumbnail text-center mt-3">
+                                            <img src="@item.Thumbnail" class="img-fluid" />
+                                            <span class="icon-google"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">@item.Title</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted text-center">@item.Date</h6>
+                                            <div class="card-text text-center">@Html.Raw(item.Comment)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

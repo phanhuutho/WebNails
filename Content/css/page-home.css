@@ -694,7 +694,7 @@
     background-position: 45% 50%;
     background-size: cover !important;
 }
-.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider, .about-us .box-inner-title .divider, .drinks .box-inner .divider{
+.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider, .about-us .box-inner-title .divider, .drinks .box-inner .divider, .google-client .box-inner .divider{
     max-width: 350px;
     background-color: var(--color-text-theme);
 }
@@ -703,19 +703,24 @@
     width: 100%;
     height: 160px;
 }
-
-.contact h2 {
+.contact .box-inner{
+    color: var(--color-text-theme);
+}
+.contact h2, .google-client h2 {
     font-weight: bold;
     color: var(--color-text-theme);
     font-size: 2.5em;
-    line-height: 2;
+    line-height: 2em;
     font-family: "Parisienne";
+}
+.contact h3 {
+    line-height: 3em;
 }
 .e-gift h2, .business h2 {
     font-weight: bold;
     font-family: "Parisienne";
     font-size: 2.5em;
-    line-height: 2;
+    line-height: 2em;
     color: var(--color-text-theme);
 }
 .contact .btn-more, .e-gift .btn-more, .business .btn-more, .beauty-spa .btn-more, .about-us .btn-more{
@@ -823,6 +828,45 @@
 }
 .map {
     background-color: var(--color-white);
+}
+
+.google-client .img-text {
+    width: 16px;
+    display: inline !important;
+}
+
+.google-client .card-body {
+    min-height: 250px;
+}
+.google-client .card {
+
+}
+.google-client .card-thumbnail {
+    position: relative;
+}
+.google-client .card-thumbnail img {
+    width: 64px;
+    height: 64px;
+    display: inline !important;
+}
+.google-client .card-thumbnail span {
+    position: absolute;
+    right: calc(50% - 31px);
+    bottom: 1px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-white);
+    background-image: url(../images/icon-google.png);
+    background-repeat: no-repeat !important;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+}
+.google-client .card-text p:first-child {
+    min-height: 120px;
+}
+.google-client .card-text p{
+    margin-bottom: 0;
 }
 
 @-webkit-keyframes dash {
