@@ -1,0 +1,36 @@
+﻿@model WebNails.Models.MessageModel
+
+<section class="container-lg">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Send a Message</h2>
+        </div>
+        <div class="col-md-12">
+            <form id="frmSendMessage">
+                <div class="mb-3">
+                    @Html.Label("YourName", "Your name", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.YourName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.YourName, "", new { @class = "error" })
+                </div>
+                <div class="mb-3">
+                    @Html.Label("YourEmail", "Your email", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.YourEmail, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.YourEmail, "", new { @class = "error" })
+                </div>
+                <div class="mb-3">
+                    @Html.Label("Subject", "Subject", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "error" })
+                </div>
+                <div class="mb-3">
+                    @Html.Label("YourMessage", "Your message", new { @class = "form-label" })
+                    @Html.EditorFor(model => model.YourMessage, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.YourMessage, "", new { @class = "error" })
+                </div>
+                <div class="mb-3 text-end">
+                    <button class="btn btn-danger" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

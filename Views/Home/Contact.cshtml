@@ -15,12 +15,42 @@
     </section>
     <div class="page-main">
         @{ Html.RenderPartial("_Contact_Address_1"); }
+        @{ Html.RenderPartial("_Contact_Message"); }
         @{ Html.RenderPartial("_Contact_Gallery_1"); }
     </div>
 </main>
 
 @section scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
     <script type="text/javascript">
         ActiveMenu("menu-contact");
+
+        $(document).ready(function () {
+            $("#frmSendMessage").validate({
+                rules: {
+                    YourName: "required",
+                    YourEmail: { required: true, email: true },
+                    Subject: "required",
+                    YourMessage: "required"
+                },
+                messages: {
+                    YourName: { required: "Require input Your name" },
+                    YourEmail: { required: "Require input Your email", email: "Invalid Your email" },
+                    Subject: { required: "Require Subject" },
+                    YourMessage: { required: "Require Your message" }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Home/Contact",
+                        data: $(form).serialize(),
+                        success: function (result) {
+
+                        },
+                    });
+                    return false;
+                }
+            });
+        })
     </script>
 }

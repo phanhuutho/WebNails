@@ -1,0 +1,11 @@
+﻿.page-main .box-inner {
+    padding: var(--padding-box);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    height: 350px;
+}
+.box-inner img {
+    object-fit: cover;
+    height: 340px;
+    width: 100%;
+}

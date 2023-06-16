@@ -16,7 +16,7 @@
     @{ Html.RenderPartial("_Home_About_Us_2"); }
     @{ Html.RenderPartial("_Home_Drinks_2"); }
     @{ Html.RenderPartial("_Home_Beauty_Spa_2"); }
-    @{ Html.RenderPartial("_Home_Services_1"); }
+    @{ Html.RenderPartial("_Home_Services_2"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
     @{ Html.RenderPartial("_Home_Google_Clients_1"); }
     @{ Html.RenderPartial("_Home_Contact_3"); }
@@ -140,7 +140,41 @@
                 slidesToShow: 5,
                 pauseOnFocus: false,
                 pauseOnHover: false,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1400,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
 

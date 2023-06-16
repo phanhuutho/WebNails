@@ -1,9 +1,9 @@
 {
-  "Name": "Focus Nails",
-  "HyperLinkTell": "tel:(813)9208400",
-  "TextTell": "(813)-920-8400",
+  "Name": "Candle Nails Spa",
+  "HyperLinkTell": "tel:(214)4846032",
+  "TextTell": "(214)-484-6032",
   "GooglePlus": "https://www.google.com/search?q=Focus+Nails+33626",
-  "Address": "10611 Sheldon Rd, Tampa, FL 33626",
+  "Address": "2918 Oak Lawn Ave, Dallas, TX 75219",
   "LinkGoogleMapAddress": "https://goo.gl/maps/BEsfH1BK2qbfg7PM8",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14085.297487130543!2d-82.581381!3d28.0451188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea6765c6f48f%3A0x86fecd31c973a87b!2sFocus%20Nails!5e0!3m2!1sen!2s!4v1686458883994!5m2!1sen!2s",
   "ShowCoupon": false,
@@ -18,14 +18,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/CandleNailSpaMassage",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/candlenailspa/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
@@ -43,5 +43,7 @@
     "Position": 5,
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
-  }
+  },
+  "LinkBookingAppointment": "https://www.scheduleanyone.com/CandleNailSpa/RequestAppointment",
+  "Email": "candlenail2918@gmail.com"
 }

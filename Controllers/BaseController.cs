@@ -44,9 +44,20 @@ namespace WebNails.Controllers
             var txtHomeDrinks = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/home-drinks.txt"));
             ViewBag.HomeDrinks = txtHomeDrinks;
 
+            //GoogleClients
             var jsonGoogleClients = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/home-google-clients.json"));
             var dataGoogleClients = JsonConvert.DeserializeObject<List<GoogleClientSayModel>>(jsonGoogleClients);
             ViewBag.GoogleClients = dataGoogleClients;
+
+            //Galleries
+            var jsonGalleries = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/galleries.json"));
+            var dataGalleries = JsonConvert.DeserializeObject<List<GalleryModel>>(jsonGalleries);
+            ViewBag.Galleries = dataGalleries;
+
+            //Other Phone
+            var jsonOtherPhone = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/other-phones.json"));
+            var dataOtherPhone = JsonConvert.DeserializeObject<List<PhoneModel>>(jsonOtherPhone);
+            ViewBag.OtherPhone = dataOtherPhone;
         }
     }
 }

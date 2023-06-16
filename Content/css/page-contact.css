@@ -94,3 +94,16 @@
     background-position: 50% 50%;
     height: 400px;
 }
+
+label.error {
+    color: #d9534f;
+    font-weight: bold;
+}
+label.form-label {
+    color: var(--color-text-theme);
+    font-weight: bold;
+}
+input.error {
+    outline: auto;
+    outline-color: darkred;
+}
