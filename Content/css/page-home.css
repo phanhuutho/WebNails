@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 52% 60%;
+    background-position: 35% 20%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 80%;
+    background-position: 65% 45%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 65%;
+    background-position: 50% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 80%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -160,42 +160,44 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
-    color: var(--color-theme);
+    color: var(--color-white);
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 20px;
-    color: var(--color-theme);
+    color: var(--color-white);
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 42px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
     font-size: 36px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 36px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 
 .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
-    color: #FFFFFF;
+    color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 48px;
 }
