@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<WebNails.Models.GalleryModel>
 @{
     ViewBag.Title = "Gallery";
+    var Instagram = (WebNails.Models.SocialModel)ViewBag.Instagram;
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -12,7 +13,7 @@
 <main>
     @{Html.RenderPartial("_SliderPageSub");}
     <div class="page-main container-lg">
-        <div class="row py-1 pb-4 gallery-list">
+        <div class="row py-5 pb-4 gallery-list">
             @{
                 foreach (var item in Model)
                 {
@@ -30,6 +31,10 @@
             <div class="col-12 text-center">
                 <input type="hidden" id="CountPage" name="CountPage" value="@(string.Format("{0}", ViewBag.CountPage))" />
                 <button class="btn btn-success btn-theme btn-none-border" id="btnLoadMore">Load More</button>
+                @if (!string.IsNullOrEmpty(Instagram.Url))
+                {
+                    <a class="btn btn-primary" href="@Instagram.Url" target="_blank"><i class="fa fa-instagram"></i> Follow on Instagram</a>
+                }
             </div>
         </div>
     </div>

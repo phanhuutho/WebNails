@@ -1,11 +1,11 @@
 {
-  "Name": "Candle Nails Spa",
+  "Name": "Candle Nails Spa & Massage",
   "HyperLinkTell": "tel:(214)4846032",
   "TextTell": "(214)-484-6032",
-  "GooglePlus": "https://www.google.com/search?q=Focus+Nails+33626",
+  "GooglePlus": "https://www.google.com/search?q=Candle+Nail+Spa+75219",
   "Address": "2918 Oak Lawn Ave, Dallas, TX 75219",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/BEsfH1BK2qbfg7PM8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14085.297487130543!2d-82.581381!3d28.0451188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea6765c6f48f%3A0x86fecd31c973a87b!2sFocus%20Nails!5e0!3m2!1sen!2s!4v1686458883994!5m2!1sen!2s",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/SkRfTmBgPX14TUdT6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13413.656621826785!2d-96.809414!3d32.8077898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9ecb95a87f4b%3A0xe114194ee4035fa3!2sCandle%20Nail%20Spa%20%26%20Massage%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1687113124450!5m2!1sen!2s",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -17,7 +17,32 @@
       "Src": "/Content/images/popup/coupon-2.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
