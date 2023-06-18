@@ -1,5 +1,13 @@
 ﻿@{
     ViewBag.Title = "E Gift";
+    var ListOtherPhone = (List<WebNails.Models.PhoneModel>)ViewBag.OtherPhone ?? new List<WebNails.Models.PhoneModel>();
+    var ListPhone = new List<WebNails.Models.PhoneModel>();
+    if(!string.IsNullOrEmpty(ViewBag.TextTell ?? "") && !string.IsNullOrEmpty(ViewBag.HyperLinkTell ?? ""))
+    {
+        ListPhone.Add(new WebNails.Models.PhoneModel { TextTell = ViewBag.TextTell ?? "", HyperLinkTell = ViewBag.HyperLinkTell ?? "" });
+    }
+    ListPhone.AddRange(ListOtherPhone);
+
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -8,6 +16,7 @@
     <link href="~/Content/css/slider.css" rel="stylesheet">
     <link href="~/Content/css/page-gift.css" rel="stylesheet">
 }
+
 <main>
     @{Html.RenderPartial("_SliderPageSub");}
     <section class="bg">
@@ -17,100 +26,114 @@
                 <div class="row justify-content-center py-1 pb-4">
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_1.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_2.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_3.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_4.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_5.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_6.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_7.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_8.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_9.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_10.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_11.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_12.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_13.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
                         <div class="box-inner">
-                            <a href="@ViewBag.HyperLinkTell">
+                            <a href="javascript:void(0);">
                                 <img alt="e gift for you" src="~/Content/images/e-gift/gift_14.jpg" loading="lazy" class="img-fluid" />
                             </a>
+                            <div class="call-phone"></div>
                         </div>
                     </div>
                 </div>
@@ -118,7 +141,10 @@
         </div>
     </section>
 </main>
-
+<div id="ListPhone" style="display:none">
+    <div class="line-break"><a class="btn btn-success btn-theme btn-none-border" href="tel:(214)4846032">(214)-484-6032</a></div>
+    <div class="line-break"><a class="btn btn-success btn-theme btn-none-border" href="tel:(214)5229393">(214)-522-9393</a></div>
+</div>
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>
@@ -145,6 +171,14 @@
 
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
+            });
+
+            $(".box-inner").hover(function () {
+                $(".call-phone", this).css("display", "flex");
+                $(".call-phone", this).html("").append($("#ListPhone").html());
+            }, function () {
+                $(".call-phone", this).hide();
+                $(".call-phone", this).html("");
             });
         });
     </script>

@@ -259,7 +259,8 @@
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
     <Content Include="Content\images\logo.png" />
-    <Content Include="Content\images\popup\Coupon.jpg" />
+    <Content Include="Content\images\popup\coupon-1.jpg" />
+    <Content Include="Content\images\popup\coupon-2.jpg" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\voguenail-01.jpg" />
     <Content Include="Content\images\price-list\voguenail-02.jpg" />

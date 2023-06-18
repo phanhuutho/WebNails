@@ -5,7 +5,28 @@
     position: relative;
 }
 .page-main .box-inner {
+    position: relative;
     padding: var(--padding-box);
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
+    z-index:1;
+    height:195px;
+}
+.call-phone {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.8);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    flex-flow: column;
+}
+.line-break {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
 }

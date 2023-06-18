@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #fff0ff;
-    --color-theme: #f38094;
+    --bg-site: #f5fff5;
+    --color-theme: #80a07b;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #f38094;
+    --color-text-theme: #80a07b;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
 }
@@ -68,6 +68,15 @@ a:active,a:hover {
 }
 .btn-theme {
     background: var(--color-theme);
+}
+.text-theme{
+    color: var(--color-text-theme);
+}
+.border-theme{
+    border: 1px solid var(--color-theme);
+}
+.border-color-theme {
+    border-color: var(--color-theme) !important;
 }
 .modal-dialog {
     display: flex;
