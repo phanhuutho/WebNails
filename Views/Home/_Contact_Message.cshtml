@@ -28,7 +28,7 @@
                                 </div>
                                 <div class="mb-3">
                                     @Html.Label("YourMessage", "Your message", new { @class = "form-label" })
-                                    @Html.EditorFor(model => model.YourMessage, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.TextAreaFor(model => model.YourMessage, new { @class = "form-control" })
                                     @Html.ValidationMessageFor(model => model.YourMessage, "", new { @class = "error" })
                                 </div>
                                 <div class="mb-3 text-end">

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebNails.Models.GalleryModel>
+
+@{
+    foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-4 pt-4">
+            <div class="box-inner">
+                <a href="@item.UrlRedirect" target="_blank">
+                    <img src="@item.Image" loading="lazy" />
+                </a>
+            </div>
+        </div>
+    }
+}

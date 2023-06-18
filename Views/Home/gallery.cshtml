@@ -1,6 +1,6 @@
-﻿@{
+﻿@model IEnumerable<WebNails.Models.GalleryModel>
+@{
     ViewBag.Title = "Gallery";
-    var Galleries = (List<WebNails.Models.GalleryModel>)ViewBag.Galleries ?? new List<WebNails.Models.GalleryModel>();
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -12,9 +12,9 @@
 <main>
     @{Html.RenderPartial("_SliderPageSub");}
     <div class="page-main container-lg">
-        <div class="row py-1 pb-4">
+        <div class="row py-1 pb-4 gallery-list">
             @{
-                foreach (var item in Galleries)
+                foreach (var item in Model)
                 {
                     <div class="col-lg-3 col-md-4 pt-4">
                         <div class="box-inner">
@@ -26,6 +26,12 @@
                 }
             }
         </div>
+        <div class="row py-1 pb-4">
+            <div class="col-12 text-center">
+                <input type="hidden" id="CountPage" name="CountPage" value="@(string.Format("{0}", ViewBag.CountPage))" />
+                <button class="btn btn-success btn-theme btn-none-border" id="btnLoadMore">Load More</button>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -36,7 +42,7 @@
         ActiveMenu("menu-gallery");
 
         var sliderInit = $('.sliders');
-
+        var indexPage = 1;
         $(document).ready(function () {
             sliderInit.slick({
                 dots: false,
@@ -55,6 +61,27 @@
 
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
+            });
+
+            $("#btnLoadMore").on("click", function () {
+                indexPage = indexPage + 1;
+                $("body").addClass("loader");
+                $("body").append("<div class='loading'></div>");
+                setTimeout(function () {
+                    if (indexPage == parseInt($("#CountPage").val())) {
+                        $("#btnLoadMore").remove();
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "/gallery-more.html",
+                        data: { indexPage: indexPage },
+                        success: function (result) {
+                            $(".gallery-list").append(result);
+                            $(".loading", "body").remove();
+                            $("body").removeClass("loader");
+                        },
+                    });
+                }, 1000);
             });
         });
     </script>

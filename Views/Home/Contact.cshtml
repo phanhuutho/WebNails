@@ -19,7 +19,18 @@
         @{ Html.RenderPartial("_Contact_Gallery_1"); }
     </div>
 </main>
-
+@section modal{
+    <div class="modal fade" id="ModalMessage" tabindex="-1" aria-labelledby="ModalMessageLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+}
 @section scripts{
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script type="text/javascript">
@@ -40,12 +51,20 @@
                     YourMessage: { required: "Require Your message" }
                 },
                 submitHandler: function (form) {
+                    $("body").addClass("loader");
+                    $("body").append("<div class='loading'></div>");
                     $.ajax({
                         type: "POST",
-                        url: "/Home/Contact",
+                        url: "/contact.html",
                         data: $(form).serialize(),
                         success: function (result) {
-
+                            if (result.messages == "OK") {
+                                $(".loading", "body").remove();
+                                $("body").removeClass("loader");
+                                document.forms[0].reset();
+                                $(".modal-body", "#ModalMessage").html("Thank you for your message. It has been sent. We will get back with you shortly.");
+                                $("#ModalMessage").modal("show");
+                            }
                         },
                     });
                     return false;

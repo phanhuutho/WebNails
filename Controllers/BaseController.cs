@@ -58,6 +58,9 @@ namespace WebNails.Controllers
             var jsonOtherPhone = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/other-phones.json"));
             var dataOtherPhone = JsonConvert.DeserializeObject<List<PhoneModel>>(jsonOtherPhone);
             ViewBag.OtherPhone = dataOtherPhone;
+
+            //Email
+            ViewBag.Email = dataInfo.Email;
         }
     }
 }
