@@ -1,13 +1,32 @@
-﻿<section class="py-4 container-lg">
+﻿@{ 
+    var ListOtherPhone = (List<WebNails.Models.PhoneModel>)ViewBag.OtherPhone ?? new List<WebNails.Models.PhoneModel>();
+}
+<section class="py-4 container-lg">
     <div class="row">
-        <div class="col-md-6">
-            <div class="box-tel">
-                <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel">
-                    <span>@ViewBag.TextTell</span>
-                </a>
+        <div class="col-lg-6">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="box-tel">
+                        <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel">
+                            <span>@ViewBag.TextTell</span>
+                        </a>
+                    </div>
+                </div>
+                @{
+                    foreach (var item in ListOtherPhone)
+                    {
+                        <div class="col">
+                            <div class="box-tel">
+                                <a href="@item.HyperLinkTell" target="_self" class="btn btn-success btn-tel">
+                                    <span>@item.TextTell</span>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="box-contact">
                 <a href="@ViewBag.LinkGoogleMapAddress" target="_blank" class="btn btn-success btn-contact">
                     <span>@ViewBag.Address</span>

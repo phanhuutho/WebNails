@@ -196,6 +196,13 @@
     .bg-contact .description {
         font-size: 140%;
     }
+    .btn-tel{
+        font-size: 1.4em;
+    }
+    .btn-contact {
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+    }
 }
 @media (min-width: 768px) {
     .menu-mobile-tablet{

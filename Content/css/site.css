@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #fff9ff;
+    --bg-site: #fff0ff;
     --color-theme: #f38094;
     --color-menu-legend: #000000;
     --color-black: #000000;
@@ -25,7 +25,7 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 /*font*/
@@ -55,16 +55,19 @@ a:active,a:hover {
     border-color: #666666 !important;
 }
 .btn-bg-white, .bg-white {
-    background: #FFFFFF;
-    color: #000000;
+    background: var(--color-white);
+    color: var(--color-black);
 }
 .btn-call {
     padding: 20px 30px 20px 30px;
-    background-color: #000000;
+    background-color: var(--color-black);
     border: 0;
     border-radius: 5px;
-    color: #FFFFFF;
+    color: var(--color-white);
     font-weight: bold;
+}
+.btn-theme {
+    background: var(--color-theme);
 }
 .modal-dialog {
     display: flex;

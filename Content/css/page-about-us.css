@@ -1,14 +1,67 @@
 .page-main {
     position: relative;
     font-family: "Vesper Libre";
-    color: var(--color-black);
+    color: var(--color-text-theme);
 }
 .page-main h1 {
     font-size: 250%;
-    color: var(--color-black);
+    color: var(--color-text-theme);
 }
 .page-main h1 span{
     padding-bottom: 25px;
-    border-bottom: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-text-theme);
     font-weight: 900;
+}
+
+.page-main .card{
+    border-color: var(--color-text-theme);
+}
+.page-main .card .card-body {
+    position: relative;
+    height: 260px;
+}
+.page-main .card .card-body .img-title{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    right: 15px;
+}
+.page-main .card .card-body .img-title .img-1{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/home/home_about_us_rejuvenate.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 0% 0%;
+    background-size: contain !important;
+    border-radius: 50%;
+}
+.page-main .card .card-body .img-title .img-2{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/home/home_about_us_calm.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 0% 0%;
+    background-size: contain !important;
+    border-radius: 50%;
+}
+.page-main .card .card-body .img-title .img-3{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/home/home_about_us_revive.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 0% 0%;
+    background-size: contain !important;
+    border-radius: 50%;
+}
+.page-main .card .card-title {
+    font-family: "Parisienne";
+    color: var(--color-text-theme);
+    font-weight: bolder;
+    font-size: 28px;
+}
+.page-main .card .card-text {
+    font-size: 16px;
+    font-family: "Vesper Libre";
+    color: var(--color-text-theme);
 }
