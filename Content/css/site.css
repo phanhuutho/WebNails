@@ -84,7 +84,7 @@ a:active,a:hover {
     color: var(--color-white);
     font-weight: bold;
 }
-.btn-theme {
+.btn-theme, .bg-theme {
     background: var(--color-theme);
 }
 .text-theme{

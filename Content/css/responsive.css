@@ -166,10 +166,9 @@
         top: 0 !important;
     }
     .services{
-        height: 960px;
+
     }
     .services .bg-services{
-        height: 960px;
         background-position: 65% 50%;
     }
     .business{
@@ -217,13 +216,14 @@
         height: auto;
     }
 }
-
+@media (max-width: 1199px) {
+    .services .card-body {
+        height: auto;
+    }
+}
 @media (min-width: 1200px) {
 
 }
 @media (min-width: 1400px) {
-
-}
-@media (max-width: 1024px){
 
 }

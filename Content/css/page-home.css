@@ -574,7 +574,6 @@
 .services .bg-services{
     position: relative;
     width: 100%;
-    height: 650px;
     background-image: url(../images/home/home_service_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -582,6 +581,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 .services .bg-services .overlay{
     position: absolute;
@@ -591,7 +592,7 @@
     width: 100%;
     height: 100%;
 }
-.services .bg-services .container{
+.services .bg-services .container-xl{
     position: relative;
 }
 .services .box-inner{
@@ -614,7 +615,7 @@
 }
 
 .services .card-body{
-    height: 385px;
+
 }
 
 .business, .e-gift {
@@ -756,7 +757,7 @@
     width: 100%;
     height: 100%;
 }
-.contact .bg-contact .container{
+.contact .bg-contact .container-xl{
     position: relative;
 }
 .contact-images{
