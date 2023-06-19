@@ -15,9 +15,14 @@
                         <div class="divider mb-3"></div>
                         @Html.Raw(string.Format("{0}", ViewBag.HomeDrinks))
                     </div>
-                    <div class="text-center">
-                        <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
-                    </div>
+                    @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+                    {
+                        <div class="text-center">
+                            <a class="btn btn-default btn-more btn-border btn-border-black text-uppercase" href="@ViewBag.LinkBookingAppointment" target="_blank">
+                                <b>Book Appointment <i class="fa fa-calendar"></i></b>
+                            </a>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
