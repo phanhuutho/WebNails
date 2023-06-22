@@ -1,6 +1,6 @@
 ﻿<ul class="list-unstyled">
 	<li>Water bottle or soft drinks (coke, diet coke, sprite, etc.)</li>
 	<li>Beer</li>
-	<li>Wine (limit 2)</li>
-	<li>Cocktails (limit 1)</li>
+	<li>Wine</li>
+	<li>Cocktails</li>
 </ul>
