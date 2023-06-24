@@ -383,6 +383,7 @@
     <Content Include="Views\Home\gallery.cshtml" />
     <Content Include="Views\Home\_Contact_Message.cshtml" />
     <Content Include="Views\Home\_gallery_more.cshtml" />
+    <Content Include="Views\Home\_Home_Business_Gift_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
