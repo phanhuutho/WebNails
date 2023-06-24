@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 52% 60%;
+    background-position: 45% 70%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 80%;
+    background-position: 65% 20%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 65%;
+    background-position: 42.5% 30%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -160,12 +160,14 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
-    color: var(--color-theme);
+    color: var(--color-white);
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 20px;
-    color: var(--color-theme);
+    color: var(--color-white);
+    text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
@@ -302,7 +304,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 .about-us .box-inner{
     text-align: justify;
@@ -346,7 +348,7 @@
     height: 450px;
     background-image: url(../images/home/home_about_us.jpg);
     background-repeat: no-repeat !important;
-    background-position: 0% 50%;
+    background-position: 100% 50%;
     background-size: cover !important;
 }
 .beauty-spa {

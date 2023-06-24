@@ -5,7 +5,7 @@
 @media (min-width: 768px) {
 
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .slider-banner .banner, .slider-banner .banner .banner-image{
         height: 430px;
     }
@@ -33,6 +33,7 @@
     }
     .about-us .box-image .image-about-us{
         width: 100%;
+        background-position: 75% 50%;
     }
     .about-us .about-us-inner{
         align-items: center;
@@ -151,7 +152,7 @@
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
         height: 700px;
-        background-position: 30% 50%;
+        background-position: 47.5% 50%;
     }
     .slider-home, .slider-home .sliders .slider-2 .box-image, .slider-home .sliders .slider-2 .box-image .image{
         height: 700px;
