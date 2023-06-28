@@ -236,6 +236,7 @@
     <Content Include="Content\images\lines.png" />
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo2.jpg" />
     <Content Include="Content\images\popup\Coupon.jpg" />
     <Content Include="Content\images\price-list\Flower-Mound-01.jpg" />
     <Content Include="Content\images\price-list\Flower-Mound-02.jpg" />
