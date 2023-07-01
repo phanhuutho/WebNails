@@ -130,9 +130,11 @@
     <Compile Include="Models\GoogleClientSayModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
     <Compile Include="Models\MessageModel.cs" />
+    <Compile Include="Models\PageModel.cs" />
     <Compile Include="Models\PhoneModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
+    <Compile Include="Models\TemplatesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -332,6 +334,7 @@
     <Content Include="Data\home-google-clients.json" />
     <Content Include="Data\other-phones.json" />
     <Content Include="Data\galleries.json" />
+    <Content Include="Data\templates.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

@@ -90,6 +90,14 @@ namespace WebNails
                     controller = "Home",
                     action = "GalleryMore"
                 });
+
+            routes.MapRoute(
+                "Change Template", "ChangeTemplate",
+                new
+                {
+                    controller = "Home",
+                    action = "ChangeTemplate"
+                });
         }
     }
 }

@@ -1,0 +1,167 @@
+[
+  {
+    "TemplateIndex": 1,
+    "Pages": [
+      {
+        "Page": "index",
+        "RenderPartial": [ "_SliderHome_1", "_Home_About_Us_2", "_Home_Drinks_2", "_Home_Beauty_Spa_2", "_Home_Services_2", "_Home_Business_Gift_2", "_Home_Google_Clients_1", "_Home_Contact_3", "_Home_Map_1" ]
+      },
+      {
+        "Page": "about",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "prices",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "services",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gifts",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gallery",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "contact",
+        "RenderPartial": [ "_Contact_Address_1", "_Contact_Message", "_Contact_Gallery_1" ]
+      }
+    ]
+  },
+  {
+    "TemplateIndex": 2,
+    "Pages": [
+      {
+        "Page": "index",
+        "RenderPartial": [ "_SliderHome_2", "_Home_About_Us_2", "_Home_Drinks_2", "_Home_Beauty_Spa_2", "_Home_Services_2", "_Home_Business_Gift_2", "_Home_Google_Clients_1", "_Home_Contact_3", "_Home_Map_1" ]
+      },
+      {
+        "Page": "about",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "prices",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "services",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gifts",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gallery",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "contact",
+        "RenderPartial": [ "_Contact_Address_1", "_Contact_Message", "_Contact_Gallery_1" ]
+      }
+    ]
+  },
+  {
+    "TemplateIndex": 3,
+    "Pages": [
+      {
+        "Page": "index",
+        "RenderPartial": [ "_SliderHome_1", "_Home_About_Us_2", "_Home_Drinks_2", "_Home_Beauty_Spa_2", "_Home_Services_2", "_Home_Business_Gift_2", "_Home_Google_Clients_1", "_Home_Contact_3", "_Home_Map_1" ]
+      },
+      {
+        "Page": "about",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "prices",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "services",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gifts",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gallery",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "contact",
+        "RenderPartial": [ "_Contact_Address_1", "_Contact_Message", "_Contact_Gallery_1" ]
+      }
+    ]
+  },
+  {
+    "TemplateIndex": 4,
+    "Pages": [
+      {
+        "Page": "index",
+        "RenderPartial": [ "_SliderHome_1", "_Home_About_Us_2", "_Home_Drinks_2", "_Home_Beauty_Spa_2", "_Home_Services_2", "_Home_Business_Gift_2", "_Home_Google_Clients_1", "_Home_Contact_3", "_Home_Map_1" ]
+      },
+      {
+        "Page": "about",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "prices",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "services",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gifts",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gallery",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "contact",
+        "RenderPartial": [ "_Contact_Address_1", "_Contact_Message", "_Contact_Gallery_1" ]
+      }
+    ]
+  },
+  {
+    "TemplateIndex": 5,
+    "Pages": [
+      {
+        "Page": "index",
+        "RenderPartial": [ "_SliderHome_1", "_Home_About_Us_2", "_Home_Drinks_2", "_Home_Beauty_Spa_2", "_Home_Services_2", "_Home_Business_Gift_2", "_Home_Google_Clients_1", "_Home_Contact_3", "_Home_Map_1" ]
+      },
+      {
+        "Page": "about",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "prices",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "services",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gifts",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "gallery",
+        "RenderPartial": [ "_SliderPageSub" ]
+      },
+      {
+        "Page": "contact",
+        "RenderPartial": [ "_Contact_Address_1", "_Contact_Message", "_Contact_Gallery_1" ]
+      }
+    ]
+  }
+]

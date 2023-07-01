@@ -5,7 +5,7 @@
     {
         <div class="col-lg-3 col-md-4 pt-4">
             <div class="box-inner">
-                <a href="@item.UrlRedirect" target="_blank">
+                <a href="@(string.IsNullOrEmpty(item.UrlRedirect) ? "javascript:void(0);" : item.UrlRedirect)" @(string.IsNullOrEmpty(item.UrlRedirect) ? "onclick=OpenModalImage(this);" : "target=_blank")>
                     <img src="@item.Image" loading="lazy" />
                 </a>
             </div>

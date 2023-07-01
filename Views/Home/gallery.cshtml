@@ -19,7 +19,7 @@
                 {
                     <div class="col-lg-3 col-md-4 pt-4">
                         <div class="box-inner">
-                            <a href="@item.UrlRedirect" target="_blank">
+                            <a href="@(string.IsNullOrEmpty(item.UrlRedirect) ? "javascript:void(0)" : item.UrlRedirect)" @(string.IsNullOrEmpty(item.UrlRedirect) ? "onclick=OpenModalImage(this);" : "target=_blank")>
                                 <img src="@item.Image" loading="lazy" />
                             </a>
                         </div>
@@ -39,7 +39,18 @@
         </div>
     </div>
 </main>
-
+@section modal{
+    <div class="modal fade" id="ModalImage" tabindex="-1" aria-labelledby="ModalImageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center"></div>
+            </div>
+        </div>
+    </div>
+}
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>
@@ -89,5 +100,11 @@
                 }, 1000);
             });
         });
+
+        function OpenModalImage(obj) {
+            var src = $("img", obj).attr("src");
+            $(".modal-body", "#ModalImage").html("").append("<img src='" + src + "' />");
+            $("#ModalImage").modal("show");
+        }
     </script>
 }

@@ -61,6 +61,11 @@ namespace WebNails.Controllers
 
             //Email
             ViewBag.Email = dataInfo.Email;
+
+            //Templates
+            var jsonTemplates = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/templates.json"));
+            var dataTemplates = JsonConvert.DeserializeObject<List<TemplatesModel>>(jsonTemplates);
+            ViewBag.Templates = dataTemplates;
         }
     }
 }

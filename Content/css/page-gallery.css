@@ -9,3 +9,7 @@
     height: 340px;
     width: 100%;
 }
+#ModalImage .modal-body img{
+    max-height: 600px;
+    height: 100%;
+}

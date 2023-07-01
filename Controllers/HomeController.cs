@@ -12,8 +12,26 @@ namespace WebNails.Controllers
 {
     public class HomeController : BaseController
     {
+        private string GetTemplateIndex()
+        {
+            //TemplateIndex
+            var cookie_template_index = Request.Cookies.Get("template_index");
+            var index = cookie_template_index != null ? cookie_template_index.Value ?? "1" : "1";
+            return index;
+        }
+        private TemplatesModel GetTemplate(List<TemplatesModel> dataTemplates, string index)
+        {
+            var template = dataTemplates.Where(x => x.TemplateIndex == index).DefaultIfEmpty(new TemplatesModel()).FirstOrDefault();
+            return template;
+        }
         public ActionResult Index()
         {
+            var index = GetTemplateIndex();
+            var dataTemplates = (List<TemplatesModel>)ViewBag.Templates;
+            var template = GetTemplate(dataTemplates, index);
+            var page_index = template.Pages.Where(x => x.Page == "index").DefaultIfEmpty(new PageModel()).FirstOrDefault();
+            ViewBag.RenderPartial = page_index.RenderPartial ?? new List<string>();
+            ViewBag.TemplateIndex = index;
             return View();
         }
 
@@ -84,6 +102,14 @@ namespace WebNails.Controllers
         {
             var Galleries = (List<GalleryModel>)ViewBag.Galleries ?? new List<GalleryModel>();
             return PartialView("_gallery_more", Galleries.Skip((indexPage - 1) * 12).Take(12));
+        }
+
+        public ActionResult ChangeTemplate(string index)
+        {
+            Request.Cookies.Remove("template_index");
+            var cookie = new HttpCookie("template_index", index);
+            Request.Cookies.Add(cookie);
+            return Json(new { result = "OK" }, JsonRequestBehavior.AllowGet);
         }
     }
 }

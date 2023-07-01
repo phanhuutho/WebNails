@@ -316,7 +316,7 @@
     max-width: 100%;
 }
 .about-us .box-inner h1, .about-us .box-inner-title h1{
-    font-size: 5em; 
+    font-size: 4em; 
     font-family: "Parisienne"; 
     color: var(--color-text-theme);
     font-weight: bold;
@@ -544,7 +544,7 @@
     font-family: "Parisienne";
     font-weight: bolder;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 2;
 }
 .drinks .box-inner li{
@@ -701,7 +701,7 @@
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider, .about-us .box-inner-title .divider, .drinks .box-inner .divider, .google-client .box-inner .divider{
-    max-width: 350px;
+    max-width: 280px;
     background-color: var(--color-text-theme);
 }
 .e-gift .line-bottom{

@@ -9,6 +9,8 @@
     ListSocials = ListSocials.Where(x => !string.IsNullOrEmpty(x.Url)).OrderBy(x => x.Position).ToList();
 
     var ListOtherPhone = (List<WebNails.Models.PhoneModel>)ViewBag.OtherPhone ?? new List<WebNails.Models.PhoneModel>();
+
+    var TemplateIndex = ViewBag.TemplateIndex ?? "1";
 }
 <!DOCTYPE html>
 <html>
@@ -38,6 +40,35 @@
 <body>
     <!--Menu - Header-->
     <header>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <div class="form-check form-check-inline d-sm-inline-block d-block">
+                        <label class="form-check-label">Choise template: </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="templates" id="template_1" value="1" @(TemplateIndex == "1" ? "checked" : "")>
+                        <label class="form-check-label" for="template_1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="templates" id="template_2" value="2" @(TemplateIndex == "2" ? "checked" : "")>
+                        <label class="form-check-label" for="template_2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="templates" id="template_3" value="3" @(TemplateIndex == "3" ? "checked" : "")>
+                        <label class="form-check-label" for="template_3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="templates" id="template_4" value="4" @(TemplateIndex == "4" ? "checked" : "")>
+                        <label class="form-check-label" for="template_4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="templates" id="template_5" value="5" @(TemplateIndex == "5" ? "checked" : "")>
+                        <label class="form-check-label" for="template_5">5</label>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-xl">
             <div class="row">
                 <div class="col-lg-3 col-md-2">
@@ -244,5 +275,26 @@
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/js/site.js"></script>
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input[type='radio'][name='templates']").on("click", function () {
+                var value = $(this).val();
+                $("body").addClass("loader");
+                $("body").append("<div class='loading'></div>");
+                setTimeout(function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "/ChangeTemplate",
+                        data: { index: value },
+                        success: function (result) {
+                            $(".loading", "body").remove();
+                            $("body").removeClass("loader");
+                            location.href = '/';
+                        },
+                    });
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>

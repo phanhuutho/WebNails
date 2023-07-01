@@ -1,16 +1,16 @@
 {
-  "Name": "Candle Nail Spa & Massage",
-  "HyperLinkTell": "tel:(214)4846032",
-  "TextTell": "(214)-484-6032",
-  "GooglePlus": "https://www.google.com/search?q=Candle+Nail+Spa+75219",
-  "Address": "2918 Oak Lawn Ave, Dallas, TX 75219",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/SkRfTmBgPX14TUdT6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13413.656621826785!2d-96.809414!3d32.8077898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9ecb95a87f4b%3A0xe114194ee4035fa3!2sCandle%20Nail%20Spa%20%26%20Massage%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1687113124450!5m2!1sen!2s",
+  "Name": "Demo Nail Spa & Massage",
+  "HyperLinkTell": "tel:(001)0203004",
+  "TextTell": "(001)-020-3004",
+  "GooglePlus": "https://www.google.com/",
+  "Address": "Address 1234 ABCD, State US, XX 56789",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/QRt7iCokN2euuvYv8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13026973.62891735!2d-106.25469552110832!3d37.14286659523624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1688055873820!5m2!1sen!2s",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-2.jpg"
+      "Src": "/Content/images/popup/coupon-1.jpg"
     }
   ],
   "Prices": [
@@ -48,14 +48,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/CandleNailSpaMassage",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "https://www.instagram.com/candlenailspa/",
+    "Url": "",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
@@ -74,6 +74,6 @@
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
   },
-  "LinkBookingAppointment": "https://www.scheduleanyone.com/CandleNailSpa/RequestAppointment",
-  "Email": "candlenail2918@gmail.com"
+  "LinkBookingAppointment": "",
+  "Email": "demo@gmail.com"
 }
