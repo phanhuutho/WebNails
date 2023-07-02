@@ -108,7 +108,8 @@ namespace WebNails.Controllers
         {
             Request.Cookies.Remove("template_index");
             var cookie = new HttpCookie("template_index", index);
-            Request.Cookies.Add(cookie);
+            cookie.Expires.AddDays(1);
+            Response.Cookies.Add(cookie);
             return Json(new { result = "OK" }, JsonRequestBehavior.AllowGet);
         }
     }
