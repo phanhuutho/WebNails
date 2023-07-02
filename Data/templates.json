@@ -37,7 +37,7 @@
     "Pages": [
       {
         "Page": "index",
-        "RenderPartial": [ "_SliderHome_2", "_Home_About_Us_2", "_Home_Drinks_2", "_Home_Beauty_Spa_2", "_Home_Services_2", "_Home_Business_Gift_2", "_Home_Google_Clients_1", "_Home_Contact_3", "_Home_Map_1" ]
+        "RenderPartial": [ "_SliderHome_1", "_Home_About_Us_1", "_Home_Beauty_Spa_1", "_Home_Services_1", "_Home_Business_Gift_1", "_Home_Google_Clients_1", "_Home_Contact_1", "_Home_Map_1" ]
       },
       {
         "Page": "about",

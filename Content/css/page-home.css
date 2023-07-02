@@ -321,7 +321,7 @@
     color: var(--color-text-theme);
     font-weight: bold;
 }
-.about-us .box-inner p{
+.about-us p{
     color: var(--color-text-theme);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
@@ -657,7 +657,7 @@
     padding: 15px 15px;
 }
 .business .business-inner .box-image .image-business{
-    width: 320px;
+    width: 600px;
     max-width:100%;
     height: 320px;
     background-image: url(../images/home/home_business.jpg);
@@ -689,15 +689,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 15px 0 15px;
+    padding: 15px 15px;
 }
 .e-gift .box-image .image-e-gift{
-    width: 500px;
+    width: 600px;
     max-width:100%;
-    height: 500px;
+    height: 320px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 50%;
+    background-position: 45% 75%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider, .about-us .box-inner-title .divider, .drinks .box-inner .divider, .google-client .box-inner .divider{
