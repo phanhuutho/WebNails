@@ -6,7 +6,7 @@
   "Address": "2918 Oak Lawn Ave, Dallas, TX 75219",
   "LinkGoogleMapAddress": "https://goo.gl/maps/SkRfTmBgPX14TUdT6",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13413.656621826785!2d-96.809414!3d32.8077898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9ecb95a87f4b%3A0xe114194ee4035fa3!2sCandle%20Nail%20Spa%20%26%20Massage%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1687113124450!5m2!1sen!2s",
-  "ShowCoupon": true,
+  "ShowCoupon": false,
   "Coupons": [
     {
       "Status": true,
