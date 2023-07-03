@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #eaeaea;
-    --color-theme: #af5561;
+    --bg-site: #ffffff;
+    --color-theme: #d0a654;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #af5561;
+    --color-text-theme: #d0a654;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
 }
@@ -78,4 +78,8 @@ a:active,a:hover {
 .left-10-percent{
     left:10%;
     width: 60%;
+}
+.btn-theme {
+    background: var(--color-theme);
+    border-color: var(--color-theme);
 }

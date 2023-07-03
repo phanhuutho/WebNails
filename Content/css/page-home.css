@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 60%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -110,10 +110,8 @@
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
-    font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
-    padding: 15px 30px;
     border-radius: 30px;
 }
 .slider-home .sliders .rectangle{
