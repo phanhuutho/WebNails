@@ -6,7 +6,7 @@
   "Address": "4772 Ashford Dunwoody Rd #310, Dunwoody, GA 30338",
   "LinkGoogleMapAddress": "https://goo.gl/maps/7Vyyx8tT3cgVmxPm6",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13241.042416839617!2d-84.338781!3d33.9344248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50be1f079806b%3A0x6474512edd970a66!2sClassic%20Nails%20and%20Spa%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1688402732873!5m2!1sen!2s",
-  "ShowCoupon": false,
+  "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,

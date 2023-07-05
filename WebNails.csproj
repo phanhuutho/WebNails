@@ -210,7 +210,6 @@
     <Content Include="Content\images\favicon.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
-    <Content Include="Content\images\home\home_business.jpeg" />
     <Content Include="Content\images\home\home_business.jpg" />
     <Content Include="Content\images\home\home_contact_bg.jpg" />
     <Content Include="Content\images\home\home_contact_image_1.jpg" />
@@ -221,10 +220,7 @@
     <Content Include="Content\images\home\home_contact_image_6.jpg" />
     <Content Include="Content\images\home\home_contact_image_7.jpg" />
     <Content Include="Content\images\home\home_contact_image_8.jpg" />
-    <Content Include="Content\images\home\home_e_gift.jpeg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
-    <Content Include="Content\images\home\home_e_gift.png" />
-    <Content Include="Content\images\home\home_service_bg.jpeg" />
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />

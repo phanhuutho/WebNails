@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 70%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 42.5% 30%;
+    background-position: 45% 55%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -394,6 +394,22 @@
     padding: var(--padding-box);
     background: var(--color-theme);
 }
+.beauty-spa .bg-item-service{
+    position: relative;
+}
+.beauty-spa .bg-item-service:before{
+    content: " ";
+    position: absolute;
+    height: 100px;
+    background: var(--color-theme);
+    width: 100%;
+    top: 25%;
+    z-index: 0;
+    opacity: 0.7;
+    left: 0;
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
     max-height: 240px;
@@ -485,7 +501,9 @@
 .services .box-inner img{
     height: 85px;
 }
-
+.business-gift{
+    background: var(--color-theme);
+}
 .business, .e-gift {
 
 }

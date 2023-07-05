@@ -103,12 +103,12 @@
 
 .slider-banner .slider-1 .box-slider .image{
     background-image: url(../images/banner/slider/pedicure.jpg);
-    background-position: 45% 65%;
+    background-position: 45% 45%;
 }
 
 .slider-banner .slider-2 .box-slider .image{
     background-image: url(../images/banner/slider/manicure.jpg);
-    background-position: 30% 60%;
+    background-position: 60% 40%;
 }
 
 .slider-banner .slider-3 .box-slider .image{
@@ -118,7 +118,7 @@
 
 .slider-banner .slider-4 .box-slider .image{
     background-image: url(../images/banner/slider/waxing.jpg);
-    background-position: 45% 15%;
+    background-position: 50% 75%;
 }
 
 .slider-banner .box-slider .slider-image{
