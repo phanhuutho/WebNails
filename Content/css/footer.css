@@ -46,7 +46,7 @@ footer .circle span{
     right: 20px;
     width: 140px;
     padding: 5px;
-    background: #81d742;
+    background: var(--color-text-theme);
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
@@ -60,7 +60,7 @@ footer .circle span{
     right: 170px;
     width: 140px;
     padding: 5px;
-    background: #81d742;
+    background: var(--color-text-theme);
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
