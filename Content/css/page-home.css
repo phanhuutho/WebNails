@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 60%;
+    background-position: 50% 90%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 45% 35%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 20%;
+    background-position: 75% 20%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 55%;
+    background-position: 65% 65%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -169,28 +169,28 @@
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
-    color: #FFFFFF;
+    color: var(--color-black);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
-    color: #FFFFFF;
+    color: var(--color-black);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 42px;
-    color: #FFFFFF;
+    color: var(--color-black);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
     font-size: 36px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 36px;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-shadow: 2px 2px 2px #888888;
 }
 

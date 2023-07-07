@@ -12,3 +12,7 @@
     border-bottom: 2px solid var(--color-black);
     font-weight: 900;
 }
+.page-main p{
+    font-size: 33px;
+    margin-bottom: 30px;
+}
