@@ -276,8 +276,7 @@
 }
 
 .about-us {
-    background-color: var(--color-theme);
-    background-image: url(../images/home/home_about_us_bg.jpg);
+    background-color: #f6e5f5;
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -285,7 +284,7 @@
     position: relative;
 }
 .about-us .overlay{
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0);
     position: absolute;
     top: 0;
     left: 0;
@@ -319,6 +318,7 @@
     color: var(--color-text-theme);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
+    font-size: 1.5em;
 }
 .about-us .box-inner .divider{
     margin-left: 0;
@@ -386,13 +386,13 @@
 .beauty-spa .box-image{
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 350px;
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 350px;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background: var(--color-theme);
+    background: #f6e5f5;
 }
 .beauty-spa .bg-item-service{
     position: relative;
@@ -401,38 +401,36 @@
     content: " ";
     position: absolute;
     height: 100px;
-    background: var(--color-theme);
+    background: #f6e5f5;
     width: 100%;
-    top: 25%;
+    top: 125px;
     z-index: 0;
     opacity: 0.7;
     left: 0;
-    border-right: 1px solid #FFFFFF;
-    border-left: 1px solid #FFFFFF;
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
-    max-height: 240px;
+    max-height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .beauty-spa .box-image .image1{
-    background-image: url(../images/home/home_service_pedicure.jpg);
+    background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
     background-position: 25% 80%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
-    background-image: url(../images/home/home_service_manicure.jpg);
+    background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 0%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
-    background-image: url(../images/home/home_service_eyelash_extensions.jpg);
+    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
     background-repeat: no-repeat !important;
     background-position: 60% 50%;
     background-size: cover !important;
@@ -446,12 +444,15 @@
 }
 .beauty-spa h2{
     text-transform: uppercase;
-    color: var(--color-text-theme);
+    color: var(--color-white);
     font-weight: bold;
     font-size: 1.25em;
     line-height: 40px;
 }
-
+.beauty-spa .box-image h2{
+    font-size: 1.75em;
+    text-shadow: 2px 2px 2px #888888;
+}
 .services{
     width: 100%;
     height: 600px;
@@ -474,7 +475,7 @@
 }
 .services .bg-services .overlay{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
     top: 0;
     left: 0;
     width: 100%;
@@ -501,8 +502,8 @@
 .services .box-inner img{
     height: 85px;
 }
-.business-gift{
-    background: var(--color-theme);
+.business-gift {
+    background: #f6e5f5;
 }
 .business, .e-gift {
 
@@ -633,7 +634,7 @@
     background-size: cover !important;
 }
 .contact .bg-contact .overlay{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
     top: 0;
     left: 0;
