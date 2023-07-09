@@ -60,7 +60,9 @@ namespace WebNails.Controllers
             ViewBag.OtherPhone = dataOtherPhone;
 
             //Email
-            ViewBag.Email = dataInfo.Email;
+            var jsonSendMail = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/sendmail.json"));
+            var dataSendMail = JsonConvert.DeserializeObject<SendMailModel>(jsonSendMail);
+            ViewBag.Email = dataSendMail.Email;
         }
     }
 }
