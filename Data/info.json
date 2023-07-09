@@ -13,7 +13,32 @@
       "Src": "/Content/images/popup/Coupon.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-06.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

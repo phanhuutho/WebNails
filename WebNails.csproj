@@ -233,6 +233,12 @@
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\popup\Coupon.jpg" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
+    <Content Include="Content\images\price-list\price-01.jpg" />
+    <Content Include="Content\images\price-list\price-02.jpg" />
+    <Content Include="Content\images\price-list\price-03.jpg" />
+    <Content Include="Content\images\price-list\price-04.jpg" />
+    <Content Include="Content\images\price-list\price-05.jpg" />
+    <Content Include="Content\images\price-list\price-06.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
