@@ -43,9 +43,8 @@ footer .circle span{
 .tel-withtext {
     position: fixed;
     bottom: 10px;
-    right: 20px;
-    width: 140px;
-    padding: 5px;
+    right: 5px;
+    width: 30px;
     background: var(--color-text-theme);
     border-radius: 5px;
     text-align: center;
@@ -56,10 +55,9 @@ footer .circle span{
 
 .booking {
     position: fixed;
-    bottom: 10px;
-    right: 170px;
-    width: 140px;
-    padding: 5px;
+    bottom: 50px;
+    right: 5px;
+    width: 30px;
     background: var(--color-text-theme);
     border-radius: 5px;
     text-align: center;
