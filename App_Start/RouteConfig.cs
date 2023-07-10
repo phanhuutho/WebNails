@@ -60,7 +60,7 @@ namespace WebNails
                 });
 
             routes.MapRoute(
-                "Gifts", "e-gift.html",
+                "Gifts", "gifts.html",
                 new
                 {
                     controller = "Home",

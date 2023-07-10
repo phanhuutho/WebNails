@@ -6,7 +6,7 @@
                     <div class="box-inner text-center" data-animation-in="animate__animated animate__fadeInDown">
                         <h1 data-animation-in="animate__animated animate__fadeInDown">WELCOME TO</h1>
                         <h2 data-animation-in="animate__animated animate__fadeInDown"><strong>@ViewBag.Name</strong></h2>
-                        <a class="btn btn-default btn-theme btn-more btn-none-border" data-animation-in="animate__animated animate__fadeInDown" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                        <a class="btn btn-warning btn-theme btn-more btn-none-border" data-animation-in="animate__animated animate__fadeInDown" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
                             <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "APPOINTMENT" : "CALL US")
                         </a>
                     </div>
