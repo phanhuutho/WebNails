@@ -207,7 +207,7 @@
     <Content Include="Content\images\e-gift\gift_8.jpg" />
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
-    <Content Include="Content\images\favicon.jpg" />
+    <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -230,7 +230,7 @@
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
-    <Content Include="Content\images\logo.jpg" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\popup\Coupon.jpg" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\price-01.jpg" />
