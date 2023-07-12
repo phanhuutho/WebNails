@@ -156,6 +156,9 @@
     animation: dash 5s linear forwards;
     animation-delay: 2s;
 }
+.slider-home .sliders .slider-2 .box-image .box-inner{
+    width: 100%;
+}
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
     color: var(--color-theme);
