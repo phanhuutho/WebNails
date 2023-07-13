@@ -90,6 +90,8 @@ a:active,a:hover {
 
 .img-hover-zoom {
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .img-hover-zoom img {
@@ -97,7 +99,7 @@ a:active,a:hover {
 }
 
 .img-hover-zoom:hover img {
-    transform: scale(1.5);
+    transform: scale(1.25);
     cursor: pointer;
 }
 
@@ -106,6 +108,6 @@ a:active,a:hover {
 }
 
 .img-hover-zoom:hover > div{
-    transform: scale(1.5);
+    transform: scale(1.25);
     cursor: pointer;
 }

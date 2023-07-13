@@ -54,6 +54,7 @@
 
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
+        var sliderAbout = $('.slider-home-about');
 
         $(document).ready(function () {
 
@@ -105,7 +106,24 @@
                     </text>
                 }
             }
-            
+
+            sliderAbout.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                fade: true,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+
+            sliderAbout.on('touchstart', e => {
+                sliderAbout.slick('slickPlay');
+            });
         });
     </script>
 }
