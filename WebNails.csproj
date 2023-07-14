@@ -227,6 +227,9 @@
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
+    <Content Include="Content\images\icon-1-1.png" />
+    <Content Include="Content\images\icon-2-1.png" />
+    <Content Include="Content\images\icon-3-1.png" />
     <Content Include="Content\images\icon1-01-300x300.png" />
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
@@ -234,12 +237,7 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\popup\Coupon.jpg" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
-    <Content Include="Content\images\price-list\price-01.jpg" />
-    <Content Include="Content\images\price-list\price-02.jpg" />
-    <Content Include="Content\images\price-list\price-03.jpg" />
-    <Content Include="Content\images\price-list\price-04.jpg" />
-    <Content Include="Content\images\price-list\price-05.jpg" />
-    <Content Include="Content\images\price-list\price-06.jpg" />
+    <Content Include="Content\images\price-list\price-list-2.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />

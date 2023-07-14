@@ -43,7 +43,7 @@
 }
 .top-divider {
     margin-bottom: 20px;
-    border-top: 1px solid var(--color-text-theme);
+    border-top: 1px solid var(--color-gold);
     opacity: 1;
 }
 .call-us, .list-menu .call-us {

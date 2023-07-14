@@ -1,20 +1,25 @@
 {
-  "Name": "Resort Nail Spa",
-  "HyperLinkTell": "tel:(972)8034466",
-  "TextTell": "(972)-803-4466",
-  "GooglePlus": "https://www.google.com/search?q=resort+nail+spa+75211",
-  "Address": "2242 Fort Worth Ave Suite 115, Dallas, TX 75211",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/UYTAymGWx3sDA75f8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13420.762783714148!2d-96.8589549!3d32.7606742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9b8163b414a1%3A0x394ac24dfd543ff9!2sResort%20Nail%20Spa!5e0!3m2!1sen!2s!4v1689009079931!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://www.scheduleanyone.com/ResortNailSpa/RequestAppointment",
-  "ShowCoupon": false,
+  "Name": "Elegant Nail Spa",
+  "HyperLinkTell": "tel:(281)3133334",
+  "TextTell": "(281)-313-3334",
+  "GooglePlus": "https://www.google.com/search?q=Elegant+Nail+Spa+77478",
+  "Address": "13891 Southwest Fwy, Sugar Land, TX 77478",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/Hwq4MFEosZeBBnqX6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13873.531956763414!2d-95.5996737!3d29.6216178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e655bf0586c1%3A0x572dc11fab851283!2sElegant%20Nail%20Spa%20(20%25%20OFF%20Powder%20for%20New%20Customers)!5e0!3m2!1sen!2s!4v1689349619765!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/4e860190a649/customer/home",
+  "ShowCoupon": true,
   "Coupons": [
     {
-      "Status": false,
+      "Status": true,
       "Src": "/Content/images/popup/Coupon.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/price-list-2.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

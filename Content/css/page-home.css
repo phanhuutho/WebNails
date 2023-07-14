@@ -401,7 +401,7 @@
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background: var(--color-theme);
+    background: var(--color-white);
 }
 .beauty-spa .bg-item-service{
     position: relative;
@@ -418,6 +418,7 @@
     left: 0;
     border-right: 1px solid #FFFFFF;
     border-left: 1px solid #FFFFFF;
+    opacity: 0.25;
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
@@ -512,15 +513,15 @@
 }
 .business-gift {
     position: relative;
-    background: var(--color-theme);
 }
 .business-gift .overlay {
-    background-color: rgba(255, 255, 255, 0.8);
+    background: var(--color-theme);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0.25;
 }
 .business-gift div[class^="container-"]{
     position: relative;
