@@ -280,13 +280,13 @@
     background-color: var(--color-theme);
     background-image: url(../images/home/home_about_us_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15% 50%;
+    background-position: 15% 90%;
     background-size: cover !important;
     min-height: 600px;
     position: relative;
 }
 .about-us .overlay{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -355,7 +355,7 @@
     height: 450px;
     background-image: url(../images/home/home_about_us-2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 0% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 .beauty-spa {
@@ -605,7 +605,7 @@
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 50%;
+    background-position: 25% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
@@ -704,7 +704,7 @@
 .contact-images .image4{
     background-image: url(../images/home/home_contact_image_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 40%;
+    background-position: 100% 40%;
     background-size: cover !important;
 }
 
