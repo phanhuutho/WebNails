@@ -31,7 +31,7 @@
     .about-us .box-image, .about-us .box-image .image-about-us{
 
     }
-    .about-us .box-image .image-about-us{
+    .about-us .box-image .image-about-us, .about-us .box-image .image-about-us-2{
         width: 100%;
     }
     .about-us .about-us-inner{
