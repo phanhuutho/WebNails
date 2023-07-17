@@ -2,7 +2,7 @@
 footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
-    color: var(--color-black);
+    color: var(--color-white);
     background: var(--bg-site);
     font-size: 15px;
 }
@@ -10,7 +10,7 @@ footer .legend {
     color: var(--color-text-theme);
 }
 footer a{
-    color: var(--color-black);
+    color: var(--color-white);
     text-decoration: none;
 }
 footer .circle{
@@ -34,7 +34,7 @@ footer .circle span{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--color-blue);
+    background: var(--color-theme);
     text-align: center;
     cursor: pointer;
     box-shadow: 0 0 4px 0 rgba(2,2,2,0.28);

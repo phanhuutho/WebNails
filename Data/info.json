@@ -1,12 +1,12 @@
 {
-  "Name": "Elegant Nail Spa",
-  "HyperLinkTell": "tel:(281)3133334",
-  "TextTell": "(281)-313-3334",
-  "GooglePlus": "https://www.google.com/search?q=Elegant+Nail+Spa+77478",
-  "Address": "13891 Southwest Fwy, Sugar Land, TX 77478",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/Hwq4MFEosZeBBnqX6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13873.531956763414!2d-95.5996737!3d29.6216178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640e655bf0586c1%3A0x572dc11fab851283!2sElegant%20Nail%20Spa%20(20%25%20OFF%20Powder%20for%20New%20Customers)!5e0!3m2!1sen!2s!4v1689349619765!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/4e860190a649/customer/home",
+  "Name": "Diamond Nails",
+  "HyperLinkTell": "tel:(813)6310101",
+  "TextTell": "(813)-631-0101",
+  "GooglePlus": "https://www.google.com/search?q=Diamond+Nails+33612",
+  "Address": "1222 E Fowler Ave, Tampa, FL 33612",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/JxVDwuoYgMZpkte17",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14084.002464900606!2d-82.4456643!3d28.0550058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c71885094fd9%3A0x545c1ac2a5c8ef81!2sDiamond%20Nails%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1689613264945!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -17,7 +17,19 @@
   "Prices": [
     {
       "Status": true,
-      "Src": "/Content/images/price-list/price-list-2.jpg"
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
     }
   ],
   "Telegram": {
