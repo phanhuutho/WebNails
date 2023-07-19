@@ -28,7 +28,8 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 120px;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 /*font*/
@@ -113,4 +114,8 @@ a:active,a:hover {
 .img-hover-zoom:hover > div{
     transform: scale(1.25);
     cursor: pointer;
+}
+
+.bg-theme{
+    background: var(--color-theme);
 }
