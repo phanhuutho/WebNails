@@ -1,11 +1,11 @@
 {
-  "Name": "Diamond Nails",
-  "HyperLinkTell": "tel:(813)6310101",
-  "TextTell": "(813)-631-0101",
-  "GooglePlus": "https://www.google.com/search?q=Diamond+Nails+33612",
-  "Address": "1222 E Fowler Ave, Tampa, FL 33612",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/JxVDwuoYgMZpkte17",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14084.002464900606!2d-82.4456643!3d28.0550058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c71885094fd9%3A0x545c1ac2a5c8ef81!2sDiamond%20Nails%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1689613264945!5m2!1sen!2s",
+  "Name": "Golden Nails & Spa",
+  "HyperLinkTell": "tel:(909)3641694",
+  "TextTell": "(909)-364-1694",
+  "GooglePlus": "https://www.google.com/search?q=Golden+Nails+91709",
+  "Address": "13089 Peyton Dr Suite H, Chino Hills, CA 91709",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/UuZhb43LpLgFMtdy8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13228.552593943788!2d-117.7440833!3d34.0146647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32d648e40bf51%3A0xd2087cfdb48aef7d!2sGolden%20Nails%20%26%20Spa%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1689867555660!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -30,6 +30,14 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
     }
   ],
   "Telegram": {

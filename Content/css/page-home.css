@@ -282,7 +282,7 @@
     background-color: var(--color-theme);
     background-image: url(../images/home/home_about_us_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15% 90%;
+    background-position: 15% 45%;
     background-size: cover !important;
     min-height: 600px;
     position: relative;
@@ -315,11 +315,11 @@
 .about-us .box-inner h1{
     font-size: 5em; 
     font-family: "Parisienne"; 
-    color: var(--color-text-theme);
+    color: var(--color-pink);
     font-weight: bold;
 }
 .about-us .box-inner p{
-    color: var(--color-text-theme);
+    color: var(--color-pink);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
 }
@@ -361,7 +361,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--bg-site);
+    background-color: var(--color-white);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -383,11 +383,11 @@
     margin-bottom: 1rem;
 }
 .beauty-spa .beauty-spa-inner .box-inner div span{
-    color: var(--color-text-theme);
+    color: var(--color-pink);
     font-size: 110%; 
 }
 .beauty-spa .beauty-spa-inner .box-inner h2{
-    color: var(--color-text-theme);
+    color: var(--color-pink);
     font-weight: bold;
     font-family: "Parisienne";
     font-size: 1.375em;
@@ -404,6 +404,7 @@
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
     background: var(--color-white);
+    border: 1px solid var(--color-theme);
 }
 .beauty-spa .bg-item-service{
     position: relative;
@@ -417,8 +418,8 @@
     top: 25%;
     z-index: 0;
     left: 0;
-    border-right: 1px solid var(--color-black);
-    border-left: 1px solid var(--color-black);
+    border-right: 1px solid var(--color-white);
+    border-left: 1px solid var(--color-white);
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
@@ -456,7 +457,7 @@
 }
 .beauty-spa h2{
     text-transform: uppercase;
-    color: var(--color-text-theme);
+    color: var(--color-pink);
     font-weight: bold;
     font-size: 1.25em;
     line-height: 40px;
@@ -515,7 +516,7 @@
     position: relative;
 }
 .business-gift .overlay {
-    background: var(--color-theme);
+    background: var(--color-white);
     position: absolute;
     top: 0;
     left: 0;
@@ -526,11 +527,12 @@
     position: relative;
 }
 .business, .e-gift {
-
+    border: 2px solid var(--color-theme);
+    background-color: var(--color-theme);
 }
 .business .business-inner{
     width: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-theme);
 }
 .business .business-inner .box-inner{
     height: 350px;
@@ -577,7 +579,7 @@
 }
 .e-gift .e-gift-inner{
     width: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-theme);
 }
 .e-gift .box-inner {
     height: 350px;
@@ -607,9 +609,12 @@
     background-position: 25% 50%;
     background-size: cover !important;
 }
-.e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
+.about-us .box-inner .divider, .beauty-spa .box-inner .divider, .e-gift .box-inner .divider, .business .box-inner .divider, .contact .box-inner .divider {
     max-width: 350px;
-    background-color: var(--color-text-theme);
+    background-color: var(--color-pink);
+}
+.e-gift .box-inner .divider, .business .box-inner .divider{
+    background-color: var(--color-black);
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -619,7 +624,7 @@
 
 .contact h2 {
     font-weight: bold;
-    color: var(--color-text-theme);
+    color: var(--color-pink);
     font-size: 2.5em;
     line-height: 2;
     font-family: "Parisienne";
@@ -629,7 +634,7 @@
     font-family: "Parisienne";
     font-size: 2.5em;
     line-height: 2;
-    color: var(--color-text-theme);
+    color: var(--color-black);
 }
 .contact .btn-more, .e-gift .btn-more, .business .btn-more, .beauty-spa .btn-more, .about-us .btn-more{
     background-color: #fff !important;
