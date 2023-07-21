@@ -516,7 +516,7 @@
     position: relative;
 }
 .business-gift .overlay {
-    background: var(--color-white);
+    background: var(--color-theme);
     position: absolute;
     top: 0;
     left: 0;
@@ -527,12 +527,12 @@
     position: relative;
 }
 .business, .e-gift {
-    border: 2px solid var(--color-theme);
-    background-color: var(--color-theme);
+    border: 2px solid var(--color-white);
+    background-color: var(--color-white);
 }
 .business .business-inner{
     width: 100%;
-    background-color: var(--color-theme);
+    background-color: var(--color-white);
 }
 .business .business-inner .box-inner{
     height: 350px;
@@ -579,7 +579,7 @@
 }
 .e-gift .e-gift-inner{
     width: 100%;
-    background-color: var(--color-theme);
+    background-color: var(--color-white);
 }
 .e-gift .box-inner {
     height: 350px;
@@ -614,7 +614,7 @@
     background-color: var(--color-pink);
 }
 .e-gift .box-inner .divider, .business .box-inner .divider{
-    background-color: var(--color-black);
+
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -634,7 +634,7 @@
     font-family: "Parisienne";
     font-size: 2.5em;
     line-height: 2;
-    color: var(--color-black);
+    color: var(--color-pink);
 }
 .contact .btn-more, .e-gift .btn-more, .business .btn-more, .beauty-spa .btn-more, .about-us .btn-more{
     background-color: #fff !important;

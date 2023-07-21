@@ -34,7 +34,7 @@ footer .circle span{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--color-theme);
+    background: var(--color-pink);
     text-align: center;
     cursor: pointer;
     box-shadow: 0 0 4px 0 rgba(2,2,2,0.28);
