@@ -315,11 +315,11 @@
 .about-us .box-inner h1{
     font-size: 5em; 
     font-family: "Parisienne"; 
-    color: var(--color-pink);
+    color: var(--color-gold);
     font-weight: bold;
 }
 .about-us .box-inner p{
-    color: var(--color-pink);
+    color: var(--color-gold);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
 }
@@ -387,7 +387,7 @@
     font-size: 110%; 
 }
 .beauty-spa .beauty-spa-inner .box-inner h2{
-    color: var(--color-pink);
+    color: var(--color-gold);
     font-weight: bold;
     font-family: "Parisienne";
     font-size: 1.375em;
@@ -457,7 +457,7 @@
 }
 .beauty-spa h2{
     text-transform: uppercase;
-    color: var(--color-pink);
+    color: var(--color-gold);
     font-weight: bold;
     font-size: 1.25em;
     line-height: 40px;
@@ -611,7 +611,7 @@
 }
 .about-us .box-inner .divider, .beauty-spa .box-inner .divider, .e-gift .box-inner .divider, .business .box-inner .divider, .contact .box-inner .divider {
     max-width: 350px;
-    background-color: var(--color-pink);
+    background-color: var(--color-gold);
 }
 .e-gift .box-inner .divider, .business .box-inner .divider{
 
@@ -624,7 +624,7 @@
 
 .contact h2 {
     font-weight: bold;
-    color: var(--color-pink);
+    color: var(--color-gold);
     font-size: 2.5em;
     line-height: 2;
     font-family: "Parisienne";
@@ -634,7 +634,7 @@
     font-family: "Parisienne";
     font-size: 2.5em;
     line-height: 2;
-    color: var(--color-pink);
+    color: var(--color-gold);
 }
 .contact .btn-more, .e-gift .btn-more, .business .btn-more, .beauty-spa .btn-more, .about-us .btn-more{
     background-color: #fff !important;

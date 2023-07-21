@@ -5,7 +5,7 @@
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #f6c541;
+    --color-text-theme: #be8d35;
     --color-gold: #be8d35;
     --color-blue: #5aadff;
     --color-purple: #e2c4e4;
@@ -118,5 +118,5 @@ a:active,a:hover {
 }
 
 .bg-theme{
-    background: var(--color-theme);
+    background: var(--color-gold);
 }
