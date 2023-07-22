@@ -1,13 +1,13 @@
 {
-  "Name": "Golden Nails & Spa",
-  "HyperLinkTell": "tel:(909)3641694",
-  "TextTell": "(909)-364-1694",
-  "GooglePlus": "https://www.google.com/search?q=Golden+Nails+91709",
-  "Address": "13089 Peyton Dr Suite H, Chino Hills, CA 91709",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/UuZhb43LpLgFMtdy8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13228.552593943788!2d-117.7440833!3d34.0146647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32d648e40bf51%3A0xd2087cfdb48aef7d!2sGolden%20Nails%20%26%20Spa%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1689867555660!5m2!1sen!2s",
+  "Name": "Blüm Nail Bar",
+  "HyperLinkTell": "tel:(706)8508160",
+  "TextTell": "(706)-850-8160",
+  "GooglePlus": "https://www.google.com/search?q=Blum+Nails+Nails+30601",
+  "Address": "100 Prince Ave Suite 206, Athens, GA 30601",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/CRYm8rva7RDYSLZo8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13237.008115041972!2d-83.3813261!3d33.9603611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f66df69c4abcc9%3A0xc3b6fdb05c0d7c7f!2sBlum%20Nail%20Bar!5e0!3m2!1sen!2s!4v1690042333867!5m2!1sen!2s",
   "LinkBookingAppointment": "",
-  "ShowCoupon": true,
+  "ShowCoupon": false,
   "Coupons": [
     {
       "Status": true,
@@ -18,26 +18,6 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-06.jpg"
     }
   ],
   "Telegram": {
@@ -56,7 +36,7 @@
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/blumathens/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
