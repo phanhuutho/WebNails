@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 35%;
+    background-position: 60% 65%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 65%;
+    background-position: 55% 100%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 42.5% 55%;
+    background-position: 67.5% 32.5%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -96,17 +96,18 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 20%;
+    background-position: 55% 55%;
     background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-1 .box-inner h1,.slider-home .sliders .slider-1 .box-inner h2{
-    color: var(--color-theme);
+    color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 48px;
-    text-shadow: 1px 1px 1px #000000;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px var(--color-black);
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
@@ -161,14 +162,14 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
-    color: var(--color-theme);
-    text-shadow: 1px 1px 1px #000000;
+    color: var(--color-white);
+    text-shadow: 0px 0px 3px var(--color-black);
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 20px;
-    color: var(--color-black);
-    text-shadow: 1px 1px 1px #000000;
+    color: var(--color-white);
+    text-shadow: 0px 0px 3px var(--color-black);
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
@@ -184,17 +185,18 @@
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 42px;
     color: var(--color-white);
-    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 0px 0px 3px var(--color-black);
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
-    font-size: 36px;
+    font-size: 42px;
     color: var(--color-white);
-    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 0px 0px 3px var(--color-black);
+    margin-bottom: 2rem;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 36px;
-    color: var(--color-black);
-    text-shadow: 1px 1px 1px #888888;
+    color: var(--color-white);
+    text-shadow: 0px 0px 3px var(--color-black);
 }
 
 .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
