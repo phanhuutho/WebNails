@@ -40,7 +40,7 @@
     background-color: var(--color-theme);
     background-image: url(../images/about-us/about-us_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 20%;
+    background-position: 50% 50%;
     background-size: cover !important;
     min-height: 600px;
 }
