@@ -611,7 +611,7 @@
     background-position: 25% 50%;
     background-size: cover !important;
 }
-.about-us .box-inner .divider, .beauty-spa .box-inner .divider, .e-gift .box-inner .divider, .business .box-inner .divider, .contact .box-inner .divider {
+.about-us .box-inner .divider, .beauty-spa .box-inner .divider, .e-gift .box-inner .divider, .business .box-inner .divider, .contact .box-inner .divider, .client-said .divider {
     max-width: 350px;
     background-color: var(--color-gold);
 }
@@ -743,6 +743,56 @@
 }
 .map {
     background-color: var(--color-white);
+}
+
+.client-said {
+    background-color: var(--color-theme);
+    background-image: url(../images/home/home_clients_bg.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 15% 40%;
+    background-size: cover !important;
+    min-height: 600px;
+    position: relative;
+}
+.client-said .overlay{
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.client-said .container-lg{
+    position: relative;
+}
+.client-said .row{
+    min-height: 600px;
+}
+.client-said .about-us-inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-said .box-inner h1{
+    font-family: "Parisienne";
+    color: var(--color-gold);
+    font-weight: bold;
+}
+.client-said .box-inner h3{
+    font-size: 1.5em; 
+    color: var(--color-black);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.client-said .box-inner p{
+    color: var(--color-black);
+    font-family: "Vesper Libre";
+    padding-bottom: 15px;
+    font-size: 2em; 
+}
+.client-said .box-inner .divider{
+    margin-top: 3rem;
 }
 
 @-webkit-keyframes dash {

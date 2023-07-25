@@ -18,6 +18,7 @@
     @{ Html.RenderPartial("_Home_Services_1"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
     @{ Html.RenderPartial("_Home_Contact_2"); }
+    @{ Html.RenderPartial("_Home_Client_Said_1"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
 @section modal{
@@ -55,6 +56,7 @@
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
         var sliderAbout = $('.slider-home-about');
+        var sliderClientSaid = $('.slider-client-said');
 
         $(document).ready(function () {
 
@@ -123,6 +125,24 @@
 
             sliderAbout.on('touchstart', e => {
                 sliderAbout.slick('slickPlay');
+            });
+
+            sliderClientSaid.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+
+            sliderClientSaid.on('touchstart', e => {
+                sliderClientSaid.slick('slickPlay');
             });
         });
     </script>

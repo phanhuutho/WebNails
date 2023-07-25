@@ -214,6 +214,7 @@
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
+    <Content Include="Content\images\home\home_clients_bg.jpg" />
     <Content Include="Content\images\home\home_contact_bg.jpg" />
     <Content Include="Content\images\home\home_contact_image_1.jpg" />
     <Content Include="Content\images\home\home_contact_image_2.jpg" />
@@ -344,6 +345,7 @@
     <Content Include="Views\Home\_Contact_Gallery_1.cshtml" />
     <Content Include="Views\Home\_Home_Beauty_Spa_2.cshtml" />
     <Content Include="Views\Home\_Home_Contact_2.cshtml" />
+    <Content Include="Views\Home\_Home_Client_Said_1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
