@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #000000;
-    --color-theme: #f6c541;
+    --bg-site: #FFFFFF;
+    --color-theme: #7fb042;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #be8d35;
+    --color-text-theme: #7fb042;
     --color-gold: #be8d35;
     --color-blue: #5aadff;
     --color-purple: #e2c4e4;
@@ -117,6 +117,6 @@ a:active,a:hover {
     cursor: pointer;
 }
 
-.bg-theme{
-    background: var(--color-gold);
+.bg-theme {
+    background: var(--color-theme);
 }
