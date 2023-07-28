@@ -465,7 +465,6 @@
 
 .services{
     width: 100%;
-    height: 600px;
     margin: 0 auto;
     max-width: unset;
     transition: opacity 1s;
