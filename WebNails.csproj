@@ -347,6 +347,7 @@
     <Content Include="Views\Home\_Contact_Gallery_1.cshtml" />
     <Content Include="Views\Home\_Home_Beauty_Spa_2.cshtml" />
     <Content Include="Views\Home\_Home_Contact_2.cshtml" />
+    <Content Include="Views\Home\_SliderHome_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

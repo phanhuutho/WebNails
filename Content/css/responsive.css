@@ -27,7 +27,13 @@
     .btn-call{
         padding: 10px 15px 10px 15px;
     }
-
+    .slider-home .well-come .box-inner h2{
+        font-size: 36px;
+    }
+    .slider-home .well-come .box-inner h1{
+        font-family: Parisienne;
+        font-size: 40px;
+    }
     .about-us .box-image .box-inner {
         width: 100% !important;
     }
