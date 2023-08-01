@@ -175,6 +175,7 @@
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.jpg" />
+    <Content Include="Content\images\banner\home\home_banner_5.png" />
     <Content Include="Content\images\banner\slider\eyelash_extensions.jpg" />
     <Content Include="Content\images\banner\slider\manicure.jpg" />
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
