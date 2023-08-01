@@ -87,19 +87,19 @@
 }
 
 .slider-banner .slider-1 .box-slider{
-    background: rgba(175,195,231,1);
+    background: rgba(175,195,230,1);
 }
 
 .slider-banner .slider-2 .box-slider{
-    background: rgba(224,213,229,1);
+    background: rgba(225,215,230,1);
 }
 
 .slider-banner .slider-3 .box-slider{
-    background: rgba(175,195,231,1);
+    background: rgba(240,240,160,1);
 }
 
 .slider-banner .slider-4 .box-slider{
-    background: rgba(175,195,231,1);
+    background: rgba(160,240,160,1);
 }
 
 .slider-banner .box-slider .image{
@@ -113,17 +113,17 @@
 }
 
 .slider-banner .slider-1 .box-slider .image{
-    background-image: url(../images/banner/slider/pedicure.jpg);
-    background-position: 75% 65%;
+    background-image: url(../images/banner/slider/your-nails.jpg);
+    background-position: 45% 65%;
 }
 
 .slider-banner .slider-2 .box-slider .image{
-    background-image: url(../images/banner/slider/manicure.jpg);
-    background-position: 70% 30%;
+    background-image: url(../images/banner/slider/all-services.jpg);
+    background-position: 35% 30%;
 }
 
 .slider-banner .slider-3 .box-slider .image{
-    background-image: url(../images/banner/slider/eyelash_extensions.jpg);
+    background-image: url(../images/banner/slider/e-gift.jpg);
     background-position: 40% 50%;
 }
 

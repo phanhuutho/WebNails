@@ -176,10 +176,13 @@
     <Content Include="Content\images\banner\home\home_banner_4.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.png" />
+    <Content Include="Content\images\banner\slider\all-services.jpg" />
+    <Content Include="Content\images\banner\slider\e-gift.jpg" />
     <Content Include="Content\images\banner\slider\eyelash_extensions.jpg" />
     <Content Include="Content\images\banner\slider\manicure.jpg" />
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
+    <Content Include="Content\images\banner\slider\your-nails.jpg" />
     <Content Include="Content\images\contact\contact_image_1.jpg" />
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
