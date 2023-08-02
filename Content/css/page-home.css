@@ -674,7 +674,6 @@
     position: relative;
     padding-top: 30px;
     padding-bottom: 60px;
-    background-image: url(../images/home/home_contact_bg.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -693,14 +692,9 @@
 .contact-images{
     position: relative;
     width: 100%;
-    height: 310px;
-    margin: 0 auto;
-    max-width: 310px;
+    height: 100%;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
-    padding: var(--padding-box);
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
     height: 300px;

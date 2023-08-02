@@ -208,6 +208,25 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\image_10.jpg" />
+    <Content Include="Content\images\gallery\image_11.jpg" />
+    <Content Include="Content\images\gallery\image_12.jpg" />
+    <Content Include="Content\images\gallery\image_13.jpg" />
+    <Content Include="Content\images\gallery\image_14.jpg" />
+    <Content Include="Content\images\gallery\image_15.jpg" />
+    <Content Include="Content\images\gallery\image_16.jpg" />
+    <Content Include="Content\images\gallery\image_17.jpg" />
+    <Content Include="Content\images\gallery\image_18.jpg" />
+    <Content Include="Content\images\gallery\image_19.jpg" />
+    <Content Include="Content\images\gallery\image_20.jpg" />
+    <Content Include="Content\images\gallery\image_22.jpg" />
+    <Content Include="Content\images\gallery\image_24.jpg" />
+    <Content Include="Content\images\gallery\image_3.jpg" />
+    <Content Include="Content\images\gallery\image_4.jpg" />
+    <Content Include="Content\images\gallery\image_6.jpg" />
+    <Content Include="Content\images\gallery\image_7.jpg" />
+    <Content Include="Content\images\gallery\image_8.jpg" />
+    <Content Include="Content\images\gallery\image_9.jpg" />
     <Content Include="Content\images\home\home_about_us-2.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
@@ -348,6 +367,7 @@
     <Content Include="Views\Home\_Home_Beauty_Spa_2.cshtml" />
     <Content Include="Views\Home\_Home_Contact_2.cshtml" />
     <Content Include="Views\Home\_SliderHome_3.cshtml" />
+    <Content Include="Views\Home\_Home_Contact_3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

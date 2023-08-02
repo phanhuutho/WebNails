@@ -7,7 +7,7 @@
 }
 @media (max-width: 767px) {
     header .bg-theme{
-        background: unset;
+
     }
     .slider-banner .banner, .slider-banner .banner .banner-image{
         height: 430px;
@@ -121,15 +121,17 @@
     .menu-mobile-tablet {
         position: relative;
         padding-bottom: 15px;
+        height: 50px;
+        padding-top: 15px;
     }
     .menu-mobile-tablet .menu-bars{
         position: absolute;
-        top: 40%;
+        top: 12px;
     }
     .menu-mobile-tablet .menu-bars button{
         border: none;
         background: none;
-        color: var(--color-theme);
+        color: var(--color-white);
     }
     .menu-mobile-tablet .menu-bars .fa{
         font-size: 18px;

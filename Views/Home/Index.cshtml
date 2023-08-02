@@ -16,7 +16,7 @@
     @{ Html.RenderPartial("_Home_Beauty_Spa_2"); }
     @{ Html.RenderPartial("_Home_About_Us_1"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
-    @{ Html.RenderPartial("_Home_Contact_2"); }
+    @{ Html.RenderPartial("_Home_Contact_3"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
 @section modal{
@@ -54,6 +54,7 @@
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
         var sliderAbout = $('.slider-home-about');
+        var sliderGallery = $('.slider-gallery');
 
         $(document).ready(function () {
 
@@ -121,6 +122,54 @@
             });
 
             sliderAbout.on('touchstart', e => {
+                sliderAbout.slick('slickPlay');
+            });
+
+            sliderGallery.slick({
+                dots: false,
+                infinite: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1400,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            sliderGallery.on('touchstart', e => {
                 sliderAbout.slick('slickPlay');
             });
         });
