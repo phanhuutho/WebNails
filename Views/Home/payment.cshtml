@@ -3,11 +3,16 @@
 }
 @section css{
     <link href="~/Content/css/payments.css" rel="stylesheet" />
+    <style type="text/css">
+        .bg-main{
+            background: var(--color-theme);
+        }
+    </style>
 }
-<main class="bg-main">
+<main class="bg-main py-5">
     <div class="container-lg">
         <div class="row justify-content-center">
-            <div class="col-8">
+            <div class="col-lg-6 col-md-8">
                 <div class="qpp-style default">
                     <div id="plain">
                         <form action="/process.html" method="post">
@@ -25,7 +30,7 @@
                                 <textarea rows="4" id="message" name="message" placeholder="Comment" class="required"></textarea>
                             </div>
                             <p class="submit pay-button">
-                                <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
+                                <input type="image" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Buy Now">
                             </p>
                             <div id="qppchecking">Validating payment information...</div>
                         </form>

@@ -1,15 +1,10 @@
-﻿@using Newtonsoft.Json;
-@{
+﻿@{
     ViewBag.Title = "Process";
     var EmailPaypal = string.Format("{0}", ViewBag.EmailPaypal);
     var Amount = string.Format("{0}", ViewBag.Amount);
-    var Stock = string.Format("{0}", ViewBag.Stock);
-    var Email = string.Format("{0}", ViewBag.Email);
-    var Message = string.Format("{0}", ViewBag.Message);
-    var dataJson = JsonConvert.SerializeObject(new { Amount = Amount, Receiver = Stock, Buyer = Email, Message = Message });
+    var Email = string.Format("{0}", ViewBag.Stock);
     var UrlShopping = Url.Action("Payment", "Home", null, Request.Url.Scheme);
-    var UrlReturn = Url.Action("Finish", "Home", null, Request.Url.Scheme);
-    UrlReturn = string.Format(UrlReturn + "?Amount={0}&Receiver={1}&Buyer={2}&Message={3}", Amount, Stock, Email, Message);
+    var UrlReturn = Url.Action("PaymentResponse", "Home", null, Request.Url.Scheme);
 }
 @section css{
     <style type="text/css">
@@ -68,7 +63,7 @@
             const hiddenField_CMD = document.createElement('input');
             hiddenField_CMD.type = 'hidden';
             hiddenField_CMD.name = 'cmd';
-            hiddenField_CMD.value = '_cart';
+            hiddenField_CMD.value = '_xclick';
 
             const hiddenField_ADD = document.createElement('input');
             hiddenField_ADD.type = 'hidden';
@@ -124,14 +119,14 @@
             element_img.src = 'https://www.paypalobjects.com/en_US/i/scr/pixel.gif';
 
             form.appendChild(hiddenField_Business);
-            //form.appendChild(hiddenField_Email);
+            form.appendChild(hiddenField_Email);
             form.appendChild(hiddenField_CMD);
             form.appendChild(hiddenField_ItemName);
             form.appendChild(hiddenField_ItemNumber);
             form.appendChild(hiddenField_Quantity);
             form.appendChild(hiddenField_Amount);
             form.appendChild(hiddenField_CurrencyCode);
-            form.appendChild(hiddenField_ADD);
+            //form.appendChild(hiddenField_ADD);
             //form.appendChild(hiddenField_Display);
             //form.appendChild(hiddenField_Upload);
             form.appendChild(hiddenField_ShoppingURL);

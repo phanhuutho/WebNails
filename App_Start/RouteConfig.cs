@@ -92,6 +92,14 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "PaymentResponse", "payment-response.html",
+                new
+                {
+                    controller = "Home",
+                    action = "PaymentResponse"
+                });
+
+            routes.MapRoute(
                 "Finish", "finish.html",
                 new
                 {
