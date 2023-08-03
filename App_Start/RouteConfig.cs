@@ -74,6 +74,30 @@ namespace WebNails
                     controller = "Home",
                     action = "Prices"
                 });
+
+            routes.MapRoute(
+                "Payment", "payment.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Payment"
+                });
+
+            routes.MapRoute(
+                "Process", "process.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Process"
+                });
+
+            routes.MapRoute(
+                "Finish", "finish.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Finish"
+                });
         }
     }
 }
