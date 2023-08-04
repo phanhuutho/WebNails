@@ -150,7 +150,7 @@
     }
 
     .slider-banner .box-slider .box-inner h1{
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
@@ -176,32 +176,31 @@
         justify-content: center;
     }
     .slider-home .sliders .slider-4 .box-image .box-inner h1{
-        font-size: 26px;
+        font-size: 30px;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1{
-        font-size: 32px;
+        font-size: 28px;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner p{
-        font-size: 32px;
+        font-size: 24px;
     }
     .slider-home .sliders .slider-3 .box-inner h1, .slider-home .sliders .slider-3 .box-inner p{
-        text-align: center !important;
-        color: var(--color-white) !important;
+
     }
     .slider-home .sliders .slider-2 .box-image .image .box-inner h1{
-        font-size: 32px;
+
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image{
-        padding-right: 0;
+
     }
     .slider-home .sliders .slider-1 .box-image .image .box-inner h1,.slider-home .sliders .slider-1 .box-image .image .box-inner h2{
         font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner h1{
-        font-size: 36px;
+        font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner p{
-        font-size: 30px;
+        font-size: 32px;
     }
     .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
         font-size: 24px;
