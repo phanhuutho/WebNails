@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 35%;
+    background-position: 65% 55%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 35%;
+    background-position: 60% 60%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 65%;
+    background-position: 40% 90%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -151,24 +151,24 @@
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
     color: var(--color-white);
-    text-shadow: 2px 2px 2px #888888;
+    text-shadow: 0px 0px 2px #000000;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 20px;
     color: var(--color-white);
-    text-shadow: 2px 2px 2px #888888;
+    text-shadow: 0px 0px 2px #000000;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
-    color: var(--color-black);
-    text-shadow: 2px 2px 2px #888888;
+    color: var(--color-white);
+    text-shadow: 0px 0px 2px #000000;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
-    color: var(--color-black);
-    text-shadow: 2px 2px 2px #888888;
+    color: var(--color-white);
+    text-shadow: 0px 0px 2px #000000;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 42px;

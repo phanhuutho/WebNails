@@ -1,17 +1,17 @@
 {
-  "Name": "Devina Nails Spa",
-  "HyperLinkTell": "tel:(234)3805874",
-  "TextTell": "(234)-380-5874",
-  "GooglePlus": "https://www.google.com/search?q=Devina+Nails+44236",
-  "Address": "5829 Darrow Rd Unit 12, Hudson, OH 44236",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/M5PVujpWdhvXP4ph8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12003.574346228423!2d-81.4400468!3d41.2240894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831214241db41e9%3A0xcab78aac5844adb0!2sDevina%20Nails%20Spa%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1690822155033!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Oasis Nails",
+  "HyperLinkTell": "tel:(832)2229400",
+  "TextTell": "(832)-222-9400",
+  "GooglePlus": "https://www.google.com/search?q=Oasis+Nails+77407",
+  "Address": "7101 W Grand Pkwy S, Richmond, TX 77407",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/v44XArbQqrescrjE6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13866.42073692824!2d-95.7521438!3d29.6732292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8641202280e6971f%3A0x6bd4675963404fb!2sOasis%20Nails%20(10%25%20-%2015%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1691144504656!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://nailsolutionplus.firebaseapp.com/?storeKey=-NJM_EQJn-kjBUPfxvQO",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/Coupon.jpg"
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [
