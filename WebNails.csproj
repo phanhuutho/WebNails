@@ -409,6 +409,7 @@
     <Content Include="Views\Home\payment.cshtml" />
     <Content Include="Views\Home\process.cshtml" />
     <Content Include="Views\Home\Finish.cshtml" />
+    <Content Include="Views\Home\gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
