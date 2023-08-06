@@ -11,30 +11,18 @@
 }
 <main>
     @{Html.RenderPartial("_SliderPageSub");}
-    <div class="page-main container-lg">
+    <div class="page-main container-fluid">
         <div class="row py-5 pb-4 gallery-list">
             @{
                 foreach (var item in Model)
                 {
-                    <div class="col-lg-3 col-md-4 pt-4">
+                    <div class="col-lg-2 col-md-3 pt-4">
                         <div class="box-inner">
-                            <a href="@item.UrlRedirect" target="_blank">
-                                <img src="@item.Image" loading="lazy" />
-                            </a>
+                            <img src="@item.Src" loading="lazy" />
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="row py-1 pb-4">
-            <div class="col-12 text-center">
-                <input type="hidden" id="CountPage" name="CountPage" value="@(string.Format("{0}", ViewBag.CountPage))" />
-                <button class="btn btn-success btn-theme btn-none-border" id="btnLoadMore">Load More</button>
-                @if (!string.IsNullOrEmpty(Instagram.Url))
-                {
-                    <a class="btn btn-primary" href="@Instagram.Url" target="_blank"><i class="fa fa-instagram"></i> Follow on Instagram</a>
-                }
-            </div>
         </div>
     </div>
 </main>
@@ -65,27 +53,6 @@
 
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
-            });
-
-            $("#btnLoadMore").on("click", function () {
-                indexPage = indexPage + 1;
-                $("body").addClass("loader");
-                $("body").append("<div class='loading'></div>");
-                setTimeout(function () {
-                    if (indexPage == parseInt($("#CountPage").val())) {
-                        $("#btnLoadMore").remove();
-                    }
-                    $.ajax({
-                        type: "POST",
-                        url: "/gallery-more.html",
-                        data: { indexPage: indexPage },
-                        success: function (result) {
-                            $(".gallery-list").append(result);
-                            $(".loading", "body").remove();
-                            $("body").removeClass("loader");
-                        },
-                    });
-                }, 1000);
             });
         });
     </script>
