@@ -23,3 +23,117 @@
 .page-main {
     position: relative;
 }
+.page-main .box-inner{
+    background: var(--color-white);
+}
+
+.page-main .box-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    max-width: 250px;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    padding: var(--padding-box);
+    background: var(--color-theme);
+}
+.page-main .bg-item-service {
+    position: relative;
+}
+.page-main .bg-item-service:before{
+    content: " ";
+    position: absolute;
+    height: 100px;
+    background: var(--color-theme);
+    width: 100%;
+    top: 125px;
+    z-index: 0;
+    opacity: 0.7;
+    left: 0;
+}
+.page-main .box-image [class*='image-'] {
+    height: 100%;
+    max-height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-main .box-image .image-manicure {
+    background-image: url(../images/home/home_service_manicure.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 25% 80%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-pedicure {
+    background-image: url(../images/home/home_service_pedicure.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 0%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-artificial-nails {
+    background-image: url(../images/home/home_service_artificial_nails.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 60% 50%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-dipping-powder {
+    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-little-kid-services {
+    background-image: url(../images/home/home_service_little_kid.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-add-ons {
+    background-image: url(../images/home/home_service_add_on.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-polish-change {
+    background-image: url(../images/home/home_service_polish_change.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-waxing {
+    background-image: url(../images/home/home_service_waxing.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+
+.page-main .box-image .image-facial {
+    background-image: url(../images/home/home_service_facial.jpg);
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    background-size: cover !important;
+}
+.page-main h2 {
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 40px;
+}
+.page-main .box-image h2 {
+    font-size: 1.75em;
+    text-shadow: 0px 0px 4px #000000;
+}
+
+.page-main .box-prices span.plus{
+    display: inline-block;
+    width:0px;
+}

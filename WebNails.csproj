@@ -154,9 +154,11 @@
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\footer.css" />
+    <Content Include="Content\css\lightbox.min.css" />
     <Content Include="Content\css\menu.css" />
     <Content Include="Content\css\page-about-us.css" />
     <Content Include="Content\css\page-contact.css" />
+    <Content Include="Content\css\page-gallery.css" />
     <Content Include="Content\css\page-gift.css" />
     <Content Include="Content\css\page-home.css" />
     <Content Include="Content\css\page-prices.css" />
@@ -185,6 +187,7 @@
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
     <Content Include="Content\images\banner\slider\your-nails.jpg" />
+    <Content Include="Content\images\close.png" />
     <Content Include="Content\images\contact\contact_image_1.jpg" />
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
@@ -290,9 +293,12 @@
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
+    <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
     <Content Include="Content\images\popup\coupon-02.jpg" />
+    <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\prices-01.jpg" />
     <Content Include="Content\images\price-list\prices-02.jpg" />
@@ -317,6 +323,7 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery-ui.min.js" />
     <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\lightbox.js" />
     <Content Include="Content\js\site.js" />
     <Content Include="Content\js\slick-animation.js" />
     <Content Include="Content\js\slick.min.js" />
