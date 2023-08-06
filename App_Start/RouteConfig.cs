@@ -76,6 +76,14 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "Gallery", "gallery.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Gallery"
+                });
+
+            routes.MapRoute(
                 "Payment", "payment.html",
                 new
                 {

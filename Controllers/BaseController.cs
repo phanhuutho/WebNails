@@ -42,11 +42,11 @@ namespace WebNails.Controllers
             ViewBag.AboutUs = txtAboutUs;
 
             var jsonHomeGallery = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/home-data-gallery.json"));
-            var dataHomeGallery = JsonConvert.DeserializeObject<GalleryModel>(jsonHomeGallery);
+            var dataHomeGallery = JsonConvert.DeserializeObject<List<GalleryModel>>(jsonHomeGallery);
             ViewBag.HomeGallery = dataHomeGallery;
 
             var jsonGallery = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/data-gallery.json"));
-            var dataGallery = JsonConvert.DeserializeObject<GalleryModel>(jsonGallery);
+            var dataGallery = JsonConvert.DeserializeObject<List<GalleryModel>>(jsonGallery);
             ViewBag.Gallery = dataGallery;
         }
     }

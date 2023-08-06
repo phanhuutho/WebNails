@@ -8,6 +8,7 @@ using System.Net.Mail;
 using System.Configuration;
 using Newtonsoft.Json;
 using System.Web.Routing;
+using WebNails.Models;
 
 namespace WebNails.Controllers
 {
@@ -41,6 +42,12 @@ namespace WebNails.Controllers
         public ActionResult Prices()
         {
             return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            var Galleries = (List<GalleryModel>)ViewBag.Gallery ?? new List<GalleryModel>();
+            return View(Galleries);
         }
 
         public ActionResult Payment()
