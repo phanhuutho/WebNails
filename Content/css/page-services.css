@@ -49,6 +49,7 @@ main {
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
     background: var(--color-theme);
+    cursor: pointer;
 }
 .page-main .bg-item-service {
     position: relative;

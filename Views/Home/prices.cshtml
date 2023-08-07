@@ -462,5 +462,16 @@
 @section scripts{
     <script type="text/javascript">
         ActiveMenu("menu-price-list");
+
+        $(document).ready(function () {
+            var hash = window.location.hash;
+            if (hash != '') {
+                var index = hash.indexOf("#");
+                if (index !== -1) {
+                    var id = hash.substring(index + 1);
+                    document.getElementById(id).scrollIntoView();
+                }
+            }
+        });
     </script>
 }

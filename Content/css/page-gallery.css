@@ -9,3 +9,6 @@
     height: 340px;
     width: 100%;
 }
+.lb-data .lb-number {
+    display: none !important;
+}

@@ -8,6 +8,7 @@
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
     <link href="~/Content/css/slick.css" rel="stylesheet">
     <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
     <link href="~/Content/css/slider.css" rel="stylesheet">
     <link href="~/Content/css/page-home.css" rel="stylesheet">
 }
@@ -32,7 +33,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="slider-coupon">
-                            @foreach(var item in Coupons)
+                            @foreach (var item in Coupons)
                             {
                                 <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
                                     <img src="@item.Src" class="img-fluid" />
@@ -49,6 +50,7 @@
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>
+    <script src="~/Content/js/lightbox.js"></script>
     <script type="text/javascript">
         ActiveMenu("menu-home");
 
@@ -76,9 +78,9 @@
                 sliderInit.slick('slickPlay');
             });
 
-            @{ 
-                if (showCoupon && Coupons.Count > 0) 
-                { 
+            @{
+                if (showCoupon && Coupons.Count > 0)
+                {
                     <text>
                     $("#ModalCoupon").modal("show");
 
@@ -105,7 +107,11 @@
                     </text>
                 }
             }
-            
+
         });
+
+        function DetailService(id) {
+            document.location.href = "price-list.html#" + id;
+        }
     </script>
 }
