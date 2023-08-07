@@ -1,29 +1,20 @@
 {
-  "Name": "Devina Nails Spa",
-  "HyperLinkTell": "tel:(234)3805874",
-  "TextTell": "(234)-380-5874",
-  "GooglePlus": "https://www.google.com/search?q=Devina+Nails+44236",
-  "Address": "5829 Darrow Rd Unit 12, Hudson, OH 44236",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/M5PVujpWdhvXP4ph8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12003.574346228423!2d-81.4400468!3d41.2240894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831214241db41e9%3A0xcab78aac5844adb0!2sDevina%20Nails%20Spa%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1690822155033!5m2!1sen!2s",
+  "Name": "Paris Nails Spa",
+  "HyperLinkTell": "tel:(407)7304073",
+  "TextTell": "(407)-730-4073",
+  "GooglePlus": "https://www.google.com/search?q=Paris+Nails+32801",
+  "Address": "16 N Summerlin Ave, Orlando, FL 32801",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/q7VQX2pYvAiJEGxh8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14019.567302037274!2d-81.3685648!3d28.542971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77ae3e9be26f3%3A0x3ec781817a1badc5!2sParis%20Nails%20Spa!5e0!3m2!1sen!2s!4v1691426761328!5m2!1sen!2s",
   "LinkBookingAppointment": "",
-  "ShowCoupon": true,
+  "ShowCoupon": false,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/Coupon.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
