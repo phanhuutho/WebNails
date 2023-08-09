@@ -293,7 +293,6 @@
     justify-content: center;
 }
 .about-us .box-inner{
-    text-align: justify;
     width: 530px;
     max-width: 100%;
 }
@@ -307,7 +306,7 @@
     color: var(--color-text-theme);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1.15em;
 }
 .about-us .box-inner .divider{
     margin-left: 0;
