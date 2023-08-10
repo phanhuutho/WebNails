@@ -1,13 +1,16 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #d8b442;
+    --color-theme: #d7b441;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #d8b442;
+    --color-text-theme: #d7b441;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
+    --color-yellow-pastle: #fff5d2;
+    --color-pink-pastele: #f5e6f5;
+    --color-blue-pastle: #c8dcff;
 }
 body {
     background: var(--bg-site);
