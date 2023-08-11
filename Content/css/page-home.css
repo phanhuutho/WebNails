@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 65%;
+    background-position: 45% 95%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 35% 25%;
+    background-position: 65% 20%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
     max-height: 100%;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 80% 0%;
+    background-position: 60% 0%;
     background-size: cover !important;
 }
 .slider-home .sliders .slider-5 .box-image .image{
@@ -91,7 +91,7 @@
     max-height: 100%;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 75%;
+    background-position: 40% 75%;
     background-size: cover !important;
 }
 
@@ -170,25 +170,25 @@
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px #888888;
+    color: var(--color-black);
+    text-shadow: 0px 0px 10px #FFFFFF;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px #888888;
+    color: var(--color-black);
+    text-shadow: 0px 0px 10px #FFFFFF;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
-    font-size: 48px;
-    color: var(--color-black);
+    font-size: 36px;
+    color: var(--color-white);
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
-    font-size: 36px;
+    font-size: 28px;
     color: var(--color-black);
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
-    font-size: 26px;
+    font-size: 24px;
     color: var(--color-black);
 }
 
@@ -315,7 +315,7 @@
     color: var(--color-text-theme);
     font-family: "Vesper Libre";
     padding-bottom: 15px;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 .about-us .box-inner .divider{
     margin-left: 0;
@@ -415,19 +415,19 @@
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 25% 80%;
+    background-position: 65% 80%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 0%;
+    background-position: 80% 0%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_eyelash_extensions.jpg);
     background-repeat: no-repeat !important;
     background-position: 60% 50%;
     background-size: cover !important;
