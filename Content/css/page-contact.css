@@ -8,14 +8,12 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 .box-tel, .box-contact {
-    background-color: #FFFFFF;
-    padding: 5px 5px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .btn-tel, .btn-contact {
-    background-color: var(--color-theme);
+    background-color: var(--color-green-pastle);
     border-radius: 0;
     border-color: var(--color-theme);
     font-family: "Carme";
@@ -28,11 +26,11 @@
 }
 .btn-tel span, .btn-contact span{
     line-height: 4;
-    color: var(--color-black);
+    color: var(--color-theme);
 }
 .btn-tel:hover, .btn-contact:hover{
-    background-color: var(--color-theme);
-    border-color: var(--color-theme);
+    background-color: var(--color-green-pastle);
+    border-color: var(--color-green-pastle);
     box-shadow: 1px 1px 5px var(--color-black);
 }
 .box-map{

@@ -274,7 +274,7 @@
 }
 
 .about-us {
-    background-color: var(--color-yellow-pastle);
+    background-color: var(--color-green-pastle);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -347,7 +347,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--bg-site);
+    background-color: var(--color-yellow-pastle);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
