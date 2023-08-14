@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 95%;
+    background-position: 5% 95%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 20%;
+    background-position: 30% 80%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 50%;
+    background-position: 60% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -81,22 +81,26 @@
     max-height: 100%;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 0%;
+    background-position: 50% 0%;
     background-size: cover !important;
 }
 .slider-home .sliders .slider-5 .box-image .image{
-    width: 780px;
-    height: 525px;
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 75%;
+    background-position: 40% 35%;
     background-size: cover !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-home .slider-4 .box-image {
-    background: rgba(175,195,230,1);
+    background: rgba(240,240,160,1);
 }
 
 .slider-home .slider-5 .box-image {
@@ -170,26 +174,29 @@
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 10px #FFFFFF;
+    color: var(--color-theme);
+    text-shadow: 0px 0px 2px #888888;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 10px #FFFFFF;
+    color: var(--color-theme);
+    text-shadow: 0px 0px 2px #888888;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 36px;
-    color: var(--color-white);
+    color: var(--color-theme);
+    font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
     font-size: 28px;
-    color: var(--color-black);
+    color: var(--color-theme);
+    font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 24px;
-    color: var(--color-black);
+    color: var(--color-theme);
+    font-weight: bold;
 }
 
 .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {

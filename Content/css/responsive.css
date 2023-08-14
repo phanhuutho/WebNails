@@ -171,10 +171,13 @@
     .slider-home .sliders .slider-4 .box-image .image{
 
     }
-    .slider-home .sliders .slider-4 .box-inner, .slider-home .sliders .slider-5 .box-inner{
+    .slider-home .sliders .slider-4 .box-inner{
         height: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .slider-home .sliders .slider-5 .box-inner{
+
     }
     .slider-home .sliders .slider-4 .box-image .box-inner h1{
         font-size: 26px;

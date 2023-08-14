@@ -30,6 +30,7 @@ a:active,a:hover {
 /*Logo*/
 .logo, .navbar-brand img {
     max-width: 100px;
+    margin: 0 auto;
 }
 
 /*font*/
