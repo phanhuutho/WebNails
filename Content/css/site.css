@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #fff5d2;
-    --color-theme: #022d30;
+    --bg-site: #FFFFFF;
+    --color-theme: #dcb568;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #022d30;
+    --color-text-theme: #dcb568;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
     --color-yellow-pastle: #fff5d2;
@@ -29,7 +29,7 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 100px;
+    max-width: 150px;
     margin: 0 auto;
 }
 
@@ -87,7 +87,6 @@ a:active,a:hover {
 .btn-theme {
     background: var(--color-yellow-pastle);
     border-color: var(--color-yellow-pastle);
-    color: var(--color-theme);
     font-family: 'Fira Sans';
     font-weight: bold;
     letter-spacing: 3px;
