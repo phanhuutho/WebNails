@@ -188,14 +188,14 @@
         margin-bottom: 10px;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner p{
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
     .slider-home .sliders .slider-3 .box-inner h1, .slider-home .sliders .slider-3 .box-inner p{
         text-align: center !important;
     }
     .slider-home .sliders .slider-2 .box-image .image .box-inner h1{
-        font-size: 32px;
+        font-size: 36px;
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image{
         padding-right: 0;
@@ -204,7 +204,7 @@
         font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner h1{
-        font-size: 36px;
+        font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner p{
         font-size: 30px;

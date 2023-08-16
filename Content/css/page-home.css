@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 5% 95%;
+    background-position: 55% 45%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 80%;
+    background-position: 55% 55%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 50%;
+    background-position: 75% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
     max-height: 100%;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 0%;
+    background-position: 70% 0%;
     background-size: cover !important;
 }
 .slider-home .sliders .slider-5 .box-image .image{
@@ -92,7 +92,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 35%;
+    background-position: 65% 85%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
 }
 
 .slider-home .slider-4 .box-image {
-    background: rgba(240,240,160,1);
+    background: rgba(225,215,230,1);
 }
 
 .slider-home .slider-5 .box-image {
@@ -163,39 +163,46 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
     font-size: 48px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px #888888;
+    color: var(--color-black);
+    text-shadow: 0px 0px 1px #888888;
+    font-weight: bold;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
-    font-size: 20px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px #888888;
+    font-size: 18px;
+    color: var(--color-black);
+    text-shadow: 0px 0px 1px #888888;
+    font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
-    color: var(--color-theme);
+    color: var(--color-white);
     text-shadow: 0px 0px 2px #888888;
+    font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
-    color: var(--color-theme);
+    color: var(--color-white);
     text-shadow: 0px 0px 2px #888888;
+    font-weight: bold;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
-    font-size: 36px;
-    color: var(--color-theme);
+    font-size: 32px;
+    color: var(--color-white);
+    text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
     font-size: 28px;
-    color: var(--color-theme);
+    color: var(--color-white);
+    text-shadow: 0px 0px 2px #888888;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 24px;
-    color: var(--color-theme);
+    color: var(--color-white);
+    text-shadow: 0px 0px 2px #888888;
     font-weight: bold;
 }
 
@@ -281,7 +288,6 @@
 }
 
 .about-us {
-    background-color: var(--color-green-pastle);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -416,27 +422,27 @@
     height: 100%;
     max-height: 340px;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 80%;
+    background-position: 50% 80%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 80% 0%;
+    background-position: 50% 0%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
     background-image: url(../images/home/home_service_eyelash_extensions.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 
@@ -455,7 +461,7 @@
 }
 .beauty-spa .box-image h2{
     font-size: 1.75em;
-    text-shadow: 0px 0px 5px #888888;
+    text-shadow: 0px 0px 5px #000000;
 }
 .services{
     width: 100%;

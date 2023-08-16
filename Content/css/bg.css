@@ -24,7 +24,7 @@
 .bg .bg-contact .description{
     font-family: Parisienne; 
     font-size: 170%; 
-    color: var(--color-theme);
+    color: var(--color-white);
     font-weight: bold;
     text-shadow: 0px 0px 2px #888888;
 }
