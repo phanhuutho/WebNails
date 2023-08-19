@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 55% 45%;
+    background-position: 5% 25%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 55% 55%;
+    background-position: 60% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 50%;
+    background-position: 30% 35%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -92,7 +92,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 85%;
+    background-position: 60% 45%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
 }
 
 .slider-home .slider-4 .box-image {
-    background: rgba(225,215,230,1);
+    background: rgba(195,235,255,1);
 }
 
 .slider-home .slider-5 .box-image {
@@ -111,7 +111,7 @@
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 48px;
-    text-shadow: 2px 2px 2px #888888;
+    text-shadow: 0px 0px 3px #000000;
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
@@ -190,7 +190,7 @@
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 32px;
     color: var(--color-white);
-    text-shadow: 0px 0px 1px #888888;
+    text-shadow: 0px 0px 2px #000000;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
@@ -288,6 +288,7 @@
 }
 
 .about-us {
+    background-color: var(--color-yellow-pastle);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -360,7 +361,6 @@
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--color-yellow-pastle);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -513,7 +513,7 @@
     height: 85px;
 }
 .business-gift {
-    background: var(--color-orange-pastle);
+    background: var(--color-yellow-pastle);
 }
 .business, .e-gift {
 
