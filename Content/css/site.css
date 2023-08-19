@@ -1,17 +1,18 @@
 /*root*/
 :root {
-    --bg-site: #FFFFFF;
-    --color-theme: #dcb568;
+    --bg-site: #fbfaf8;
+    --color-theme: #ad7133;
     --color-menu-legend: #000201;
     --color-black: #000201;
     --color-white: #FFFFFF;
-    --color-text-theme: #dcb568;
+    --color-text-theme: #ad7133;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
     --color-yellow-pastle: #fff5d2;
     --color-pink-pastele: #f5e6f5;
     --color-blue-pastle: #c8dcff;
     --color-green-pastle: #ccffcc;
+    --color-orange-pastle: #ffcd98;
 }
 body {
     background: var(--bg-site);
@@ -85,8 +86,9 @@ a:active,a:hover {
     width: 60%;
 }
 .btn-theme {
-    background: var(--color-yellow-pastle);
-    border-color: var(--color-yellow-pastle);
+    background: var(--color-theme);
+    border-color: var(--color-theme);
+    color: var(--color-white);
     font-family: 'Fira Sans';
     font-weight: bold;
     letter-spacing: 3px;

@@ -9,7 +9,7 @@
     <meta name="robots" content="">
     <meta name="generator" content="">
     <title>@ViewBag.Title</title>
-    <link rel="icon" href="~/Content/images/favicon.png">
+    <link rel="icon" href="~/Content/images/favicon.jpg">
     <link href="https://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9" type="text/css" media="all" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vesper+Libre%3A400%2C500%2C700%2C900%2C400i%2C500i%2C700i%2C900i%7CUnlock%3A400%2C400i%7CCarme%3A400%2C400i%7CPiedra%3A400%2C400i%7CParisienne%3A400%2C400i%7CPrata%3A400%2C400i%7CPT+Serif+Caption%3A400%2C400i%7CSen%3A400%2C700%2C800%2C400i%2C700i%2C800i&amp;display=swap&amp;subset=all&amp;ver=3.2.1" type="text/css" media="all" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Fira+Sans%3A300%2C400%7CPrata%3A300%2C400" rel="stylesheet" type="text/css" media="all">
@@ -29,10 +29,10 @@
         <div class="container-xl">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <div class="logo py-2">
+                    <div class="logo py-md-3">
                         @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                         {
-                            <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                            <img src="~/Content/images/logo.jpg" class="img-fluid" alt="@ViewBag.Name" />
                         }
                         else
                         {
@@ -51,7 +51,7 @@
                             <a class="navbar-brand" href="javascript:void(0)">
                                 @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                                 {
-                                    <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                                    <img src="~/Content/images/logo.jpg" class="img-fluid" alt="@ViewBag.Name" />
                                 }
                                 else
                                 {
@@ -85,18 +85,21 @@
                 </div>
             </div>
         </div>
-        <div class="container-xl pb-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="top-divider"></div>
-                    <div class="text-center">
-                        <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
-                            <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
-                        </a>
+        <div class="top-divider"></div>
+        @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+        {
+            <div class="container-xl pb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <a href="@(ViewBag.LinkBookingAppointment)" target="_blank" class="call-us">
+                                <span>Book Appointment</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        }
         <div class="list-menu">
             <ul class="list-unstyled">
                 <li>
@@ -137,7 +140,7 @@
                 <div class="col-lg-3 col-md-12 mb-3 text-center text-lg-start">
                     @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                     {
-                        <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
+                        <img src="~/Content/images/logo.jpg" class="img-fluid" alt="@ViewBag.Name" />
                     }
                     else
                     {
@@ -162,7 +165,7 @@
                     </a>
                     <a href="@ViewBag.HyperLinkTell" class="social-icon-link" title="Phone">
                         <div class="circle bg-primary">
-                            <span class="fa fa-mobile-phone"></span>
+                            <span class="fa fa-phone"></span>
                         </div>
                     </a>
                     <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
