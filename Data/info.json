@@ -1,17 +1,17 @@
 {
-  "Name": "Nails and Waxing",
-  "HyperLinkTell": "tel:(941)8896723",
-  "TextTell": "(941)-889-6723",
-  "GooglePlus": "https://www.google.com/search?q=Nails+and+Waxing+Bradenton+FL+34209",
-  "Address": "3208 Manatee Ave W, Bradenton, FL 34209",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/GoqwLhcGt7kBZVp36",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.153246395844!2d-82.59690692385736!3d27.495609134797363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c3171dde439b27%3A0xa63af58332e83ec6!2sNails%20and%20Waxing!5e0!3m2!1sen!2s!4v1692376225630!5m2!1sen!2s",
+  "Name": "Utopian Nails and Spa",
+  "HyperLinkTell": "tel:(817)8495808",
+  "TextTell": "(817)-849-5808",
+  "GooglePlus": "https://www.google.com/search?q=Utopian+Nails+76054",
+  "Address": "420 Grapevine Hwy Suite 110, Hurst, TX 76054",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/7RabqydYdaQHBqWG9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13404.820963534485!2d-97.1742934!3d32.8662887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7f55a58749c5%3A0x93e505fba2b943ef!2sUtopian%20Nails%20and%20Spa!5e0!3m2!1sen!2s!4v1692515693897!5m2!1sen!2s",
   "LinkBookingAppointment": "",
-  "ShowCoupon": false,
+  "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/Coupon.jpg"
+      "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
   "Prices": [],

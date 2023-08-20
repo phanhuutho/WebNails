@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #fbfaf8;
+    --bg-site: #f5e6f5;
     --color-theme: #ad7133;
     --color-menu-legend: #000201;
     --color-black: #000201;
@@ -30,7 +30,7 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 150px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
