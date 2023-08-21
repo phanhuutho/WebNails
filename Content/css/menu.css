@@ -1,6 +1,7 @@
 /*Menu*/
 .menu-desktop {
-    margin-top: 5px;
+    margin-top: 15px;
+    padding-bottom: 15px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -14,7 +15,8 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .02em;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: relative;
 }
 .menu-desktop .list-inline > li > a:hover,.menu-desktop .list-inline > li > a.active{
@@ -23,7 +25,7 @@
 .menu-desktop .list-inline > li > a:before{
     content: " ";
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 50%;
     width: 0%;
     height: 3px;
