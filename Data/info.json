@@ -1,11 +1,11 @@
 {
-  "Name": "Utopian Nails and Spa",
-  "HyperLinkTell": "tel:(817)8495808",
-  "TextTell": "(817)-849-5808",
-  "GooglePlus": "https://www.google.com/search?q=Utopian+Nails+76054",
-  "Address": "420 Grapevine Hwy Suite 110, Hurst, TX 76054",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/7RabqydYdaQHBqWG9",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13404.820963534485!2d-97.1742934!3d32.8662887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7f55a58749c5%3A0x93e505fba2b943ef!2sUtopian%20Nails%20and%20Spa!5e0!3m2!1sen!2s!4v1692515693897!5m2!1sen!2s",
+  "Name": "City Nails",
+  "HyperLinkTell": "tel:(254)6624502",
+  "TextTell": "(254)-662-4502",
+  "GooglePlus": "https://www.google.com/search?q=City+Nails+76711",
+  "Address": "2436 W Loop 340 # 1, Waco, TX 76711",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/spDX5YjF96KjCbPN7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13607.7833568714!2d-97.1586647!3d31.4981725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864f8140c2de524f%3A0x5dfd20a7926f13db!2sCity%20Nails%20(%245%20-%20%2410%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1692722482759!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -24,7 +24,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/utopiannailsandspa/",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"

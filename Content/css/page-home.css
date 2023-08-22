@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 30%;
+    background-position: 45% 10%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 40%;
+    background-position: 60% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,14 +68,14 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 50%;
+    background-position: 75% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-4 .box-image .image{
-    width: 400px;
+    width: 1000px;
     height: 700px;
     max-width: 100%;
     max-height: 100%;
