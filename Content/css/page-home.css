@@ -81,7 +81,7 @@
     max-height: 100%;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 0%;
+    background-position: 35% 50%;
     background-size: cover !important;
 }
 .slider-home .sliders .slider-5 .box-image .image{
@@ -91,7 +91,7 @@
     max-height: 100%;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 45%;
+    background-position: 70% 50%;
     background-size: cover !important;
 }
 
@@ -173,32 +173,32 @@
 .slider-home .sliders .slider-3 .box-image .box-inner h1{
     font-size: 52px;
     color: var(--color-white);
-    text-shadow: 0px 0px 2px #888888;
+    text-shadow: 0px 0px 5px #000000;
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p{
     font-family: "Fira Sans";
     font-size: 42px;
     color: var(--color-white);
-    text-shadow: 0px 0px 2px #888888;
+    text-shadow: 0px 0px 5px #000000;
     font-weight: bold;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 32px;
     color: var(--color-theme);
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
     font-size: 28px;
     color: var(--color-theme);
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 24px;
     color: var(--color-theme);
-    text-shadow: 0px 0px 1px #000000;
+    text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
 

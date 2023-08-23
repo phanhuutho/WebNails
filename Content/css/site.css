@@ -94,3 +94,16 @@ a:active,a:hover {
     letter-spacing: 3px;
     border-radius: 30px;
 }
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.25);
+    cursor: pointer;
+}

@@ -38,16 +38,3 @@ main {
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
 }
-
-.img-hover-zoom {
-    overflow: hidden;
-}
-
-.img-hover-zoom img {
-    transition: transform .5s ease;
-}
-
-.img-hover-zoom:hover img {
-    transform: scale(1.5);
-    cursor: pointer;
-}
