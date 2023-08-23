@@ -343,10 +343,9 @@
 }
 .about-us .box-image .box-inner{
     padding: var(--padding-box);
-    background: #FFFFFF;
+    background: var(--color-theme);
     max-width: unset;
     width: unset;
-    box-shadow: var(--box-shadow);
 }
 .about-us .box-image .image-about-us{
     width: 450px;
@@ -357,6 +356,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
+    background: var(--color-blue-pastle);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -509,7 +509,7 @@
     height: 85px;
 }
 .business-gift {
-    background: var(--color-yellow-pastle);
+    background: var(--color-blue-pastle);
 }
 .business, .e-gift {
 
@@ -650,7 +650,7 @@
 .contact .bg-contact .container{
     position: relative;
 }
-.contact-images{
+.contact-images {
     position: relative;
     width: 100%;
     height: 310px;
@@ -659,8 +659,7 @@
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
+    background-color: var(--color-theme);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
     height: 300px;

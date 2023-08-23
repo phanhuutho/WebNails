@@ -2,7 +2,7 @@
     position: relative;
 }
 .bg-main {
-    background-color: var(--bg-site);
+    background-color: var(--color-white);
 }
 .bg-contact .overlay {
     background-color: rgba(0, 0, 0, 0.05);
@@ -33,9 +33,10 @@
     border-color: var(--color-theme);
     box-shadow: 1px 1px 5px var(--color-black);
 }
-.box-map{
+.box-map {
     padding: 5px 5px 0px 5px;
     background-color: rgb(255,255,255);
+    border: 1px solid var(--color-theme);
 }
 .gallery {
     padding-top: 50px;
@@ -60,8 +61,7 @@
 }
 .gallery .container .box-inner{
     padding: var(--padding-box);
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
+    background-color: var(--color-theme);
     max-width: 400px;
     margin: 0 auto;
 }

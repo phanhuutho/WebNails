@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #fff5d2;
-    --color-theme: #a28960;
-    --color-menu-legend: #000201;
-    --color-black: #000201;
+    --bg-site: #150f55;
+    --color-theme: #150f55;
+    --color-menu-legend: #ccffff;
+    --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #a28960;
+    --color-text-theme: #150f55;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
     --color-yellow-pastle: #fff5d2;
@@ -21,7 +21,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: var(--bg-site);
+    background: var(--color-black);
 }
 
 a:active,a:hover {
@@ -30,7 +30,7 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 200px;
+    max-width: 120px;
     margin: 0 auto;
 }
 

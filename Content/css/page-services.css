@@ -1,5 +1,5 @@
 main {
-    background-color: var(--color-menu-legend);
+
 }
 .page-main {
     position: relative;
@@ -17,6 +17,7 @@ main {
 }
 .box-text {
     padding: 10px;
+    background-color: var(--color-white);
 }
 .box-text h2{
     font-family: Prata;
@@ -35,6 +36,5 @@ main {
 }
 .page-main .box-inner {
     padding: var(--padding-box);
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
+    background-color: var(--color-theme);
 }
