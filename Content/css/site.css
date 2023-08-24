@@ -21,7 +21,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: var(--color-black);
+    background: var(--color-theme);
 }
 
 a:active,a:hover {

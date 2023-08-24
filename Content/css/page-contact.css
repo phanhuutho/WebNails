@@ -44,7 +44,7 @@
     background-color: var(--color-theme);
     background-image: url(../images/contact/service_bg.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 45%;
+    background-position: 50% 65%;
     background-size: cover !important;
     position: relative;
 }
@@ -62,27 +62,34 @@
 .gallery .container .box-inner{
     padding: var(--padding-box);
     background-color: var(--color-theme);
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
 }
 .bg-contact-1 {
     background-image: url(../images/contact/contact_image_1.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 70% 50%;
-    height: 400px;
+    background-position: 50% 50%;
+    height: 300px;
 }
 .bg-contact-2 {
     background-image: url(../images/contact/contact_image_2.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
-    height: 400px;
+    height: 300px;
 }
 .bg-contact-3 {
     background-image: url(../images/contact/contact_image_3.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
-    height: 400px;
+    height: 300px;
+}
+.bg-contact-4 {
+    background-image: url(../images/contact/contact_image_4.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    height: 300px;
 }
