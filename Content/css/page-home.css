@@ -416,7 +416,7 @@
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
-    max-height: 340px;
+    max-height: 346px;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -662,7 +662,7 @@
     background-color: var(--color-theme);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
-    height: 300px;
+    height: 306px;
 }
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);
