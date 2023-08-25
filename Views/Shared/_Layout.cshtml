@@ -72,9 +72,6 @@
                                 <a class="list-inline-item-link" id="menu-price-list" href="price-list.html">Price List</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-gallery" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-e-gift" href="e-gift.html">Gift Card</a>
                             </li>
                             <li class="list-inline-item">
@@ -83,19 +80,12 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="contact.html">Contact</a>
                             </li>
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link call-us" id="menu-booking" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                                    <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-xl pb-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="top-divider"></div>
-                    <div class="text-center">
-                        <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
-                            <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -112,9 +102,6 @@
                     <a href="price-list.html">Price List</a>
                 </li>
                 <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
                     <a href="e-gift.html">Gift Card</a>
                 </li>
                 <li>
@@ -125,7 +112,7 @@
                 </li>
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
-                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
+                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
                     </a>
                 </li>
             </ul>
@@ -140,7 +127,7 @@
     <footer>
         <div class="container-xl pt-4">
             <div class="row">
-                <div class="col-lg-3 col-md-12 mb-3 text-center text-lg-start">
+                <div class="col-lg-2 d-lg-block d-md-none d-none mb-3 text-center text-lg-start">
                     @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                     {
                         <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
@@ -150,7 +137,7 @@
                         <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
                     }
                 </div>
-                <div class="col-lg-3 col-md-4 mb-3">
+                <div class="col-lg-4 col-md-4 mb-3">
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
@@ -168,7 +155,7 @@
                     </a>
                     <a href="@ViewBag.HyperLinkTell" class="social-icon-link" title="Phone">
                         <div class="circle bg-primary">
-                            <span class="fa fa-mobile-phone"></span>
+                            <span class="fa fa-phone"></span>
                         </div>
                     </a>
                     <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">

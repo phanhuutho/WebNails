@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 55%;
+    background-position: 100% 15%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 60%;
+    background-position: 25% 60%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 90%;
+    background-position: 40% 30%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 35% 85%;
+    background-position: 55% 45%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 55%;
+    background-position: 60% 30%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -157,13 +157,13 @@
     animation-delay: 2s;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1{
-    font-size: 48px;
+    font-size: 42px;
     color: var(--color-white);
     text-shadow: 0px 0px 2px #000000;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p{
     font-family: "Fira Sans";
-    font-size: 20px;
+    font-size: 18px;
     color: var(--color-white);
     text-shadow: 0px 0px 2px #000000;
 }
@@ -583,7 +583,7 @@
     height: 500px;
     background-image: url(../images/home/home_business.jpg);
     background-repeat: no-repeat !important;
-    background-position: 0% 70%;
+    background-position: 75% 70%;
     background-size: cover !important;
 }
 .e-gift {
@@ -618,7 +618,7 @@
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 50%;
+    background-position: 30% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
@@ -681,7 +681,6 @@
 .contact-images{
     position: relative;
     width: 100%;
-    height: 290px;
     margin: 0 auto;
     max-width: 290px;
     transition: opacity 1s;
