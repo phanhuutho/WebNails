@@ -1,17 +1,17 @@
 {
-  "Name": "Oasis Nails",
+  "Name": "Logic Nails Spa",
   "HyperLinkTell": "tel:(832)2229400",
   "TextTell": "(832)-222-9400",
-  "GooglePlus": "https://www.google.com/search?q=Oasis+Nails+77407",
-  "Address": "7101 W Grand Pkwy S, Richmond, TX 77407",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/v44XArbQqrescrjE6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13866.42073692824!2d-95.7521438!3d29.6732292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8641202280e6971f%3A0x6bd4675963404fb!2sOasis%20Nails%20(10%25%20-%2015%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1691144504656!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://nailsolutionplus.firebaseapp.com/?storeKey=-NJM_EQJn-kjBUPfxvQO",
+  "GooglePlus": "https://www.google.com/search?q=Logic+Nails+74133",
+  "Address": "8222 E 103rd St Suite 125, Tulsa, OK 74133",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/Xrw938iXLizLdovV8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12909.223348796031!2d-95.8845899!3d36.0128243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b68f46ef2bc493%3A0xe84e93030705ff0d!2sLogic%20Nails%20Spa%20(%245%20OFF%20Any%20%2440%20Service)!5e0!3m2!1sen!2s!4v1692961540339!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://www.lldtek.com/salon/appt/NTczMzV8bG9naWM4MjIyfE9LXzA4NjU1fDU4Y2M2MWIzMDY0YjZiNDJjNmVjYThhYzY3MjZmMzg5",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
+      "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
   "Prices": [

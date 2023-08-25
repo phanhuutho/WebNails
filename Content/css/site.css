@@ -1,22 +1,24 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #a37461;
+    --color-theme: #545454;
     --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #a37461;
+    --color-text-theme: #545454;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 5px;
 }
 body {
     background: var(--bg-site);
+    background-image: url(../images/bg-site.jpg);
+    background-repeat: repeat-y;
 }
 main{
     overflow-x:hidden;
 }
 header {
-    background: var(--bg-site);
+
 }
 
 a:active,a:hover {

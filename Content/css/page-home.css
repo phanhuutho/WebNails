@@ -276,7 +276,6 @@
 }
 
 .about-us {
-    background-color: #f6e5f5;
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -284,7 +283,6 @@
     position: relative;
 }
 .about-us .overlay{
-    background-color: rgba(255, 255, 255, 0);
     position: absolute;
     top: 0;
     left: 0;
@@ -350,7 +348,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--bg-site);
+
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -540,7 +538,7 @@
     height: 85px;
 }
 .business-gift {
-    background: #f6e5f5;
+
 }
 .business, .e-gift {
 
