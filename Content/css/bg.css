@@ -58,7 +58,7 @@
     background-repeat: no-repeat !important;
     background-position: 35% 50%;
     background-size: cover !important;
-    min-height: 990px;
+    min-height: 700px;
 }
 .bg-linear-green-blue{
     background: linear-gradient(to right, RGBA(46,204,113,1) 0%,RGBA(69,85,239,1) 100%);
