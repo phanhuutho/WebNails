@@ -1,16 +1,16 @@
 /*root*/
 :root {
-    --bg-site: #150f55;
-    --color-theme: #150f55;
+    --bg-site: #d4effa;
+    --color-theme: #00a1e7;
     --color-menu-legend: #ccffff;
-    --color-black: #000000;
+    --color-black: #012839;
     --color-white: #FFFFFF;
-    --color-text-theme: #150f55;
+    --color-text-theme: #00a1e7;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #fff5d2;
     --color-pink-pastele: #f5e6f5;
-    --color-blue-pastle: #c8dcff;
+    --color-blue-pastle: #d4effa;
     --color-green-pastle: #ccffcc;
     --color-orange-pastle: #ffcd98;
 }
@@ -21,7 +21,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: var(--color-theme);
+    background: var(--color-blue-pastle);
 }
 
 a:active,a:hover {
