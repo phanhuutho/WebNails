@@ -40,7 +40,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 15%;
+    background-position: 80% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 35%;
+    background-position: 5% 5%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@
     height: 700px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 55% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -104,10 +104,10 @@
 }
 
 .slider-home .sliders .slider-1 .box-inner h1,.slider-home .sliders .slider-1 .box-inner h2{
-    color: var(--color-white);
+    color: var(--color-black);
     font-family: 'Fira Sans';
     font-size: 48px;
-    text-shadow: 0px 0px 3px #000000;
+    text-shadow: 0px 0px 5px var(--color-white);
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
@@ -185,19 +185,19 @@
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1{
     font-size: 32px;
-    color: var(--color-theme);
+    color: var(--color-black);
     text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1{
     font-size: 28px;
-    color: var(--color-theme);
+    color: var(--color-black);
     text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p{
     font-size: 24px;
-    color: var(--color-theme);
+    color: var(--color-black);
     text-shadow: 0px 0px 1px #888888;
     font-weight: bold;
 }
@@ -343,7 +343,7 @@
 }
 .about-us .box-image .box-inner{
     padding: var(--padding-box);
-    background: var(--color-theme);
+    background: var(--color-black);
     max-width: unset;
     width: unset;
 }
@@ -398,7 +398,7 @@
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background: var(--color-theme);
+    background: var(--color-black);
 }
 .beauty-spa .bg-item-service{
     position: relative;
@@ -595,7 +595,7 @@
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
     max-width: 350px;
-    background-color: var(--color-text-theme);
+    background-color: var(--color-black);
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -659,7 +659,7 @@
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background-color: var(--color-theme);
+    background-color: var(--color-black);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
     height: 306px;
