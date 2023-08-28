@@ -24,9 +24,9 @@
 .bg .bg-contact .description{
     font-family: Parisienne; 
     font-size: 170%; 
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: bold;
-    text-shadow: 0px 0px 5px #000000;
+    text-shadow: 0px 0px 5px #FFFFFF;
 }
 .bg-overlay{
     background-color: rgba(255, 255, 255, 0.75);
