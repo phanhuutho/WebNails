@@ -1,12 +1,11 @@
 ﻿.page-main .box-inner {
     padding: var(--padding-box);
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    height: 350px;
+    background-color: var(--color-black);
+    height: 344px;
 }
 .box-inner img {
     object-fit: cover;
-    height: 340px;
+    height: 100%;
     width: 100%;
 }
 .lb-data .lb-number {
