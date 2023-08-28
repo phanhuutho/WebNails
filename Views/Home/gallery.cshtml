@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebNails.Models.GalleryModel>
+@{
+    ViewBag.Title = "Gallery";
+}
+@section css{
+    <link href="~/Content/css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/css/slick.css" rel="stylesheet">
+    <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
+    <link href="~/Content/css/slider.css" rel="stylesheet">
+    <link href="~/Content/css/page-gallery.css" rel="stylesheet">
+}
+<main>
+    @{Html.RenderPartial("_SliderPageSub");}
+    <div class="page-main container-lg">
+        <div class="row py-5 pb-4 gallery-list">
+            @{
+                foreach (var item in Model)
+                {
+                    <div class="col-xl-3 col-lg-4 col-md-6 pt-4">
+                        <div class="box-inner">
+                            <a href="@item.Src" data-lightbox="gallery-item" data-title="">
+                                <img src="@item.Src" loading="lazy" class="img-fluid" />
+                            </a>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</main>
+
+@section scripts{
+    <script src="~/Content/js/slick.min.js"></script>
+    <script src="~/Content/js/slick-animation.js"></script>
+    <script src="~/Content/js/lightbox.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("menu-gallery");
+
+        var sliderInit = $('.sliders');
+        var indexPage = 1;
+        $(document).ready(function () {
+            sliderInit.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: true,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+            sliderInit.slickAnimation();
+
+            sliderInit.on('touchstart', e => {
+                sliderInit.slick('slickPlay');
+            });
+        });
+    </script>
+}

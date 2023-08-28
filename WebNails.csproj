@@ -126,6 +126,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CouponModel.cs" />
+    <Compile Include="Models\GalleryModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
@@ -153,9 +154,11 @@
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\footer.css" />
+    <Content Include="Content\css\lightbox.min.css" />
     <Content Include="Content\css\menu.css" />
     <Content Include="Content\css\page-about-us.css" />
     <Content Include="Content\css\page-contact.css" />
+    <Content Include="Content\css\page-gallery.css" />
     <Content Include="Content\css\page-gift.css" />
     <Content Include="Content\css\page-home.css" />
     <Content Include="Content\css\page-prices.css" />
@@ -185,6 +188,7 @@
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
     <Content Include="Content\images\banner\slider\your-nails.jpg" />
+    <Content Include="Content\images\close.png" />
     <Content Include="Content\images\contact\contact_image_1.jpg" />
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
@@ -207,6 +211,62 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\gallery_1.jpg" />
+    <Content Include="Content\images\gallery\gallery_10.jpg" />
+    <Content Include="Content\images\gallery\gallery_11.jpg" />
+    <Content Include="Content\images\gallery\gallery_12.jpg" />
+    <Content Include="Content\images\gallery\gallery_13.jpg" />
+    <Content Include="Content\images\gallery\gallery_14.jpg" />
+    <Content Include="Content\images\gallery\gallery_15.jpg" />
+    <Content Include="Content\images\gallery\gallery_16.jpg" />
+    <Content Include="Content\images\gallery\gallery_17.jpg" />
+    <Content Include="Content\images\gallery\gallery_18.jpg" />
+    <Content Include="Content\images\gallery\gallery_19.jpg" />
+    <Content Include="Content\images\gallery\gallery_2.jpg" />
+    <Content Include="Content\images\gallery\gallery_20.jpg" />
+    <Content Include="Content\images\gallery\gallery_21.jpg" />
+    <Content Include="Content\images\gallery\gallery_22.jpg" />
+    <Content Include="Content\images\gallery\gallery_23.jpg" />
+    <Content Include="Content\images\gallery\gallery_24.jpg" />
+    <Content Include="Content\images\gallery\gallery_25.jpg" />
+    <Content Include="Content\images\gallery\gallery_26.jpg" />
+    <Content Include="Content\images\gallery\gallery_27.jpg" />
+    <Content Include="Content\images\gallery\gallery_28.jpg" />
+    <Content Include="Content\images\gallery\gallery_29.jpg" />
+    <Content Include="Content\images\gallery\gallery_3.jpg" />
+    <Content Include="Content\images\gallery\gallery_30.jpg" />
+    <Content Include="Content\images\gallery\gallery_31.jpg" />
+    <Content Include="Content\images\gallery\gallery_32.jpg" />
+    <Content Include="Content\images\gallery\gallery_33.jpg" />
+    <Content Include="Content\images\gallery\gallery_34.jpg" />
+    <Content Include="Content\images\gallery\gallery_35.jpg" />
+    <Content Include="Content\images\gallery\gallery_36.jpg" />
+    <Content Include="Content\images\gallery\gallery_37.jpg" />
+    <Content Include="Content\images\gallery\gallery_38.jpg" />
+    <Content Include="Content\images\gallery\gallery_39.jpg" />
+    <Content Include="Content\images\gallery\gallery_4.jpg" />
+    <Content Include="Content\images\gallery\gallery_40.jpg" />
+    <Content Include="Content\images\gallery\gallery_41.jpg" />
+    <Content Include="Content\images\gallery\gallery_42.jpg" />
+    <Content Include="Content\images\gallery\gallery_43.jpg" />
+    <Content Include="Content\images\gallery\gallery_44.jpg" />
+    <Content Include="Content\images\gallery\gallery_5.jpg" />
+    <Content Include="Content\images\gallery\gallery_6.jpg" />
+    <Content Include="Content\images\gallery\gallery_7.jpg" />
+    <Content Include="Content\images\gallery\gallery_8.jpg" />
+    <Content Include="Content\images\gallery\gallery_9.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_1.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_10.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_11.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_12.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_2.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_3.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_4.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_5.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_6.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_7.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_8.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_9.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -230,8 +290,11 @@
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
+    <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
+    <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\prices-01.jpg" />
     <Content Include="Content\images\price-list\prices-02.jpg" />
@@ -256,6 +319,7 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery-ui.min.js" />
     <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\lightbox.js" />
     <Content Include="Content\js\site.js" />
     <Content Include="Content\js\slick-animation.js" />
     <Content Include="Content\js\slick.min.js" />
@@ -299,6 +363,8 @@
     <Content Include="Content\js\bootstrap.js.map" />
     <Content Include="Content\js\bootstrap.min.js.map" />
     <Content Include="Data\info.json" />
+    <Content Include="Data\data-gallery.json" />
+    <Content Include="Data\home-data-gallery.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -346,6 +412,7 @@
     <Content Include="Views\Home\payment.cshtml" />
     <Content Include="Views\Home\process.cshtml" />
     <Content Include="Views\Home\Finish.cshtml" />
+    <Content Include="Views\Home\gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
