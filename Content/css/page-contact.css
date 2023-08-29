@@ -26,7 +26,7 @@
 }
 .btn-tel span, .btn-contact span{
     line-height: 4;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 .btn-tel:hover, .btn-contact:hover{
     background-color: var(--color-theme);

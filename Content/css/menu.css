@@ -8,7 +8,7 @@
     justify-content: end;
 }
 .menu-desktop .list-inline > li > a {
-    color: var(--color-theme);
+    color: var(--color-white);
     font-weight: 700;
     font-family: "Lato", sans-serif;
     font-size: 1em;
@@ -20,7 +20,7 @@
     position: relative;
 }
 .menu-desktop .list-inline > li > a:hover,.menu-desktop .list-inline > li > a.active{
-    color: var(--color-black);
+    color: var(--color-menu-legend);
 }
 .menu-desktop .list-inline > li > a:before{
     content: " ";
@@ -35,7 +35,7 @@
 }
 .menu-desktop .list-inline > li > a:hover:before, .menu-desktop .list-inline > li > a.active:before{
     width: 100%;
-    background-color: var(--color-black);
+    background-color: var(--color-menu-legend);
 }
 .navbar-nav > li:first-child {
     margin-left: 0 !important;

@@ -2,15 +2,15 @@
 footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
-    color: var(--color-black);
-    background: var(--color-blue-pastle);
+    color: var(--color-white);
+    background: var(--bg-site);
     font-size: 15px;
 }
 footer .legend {
-    color: var(--color-theme);
+    color: var(--color-menu-legend);
 }
 footer a{
-    color: var(--color-black);
+    color: var(--color-white);
     text-decoration: none;
 }
 footer .circle{
