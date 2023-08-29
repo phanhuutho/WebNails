@@ -122,7 +122,7 @@
     .menu-mobile-tablet .menu-bars button{
         border: none;
         background: none;
-        color: var(--color-blue-pastle);
+        color: var(--color-black);
     }
     .menu-mobile-tablet .menu-bars .fa{
         font-size: 18px;
