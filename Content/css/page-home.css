@@ -595,7 +595,7 @@
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
     max-width: 350px;
-    background-color: var(--color-black);
+    background-color: var(--color-theme);
 }
 .e-gift .line-bottom{
     background-color: rgb(246, 241, 233);
@@ -614,7 +614,7 @@
     font-weight: bold;
     font-family: "Parisienne";
     font-size: 2.5em;
-    line-height: 2;
+    line-height: 1.5;
     color: var(--color-text-theme);
 }
 .contact .btn-more, .e-gift .btn-more, .business .btn-more, .beauty-spa .btn-more, .about-us .btn-more{
