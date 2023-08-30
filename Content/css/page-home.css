@@ -670,7 +670,7 @@
 .contact-images {
     position: relative;
     width: 100%;
-    height: 301px;
+    height: 300px;
     margin: 0 auto;
     max-width: 310px;
     transition: opacity 1s;
@@ -679,7 +679,7 @@
     background-color: var(--color-black);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
-    height: 306px;
+    height: 296px;
 }
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);

@@ -114,17 +114,17 @@
 
 .slider-banner .slider-1 .box-slider .image{
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 30% 50%;
+    background-position: 70% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image{
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 25% 50%;
+    background-position: 75% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image{
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 55% 50%;
+    background-position: 10% 75%;
 }
 
 .slider-banner .slider-4 .box-slider .image{

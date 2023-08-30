@@ -347,6 +347,15 @@
     .slider-home .sliders .slider-4 .box-image .image {
         height: 620px;
     }
+    .slider-banner .slider-1 .box-slider .image {
+        height: 535px;
+    }
+    .slider-banner .slider-2 .box-slider .image {
+        height: 535px;
+    }
+    .slider-banner .slider-3 .box-slider .image {
+        height: 535px;
+    }
 }
 @media (min-width: 1200px) {
 
