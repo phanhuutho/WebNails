@@ -1,13 +1,13 @@
 {
-  "Name": "Nails By Tm",
-  "HyperLinkTell": "tel:(713)5278585",
-  "TextTell": "(713)-527-8585",
-  "GooglePlus": "https://www.google.com/search?q=Nails+by+Tm+77006",
-  "Address": "3407 Montrose Blvd A6, Houston, TX 77006",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/cXJCPidPazGwcJLg9",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13856.945501011724!2d-95.3907854!3d29.7418715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf63c60000cf%3A0x7ad9ba8d0674025!2sNails%20By%20Tm%20(%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1693329015597!5m2!1sen!2s",
+  "Name": "Jenny's Nails Spa Hampton",
+  "HyperLinkTell": "tel:(770)2882920",
+  "TextTell": "(770)-288-2920",
+  "GooglePlus": "https://www.google.com/search?q=Jenny+Nails+30228",
+  "Address": "2345-2347 Jonesboro Rd, Hampton, GA 30228",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/tGxUyUKirfvP1Xw76",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13313.805096261929!2d-84.2326391!3d33.4635999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f458368110208f%3A0x6500437449ec7b34!2sJenny's%20Nails%20Spa%20Hampton!5e0!3m2!1sen!2s!4v1693472423748!5m2!1sen!2s",
   "LinkBookingAppointment": "",
-  "ShowCoupon": true,
+  "ShowCoupon": false,
   "Coupons": [
     {
       "Status": true,

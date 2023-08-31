@@ -87,7 +87,7 @@
 }
 
 .slider-banner .slider-1 .box-slider{
-    background: rgba(175,195,230,1);
+    background: #cbcdcf;
 }
 
 .slider-banner .slider-2 .box-slider{
@@ -95,7 +95,7 @@
 }
 
 .slider-banner .slider-3 .box-slider{
-    background: rgba(175,195,230,1);
+    background: #fff001;
 }
 
 .slider-banner .slider-4 .box-slider{
@@ -114,17 +114,17 @@
 
 .slider-banner .slider-1 .box-slider .image{
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 70% 50%;
+    background-position: 55% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image{
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 75% 50%;
+    background-position: 25% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image{
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 10% 75%;
+    background-position: 20% 75%;
 }
 
 .slider-banner .slider-4 .box-slider .image{
@@ -152,7 +152,7 @@
 
 .slider-banner .box-slider .box-inner h1 {
     font-family: 'Inter','Arial';
-    font-size: 54px;
+    font-size: 46px;
     color: var(--color-black);
     text-shadow: 2px 2px 2px #888888;
     font-weight: bold;

@@ -1,18 +1,19 @@
 /*root*/
 :root {
-    --bg-site: #000000;
-    --color-theme: #cc9933;
-    --color-menu-legend: #cc9933;
-    --color-black: #012839;
+    --bg-site: #FFFFFF;
+    --color-theme: #960101;
+    --color-menu-legend: #960101;
+    --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #cc9933;
+    --color-text-theme: #960101;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #fff5d2;
     --color-pink-pastele: #f5e6f5;
     --color-blue-pastle: #d4effa;
-    --color-green-pastle: #ccffcc;
+    --color-green-pastle: #d6e9cd;
     --color-orange-pastle: #ffcd98;
+    --color-red-pastle: #ff9c9c;
 }
 body {
     background: var(--bg-site);

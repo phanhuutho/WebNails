@@ -7,6 +7,9 @@
 .bg-contact .overlay {
     background-color: rgba(0, 0, 0, 0.05);
 }
+.bg-contact .box-inner {
+    width: 320px;
+}
 .box-tel, .box-contact {
     text-align: center;
     margin-top: 10px;
@@ -26,7 +29,7 @@
 }
 .btn-tel span, .btn-contact span{
     line-height: 4;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 .btn-tel:hover, .btn-contact:hover{
     background-color: var(--color-theme);

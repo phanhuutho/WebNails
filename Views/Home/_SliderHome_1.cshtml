@@ -2,37 +2,23 @@
     <div class="sliders">
         <div class="slider-1">
             <div class="box-image">
-                <div class="row h-100 align-items-lg-center">
-                    <div class="col-lg-6">
-                        <div class="d-flex justify-content-lg-start justify-content-center">
-                            <div class="image"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="box-inner text-center">
-                            <h1 data-animation-in="animate__animated animate__fadeInDown">WELCOME TO</h1>
-                            <h2 data-animation-in="animate__animated animate__fadeInDown"><strong>@ViewBag.Name</strong></h2>
-                            <a class="btn btn-warning btn-theme btn-more btn-none-border" data-animation-in="animate__animated animate__fadeInDown" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
-                                <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "APPOINTMENT" : "CALL US")
-                            </a>
-                        </div>
+                <div class="image">
+                    <div class="box-inner text-center">
+                        <h1 data-animation-in="animate__animated animate__fadeInDown">WELCOME TO</h1>
+                        <h2 data-animation-in="animate__animated animate__fadeInDown"><strong>@ViewBag.Name</strong></h2>
+                        <a class="btn btn-warning btn-theme btn-more btn-none-border" data-animation-in="animate__animated animate__fadeInDown" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                            <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "APPOINTMENT" : "CALL US")
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="slider-2">
             <div class="box-image">
-                <div class="row h-100 align-items-lg-center">
-                    <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="box-inner text-center text-lg-end p-2">
-                            <h1 class="font-Prata" data-animation-in="animate__animated animate__fadeInDown">Made For You</h1>
-                            <p data-animation-in="animate__animated animate__fadeInDown">Famous Treatment For Nails Services</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="d-flex justify-content-lg-start justify-content-center">
-                            <div class="image"></div>
-                        </div>
+                <div class="image">
+                    <div class="box-inner text-center">
+                        <h1 class="font-Prata" data-animation-in="animate__animated animate__fadeInDown">Made For You</h1>
+                        <p data-animation-in="animate__animated animate__fadeInDown">Famous Treatment For Nails Services</p>
                     </div>
                 </div>
             </div>
