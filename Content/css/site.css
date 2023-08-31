@@ -13,7 +13,7 @@
     --color-blue-pastle: #d4effa;
     --color-green-pastle: #d6e9cd;
     --color-orange-pastle: #ffcd98;
-    --color-red-pastle: #ff9c9c;
+    --color-red-pastle: #ffdddd;
 }
 body {
     background: var(--bg-site);
