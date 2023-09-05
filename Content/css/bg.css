@@ -14,11 +14,10 @@
     height: 100%;
 }
 .bg .bg-contact {
-    padding-top: 350px;
-    padding-bottom: 350px;
+    height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 15%;
+    background-position: 70% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
