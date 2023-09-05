@@ -179,7 +179,8 @@
         
     }
     .slider-home .sliders .slider-4 .box-image .image{
-        height: 550px;
+        height: 735px;
+        background-position: 35% 60% !important;
     }
     .slider-home .sliders .slider-4 .box-inner{
         height: 100%;
@@ -342,10 +343,10 @@
 
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        height: 535px;
+
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        height: 620px;
+        background-position: 75% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
         height: 565px;
