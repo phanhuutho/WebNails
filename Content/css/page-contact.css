@@ -96,3 +96,6 @@
     background-position: 50% 50%;
     height: 300px;
 }
+.card-text p{
+    font-size: 13px;
+}
