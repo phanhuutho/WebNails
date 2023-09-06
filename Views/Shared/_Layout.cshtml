@@ -28,7 +28,7 @@
     <header>
         <div class="container-lg">
             <div class="row">
-                <div class="col-lg-2 col-md-3">
+                <div class="col-lg-2 col-md-2">
                     <div class="logo">
                         @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                         {
@@ -40,7 +40,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-9">
+                <div class="col-lg-10 col-md-10">
                     <div class="menu-mobile-tablet">
                         <div class="menu-bars">
                             <button type="button">
@@ -68,9 +68,9 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="services.html">Services</a>
                             </li>
-                            @*<li class="list-inline-item">
+                            <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-price-list" href="price-list.html">Price List</a>
-                            </li>*@
+                            </li>
                             @*<li class="list-inline-item">
 		                        <a class="list-inline-item-link" id="menu-gallery" href="gallery.html">Gallery</a>
 	                        </li>*@
@@ -83,25 +83,14 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="contact.html">Contact</a>
                             </li>
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
-        {
-            <div class="container-fluid pb-4">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <a href="@(ViewBag.LinkBookingAppointment)" target="_blank" class="call-us">
-                                <span>Book Appointment</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }
         <div class="list-menu">
             <ul class="list-unstyled">
                 <li>
@@ -110,9 +99,9 @@
                 <li>
                     <a href="services.html">Services</a>
                 </li>
-                @*<li>
+                <li>
                     <a href="price-list.html">Price List</a>
-                </li>*@
+                </li>
                 @*<li>
 		            <a href="gallery.html">Gallery</a>
 	            </li>*@
