@@ -1,17 +1,17 @@
 /*root*/
 :root {
     --bg-site: #000000;
-    --color-theme: #87b95a;
-    --color-menu-legend: #87b95a;
+    --color-theme: #339933;
+    --color-menu-legend: #339933;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #87b95a;
+    --color-text-theme: #339933;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #fff5d2;
     --color-pink-pastele: #f5e6f5;
     --color-blue-pastle: #d4effa;
-    --color-green-pastle: #ddffdd;
+    --color-green-pastle: #c6dbc6;
     --color-orange-pastle: #ffcd98;
     --color-red-pastle: #ffdddd;
 }
