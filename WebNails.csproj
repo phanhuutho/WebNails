@@ -214,7 +214,7 @@
     <Content Include="Content\images\e-gift\gift_8.jpg" />
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
-    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\favicon.jpg" />
     <Content Include="Content\images\gallery\gallery_1.jpg" />
     <Content Include="Content\images\gallery\gallery_10.jpg" />
     <Content Include="Content\images\gallery\gallery_11.jpg" />
@@ -295,7 +295,7 @@
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
     <Content Include="Content\images\loading.gif" />
-    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
     <Content Include="Content\images\prev.png" />
