@@ -1,12 +1,12 @@
 {
-  "Name": "Rina Nails & Spa",
-  "HyperLinkTell": "tel:(407)7784230",
-  "TextTell": "(407)-778-4230",
-  "GooglePlus": "https://www.google.com/search?q=Rina+Nails+32821",
-  "Address": "13401 Blue Heron Beach Dr #102, Orlando, FL 32821",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/dpLihRxvx3ada8DH6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14042.652356436865!2d-81.5021615!3d28.3690338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd8031a7055555%3A0xa17ec9ca27399cd0!2sRina%20Nails%20%26%20Spa%20(%245%20OFF%20%26%2010%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1694014376152!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://bit.ly/45qE9qU",
+  "Name": "Daisy Nails New Hope",
+  "HyperLinkTell": "tel:(763)2530253",
+  "TextTell": "(763)-253-0253",
+  "GooglePlus": "https://www.google.com/search?q=Daisy+Nails+55427",
+  "Address": "3548 Winnetka Ave N, Minneapolis, MN 55427",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/ZUdPedj8DmS29k397",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11280.773289173005!2d-93.3785524!3d45.0210009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b334292154ebfb%3A0x19146a6fc572b845!2sDaisy%20Nails%20New%20Hope!5e0!3m2!1sen!2s!4v1694189628984!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://bit.ly/3OnrPR6",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -14,28 +14,7 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -45,14 +24,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/DaisyNailsNewHope/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/Daisynailsnewhope/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

@@ -15,8 +15,14 @@
     --color-orange-pastle: #ffcd98;
     --color-red-pastle: #ffdddd;
 }
+html {
+    background-image: url(../images/background_darkwood.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
 body {
-    background: var(--bg-site);
+    background-color: transparent;
 }
 main{
     overflow-x:hidden;
