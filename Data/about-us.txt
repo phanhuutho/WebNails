@@ -1,21 +1,30 @@
-﻿<p>Welcome to Rina Nails & Spa in 13401 Blue Heron Beach Dr #102, Orlando, FL 32821.  
-We are more than just a conventional nail salon. 
-We are the place where you can come and escape from your everyday stress and busy lifestyle, clients could enjoy the luxurious and comfortable atmosphere at affordable prices!</p>
-
-<p>Come and relax in our bright and sweet space with modern equipment. 
-We pride ourselves in providing our customer with fabulously indulgent nail care while maintaining the highest level of cleanliness and sterilization.</p>
-
-<p>Our manicurists are here to ensure that you always have a positive and high quality experience. 
-We are always up to date with the latest trends and techniques. 
-We sterilize all the tools and equipment after every use to ensure sanitation because your safety is one of our top priorities.</p>
-
-<p>Come to visit to Rina Nails & Spa to experience the difference!</p>
+﻿<p>Welcome to Daisy Nails New Hope!</p>
 <p>
-    <span>Nails salons near me</span>
-    <br>
-    <span>Nail spa near me</span>
-    <br>
-    <span>Nail salon</span>
-    <br>
-    <span>Nails spa</span>
+	As you might have heard. 
+	We're under new Management and team. 
+	Please feel free to give us a call or book online, walk-ins welcome. 
+	We hope to provide the same relaxing and family feel, with new and in depth services and detailed work. 
+	Looking forward to meeting you! 
+	This is our new <a href="price-list.html" class="btn-link">services list</a>, we hope you can find something that you are looking for. 
+	We have detailed nail enhancements to designs. 
+	Just ask one of our staff here at our <a href="staffs.html" class="btn-link">staff profile</a> page.
+</p>
+<p>
+	<a href="%Link-Booking%" class="btn-link" target="_blank">Book an appointment</a> for any of our services online any time - day or night! 
+	If you have a technician request please put it down on the "notes" section when you book your appointment. 
+	We will confirm your appointment through e-mail or text when we receive it. 
+	If you need to get in touch during business hours, check our <a href="contact.html" class="btn-link">contact details</a>. 
+</p>
+<p>
+	Thank You!
+</p>
+<p>
+	We look forward hearing from you!
+</p>
+<p>
+	Daisy nails Team 
+</p>
+<p>
+	<i>These are just a few of our designs that our guests requested.<br/>
+	Bring in your designs and challenge us to see if we can design something fun for you!</i>
 </p>

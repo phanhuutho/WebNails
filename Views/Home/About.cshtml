@@ -19,7 +19,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-10 text-center mt-3">
-                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs))
+                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
                     </div>
                 </div>
             </div>

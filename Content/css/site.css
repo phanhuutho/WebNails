@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #000000;
-    --color-theme: #339933;
-    --color-menu-legend: #339933;
+    --color-theme: #FFFFFF;
+    --color-menu-legend: #FF0000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #339933;
+    --color-text-theme: #FF0000;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #fff5d2;
@@ -13,7 +13,7 @@
     --color-blue-pastle: #d4effa;
     --color-green-pastle: #c6dbc6;
     --color-orange-pastle: #ffcd98;
-    --color-red-pastle: #ffdddd;
+    --color-red-pastle: #cc6666;
 }
 html {
     background-image: url(../images/background_darkwood.jpg);
@@ -93,8 +93,8 @@ a:active,a:hover {
     width: 60%;
 }
 .btn-theme {
-    background: var(--color-theme);
-    border-color: var(--color-theme);
+    background: var(--color-red-pastle);
+    border-color: var(--color-red-pastle);
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-weight: bold;
