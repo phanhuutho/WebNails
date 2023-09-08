@@ -377,7 +377,7 @@
     height: 450px;
     background-image: url(../images/home/home_about_us.jpg);
     background-repeat: no-repeat !important;
-    background-position: 35% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 .beauty-spa {
@@ -615,7 +615,7 @@
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 35% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
