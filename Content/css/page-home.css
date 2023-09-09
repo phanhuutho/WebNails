@@ -34,10 +34,9 @@
 
 .slider-1 .box-image .box-inner {
     margin: 0 auto;
-    max-width: 350px;
 }
 .slider-5 .box-image .box-inner {
-    width: 320px;
+
 }
 
 .slider-home .sliders .slider-1 .box-image .image {
@@ -48,7 +47,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15% 60%;
+    background-position: 15% 10%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -62,10 +61,10 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 5% 50%;
+    background-position: 35% 92.5%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: self-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-3 .box-image .image {
@@ -76,21 +75,25 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 40%;
+    background-position: 55% 40%;
     background-size: cover !important;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-4 .box-image .image {
-    width: 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
     height: 800px;
-    max-width: 100%;
-    max-height: 100%;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 20%;
+    background-position: 50% 20%;
     background-size: cover !important;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
 }
 .slider-home .sliders .slider-5 .box-image .image {
     position: absolute;
@@ -100,7 +103,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 32.5% 30%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -209,21 +212,21 @@
     font-weight: bold;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1 {
-    font-size: 26px;
-    color: var(--color-theme);
-    text-shadow: 0px 0px 5px var(--color-white);
+    font-size: 32px;
+    color: var(--color-white);
+    text-shadow: 0px 0px 3px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
     font-size: 28px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 2px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 0px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p {
     font-size: 20px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 2px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 0px var(--color-black);
     font-weight: bold;
 }
 
