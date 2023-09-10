@@ -7,5 +7,5 @@
 	Looking forward to meeting you! 
 	This is our new <a href="price-list.html" class="btn-link">services list</a>, we hope you can find something that you are looking for. 
 	We have detailed nail enhancements to designs. 
-	Just ask one of our staff here at our <a href="staffs.html" class="btn-link">staff profile</a> page.
+	Just ask one of our staff here at our <a href="index.html#staff" class="btn-link">staff profile</a> page.
 </p>

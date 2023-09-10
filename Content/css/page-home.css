@@ -697,7 +697,7 @@
 .contact-images .image1{
     background-image: url(../images/home/home_contact_image_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 70%;
+    background-position: 85% 70%;
     background-size: cover !important;
 }
 
@@ -711,7 +711,7 @@
 .contact-images .image3{
     background-image: url(../images/home/home_contact_image_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 45%;
+    background-position: 15% 45%;
     background-size: cover !important;
 }
 

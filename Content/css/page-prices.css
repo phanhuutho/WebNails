@@ -23,3 +23,6 @@
 .page-main {
     position: relative;
 }
+.card {
+    background-color: rgba(235,235,235,0.7);
+}

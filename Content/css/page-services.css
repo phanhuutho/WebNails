@@ -36,5 +36,5 @@ main {
 }
 .page-main .box-inner {
     padding: var(--padding-box);
-    background-color: var(--color-black);
+    background-color: var(--color-white);
 }
