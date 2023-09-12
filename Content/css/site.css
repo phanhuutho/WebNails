@@ -92,8 +92,8 @@ a:active,a:hover {
     width: 60%;
 }
 .btn-theme {
-    background: var(--color-red-pastle);
-    border-color: var(--color-red-pastle);
+    background: var(--color-theme);
+    border-color: var(--color-theme);
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-weight: bold;

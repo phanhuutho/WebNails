@@ -211,6 +211,7 @@
     <Content Include="Content\images\e-gift\gift_8.jpg" />
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
+    <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\gallery\gallery_1.jpg" />
     <Content Include="Content\images\gallery\gallery_10.jpg" />
     <Content Include="Content\images\gallery\gallery_11.jpg" />
