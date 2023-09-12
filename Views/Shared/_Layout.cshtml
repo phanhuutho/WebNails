@@ -9,7 +9,7 @@
     <meta name="robots" content="">
     <meta name="generator" content="">
     <title>@ViewBag.Title</title>
-    <link rel="icon" href="~/Content/images/favicon.png">
+    @*<link rel="icon" href="~/Content/images/favicon.png">*@
     <link href="https://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9" type="text/css" media="all" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vesper+Libre%3A400%2C500%2C700%2C900%2C400i%2C500i%2C700i%2C900i%7CUnlock%3A400%2C400i%7CCarme%3A400%2C400i%7CPiedra%3A400%2C400i%7CParisienne%3A400%2C400i%7CPrata%3A400%2C400i%7CPT+Serif+Caption%3A400%2C400i%7CSen%3A400%2C700%2C800%2C400i%2C700i%2C800i&amp;display=swap&amp;subset=all&amp;ver=3.2.1" type="text/css" media="all" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Fira+Sans%3A300%2C400%7CPrata%3A300%2C400" rel="stylesheet" type="text/css" media="all">
@@ -28,7 +28,7 @@
     <header>
         <div class="container-lg">
             <div class="row">
-                <div class="col-lg-2 col-md-2">
+                @*<div class="col-lg-2 col-md-2">
                     <div class="logo">
                         @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                         {
@@ -39,8 +39,8 @@
                             <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
                         }
                     </div>
-                </div>
-                <div class="col-lg-10 col-md-10">
+                </div>*@
+                <div class="col-lg-12 col-md-12">
                     <div class="menu-mobile-tablet">
                         <div class="menu-bars">
                             <button type="button">
@@ -49,14 +49,15 @@
                         </div>
                         <div class="logo-brand">
                             <a class="navbar-brand" href="javascript:void(0)">
-                                @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
+                                @*@if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                                 {
                                     <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
                                 }
                                 else
                                 {
                                     <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
-                                }
+                                }*@
+                                <span>Plano Nails</span>
                             </a>
                         </div>
                     </div>
@@ -83,9 +84,9 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="contact.html">Contact</a>
                             </li>
-                            <li class="list-inline-item">
+                            @*<li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
-                            </li>
+                            </li>*@
                         </ul>
                     </div>
                 </div>
@@ -114,11 +115,11 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
-                <li>
+                @*<li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
                         <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
                     </a>
-                </li>
+                </li>*@
             </ul>
             <button title="Close (Esc)" type="button" class="btn-close">&nbsp;</button>
         </div>
@@ -131,7 +132,7 @@
     <footer>
         <div class="container-xl pt-4">
             <div class="row">
-                <div class="col-lg-2 d-lg-block d-md-none d-none mb-3 text-center text-lg-start">
+                @*<div class="col-lg-2 d-lg-block d-md-none d-none mb-3 text-center text-lg-start">
                     @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                     {
                         <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
@@ -140,13 +141,13 @@
                     {
                         <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
                     }
-                </div>
-                <div class="col-lg-4 col-md-4 mb-3">
+                </div>*@
+                <div class="col-lg-5 col-md-4 mb-3">
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
                 </div>
-                <div class="col-lg-3 col-md-4 mb-3">
+                <div class="col-lg-4 col-md-4 mb-3">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>
                     @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
                 </div>

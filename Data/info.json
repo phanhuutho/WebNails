@@ -1,12 +1,12 @@
 {
-  "Name": "Daisy Nails New Hope",
-  "HyperLinkTell": "tel:(763)2530253",
-  "TextTell": "(763)-253-0253",
-  "GooglePlus": "https://www.google.com/search?q=Daisy+Nails+55427",
-  "Address": "3548 Winnetka Ave N, Minneapolis, MN 55427",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/ZUdPedj8DmS29k397",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11280.773289173005!2d-93.3785524!3d45.0210009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b334292154ebfb%3A0x19146a6fc572b845!2sDaisy%20Nails%20New%20Hope!5e0!3m2!1sen!2s!4v1694189628984!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://bit.ly/3OnrPR6",
+  "Name": "Plano Nails",
+  "HyperLinkTell": "tel:(972)5781300",
+  "TextTell": "(972)-578-1300",
+  "GooglePlus": "https://www.google.com/search?q=Plano+Nails+75074",
+  "Address": "2380 E Park Blvd # 402, Plano, TX 75074",
+  "LinkGoogleMapAddress": "https://goo.gl/maps/WRvLqSBzW5KXKtVJ6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.0210090175697!2d-96.68544562370765!3d33.02957697103497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1974822dc5c3%3A0x79f32e333f7a9abf!2sPlano%20Nails%20(10%25%20OFF%20%26%20%245%20OFF%20Coupon%20Mon-Thurs)!5e0!3m2!1sen!2s!4v1694532509723!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -24,14 +24,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/DaisyNailsNewHope/",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "https://www.instagram.com/Daisynailsnewhope/",
+    "Url": "",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

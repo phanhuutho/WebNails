@@ -312,7 +312,7 @@
 }
 
 .about-us {
-    background-color: var(--color-white);
+    background-color: var(--color-yellow-pastle);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -340,17 +340,16 @@
     justify-content: center;
 }
 .about-us .box-inner{
-    width: 530px;
     max-width: 100%;
 }
 .about-us .box-inner h1{
     font-size: 5em; 
     font-family: "Parisienne"; 
-    color: var(--color-text-theme);
+    color: var(--color-theme);
     font-weight: bold;
 }
 .about-us .box-inner p{
-    color: var(--color-text-theme);
+    color: var(--color-black);
     font-family: "Vesper Libre";
     font-size: 1.125em;
 }
@@ -536,7 +535,7 @@
     height: 85px;
 }
 .business-gift {
-
+    background-color: var(--color-yellow-pastle);
 }
 .business, .e-gift {
 
@@ -622,9 +621,6 @@
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
     max-width: 350px;
-    background-color: var(--color-text-theme);
-}
-.beauty-spa .box-inner .divider {
     background-color: var(--color-theme);
 }
 .e-gift .line-bottom{
@@ -670,7 +666,7 @@
     background-size: cover !important;
 }
 .contact .bg-contact .overlay{
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 0;
     left: 0;

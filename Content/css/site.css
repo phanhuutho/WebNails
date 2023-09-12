@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #FFFFFF;
-    --color-theme: #FFFFFF;
-    --color-menu-legend: #FF0000;
+    --color-theme: #D1B000;
+    --color-menu-legend: #D1B000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #FF0000;
+    --color-text-theme: #D1B000;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #fff5d2;
@@ -16,7 +16,6 @@
     --color-red-pastle: #cc6666;
 }
 html {
-    background-image: url(../images/background_darkwood.jpg);
     background-repeat: repeat;
     background-position: center center;
     background-attachment: fixed;

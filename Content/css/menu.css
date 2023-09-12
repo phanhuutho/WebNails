@@ -5,7 +5,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 .menu-desktop .list-inline > li > a {
     color: var(--color-black);
