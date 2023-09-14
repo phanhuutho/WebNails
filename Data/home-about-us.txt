@@ -1,3 +1,5 @@
-﻿<p>Welcome to Plano Nails in 2380 E Park Blvd # 402, Plano, TX 75074,
-we are more than just a conventional nail salon, we are the place where you can come and escape from your everyday stress and busy lifestyle, 
-clients could enjoy the luxurious and comfortable atmosphere at affordable prices!</p>
+﻿<p>
+    Our salon is deicated to providing superior spa treatments in a beautiful, clean environment that you'll love to spend time in. 
+    Our goal is to create the best kind of care you can receive from nail and beauty salons. 
+    We want every client who steps through the door to have a good experience.
+</p>
