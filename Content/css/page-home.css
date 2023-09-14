@@ -382,7 +382,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-
+    background-color: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -424,7 +424,7 @@
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background: var(--color-black);
+    background: var(--color-theme);
 }
 .beauty-spa .bg-item-service{
     position: relative;
@@ -535,14 +535,13 @@
     height: 85px;
 }
 .business-gift {
-    background-color: var(--color-yellow-pastle);
+    
 }
 .business, .e-gift {
-
+    background-color: var(--color-yellow-pastle);
 }
 .business .business-inner{
     width: 100%;
-    background-color: var(--color-white);
 }
 .business .business-inner .box-inner{
     height: 350px;
@@ -589,7 +588,6 @@
 }
 .e-gift .e-gift-inner{
     width: 100%;
-    background-color: var(--color-white);
 }
 .e-gift .box-inner {
     height: 350px;
@@ -685,7 +683,7 @@
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background-color: var(--color-black);
+    background-color: var(--color-theme);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
     height: 296px;

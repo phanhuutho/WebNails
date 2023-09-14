@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #FFFFFF;
+    --bg-site: #040404;
     --color-theme: #D1B000;
     --color-menu-legend: #D1B000;
     --color-black: #000000;
@@ -8,7 +8,7 @@
     --color-text-theme: #D1B000;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
-    --color-yellow-pastle: #fff5d2;
+    --color-yellow-pastle: #f5efc1;
     --color-pink-pastele: #f5e6f5;
     --color-blue-pastle: #d4effa;
     --color-green-pastle: #c6dbc6;
@@ -36,8 +36,8 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 120px;
-    margin: 0 auto;
+    max-width: 85px;
+    margin: 15px auto;
 }
 
 /*font*/

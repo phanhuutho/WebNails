@@ -5,10 +5,10 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
 .menu-desktop .list-inline > li > a {
-    color: var(--color-black);
+    color: var(--color-white);
     font-weight: 700;
     font-family: "Lato", sans-serif;
     font-size: 1em;
