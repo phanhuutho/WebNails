@@ -1,11 +1,15 @@
 /*Menu*/
 .menu-desktop {
-    margin-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 5px;
+    padding-bottom: 5px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+}
+.menu-desktop ul {
+    border-top: 2px solid var(--color-theme);
+    padding-top: 10px;
 }
 .menu-desktop .list-inline > li > a {
     color: var(--color-white);

@@ -287,6 +287,9 @@
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
+    <Content Include="Content\images\icon-1-1.png" />
+    <Content Include="Content\images\icon-2-1.png" />
+    <Content Include="Content\images\icon-3-1.png" />
     <Content Include="Content\images\icon1-01-300x300.png" />
     <Content Include="Content\images\icon2--300x219.png" />
     <Content Include="Content\images\icon3--300x300.png" />
