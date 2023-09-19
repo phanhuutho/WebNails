@@ -16,12 +16,11 @@
     margin-bottom: 10px;
 }
 .btn-tel, .btn-contact {
-    background-color: var(--color-theme);
+    background-color: var(--color-text-theme);
     border-radius: 0;
     border-color: var(--color-theme);
     font-family: "Carme";
-    text-transform: uppercase;
-    font-size: 87.5%;
+    font-size: 90%;
     font-weight: bolder;
     box-sizing: border-box;
     width: 100%;
@@ -32,7 +31,7 @@
     color: var(--color-white);
 }
 .btn-tel:hover, .btn-contact:hover{
-    background-color: var(--color-theme);
+    background-color: var(--color-text-theme);
     border-color: var(--color-theme);
     box-shadow: 1px 1px 5px var(--color-black);
 }

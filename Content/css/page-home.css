@@ -752,7 +752,11 @@
 .map {
     background-color: var(--color-white);
 }
-
+.email-contact{
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: bold;
+}
 @-webkit-keyframes dash {
     to {
       stroke-dashoffset: 0;
