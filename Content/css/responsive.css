@@ -342,7 +342,7 @@
         align-items: self-start;
     }
     .bg-contact .description {
-
+        font-size: 42px !important;
     }
 }
 @media (min-width: 768px) {
