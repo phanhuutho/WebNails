@@ -1,12 +1,12 @@
 {
-  "Name": "Parlin Nails Spa",
-  "HyperLinkTell": "tel:(732)5250070",
-  "TextTell": "(732)-525-0070",
-  "GooglePlus": "https://www.google.com/search?q=Parlin+Nails+Spa+08859",
-  "Address": "2909 Washington Rd #125, Parlin, NJ 08859",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/uMNfNomPeuYZAmYU6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12141.512070687215!2d-74.3111484!3d40.4669014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c98f716d7eeb%3A0x46e7280e50907cb!2sParlin%20Nails%20Spa%20(We%20Are%20Hiring)!5e0!3m2!1sen!2s!4v1695029592391!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/35b721fbd7b9/customer/home",
+  "Name": "Luxury Nails Bar",
+  "HyperLinkTell": "tel:(770)7100593",
+  "TextTell": "(770)-710-0593",
+  "GooglePlus": "https://www.google.com/search?q=Luxury+Nails+Bar+30341",
+  "Address": "5001 Peachtree Blvd, Atlanta, GA 30341",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/kjgYKjyVoFJSAic58",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13248.605279508101!2d-84.3145612!3d33.8857565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f508fee32eebb9%3A0xb581ab4dc0ea9f95!2sLuxury%20Nails%20Bar%20(10%25%20OFF%20New%20Customers%20%26%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1695204582390!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -14,7 +14,40 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-07.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-08.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

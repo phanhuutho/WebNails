@@ -535,7 +535,7 @@
     height: 85px;
 }
 .business-gift {
-    
+    background: var(--bg-site);
 }
 .business, .e-gift {
     background-color: var(--color-yellow-pastle);
