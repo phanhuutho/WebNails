@@ -177,6 +177,7 @@
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
     <Content Include="Content\images\banner\home\home_banner_1.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
+    <Content Include="Content\images\banner\home\home_banner_2_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.png" />
