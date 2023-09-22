@@ -20,8 +20,8 @@
     background-position: 50% 30%;
     background-size: cover !important;
     display: flex;
-    align-items: self-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
 }
 .bg .bg-contact .description{
     font-family: Parisienne; 
