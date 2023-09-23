@@ -180,14 +180,15 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image{
-        background-position: 45% 55%;
+
     }
     .slider-home .sliders .slider-2 .box-image .image{
-        align-items: self-start !important;
+        align-items: self-end !important;
         background-image: url(../images/banner/home/home_banner_2_portrait.jpg);
+        background-position: 60% 65%;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p{
-        font-size: 16px;
+        font-size: 17px;
     }
     .slider-home .sliders .slider-3 .box-image .image{
         align-items: center;
@@ -223,7 +224,7 @@
         text-align: center !important;
     }
     .slider-home .sliders .slider-2 .box-image .image .box-inner h1{
-        font-size: 36px;
+
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image{
         padding-right: 0;
