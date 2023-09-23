@@ -36,8 +36,8 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 120px;
-    margin: 0px auto;
+    max-width: 130px;
+    margin: 10px auto;
 }
 
 /*font*/
