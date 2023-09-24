@@ -181,6 +181,7 @@
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.jpg" />
     <Content Include="Content\images\banner\home\home_banner_4.png" />
+    <Content Include="Content\images\banner\home\home_banner_4_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.png" />
     <Content Include="Content\images\banner\slider\all-services.jpg" />

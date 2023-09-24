@@ -2,7 +2,7 @@
     position: relative;
 }
 .bg-main {
-    background-color: var(--color-yellow-pastle);
+
 }
 .bg-contact .overlay {
     background-color: rgba(0, 0, 0, 0.05);
