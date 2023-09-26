@@ -183,9 +183,7 @@
 
     }
     .slider-home .sliders .slider-2 .box-image .image{
-        align-items: self-end !important;
-        background-image: url(../images/banner/home/home_banner_2_portrait.jpg);
-        background-position: 60% 65%;
+
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p{
         font-size: 17px;
@@ -374,7 +372,7 @@
 
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        align-items: self-end;
+
     }
     .slider-home .sliders .slider-3 .box-image .image {
 

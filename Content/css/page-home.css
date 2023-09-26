@@ -61,10 +61,10 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 65%;
+    background-position: 42.5% 65%;
     background-size: cover !important;
     display: flex;
-    align-items: self-end;
+    align-items: flex-start;
     justify-content: center;
 }
 .slider-home .sliders .slider-3 .box-image .image {
