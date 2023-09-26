@@ -382,7 +382,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--bg-site);
+    background-color: var(--color-white);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -535,7 +535,7 @@
     height: 85px;
 }
 .business-gift {
-    background: var(--bg-site);
+    background: var(--color-white);
 }
 .business, .e-gift {
     background-color: var(--color-yellow-pastle);
