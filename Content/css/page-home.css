@@ -47,11 +47,11 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 30%;
+    background-position: 35% 30%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
 }
 .slider-home .sliders .slider-2 .box-image .image {
     position: absolute;
@@ -61,7 +61,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 65%;
+    background-position: 40% 75%;
     background-size: cover !important;
     display: flex;
     align-items: self-end;
@@ -75,7 +75,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 90%;
+    background-position: 82.5% 65%;
     background-size: cover !important;
     display: flex;
     align-items: self-end;
@@ -89,7 +89,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 30%;
+    background-position: 20% 35%;
     background-size: cover !important;
     display: flex;
     align-items: end;
@@ -103,7 +103,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 60%;
+    background-position: 50% 0%;
     background-size: cover !important;
     display: flex;
     align-items: self-end;
@@ -200,8 +200,8 @@
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1 {
     font-size: 48px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 1px var(--color-black);
+    color: var(--color-white);
+    text-shadow: 0px 0px 1px var(--color-white);
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p {
@@ -219,14 +219,14 @@
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
     font-size: 36px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p {
     font-size: 24px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
 }
 
