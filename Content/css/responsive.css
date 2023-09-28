@@ -332,13 +332,13 @@
 
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 55% 25%;
+
     }
     .slider-banner .slider-2 .box-slider .image {
 
     }
     .slider-banner .slider-3 .box-slider .image {
-        align-items: flex-start;
+        align-items: flex-end;
     }
     .slider-banner .slider-4 .box-slider .image {
 
@@ -378,7 +378,8 @@
         align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
-
+        background-position: 82.5% 65%;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-4 .box-image .image {
         align-items: flex-end;

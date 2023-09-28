@@ -17,15 +17,15 @@
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 30%;
+    background-position: 57.5% 30%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: center;
 }
 .bg .bg-contact .description{
     font-family: Parisienne; 
-    font-size: 58px; 
+    font-size: 48px; 
     color: var(--color-black);
     font-weight: bold;
     text-shadow: 0px 0px 5px var(--color-white);
