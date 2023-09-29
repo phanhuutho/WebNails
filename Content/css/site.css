@@ -1,19 +1,19 @@
 /*root*/
 :root {
-    --bg-site: #35363a;
-    --color-theme: #c8ac59;
-    --color-menu-legend: #c8ac59;
-    --color-black: #000000;
+    --bg-site: #ececec;
+    --color-theme: #c85a5a;
+    --color-menu-legend: #c85a5a;
+    --color-black: #3b3937;
     --color-white: #FFFFFF;
-    --color-text-theme: #c8ac59;
+    --color-text-theme: #c85a5a;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
-    --color-pink-pastele: #f5e6f5;
+    --color-pink-pastle: #f5e6f5;
     --color-blue-pastle: #d4effa;
     --color-green-pastle: #c6dbc6;
     --color-orange-pastle: #ffcd98;
-    --color-red-pastle: #cc6666;
+    --color-red-pastle: #f1caca;
 }
 html {
     background-repeat: repeat;
@@ -36,8 +36,8 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 130px;
-    margin: 10px auto;
+    max-width: 155px;
+    margin: 5px 0px;
 }
 
 /*font*/

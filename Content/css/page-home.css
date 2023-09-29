@@ -312,7 +312,7 @@
 }
 
 .about-us {
-    background-color: var(--color-yellow-pastle);
+    background-color: var(--color-red-pastle);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -538,7 +538,7 @@
     background: var(--color-white);
 }
 .business, .e-gift {
-    background-color: var(--color-yellow-pastle);
+    background-color: var(--color-red-pastle);
 }
 .business .business-inner{
     width: 100%;
