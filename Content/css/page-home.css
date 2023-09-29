@@ -47,7 +47,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 35% 30%;
+    background-position: 60% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -61,10 +61,10 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 75%;
+    background-position: 60% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: self-end;
+    align-items: self-start;
     justify-content: center;
 }
 .slider-home .sliders .slider-3 .box-image .image {
@@ -75,7 +75,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15.5% 65%;
+    background-position: 20% 90%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -89,11 +89,11 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 35%;
+    background-position: 40% 35%;
     background-size: cover !important;
     display: flex;
-    align-items: end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
 }
 .slider-home .sliders .slider-5 .box-image .image {
     position: absolute;
@@ -103,11 +103,11 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 0%;
+    background-position: 50% 85%;
     background-size: cover !important;
     display: flex;
-    align-items: self-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .slider-home .slider-1 .box-image {
@@ -131,10 +131,11 @@
 }
 
 .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
-    color: var(--color-white);
+    color: var(--color-black);
     font-family: 'Fira Sans';
     font-size: 48px;
-    text-shadow: 0px 0px 3px var(--color-black);
+    text-shadow: 0px 0px 1px var(--color-black);
+    font-weight: bold;
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
@@ -186,22 +187,22 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1 {
     font-size: 42px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 1px var(--color-white);
     font-weight: bold;
     margin-top: 1rem;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p {
     font-family: "Fira Sans";
     font-size: 22px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 1px var(--color-white);
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1 {
     font-size: 48px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 1px var(--color-white);
+    color: var(--color-black);
+    text-shadow: 0px 0px 5px var(--color-white);
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p {
@@ -213,20 +214,20 @@
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1 {
     font-size: 36px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 1px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
     font-size: 36px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 1px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p {
     font-size: 24px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 1px var(--color-black);
     font-weight: bold;
 }
 
@@ -382,7 +383,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--color-white);
+    background-color: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
