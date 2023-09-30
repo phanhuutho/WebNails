@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #ececec;
-    --color-theme: #c85a5a;
-    --color-menu-legend: #c85a5a;
-    --color-black: #3b3937;
+    --color-theme: #c8ac59;
+    --color-menu-legend: #c8ac59;
+    --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #c85a5a;
+    --color-text-theme: #c8ac59;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -27,7 +27,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: var(--bg-site);
+    background: linear-gradient(135deg, var(--color-black) 40%, var(--color-theme) 0%);
 }
 
 a:active,a:hover {
