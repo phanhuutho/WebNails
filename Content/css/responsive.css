@@ -165,8 +165,6 @@
 
     .slider-banner .slider-1 .box-slider .box-inner h1 {
         font-size: 30px;
-        color: var(--color-black);
-        text-shadow: 0px 0px 5px var(--color-white);
     }
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
@@ -176,7 +174,7 @@
         
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image{
-        background-position: 52.5% 90%;
+        background-position: 35% 100%;
     }
     .slider-home, .slider-home .sliders .slider-4 .box-image, .slider-home .sliders .slider-5 .box-image{
 
@@ -185,11 +183,11 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image{
-        align-items: flex-end;
-        background-position: 40% 50%;
+        background-position: 70% 50% !important
     }
     .slider-home .sliders .slider-2 .box-image .image{
-        background-image: url(../images/banner/home/home_banner_2_portrait.jpg);
+        align-items: flex-end;
+        background-position: 17.5% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p{
         font-size: 17px;
@@ -237,6 +235,7 @@
     .slider-home .sliders .slider-1 .box-image .image .box-inner h1,.slider-home .sliders .slider-1 .box-image .image .box-inner h2{
         color: var(--color-white);
         text-shadow: 0px 0px 5px var(--color-black);
+        font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner h1{
         font-size: 32px;
@@ -245,7 +244,7 @@
         font-size: 30px;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 20% 75%;
+        background-position: 70% 75%;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg);
     }
     .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
@@ -340,6 +339,7 @@
         justify-content: center;
         align-items: flex-end;
         background-position: 40% 50%;
+        background-image: url(../images/banner/slider/your-nails-portrait.jpg);
     }
     .slider-banner .slider-2 .box-slider .image {
         align-items: flex-end;
@@ -347,16 +347,16 @@
     }
     .slider-banner .slider-3 .box-slider .image {
         align-items: flex-end;
-        background-position: 85% 50%;
+        background-position: 50% 50%;
     }
     .slider-banner .slider-4 .box-slider .image {
 
     }
     .bg .bg-contact {
-        background-position: 60% 30%;
+        background-position: 65% 30%;
     }
     .bg-contact .description {
-
+        font-size: 34px !important;
     }
 }
 @media (min-width: 768px) {
@@ -384,13 +384,15 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-
+        align-items: flex-end;
+        justify-content: center;
+        background-position: 100% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-
+        background-position: 20% 50%;
     }
     .slider-home .sliders .slider-3 .box-image .image {
-        align-items: flex-end;
+
     }
     .slider-home .sliders .slider-4 .box-image .image {
 
@@ -415,8 +417,9 @@
     .slider-banner .slider-3 .box-slider {
         background: rgba(175,195,230,1);
     }
-    .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2{
-
+    .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
+        color: var(--color-white);
+        text-shadow: 0px 0px 5px var(--color-black);
     }
     .slider-home .sliders .slider-2 .box-image .box-inner{
 
