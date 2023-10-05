@@ -27,7 +27,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: linear-gradient(135deg, #eee0d7 40%, #e78c33 0%);
+    background: linear-gradient(135deg, var(--bg-site) 40%, var(--color-theme) 0%);
 }
 
 a:active,a:hover {

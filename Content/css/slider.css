@@ -1,36 +1,36 @@
-.slider-banner{
+.slider-banner {
     width: 100%;
 }
 
-.slider-banner .banner{
-    height: 700px;
+.slider-banner .banner {
+    height: 800px;
     position: relative;
 }
-.slider-banner .banner .banner-one{
+.slider-banner .banner .banner-one {
     filter: blur(5px);
 }
-.slider-banner .banner .banner-two{
+.slider-banner .banner .banner-two {
     filter: blur(4px);
 }
-.slider-banner .banner .banner-three{
+.slider-banner .banner .banner-three {
     filter: blur(3px);
 }
-.slider-banner .banner .banner-image{
-    height: 700px;
+.slider-banner .banner .banner-image {
+    height: 800px;
 }
-.slider-banner .banner .banner-image img{
+.slider-banner .banner .banner-image img {
     object-fit:cover;
     position: absolute;
     top: -40%;
 }
-.slider-banner .banner .banner-detail{
+.slider-banner .banner .banner-detail {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background: linear-gradient(to right, RGB(240,200,15) 0%,RGB(241,33,33) 100%);
 }
-.slider-banner .banner .banner-detail .container{
+.slider-banner .banner .banner-detail .container {
     width: 100%;
     max-width: 1180px;
     height: 680px;
@@ -40,24 +40,24 @@
     justify-content: center;
 
 }
-.slider-banner .banner .banner-detail .container .row, .slider-banner .banner .banner-detail .container .banner-detail-first,  .slider-banner .banner .banner-detail .container .banner-detail-last{
+.slider-banner .banner .banner-detail .container .row, .slider-banner .banner .banner-detail .container .banner-detail-first,  .slider-banner .banner .banner-detail .container .banner-detail-last {
     display: flex;
     align-items: center;
     justify-content: start;
 }
-.slider-banner .banner .banner-detail .container .banner-detail-first{
+.slider-banner .banner .banner-detail .container .banner-detail-first {
     position: relative;
     height: 400px;
 }
-.slider-banner .banner .banner-detail .container .banner-detail-first .banner-text{
+.slider-banner .banner .banner-detail .container .banner-detail-first .banner-text {
     width: 100%;
 }
 
-.slider-banner .banner .banner-detail .container .img-dot{
+.slider-banner .banner .banner-detail .container .img-dot {
     position: absolute;
     right: 15px;
 }
-.slider-banner .banner .banner-detail .container .banner-title{
+.slider-banner .banner .banner-detail .container .banner-title {
     font-family: 'Inter','Arial';
     color: #000000;
     font-size: 300%;
@@ -74,37 +74,37 @@
     position: relative;
     z-index: 1;
 }
-.slider-banner .sliders{
-    height: 700px;
+.slider-banner .sliders {
+    height: 800px;
 }
-.slider-banner .box-slider{
+.slider-banner .box-slider {
     width: 100%;
-    height: 700px;
+    height: 800px;
     position: relative;
     margin: 0 auto;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
 }
 
-.slider-banner .slider-1 .box-slider{
+.slider-banner .slider-1 .box-slider {
     background: #ffffff;
 }
 
-.slider-banner .slider-2 .box-slider{
+.slider-banner .slider-2 .box-slider {
     background: #f9f7f8;
 }
 
-.slider-banner .slider-3 .box-slider{
+.slider-banner .slider-3 .box-slider {
     background: var(--color-yellow-pastle);
 }
 
-.slider-banner .slider-4 .box-slider{
+.slider-banner .slider-4 .box-slider {
     background: rgba(175,195,230,1);
 }
 
-.slider-banner .box-slider .image{
+.slider-banner .box-slider .image {
     width: 1000px;
-    height: 700px;
+    height: 800px;
     max-width: 100%;
     max-height: 100%;
     background-repeat: no-repeat !important;
@@ -117,12 +117,12 @@
     right: 0;
     top: 0;
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 30% 40%;
+    background-position: 20% 40%;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #ffffff;
 }
 
@@ -131,9 +131,9 @@
     right: 0;
     top: 0;
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 50% 50%;
+    background-position: 50% 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,20 +144,20 @@
     right: 0;
     top: 0;
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 50% 50%;
+    background-position: 50% 75%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.slider-banner .slider-4 .box-slider .image{
+.slider-banner .slider-4 .box-slider .image {
     background-image: url(../images/banner/slider/waxing.jpg);
     background-position: 50% 25%;
 }
 
-.slider-banner .box-slider .slider-image{
+.slider-banner .box-slider .slider-image {
     text-align:center;
     width: 100%;
     z-index: 1;
@@ -167,7 +167,7 @@
     align-items: center;
     justify-content: center;
 }
-.slider-banner .box-slider .slider-image img{
+.slider-banner .box-slider .slider-image img {
     width: 100%;
 }
 
@@ -189,11 +189,11 @@
 }
 .slider-banner .slider-2 .box-slider .box-inner h1 {
     font-size: 42px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 5px var(--color-white);
 }
 .slider-banner .slider-3 .box-slider .box-inner h1 {
     font-size: 38px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
 }

@@ -175,6 +175,7 @@
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\background_darkwood.jpg" />
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
+    <Content Include="Content\images\banner\contact\contact_banner_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_1.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2_portrait.jpg" />
