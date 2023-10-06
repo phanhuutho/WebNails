@@ -3,6 +3,8 @@
     var showCoupon = (bool)ViewBag.ShowCoupon;
     var Coupons = (List<WebNails.Models.CouponModel>)ViewBag.Coupons;
     Coupons = Coupons.Where(x => x.Src != "" && x.Status).ToList();
+    var CouponCallback = (List<WebNails.Models.CouponCallbackModel>)ViewBag.CouponCallback;
+    CouponCallback = CouponCallback ?? new List<WebNails.Models.CouponCallbackModel>();
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -35,8 +37,9 @@
                         <div class="slider-coupon">
                             @foreach(var item in Coupons)
                             {
+                                var itemCallBack = CouponCallback.Where(x => x.Position == index && !string.IsNullOrEmpty(x.Callback)).DefaultIfEmpty(new WebNails.Models.CouponCallbackModel()).FirstOrDefault();
                                 <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
-                                    <img src="@item.Src" class="img-fluid" @(!string.IsNullOrEmpty(item.Callback) ? "style=cursor:pointer;" : "") @(!string.IsNullOrEmpty(item.Callback) ? "onclick=" + item.Callback : "") />
+                                    <img src="@item.Src" class="img-fluid" @(!string.IsNullOrEmpty(itemCallBack.Callback) ? "style=cursor:pointer;" : "") @(!string.IsNullOrEmpty(itemCallBack.Callback) ? "onclick=" + itemCallBack.Callback : "") />
                                 </div>
                                 index++;
                             }

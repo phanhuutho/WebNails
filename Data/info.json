@@ -11,8 +11,7 @@
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg",
-      "Callback": "RegisterCoupon(this)"
+      "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
   "Prices": [

@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CouponCallbackModel.cs" />
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\GalleryModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
@@ -377,6 +378,7 @@
     <Content Include="Data\info.json" />
     <Content Include="Data\data-gallery.json" />
     <Content Include="Data\home-data-gallery.json" />
+    <Content Include="Data\callback-coupon.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
