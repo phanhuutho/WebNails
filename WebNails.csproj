@@ -335,6 +335,7 @@
     <Content Include="Content\js\slick-animation.js" />
     <Content Include="Content\js\slick.min.js" />
     <Content Include="Data\about-us.txt" />
+    <Content Include="Data\BodyRegisterCoupon.html" />
     <Content Include="Data\business-hours.txt" />
     <Content Include="Data\home-about-us.txt" />
     <Content Include="favicon.ico" />
@@ -425,6 +426,7 @@
     <Content Include="Views\Home\Finish.cshtml" />
     <Content Include="Views\Home\gallery.cshtml" />
     <Content Include="Views\Home\register_coupon.cshtml" />
+    <Content Include="Views\Home\register_coupon_success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

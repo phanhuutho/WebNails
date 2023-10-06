@@ -44,10 +44,17 @@ namespace WebNails.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult RegisterCoupon(string imgCoupon = "")
         {
-            ViewBag.ImgCoupon = imgCoupon;
-            return View("register_coupon");
+            return View("register_coupon", new RegisterCouponModel { ImgCoupon = imgCoupon });
+        }
+
+        [HttpPost]
+        public ActionResult RegisterCoupon(RegisterCouponModel item)
+        {
+            SendMailRegisterCoupon(item);
+            return View("register_coupon_success");
         }
 
         public ActionResult Payment()
@@ -167,6 +174,52 @@ namespace WebNails.Controllers
                     mySmtpClient.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSslEmailSystem"]);
                     mySmtpClient.Send(mail);
                 }
+            }
+        }
+
+        private void SendMailRegisterCoupon(RegisterCouponModel item)
+        {
+            var EmailContact = ConfigurationManager.AppSettings["EmailContact"];
+            var strBody = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/BodyRegisterCoupon.html"));
+            strBody = strBody.Replace("{NailName}", ViewBag.Name);
+            strBody = strBody.Replace("{ImgCoupon}", Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + item.ImgCoupon);
+            strBody = strBody.Replace("{Email}", item.Email);
+            strBody = strBody.Replace("{Name}", item.Name);
+            strBody = strBody.Replace("{Phone}", item.Phone);
+            strBody = strBody.Replace("{Birthday}", item.Birthday);
+
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.Unicode), new MailAddress(EmailContact)))
+            {
+                mail.HeadersEncoding = System.Text.Encoding.Unicode;
+                mail.SubjectEncoding = System.Text.Encoding.Unicode;
+                mail.BodyEncoding = System.Text.Encoding.Unicode;
+                mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
+                mail.Subject = ViewBag.Name + " - Downers Grove";
+                mail.Body = strBody;
+
+                SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
+                NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
+                mySmtpClient.UseDefaultCredentials = false;
+                mySmtpClient.Credentials = networkCredential;
+                mySmtpClient.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSslEmailSystem"]);
+                mySmtpClient.Send(mail);
+            }
+
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.Unicode), new MailAddress(item.Email)))
+            {
+                mail.HeadersEncoding = System.Text.Encoding.Unicode;
+                mail.SubjectEncoding = System.Text.Encoding.Unicode;
+                mail.BodyEncoding = System.Text.Encoding.Unicode;
+                mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
+                mail.Subject = ViewBag.Name + " - Downers Grove";
+                mail.Body = strBody;
+
+                SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
+                NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
+                mySmtpClient.UseDefaultCredentials = false;
+                mySmtpClient.Credentials = networkCredential;
+                mySmtpClient.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSslEmailSystem"]);
+                mySmtpClient.Send(mail);
             }
         }
     }

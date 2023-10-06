@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
+    <meta name="generator" content="">
+    <title>Register Coupon</title>
+    <link rel="icon" href="~/Content/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato%3Aregular%2C700%2C400%2C700%7CDancing+Script%3Aregular%2C400&amp;display=swap&amp;ver=3.9" type="text/css" media="all" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre%3A400%2C500%2C700%2C900%2C400i%2C500i%2C700i%2C900i%7CUnlock%3A400%2C400i%7CCarme%3A400%2C400i%7CPiedra%3A400%2C400i%7CParisienne%3A400%2C400i%7CPrata%3A400%2C400i%7CPT+Serif+Caption%3A400%2C400i%7CSen%3A400%2C700%2C800%2C400i%2C700i%2C800i&amp;display=swap&amp;subset=all&amp;ver=3.2.1" type="text/css" media="all" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Fira+Sans%3A300%2C400%7CPrata%3A300%2C400" rel="stylesheet" type="text/css" media="all">
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/site.css" rel="stylesheet">
+    <link href="~/Content/css/page-register-coupon.css" rel="stylesheet">
+    <link href="~/Content/css/responsive.css" rel="stylesheet">
+    <script src="~/Content/js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="card mt-3 mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p>See you soon!</p>
+                                <p class="my-0">Thanks you!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3 mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button class="btn btn-secondary" type="button" onclick="BackToWebsite()">Back to website</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setTimeout(function () {
+                BackToWebsite();
+            }, 3000);
+        });
+        function BackToWebsite() {
+            location.href = "/";
+        }
+    </script>
+</body>
+</html>
