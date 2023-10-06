@@ -129,6 +129,7 @@
     <Compile Include="Models\GalleryModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
+    <Compile Include="Models\RegisterCouponModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -162,6 +163,7 @@
     <Content Include="Content\css\page-gift.css" />
     <Content Include="Content\css\page-home.css" />
     <Content Include="Content\css\page-prices.css" />
+    <Content Include="Content\css\page-register-coupon.css" />
     <Content Include="Content\css\page-services.css" />
     <Content Include="Content\css\payments.css" />
     <Content Include="Content\css\responsive.css" />
@@ -422,6 +424,7 @@
     <Content Include="Views\Home\process.cshtml" />
     <Content Include="Views\Home\Finish.cshtml" />
     <Content Include="Views\Home\gallery.cshtml" />
+    <Content Include="Views\Home\register_coupon.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

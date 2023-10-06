@@ -44,6 +44,12 @@ namespace WebNails.Controllers
             return View();
         }
 
+        public ActionResult RegisterCoupon(string imgCoupon = "")
+        {
+            ViewBag.ImgCoupon = imgCoupon;
+            return View("register_coupon");
+        }
+
         public ActionResult Payment()
         {
             return View();

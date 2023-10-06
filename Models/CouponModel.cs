@@ -9,5 +9,6 @@ namespace WebNails.Models
     {
         public bool Status { get; set; }
         public string Src { get; set; }
+        public string Callback { get; set; }
     }
 }

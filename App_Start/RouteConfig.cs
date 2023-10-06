@@ -114,6 +114,14 @@ namespace WebNails
                     controller = "Home",
                     action = "Finish"
                 });
+
+            routes.MapRoute(
+                "Register Coupon", "register-coupon.html",
+                new
+                {
+                    controller = "Home",
+                    action = "RegisterCoupon"
+                });
         }
     }
 }

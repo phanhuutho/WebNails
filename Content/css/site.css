@@ -101,6 +101,11 @@ a:active,a:hover {
     border-radius: 30px;
 }
 
+.bg-theme {
+    background: var(--color-theme);
+    border-color: var(--color-theme);
+}
+
 .img-hover-zoom {
     overflow: hidden;
 }
@@ -112,4 +117,8 @@ a:active,a:hover {
 .img-hover-zoom:hover img {
     transform: scale(1.20);
     cursor: pointer;
+}
+
+.error {
+    color:red;
 }

@@ -36,7 +36,7 @@
                             @foreach(var item in Coupons)
                             {
                                 <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
-                                    <img src="@item.Src" class="img-fluid" />
+                                    <img src="@item.Src" class="img-fluid" @(!string.IsNullOrEmpty(item.Callback) ? "style=cursor:pointer;" : "") @(!string.IsNullOrEmpty(item.Callback) ? "onclick=" + item.Callback : "") />
                                 </div>
                                 index++;
                             }
@@ -109,5 +109,10 @@
             }
             
         });
+
+        function RegisterCoupon(obj) {
+            var imgCoupon = $(obj).attr("src");
+            location.href = "register-coupon.html?imgCoupon=" + imgCoupon;
+        }
     </script>
 }
