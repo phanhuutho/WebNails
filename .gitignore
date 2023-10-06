@@ -10,3 +10,8 @@
 /obj/Debug/WebNails.csproj.FileListAbsolute.txt
 /.vs/WebNails/config/applicationhost.config
 /WebNails.csproj.user
+/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/obj/Release/WebNails.csproj.CoreCompileInputs.cache
+/obj/Release/WebNails.csproj.FileListAbsolute.txt
+/obj/Release/WebNails.dll
+/obj/Release/WebNails.pdb
