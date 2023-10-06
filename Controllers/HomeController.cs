@@ -194,7 +194,7 @@ namespace WebNails.Controllers
                 mail.SubjectEncoding = System.Text.Encoding.Unicode;
                 mail.BodyEncoding = System.Text.Encoding.Unicode;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
-                mail.Subject = ViewBag.Name + " - Downers Grove";
+                mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
 
                 SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
@@ -211,7 +211,7 @@ namespace WebNails.Controllers
                 mail.SubjectEncoding = System.Text.Encoding.Unicode;
                 mail.BodyEncoding = System.Text.Encoding.Unicode;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
-                mail.Subject = ViewBag.Name + " - Downers Grove";
+                mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
 
                 SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
