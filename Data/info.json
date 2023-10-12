@@ -1,29 +1,24 @@
 {
-  "Name": "Liza Nail Spa",
-  "HyperLinkTell": "tel:(630)2108085",
-  "TextTell": "(630)-210-8085",
-  "GooglePlus": "https://www.google.com/search?q=Liza+Nail+Spa+60564",
-  "Address": "3111 111th St Ste 125, Naperville, IL 60564",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/j9wNvorgdWfQF6ai7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11919.157214750983!2d-88.2076817!3d41.6818936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef7ecf6a91fbb%3A0xcb3fdb7f24c0b69f!2sLiza%20Nail%20Spa%20-%20Naperville!5e0!3m2!1sen!2s!4v1696506405570!5m2!1sen!2s",
+  "Name": "Mademoiselle Nails and Spa",
+  "HyperLinkTell": "tel:(630)8554318",
+  "TextTell": "(630)-855-4318",
+  "GooglePlus": "https://www.google.com/search?q=Jp+Nails+60188",
+  "Address": "966 W Army Trail Rd, Carol Stream, IL 60188",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/u3WTacJsdDNvnPWt6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11871.386539432477!2d-88.1528622!3d41.9391468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faa8b41bc29ff%3A0x8586050ea2880662!2sMademoiselle%20Nails%20and%20Spa%20(Full%20Set%20Gel%20with%20No%20Chip%20Color%20%2445%20Only%2C%20Previously%20JP%20Nails)!5e0!3m2!1sen!2s!4v1697134637319!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
     },
     {
       "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
