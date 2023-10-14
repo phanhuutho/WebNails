@@ -47,7 +47,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 30%;
+    background-position: 20% 25%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -61,11 +61,11 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 75%;
+    background-position: 60% 40%;
     background-size: cover !important;
     display: flex;
-    align-items: self-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
 }
 .slider-home .sliders .slider-3 .box-image .image {
     position: absolute;
@@ -89,7 +89,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 90%;
+    background-position: 75% 35%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -133,7 +133,7 @@
 .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
     color: var(--color-black);
     font-family: 'Fira Sans';
-    font-size: 38px;
+    font-size: 48px;
     text-shadow: 0px 0px 1px var(--color-black);
     font-weight: bold;
 }
@@ -186,7 +186,7 @@
     animation-delay: 2s;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1 {
-    font-size: 42px;
+    font-size: 40px;
     color: var(--color-black);
     text-shadow: 0px 0px 0px var(--color-black);
     font-weight: bold;
@@ -194,7 +194,7 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p {
     font-family: "Fira Sans";
-    font-size: 22px;
+    font-size: 20px;
     color: var(--color-black);
     text-shadow: 0px 0px 0px var(--color-black);
     font-weight: bold;
@@ -383,7 +383,7 @@
     background-size: cover !important;
 }
 .beauty-spa {
-
+    background-color: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;

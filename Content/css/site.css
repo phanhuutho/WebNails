@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #eee0d7;
-    --color-theme: #e78c33;
-    --color-menu-legend: #e78c33;
+    --bg-site: #f3efe6;
+    --color-theme: #dcb480;
+    --color-menu-legend: #dcb480;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #e78c33;
+    --color-text-theme: #dcb480;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -36,8 +36,8 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 155px;
-    margin: 5px 0px;
+    max-width: 130px;
+    margin: 0px 0px;
 }
 
 /*font*/
@@ -82,6 +82,7 @@ a:active,a:hover {
     display: flex;
     align-items: center;
     height: 100%;
+    max-width: 640px;
 }
 .modal-content {
     border-width: 5px;
