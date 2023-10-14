@@ -107,6 +107,10 @@ a:active,a:hover {
     border-color: var(--color-theme);
 }
 
+.border-theme {
+    border-color: var(--color-theme);
+}
+
 .img-hover-zoom {
     overflow: hidden;
 }
