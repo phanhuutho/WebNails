@@ -104,13 +104,14 @@ namespace WebNails.Controllers
                 strMessage = cookieDataBefore["Message"];
             }
 
+            SendMailAfterPayment(strAmount, strStock, strEmail, strMessage);
+
             if (Request.QueryString["st"] != null)
             {
                 if (Request.QueryString["st"] == "Completed")
                 {
                     SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
 
-                    SendMailAfterPayment(strAmount, strStock, strEmail, strMessage);
                     responseCode = "0";
                 }
                 else
@@ -121,8 +122,8 @@ namespace WebNails.Controllers
             }
             else
             {
-                SecureHash = "<font color='red'><strong>ERROR</strong></font>";
-                responseCode = "-1";
+                SecureHash = "<font color='red'><strong>CORRECT</strong></font>";
+                responseCode = "0";
             }
 
             ViewBag.SecureHash = SecureHash;
