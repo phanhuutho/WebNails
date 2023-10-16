@@ -378,13 +378,13 @@
 }
 @media (max-width: 991px) {
     header {
-        background: linear-gradient(135deg, var(--bg-site) 35%, var(--color-theme) 0%);
+
     }
     .menu-desktop .list-inline > li {
         margin: 0 5px;
     }
     .menu-desktop .list-inline > li > a {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
     .slider-1 .box-image .box-inner {
 
