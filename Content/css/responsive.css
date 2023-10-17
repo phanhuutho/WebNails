@@ -332,6 +332,9 @@
     .bg-contact .description {
         font-size: 30px !important;
     }
+    .box-prices {
+        font-size: 13px;
+    }
 }
 @media (min-width: 768px) {
     .menu-mobile-tablet{
