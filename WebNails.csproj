@@ -176,7 +176,7 @@
     <Content Include="Content\fonts\slick.svg" />
     <Content Include="Content\images\about-us\about-us_bg.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
-    <Content Include="Content\images\background_darkwood.jpg" />
+    <Content Include="Content\images\background.jpg" />
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
     <Content Include="Content\images\banner\contact\contact_banner_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_1.jpg" />
@@ -311,10 +311,6 @@
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\prices-01.jpg" />
     <Content Include="Content\images\price-list\prices-02.jpg" />
-    <Content Include="Content\images\price-list\prices-03.jpg" />
-    <Content Include="Content\images\price-list\prices-04.jpg" />
-    <Content Include="Content\images\price-list\prices-05.jpg" />
-    <Content Include="Content\images\price-list\prices-06.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />

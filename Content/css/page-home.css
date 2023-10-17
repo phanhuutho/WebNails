@@ -523,12 +523,20 @@
     padding: 30px 25px;
     height: 270px;
 }
-.services .box-inner p{
+.services .box-inner h3{
     font-family: "Carme";
     font-weight: bolder;
     text-align: center;
-    font-size: 19px;
+    font-size: 14px;
     color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services .box-inner p {
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;

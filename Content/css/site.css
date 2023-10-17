@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #f3efe6;
-    --color-theme: #dcb480;
-    --color-menu-legend: #dcb480;
+    --bg-site: #FFFFFF;
+    --color-theme: #000000;
+    --color-menu-legend: #000000;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #dcb480;
+    --color-text-theme: #000000;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -16,6 +16,7 @@
     --color-red-pastle: #f1caca;
 }
 html {
+    background-image: url(../images/background.jpg);
     background-repeat: repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -27,7 +28,7 @@ main{
     overflow-x:hidden;
 }
 header {
-    background: var(--bg-site);
+    background: var(--color-black);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -42,7 +43,7 @@ a:active,a:hover {
 /*Logo*/
 .logo, .navbar-brand img {
     max-width: 130px;
-    margin: 0px 0px;
+    margin: 10px 0px;
 }
 
 /*font*/

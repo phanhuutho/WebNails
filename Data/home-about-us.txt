@@ -1,5 +1,11 @@
-﻿<p>
-    Welcome to May Nails in 9974 Brook Rd, Glen Allen, VA 23059. 
-    We are more than just a conventional nail salon. 
-    We are the place where you can come and escape from your everyday stress and busy lifestyle, clients could enjoy the luxurious and comfortable atmosphere at affordable prices!
+﻿<h4 class="text-danger fw-bold"><i>“Full heart & soul”</i></h4>
+<p>
+    As a US Nail system, Nail Story always puts its whole heart and enthusiasm into beauty for girls.
+</p>
+<h4 class="text-danger fw-bold"><i>“Everyone can become more beautiful”</i></h4>
+<p>
+    Coming to Nail Story and leaving as more beautiful, happier women is what we aim for.
+</p>
+<p>
+    Come with us to feel the joy of pampering yourself!
 </p>
