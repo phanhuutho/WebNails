@@ -1,5 +1,6 @@
-.page-main{
+.page-main {
     position: relative;
+    background-color: var(--color-white);
 }
 .bg-main {
 

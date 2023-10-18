@@ -288,6 +288,7 @@
     <Content Include="Content\images\home\home_contact_image_7.jpg" />
     <Content Include="Content\images\home\home_contact_image_8.jpg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
+    <Content Include="Content\images\home\home_service_add_on.jpg" />
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
@@ -312,6 +313,7 @@
     <Content Include="Content\images\price-list\prices-01.jpg" />
     <Content Include="Content\images\price-list\prices-02.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
+    <Content Include="Content\images\services\services_add_on.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />

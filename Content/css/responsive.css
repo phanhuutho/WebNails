@@ -104,6 +104,9 @@
     footer p {
 
     }
+    .slider-1 .box-image .box-inner {
+        max-width: 320px;
+    }
 }
 @media (max-width: 767px) {
     header {
@@ -184,11 +187,12 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 55% 50% !important;
+        background-position: 62.5% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
+        background-image: url(../images/banner/home/home_banner_2_portrait.jpg);
         align-items: flex-end;
-        background-position: 55% 50% !important;
+        background-position: 80% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -200,27 +204,19 @@
         align-items: self-end;
     }
     .slider-home .sliders .slider-4 .box-inner {
-        height: 100%;
-        justify-content: center;
-        align-items: center;
+
     }
     .slider-home .sliders .slider-5 .box-inner {
 
     }
     .slider-home .sliders .slider-4 .box-image .box-inner h1 {
         font-size: 26px !important;
-        margin-bottom: 0px;
-        color: var(--color-black);
-        text-shadow: 0px 0px 5px var(--color-white);
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 5% 50% !important;
+        background-position: 70% 50% !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
         font-size: 32px;
-        margin-bottom: 10px;
-        text-shadow: 0px 0px 5px var(--color-white);
-        color: var(--color-black);
     }
     .slider-home .sliders .slider-5 .box-image .box-inner p {
         font-size: 21px;
@@ -233,7 +229,7 @@
 
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 30% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-1 .box-image .image .box-inner h1,.slider-home .sliders .slider-1 .box-image .image .box-inner h2 {
         color: var(--color-white);
@@ -344,10 +340,12 @@
         background-position: 60% 50% !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 65% 50% !important;
+        background-position: 72.5% 50% !important;
+        align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 65% 50%;
+        background-position: 77.5% 50%;
+        align-items: flex-end;
     }
     .slider-banner .slider-4 .box-slider .image {
 
@@ -392,10 +390,10 @@
     .slider-home .sliders .slider-1 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 85% 50%;
+        background-position: 70% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 100% 50%;
+        background-position: 40% 50%;
         justify-content: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
@@ -403,7 +401,7 @@
         background-position: 10% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-
+        background-position: 50% 50%;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end;
@@ -414,8 +412,7 @@
         background-position: 75% 50%;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 25%;
-        align-items: flex-end;
+        background-position: 75% 25%;
     }
     .slider-banner .slider-3 .box-slider .image {
         
@@ -429,6 +426,7 @@
     .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
         color: var(--color-white);
         text-shadow: 0px 0px 5px var(--color-black);
+        font-size: 36px;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner {
 
@@ -441,6 +439,7 @@
     }
     .bg .bg-contact {
         background-position: 50% 50%;
+        align-items: flex-end;
     }
     footer p {
         font-size: 12px;

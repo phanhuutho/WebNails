@@ -17,7 +17,7 @@ main {
 }
 .box-text {
     padding: 10px;
-    background-color: var(--color-yellow-pastle);
+    background-color: var(--color-white);
 }
 .box-text h2{
     font-family: Prata;
