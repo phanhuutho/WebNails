@@ -41,8 +41,14 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 130px;
-    margin: 0px 0px;
+    max-width: 100px;
+    margin: 10px 0px;
+}
+.logo img{
+    padding: var(--padding-box);
+    background: var(--color-white);
+    border-radius: 50%;
+    border: var(--padding-box) solid var(--color-theme);
 }
 
 /*font*/

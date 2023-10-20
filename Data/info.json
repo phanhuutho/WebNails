@@ -1,21 +1,17 @@
 {
-  "Name": "May Nails",
-  "HyperLinkTell": "tel:(804)5150380",
-  "TextTell": "(804)-515-0380",
-  "GooglePlus": "https://www.google.com/search?q=May+Nails+23059",
-  "Address": "9974 Brook Rd, Glen Allen, VA 23059",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/dvWnW8dcEbewBqaG6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12632.388862896318!2d-77.4615753!3d37.6704234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b13ddc8ef649f1%3A0x7c286a594f5a05ec!2sMay%20Nails%20(%245%20OFF%2C%205%25-10%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1697479517333!5m2!1sen!2s",
-  "LinkBookingAppointment": "bit.ly/44eTcmr",
+  "Name": "Nail Spa Orlando",
+  "HyperLinkTell": "tel:(407)2989917",
+  "TextTell": "(407)-298-9917",
+  "GooglePlus": "https://www.google.com/search?q=Nail+Spa+Orlando+32804",
+  "Address": "4341 Edgewater Dr, Orlando, FL 32804",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/H2nd1mCNyhUsMmoU8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.134030377766!2d-81.39967192382994!3d28.59575568574872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7709afb8dba43%3A0xa8c0ce391f8c45d2!2sNail%20Spa%20Orlando%20(10%25%20OFF%20All%20Customers)!5e0!3m2!1sen!2s!4v1697825113083!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [
@@ -38,10 +34,6 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-05.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-06.jpg"
     }
   ],
   "Telegram": {

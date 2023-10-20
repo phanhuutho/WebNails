@@ -109,11 +109,17 @@
     header{
         background: var(--bg-site) !important;
     }
-    .logo img {
+    .logo, .logo img {
         display: none;
     }
-    .logo, .navbar-brand img {
+    .navbar-brand img {
         margin: 0 auto;
+    }
+    .logo-brand img {
+        padding: var(--padding-box);
+        background: var(--color-white);
+        border-radius: 50%;
+        border: var(--padding-box) solid var(--color-theme);
     }
     .menu-desktop {
         display: none;

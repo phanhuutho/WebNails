@@ -219,62 +219,6 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
-    <Content Include="Content\images\gallery\gallery_1.jpg" />
-    <Content Include="Content\images\gallery\gallery_10.jpg" />
-    <Content Include="Content\images\gallery\gallery_11.jpg" />
-    <Content Include="Content\images\gallery\gallery_12.jpg" />
-    <Content Include="Content\images\gallery\gallery_13.jpg" />
-    <Content Include="Content\images\gallery\gallery_14.jpg" />
-    <Content Include="Content\images\gallery\gallery_15.jpg" />
-    <Content Include="Content\images\gallery\gallery_16.jpg" />
-    <Content Include="Content\images\gallery\gallery_17.jpg" />
-    <Content Include="Content\images\gallery\gallery_18.jpg" />
-    <Content Include="Content\images\gallery\gallery_19.jpg" />
-    <Content Include="Content\images\gallery\gallery_2.jpg" />
-    <Content Include="Content\images\gallery\gallery_20.jpg" />
-    <Content Include="Content\images\gallery\gallery_21.jpg" />
-    <Content Include="Content\images\gallery\gallery_22.jpg" />
-    <Content Include="Content\images\gallery\gallery_23.jpg" />
-    <Content Include="Content\images\gallery\gallery_24.jpg" />
-    <Content Include="Content\images\gallery\gallery_25.jpg" />
-    <Content Include="Content\images\gallery\gallery_26.jpg" />
-    <Content Include="Content\images\gallery\gallery_27.jpg" />
-    <Content Include="Content\images\gallery\gallery_28.jpg" />
-    <Content Include="Content\images\gallery\gallery_29.jpg" />
-    <Content Include="Content\images\gallery\gallery_3.jpg" />
-    <Content Include="Content\images\gallery\gallery_30.jpg" />
-    <Content Include="Content\images\gallery\gallery_31.jpg" />
-    <Content Include="Content\images\gallery\gallery_32.jpg" />
-    <Content Include="Content\images\gallery\gallery_33.jpg" />
-    <Content Include="Content\images\gallery\gallery_34.jpg" />
-    <Content Include="Content\images\gallery\gallery_35.jpg" />
-    <Content Include="Content\images\gallery\gallery_36.jpg" />
-    <Content Include="Content\images\gallery\gallery_37.jpg" />
-    <Content Include="Content\images\gallery\gallery_38.jpg" />
-    <Content Include="Content\images\gallery\gallery_39.jpg" />
-    <Content Include="Content\images\gallery\gallery_4.jpg" />
-    <Content Include="Content\images\gallery\gallery_40.jpg" />
-    <Content Include="Content\images\gallery\gallery_41.jpg" />
-    <Content Include="Content\images\gallery\gallery_42.jpg" />
-    <Content Include="Content\images\gallery\gallery_43.jpg" />
-    <Content Include="Content\images\gallery\gallery_44.jpg" />
-    <Content Include="Content\images\gallery\gallery_5.jpg" />
-    <Content Include="Content\images\gallery\gallery_6.jpg" />
-    <Content Include="Content\images\gallery\gallery_7.jpg" />
-    <Content Include="Content\images\gallery\gallery_8.jpg" />
-    <Content Include="Content\images\gallery\gallery_9.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_1.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_10.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_11.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_12.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_2.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_3.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_4.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_5.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_6.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_7.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_8.jpg" />
-    <Content Include="Content\images\gallery\home_gallery_9.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -306,7 +250,6 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
-    <Content Include="Content\images\popup\coupon-02.jpg" />
     <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\prices-01.jpg" />
@@ -314,7 +257,6 @@
     <Content Include="Content\images\price-list\prices-03.jpg" />
     <Content Include="Content\images\price-list\prices-04.jpg" />
     <Content Include="Content\images\price-list\prices-05.jpg" />
-    <Content Include="Content\images\price-list\prices-06.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
@@ -437,6 +379,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
