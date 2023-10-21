@@ -190,11 +190,11 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 55% 50% !important;
+        background-position: 85% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end;
-        background-position: 55% 50% !important;
+        background-position: 5% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -220,7 +220,7 @@
         text-shadow: 0px 0px 5px var(--color-white);
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 5% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
         font-size: 32px;
@@ -239,7 +239,7 @@
 
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 30% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-1 .box-image .image .box-inner h1,.slider-home .sliders .slider-1 .box-image .image .box-inner h2 {
         color: var(--color-white);
@@ -253,8 +253,7 @@
         font-size: 30px;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 40% 75%;
-        background-image: url(../images/banner/home/home_banner_4_portrait.jpg);
+        background-position: 42.5% 75% !important;
     }
     .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
         font-size: 24px;
@@ -347,20 +346,20 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end;
-        background-position: 60% 50% !important;
+        background-position: 35% 50% !important;
+        background-image: url(../images/banner/slider/your-nails-portrait.jpg);
     }
     .slider-banner .slider-2 .box-slider .image {
         background-position: 65% 50% !important;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 65% 50%;
+        background-position: 35% 50%;
     }
     .slider-banner .slider-4 .box-slider .image {
 
     }
     .bg .bg-contact {
-        background-position: 45% 30% !important;
-        background-image: url(../images/banner/contact/contact_banner_portrait.jpg);
+        background-position: 60% 30% !important;
         align-items: flex-end !important;
     }
     .bg-contact .box-inner {
@@ -368,7 +367,7 @@
     }
     .bg-contact .description {
         line-height: 1.25 !important;
-        font-size: 50px !important;
+        font-size: 40px !important;
     }
 }
 @media (min-width: 768px) {
@@ -398,33 +397,33 @@
     .slider-home .sliders .slider-1 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 85% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 100% 50%;
-        justify-content: flex-end;
+        background-position: 0% 50%;
+        justify-content: center;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
-        background-position: 10% 50%;
+        background-position: 50% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-
+        background-position: 10% 30%;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 85% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 75% 50%;
+        background-position: 60% 50%;
     }
     .slider-banner .slider-2 .box-slider .image {
         background-position: 50% 25%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        
+        align-items: flex-end;
     }
     .slider-banner .slider-1 .box-slider {
         background: rgba(175,195,230,1);

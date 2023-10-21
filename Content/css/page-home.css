@@ -47,7 +47,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 25%;
+    background-position: 100% 45%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 40%;
+    background-position: 60% 25%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -75,10 +75,10 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 90%;
+    background-position: 30% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-4 .box-image .image {
@@ -89,10 +89,10 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 35%;
+    background-position: 100% 30%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-5 .box-image .image {
@@ -103,10 +103,10 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 55%;
+    background-position: 50% 30%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -187,22 +187,22 @@
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1 {
     font-size: 40px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 0px var(--color-black);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
     margin-top: 1rem;
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p {
     font-family: "Fira Sans";
     font-size: 20px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 0px var(--color-black);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1 {
     font-size: 48px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p {
@@ -220,8 +220,8 @@
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
     font-size: 36px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 3px var(--color-black);
+    color: var(--color-black);
+    text-shadow: 0px 0px 5px var(--color-white);
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p {
