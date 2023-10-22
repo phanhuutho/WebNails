@@ -6,6 +6,15 @@ footer {
     background: var(--bg-site);
     font-size: 15px;
 }
+.logo-footer {
+    max-width: 120px;
+}
+.logo-footer img {
+    padding: var(--padding-box);
+    background: var(--color-white);
+    border-radius: 50%;
+    border: var(--padding-box) solid var(--color-theme);
+}
 footer .legend {
     color: var(--color-menu-legend);
 }
