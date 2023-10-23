@@ -26,3 +26,15 @@
 .card {
     background-color: rgba(235,235,235,0.7);
 }
+
+.pdf-viewer .navbar-static-top {
+    display:none;
+}
+
+.pdf-viewer .pdf-viewer-container {
+    top: 1px;
+}
+
+.pdf-viewer .pdf-viewer-page-view {
+    margin:0 auto;
+}

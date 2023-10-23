@@ -141,6 +141,7 @@
     <Content Include="Content\css\bootstrap-grid.min.css" />
     <Content Include="Content\css\bootstrap-grid.rtl.css" />
     <Content Include="Content\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\css\bootstrap-pdf-viewer.css" />
     <Content Include="Content\css\bootstrap-reboot.css" />
     <Content Include="Content\css\bootstrap-reboot.min.css" />
     <Content Include="Content\css\bootstrap-reboot.rtl.css" />
@@ -270,6 +271,7 @@
     <Content Include="Content\images\services\services_pedicure.jpg" />
     <Content Include="Content\images\services\services_pedicure_gel_polish.jpg" />
     <Content Include="Content\images\services\services_waxing.jpg" />
+    <Content Include="Content\js\bootstrap-pdf-viewer.js" />
     <Content Include="Content\js\bootstrap.bundle.js" />
     <Content Include="Content\js\bootstrap.bundle.min.js" />
     <Content Include="Content\js\bootstrap.esm.js" />
@@ -279,6 +281,7 @@
     <Content Include="Content\js\jquery-ui.min.js" />
     <Content Include="Content\js\jquery.min.js" />
     <Content Include="Content\js\lightbox.js" />
+    <Content Include="Content\js\pdf.js" />
     <Content Include="Content\js\site.js" />
     <Content Include="Content\js\slick-animation.js" />
     <Content Include="Content\js\slick.min.js" />
@@ -326,6 +329,7 @@
     <Content Include="Data\data-gallery.json" />
     <Content Include="Data\home-data-gallery.json" />
     <Content Include="Data\callback-coupon.json" />
+    <Content Include="Content\images\price-list\price-list.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
