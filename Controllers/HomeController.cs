@@ -112,7 +112,7 @@ namespace WebNails.Controllers
                 responseCode = "0";
 
                 SendMailAfterPayment(strAmount, strStock, strEmail, strMessage);
-                SendMailToReceiver(strStock, strEmail);
+                SendMailToReceiver(strStock, strEmail, strAmount);
             }
             else
             {
