@@ -55,6 +55,7 @@ namespace WebNails.Controllers
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = amount ?? "1";
             ViewBag.Stock = stock ?? "";
+            ViewBag.Email = email ?? "";
 
             var cookieDataBefore = new HttpCookie("DataBefore");
             cookieDataBefore["Amount"] = amount;
@@ -82,7 +83,7 @@ namespace WebNails.Controllers
             {
                 data.Add(key, Request[key]);
             }
-
+            TempData["PayerID"] = Request["PayerID"];
             return RedirectToAction("Finish", data);
         }
 
@@ -104,26 +105,19 @@ namespace WebNails.Controllers
                 strMessage = cookieDataBefore["Message"];
             }
 
-            SendMailAfterPayment(strAmount, strStock, strEmail, strMessage);
-
-            if (Request.QueryString["st"] != null)
+            if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
             {
-                if (Request.QueryString["st"] == "Completed")
-                {
-                    SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
+                SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
 
-                    responseCode = "0";
-                }
-                else
-                {
-                    SecureHash = "<font color='red'><strong>" + Request.QueryString["st"] + "</strong></font>";
-                    responseCode = "-1";
-                }
+                responseCode = "0";
+
+                SendMailAfterPayment(strAmount, strStock, strEmail, strMessage);
+                SendMailToReceiver(strStock, strEmail);
             }
             else
             {
-                SecureHash = "<font color='red'><strong>CORRECT</strong></font>";
-                responseCode = "0";
+                SecureHash = "<font color='red'><strong>FAIL</strong></font>";
+                responseCode = "-1";
             }
 
             ViewBag.SecureHash = SecureHash;
@@ -142,10 +136,10 @@ namespace WebNails.Controllers
                     mail.SubjectEncoding = System.Text.Encoding.Unicode;
                     mail.BodyEncoding = System.Text.Encoding.Unicode;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
-                    mail.Subject = "Checkout Paypal Gift Purcharse - " + strEmail;
+                    mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
-					   <p>Receiver email: {strEmail}</p>
-					   <p>Buyer email: {strStock}</p>
+					   <p>Receiver email: {strStock}</p>
+					   <p>Buyer email: {strEmail}</p>
 					   <p>Comment: {strMessage}</p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
@@ -156,6 +150,33 @@ namespace WebNails.Controllers
                     mySmtpClient.Send(mail);
                 }
             }
+        }
+
+        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer)
+        {
+            if(!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
+            {
+                var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(strEmailReceiver)))
+                {
+                    mail.HeadersEncoding = System.Text.Encoding.Unicode;
+                    mail.SubjectEncoding = System.Text.Encoding.Unicode;
+                    mail.BodyEncoding = System.Text.Encoding.Unicode;
+                    mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
+                    mail.Subject = "Gift For You";
+                    mail.Body = $@"<p>Hello,</p><br/>
+					   <p>You have a gift from  <strong>{strEmailBuyer}</strong>.</p>
+                       <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p><br/>
+					   <p>Thank you!</p>";
+
+                    SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
+                    NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
+                    mySmtpClient.UseDefaultCredentials = false;
+                    mySmtpClient.Credentials = networkCredential;
+                    mySmtpClient.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSslEmailSystem"]);
+                    mySmtpClient.Send(mail);
+                }    
+            }    
         }
     }
 }
