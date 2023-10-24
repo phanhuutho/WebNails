@@ -152,7 +152,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer)
+        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount)
         {
             if(!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
@@ -166,7 +166,8 @@ namespace WebNails.Controllers
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
 					   <p>You have a gift from  <strong>{strEmailBuyer}</strong>.</p>
-                       <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p><br/>
+                       <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
+                       <p>Amount: <strong>{strAmount}$</strong>.</p><br/>
 					   <p>Thank you!</p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
