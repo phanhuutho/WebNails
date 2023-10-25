@@ -1,32 +1,26 @@
 ﻿<section class="business-gift py-3 py-xl-5">
     <div class="container-xl">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="business">
                     <div class="business-inner py-1 py-xl-5 my-1">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="box-image">
-                                    <div class="image-business"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="box-inner">
-                                    <div class="text-center">
-                                        <h2>Business Hour</h2>
-                                        <div class="divider mb-3"></div>
-                                        @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
-                                        <a class="btn btn-default btn-more btn-border btn-border-black" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
-                                            @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us") <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="box-image">
+                            <div class="image-business"></div>
+                        </div>
+                        <div class="box-inner">
+                            <div class="text-center">
+                                <h2>Business Hour</h2>
+                                <div class="divider mb-3"></div>
+                                @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
+                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                                    @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us") <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            @*<div class="col-md-6">
+            <div class="col-md-6">
                 <div class="e-gift">
                     <div class="e-gift-inner py-1 py-xl-5 my-1">
                         <div class="box-image">
@@ -41,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-            </div>*@
+            </div>
         </div>
     </div>
 </section>
