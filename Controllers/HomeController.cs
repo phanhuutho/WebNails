@@ -111,7 +111,8 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                SendMailAfterPayment(strAmount, strStock, strEmail, strMessage);
+                SendMailToOwner(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
+                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
                 SendMailToReceiver(strStock, strEmail, strAmount, string.Format("{0}", TempData["PayerID"]));
             }
             else
@@ -125,7 +126,7 @@ namespace WebNails.Controllers
             return View();
         }
 
-        private void SendMailAfterPayment(string strAmount, string strStock, string strEmail, string strMessage)
+        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -140,7 +141,8 @@ namespace WebNails.Controllers
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
 					   <p>Receiver email: {strStock}</p>
 					   <p>Buyer email: {strEmail}</p>
-					   <p>Comment: {strMessage}</p>";
+					   <p>Comment: {strMessage}</p>
+                       <p>Code: <strong>{strCode}</strong></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -179,6 +181,33 @@ namespace WebNails.Controllers
                     mySmtpClient.Send(mail);
                 }    
             }    
+        }
+
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
+        {
+            if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
+            {
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(strEmail)))
+                {
+                    mail.HeadersEncoding = System.Text.Encoding.Unicode;
+                    mail.SubjectEncoding = System.Text.Encoding.Unicode;
+                    mail.BodyEncoding = System.Text.Encoding.Unicode;
+                    mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
+                    mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
+                    mail.Body = $@"<p>Amount pay: {strAmount}</p>
+					   <p>Receiver email: {strStock}</p>
+					   <p>Buyer email: {strEmail}</p>
+					   <p>Comment: {strMessage}</p>
+                       <p>Code: <strong>{strCode}</strong></p>";
+
+                    SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
+                    NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
+                    mySmtpClient.UseDefaultCredentials = false;
+                    mySmtpClient.Credentials = networkCredential;
+                    mySmtpClient.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSslEmailSystem"]);
+                    mySmtpClient.Send(mail);
+                }
+            }
         }
     }
 }
