@@ -83,9 +83,9 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="contact.html">Contact</a>
                             </li>
-                            @*<li class="list-inline-item">
+                            <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
-                            </li>*@
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -114,11 +114,11 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
-                @*<li>
+                <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
                         <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
                     </a>
-                </li>*@
+                </li>
             </ul>
             <button title="Close (Esc)" type="button" class="btn-close">&nbsp;</button>
         </div>

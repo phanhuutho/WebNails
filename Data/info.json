@@ -1,12 +1,12 @@
 {
-  "Name": "Nail Spa Orlando",
-  "HyperLinkTell": "tel:(407)2718670",
-  "TextTell": "(407)-271-8670",
-  "GooglePlus": "https://www.google.com/search?q=Nail+Spa+Orlando+32804",
-  "Address": "4341 Edgewater Dr, Orlando, FL 32804",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/H2nd1mCNyhUsMmoU8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.134030377766!2d-81.39967192382994!3d28.59575568574872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7709afb8dba43%3A0xa8c0ce391f8c45d2!2sNail%20Spa%20Orlando%20(10%25%20OFF%20All%20Customers)!5e0!3m2!1sen!2s!4v1697825113083!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Classy Nails",
+  "HyperLinkTell": "tel:(218)4090818",
+  "TextTell": "(218)-409-0818",
+  "GooglePlus": "https://www.google.com/search?q=Classy+Nails+55807",
+  "Address": "4602 Grand Ave Suite 100, Duluth, MN 55807",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/HgNqdvhtUuhJxbgn7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10935.945728973473!2d-92.1592336!3d46.7454497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ae4dda80ea0189%3A0x33478d0e4a771e0a!2sClassy%20Nails%20(Temporarily%20closed)!5e0!3m2!1sen!2s!4v1698340306018!5m2!1sen!2s",
+  "LinkBookingAppointment": "bit.ly/3qkf1mJ",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -34,6 +34,18 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-07.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-08.jpg"
     }
   ],
   "Telegram": {
