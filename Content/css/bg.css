@@ -1,4 +1,4 @@
-.bg{
+.bg {
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     width: 100%;
@@ -17,7 +17,7 @@
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 75%;
+    background-position: 90% 15%;
     background-size: cover !important;
     display: flex;
     align-items: center;

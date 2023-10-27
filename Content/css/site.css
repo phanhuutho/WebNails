@@ -24,7 +24,7 @@ body {
     background-color: transparent;
 }
 main{
-    overflow-x:hidden;
+
 }
 header {
     background: var(--bg-site);
