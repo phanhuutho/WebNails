@@ -6,7 +6,7 @@
   "Address": "4602 Grand Ave Suite 100, Duluth, MN 55807",
   "LinkGoogleMapAddress": "https://maps.app.goo.gl/HgNqdvhtUuhJxbgn7",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10935.945728973473!2d-92.1592336!3d46.7454497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ae4dda80ea0189%3A0x33478d0e4a771e0a!2sClassy%20Nails%20(Temporarily%20closed)!5e0!3m2!1sen!2s!4v1698340306018!5m2!1sen!2s",
-  "LinkBookingAppointment": "bit.ly/3qkf1mJ",
+  "LinkBookingAppointment": "https://bit.ly/3qkf1mJ",
   "ShowCoupon": true,
   "Coupons": [
     {
