@@ -373,7 +373,7 @@
 }
 .about-us .box-image .box-inner{
     padding: var(--padding-box);
-    background: var(--color-black);
+    background: var(--color-theme);
     max-width: unset;
     width: unset;
 }
