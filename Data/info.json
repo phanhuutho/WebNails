@@ -6,7 +6,7 @@
   "Address": "9974 Brook Rd, Glen Allen, VA 23059",
   "LinkGoogleMapAddress": "https://maps.app.goo.gl/dvWnW8dcEbewBqaG6",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12632.388862896318!2d-77.4615753!3d37.6704234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b13ddc8ef649f1%3A0x7c286a594f5a05ec!2sMay%20Nails%20(%245%20OFF%2C%205%25-10%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1697479517333!5m2!1sen!2s",
-  "LinkBookingAppointment": "bit.ly/44eTcmr",
+  "LinkBookingAppointment": "https://bit.ly/44eTcmr",
   "ShowCoupon": true,
   "Coupons": [
     {
