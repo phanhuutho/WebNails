@@ -233,9 +233,11 @@
     <Content Include="Content\images\home\home_contact_image_7.jpg" />
     <Content Include="Content\images\home\home_contact_image_8.jpg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
+    <Content Include="Content\images\home\home_service_acrylic.jpg" />
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
@@ -268,8 +270,10 @@
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />
+    <Content Include="Content\images\services\services_little_kids.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
     <Content Include="Content\images\services\services_manicure_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_nails_acrylic.jpg" />
     <Content Include="Content\images\services\services_nails_enhancements.jpg" />
     <Content Include="Content\images\services\services_pedicure.jpg" />
     <Content Include="Content\images\services\services_pedicure_gel_polish.jpg" />
