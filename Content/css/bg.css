@@ -17,10 +17,10 @@
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 40%;
+    background-position: 50% 40%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 .bg .bg-contact .description{
