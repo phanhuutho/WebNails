@@ -50,7 +50,7 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 35%;
+    background-position: 60% 30%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -137,7 +137,7 @@
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 48px;
-    text-shadow: 0px 0px 3px var(--color-theme);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .box-inner a.btn{
