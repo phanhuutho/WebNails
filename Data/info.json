@@ -1,12 +1,12 @@
 {
-  "Name": "Classy Nails",
-  "HyperLinkTell": "tel:(218)4090818",
-  "TextTell": "(218)-409-0818",
-  "GooglePlus": "https://www.google.com/search?q=Classy+Nails+55807",
-  "Address": "4602 Grand Ave Suite 100, Duluth, MN 55807",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/HgNqdvhtUuhJxbgn7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10935.945728973473!2d-92.1592336!3d46.7454497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ae4dda80ea0189%3A0x33478d0e4a771e0a!2sClassy%20Nails%20(Temporarily%20closed)!5e0!3m2!1sen!2s!4v1698340306018!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://bit.ly/3qkf1mJ",
+  "Name": "Polished Lashes & Nails",
+  "HyperLinkTell": "tel:(803)6956199",
+  "TextTell": "(803)-695-6199",
+  "GooglePlus": "https://www.google.com/search?q=+Polished+Lashes+and+Nails+29209",
+  "Address": "6070 Garners Ferry Rd Suite D, Columbia, SC 29209",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/YjZAPHsnNjwTXV6B7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.450087676832!2d-80.9677966!3d33.983221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8b0166641d543%3A0xa794fcdfe92d8975!2sPolished%20Lashes%20%26%20Nails%20(10%25%20Or%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1698687743997!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://fave.salon/r/booking?salonId=59385&redirectUrl=https://polishedlashesnails.favesalon.com",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -38,14 +38,6 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-06.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-07.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-08.jpg"
     }
   ],
   "Telegram": {

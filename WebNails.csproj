@@ -261,8 +261,6 @@
     <Content Include="Content\images\price-list\prices-04.jpg" />
     <Content Include="Content\images\price-list\prices-05.jpg" />
     <Content Include="Content\images\price-list\prices-06.jpg" />
-    <Content Include="Content\images\price-list\prices-07.jpg" />
-    <Content Include="Content\images\price-list\prices-08.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
@@ -336,7 +334,6 @@
     <Content Include="Data\data-gallery.json" />
     <Content Include="Data\home-data-gallery.json" />
     <Content Include="Data\callback-coupon.json" />
-    <Content Include="Content\images\price-list\price-list.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

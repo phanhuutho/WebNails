@@ -27,7 +27,7 @@ main{
 
 }
 header {
-    background: var(--bg-site);
+    background: var(--color-pink-pastle);
 }
 .bg-header-left {
     background: var(--bg-site);

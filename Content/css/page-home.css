@@ -1,4 +1,7 @@
-﻿main .contact .container{
+﻿main {
+    background: var(--color-pink-pastle);
+}
+main .contact .container{
     max-width: 1300px;
     margin: 0 auto;
 }
