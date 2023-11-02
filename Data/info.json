@@ -1,19 +1,14 @@
 {
-  "Name": "Polished Lashes & Nails",
-  "HyperLinkTell": "tel:(803)6956199",
-  "TextTell": "(803)-695-6199",
-  "GooglePlus": "https://www.google.com/search?q=+Polished+Lashes+and+Nails+29209",
-  "Address": "6070 Garners Ferry Rd Suite D, Columbia, SC 29209",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/YjZAPHsnNjwTXV6B7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.450087676832!2d-80.9677966!3d33.983221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8b0166641d543%3A0xa794fcdfe92d8975!2sPolished%20Lashes%20%26%20Nails%20(10%25%20Or%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1698687743997!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://fave.salon/r/booking?salonId=59385&redirectUrl=https://polishedlashesnails.favesalon.com",
-  "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Name": "89 Beauty School",
+  "HyperLinkTell": "tel:(832)4276438",
+  "TextTell": "(832)-427-6438",
+  "GooglePlus": "https://www.google.com/search?q=89+Beauty+School+77433",
+  "Address": "18910 FM 529, Suite 8, Cypress, Texas, 77433",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/hJtWAX8DogVrbNFb6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13837.710035854663!2d-95.7001418!3d29.88078!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d7bb6ebf933b%3A0xa89a68ce2083db35!2s89%20Beauty%20School!5e0!3m2!1sen!2s!4v1698911596725!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
+  "ShowCoupon": false,
+  "Coupons": [],
   "Prices": [
     {
       "Status": true,

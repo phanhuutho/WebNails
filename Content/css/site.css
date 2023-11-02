@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #e76b9f;
-    --color-menu-legend: #e76b9f;
+    --color-theme: #BB86FC;
+    --color-menu-legend: #BB86FC;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #e76b9f;
+    --color-text-theme: #BB86FC;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -27,7 +27,7 @@ main{
 
 }
 header {
-    background: var(--color-pink-pastle);
+    background: var(--color-theme);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -41,14 +41,14 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 100px;
-    margin: 10px 0px;
+    max-width: 70px;
+    margin: 5px 0px;
 }
-.logo img{
+.logo img {
     padding: var(--padding-box);
     background: var(--color-white);
     border-radius: 50%;
-    border: var(--padding-box) solid var(--color-theme);
+    border: var(--padding-box) solid var(--color-black);
 }
 
 /*font*/

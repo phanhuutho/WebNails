@@ -10,6 +10,7 @@ main .contact .container{
     border: 1px solid var(--color-theme);
     border-left: 0;
     border-right: 0;
+    border-top: 1px solid var(--color-black);
 }
 .slider-home .sliders{
     width: 100%;
@@ -53,10 +54,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 95% 50%;
+    background-position: 40% 80%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-2 .box-image .image {
@@ -67,10 +68,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 30%;
+    background-position: 0% 30%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-3 .box-image .image {
@@ -95,7 +96,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15% 25%;
+    background-position: 15% 60%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -109,7 +110,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 30%;
+    background-position: 50% 15%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -193,8 +194,8 @@ main .contact .container{
 }
 .slider-home .sliders .slider-2 .box-image .box-inner h1 {
     font-size: 40px;
-    color: var(--color-black);
-    text-shadow: 0px 0px 5px var(--color-white);
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
     margin-top: 1rem;
 }
