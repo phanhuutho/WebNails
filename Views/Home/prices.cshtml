@@ -9,21 +9,315 @@
 <main class="bg-main">
     <div class="overlay"></div>
     <div class="page-main">
-        <section class="py-2 container">
-            <div class="row justify-content-center">
-                @if (Prices.Count > 0)
-                {
-                    foreach (var item in Prices)
-                    {
-                        <div class="col-lg-12 py-2">
-                            <img class="img-fluid" src="@item.Src" alt="" />
+        <section class="py-5 container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12" id="haircare">
+                            <div class="box-inner mx-md-3 my-3 px-md-3 py-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Haircare</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>Women's Haircut</b></div>
+                                                    <div class="col-2 text-end"><b>$16.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Men's Haircut</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Bang Trim</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Shampoo & Blow Dry</b></div>
+                                                    <div class="col-2 text-end"><b>$20.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Flat Iron</b></div>
+                                                    <div class="col-2 text-end"><b>$25.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Hair Styling</b></div>
+                                                    <div class="col-2 text-end"><b>$35.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Up Do's</b></div>
+                                                    <div class="col-2 text-end"><b>$45.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Perm</b></div>
+                                                    <div class="col-2 text-end"><b>$35.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Relaxer</b></div>
+                                                    <div class="col-2 text-end"><b>$35.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Retouch Relaxer</b></div>
+                                                    <div class="col-2 text-end"><b>$25.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Highlights</b></div>
+                                                    <div class="col-2 text-end"><b>$65.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Balayage</b></div>
+                                                    <div class="col-2 text-end"><b>$110.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>All Over Color</b></div>
+                                                    <div class="col-2 text-end"><b>$45.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Color Retouch</b></div>
+                                                    <div class="col-2 text-end"><b>$35.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Braid Removal</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>All over Bleach</b></div>
+                                                    <div class="col-2 text-end"><b>$60.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Bleach Retouch</b></div>
+                                                    <div class="col-2 text-end"><b>$45.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Keratin Treatment</b></div>
+                                                    <div class="col-2 text-end"><b>$90.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    }
-                }
-                else
-                {
-                    <div class="col-lg-12 py-2"></div>
-                }
+                        <div class="col-12" id="nail">
+                            <div class="box-inner mx-md-3 my-3 px-md-3 py-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Nails</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>Acrylic Full Set</b></div>
+                                                    <div class="col-2 text-end"><b>$25.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Fill In</b></div>
+                                                    <div class="col-2 text-end"><b>$15.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Dip</b></div>
+                                                    <div class="col-2 text-end"><b>$25.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Mani & Pedi Combo</b></div>
+                                                    <div class="col-2 text-end"><b>$25.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Manicure</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Pedicure</b></div>
+                                                    <div class="col-2 text-end"><b>$20.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Gel Polish Add On</b></div>
+                                                    <div class="col-2 text-end"><b>$5.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Gel Removal</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Acrylic Nail Removal</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12" id="esthetician">
+                            <div class="box-inner mx-md-3 my-3 px-md-3 py-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Esthetician<br />(By Appointment Only)</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>Basic Facial</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Deep Cleansing Facial</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Acne Facial</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Back Facial</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Chemical Peel Facial</b> <i>($40 + $15 Product Fee)</i></div>
+                                                    <div class="col-2 text-end"><b>$55.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Microdermabrasion</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Microcurrent</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Lymph Drainage</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Ultrasonic Blade</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Ultrasound</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Iontophoresis</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Desincrustation</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Make-Up</b></div>
+                                                    <div class="col-2 text-end"><b>$35.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Brow Tint</b></div>
+                                                    <div class="col-2 text-end"><b>$20.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="waxing">
+                            <div class="box-inner mx-md-3 my-3 px-md-3 py-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Waxing</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>Eyebrow Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$8.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Upper Lip Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$8.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Underarm Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$10.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Bikini Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$20.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Brazilian Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Half Leg Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$20.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Full Lex Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$25.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Full Back Wax</b></div>
+                                                    <div class="col-2 text-end"><b>$40.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="eyelash-extension">
+                            <div class="box-inner mx-md-3 my-3 px-md-3 py-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Eyelash Extension</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>Refill</b></div>
+                                                    <div class="col-2 text-end"><b>$45.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>Classic</b></div>
+                                                    <div class="col-2 text-end"><b>$60.00<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

@@ -175,6 +175,10 @@
     <Content Include="Content\css\slider.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\slick.svg" />
+    <Content Include="Content\images\about-us\about-us-1.jpg" />
+    <Content Include="Content\images\about-us\about-us-2.jpg" />
+    <Content Include="Content\images\about-us\about-us-3.jpg" />
+    <Content Include="Content\images\about-us\about-us-4.jpg" />
     <Content Include="Content\images\about-us\about-us_bg.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\background_darkwood.jpg" />
