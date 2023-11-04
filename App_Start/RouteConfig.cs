@@ -60,6 +60,14 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "Programs", "programs.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Programs"
+                });
+
+            routes.MapRoute(
                 "Gifts", "e-gift.html",
                 new
                 {

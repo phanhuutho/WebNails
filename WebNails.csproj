@@ -165,6 +165,7 @@
     <Content Include="Content\css\page-gift.css" />
     <Content Include="Content\css\page-home.css" />
     <Content Include="Content\css\page-prices.css" />
+    <Content Include="Content\css\page-programs.css" />
     <Content Include="Content\css\page-register-coupon.css" />
     <Content Include="Content\css\page-services.css" />
     <Content Include="Content\css\payments.css" />
@@ -266,6 +267,10 @@
     <Content Include="Content\images\price-list\prices-04.jpg" />
     <Content Include="Content\images\price-list\prices-05.jpg" />
     <Content Include="Content\images\price-list\prices-06.jpg" />
+    <Content Include="Content\images\programs\programs-1.jpg" />
+    <Content Include="Content\images\programs\programs-2.jpg" />
+    <Content Include="Content\images\programs\programs-3.jpg" />
+    <Content Include="Content\images\programs\programs-4.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
@@ -389,6 +394,7 @@
     <Content Include="Views\Home\gallery.cshtml" />
     <Content Include="Views\Home\register_coupon.cshtml" />
     <Content Include="Views\Home\register_coupon_success.cshtml" />
+    <Content Include="Views\Home\programs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -28,3 +28,21 @@
     border-bottom: 2px solid var(--color-text-theme);
     font-weight: 900;
 }
+.more, .more-inline {
+    display: none;
+}
+
+.page-main .box-inner {
+    background: var(--color-white);
+    padding: 5px;
+    border: 2px solid var(--color-black);
+}
+
+.page-main .box-text h2 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: var(--color-text-theme);
+}

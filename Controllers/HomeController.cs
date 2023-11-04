@@ -44,6 +44,11 @@ namespace WebNails.Controllers
             return View();
         }
 
+        public ActionResult Programs()
+        {
+            return View();
+        }
+
         [HttpGet]
         public ActionResult RegisterCoupon(string imgCoupon = "")
         {
