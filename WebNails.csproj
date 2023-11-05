@@ -395,6 +395,8 @@
     <Content Include="Views\Home\register_coupon.cshtml" />
     <Content Include="Views\Home\register_coupon_success.cshtml" />
     <Content Include="Views\Home\programs.cshtml" />
+    <Content Include="Views\Home\_Programs_List.cshtml" />
+    <Content Include="Views\Home\_FormContact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

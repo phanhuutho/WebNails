@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "About Us";
+    ViewBag.Title = "Programs";
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -11,82 +11,19 @@
 <main>
     @{Html.RenderPartial("_SliderPageSub");}
     <section class="bg">
-        <div class="bg-about-us">
-            <div class="page-main container-lg py-5" id="about-us">
+        <div class="bg-programs">
+            <div class="page-main container-lg py-5" id="programs">
                 <div class="row">
                     <div class="col-lg-12 text-center mb-5"><h1><span class="font-Parisienne">Learn with Us</span></h1></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center mt-3">
-                        <div class="row">
-                            <div class="col-md-6 my-3">
-                                <div class="box-inner">
-                                    <div class="box-image">
-                                        <img class="img-thumbnail" alt="" src="~/Content/images/programs/programs-1.jpg" />
-                                    </div>
-                                    <div class="box-text">
-                                        <h2 class="text-center">Fantastic Training Courses in Cypress</h2>
-                                        <p>At 89 Beauty School, we are proud to offer top quality beauty training courses to the people of Cypress. What's our secret?</p>
-                                        <p class="more">We take great pains to simplify subjects and have a reputation for making difficult concepts or tasks much easier.</p>
-                                        <p class="more">If you don't believe that, rest assured that many of our clients have seen great progress in their skills and knowledge over a very short period of time of time.</p>
-                                        <p class="more">If you would like to learn more about us, you can put a call through on +18324276438</p>
-                                        <p class="more">We'd love to hear from you.</p>
-                                        <p>
-                                            <button onclick="readmore(this)" read-more="1" class="btn btn-link btn-read-more" tabindex="-1">Read more</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <div class="box-inner">
-                                    <div class="box-image">
-                                        <img class="img-thumbnail" alt="" src="~/Content/images/programs/programs-2.jpg" />
-                                    </div>
-                                    <div class="box-text">
-                                        <h2 class="text-center">Join Our Family</h2>
-                                        <p>Our team of instructors are highly experienced in the beauty industry, and each have great communication skills and vast <span class="more-inline">experience working with students at many different levels.</span></p>
-                                        <p class="more">We also encourage our staff to engage in development sessions to improve their teaching skills and keep up-to-date with the latest trends.</p>
-                                        <p class="more">Our courses are planned around reasonable, achievable goals for our students, which helps to increase the effective rate of learning.</p>
-                                        <p>
-                                            <button onclick="readmore(this)" read-more="1" class="btn btn-link btn-read-more" tabindex="-1">Read more</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <div class="box-inner">
-                                    <div class="box-image">
-                                        <img class="img-thumbnail" alt="" src="~/Content/images/programs/programs-3.jpg" />
-                                    </div>
-                                    <div class="box-text">
-                                        <h2 class="text-center">Our Facilities</h2>
-                                        <p>We know it's easier to be a successful learner when you're equipped with what you need.</p>
-                                        <p class="more">This is why we have invested heavily in key equipment to give you the best experience while you train with us.</p>
-                                        <p class="more">After you register, a training schedule will be designed for you based on your current ability as well as your strengths and weaknesses.</p>
-                                        <p class="more">It does not matter what your learning speed is, our instructors are patient enough to help you along until you are confident with the course material.</p>
-                                        <p>
-                                            <button onclick="readmore(this)" read-more="1" class="btn btn-link btn-read-more" tabindex="-1">Read more</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 my-3">
-                                <div class="box-inner">
-                                    <div class="box-image">
-                                        <img class="img-thumbnail" alt="" src="~/Content/images/programs/programs-4.jpg" />
-                                    </div>
-                                    <div class="box-text">
-                                        <h2 class="text-center">Our Mission</h2>
-                                        <p>89 Beauty School's mission is to provide quality post-secondary education that will <span class="more-inline">prepare students to pass the state licensing exam and gain employment in the Cosmetology, Esthetician, Manicurist, or Eyelash Extension field.</span></p>
-                                        <p>
-                                            <button onclick="readmore(this)" read-more="1" class="btn btn-link btn-read-more" tabindex="-1">Read more</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-9 text-center mt-3">
+                        @{ Html.RenderPartial("_Programs_List"); }
                     </div>
                 </div>
+            </div>
+            <div class="page-main container-lg py-5" id="send-message">
+                @{ Html.RenderPartial("_FormContact"); }
             </div>
         </div>
     </section>
@@ -95,7 +32,7 @@
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>
     <script type="text/javascript">
-        ActiveMenu("menu-about-us");
+        ActiveMenu("menu-programs");
 
         var sliderInit = $('.sliders');
 

@@ -1,1 +1,32 @@
-﻿
+﻿.page-main {
+    position: relative;
+    font-family: "Vesper Libre";
+    color: var(--color-black);
+}
+
+.page-main h1 {
+    font-size: 250%;
+    color: var(--color-text-theme);
+    height: 90px;
+}
+
+.page-main h1 span {
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-text-theme);
+    font-weight: 900;
+}
+
+.page-main .box-inner {
+    background: var(--color-white);
+    padding: 5px;
+    border: 2px solid var(--color-black);
+}
+
+.page-main .box-text h2 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: var(--color-text-theme);
+}

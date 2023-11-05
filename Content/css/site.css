@@ -140,3 +140,7 @@ a:active,a:hover {
 .error {
     color:red;
 }
+
+.form-label {
+    margin-top: 0.175rem;
+}
