@@ -129,6 +129,7 @@
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\GalleryModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\MessageModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\RegisterCouponModel.cs" />
     <Compile Include="Models\ReviewModel.cs" />
