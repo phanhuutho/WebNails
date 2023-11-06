@@ -27,6 +27,42 @@ $(document).ready(function(){
         $(".menu-mobile-tablet, .call-us").show();
         $("body").css("overflow","auto");
     });
+
+
+    $("#frmSendMessage").validate({
+        rules: {
+            YourName: "required",
+            YourEmail: { required: true, email: true },
+            Subject: "required",
+            YourMessage: "required"
+        },
+        messages: {
+            YourName: { required: "Require input Your name" },
+            YourEmail: { required: "Require input Your email", email: "Invalid Your email" },
+            Subject: { required: "Require Subject" },
+            YourMessage: { required: "Require Your message" }
+        },
+        submitHandler: function (form) {
+            debugger;
+            $("body").addClass("loader");
+            $("body").append("<div class='loading'></div>");
+            $.ajax({
+                type: "POST",
+                url: "/contact.html",
+                data: $(form).serialize(),
+                success: function (result) {
+                    if (result.messages == "OK") {
+                        $(".loading", "body").remove();
+                        $("body").removeClass("loader");
+                        document.forms[0].reset();
+                        $(".modal-body", "#ModalMessage").html("Thank you for your message. It has been sent. We will get back with you shortly.");
+                        $("#ModalMessage").modal("show");
+                    }
+                },
+            });
+            return false;
+        }
+    });
 });
 
 function ActiveMenu(ElementId){
