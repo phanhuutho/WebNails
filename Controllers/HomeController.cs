@@ -43,6 +43,7 @@ namespace WebNails.Controllers
                 mail.Body = $@"<p>Subject: {item.Subject}</p>
                                <p>Email: {item.YourEmail}</p>
                                <p>Name: {item.YourName}</p>
+                               <p>Phone: {item.YourPhone}</p>
                                <p>Message: {item.YourMessage}</p>";
 
                 SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
