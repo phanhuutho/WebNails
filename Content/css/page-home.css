@@ -389,6 +389,37 @@ main .contact .container{
     background-position: 50% 50%;
     background-size: cover !important;
 }
+
+.programs {
+    font-family: "Vesper Libre";
+}
+
+.programs h1 {
+    font-size: 250%;
+    color: var(--color-text-theme);
+}
+
+.programs h1 span {
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-text-theme);
+    font-weight: 900;
+}
+
+.programs .box-inner {
+    background: var(--color-white);
+    padding: 5px;
+    border: 2px solid var(--color-black);
+}
+
+.programs .box-text h2 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: var(--color-text-theme);
+}
+
 .beauty-spa {
     background-color: var(--bg-site);
 }
@@ -456,28 +487,28 @@ main .contact .container{
     justify-content: center;
 }
 .beauty-spa .box-image .image1{
-    background-image: url(../images/home/home_service_manicure.jpg);
+    background-image: url(../images/home/home_service_esthetician.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 80%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
-    background-image: url(../images/home/home_service_pedicure.jpg);
+    background-image: url(../images/home/home_service_nail.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 0%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image4{
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_eyelash_extensions.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -755,6 +786,14 @@ main .contact .container{
 }
 .map {
     background-color: var(--color-white);
+}
+
+.more, .more-inline {
+    display: none;
+}
+
+.form-label {
+    margin-top: 0;
 }
 
 @-webkit-keyframes dash {

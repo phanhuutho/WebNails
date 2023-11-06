@@ -3,12 +3,12 @@
     "Name": "Helena Abadie",
     "Moment": "5 months ago",
     "Star": 5,
-    "Text": "The school is amazing ! I cannot say enough about the staff .Ms. Linh is amazing!It truly is a family like environment. The instructors were always incredibly helpful<span class='more'> and informative. Highly recommend attending!<span>"
+    "Text": "<p>The school is amazing! I cannot say enough about the staff. Ms.Linh is amazing!It truly is a family like environment. The instructors were always incredibly helpful<span class='more-inline'> and informative. Highly recommend attending!<span></p><p><a onclick='readmore(this)' href='javascript:void(0)' read-more='1' class='link-primary btn-read-more' tabindex='-1'>Read more</a></p>"
   },
   {
     "Name": "Rawand Abed al haq",
     "Moment": "8 months ago",
     "Star": 5,
-    "Text": "as an esthetician student I highly recommend attending to 89 Beaty school , the instructors are very informative and helpful , it was a wonderful experience"
+    "Text": "<p>as an esthetician student I highly recommend attending to 89 Beaty school, the instructors are very informative and helpful, it was a wonderful experience</p>"
   }
 ]

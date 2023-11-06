@@ -51,6 +51,9 @@ namespace WebNails.Controllers
 
             var jsonCouponCallback = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/callback-coupon.json"));
             ViewBag.CouponCallback = JsonConvert.DeserializeObject<List<CouponCallbackModel>>(jsonCouponCallback); ;
+
+            var jsonReviews = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/data-reviews.json"));
+            ViewBag.Reviews = JsonConvert.DeserializeObject<List<ReviewModel>>(jsonReviews); ;
         }
     }
 }

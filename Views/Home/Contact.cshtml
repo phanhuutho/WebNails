@@ -12,7 +12,7 @@
                 <div class="row justify-content-center justify-content-md-end">
                     <div class="col-xl-4 col-lg-5 col-md-12">
                         <div class="text-center py-3">
-                            <h1><span class="description">@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Polished", "Polished<br/>")))</span></h1>
+                            <h1><span class="description">@Html.Raw(string.Format("{0}", ViewBag.Name))</span></h1>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
     </section>
     <div class="page-main">
         @{ Html.RenderPartial("_Contact_Address_1"); }
-        @{ Html.RenderPartial("_Contact_Gallery_1"); }
+        @{ Html.RenderPartial("_FormContact"); }
     </div>
 </main>
 

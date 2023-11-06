@@ -5,6 +5,8 @@
     Coupons = Coupons.Where(x => x.Src != "" && x.Status).ToList();
     var CouponCallback = (List<WebNails.Models.CouponCallbackModel>)ViewBag.CouponCallback;
     CouponCallback = CouponCallback ?? new List<WebNails.Models.CouponCallbackModel>();
+    var Reviews = (List<WebNails.Models.ReviewModel>)ViewBag.Reviews;
+    Reviews = Reviews ?? new List<WebNails.Models.ReviewModel>();
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -17,10 +19,23 @@
 <main>
     @{ Html.RenderPartial("_SliderHome_1"); }
     @{ Html.RenderPartial("_Home_Beauty_Spa_1"); }
-    @{ Html.RenderPartial("_Home_About_Us_1"); }
+    <section class="programs py-5">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-12 text-center"><h1 class="font-Parisienne fs-1 fw-bold color-theme">Learn with Us</h1></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center mt-3">
+                    @{ Html.RenderPartial("_Programs_List"); }
+                </div>
+            </div>
+        </div>
+    </section>
     @{ Html.RenderPartial("_Home_Services_1"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
-    @{ Html.RenderPartial("_Home_Contact_1"); }
+    @{ Html.RenderPartial("_Reviews", Reviews); }
+    @{ Html.RenderPartial("_FormContact"); }
+    @{ Html.RenderPartial("_Home_Contact_2"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
 @section modal{
@@ -116,6 +131,33 @@
         function RegisterCoupon(obj) {
             var imgCoupon = $(obj).attr("src");
             location.href = "register-coupon.html?imgCoupon=" + imgCoupon;
+        }
+
+        function readmore(obj) {
+            var dots = $(obj).attr("read-more");
+            var moreText = $(obj).parents(".box-text").find(".more");
+            var moreInlineText = $(obj).parents(".box-text").find(".more-inline");
+            var btnText = $(obj).parents(".box-text").find(".btn-read-more");
+
+            if (dots == '0') {
+                $(obj).attr("read-more", "1");
+                btnText.text("Read more");
+                moreText.css('display', 'none');
+                moreInlineText.css('display', 'none');
+            }
+            else {
+                $(obj).attr("read-more", "0");
+                btnText.text("Show less");
+                moreText.css('display', 'block');
+                moreInlineText.css('display', 'inline');
+            }
+
+            setTimeout(function () {
+                btnText.text("Read more");
+                moreText.css('display', 'none');
+                moreInlineText.css('display', 'none');
+                $(obj).attr("read-more", "1");
+            }, 5000);
         }
     </script>
 }

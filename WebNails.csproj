@@ -131,6 +131,7 @@
     <Compile Include="Models\InfoModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\RegisterCouponModel.cs" />
+    <Compile Include="Models\ReviewModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -242,9 +243,11 @@
     <Content Include="Content\images\home\home_service_acrylic.jpg" />
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
+    <Content Include="Content\images\home\home_service_esthetician.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
     <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
+    <Content Include="Content\images\home\home_service_nail.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
@@ -274,13 +277,16 @@
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
+    <Content Include="Content\images\services\services_esthetician.jpg" />
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_haircare.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />
     <Content Include="Content\images\services\services_little_kids.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
     <Content Include="Content\images\services\services_manicure_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_nail.jpg" />
     <Content Include="Content\images\services\services_nails_acrylic.jpg" />
     <Content Include="Content\images\services\services_nails_enhancements.jpg" />
     <Content Include="Content\images\services\services_pedicure.jpg" />
@@ -398,6 +404,7 @@
     <Content Include="Views\Home\programs.cshtml" />
     <Content Include="Views\Home\_Programs_List.cshtml" />
     <Content Include="Views\Home\_FormContact.cshtml" />
+    <Content Include="Views\Home\_Reviews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

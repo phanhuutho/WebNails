@@ -119,9 +119,13 @@ a:active,a:hover {
 }
 
 .border-theme {
-    border-color: var(--color-theme);
+    border-color: var(--color-theme) !important;
     border-width: var(--padding-box);
     opacity: 1;
+}
+
+.color-theme {
+    color: var(--color-theme);
 }
 
 .img-hover-zoom {
