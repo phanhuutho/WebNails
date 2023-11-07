@@ -6,10 +6,10 @@
             </div>
             <div class="box-text">
                 <h2 class="text-center">Fantastic Training Courses in Cypress</h2>
-                <p>At 89 Beauty School, we are proud to offer top quality beauty training courses to the people of Cypress. What's our secret?</p>
+                <p>At ABC BEAUTY ACADEMY, we are proud to offer top quality beauty training courses to the people of Cypress. What's our secret?</p>
                 <p class="more">We take great pains to simplify subjects and have a reputation for making difficult concepts or tasks much easier.</p>
                 <p class="more">If you don't believe that, rest assured that many of our clients have seen great progress in their skills and knowledge over a very short period of time of time.</p>
-                <p class="more">If you would like to learn more about us, you can put a call through on +18324276438</p>
+                <p class="more">If you would like to learn more about us, you can put a call through on +14698720889</p>
                 <p class="more">We'd love to hear from you.</p>
                 <p>
                     <button onclick="readmore(this)" read-more="1" class="btn btn-link btn-read-more" tabindex="-1">Read more</button>
@@ -57,7 +57,7 @@
             </div>
             <div class="box-text">
                 <h2 class="text-center">Our Mission</h2>
-                <p>89 Beauty School's mission is to provide quality post-secondary education that will <span class="more-inline">prepare students to pass the state licensing exam and gain employment in the Cosmetology, Esthetician, Manicurist, or Eyelash Extension field.</span></p>
+                <p>ABC BEAUTY ACADEMY mission is to provide quality post-secondary education that will <span class="more-inline">prepare students to pass the state licensing exam and gain employment in the Cosmetology, Esthetician, Manicurist, or Eyelash Extension field.</span></p>
                 <p>
                     <button onclick="readmore(this)" read-more="1" class="btn btn-link btn-read-more" tabindex="-1">Read more</button>
                 </p>
