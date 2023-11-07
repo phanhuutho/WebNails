@@ -22,9 +22,6 @@
                     </div>
                 </div>
             </div>
-            <div class="page-main container-lg py-5" id="send-message">
-                @{ Html.RenderPartial("_FormContact"); }
-            </div>
         </div>
     </section>
 </main>
@@ -55,8 +52,6 @@
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
             });
-
-            InitValidateContact();
         });
 
         function readmore(obj) {
