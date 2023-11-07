@@ -13,7 +13,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <form id="frmSendMessage" method="post">
+                <form id="frmSendMessage">
                     <div class="row justify-content-center">
                         <div class="col-md-5 my-3">
                             @Html.TextAreaFor(model => model.YourMessage, new { @class = "form-control", rows = "8", required = "required", placeholder = "Tell us about your request", style = "height: 200px;" })
@@ -26,10 +26,11 @@
                         </div>
                         <div class="col-md-10 my-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="Agreement" required>
+                                <input class="form-check-input" type="checkbox" value="" id="Agreement" name="Agreement">
                                 <label class="form-check-label form-label" for="Agreement">
                                     I agree with the <a class="link-dark text-decoration-underline" target="_blank" href="https://www.ueni.com/en-us/terms?_ga=2.66700910.1945820625.1699201840-1173823991.1699201840">Terms & Conditions</a> and the <a class="link-dark text-decoration-underline" target="_blank" href="https://www.ueni.com/en-us/privacy">Privacy & Cookies Policy</a> of UENI and any applicable Terms and Conditions of 89 Beauty School. This site is protected by reCAPTCHA and the Google <a class="link-dark text-decoration-underline" target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and <a class="link-dark text-decoration-underline" target="_blank" href="https://policies.google.com/terms">Terms of Service</a> apply.
                                 </label>
+                                <label id="Agreement-error" class="error" for="Agreement"></label>
                             </div>
                         </div>
                         <div class="col-md-12 text-center my-3">
