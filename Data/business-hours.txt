@@ -1,2 +1,2 @@
-﻿<p>Mon - Fri: 9:00am - 5:00pm</p>
+﻿<p>Mon - Fri: 8:00am - 7:00pm</p>
 <p>Sat - Sun: Closed</p>
