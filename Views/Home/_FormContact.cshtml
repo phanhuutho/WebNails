@@ -13,7 +13,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-10">
-                <form id="frmSendMessage">
+                <form id="frmSendMessage" method="post">
                     <div class="row justify-content-center">
                         <div class="col-md-5 my-3">
                             @Html.TextAreaFor(model => model.YourMessage, new { @class = "form-control", rows = "8", required = "required", placeholder = "Tell us about your request", style = "height: 200px;" })
