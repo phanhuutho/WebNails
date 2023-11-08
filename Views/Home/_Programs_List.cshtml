@@ -1,68 +1,45 @@
-﻿<div class="row">
-    <div class="col-md-6 my-3">
+﻿@{ 
+    var aHref = ViewBag.HyperLinkTell;
+}
+<div class="row">
+    <div class="col-lg-4 my-3">
         <div class="box-inner">
             <div class="box-image">
                 <img class="img-fluid" alt="" src="~/Content/images/programs/programs-1.jpg" />
             </div>
             <div class="box-text">
-                <h2 class="text-center">Operator 1000HRS</h2>
-                <p><strong><u>TOTAL COST: $12,950.00</u></strong></p>
-                <p><strong><u>DEPOSIT: $2000</u></strong></p>
-                <p><a href="/programs/operator.html" class="link-primary">Learn more</a></p>
-                <p><strong>$12,950.00</strong></p>
+                <h2 class="text-center">COSMETOLOGY 1000HRS</h2>
+                <p class="fs-3"><strong>$12,950.00</strong></p>
                 <p>
-                    <a href="/index.html#message_request" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
+                    <a href="@aHref" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
                 </p>
             </div>
         </div>
     </div>
-    <div class="col-md-6 my-3">
+    <div class="col-lg-4 my-3">
         <div class="box-inner">
             <div class="box-image">
                 <img class="img-fluid" alt="" src="~/Content/images/programs/programs-2.jpg" />
             </div>
             <div class="box-text">
-                <h2 class="text-center">Manicure 600HRS</h2>
-                <p><strong><u>TOTAL COST: $6,199</u></strong></p>
-                <p><strong><u>DEPOSIT: $1000</u></strong></p>
-                <p><a href="/programs/manicure.html" class="link-primary">Learn more</a></p>
-                <p><strong>$6,199.00</strong></p>
+                <h2 class="text-center">MANICURE 600HRS</h2>
+                <p class="fs-3"><strong>$6,199.00</strong></p>
                 <p>
-                    <a href="/index.html#message_request" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
+                    <a href="@aHref" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
                 </p>
             </div>
         </div>
     </div>
-    <div class="col-md-6 my-3">
+    <div class="col-lg-4 my-3">
         <div class="box-inner">
             <div class="box-image">
                 <img class="img-fluid" alt="" src="~/Content/images/programs/programs-3.jpg" />
             </div>
             <div class="box-text">
-                <h2 class="text-center">Esthetician 750HRS</h2>
-                <p><strong><u>TOTAL COST: $11.850</u></strong></p>
-                <p><strong><u>DEPOSIT: $1000</u></strong></p>
-                <p><a href="/programs/esthetician.html" class="link-primary">Learn more</a></p>
-                <p><strong>$11,850.00</strong></p>
+                <h2 class="text-center">ESTHETICIAN 750HRS</h2>
+                <p class="fs-3"><strong>$11,850.00</strong></p>
                 <p>
-                    <a href="/index.html#message_request" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 my-3">
-        <div class="box-inner">
-            <div class="box-image">
-                <img class="img-fluid" alt="" src="~/Content/images/programs/programs-4.jpg" />
-            </div>
-            <div class="box-text">
-                <h2 class="text-center">Eyelash Extension 320HRS</h2>
-                <p><strong><u>TOTAL COST: $12,950.00</u></strong></p>
-                <p><strong><u>DEPOSIT: $2000</u></strong></p>
-                <p><a href="/programs/eyelash-extension.html" class="link-primary">Learn more</a></p>
-                <p><strong>$12,950.00</strong></p>
-                <p>
-                    <a href="/index.html#message_request" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
+                    <a href="@aHref" class="btn btn-primary btn-theme" tabindex="-1">Get in Contact</a>
                 </p>
             </div>
         </div>

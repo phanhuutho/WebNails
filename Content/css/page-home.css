@@ -407,17 +407,18 @@ main .contact .container{
 
 .programs .box-inner {
     background: var(--color-white);
-    padding: 5px;
+    padding: 10px;
     border: 2px solid var(--color-black);
 }
 
 .programs .box-text h2 {
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 15px;
     color: var(--color-text-theme);
+    margin-bottom: 0;
 }
 
 .beauty-spa {
