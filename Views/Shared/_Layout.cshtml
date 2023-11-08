@@ -37,14 +37,7 @@
                         </div>
                         <div class="logo-brand">
                             <a class="navbar-brand" href="javascript:void(0)">
-                                @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
-                                {
-                                    <img src="~/Content/images/logo.png" class="img-fluid" alt="@ViewBag.Name" />
-                                }
-                                else
-                                {
-                                    <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid" alt="@ViewBag.Name" />
-                                }
+                                <b>MENU</b>
                             </a>
                         </div>
                     </div>
@@ -102,11 +95,11 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
-                @*<li>
+                <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
                         <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
                     </a>
-                </li>*@
+                </li>
             </ul>
             <button title="Close (Esc)" type="button" class="btn-close">&nbsp;</button>
         </div>
