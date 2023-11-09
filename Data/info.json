@@ -9,7 +9,16 @@
   "LinkBookingAppointment": "",
   "ShowCoupon": false,
   "Coupons": [],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

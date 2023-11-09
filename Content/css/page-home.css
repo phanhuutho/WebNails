@@ -488,21 +488,21 @@ main .contact .container{
     justify-content: center;
 }
 .beauty-spa .box-image .image1{
-    background-image: url(../images/home/home_service_esthetician.jpg);
+    background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 80%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
-    background-image: url(../images/home/home_service_nail.jpg);
+    background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 0%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
-    background-image: url(../images/home/home_service_waxing.jpg);
+    background-image: url(../images/home/home_service_facial.jpg);
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
     background-size: cover !important;
@@ -559,8 +559,7 @@ main .contact .container{
 }
 .services .box-inner{
     background-color: #FFFFFF;
-    padding: 30px 25px;
-    height: 270px;
+    padding: 10px 10px;
 }
 .services .box-inner p{
     font-family: "Carme";
@@ -573,7 +572,7 @@ main .contact .container{
     justify-content: center;
 }
 .services .box-inner img{
-    height: 85px;
+
 }
 .business-gift {
 

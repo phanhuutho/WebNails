@@ -252,6 +252,7 @@
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
+    <Content Include="Content\images\home\naccas_logo.jpg" />
     <Content Include="Content\images\icon-1-1.png" />
     <Content Include="Content\images\icon-2-1.png" />
     <Content Include="Content\images\icon-3-1.png" />
@@ -406,6 +407,7 @@
     <Content Include="Views\Home\_Programs_List.cshtml" />
     <Content Include="Views\Home\_FormContact.cshtml" />
     <Content Include="Views\Home\_Reviews.cshtml" />
+    <Content Include="Views\Home\_Home_Services_2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
