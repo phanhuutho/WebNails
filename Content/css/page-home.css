@@ -54,10 +54,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 80%;
+    background-position: 40% 100%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-2 .box-image .image {
@@ -68,7 +68,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 0% 30%;
+    background-position: 90% 15%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 100% 35%;
+    background-position: 100% 30%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;

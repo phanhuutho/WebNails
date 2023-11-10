@@ -202,6 +202,8 @@
     <Content Include="Content\images\banner\slider\eyelash_extensions.jpg" />
     <Content Include="Content\images\banner\slider\manicure.jpg" />
     <Content Include="Content\images\banner\slider\pedicure.jpg" />
+    <Content Include="Content\images\banner\slider\slider-1.jpg" />
+    <Content Include="Content\images\banner\slider\slider-2.jpg" />
     <Content Include="Content\images\banner\slider\waxing.jpg" />
     <Content Include="Content\images\banner\slider\your-nails-portrait.jpg" />
     <Content Include="Content\images\banner\slider\your-nails.jpg" />

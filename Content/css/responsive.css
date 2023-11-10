@@ -192,11 +192,11 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 75% 50% !important;
+        background-position: 55% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end;
-        background-position: 45% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -239,8 +239,7 @@
 
     }
     .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 75% 50% !important;
-        background-image: url(../images/banner/home/home_banner_3_portrait.jpg);
+        background-position: 60% 50% !important;
     }
     .slider-home .sliders .slider-1 .box-image .image .box-inner h1,.slider-home .sliders .slider-1 .box-image .image .box-inner h2 {
         color: var(--color-white);
@@ -347,10 +346,10 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end;
-        background-position: 35% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 65% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-banner .slider-3 .box-slider .image {
         align-items: flex-end;
@@ -398,14 +397,14 @@
     .slider-home .sliders .slider-1 .box-image .image {
         align-items: flex-start;
         justify-content: center;
-        background-position: 100% 50%;
+        background-position: 50% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 10% 50%;
+        background-position: 90% 50%;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
-        background-position: 40% 50%;
+        background-position: 35% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
         background-position: 30% 30%;
@@ -417,11 +416,11 @@
         background-position: 15% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 20% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 100% 25%;
+        background-position: 50% 25%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
