@@ -246,6 +246,7 @@
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_esthetician.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_facial.jpg" />
     <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nail.jpg" />
@@ -282,6 +283,7 @@
     <Content Include="Content\images\services\services_esthetician.jpg" />
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
+    <Content Include="Content\images\services\services_facial.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
     <Content Include="Content\images\services\services_haircare.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />
