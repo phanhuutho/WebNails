@@ -266,9 +266,12 @@
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
+    <Content Include="Content\images\services\services_facial.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_lashes.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />
     <Content Include="Content\images\services\services_little_kids.jpg" />
+    <Content Include="Content\images\services\services_makeup.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
     <Content Include="Content\images\services\services_manicure_gel_polish.jpg" />
     <Content Include="Content\images\services\services_nails_acrylic.jpg" />
