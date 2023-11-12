@@ -230,6 +230,33 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\gallery_1.jpg" />
+    <Content Include="Content\images\gallery\gallery_10.jpg" />
+    <Content Include="Content\images\gallery\gallery_11.jpg" />
+    <Content Include="Content\images\gallery\gallery_12.jpg" />
+    <Content Include="Content\images\gallery\gallery_13.jpg" />
+    <Content Include="Content\images\gallery\gallery_14.jpg" />
+    <Content Include="Content\images\gallery\gallery_15.jpg" />
+    <Content Include="Content\images\gallery\gallery_16.jpg" />
+    <Content Include="Content\images\gallery\gallery_17.jpg" />
+    <Content Include="Content\images\gallery\gallery_18.jpg" />
+    <Content Include="Content\images\gallery\gallery_19.jpg" />
+    <Content Include="Content\images\gallery\gallery_2.jpg" />
+    <Content Include="Content\images\gallery\gallery_20.jpg" />
+    <Content Include="Content\images\gallery\gallery_21.jpg" />
+    <Content Include="Content\images\gallery\gallery_22.jpg" />
+    <Content Include="Content\images\gallery\gallery_23.jpg" />
+    <Content Include="Content\images\gallery\gallery_24.jpg" />
+    <Content Include="Content\images\gallery\gallery_25.jpg" />
+    <Content Include="Content\images\gallery\gallery_26.jpg" />
+    <Content Include="Content\images\gallery\gallery_27.jpg" />
+    <Content Include="Content\images\gallery\gallery_3.jpg" />
+    <Content Include="Content\images\gallery\gallery_4.jpg" />
+    <Content Include="Content\images\gallery\gallery_5.jpg" />
+    <Content Include="Content\images\gallery\gallery_6.jpg" />
+    <Content Include="Content\images\gallery\gallery_7.jpg" />
+    <Content Include="Content\images\gallery\gallery_8.jpg" />
+    <Content Include="Content\images\gallery\gallery_9.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -415,7 +442,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

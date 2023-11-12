@@ -1,7 +1,7 @@
 ﻿.page-main .box-inner {
     padding: var(--padding-box);
     background-color: var(--color-black);
-    height: 344px;
+    height: auto;
 }
 .box-inner img {
     object-fit: cover;
