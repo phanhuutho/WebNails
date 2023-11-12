@@ -144,6 +144,11 @@ main .contact .container{
     text-shadow: 0px 0px 5px var(--color-black);
     font-weight: bold;
 }
+.slider-home .sliders .slider-1 .box-inner h2 {
+    color: #FF0000;
+    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+    font-size: 54px;
+}
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
     font-weight: bold;
