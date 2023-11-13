@@ -360,7 +360,7 @@
 
     }
     .bg .bg-contact {
-        background-position: 0% 30% !important;
+        background-position: 32.5% 30% !important;
         align-items: flex-end !important;
     }
     .bg-contact .box-inner {
@@ -446,7 +446,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 0% 50%;
+        background-position: 80% 50%;
         align-items: flex-end;
     }
     footer p {

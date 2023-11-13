@@ -133,5 +133,10 @@
     "Status": true,
     "Src": "/Content/images/gallery/gallery_27.jpg",
     "Position": 27
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/gallery_28.jpg",
+    "Position": 28
   }
 ]
