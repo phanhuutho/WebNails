@@ -1,16 +1,16 @@
 {
-  "Name": "Sugar Polish Nail Bar Cumming",
-  "HyperLinkTell": "tel:(678)3419260",
-  "TextTell": "(678)-341-9260",
-  "GooglePlus": "https://www.google.com/search?q=sugar+polish+nail+bar+30040",
-  "Address": "451 Vision Dr Suite H102, Cumming, GA 30040",
-  "LinkGoogleMapAddress": "https://goo.gl/maps/DHSNgaYQsnKc4bcd9",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13196.783464541095!2d-84.145245!3d34.2180169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5850b811f5fcd%3A0x21674fcbd8b019f3!2sSugar%20Polish%20Nail%20Bar%20Cumming!5e0!3m2!1sen!2s!4v1693847479214!5m2!1sen!2s",
+  "Name": "Sugar Polish Nail Bar Watkinsville",
+  "HyperLinkTell": "tel:(706)7051675",
+  "TextTell": "(706)-705-1675",
+  "GooglePlus": "https://www.google.com/search?q=Sugar+Polish+Nail+Bar+Watkinsville+30677",
+  "Address": "1725 Electric Avenue, Watkinsville, GA 30677",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/3Qdid54e8VtyQp1D9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13252.508580848014!2d-83.3947859!3d33.860614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f66f9df801a407%3A0xe9d8d3188067d877!2sSugar%20Polish%20Nail%20Bar%20Watkinsville%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1699895284929!5m2!1sen!2s",
   "LinkBookingAppointment": "",
-  "ShowCoupon": true,
+  "ShowCoupon": false,
   "Coupons": [
     {
-      "Status": true,
+      "Status": false,
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
