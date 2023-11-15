@@ -1,12 +1,12 @@
 {
-  "Name": "Polished Lashes & Nails",
-  "HyperLinkTell": "tel:(803)6956199",
-  "TextTell": "(803)-695-6199",
-  "GooglePlus": "https://www.google.com/search?q=+Polished+Lashes+and+Nails+29209",
-  "Address": "6070 Garners Ferry Rd Suite D, Columbia, SC 29209",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/YjZAPHsnNjwTXV6B7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.450087676832!2d-80.9677966!3d33.983221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8b0166641d543%3A0xa794fcdfe92d8975!2sPolished%20Lashes%20%26%20Nails%20(10%25%20Or%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1698687743997!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://fave.salon/r/booking?salonId=59385&redirectUrl=https://polishedlashesnails.favesalon.com",
+  "Name": "CRYSTAL SKY NAILS SPA",
+  "HyperLinkTell": "tel:(972)7692235",
+  "TextTell": "(972)-769-2235",
+  "GooglePlus": "https://www.google.com/search?q=Crystal+Nails+75075",
+  "Address": "3000 Custer Rd #120, Plano, TX 75075",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/vbc56CZkDDAcxJgX8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13378.446692430209!2d-96.7318855!3d33.0403598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1866edc9ed31%3A0x503fd72f0d0411f5!2sCRYSTAL%20SKY%20NAILS%20SPA%20(15%25%20Off%20New%20Customers)!5e0!3m2!1sen!2s!4v1700070879601!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/ba6635a9852e/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -14,32 +14,7 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-06.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -49,7 +24,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/PolishedLashesandNailsColumbia/",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"

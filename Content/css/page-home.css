@@ -350,7 +350,7 @@ main .contact .container{
     max-width: 100%;
 }
 .about-us .box-inner h1{
-    font-size: 5em; 
+    font-size: 2em; 
     font-family: "Parisienne"; 
     color: var(--color-theme);
     font-weight: bold;
