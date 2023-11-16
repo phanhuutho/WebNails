@@ -1,20 +1,32 @@
 {
-  "Name": "CRYSTAL SKY NAILS SPA",
-  "HyperLinkTell": "tel:(972)7692235",
-  "TextTell": "(972)-769-2235",
-  "GooglePlus": "https://www.google.com/search?q=Crystal+Nails+75075",
-  "Address": "3000 Custer Rd #120, Plano, TX 75075",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/vbc56CZkDDAcxJgX8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13378.446692430209!2d-96.7318855!3d33.0403598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1866edc9ed31%3A0x503fd72f0d0411f5!2sCRYSTAL%20SKY%20NAILS%20SPA%20(15%25%20Off%20New%20Customers)!5e0!3m2!1sen!2s!4v1700070879601!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/ba6635a9852e/customer/home",
+  "Name": "Hope Nails",
+  "HyperLinkTell": "tel:(248)2646021",
+  "TextTell": "(248)-264-6021",
+  "GooglePlus": "https://www.google.com/search?q=Hope+Nails+48165",
+  "Address": "56849 Grand River Ave, New Hudson, MI 48165",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/UWTC8XTcBJ8fQiuKA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11764.351295777728!2d-83.6146388!3d42.5109416!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882357f8d68c92af%3A0x69aa899a2c80804f!2sHope%20Nails!5e0!3m2!1sen!2s!4v1700151870187!5m2!1sen!2s",
+  "LinkBookingAppointment": "http://bit.ly/3kk6oVZ",
   "ShowCoupon": true,
-  "Coupons": [
+  "Coupons": [],
+  "Prices": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
     }
   ],
-  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +36,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/hopenailsnewhudson",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/hopenails.1914",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

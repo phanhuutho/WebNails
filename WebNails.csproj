@@ -260,8 +260,6 @@
     <Content Include="Content\images\price-list\prices-02.jpg" />
     <Content Include="Content\images\price-list\prices-03.jpg" />
     <Content Include="Content\images\price-list\prices-04.jpg" />
-    <Content Include="Content\images\price-list\prices-05.jpg" />
-    <Content Include="Content\images\price-list\prices-06.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />

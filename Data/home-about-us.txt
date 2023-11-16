@@ -1,22 +1,4 @@
-﻿<h1 class="font-Prata">
-    CRYSTAL SKY NAILS SPA
-</h1>
-<p>
-    THE DAY SPA FOR EVERYONE! <br/>
-    BEST CUSTOM NAIL  DESIGN IN DALLAS! <br/>
-    BEST FULL SERVICE IN DALLAS!
-</p>
-<p>
-    Custom Nails – Nails – Pedicure – Manicure - Kids Spa –  Massage – Facial & Skin Management – Waxing & Tinting –  Eyelashes Extensions – Microblading – Brow Lamination – Lashes Lift
-</p>
-<h1 class="font-Prata">
-    Welcome to Crystal Sky Nails Spa!
-</h1>
-<p>
-    You might have heard about us. We are DALLAS ‘s best custom nail design and best full service day spa. 
-</p>
-<p>
-    We make it our core commitment to provide a comforting yet professional ambiance, while delivering the BEST quality artistry and world-class customer service. 
-    We provide a luxurious and modern salon etiquette. Our salon is proud to have passionate and diverse expert technicians that are always ready to service you. 
-    Thank you for choosing us for your beauty care!
+﻿<p>
+    Welcome to Hope Nails in New Hudson, MI 48165, we are more than just a conventional nail salon, we are the place where you can come and escape from your everyday stress and busy lifestyle, 
+    clients could enjoy the luxurious and comfortable atmosphere at affordable prices!
 </p>
