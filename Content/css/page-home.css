@@ -389,7 +389,7 @@ main .contact .container{
     background-size: cover !important;
 }
 .beauty-spa {
-    background-color: var(--bg-site);
+    background-color: var(--color-white);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -425,7 +425,7 @@ main .contact .container{
 .beauty-spa .box-image{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 450px;
     margin: 0 auto;
     max-width: 350px;
     transition: opacity 1s;
@@ -440,16 +440,16 @@ main .contact .container{
     content: " ";
     position: absolute;
     height: 100px;
-    background: var(--color-theme);
+    background: var(--bg-site);
     width: 100%;
-    top: 125px;
+    top: 180px;
     z-index: 0;
     opacity: 0.7;
     left: 0;
 }
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
-    max-height: 346px;
+    max-height: 446px;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -491,7 +491,7 @@ main .contact .container{
 .beauty-spa .box-image h2{
     font-size: 1.75em;
     color: var(--color-white);
-    text-shadow: 0px 0px 5px var(--color-black);
+    text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
 }
 .services{
     width: 100%;
