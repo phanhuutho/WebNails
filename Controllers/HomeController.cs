@@ -159,10 +159,10 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
-					   <p>Receiver email: {strStock}</p>
-					   <p>Buyer email: {strEmail}</p>
-					   <p>Comment: {strMessage}</p>
-                       <p>Code: <strong>{strCode}</strong></p>";
+					    <p>Receiver email: {strStock}</p>
+					    <p>Buyer email: {strEmail}</p>
+					    <p>Comment: {strMessage}</p>
+                        <p>Code: <strong>{strCode}</strong></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -187,11 +187,11 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
-					   <p>You have a gift from  <strong>{strEmailBuyer}</strong>.</p>
-                       <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
-                       <p>Amount: <strong>${strAmount} USD</strong>.</p>
-                       <p>Code: <strong>{strCode}</strong></p><br/>
-					   <p>Thank you!</p>";
+					    <p>You have a gift from  <strong>{strEmailBuyer}</strong>.</p>
+                        <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
+                        <p>Amount: <strong>${strAmount} USD</strong>.</p>
+                        <p>Code: <strong>{strCode}</strong></p><br/>
+					    <p>Thank you!</p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -215,7 +215,7 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
-                        <p>Receiver email: {strStock}</p>
+					    <p>Receiver email: {strStock}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
                         <p>Code: <strong>{strCode}</strong></p>";
