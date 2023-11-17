@@ -170,8 +170,6 @@
 
     .slider-banner .slider-1 .box-slider .box-inner h1 {
         font-size: 30px;
-        color: var(--color-black);
-        text-shadow: 0px 0px 5px var(--color-white);
     }
 
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
@@ -345,19 +343,20 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end;
-        background-position: 35% 50% !important;
+        background-position: 55% 50% !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 85% 50% !important;
+        background-position: 35% 50% !important;
     }
     .slider-banner .slider-3 .box-slider .image {
+        background-image: url(../images/banner/slider/e-gift-portrait.jpg);
         align-items: flex-end;
     }
     .slider-banner .slider-4 .box-slider .image {
 
     }
     .bg .bg-contact {
-        background-position: 30% 30% !important;
+        background-position: 60% 30% !important;
         align-items: flex-end !important;
     }
     .bg-contact .box-inner {
@@ -416,11 +415,11 @@
         background-position: 100% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 0% 50%;
-        align-items: flex-end;
+        background-position: 20% 50%;
+        align-items: center;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 70% 25%;
+        background-position: 25% 25%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
@@ -445,7 +444,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 0% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     footer p {
