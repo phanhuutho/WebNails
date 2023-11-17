@@ -2,7 +2,7 @@
     ViewBag.Title = "Process";
     var EmailPaypal = string.Format("{0}", ViewBag.EmailPaypal);
     var Amount = string.Format("{0}", ViewBag.Amount);
-    var Email = string.Format("{0}", ViewBag.Stock);
+    var Email = string.Format("{0}", ViewBag.Email);
     var UrlShopping = Url.Action("Payment", "Home", null, Request.Url.Scheme);
     var UrlReturn = Url.Action("PaymentResponse", "Home", null, Request.Url.Scheme);
 }
