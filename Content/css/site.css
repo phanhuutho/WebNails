@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #e76b9f;
-    --color-menu-legend: #e76b9f;
-    --color-black: #000000;
+    --color-theme: #cdaa6a;
+    --color-menu-legend: #cdaa6a;
+    --color-black: #253836;
     --color-white: #FFFFFF;
-    --color-text-theme: #e76b9f;
+    --color-text-theme: #cdaa6a;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -14,6 +14,8 @@
     --color-green-pastle: #c6dbc6;
     --color-orange-pastle: #ffcd98;
     --color-red-pastle: #f1caca;
+    --color-blue-green: #98ded9;
+    --color-gold: #cdaa6a;
 }
 html {
     background-repeat: repeat;
@@ -27,7 +29,7 @@ main{
 
 }
 header {
-    background: var(--color-pink-pastle);
+    background: var(--color-gold);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -48,7 +50,7 @@ a:active,a:hover {
     padding: var(--padding-box);
     background: var(--color-white);
     border-radius: 50%;
-    border: var(--padding-box) solid var(--color-theme);
+    border: var(--padding-box) solid var(--color-gold);
 }
 
 /*font*/
