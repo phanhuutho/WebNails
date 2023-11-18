@@ -45,6 +45,9 @@ a:active,a:hover {
 .logo, .navbar-brand img {
     max-width: 100px;
     margin: 10px 0px;
+    border-radius: 50%;
+    background: var(--color-white);
+    padding: var(--padding-box);
 }
 .logo img{
     padding: var(--padding-box);
