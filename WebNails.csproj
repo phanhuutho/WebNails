@@ -297,6 +297,17 @@
     <Content Include="Data\BodyRegisterCoupon.html" />
     <Content Include="Data\business-hours.txt" />
     <Content Include="Data\home-about-us.txt" />
+    <Content Include="Data\services\brow-lamination.html" />
+    <Content Include="Data\services\custom-nails.html" />
+    <Content Include="Data\services\eyelash-extensions.html" />
+    <Content Include="Data\services\facial-skin-management.html" />
+    <Content Include="Data\services\kids-menu.html" />
+    <Content Include="Data\services\lash-lift.html" />
+    <Content Include="Data\services\massage.html" />
+    <Content Include="Data\services\microblading.html" />
+    <Content Include="Data\services\nail-enhancements.html" />
+    <Content Include="Data\services\pedicure-manicure.html" />
+    <Content Include="Data\services\waxing-tinting.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
