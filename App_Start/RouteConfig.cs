@@ -60,6 +60,15 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "Services Detail", "services/{name}.html",
+                new
+                {
+                    controller = "Services",
+                    action = "Index",
+                    name = UrlParameter.Optional
+                });
+
+            routes.MapRoute(
                 "Gifts", "e-gift.html",
                 new
                 {
