@@ -265,6 +265,17 @@
     <Content Include="Content\images\price-list\prices-04.jpg" />
     <Content Include="Content\images\price-list\prices-05.jpg" />
     <Content Include="Content\images\price-list\prices-06.jpg" />
+    <Content Include="Content\images\services-detail\brow-lamination.jpg" />
+    <Content Include="Content\images\services-detail\custom-nails.jpg" />
+    <Content Include="Content\images\services-detail\eyelash-extensions.jpg" />
+    <Content Include="Content\images\services-detail\facial-skin-management.jpg" />
+    <Content Include="Content\images\services-detail\kids-menu.jpg" />
+    <Content Include="Content\images\services-detail\lash-lift.jpg" />
+    <Content Include="Content\images\services-detail\massage.jpg" />
+    <Content Include="Content\images\services-detail\microblading.jpg" />
+    <Content Include="Content\images\services-detail\nail-enhancements.jpg" />
+    <Content Include="Content\images\services-detail\pedicure-manicure.jpg" />
+    <Content Include="Content\images\services-detail\waxing-tinting.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
