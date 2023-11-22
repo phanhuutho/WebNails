@@ -18,6 +18,11 @@ main {
 .box-text {
     padding: 10px;
     background-color: var(--color-yellow-pastle);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box-text h2{
     font-family: Prata;
@@ -37,4 +42,5 @@ main {
 .page-main .box-inner {
     padding: var(--padding-box);
     background-color: var(--color-theme);
+    cursor: pointer;
 }

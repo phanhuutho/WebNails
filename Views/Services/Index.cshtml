@@ -8,9 +8,18 @@
 }
 <main>
     @{Html.RenderPartial("~/Views/Home/_SliderPageSub.cshtml");}
-    <div class="page-main container-lg py-5">
-        @Html.Raw(Model)
-    </div>
+    <section class="bg">
+        <div class="bg-services">
+            <div class="overlay"></div>
+            <div class="page-main container-lg py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 mt-3">
+                        @Html.Raw(Model)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 @section scripts{
@@ -40,6 +49,8 @@
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
             });
+
+            $("title", "head").text($("h2.title").text());
         });
     </script>
 }
