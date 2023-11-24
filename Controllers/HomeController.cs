@@ -157,9 +157,9 @@ namespace WebNails.Controllers
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
                 using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(EmailPaypal)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.Unicode;
-                    mail.SubjectEncoding = System.Text.Encoding.Unicode;
-                    mail.BodyEncoding = System.Text.Encoding.Unicode;
+                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
+                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
+                    mail.BodyEncoding = System.Text.Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purcharse - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
@@ -190,9 +190,9 @@ namespace WebNails.Controllers
 
             using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.Unicode), new MailAddress(EmailContact)))
             {
-                mail.HeadersEncoding = System.Text.Encoding.Unicode;
-                mail.SubjectEncoding = System.Text.Encoding.Unicode;
-                mail.BodyEncoding = System.Text.Encoding.Unicode;
+                mail.HeadersEncoding = System.Text.Encoding.UTF8;
+                mail.SubjectEncoding = System.Text.Encoding.UTF8;
+                mail.BodyEncoding = System.Text.Encoding.UTF8;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                 mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
@@ -207,9 +207,9 @@ namespace WebNails.Controllers
 
             using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.Unicode), new MailAddress(item.Email)))
             {
-                mail.HeadersEncoding = System.Text.Encoding.Unicode;
-                mail.SubjectEncoding = System.Text.Encoding.Unicode;
-                mail.BodyEncoding = System.Text.Encoding.Unicode;
+                mail.HeadersEncoding = System.Text.Encoding.UTF8;
+                mail.SubjectEncoding = System.Text.Encoding.UTF8;
+                mail.BodyEncoding = System.Text.Encoding.UTF8;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                 mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
