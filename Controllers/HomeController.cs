@@ -155,7 +155,7 @@ namespace WebNails.Controllers
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(EmailPaypal)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(EmailPaypal)))
                 {
                     mail.HeadersEncoding = System.Text.Encoding.UTF8;
                     mail.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -188,7 +188,7 @@ namespace WebNails.Controllers
             strBody = strBody.Replace("{Phone}", item.Phone);
             strBody = strBody.Replace("{Birthday}", item.Birthday);
 
-            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.Unicode), new MailAddress(EmailContact)))
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.UTF8), new MailAddress(EmailContact)))
             {
                 mail.HeadersEncoding = System.Text.Encoding.UTF8;
                 mail.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -205,7 +205,7 @@ namespace WebNails.Controllers
                 mySmtpClient.Send(mail);
             }
 
-            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.Unicode), new MailAddress(item.Email)))
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.UTF8), new MailAddress(item.Email)))
             {
                 mail.HeadersEncoding = System.Text.Encoding.UTF8;
                 mail.SubjectEncoding = System.Text.Encoding.UTF8;
