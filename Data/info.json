@@ -8,7 +8,24 @@
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14085.297487130543!2d-82.581381!3d28.0451188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea6765c6f48f%3A0x86fecd31c973a87b!2sFocus%20Nails!5e0!3m2!1sen!2s!4v1686458883994!5m2!1sen!2s",
   "ShowCoupon": false,
   "Coupons": [],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": false,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": false,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": false,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": false,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
