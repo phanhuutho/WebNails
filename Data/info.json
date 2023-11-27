@@ -10,19 +10,19 @@
   "Coupons": [],
   "Prices": [
     {
-      "Status": false,
+      "Status": true,
       "Src": "/Content/images/price-list/prices-01.jpg"
     },
     {
-      "Status": false,
+      "Status": true,
       "Src": "/Content/images/price-list/prices-02.jpg"
     },
     {
-      "Status": false,
+      "Status": true,
       "Src": "/Content/images/price-list/prices-03.jpg"
     },
     {
-      "Status": false,
+      "Status": true,
       "Src": "/Content/images/price-list/prices-04.jpg"
     }
   ],
