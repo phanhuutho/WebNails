@@ -106,6 +106,14 @@ namespace WebNails
                     controller = "Home",
                     action = "Finish"
                 });
+
+            routes.MapRoute(
+                "Test", "Home/Test",
+                new
+                {
+                    controller = "Home",
+                    action = "Test"
+                });
         }
     }
 }
