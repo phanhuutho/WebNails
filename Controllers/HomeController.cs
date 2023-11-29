@@ -43,25 +43,28 @@ namespace WebNails.Controllers
             return View();
         }
 
-        public ActionResult Payment()
+        public ActionResult Payment(string img = "")
         {
+            ViewBag.Img = img;
             return View();
         }
 
         [HttpPost]
-        public ActionResult Process(string amount, string stock, string email, string message)
+        public ActionResult Process(string amount, string stock, string email, string message, string img = "")
         {
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = amount ?? "1";
             ViewBag.Stock = stock ?? "";
             ViewBag.Email = email ?? "";
+            ViewBag.Img = img;
 
             var cookieDataBefore = new HttpCookie("DataBefore");
             cookieDataBefore["Amount"] = amount;
             cookieDataBefore["Email"] = email;
             cookieDataBefore["Stock"] = stock;
             cookieDataBefore["Message"] = message;
+            cookieDataBefore["Img"] = img;
             cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
             Response.Cookies.Add(cookieDataBefore);
 
@@ -95,6 +98,7 @@ namespace WebNails.Controllers
             var strEmail = string.Empty;
             var strStock = string.Empty;
             var strMessage = string.Empty;
+            var strImg = string.Empty;
 
             HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
             if (cookieDataBefore != null)
@@ -103,6 +107,7 @@ namespace WebNails.Controllers
                 strEmail = cookieDataBefore["Email"];
                 strStock = cookieDataBefore["Stock"];
                 strMessage = cookieDataBefore["Message"];
+                strImg = cookieDataBefore["Img"];
             }
 
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
@@ -111,9 +116,9 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                SendMailToOwner(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToReceiver(strStock, strEmail, strAmount, string.Format("{0}", TempData["PayerID"]));
+                SendMailToOwner(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]), strImg);
+                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]), strImg);
+                SendMailToReceiver(strStock, strEmail, strAmount, string.Format("{0}", TempData["PayerID"]), strImg);
             }
             else
             {
@@ -126,23 +131,24 @@ namespace WebNails.Controllers
             return View();
         }
 
-        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
+        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(EmailPaypal)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(EmailPaypal)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.Unicode;
-                    mail.SubjectEncoding = System.Text.Encoding.Unicode;
-                    mail.BodyEncoding = System.Text.Encoding.Unicode;
+                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
+                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
+                    mail.BodyEncoding = System.Text.Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
 					   <p>Receiver email: {strStock}</p>
 					   <p>Buyer email: {strEmail}</p>
 					   <p>Comment: {strMessage}</p>
-                       <p>Code: <strong>{strCode}</strong></p>";
+                       <p>Code: <strong>{strCode}</strong></p>
+                       <p><img src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' width='360px' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -154,16 +160,16 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode)
+        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode, string img = "")
         {
             if(!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(strEmailReceiver)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmailReceiver)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.Unicode;
-                    mail.SubjectEncoding = System.Text.Encoding.Unicode;
-                    mail.BodyEncoding = System.Text.Encoding.Unicode;
+                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
+                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
+                    mail.BodyEncoding = System.Text.Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
@@ -171,7 +177,8 @@ namespace WebNails.Controllers
                        <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
                        <p>Amount: <strong>${strAmount} USD</strong>.</p>
                        <p>Code: <strong>{strCode}</strong></p><br/>
-					   <p>Thank you!</p>";
+					   <p>Thank you!</p>
+                       <p><img src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -183,22 +190,23 @@ namespace WebNails.Controllers
             }    
         }
 
-        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.Unicode), new MailAddress(strEmail)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmail)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.Unicode;
-                    mail.SubjectEncoding = System.Text.Encoding.Unicode;
-                    mail.BodyEncoding = System.Text.Encoding.Unicode;
+                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
+                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
+                    mail.BodyEncoding = System.Text.Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
 					   <p>Receiver email: {strStock}</p>
 					   <p>Buyer email: {strEmail}</p>
 					   <p>Comment: {strMessage}</p>
-                       <p>Code: <strong>{strCode}</strong></p>";
+                       <p>Code: <strong>{strCode}</strong></p>
+                       <p><img src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -208,6 +216,21 @@ namespace WebNails.Controllers
                     mySmtpClient.Send(mail);
                 }
             }
+        }
+
+        private static Random random = new Random();
+
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+        public ActionResult Test()
+        {
+            SendMailToBuyer("20", "phantho2012@gmail.com", "phantho1989@gmail.com", "test", "M82EPA48VWYYU", "/Content/images/e-gift/gift_6.jpg");
+            return Content("OK");
         }
     }
 }
