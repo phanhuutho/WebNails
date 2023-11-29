@@ -275,5 +275,14 @@ namespace WebNails.Controllers
                 mySmtpClient.Send(mail);
             }
         }
+
+        private static Random random = new Random();
+        private string GenerateUniqueCode()
+        {
+            var result = string.Format("{0:ddd dd MMM yyyy HH mm ss}", DateTime.Now);
+            result = String.Join("", result.Split(new char[] { ' ' }));
+            result = new string(result.OrderBy(letter => random.Next()).ToArray()).ToUpper();
+            return result;
+        }
     }
 }
