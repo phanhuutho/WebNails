@@ -188,12 +188,11 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 65% 50% !important;
+        background-position: 55% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end;
-        background-image: url(../images/banner/home/home_banner_2_portrait.jpg);
-        background-position: 50% 55% !important;
+        background-position: 32.5% 55% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -217,7 +216,7 @@
         margin-bottom: 0px;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 30% 50% !important;
+        background-position: 82.5% 50% !important;
         background-size: cover !important;
         align-items: flex-end !important;
     }
@@ -237,10 +236,10 @@
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end !important;
-        background-position: 52.5% 50% !important;
+        background-position: 65% 50% !important;
     }
     .slider-home .sliders .slider-1 .box-image .image .box-inner h1,.slider-home .sliders .slider-1 .box-image .image .box-inner h2 {
-        font-size: 42px;
+        font-size: 38px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner h1 {
         font-size: 32px;
@@ -249,7 +248,7 @@
         font-size: 16px;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 45% 75% !important;
+        background-position: 80% 75% !important;
     }
     .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
         font-size: 24px;
@@ -387,30 +386,30 @@
         font-size: 0.8em;
     }
     .slider-1 .box-image .box-inner {
-        max-width: 300px;
+
     }
     .slider-home .sliders .slider-1 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 80% 50%;
+        background-position: 40% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 60% 50%;
+        background-position: 5% 50%;
         justify-content: center;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
-        background-position: 60% 50%;
+        background-position: 45% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 30% 30%;
+        background-position: 95% 30%;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: center;
         justify-content: center;
-        background-position: 35% 50%;
+        background-position: 80% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
         background-position: 50% 50%;

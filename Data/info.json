@@ -1,41 +1,20 @@
 {
-  "Name": "HyVy Nail Spa",
-  "HyperLinkTell": "tel:(850)2850707",
-  "TextTell": "(850)-285-0707",
-  "GooglePlus": "https://www.google.com/search?q=Hyvy+Nails+32503",
-  "Address": "4761 Bayou Blvd #3, Pensacola, FL 32503",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/7ZwhD5xDTwPjN9N76",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13755.221564497035!2d-87.2094433!3d30.4699498!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8890c13468fd15cb%3A0xc5036a6708909b3a!2sHyVy%20Nail%20Spa%20(Gift%20Card%20Available)!5e0!3m2!1sen!2s!4v1700840496861!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://book.heygoldie.com/392ab2942c0704",
+  "Name": "NEO Nails & Spa",
+  "HyperLinkTell": "tel:(501)4044949",
+  "TextTell": "(501)-404-4949",
+  "GooglePlus": "https://www.google.com/search?q=NEO+Nails+Spa+71913",
+  "Address": "4832 Central Ave A2, Hot Springs, AR 71913",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/2JHpaurp2x6TGzTE8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13161.393727155484!2d-93.0899658!3d34.4433021!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8632d5c36ca45f99%3A0x6349e2d06f7601a!2sNEO%20Nails%20%26%20Spa%20(ONLY%20%2B%2410%20Gel%20Polish%20for%20Mani%20%26%20Pedi)!5e0!3m2!1sen!2s!4v1701445419173!5m2!1sen!2s",
+  "LinkBookingAppointment": "http://bit.ly/3BOjE9i",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -45,14 +24,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/hyvynailspa/",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "https://www.instagram.com/hyvy_nailspa",
+    "Url": "",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
