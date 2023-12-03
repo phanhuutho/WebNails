@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #faf5f0;
+    --bg-site: #faebeb;
     --color-theme: #000000;
     --color-menu-legend: #000000;
     --color-black: #000000;
@@ -45,7 +45,10 @@ a:active,a:hover {
     margin: 10px 0px;
 }
 .logo img{
-
+    background: var(--color-white);
+    border-radius: 50%;
+    padding: 0px;
+    border: var(--padding-box) solid var(--color-black);
 }
 
 /*font*/

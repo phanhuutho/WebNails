@@ -10,7 +10,10 @@ footer {
     max-width: 120px;
 }
 .logo-footer img {
-
+    background: var(--color-white);
+    border-radius: 50%;
+    padding: 0px;
+    border: var(--padding-box) solid var(--color-black);
 }
 footer .legend {
     color: var(--color-menu-legend);
