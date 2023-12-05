@@ -57,8 +57,9 @@ namespace WebNails.Controllers
             return View("register_coupon_success");
         }
 
-        public ActionResult Payment()
+        public ActionResult Payment(string img = "")
         {
+            ViewBag.Img = img;
             return View();
         }
 
@@ -69,19 +70,21 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult Process(string amount, string stock, string email, string message)
+        public ActionResult Process(string amount, string stock, string email, string message, string img = "")
         {
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = amount ?? "1";
             ViewBag.Stock = stock ?? "";
             ViewBag.Email = email ?? "";
+            ViewBag.Img = img;
 
             var cookieDataBefore = new HttpCookie("DataBefore");
             cookieDataBefore["Amount"] = amount;
             cookieDataBefore["Email"] = email;
             cookieDataBefore["Stock"] = stock;
             cookieDataBefore["Message"] = message;
+            cookieDataBefore["Img"] = img;
             cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
             Response.Cookies.Add(cookieDataBefore);
 
@@ -116,6 +119,7 @@ namespace WebNails.Controllers
             var strEmail = string.Empty;
             var strStock = string.Empty;
             var strMessage = string.Empty;
+            var strImg = string.Empty;
 
             HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
             if (cookieDataBefore != null)
@@ -124,6 +128,7 @@ namespace WebNails.Controllers
                 strEmail = cookieDataBefore["Email"];
                 strStock = cookieDataBefore["Stock"];
                 strMessage = cookieDataBefore["Message"];
+                strImg = cookieDataBefore["Img"];
             }
 
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
@@ -131,9 +136,11 @@ namespace WebNails.Controllers
                 SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
                 responseCode = "0";
 
-                SendMailToOwner(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToReceiver(strStock, strEmail, strAmount, string.Format("{0}", TempData["PayerID"]));
+                var strCode = GenerateUniqueCode();
+
+                SendMailToOwner(strAmount, strStock, strEmail, strMessage, strCode, strImg);
+                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, strCode, strImg);
+                SendMailToReceiver(strStock, strEmail, strAmount, strCode, strImg);
             }
             else
             {
@@ -146,7 +153,7 @@ namespace WebNails.Controllers
             return View();
         }
 
-        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
+        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -162,7 +169,8 @@ namespace WebNails.Controllers
 					    <p>Receiver email: {strStock}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
-                        <p>Code: <strong>{strCode}</strong></p>";
+                        <p>Code: <strong>{strCode}</strong></p> 
+                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' width='360px' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -174,7 +182,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode)
+        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode, string img = "")
         {
             if (!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
@@ -191,7 +199,8 @@ namespace WebNails.Controllers
                         <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
                         <p>Amount: <strong>${strAmount} USD</strong>.</p>
                         <p>Code: <strong>{strCode}</strong></p><br/>
-					    <p>Thank you!</p>";
+					    <p>Thank you!</p> 
+                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -203,7 +212,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -218,7 +227,8 @@ namespace WebNails.Controllers
 					    <p>Receiver email: {strStock}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
-                        <p>Code: <strong>{strCode}</strong></p>";
+                        <p>Code: <strong>{strCode}</strong></p> 
+                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -274,6 +284,23 @@ namespace WebNails.Controllers
                 mySmtpClient.EnableSsl = bool.Parse(ConfigurationManager.AppSettings["EnableSslEmailSystem"]);
                 mySmtpClient.Send(mail);
             }
+        }
+
+        private static Random random = new Random();
+        private string GenerateUniqueCode()
+        {
+            var strYear = string.Format("{0:yyyy}", DateTime.Now);
+            var strDay = string.Format("{0:ddd dd MMM}", DateTime.Now);
+            strDay = String.Join("", strDay.Split(new char[] { ' ' }));
+            string strReverse = string.Empty;
+            for (int i = strDay.Length - 1; i >= 0; i--)
+            {
+                strReverse += strDay[i];
+            }
+            var strTimes = string.Format("{0:HHmmss}", DateTime.Now);
+
+            var result = string.Format("{0}{1}{2}", strYear, strReverse, strTimes);
+            return result;
         }
     }
 }
