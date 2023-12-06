@@ -1,20 +1,49 @@
 {
-  "Name": "CRYSTAL SKY NAILS SPA",
-  "HyperLinkTell": "tel:(972)7692235",
-  "TextTell": "(972)-769-2235",
-  "GooglePlus": "https://www.google.com/search?q=Crystal+Nails+75075",
-  "Address": "3000 Custer Rd #120, Plano, TX 75075",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/vbc56CZkDDAcxJgX8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13378.446692430209!2d-96.7318855!3d33.0403598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1866edc9ed31%3A0x503fd72f0d0411f5!2sCRYSTAL%20SKY%20NAILS%20SPA%20(15%25%20Off%20New%20Customers)!5e0!3m2!1sen!2s!4v1700070879601!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/ba6635a9852e/customer/home",
+  "Name": "Cindy's Nails",
+  "HyperLinkTell": "tel:(770)8601843",
+  "TextTell": "(770)-860-1843",
+  "GooglePlus": "https://www.google.com/search?q=Cindy+Nails+30013",
+  "Address": "1910 GA-20, Conyers, GA 30013",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/RWvT4qQjBbqJGaHaA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13287.063773471387!2d-84.0127067!3d33.6373103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f44b5913fe514f%3A0xda0ac14b82494fbb!2sCindys%20Nails!5e0!3m2!1sen!2s!4v1701883020746!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

@@ -1,17 +1,17 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #cdaa6a;
-    --color-menu-legend: #cdaa6a;
-    --color-black: #253836;
+    --color-theme: #339900;
+    --color-menu-legend: #7efb59;
+    --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #cdaa6a;
+    --color-text-theme: #339900;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
     --color-pink-pastle: #f5e6f5;
     --color-blue-pastle: #d4effa;
-    --color-green-pastle: #c6dbc6;
+    --color-green-pastle: #e1ffd7;
     --color-orange-pastle: #ffcd98;
     --color-red-pastle: #f1caca;
     --color-blue-green: #98ded9;
@@ -29,7 +29,7 @@ main{
 
 }
 header {
-    background: var(--color-gold);
+    background: var(--color-black);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -53,7 +53,7 @@ a:active,a:hover {
     padding: var(--padding-box);
     background: var(--color-white);
     border-radius: 50%;
-    border: var(--padding-box) solid var(--color-gold);
+    border: var(--padding-box) solid var(--color-black);
 }
 
 /*font*/
