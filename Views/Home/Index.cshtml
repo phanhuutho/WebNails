@@ -59,6 +59,7 @@
 
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
+        var sliderAboutUs = $('.slider-about-us');
 
         $(document).ready(function () {
 
@@ -79,6 +80,27 @@
 
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
+            });
+
+            sliderAboutUs.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 2,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
             });
 
             @{ 

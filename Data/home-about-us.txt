@@ -1,5 +1,9 @@
-﻿<p>
-    Welcome to Cindy's Nails in 1910 GA-20, Conyers, GA 3001. 
-    We are more than just a conventional nail salon. 
-    We are the place where you can come and escape from your everyday stress and busy lifestyle, clients could enjoy the luxurious and comfortable atmosphere at affordable prices!
-</p>
+﻿<div class="row">
+    <div class="col-md-12">
+        <p>
+            Welcome to Cindy's Nails in 1910 GA-20, Conyers, GA 3001. 
+            We are more than just a conventional nail salon. 
+            We are the place where you can come and escape from your everyday stress and busy lifestyle, clients could enjoy the luxurious and comfortable atmosphere at affordable prices!
+        </p>
+    </div>
+</div>
