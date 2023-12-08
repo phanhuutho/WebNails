@@ -17,7 +17,7 @@ main {
 }
 .box-text {
     padding: 10px;
-    background-color: var(--color-yellow-pastle);
+    background-color: var(--color-theme);
     height: 120px;
     width: 100%;
     display: flex;
@@ -31,7 +31,7 @@ main {
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 .divider {
     background-color: var(--color-black);
