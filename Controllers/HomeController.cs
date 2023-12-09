@@ -165,7 +165,7 @@ namespace WebNails.Controllers
                     mail.BodyEncoding = System.Text.Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
-                    mail.Body = $@"<p>Amount pay: {strAmount}</p>
+                    mail.Body = $@"<p>Amount pay: <strong>${strAmount} USD</strong></p>
 					    <p>Receiver email: {strStock}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
@@ -223,7 +223,7 @@ namespace WebNails.Controllers
                     mail.BodyEncoding = System.Text.Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
-                    mail.Body = $@"<p>Amount pay: {strAmount}</p>
+                    mail.Body = $@"<p>Amount pay: <strong>${strAmount} USD</strong></p>
 					    <p>Receiver email: {strStock}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
