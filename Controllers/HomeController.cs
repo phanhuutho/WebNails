@@ -299,7 +299,7 @@ namespace WebNails.Controllers
             }
             var strTimes = string.Format("{0:HHmmss}", DateTime.Now);
 
-            var result = string.Format("{0}{1}{2}", strYear, strReverse, strTimes);
+            var result = string.Format("{0}{1}{2}", strYear, strReverse, strTimes).ToUpper();
             return result;
         }
     }
