@@ -2,12 +2,15 @@
 footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
-    color: var(--color-white);
-    background: var(--color-black);
+    color: var(--color-black);
+    background: var(--color-blue-pastle);
     font-size: 15px;
 }
 .logo-footer {
     max-width: 120px;
+    padding: var(--padding-box);
+    border-radius: 50%;
+    background: var(--color-white);
 }
 .logo-footer img {
     padding: var(--padding-box);
@@ -19,7 +22,7 @@ footer .legend {
     color: var(--color-menu-legend);
 }
 footer a {
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
 }
 footer .circle{
