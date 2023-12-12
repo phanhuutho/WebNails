@@ -67,7 +67,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 30%;
+    background-position: 60% 60%;
     background-size: cover !important;
     display: flex;
     align-items: center;

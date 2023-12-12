@@ -194,8 +194,9 @@
         align-items: flex-end !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        align-items: center !important;
-        background-position: 55% 50% !important;
+        align-items: flex-end !important;
+        background-image: url(../images/banner/home/home_banner_2_portrait.jpg) !important;
+        background-position: 65% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -396,9 +397,9 @@
         background-position: 10% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 55% 50%;
+        background-position: 20% 50%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
