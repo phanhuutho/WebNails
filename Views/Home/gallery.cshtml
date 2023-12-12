@@ -1,6 +1,8 @@
 ﻿@model IEnumerable<WebNails.Models.GalleryModel>
 @{
     ViewBag.Title = "Gallery";
+    var TabIndex = (int)(ViewBag.TabIndex ?? 1);
+    var ShowMore = (bool)(ViewBag.ShowMore ?? false);
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -13,7 +15,24 @@
 <main>
     @{Html.RenderPartial("_SliderPageSub");}
     <div class="page-main container-lg">
-        <div class="row py-5 pb-4 gallery-list">
+        <div class="row justify-content-center py-5">
+            <div class="col-md-3">
+                <div class="border border-dark text-center py-3 @(TabIndex == 1 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(1)">
+                    <span>Eyelash Extension</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border border-dark text-center py-3 @(TabIndex == 2 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(2)">
+                    <span>Nail Design</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border border-dark text-center py-3 @(TabIndex == 3 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(3)">
+                    <span>Nail Salon</span>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5 gallery-list">
             @{
                 foreach (var item in Model)
                 {
@@ -27,6 +46,14 @@
                 }
             }
         </div>
+        @if (ShowMore)
+        {
+            <div class="row justify-content-center pb-5 gallery-loadmore">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary btn-theme" onclick="LoadMore()">LOAD MORE</button>
+                </div>
+            </div>
+        }
     </div>
 </main>
 
@@ -38,7 +65,8 @@
         ActiveMenu("menu-gallery");
 
         var sliderInit = $('.sliders');
-        var indexPage = 1;
+        var indexPage = 2;
+        var tabIndex = @(TabIndex);
         $(document).ready(function () {
             sliderInit.slick({
                 dots: false,
@@ -59,5 +87,37 @@
                 sliderInit.slick('slickPlay');
             });
         });
+        function ChangeTabIndex(tab) {
+            location.href = "/gallery.html?TabIndex=" + tab;
+        }
+        function LoadMore() {
+            $.ajax({
+                type: 'POST',
+                url: "/gallery-loadmore",
+                data: { TabIndex: tabIndex, Page: indexPage },
+                success: function (data) {
+                    var galleries = data.Galleries;
+                    for (var i = 0; i < galleries.length; i++) {
+                        var item = galleries[i];
+                        var strHTML = '<div class="col-xl-3 col-lg-4 col-md-6 pt-4">';
+                        strHTML += '        <div class="box-inner">';
+                        strHTML += '            <a href="' + item.Src + '" data-lightbox="gallery-item" data-title="">';
+                        strHTML += '                <img src="' + item.Src + '" loading="lazy" class="img-fluid" />';
+                        strHTML += '            </a>';
+                        strHTML += '        </div>';
+                        strHTML += '    </div>';
+                        $(".gallery-list").append(strHTML);
+                    }
+                    indexPage = indexPage + 1;
+                    var ShowMore = data.ShowMore;
+                    if (ShowMore) {
+                        $(".gallery-loadmore").show();
+                    }
+                    else {
+                        $(".gallery-loadmore").hide();
+                    }
+                }
+            });
+        }
     </script>
 }

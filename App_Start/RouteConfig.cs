@@ -93,6 +93,14 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "GalleryLoadMore", "gallery-loadmore",
+                new
+                {
+                    controller = "Home",
+                    action = "GalleryLoadMore"
+                });
+
+            routes.MapRoute(
                 "Payment", "payment.html",
                 new
                 {

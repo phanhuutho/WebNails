@@ -145,3 +145,7 @@ a:active,a:hover {
 .error {
     color:red;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
