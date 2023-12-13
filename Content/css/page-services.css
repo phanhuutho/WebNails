@@ -44,3 +44,13 @@ main {
     background-color: var(--color-black);
     cursor: pointer;
 }
+
+.modal-body-content ul {
+    columns: 2 !important;
+    -webkit-columns: 2 !important;
+    -moz-columns: 2 !important;
+    padding-left: 15px;
+}
+.modal-body-content ul li {
+    font-size: 13px;
+}

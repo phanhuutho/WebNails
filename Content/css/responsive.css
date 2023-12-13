@@ -206,7 +206,7 @@
         background-image: url(../images/banner/home/home_banner_3_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        align-items: self-end;
+        align-items: self-end !important;
         background-position: 50% 75% !important;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg) !important;
     }
@@ -223,7 +223,7 @@
         margin-bottom: 0px;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 40% 50% !important;
+        background-position: 0% 50% !important;
         background-image: url(../images/banner/home/home_banner_5_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
@@ -366,6 +366,9 @@
         line-height: 1.25 !important;
         font-size: 40px !important;
     }
+    .modal-body-content ul li {
+        font-size: 11px;
+    }
 }
 @media (min-width: 768px) {
     .menu-mobile-tablet{
@@ -403,11 +406,11 @@
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
-        background-position: 95% 50%;
+        background-position: 55% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 65% 30%;
-        align-items: flex-end;
+        background-position: 20% 30%;
+        align-items: center;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end;
