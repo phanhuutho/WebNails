@@ -68,9 +68,9 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @*<li class="list-inline-item">
+                            <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
-                            </li>*@
+                            </li>
                             <li class="list-inline-item">
 		                        <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
 	                        </li>
@@ -83,9 +83,9 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="/contact.html">Contact</a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
-                            </li>
+                            @*<li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Booking</a>
+                            </li>*@
                         </ul>
                     </div>
                 </div>
@@ -99,9 +99,9 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                @*<li>
+                <li>
                     <a href="/price-list.html">Price List</a>
-                </li>*@
+                </li>
                 <li>
 		            <a href="/gallery.html">Gallery</a>
 	            </li>
@@ -116,7 +116,7 @@
                 </li>
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
-                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
+                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
                     </a>
                 </li>
             </ul>

@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #03A9F4;
-    --color-menu-legend: #03A9F4;
+    --color-theme: #956D30;
+    --color-menu-legend: #956D30;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #03A9F4;
+    --color-text-theme: #956D30;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -29,7 +29,7 @@ main{
 
 }
 header {
-    background: var(--color-blue-pastle);
+    background: var(--color-black);
 }
 .bg-header-left {
     background: var(--bg-site);

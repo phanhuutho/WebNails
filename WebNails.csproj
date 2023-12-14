@@ -182,6 +182,7 @@
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
     <Content Include="Content\images\banner\contact\contact_banner_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_1.jpg" />
+    <Content Include="Content\images\banner\home\home_banner_1_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
@@ -378,9 +379,14 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
-    <Content Include="Content\images\popup\coupon-02.jpg" />
     <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
+    <Content Include="Content\images\price-list\prices-01.jpg" />
+    <Content Include="Content\images\price-list\prices-02.jpg" />
+    <Content Include="Content\images\price-list\prices-03.jpg" />
+    <Content Include="Content\images\price-list\prices-04.jpg" />
+    <Content Include="Content\images\price-list\prices-05.jpg" />
+    <Content Include="Content\images\price-list\prices-06.jpg" />
     <Content Include="Content\images\services-detail\brow-lamination.jpg" />
     <Content Include="Content\images\services-detail\custom-nails.jpg" />
     <Content Include="Content\images\services-detail\eyelash-extensions.jpg" />
