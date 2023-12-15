@@ -67,7 +67,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 60%;
+    background-position: 45% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 50% 95%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -95,10 +95,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 25%;
+    background-position: 60% 70%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-5 .box-image .image {
@@ -109,7 +109,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 55% 30%;
+    background-position: 20% 30%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -225,7 +225,7 @@ main .contact .container{
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
-    font-size: 36px;
+    font-size: 42px;
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     font-weight: bold;

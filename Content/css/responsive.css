@@ -197,18 +197,18 @@
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end !important;
         background-image: url(../images/banner/home/home_banner_2_portrait.jpg) !important;
-        background-position: 65% 50% !important;
+        background-position: 55% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
     }
     .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 70% 50% !important;
         background-image: url(../images/banner/home/home_banner_3_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-image .image {
         align-items: self-end !important;
-        background-position: 50% 75% !important;
+        background-position: 55% 75% !important;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-inner {
@@ -224,11 +224,11 @@
         margin-bottom: 0px;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 0% 50% !important;
+        background-position: 60% 50% !important;
         background-image: url(../images/banner/home/home_banner_5_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
-        font-size: 26px;
+        font-size: 42px;
         margin-bottom: 10px;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner p {
@@ -401,21 +401,22 @@
         background-position: 80% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 20% 50%;
+        background-position: 30% 50%;
         justify-content: center;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
-        background-position: 55% 50%;
+        background-position: 50% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 20% 30%;
-        align-items: center;
+        background-position: 50% 30%;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end;
         justify-content: center;
+        background-position: 35% 30%;
     }
     .slider-banner .slider-1 .box-slider .image {
         background-position: 45% 50%;
