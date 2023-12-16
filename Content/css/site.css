@@ -129,6 +129,10 @@ a:active,a:hover {
     opacity: 1;
 }
 
+.text-theme {
+    color: var(--color-theme);
+}
+
 .img-hover-zoom {
     overflow: hidden;
 }

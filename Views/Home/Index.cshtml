@@ -20,7 +20,7 @@
     @{ Html.RenderPartial("_Home_About_Us_1"); }
     @{ Html.RenderPartial("_Home_Services_1"); }
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
-    @{ Html.RenderPartial("_Home_Contact_1"); }
+    @{ Html.RenderPartial("_Home_Contact_2"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
 @section modal{
@@ -59,6 +59,7 @@
 
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
+        var sliderClient = $('.slider-client');
 
         $(document).ready(function () {
 
@@ -111,7 +112,19 @@
                     </text>
                 }
             }
-            
+
+            sliderClient.slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
         });
 
         function RegisterCoupon(obj) {
