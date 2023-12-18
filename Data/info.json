@@ -1,12 +1,12 @@
 {
-  "Name": "My Lux Nails Spa Copperas Cove",
-  "HyperLinkTell": "tel:(254)5775189",
-  "TextTell": "(254)-577-5189",
-  "GooglePlus": "https://www.google.com/search?q=My+Lux+Nails+76522",
-  "Address": "232 Robert Griffin III Dr #202, Copperas Cove, TX 76522",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/cWur1uZfuKzbVuN5A",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13662.708041434704!2d-97.8666128!3d31.118708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865ab3fbe3d55887%3A0x8502fb2980136861!2sMy%20Lux%20Nails%20Spa%20Copperas%20Cove!5e0!3m2!1sen!2s!4v1702575378169!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Nailholic Spa",
+  "HyperLinkTell": "tel:(626)3555878",
+  "TextTell": "(626)-355-5878",
+  "GooglePlus": "https://www.google.com/search?q=Nailholic+Spa+91024",
+  "Address": "56 W Sierra Madre Blvd, Sierra Madre, CA 91024",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/7PJ5RsU77cofSoMv5",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13205.610505796354!2d-118.0539203!3d34.1616223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2dc7a0884d3f5%3A0x24847abfecdaec4c!2sNailholic%20Spa%20(10%25%20or%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1702915998100!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/078b02cc40b7/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -14,32 +14,7 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-06.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -49,7 +24,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/MyLuxNailsSpa/",
+    "Url": "https://www.facebook.com/nailholicspa",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"

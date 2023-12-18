@@ -53,10 +53,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-2 .box-image .image {

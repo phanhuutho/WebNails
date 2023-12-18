@@ -1,11 +1,11 @@
 /*root*/
 :root {
     --bg-site: #ffffff;
-    --color-theme: #956D30;
-    --color-menu-legend: #956D30;
+    --color-theme: #eac747;
+    --color-menu-legend: #eac747;
     --color-black: #000000;
     --color-white: #FFFFFF;
-    --color-text-theme: #956D30;
+    --color-text-theme: #eac747;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -46,14 +46,12 @@ a:active,a:hover {
     max-width: 100px;
     margin: 10px 0px;
     border-radius: 50%;
-    background: var(--color-white);
+    background: var(--color-theme);
     padding: var(--padding-box);
 }
 .logo img{
-    padding: var(--padding-box);
-    background: var(--color-white);
+    background: var(--color-theme);
     border-radius: 50%;
-    border: var(--padding-box) solid var(--color-black);
 }
 
 /*font*/

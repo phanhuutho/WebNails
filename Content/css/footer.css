@@ -10,13 +10,11 @@ footer {
     max-width: 120px;
     padding: var(--padding-box);
     border-radius: 50%;
-    background: var(--color-white);
+    background: var(--color-theme);
 }
 .logo-footer img {
-    padding: var(--padding-box);
-    background: var(--color-white);
+    background: var(--color-theme);
     border-radius: 50%;
-    border: var(--padding-box) solid var(--color-black);
 }
 footer .legend {
     color: var(--color-menu-legend);
