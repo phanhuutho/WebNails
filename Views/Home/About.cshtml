@@ -19,7 +19,49 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
-                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                        <div class="row">
+                            <div class="col-md-12">
+                                @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="border-1">
+                                    <h3>Party Policy</h3>
+                                    <p>
+                                        For parties of 5 or more a 10% service charge is applied. 
+                                        This includes set up and clean up time before and after your party’s services.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="border-1">
+                                    <h3>Cancellation Policy</h3>
+                                    <p>
+                                        If you need to reschedule or cancel your scheduled appointment for a spa party, please contact us <b>within 24 hours</b> to avoid being charged 100% of your scheduled services.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="border-1">
+                                    <h3>Gift Cards</h3>
+                                    <p>
+                                        Gift cards can be purchased in any amount and used for any product or service. 
+                                        We cannot replace lost or stolen gift cards. 
+                                        Gift cards are non-refundable and cannot be redeemed for cash.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="border-1">
+                                    <h3>Schedule An Appointment</h3>
+                                    <p>
+                                        The most simple, reliable & <i>easy to use online appointment (AS EASY AS 1-2-3). Accept bookings 24/7 with online appointment scheduling.</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
                         <img src="/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail" />
