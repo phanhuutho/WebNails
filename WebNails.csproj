@@ -254,6 +254,7 @@
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_facial.jpg" />
     <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
@@ -319,6 +320,7 @@
     <Content Include="Content\js\site.js" />
     <Content Include="Content\js\slick-animation.js" />
     <Content Include="Content\js\slick.min.js" />
+    <Content Include="Content\videos\Nailholic-Spa-video1.mp4" />
     <Content Include="Data\about-us.txt" />
     <Content Include="Data\BodyRegisterCoupon.html" />
     <Content Include="Data\business-hours.txt" />

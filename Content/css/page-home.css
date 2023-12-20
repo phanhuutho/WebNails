@@ -467,28 +467,28 @@ main .contact .container{
 .beauty-spa .box-image .image1{
     background-image: url(../images/home/home_service_manicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 35% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 25% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image3{
-    background-image: url(../images/home/home_service_nails_enhancements.jpg);
+    background-image: url(../images/home/home_service_facial.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 80% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image4{
     background-image: url(../images/home/home_service_waxing.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 50%;
+    background-position: 100% 50%;
     background-size: cover !important;
 }
 
@@ -739,7 +739,7 @@ main .contact .container{
     width: 100%;
     height: 100%;
 }
-.contact .bg-contact .container{
+.contact .bg-contact .container, .contact .bg-contact .container-fluid {
     position: relative;
 }
 .contact-images {
