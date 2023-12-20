@@ -11,10 +11,6 @@
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
       "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
