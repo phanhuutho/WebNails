@@ -31,6 +31,42 @@
   },
   {
     "Status": true,
+    "Src": "/Content/images/gallery/nail-design-01.jpg",
+    "Position": 1,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/nail-design-02.jpg",
+    "Position": 1,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/nail-design-03.jpg",
+    "Position": 1,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/nail-design-04.jpg",
+    "Position": 1,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/nail-design-05.jpg",
+    "Position": 1,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/nail-design-06.jpg",
+    "Position": 1,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
     "Src": "/Content/images/gallery/nail-design-1.jpg",
     "Position": 1,
     "TabIndex": 2
