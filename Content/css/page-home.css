@@ -67,7 +67,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 50%;
+    background-position: 85% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -81,10 +81,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 95%;
+    background-position: 60% 5%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-4 .box-image .image {
@@ -95,10 +95,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 70%;
+    background-position: 35% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-5 .box-image .image {
@@ -109,7 +109,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 20% 30%;
+    background-position: 45% 100%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
