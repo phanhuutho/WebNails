@@ -1,5 +1,5 @@
 ﻿main {
-    background: var(--bg-site);
+    background: var(--color-black);
 }
 main .contact .container{
     max-width: 1300px;
@@ -319,12 +319,12 @@ main .contact .container{
 }
 
 .about-us {
-    background-color: var(--bg-site);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
     min-height: 600px;
     position: relative;
+    color: var(--color-white);
 }
 .about-us .overlay{
     background-color: rgba(255, 255, 255, 0);
@@ -357,7 +357,6 @@ main .contact .container{
     border-bottom: 2px solid var(--color-text-theme);
 }
 .about-us .box-inner p{
-    color: var(--color-black);
     font-family: "Vesper Libre";
     font-size: 1.125em;
 }
@@ -399,7 +398,7 @@ main .contact .container{
     border: none;
 }
 .beauty-spa {
-    background-color: var(--bg-site);
+
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -441,7 +440,7 @@ main .contact .container{
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background: var(--color-black);
+    background: var(--color-white);
 }
 .beauty-spa .bg-item-service{
     position: relative;
