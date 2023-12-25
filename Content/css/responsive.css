@@ -345,12 +345,12 @@
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 20% 50% !important;
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
-        align-items: flex-end;
-        background-position: 55% 50% !important;
+        align-items: center !important;
+        background-position: 20% 50% !important;
         background-image: url(../images/banner/slider/e-gift-portrait.jpg) !important;
     }
     .slider-banner .slider-4 .box-slider .image {
@@ -366,10 +366,13 @@
     }
     .bg-contact .description {
         line-height: 1.25 !important;
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
     .modal-body-content ul li {
         font-size: 11px;
+    }
+    .btn-tel, .btn-contact {
+        font-size: 67.5%;
     }
 }
 @media (min-width: 768px) {
@@ -420,16 +423,15 @@
         background-position: 45% 30%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 100% 50%;
+        background-position: 55% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 40% 25%;
+        background-position: 30% 25%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50%;
-        align-items: flex-end;
+        background-position: 5% 50%;
     }
     .slider-banner .slider-1 .box-slider {
         background: rgba(175,195,230,1);
@@ -450,7 +452,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 10% 50%;
+        background-position: 70% 50%;
         align-items: flex-end;
     }
     footer p {
