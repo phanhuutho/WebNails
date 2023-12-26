@@ -8,7 +8,12 @@
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13854.762336317253!2d-95.6266569!3d29.7576668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dc0ca80f4c0b%3A0xa64b6108c9c3a6a8!2sVenetian%20Nail%20Design%20(%2425%20Regular%20Pedicure)!5e0!3m2!1sen!2s!4v1703423482101!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
