@@ -17,12 +17,13 @@ main {
 }
 .box-text {
     padding: 10px;
-    background-color: var(--color-black);
+    background-color: var(--color-white);
     height: 120px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: var(--padding-box) solid var(--color-black);
 }
 .box-text h2{
     font-family: Prata;
@@ -31,7 +32,7 @@ main {
     line-height: 1.5;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: var(--color-white);
+    color: var(--color-theme);
 }
 .divider {
     background-color: var(--color-black);

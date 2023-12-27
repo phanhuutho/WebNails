@@ -1,5 +1,5 @@
 ﻿main {
-    background: var(--color-black);
+    background: var(--bg-site);
 }
 main .contact .container{
     max-width: 1300px;
@@ -319,12 +319,13 @@ main .contact .container{
 }
 
 .about-us {
+    background: var(--color-theme);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
     min-height: 600px;
     position: relative;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 .about-us .overlay{
     background-color: rgba(255, 255, 255, 0);
@@ -336,6 +337,7 @@ main .contact .container{
 }
 .about-us .container-lg{
     position: relative;
+    background:var(--bg-site);
 }
 .about-us .row{
 
@@ -358,7 +360,7 @@ main .contact .container{
 }
 .about-us .box-inner p{
     font-family: "Vesper Libre";
-    font-size: 1.125em;
+    font-size: 17px;
 }
 .about-us .box-inner .divider{
     margin-left: 0;
@@ -398,7 +400,7 @@ main .contact .container{
     border: none;
 }
 .beauty-spa {
-
+    background: var(--color-theme);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -410,6 +412,9 @@ main .contact .container{
     height: 160px;
     top: 42.5%;
     display: none;
+}
+.beauty-spa .beauty-spa-inner > div[class*='container-'] {
+    background:var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
@@ -440,7 +445,7 @@ main .contact .container{
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background: var(--color-white);
+    background: var(--color-black);
 }
 .beauty-spa .bg-item-service{
     position: relative;
@@ -601,7 +606,7 @@ main .contact .container{
     height: 85px;
 }
 .business-gift {
-
+    background: var(--color-theme);
 }
 .business, .e-gift {
     background-color: var(--bg-site);
