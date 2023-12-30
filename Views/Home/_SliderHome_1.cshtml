@@ -1,14 +1,14 @@
 ﻿<section class="slider-home">
     <div class="sliders">
-        <div class="slider-1">
+        @*<div class="slider-1">
             <div class="box-image">
                 <div class="image">
                     <div class="container-xl">
                         <div class="row justify-content-lg-start justify-content-center">
                             <div class="col-md-12">
-                                <div class="box-inner text-center py-4" data-animation-in="animate__animated animate__fadeInDown">
-                                    <h1>WELCOME TO</h1>
-                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Polished", "Polished<br/>")))</strong></h2>
+                                <div class="box-inner text-center my-md-0 py-md-5 pt-5 mt-5" data-animation-in="animate__animated animate__fadeInDown">
+                                    <h1 class="fs-1">WELCOME TO</h1>
+                                    <h2 class="fs-1" data-animation-in="animate__animated animate__pulse animate__infinite"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Polished", "Polished<br/>")))</strong></h2>
                                     <a class="btn btn-warning btn-theme btn-more btn-none-border" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
                                         <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "APPOINTMENT" : "CALL US")
                                     </a>
@@ -18,14 +18,14 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="slider-2">
+        </div>*@
+        @*<div class="slider-2">
             <div class="box-image">
                 <div class="image">
                     <div class="container-xl">
                         <div class="row justify-content-md-start justify-content-center">
                             <div class="col-xl-4 col-lg-6 col-md-12">
-                                <div class="box-inner text-center py-3" data-animation-in="animate__animated animate__fadeInDown">
+                                <div class="box-inner text-center pb-lg-0 mb-lg-0 pb-5 mb-5" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="font-Prata">Good Nail Polish<br/>for Good Moments</h1>
                                 </div>
                             </div>
@@ -33,14 +33,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
         <div class="slider-3">
             <div class="box-image">
                 <div class="image">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="box-inner text-center py-5" data-animation-in="animate__animated animate__fadeInDown">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-xl-4 col-lg-6 col-md-12">
+                                <div class="box-inner text-center pb-lg-5 mb-lg-5 pb-0 mb-0" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="font-Prata" data-animation-in="animate__animated animate__pulse animate__infinite">Modern touch,<br/>Beautiful feel</h1>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="slider-4">
+        @*<div class="slider-4">
             <div class="box-image">
                 <div class="image">
                     <div class="container-lg">
@@ -63,8 +63,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="slider-5">
+        </div>*@
+        @*<div class="slider-5">
             <div class="box-image">
                 <div class="image">
                     <div class="container-xl">
@@ -78,6 +78,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
     </div>
 </section>

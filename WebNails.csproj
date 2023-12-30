@@ -182,6 +182,7 @@
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
     <Content Include="Content\images\banner\contact\contact_banner_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_1.jpg" />
+    <Content Include="Content\images\banner\home\home_banner_1_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2.jpg" />
     <Content Include="Content\images\banner\home\home_banner_2_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_3.jpg" />
@@ -191,6 +192,7 @@
     <Content Include="Content\images\banner\home\home_banner_4_portrait.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.png" />
+    <Content Include="Content\images\banner\home\home_banner_5_portrait.jpg" />
     <Content Include="Content\images\banner\slider\all-services-portrait.jpg" />
     <Content Include="Content\images\banner\slider\all-services.jpg" />
     <Content Include="Content\images\banner\slider\e-gift-portrait.jpg" />
