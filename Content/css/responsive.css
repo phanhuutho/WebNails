@@ -396,9 +396,9 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
-        background-position: 80% 50%;
+        background-position: 5% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
         background-position: 45% 50%;
