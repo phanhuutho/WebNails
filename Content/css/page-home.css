@@ -109,7 +109,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
