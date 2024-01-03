@@ -1,11 +1,11 @@
 {
-  "Name": "Nail & Spa Pizazz",
-  "HyperLinkTell": "tel:(757)2620026",
-  "TextTell": "(757)-262-0026",
-  "GooglePlus": "https://www.google.com/search?q=Nail+Spa+Pizazz+23666",
-  "Address": "2400 Cunningham Dr #500, Hampton, VA 23666",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/13NNrgY4wxKT2nw76",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12737.971943157943!2d-76.3969405!3d37.0457336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba8317a00ac1c3%3A0xcd7c484ffcff14d3!2sNail%20%26%20Spa%20Pizazz!5e0!3m2!1sen!2s!4v1704035936170!5m2!1sen!2s",
+  "Name": "VRS Nails & Spa",
+  "HyperLinkTell": "tel:(724)7420015",
+  "TextTell": "(724)-742-0015",
+  "GooglePlus": "https://www.google.com/search?q=VRS+Nail+Spa+16066",
+  "Address": "1187 Freedom Rd #102, Cranberry Twp, PA 16066",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/vCSaCjzB3YK9HYQY7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12102.324395010692!2d-80.1235552!3d40.683198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883462c747a8d877%3A0xc8a4c836b9457cf5!2sVRS%20Nails%20%26%20Spa%20(%245%20OFF%20%26%2010%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1704299863493!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -24,7 +24,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/vrsnailsnspa/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
