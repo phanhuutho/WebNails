@@ -115,8 +115,18 @@
     .navbar-brand img {
         margin: 0 auto;
     }
+    .logo-brand .navbar-brand {
+        display: inline-block;
+        height: 100%;
+        border-radius: 50%;
+        background: var(--color-white);
+        padding: var(--padding-box);
+    }
     .logo-brand img {
-
+        padding: var(--padding-box);
+        background: var(--color-white);
+        border-radius: 50%;
+        border: var(--padding-box) solid var(--color-theme);
     }
     .menu-desktop {
         display: none;
@@ -136,7 +146,7 @@
     }
     .menu-mobile-tablet .menu-bars .fa {
         font-size: 18px;
-        color: var(--color-theme);
+        color: var(--color-black);
     }
     .menu-mobile-tablet .logo-brand {
         text-align: center;

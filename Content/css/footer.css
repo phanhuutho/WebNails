@@ -3,7 +3,7 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
     color: var(--color-white);
-    background: var(--color-black);
+    background: var(--color-theme);
     font-size: 15px;
 }
 .logo-footer {
@@ -17,10 +17,10 @@ footer {
     padding: var(--padding-box);
     background: var(--color-white);
     border-radius: 50%;
-    border: var(--padding-box) solid var(--color-black);
+    border: var(--padding-box) solid var(--color-theme);
 }
 footer .legend {
-    color: var(--color-menu-legend);
+    color: var(--color-black);
 }
 footer a {
     color: var(--color-white);
