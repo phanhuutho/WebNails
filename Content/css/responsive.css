@@ -204,7 +204,7 @@
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end !important;
         background-image: url(../images/banner/home/home_banner_2_portrait.jpg) !important;
-        background-position: 40% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -215,8 +215,8 @@
         background-image: url(../images/banner/home/home_banner_3_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        align-items: center !important;
-        background-position: 30% 50% !important;
+        align-items: flex-end !important;
+        background-position: 35% 50% !important;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-inner {
@@ -232,8 +232,9 @@
         margin-bottom: 0px;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 20% 50% !important;
         background-image: url(../images/banner/home/home_banner_5_portrait.jpg) !important;
+        align-items: flex-end !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
         font-size: 42px;
@@ -348,7 +349,7 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end !important;
-        background-position: 45% 50% !important;
+        background-position: 80% 50% !important;
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
@@ -356,7 +357,7 @@
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
-        align-items: flex-end !important;
+        align-items: center !important;
         background-position: 45% 50% !important;
         background-image: url(../images/banner/slider/e-gift-portrait.jpg) !important;
     }
@@ -409,7 +410,7 @@
     .slider-home .sliders .slider-1 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 90% 50%;
+        background-position: 100% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
         background-position: 60% 50%;
@@ -417,28 +418,28 @@
         align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
-        align-items: flex-end;
-        background-position: 50% 50%;
+        align-items: center;
+        background-position: 40% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 35% 50%;
-        align-items: center;
+        background-position: 30% 50%;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
-        background-position: 75% 30%;
+        background-position: 50% 30%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 90% 50%;
+        background-position: 45% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 25% 25%;
-        align-items: flex-end;
+        background-position: 12.5% 50%;
+        align-items: center;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 25% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-1 .box-slider {
@@ -449,7 +450,8 @@
     }
     .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
         font-size: 42px;
-        color: var(--color-black);
+        color: var(--color-white);
+        text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
     }
     .slider-home .sliders .slider-2 .box-image .box-inner {
 

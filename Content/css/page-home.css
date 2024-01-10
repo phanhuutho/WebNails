@@ -53,7 +53,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 80% 50%;
+    background-position: 95% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 45% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@ main .contact .container{
 }
 
 .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 48px;
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
@@ -219,7 +219,7 @@ main .contact .container{
     font-weight: bold;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1 {
-    font-size: 36px;
+    font-size: 32px;
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     font-weight: bold;
