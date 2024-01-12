@@ -34,17 +34,5 @@
     "Src": "/Content/images/gallery/nail-art-6.jpg",
     "Position": 6,
     "TabIndex": 1
-  },
-  {
-    "Status": true,
-    "Src": "/Content/images/gallery/nail-art-7.jpg",
-    "Position": 7,
-    "TabIndex": 1
-  },
-  {
-    "Status": true,
-    "Src": "/Content/images/gallery/nail-art-8.jpg",
-    "Position": 8,
-    "TabIndex": 1
   }
 ]
