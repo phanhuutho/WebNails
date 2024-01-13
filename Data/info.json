@@ -1,19 +1,14 @@
 {
-  "Name": "Polished Lashes & Nails",
-  "HyperLinkTell": "tel:(803)6956199",
-  "TextTell": "(803)-695-6199",
-  "GooglePlus": "https://www.google.com/search?q=+Polished+Lashes+and+Nails+29209",
-  "Address": "6070 Garners Ferry Rd Suite D, Columbia, SC 29209",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/YjZAPHsnNjwTXV6B7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.450087676832!2d-80.9677966!3d33.983221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8b0166641d543%3A0xa794fcdfe92d8975!2sPolished%20Lashes%20%26%20Nails%20(10%25%20Or%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1698687743997!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://fave.salon/r/booking?salonId=59385&redirectUrl=https://polishedlashesnails.favesalon.com",
+  "Name": "Deluxe Nails and Spa",
+  "HyperLinkTell": "tel:(803)7082289",
+  "TextTell": "(803)-708-2289",
+  "GooglePlus": "https://www.google.com/search?q=Deluxe+Nail+And+Spa+29033",
+  "Address": "1320 Knox Abbott Dr, Cayce, SC 29033",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/fSAZD6XWqehjkSGPA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.521711431735!2d-81.0731145!3d33.9791309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb61804611fd%3A0xf3c3a3822f96342!2s1320%20Knox%20Abbott%20Dr%2C%20Cayce%2C%20SC%2029033%2C%20USA!5e0!3m2!1sen!2s!4v1705161528457!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://fave.salon/r/booking?redirectUrl=https://www.deluxenailspacayce.com&salonId=59447",
   "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Coupons": [],
   "Prices": [
     {
       "Status": true,
@@ -38,6 +33,10 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-06.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-07.jpg"
     }
   ],
   "Telegram": {
@@ -49,7 +48,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/PolishedLashesandNailsColumbia/",
+    "Url": "https://www.facebook.com/deluxenailandspa/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
