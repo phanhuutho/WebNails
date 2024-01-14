@@ -233,7 +233,14 @@
     <Content Include="Content\images\gallery\nail-art-14.jpg" />
     <Content Include="Content\images\gallery\nail-art-15.jpg" />
     <Content Include="Content\images\gallery\nail-art-16.jpg" />
+    <Content Include="Content\images\gallery\nail-art-17.jpg" />
+    <Content Include="Content\images\gallery\nail-art-18.jpg" />
+    <Content Include="Content\images\gallery\nail-art-19.jpg" />
     <Content Include="Content\images\gallery\nail-art-2.jpg" />
+    <Content Include="Content\images\gallery\nail-art-20.jpg" />
+    <Content Include="Content\images\gallery\nail-art-21.jpg" />
+    <Content Include="Content\images\gallery\nail-art-22.jpg" />
+    <Content Include="Content\images\gallery\nail-art-23.jpg" />
     <Content Include="Content\images\gallery\nail-art-3.jpg" />
     <Content Include="Content\images\gallery\nail-art-4.jpg" />
     <Content Include="Content\images\gallery\nail-art-5.jpg" />
@@ -305,6 +312,7 @@
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
     <Content Include="Content\images\services\services_facial.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_gel_x.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />
     <Content Include="Content\images\services\services_little_kids.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
