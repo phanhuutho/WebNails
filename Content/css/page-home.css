@@ -1,5 +1,5 @@
 ﻿main {
-    background: var(--color-pink-pastle);
+    background: var(--bg-site);
 }
 main .contact .container{
     max-width: 1300px;
@@ -53,10 +53,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 95% 50%;
+    background-position: 30% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-2 .box-image .image {
@@ -67,7 +67,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 60% 30%;
+    background-position: 75% 50%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -81,7 +81,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 100% 35%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -95,7 +95,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 15% 25%;
+    background-position: 60% 25%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 30%;
+    background-position: 75% 30%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -356,7 +356,7 @@ main .contact .container{
     font-weight: bold;
 }
 .about-us .box-inner p{
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: "Vesper Libre";
     font-size: 1.125em;
 }
@@ -515,7 +515,7 @@ main .contact .container{
 }
 .services .bg-services .overlay{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
     width: 100%;
@@ -566,7 +566,7 @@ main .contact .container{
 }
 .business .business-inner p{
     font-family: "Vesper Libre";
-    color: #000000;
+    color: var(--color-white);
     line-height: 1.6;
     margin-bottom: 1.3em;
 }
@@ -673,7 +673,7 @@ main .contact .container{
     background-size: cover !important;
 }
 .contact .bg-contact .overlay{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -692,7 +692,7 @@ main .contact .container{
     transition: opacity 1s;
     -webkit-transition: opacity 1s;
     padding: var(--padding-box);
-    background-color: var(--color-theme);
+    background-color: var(--color-black);
 }
 .contact-images .image1,.contact-images .image2,.contact-images .image3,.contact-images .image4, .contact-images .image5,.contact-images .image6,.contact-images .image7,.contact-images .image8{
     height: 296px;
