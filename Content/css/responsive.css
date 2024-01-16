@@ -62,7 +62,7 @@
     .business .business-inner .box-inner {
         padding-top: 15px;
         margin-right: 0;
-        background: #FFFFFF;
+        background: var(--color-black);
         padding-bottom: 15px;
     }
     .business .business-inner .box-image {
@@ -85,7 +85,7 @@
     .e-gift .box-inner {
         padding-top: 15px;
         padding-bottom: 15px;
-        background: #FFFFFF;
+        background: var(--color-black);
     }
     .e-gift .box-image .image-e-gift {
         width: 100%;
