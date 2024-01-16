@@ -192,7 +192,9 @@
     <Content Include="Content\images\banner\home\home_banner_5.jpg" />
     <Content Include="Content\images\banner\home\home_banner_5.png" />
     <Content Include="Content\images\banner\home\home_banner_5_portrait.jpg" />
+    <Content Include="Content\images\banner\slider\all-services-portrait.jpg" />
     <Content Include="Content\images\banner\slider\all-services.jpg" />
+    <Content Include="Content\images\banner\slider\e-gift-portrait.jpg" />
     <Content Include="Content\images\banner\slider\e-gift.jpg" />
     <Content Include="Content\images\banner\slider\eyelash_extensions.jpg" />
     <Content Include="Content\images\banner\slider\manicure.jpg" />
