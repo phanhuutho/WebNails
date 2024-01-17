@@ -1,21 +1,17 @@
 {
-  "Name": "MLV Nail Salon",
-  "HyperLinkTell": "tel:(504)2529500",
-  "TextTell": "(504)-252-9500",
-  "GooglePlus": "https://www.google.com/search?q=MLV+Nail+Salon+70130",
-  "Address": "1861 Rousseau St, New Orleans, LA 70130",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/m6zenS3mDyNMCvMG6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13831.210308916285!2d-90.0691932!3d29.9275853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a6875a79aa61%3A0xe95cf98e436bdce6!2sMLV%20Nail%20Salon%20(10%25%20OFF%20Or%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1704730451684!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/c4ac038eed5c/customer/home",
+  "Name": "Vertigo Nail Lounge",
+  "HyperLinkTell": "tel:(213)6357626",
+  "TextTell": "(213)-635-7626",
+  "GooglePlus": "https://www.google.com/search?q=Vertigo+Nail+Lounge+90015",
+  "Address": "1828 Oak St, Los Angeles, CA 90015",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/C4nwruvXEy6bmNb89",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13225.072912173133!2d-118.2773094!3d34.03699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2f4b61c6b3486755%3A0xe4e3cde377942e69!2sVertigo%20Nail%20Lounge%20(30%25%20OFF%20All%20Services)!5e0!3m2!1sen!2s!4v1705513371133!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
