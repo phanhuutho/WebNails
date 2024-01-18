@@ -29,7 +29,7 @@ main{
 
 }
 header {
-    background: var(--color-theme);
+    background: var(--color-white);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -45,15 +45,12 @@ a:active,a:hover {
 .logo, .navbar-brand img {
     max-width: 100px;
     margin: 10px 0px;
-    border-radius: 50%;
     background: var(--color-white);
     padding: var(--padding-box);
 }
 .logo img{
     padding: var(--padding-box);
     background: var(--color-white);
-    border-radius: 50%;
-    border: var(--padding-box) solid var(--color-theme);
 }
 
 /*font*/
