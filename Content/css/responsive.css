@@ -118,15 +118,10 @@
     .logo-brand .navbar-brand {
         display: inline-block;
         height: 100%;
-        border-radius: 50%;
         background: var(--color-white);
-        padding: var(--padding-box);
     }
     .logo-brand img {
-        padding: var(--padding-box);
         background: var(--color-white);
-        border-radius: 50%;
-        border: var(--padding-box) solid var(--color-theme);
     }
     .menu-desktop {
         display: none;
@@ -351,23 +346,23 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end !important;
-        background-position: 80% 50% !important;
+        background-position: 40% 50% !important;
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 25% 50% !important;
+        background-position: 40% 50% !important;
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
-        align-items: center !important;
-        background-position: 45% 50% !important;
+        align-items: flex-end !important;
+        background-position: 50% 50% !important;
         background-image: url(../images/banner/slider/e-gift-portrait.jpg) !important;
     }
     .slider-banner .slider-4 .box-slider .image {
 
     }
     .bg .bg-contact {
-        background-position: 40% 50% !important;
+        background-position: 10% 50% !important;
         background-image: url(../images/banner/contact/contact_banner_portrait.jpg);
         align-items: flex-end !important;
     }
@@ -433,15 +428,15 @@
         background-position: 70% 30%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 45% 50%;
+        background-position: 65% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 12.5% 50%;
-        align-items: center;
+        background-position: 80% 50%;
+        align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50%;
+        background-position: 85% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-1 .box-slider {
@@ -465,7 +460,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 60% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     footer p {

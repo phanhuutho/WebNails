@@ -319,7 +319,7 @@ main .contact .container{
 }
 
 .about-us {
-    background: var(--color-theme);
+    background: var(--bg-site);
     background-repeat: no-repeat !important;
     background-position: 15% 50%;
     background-size: cover !important;
@@ -340,7 +340,7 @@ main .contact .container{
     background:var(--bg-site);
 }
 .about-us .row{
-
+    background:var(--color-white);
 }
 .about-us .about-us-inner{
     height: 100%;
@@ -400,7 +400,7 @@ main .contact .container{
     border: none;
 }
 .beauty-spa {
-    background: var(--color-theme);
+    background: var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner {
     position: relative;
@@ -414,7 +414,7 @@ main .contact .container{
     display: none;
 }
 .beauty-spa .beauty-spa-inner > div[class*='container'] {
-    background:var(--bg-site);
+    background:var(--color-white);
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
@@ -606,10 +606,10 @@ main .contact .container{
     height: 85px;
 }
 .business-gift {
-    background: var(--color-theme);
+    background: var(--bg-site);
 }
 .business, .e-gift {
-    background-color: var(--bg-site);
+    background-color: var(--color-white);
     border: var(--padding-box) solid var(--color-black);
 }
 .business .business-inner{

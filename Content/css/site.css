@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #ffffff;
+    --bg-site: #dfdfdf;
     --color-theme: #c28f40;
     --color-menu-legend: #c28f40;
     --color-black: #000000;
@@ -16,6 +16,7 @@
     --color-red-pastle: #f1caca;
     --color-blue-green: #98ded9;
     --color-gold: #cdaa6a;
+    --color-gray: #dfdfdf;
 }
 html {
     background-repeat: repeat;
@@ -29,7 +30,7 @@ main{
 
 }
 header {
-    background: var(--color-white);
+    background: var(--bg-site);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -45,12 +46,12 @@ a:active,a:hover {
 .logo, .navbar-brand img {
     max-width: 100px;
     margin: 10px 0px;
-    background: var(--color-white);
+    background: var(--bg-site);
     padding: var(--padding-box);
 }
 .logo img{
     padding: var(--padding-box);
-    background: var(--color-white);
+    background: var(--bg-site);
 }
 
 /*font*/

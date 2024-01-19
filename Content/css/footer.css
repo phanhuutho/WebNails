@@ -2,28 +2,23 @@
 footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
-    color: var(--color-white);
-    background: var(--color-theme);
+    color: var(--color-black);
+    background: var(--bg-site);
     font-size: 15px;
 }
 .logo-footer {
     max-width: 120px;
     margin: 10px 0px;
-    border-radius: 50%;
-    background: var(--color-white);
-    padding: var(--padding-box);
+    background: var(--bg-site);
 }
 .logo-footer img {
-    padding: var(--padding-box);
-    background: var(--color-white);
-    border-radius: 50%;
-    border: var(--padding-box) solid var(--color-theme);
+    background: var(--bg-site);
 }
 footer .legend {
-    color: var(--color-black);
+    color: var(--color-theme);
 }
 footer a {
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
 }
 footer .circle{
