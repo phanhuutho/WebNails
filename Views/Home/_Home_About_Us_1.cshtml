@@ -4,14 +4,30 @@
         <div class="row">
             <hr class="border-theme" />
             <div class="col-xl-6 col-lg-6 order-lg-1 col-md-12 order-2 py-5">
-                <div class="about-us-inner ps-xl-5">
+                <div class="about-us-inner mx-1">
                     <div class="box-inner">
                         <h1 class="text-center text-lg-start mb-5"><span>About Us</span></h1>
                         @Html.Raw(string.Format("{0}", ViewBag.HomeAboutUs))
-                        <div class="text-center text-lg-start">
-                            <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
+                    </div>
+                </div>
+                <div class="about-us-image mb-3">
+                    <div class="slider-about-us">
+                        <div class="box-image">
+                            <img src="/Content/images/home/home_about_us_1.jpg" class="img-fluid img-thumbnail" />
+                        </div>
+                        <div class="box-image">
+                            <img src="/Content/images/home/home_about_us_2.jpg" class="img-fluid img-thumbnail" />
+                        </div>
+                        <div class="box-image">
+                            <img src="/Content/images/home/home_about_us_3.jpg" class="img-fluid img-thumbnail" />
+                        </div>
+                        <div class="box-image">
+                            <img src="/Content/images/home/home_about_us_4.jpg" class="img-fluid img-thumbnail" />
                         </div>
                     </div>
+                </div>
+                <div class="text-center text-lg-start">
+                    <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 order-lg-2 col-md-12 order-1 py-5">

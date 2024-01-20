@@ -58,13 +58,13 @@
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>
-    @*<script src="~/Content/js/lightbox.js"></script>*@
+    <script src="~/Content/js/lightbox.js"></script>
     <script type="text/javascript">
         ActiveMenu("menu-home");
 
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
-        var sliderClient = $('.slider-client');
+        var sliderAboutUs = $('.slider-about-us');
 
         $(document).ready(function () {
 
@@ -118,17 +118,19 @@
                 }
             }
 
-            sliderClient.slick({
-                dots: true,
+            sliderAboutUs.slick({
+                dots: false,
                 infinite: true,
                 slidesToShow: 1,
-                arrows: false,
+                arrows: true,
                 autoplay: true,
                 autoplaySpeed: 4000,
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,
-                touchMove: false
+                touchMove: false,
+                fade: true,
+                cssEase: 'linear'
             });
         });
 
