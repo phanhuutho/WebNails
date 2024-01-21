@@ -17,8 +17,8 @@ main {
 }
 .box-text {
     padding: 10px;
-    background-color: var(--color-theme);
-    height: 120px;
+    background-color: var(--bg-site);
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,11 +28,11 @@ main {
 .box-text h2{
     font-family: Prata;
     font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.5;
+    font-size: 1.25em;
+    line-height: 1.25;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    color: var(--color-white);
+    color: var(--color-theme);
 }
 .divider {
     background-color: var(--color-black);
