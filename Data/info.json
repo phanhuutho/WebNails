@@ -1,11 +1,11 @@
 {
-  "Name": "Vertigo Nail Lounge",
-  "HyperLinkTell": "tel:(213)6357626",
-  "TextTell": "(213)-635-7626",
-  "GooglePlus": "https://www.google.com/search?q=Vertigo+Nail+Lounge+90015",
-  "Address": "1828 Oak St, Los Angeles, CA 90015",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/C4nwruvXEy6bmNb89",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13225.072912173133!2d-118.2773094!3d34.03699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2f4b61c6b3486755%3A0xe4e3cde377942e69!2sVertigo%20Nail%20Lounge%20(30%25%20OFF%20All%20Services)!5e0!3m2!1sen!2s!4v1705513371133!5m2!1sen!2s",
+  "Name": "TP Nails & Spa",
+  "HyperLinkTell": "tel:(717)7276331",
+  "TextTell": "(717)-727-6331",
+  "GooglePlus": "https://www.google.com/search?q=TP+Nail+Spa+17602",
+  "Address": "1734 Lincoln Hwy E, Lancaster, PA 17602",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/WzshbeXrLByBsmbJ9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12218.938716552033!2d-76.2614175!3d40.0367028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c63bb620078839%3A0x812bf6f5efb060b9!2sTP%20Nails%20%26%20Spa%20(%245%20-%20%2450%20Gift%20Card)!5e0!3m2!1sen!2s!4v1705857062719!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -14,7 +14,16 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
