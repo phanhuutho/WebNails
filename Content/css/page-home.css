@@ -483,14 +483,14 @@ main .contact .container{
 .beauty-spa .box-image .image3{
     background-image: url(../images/home/home_service_dip_powder_nails.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 
 .beauty-spa .box-image .image4{
-    background-image: url(../images/home/home_service_waxing.jpg);
+    background-image: url(../images/home/home_service_acrylic.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 50%;
+    background-position: 40% 50%;
     background-size: cover !important;
 }
 
