@@ -30,7 +30,7 @@ main{
 
 }
 header {
-    background: var(--bg-site);
+    background: var(--color-white);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -46,12 +46,12 @@ a:active,a:hover {
 .logo, .navbar-brand img {
     max-width: 100px;
     margin: 10px 0px;
-    background: var(--bg-site);
+    background: var(--color-white);
     padding: var(--padding-box);
 }
 .logo img{
     padding: var(--padding-box);
-    background: var(--bg-site);
+    background: var(--color-white);
 }
 
 /*font*/
