@@ -114,6 +114,22 @@ namespace WebNails
                     controller = "Home",
                     action = "Finish"
                 });
+
+            routes.MapRoute(
+                "Login", "login.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Login"
+                });
+
+            routes.MapRoute(
+                "GiftManage", "gift-manage.html",
+                new
+                {
+                    controller = "Home",
+                    action = "GiftManage"
+                });
         }
     }
 }

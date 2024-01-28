@@ -1,0 +1,102 @@
+﻿@model WebNails.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+}
+@section css{
+    <style type="text/css">
+        #login {
+            min-height: 350px;
+        }
+    </style>
+}
+<main class="bg-main">
+    <div class="container-lg">
+        <div class="row justify-content-center h-100">
+            <div class="col-8 text-center d-flex justify-content-center h-100 align-items-center" id="login">
+                @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @id = "formLogin", @action = "" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <fieldset>
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="false"></i></span>
+                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", @placeholder = "Username" } })
+                        </div>
+
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="false"></i></span>
+                            @Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password" } })
+                        </div>
+
+                        <button type="submit" class="btn btn-danger pull-right">Login</button>
+
+                        <div class="form-group">
+                            <label id="Username-error" class="error" for="Username"></label>
+                            <label id="Password-error" class="error" for="Password"></label>
+                            @Html.ValidationMessageFor(model => model.Username)
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
+                    </fieldset>
+                }
+            </div>
+        </div>
+    </div>
+</main>
+@section modal{
+    <div class="modal fade" id="myModalMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h5 class="modal-title" id="myModalLabel">Message</h5>
+                </div>
+                <div class="modal-body">
+                    <div id="alert-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        function AlertMessage(strMessage) {
+            $('#alert-message').html("");
+            $('#alert-message').html(strMessage);
+            $('#myModalMessage').modal("show");
+        }
+
+        function RedirecToUrl(strURL) {
+            location.href = strURL;
+        }
+
+        $(document).ready(function () {
+            $("#formLogin").validate({
+                rules: {
+                    Username: "required",
+                    Password: "required"
+                },
+                messages: {
+                    Username: { required: "Required your username" },
+                    Password: { required: "Required your password" }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/login.html",
+                        data: $(form).serialize(),
+                        success: function (result) {
+                            if (result.IsLogin == false) {
+                                AlertMessage(result.Message);
+                            }
+                            else {
+                                var UrlRedirect = '/login.html';
+                                RedirecToUrl(UrlRedirect);
+                            }
+                        },
+                    });
+                    return false;
+                }
+            });
+        });
+    </script>
+}

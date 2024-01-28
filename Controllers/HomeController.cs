@@ -9,6 +9,10 @@ using System.Configuration;
 using Newtonsoft.Json;
 using System.Web.Routing;
 using WebNails.Models;
+using System.Data.SqlClient;
+using Dapper;
+using System.Data;
+using System.Web.Security;
 
 namespace WebNails.Controllers
 {
@@ -215,6 +219,59 @@ namespace WebNails.Controllers
                     mySmtpClient.Send(mail);
                 }
             }
+        }
+
+        public ActionResult Login()
+        {
+            if(User != null)
+            {
+                return RedirectToAction("GiftManage");
+            }
+            return View(new LoginModel());
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginModel model)
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var queryString = Request.UrlReferrer.Query;
+
+                var queryDictionary = HttpUtility.ParseQueryString(queryString);
+
+                var Domain = Request.Url.Host;
+
+                var checklogin = sqlConnect.Query("spUserSite_GetByUsernameAndPassword", new { strUsername = model.Username, strPassword = model.Password, strDomain = Domain }, commandType: CommandType.StoredProcedure).Count() == 1;
+                if (checklogin)
+                {
+                    var ticket = new FormsAuthenticationTicket(1, model.Username, System.DateTime.Now, System.DateTime.Now.AddHours(1), true, "UserLogged", FormsAuthentication.FormsCookiePath);
+                    var strEncrypt = FormsAuthentication.Encrypt(ticket);
+                    var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, strEncrypt);
+                    Response.Cookies.Add(cookie);
+
+                    if (queryDictionary.Count > 0)
+                    {
+                        return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
+                    }
+                    else
+                    {
+                        return Json(new { ReturnUrl = "/gift-manage.html", IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
+                    }
+                }
+                else
+                {
+                    return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = false, Message = "Login Fail" }, JsonRequestBehavior.AllowGet);
+                }
+            }
+        }
+
+        public ActionResult GiftManage()
+        {
+            if(User != null)
+            {
+                return View();
+            }
+            return RedirectToAction("Login");
         }
     }
 }
