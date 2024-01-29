@@ -137,6 +137,7 @@
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\PagingHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.min.css" />
@@ -428,6 +429,7 @@
     <Content Include="Views\Home\gallery.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\GiftManage.cshtml" />
+    <Content Include="Views\Home\_GetTable_GiftManage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

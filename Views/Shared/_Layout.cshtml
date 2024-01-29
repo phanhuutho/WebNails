@@ -83,6 +83,15 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="contact.html">Contact</a>
                             </li>
+                            @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
+                            { 
+                                <li class="list-inline-item">
+                                    <a class="list-inline-item-link" id="menu-gift-manage" href="/gift-manage.html">Gift Manage</a>
+                                </li>
+                            }
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-manage" href=""></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -113,9 +122,9 @@
                 @*<li>
                     <a href="price-list.html">Price List</a>
                 </li>*@
-                @*<li>
-		            <a href="gallery.html">Gallery</a>
-	            </li>*@
+                        @*<li>
+                    <a href="gallery.html">Gallery</a>
+                </li>*@
                 <li>
                     <a href="e-gift.html">Gift Card</a>
                 </li>
@@ -124,6 +133,15 @@
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
+                </li>
+                @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
+                { 
+                    <li>
+                        <a href="/gift-manage.html">Gift Manage</a>
+                    </li>
+                }
+                <li>
+                    <a id="mobile-menu-manage" href=""></a>
                 </li>
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
@@ -231,5 +249,18 @@
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/js/site.js"></script>
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var menu_manage = {
+            href: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "/logout.html" : "/login.html")",
+            text: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "Logout" : "Login")"
+        };
+
+        $(document).ready(function () {
+            $("#menu-manage").attr("href", menu_manage.href);
+            $("#menu-manage").text(menu_manage.text);
+            $("#mobile-menu-manage").attr("href", menu_manage.href);
+            $("#mobile-menu-manage").text(menu_manage.text);
+        });
+    </script>
 </body>
 </html>

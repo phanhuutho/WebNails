@@ -130,6 +130,39 @@ namespace WebNails
                     controller = "Home",
                     action = "GiftManage"
                 });
+
+            routes.MapRoute(
+                "Logout", "logout.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Logout"
+                });
+
+            routes.MapRoute(
+                "GetGiftManage", "get-gift-manage.html",
+                new
+                {
+                    controller = "Home",
+                    action = "GetGiftManage"
+                });
+
+            routes.MapRoute(
+                "UpdateCompleted", "update-complete.html",
+                new
+                {
+                    controller = "Home",
+                    action = "UpdateCompleted"
+                });
+
+            routes.MapRoute(
+                "SendMail", "send-mail.html",
+                new
+                {
+                    controller = "Home",
+                    action = "SendMail"
+                });
+
         }
     }
 }

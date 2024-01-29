@@ -223,7 +223,7 @@ namespace WebNails.Controllers
 
         public ActionResult Login()
         {
-            if(User != null)
+            if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
             {
                 return RedirectToAction("GiftManage");
             }
@@ -267,11 +267,87 @@ namespace WebNails.Controllers
 
         public ActionResult GiftManage()
         {
-            if(User != null)
+            if(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
             {
                 return View();
             }
             return RedirectToAction("Login");
+        }
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            var cookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (cookie != null)
+            {
+                cookie.Expires = System.DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookie);
+            }
+            return RedirectToAction("Login");
+        }
+
+        public ActionResult GetGiftManage(string search = "")
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var Domain = Request.Url.Host;
+
+                var intSkip = Utilities.PagingHelper.Skip;
+
+                var param = new DynamicParameters();
+                param.Add("@intSkip", intSkip);
+                param.Add("@intTake", Utilities.PagingHelper.CountSort);
+                param.Add("@strDomain", Domain);
+                param.Add("@strValue", search);
+                param.Add("@intTotalRecord", dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                var objResult = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByNailDomain", param, commandType: CommandType.StoredProcedure);
+
+                ViewBag.Count = param.Get<int>("@intTotalRecord");
+
+                return PartialView("_GetTable_GiftManage", objResult);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCompleted(Guid id)
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = id, bitIsUsed = true}, commandType: CommandType.StoredProcedure);
+
+                if(objResult > 0)
+                {
+                    return Json(new { Message = "Update completed success !" });
+                }
+                else
+                {
+                    return Json(new { Message = "Update completed fail !" });
+                }
+            }
+        }
+
+        [HttpPost]
+        public ActionResult SendMail(Guid id)
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = id }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                if(info != null)
+                {
+                    var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = id, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
+
+                    SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
+                    SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
+                    SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code);
+
+                    return Json(new { Message = "Send mail success !" });
+                }
+                else
+                {
+                    return Json(new { Message = "Send mail fail !" });
+                }
+            }
         }
     }
 }

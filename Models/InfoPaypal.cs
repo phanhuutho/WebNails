@@ -10,6 +10,7 @@ namespace WebNails.Models
         public Guid ID { get; set; }
         public int Nail_ID { get; set; }
         public string Transactions { get; set; }
+        public string Code { get; set; }
         public string Owner { get; set; } //Email Owner
         public int Amount { get; set; }
         public string Stock { get; set; } //Email Receiver
