@@ -35,29 +35,29 @@
                             <td>
                                 @if (item.Status == PaymentStatus.Success)
                                 {
-                                    <span>Success</span>
+                                    <span class="badge bg-success">Success</span>
                                 }
                                 else if(item.Status == PaymentStatus.Pending)
                                 {
-                                    <span>Pending</span>
+                                    <span class="badge bg-danger">Pending</span>
                                 }
                             </td>
                             <td>
                                 @if (item.IsUsed) 
                                 {
-                                    <i class="fa fa-check-square"></i>
+                                    <i class="fa fa-check-square-o"></i>
                                 }
-                                else
+                                else if(item.Status == PaymentStatus.Success)
                                 { 
                                     <a href="javascript:void(0)" onclick="UpdateCompleted('@item.ID')">
-                                        <i class="fa fa-square"></i>
+                                        <i class="fa fa-square-o"></i>
                                     </a>
                                 }
                             </td>
                             <td>
                                 @if(item.Status == PaymentStatus.Pending) 
                                 { 
-                                    <a class="btn btn-success" href="javascript:void(0)" onclick="SendMail('@item.ID')">
+                                    <a class="btn btn-warning" href="javascript:void(0)" onclick="SendMail('@item.ID')">
                                         Send email
                                     </a>
                                 }

@@ -62,6 +62,7 @@ namespace WebNails.Controllers
         [HttpPost]
         public ActionResult Process(string amount, string stock, string email, string message)
         {
+            var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = amount ?? "1";
@@ -73,8 +74,27 @@ namespace WebNails.Controllers
             cookieDataBefore["Email"] = email;
             cookieDataBefore["Stock"] = stock;
             cookieDataBefore["Message"] = message;
+            cookieDataBefore["Guid"] = strID.ToString();
             cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
             Response.Cookies.Add(cookieDataBefore);
+
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var Domain = Request.Url.Host;
+                var Transactions = GenerateUniqueCode();
+                var objResult = sqlConnect.Execute("spInfoPaypal_InsertBefore", new
+                {
+                    strID = strID,
+                    strDomain = Domain,
+                    strTransactions = Transactions,
+                    strCode = Transactions,
+                    strOwner = EmailPaypal,
+                    strStock = stock,
+                    strEmail = email,
+                    intAmount = int.Parse(amount),
+                    strMessage = message
+                }, commandType: CommandType.StoredProcedure);
+            }
 
             return View();
         }
@@ -106,6 +126,7 @@ namespace WebNails.Controllers
             var strEmail = string.Empty;
             var strStock = string.Empty;
             var strMessage = string.Empty;
+            var strID = new Guid();
 
             HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
             if (cookieDataBefore != null)
@@ -114,6 +135,7 @@ namespace WebNails.Controllers
                 strEmail = cookieDataBefore["Email"];
                 strStock = cookieDataBefore["Stock"];
                 strMessage = cookieDataBefore["Message"];
+                strID = Guid.Parse(cookieDataBefore["Guid"]);
             }
 
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
@@ -122,9 +144,22 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                SendMailToOwner(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToReceiver(strStock, strEmail, strAmount, string.Format("{0}", TempData["PayerID"]));
+                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+                {
+                    var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = strID }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                    if(info != null)
+                    {
+                        var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = strID, bitIsUsed = true }, commandType: CommandType.StoredProcedure);
+
+                        if(objResult > 0)
+                        {
+                            SendMailToOwner(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code);
+                            SendMailToBuyer(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code);
+                            SendMailToReceiver(strStock, strEmail, string.Format("{0}", strAmount), info.Code);
+                        }
+                    }
+                }    
             }
             else
             {
@@ -337,9 +372,12 @@ namespace WebNails.Controllers
                 {
                     var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = id, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
 
-                    SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
-                    SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
-                    SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code);
+                    if(objResult > 0)
+                    {
+                        SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
+                        SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
+                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code);
+                    }
 
                     return Json(new { Message = "Send mail success !" });
                 }
@@ -348,6 +386,23 @@ namespace WebNails.Controllers
                     return Json(new { Message = "Send mail fail !" });
                 }
             }
+        }
+
+        private static Random random = new Random();
+        private string GenerateUniqueCode()
+        {
+            var strYear = string.Format("{0:yyyy}", DateTime.Now);
+            var strDay = string.Format("{0:ddd dd MMM}", DateTime.Now);
+            strDay = String.Join("", strDay.Split(new char[] { ' ' }));
+            string strReverse = string.Empty;
+            for (int i = strDay.Length - 1; i >= 0; i--)
+            {
+                strReverse += strDay[i];
+            }
+            var strTimes = string.Format("{0:HHmmss}", DateTime.Now);
+
+            var result = string.Format("{0}{1}{2}", strYear, strReverse, strTimes).ToUpper();
+            return result;
         }
     }
 }

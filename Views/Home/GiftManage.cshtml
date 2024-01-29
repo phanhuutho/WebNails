@@ -1,9 +1,14 @@
 ﻿@{
     ViewBag.Title = "Gift Manage";
     var page = 1;
+    var search = string.Empty;
     if(Request["page"] != null)
     {
         page = int.Parse(Request["page"]);
+    }
+    if (Request["search"] != null)
+    {
+        search = Request["search"];
     }
 }
 
@@ -21,16 +26,16 @@
 <main class="bg-main mt-4">
     <div class="container-lg">
         <div class="row justify-content-center h-100">
-            <div class="col-12 d-flex justify-content-center h-100 align-items-center" id="gift-manage">
-                <div class="row">
+            <div class="col-12 d-flex justify-content-center h-100 align-items-center w-100" id="gift-manage">
+                <div class="row w-100">
                     <div class="col-12 my-3">
                         <div class="row">
                             <div class="col-md-6">
-                                <h2 class="text-center">Gift Manage</h2>
+                                <h2>Gift Manage</h2>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search" id="Search" name="Search">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search" id="Search" name="Search" value="@search">
                                     <button class="btn btn-outline-secondary" type="button" id="button-search" onclick="GetGiftManage(1)">Search</button>
                                 </div>
                             </div>
@@ -92,6 +97,7 @@
                     data: { id: guid },
                     success: function (result) {
                         AlertMessage(result.Message);
+                        GetGiftManage(parseInt('@(page)'));
                     }
                 });
             }
@@ -101,10 +107,11 @@
             if (confirm("Are you sure send mail ?")) {
                 $.ajax({
                     type: "POST",
-                    url: "/update-complete.html",
+                    url: "/send-mail.html",
                     data: { id: guid },
                     success: function (result) {
                         AlertMessage(result.Message);
+                        GetGiftManage(parseInt('@(page)'));
                     }
                 });
             }
