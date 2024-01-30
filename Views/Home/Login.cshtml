@@ -1,0 +1,118 @@
+﻿@model WebNails.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+}
+@section css{
+    <style type="text/css">
+        .bg-main {
+            background: #ffffff;
+        }
+        #login {
+            min-height: 600px;
+            background: #ffffff;
+        }
+    </style>
+}
+<main class="bg-main mt-4">
+    <div class="container-lg">
+        <div class="row justify-content-center h-100">
+            <div class="col-12 d-flex justify-content-center h-100 align-items-center" id="login">
+                @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @id = "formLogin", @action = "", @class = "row" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="col-12 my-3">
+                        <h2 class="text-center">Login</h2>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label class="visually-hidden" for="Username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa fa-user" aria-hidden="false"></i>
+                            </div>
+                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", @placeholder = "Username" } })
+                        </div>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label class="visually-hidden" for="Password">Password</label>
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa fa-lock" aria-hidden="false"></i>
+                            </div>
+                            @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Password" })
+                        </div>
+                    </div>
+                    <div class="col-12 my-3">
+                        <button type="submit" class="btn btn-danger pull-right">Login</button>
+                        <div class="form-group">
+                            <label id="Username-error" class="error" for="Username"></label>
+                            <label id="Password-error" class="error" for="Password"></label>
+                            @Html.ValidationMessageFor(model => model.Username)
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</main>
+@section modal{
+    <div class="modal fade" id="myModalMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h5 class="modal-title" id="myModalLabel">Message</h5>
+                </div>
+                <div class="modal-body">
+                    <div id="alert-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        function AlertMessage(strMessage) {
+            $('#alert-message').html("");
+            $('#alert-message').html(strMessage);
+            $('#myModalMessage').modal("show");
+        }
+
+        function RedirecToUrl(strURL) {
+            location.href = strURL;
+        }
+
+        ActiveMenu("menu-manage");
+
+        $(document).ready(function () {
+            $("#formLogin").validate({
+                rules: {
+                    Username: "required",
+                    Password: "required"
+                },
+                messages: {
+                    Username: { required: "Required your username" },
+                    Password: { required: "Required your password" }
+                },
+                submitHandler: function (form) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/login.html",
+                        data: $(form).serialize(),
+                        success: function (result) {
+                            if (result.IsLogin == false) {
+                                AlertMessage(result.Message);
+                            }
+                            else {
+                                var UrlRedirect = '/login.html';
+                                RedirecToUrl(UrlRedirect);
+                            }
+                        },
+                    });
+                    return false;
+                }
+            });
+        });
+    </script>
+}
