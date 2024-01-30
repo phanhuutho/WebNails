@@ -9,6 +9,10 @@ using System.Configuration;
 using Newtonsoft.Json;
 using System.Web.Routing;
 using WebNails.Models;
+using System.Data.SqlClient;
+using Dapper;
+using System.Data;
+using System.Web.Security;
 
 namespace WebNails.Controllers
 {
@@ -58,6 +62,7 @@ namespace WebNails.Controllers
         [HttpPost]
         public ActionResult Process(string amount, string stock, string email, string message)
         {
+            var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = amount ?? "1";
@@ -69,8 +74,27 @@ namespace WebNails.Controllers
             cookieDataBefore["Email"] = email;
             cookieDataBefore["Stock"] = stock;
             cookieDataBefore["Message"] = message;
+            cookieDataBefore["Guid"] = strID.ToString();
             cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
             Response.Cookies.Add(cookieDataBefore);
+
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var Domain = Request.Url.Host;
+                var Transactions = GenerateUniqueCode();
+                var objResult = sqlConnect.Execute("spInfoPaypal_InsertBefore", new
+                {
+                    strID = strID,
+                    strDomain = Domain,
+                    strTransactions = Transactions,
+                    strCode = Transactions,
+                    strOwner = EmailPaypal,
+                    strStock = stock,
+                    strEmail = email,
+                    intAmount = int.Parse(amount),
+                    strMessage = message
+                }, commandType: CommandType.StoredProcedure);
+            }
 
             return View();
         }
@@ -102,6 +126,7 @@ namespace WebNails.Controllers
             var strEmail = string.Empty;
             var strStock = string.Empty;
             var strMessage = string.Empty;
+            var strID = new Guid();
 
             HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
             if (cookieDataBefore != null)
@@ -110,6 +135,7 @@ namespace WebNails.Controllers
                 strEmail = cookieDataBefore["Email"];
                 strStock = cookieDataBefore["Stock"];
                 strMessage = cookieDataBefore["Message"];
+                strID = Guid.Parse(cookieDataBefore["Guid"]);
             }
 
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
@@ -118,9 +144,22 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                SendMailToOwner(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToBuyer(strAmount, strStock, strEmail, strMessage, string.Format("{0}", TempData["PayerID"]));
-                SendMailToReceiver(strStock, strEmail, strAmount, string.Format("{0}", TempData["PayerID"]));
+                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+                {
+                    var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = strID }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                    if(info != null)
+                    {
+                        var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = strID, bitIsUsed = true }, commandType: CommandType.StoredProcedure);
+
+                        if(objResult > 0)
+                        {
+                            SendMailToOwner(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code);
+                            SendMailToBuyer(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code);
+                            SendMailToReceiver(strStock, strEmail, string.Format("{0}", strAmount), info.Code);
+                        }
+                    }
+                }    
             }
             else
             {
@@ -215,6 +254,155 @@ namespace WebNails.Controllers
                     mySmtpClient.Send(mail);
                 }
             }
+        }
+
+        public ActionResult Login()
+        {
+            if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
+            {
+                return RedirectToAction("GiftManage");
+            }
+            return View(new LoginModel());
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginModel model)
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var queryString = Request.UrlReferrer.Query;
+
+                var queryDictionary = HttpUtility.ParseQueryString(queryString);
+
+                var Domain = Request.Url.Host;
+
+                var checklogin = sqlConnect.Query("spUserSite_GetByUsernameAndPassword", new { strUsername = model.Username, strPassword = model.Password, strDomain = Domain }, commandType: CommandType.StoredProcedure).Count() == 1;
+                if (checklogin)
+                {
+                    var ticket = new FormsAuthenticationTicket(1, model.Username, System.DateTime.Now, System.DateTime.Now.AddHours(1), true, "UserLogged", FormsAuthentication.FormsCookiePath);
+                    var strEncrypt = FormsAuthentication.Encrypt(ticket);
+                    var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, strEncrypt);
+                    Response.Cookies.Add(cookie);
+
+                    if (queryDictionary.Count > 0)
+                    {
+                        return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
+                    }
+                    else
+                    {
+                        return Json(new { ReturnUrl = "/gift-manage.html", IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
+                    }
+                }
+                else
+                {
+                    return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = false, Message = "Login Fail" }, JsonRequestBehavior.AllowGet);
+                }
+            }
+        }
+
+        public ActionResult GiftManage()
+        {
+            if(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
+            {
+                return View();
+            }
+            return RedirectToAction("Login");
+        }
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            var cookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            if (cookie != null)
+            {
+                cookie.Expires = System.DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookie);
+            }
+            return RedirectToAction("Login");
+        }
+
+        public ActionResult GetGiftManage(string search = "")
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var Domain = Request.Url.Host;
+
+                var intSkip = Utilities.PagingHelper.Skip;
+
+                var param = new DynamicParameters();
+                param.Add("@intSkip", intSkip);
+                param.Add("@intTake", Utilities.PagingHelper.CountSort);
+                param.Add("@strDomain", Domain);
+                param.Add("@strValue", search);
+                param.Add("@intTotalRecord", dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                var objResult = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByNailDomain", param, commandType: CommandType.StoredProcedure);
+
+                ViewBag.Count = param.Get<int>("@intTotalRecord");
+
+                return PartialView("_GetTable_GiftManage", objResult);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult UpdateCompleted(Guid id)
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = id, bitIsUsed = true}, commandType: CommandType.StoredProcedure);
+
+                if(objResult > 0)
+                {
+                    return Json(new { Message = "Update completed success !" });
+                }
+                else
+                {
+                    return Json(new { Message = "Update completed fail !" });
+                }
+            }
+        }
+
+        [HttpPost]
+        public ActionResult SendMail(Guid id)
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = id }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                if(info != null)
+                {
+                    var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = id, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
+
+                    if(objResult > 0)
+                    {
+                        SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
+                        SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
+                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code);
+                    }
+
+                    return Json(new { Message = "Send mail success !" });
+                }
+                else
+                {
+                    return Json(new { Message = "Send mail fail !" });
+                }
+            }
+        }
+
+        private static Random random = new Random();
+        private string GenerateUniqueCode()
+        {
+            var strYear = string.Format("{0:yyyy}", DateTime.Now);
+            var strDay = string.Format("{0:ddd dd MMM}", DateTime.Now);
+            strDay = String.Join("", strDay.Split(new char[] { ' ' }));
+            string strReverse = string.Empty;
+            for (int i = strDay.Length - 1; i >= 0; i--)
+            {
+                strReverse += strDay[i];
+            }
+            var strTimes = string.Format("{0:HHmmss}", DateTime.Now);
+
+            var result = string.Format("{0}{1}{2}", strYear, strReverse, strTimes).ToUpper();
+            return result;
         }
     }
 }

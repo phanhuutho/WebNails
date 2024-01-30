@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Gift Manage";
+    var page = 1;
+    var search = string.Empty;
+    if(Request["page"] != null)
+    {
+        page = int.Parse(Request["page"]);
+    }
+    if (Request["search"] != null)
+    {
+        search = Request["search"];
+    }
+}
+
+@section css{
+    <style type="text/css">
+        .bg-main {
+            background: #ffffff;
+        }
+        #gift-manage {
+            min-height: 600px;
+            background: #ffffff;
+        }
+    </style>
+}
+<main class="bg-main mt-4">
+    <div class="container-lg">
+        <div class="row justify-content-center h-100">
+            <div class="col-12 d-flex justify-content-center h-100 align-items-center w-100" id="gift-manage">
+                <div class="row w-100">
+                    <div class="col-12 my-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Gift Manage</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search" id="Search" name="Search" value="@search">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-search" onclick="GetGiftManage(1)">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 my-3" id="gird-view">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section modal{
+    <div class="modal fade" id="myModalMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h5 class="modal-title" id="myModalLabel">Message</h5>
+                </div>
+                <div class="modal-body">
+                    <div id="alert-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section scripts{
+    <script type="text/javascript">
+        ActiveMenu("menu-gift-manage");
+
+        $(document).ready(function () {
+            GetGiftManage(parseInt('@(page)'));
+        });
+
+        function AlertMessage(strMessage) {
+            $('#alert-message').html("");
+            $('#alert-message').html(strMessage);
+            $('#myModalMessage').modal("show");
+        }
+
+        function GetGiftManage(page) {
+            $.ajax({
+                type: "GET",
+                url: "/get-gift-manage.html",
+                data: { search: $("#Search").val(), page: page },
+                success: function (html) {
+                    $("#gird-view").html("").append(html);
+                }
+            });
+        }
+
+        function UpdateCompleted(guid) {
+            if (confirm("Are you sure completed ?")) {
+                $.ajax({
+                    type: "POST",
+                    url: "/update-complete.html",
+                    data: { id: guid },
+                    success: function (result) {
+                        AlertMessage(result.Message);
+                        GetGiftManage(parseInt('@(page)'));
+                    }
+                });
+            }
+        }
+
+        function SendMail(guid) {
+            if (confirm("Are you sure send mail ?")) {
+                $.ajax({
+                    type: "POST",
+                    url: "/send-mail.html",
+                    data: { id: guid },
+                    success: function (result) {
+                        AlertMessage(result.Message);
+                        GetGiftManage(parseInt('@(page)'));
+                    }
+                });
+            }
+        }
+    </script>
+}

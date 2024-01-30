@@ -374,6 +374,12 @@
     .slider-home .sliders .slider-2 .box-image .box-inner{
         margin-top: 45px;
     }
+    .menu-desktop .list-inline > li {
+        margin: 0 5px;
+    }
+    .menu-desktop .list-inline > li > a {
+        font-size: 0.8em;
+    }
 }
 @media (min-width: 1200px) {
 
