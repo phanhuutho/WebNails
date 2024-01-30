@@ -253,6 +253,8 @@ namespace WebNails.Controllers
                         <p>Code: <strong>{strCode}</strong></p><br/>
 					    <p>Thank you!</p> 
                         <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+
+                    SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
                     mySmtpClient.UseDefaultCredentials = false;
                     mySmtpClient.Credentials = networkCredential;
@@ -262,7 +264,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode)
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
