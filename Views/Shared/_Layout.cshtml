@@ -68,9 +68,9 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @*<li class="list-inline-item">
+                            <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
-                            </li>*@
+                            </li>
                             @*<li class="list-inline-item">
 		                        <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
 	                        </li>*@
@@ -86,7 +86,7 @@
                             @*<li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Booking</a>
                             </li>*@
-                            @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
+                            @*@if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
                             { 
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gift-manage" href="/gift-manage.html">Gift Manage</a>
@@ -94,7 +94,7 @@
                             }
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-manage" href=""></a>
-                            </li>
+                            </li>*@
                         </ul>
                     </div>
                 </div>
@@ -108,10 +108,10 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                @*<li>
+                <li>
                     <a href="/price-list.html">Price List</a>
-                </li>*@
-                        @*<li>
+                </li>
+                @*<li>
 		            <a href="/gallery.html">Gallery</a>
                 </li>*@
                 <li>
@@ -123,7 +123,7 @@
                 <li>
                     <a href="/contact.html">Contact</a>
                 </li>
-                @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
+                @*@if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
                 { 
                     <li>
                         <a href="/gift-manage.html">Gift Manage</a>
@@ -131,7 +131,7 @@
                 }
                 <li>
                     <a id="mobile-menu-manage" href=""></a>
-                </li>
+                </li>*@
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
                         <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
@@ -242,7 +242,7 @@
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/js/site.js"></script>
     @RenderSection("scripts", required: false)
-    <script type="text/javascript">
+    @*<script type="text/javascript">
         var menu_manage = {
             href: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "/logout.html" : "/login.html")",
             text: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "Logout" : "Login")"
@@ -254,6 +254,6 @@
             $("#mobile-menu-manage").attr("href", menu_manage.href);
             $("#mobile-menu-manage").text(menu_manage.text);
         });
-    </script>
+    </script>*@
 </body>
 </html>
