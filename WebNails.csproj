@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.1.28\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -130,10 +133,14 @@
     <Compile Include="Models\CouponModel.cs" />
     <Compile Include="Models\GalleryModel.cs" />
     <Compile Include="Models\InfoModel.cs" />
+    <Compile Include="Models\InfoPaypal.cs" />
+    <Compile Include="Models\InfoPaypalModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\RegisterCouponModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\PagingHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\animate.min.css" />
@@ -207,7 +214,10 @@
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
     <Content Include="Content\images\contact\contact_image_4.jpg" />
+    <Content Include="Content\images\contact\cumming.jpg" />
+    <Content Include="Content\images\contact\jefferson.jpg" />
     <Content Include="Content\images\contact\service_bg.jpg" />
+    <Content Include="Content\images\contact\westside-midtown.jpg" />
     <Content Include="Content\images\dots.png" />
     <Content Include="Content\images\e-gift\gift_1.jpg" />
     <Content Include="Content\images\e-gift\gift_10.jpg" />
@@ -441,6 +451,9 @@
     <Content Include="Views\Home\register_coupon.cshtml" />
     <Content Include="Views\Home\register_coupon_success.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\GiftManage.cshtml" />
+    <Content Include="Views\Home\_GetTable_GiftManage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

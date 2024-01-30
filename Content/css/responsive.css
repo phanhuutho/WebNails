@@ -466,6 +466,12 @@
     footer p {
         font-size: 12px;
     }
+    .menu-desktop .list-inline > li {
+        margin: 0 5px;
+    }
+    .menu-desktop .list-inline > li > a {
+        font-size: 0.8em;
+    }
 }
 @media (min-width: 1200px) {
 
