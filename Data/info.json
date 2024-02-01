@@ -1,11 +1,11 @@
 {
-  "Name": "#1 Nail Spa Cary",
-  "HyperLinkTell": "tel:(919)3637272",
-  "TextTell": "(919)-363-7272",
-  "GooglePlus": "https://www.google.com/search?q=%231+nails+cary+27519",
-  "Address": "2731 NC-55, Cary, NC 27519",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/SkMb1XWbHYZBi9P79",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12946.446238997583!2d-78.872795!3d35.784917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aced0896858375%3A0x82d969285782f19c!2s%231%20Nail%20Spa%20Cary%20(Online%20booking%20available)!5e0!3m2!1sen!2s!4v1705941216528!5m2!1sen!2s",
+  "Name": "QD Nails And Spa",
+  "HyperLinkTell": "tel:(619)2995275",
+  "TextTell": "(619)-299-5275",
+  "GooglePlus": "https://www.google.com/search?q=QD+Nails+Spa+92104",
+  "Address": "2839 University Ave, San Diego, CA 92104",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/nMFsffYSjEufM3Mv7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13422.634988323665!2d-117.1325402!3d32.748251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954f152afb913%3A0x426dc39dfe3508a7!2sQD%20Nails%20And%20Spa!5e0!3m2!1sen!2s!4v1706718727941!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -14,7 +14,28 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
