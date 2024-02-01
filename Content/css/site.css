@@ -1,6 +1,6 @@
 /*root*/
 :root {
-    --bg-site: #dd9841;
+    --bg-site: #ffffff;
     --color-theme: #921266;
     --color-menu-legend: #921266;
     --color-black: #000000;
@@ -121,8 +121,12 @@ a:active,a:hover {
     border-color: var(--color-theme);
 }
 
+.border {
+    border-color: var(--color-theme) !important;
+}
+
 .border-theme {
-    border-color: var(--color-theme);
+    border-color: var(--color-theme) !important;
     border-width: 5px;
     opacity: 1;
 }
