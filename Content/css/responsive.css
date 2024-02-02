@@ -346,11 +346,11 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end !important;
-        background-position: 30% 50% !important;
+        background-position: 40% 50% !important;
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 5% 50% !important;
+        background-position: 50% 50% !important;
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
@@ -362,7 +362,7 @@
 
     }
     .bg .bg-contact {
-        background-position: 35% 50% !important;
+        background-position: 55% 50% !important;
         background-image: url(../images/banner/contact/contact_banner_portrait.jpg);
         align-items: flex-end !important;
     }
@@ -428,7 +428,7 @@
         background-position: 50% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50%;
+        background-position: 95% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
@@ -436,8 +436,8 @@
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50%;
-        align-items: center;
+        background-position: 27.5% 50%;
+        align-items: flex-end;
     }
     .slider-banner .slider-1 .box-slider {
         background: rgba(175,195,230,1);
@@ -460,7 +460,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 85% 50%;
+        background-position: 30% 50%;
         align-items: flex-end;
     }
     footer p {
