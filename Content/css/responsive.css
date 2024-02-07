@@ -199,7 +199,7 @@
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end !important;
         background-image: url(../images/banner/home/home_banner_2_portrait.jpg) !important;
-        background-position: 30% 50% !important;
+        background-position: 90% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -215,7 +215,7 @@
     }
     .slider-home .sliders .slider-4 .box-image .image {
         align-items: flex-end !important;
-        background-position: 65% 50% !important;
+        background-position: 50% 50% !important;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-image .box-inner {
@@ -229,7 +229,7 @@
 
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 65% 50% !important;
+        background-position: 0% 50% !important;
         background-image: url(../images/banner/home/home_banner_5_portrait.jpg) !important;
         align-items: flex-end !important;
     }
@@ -346,15 +346,15 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end !important;
-        background-position: 40% 50% !important;
+        background-position: 60% 50% !important;
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 60% 50% !important;
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
-        align-items: flex-end !important;
+        align-items: center !important;
         background-position: 50% 50% !important;
         background-image: url(../images/banner/slider/e-gift-portrait.jpg) !important;
     }
@@ -362,7 +362,7 @@
 
     }
     .bg .bg-contact {
-        background-position: 55% 50% !important;
+        background-position: 50% 50% !important;
         background-image: url(../images/banner/contact/contact_banner_portrait.jpg);
         align-items: flex-end !important;
     }
@@ -371,7 +371,7 @@
     }
     .bg-contact .description {
         line-height: 1.25 !important;
-        font-size: 36px !important;
+        font-size: 38px !important;
     }
     .modal-body-content ul li {
         font-size: 11px;
@@ -410,34 +410,34 @@
         background-position: 100% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 25% 50%;
+        background-position: 100% 50%;
         justify-content: center;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
-        background-position: 25% 50%;
+        background-position: 40% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 30% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 50% 50%;
+        background-position: 10% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 95% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 55% 50%;
+        background-position: 35% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 27.5% 50%;
-        align-items: flex-end;
+        background-position: 50% 50%;
+        align-items: center;
     }
     .slider-banner .slider-1 .box-slider {
         background: rgba(175,195,230,1);
@@ -458,7 +458,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 30% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     footer p {

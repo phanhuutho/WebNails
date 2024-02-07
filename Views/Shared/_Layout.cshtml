@@ -84,7 +84,7 @@
                                 <a class="list-inline-item-link" id="menu-contact" href="/contact.html">Contact</a>
                             </li>
                             @*<li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Booking</a>
+                                <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
                             </li>*@
                             @*@if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name)) 
                             { 
@@ -134,7 +134,7 @@
                 </li>*@
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
-                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
+                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
                     </a>
                 </li>
             </ul>
