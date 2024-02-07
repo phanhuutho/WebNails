@@ -1,11 +1,11 @@
 {
-  "Name": "QD Nails And Spa",
-  "HyperLinkTell": "tel:(619)2995275",
-  "TextTell": "(619)-299-5275",
-  "GooglePlus": "https://www.google.com/search?q=QD+Nails+Spa+92104",
-  "Address": "2839 University Ave, San Diego, CA 92104",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/nMFsffYSjEufM3Mv7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13422.634988323665!2d-117.1325402!3d32.748251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954f152afb913%3A0x426dc39dfe3508a7!2sQD%20Nails%20And%20Spa!5e0!3m2!1sen!2s!4v1706718727941!5m2!1sen!2s",
+  "Name": "M5 Nails Adams Morgan DC",
+  "HyperLinkTell": "tel:(202)2901880",
+  "TextTell": "(202)-290-1880",
+  "GooglePlus": "https://www.google.com/search?q=M5+Nails+20009",
+  "Address": "2305 18th St NW #101, Washington, DC 20009",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/kzWKPT577njiDJzPA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12416.72315590047!2d-77.0414628!3d38.9198451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7dba8689239%3A0x6e73dbc482f4209f!2sM5%20Nails%20Adams%20Morgan%20DC%20(%245%20OFF%20Pedicure)!5e0!3m2!1sen!2s!4v1707239621845!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -14,28 +14,7 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
