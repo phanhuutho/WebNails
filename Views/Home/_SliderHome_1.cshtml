@@ -4,11 +4,11 @@
             <div class="box-image">
                 <div class="image">
                     <div class="container-xl">
-                        <div class="row justify-content-center justify-content-md-start">
-                            <div class="col-xl-5 col-lg-5 col-md-12">
+                        <div class="row justify-content-center justify-content-md-end">
+                            <div class="col-xl-6 col-lg-4 col-md-12">
                                 <div class="box-inner text-center py-4" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1>WELCOME TO</h1>
-                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-1"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name)))</strong></h2>
+                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-1"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Spa", "Spa<br/>")))</strong></h2>
                                     <a class="btn btn-warning btn-theme btn-more btn-none-border" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
                                         <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "APPOINTMENT" : "CALL US")
                                     </a>
@@ -23,7 +23,7 @@
             <div class="box-image">
                 <div class="image">
                     <div class="container-xl">
-                        <div class="row justify-content-center justify-content-md-end">
+                        <div class="row justify-content-center">
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="box-inner text-center py-3" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="font-Prata">Made For You</h1>
@@ -40,9 +40,10 @@
                 <div class="image">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
+                            <div class="col-xl-6 col-lg-9 col-md-12">
                                 <div class="box-inner text-center py-5" data-animation-in="animate__animated animate__fadeInDown">
-                                    <h1 class="font-Prata" data-animation-in="animate__animated animate__fadeInDown">Waxing</h1>
+                                    <h1 class="font-Prata" data-animation-in="animate__animated animate__fadeInDown">Wellness And Spa</h1>
+                                    <p data-animation-in="animate__animated animate__fadeInDown">Dedicated to inspiring Life in Balance.</p>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
             <div class="box-image">
                 <div class="image">
                     <div class="container-lg">
-                        <div class="row justify-content-center justify-content-md-end">
+                        <div class="row justify-content-center justify-content-md-start">
                             <div class="col-xl-3 col-lg-4 col-md-12">
                                 <div class="box-inner text-center py-5 mt-5" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="font-Prata" data-animation-in="animate__animated animate__fadeInDown">Desire meets nail ideas</h1>
@@ -69,8 +70,8 @@
             <div class="box-image">
                 <div class="image">
                     <div class="container-xl">
-                        <div class="row justify-content-center justify-content-md-end">
-                            <div class="col-xl-4 col-lg-6 col-md-12">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="box-inner text-center py-5" data-animation-in="animate__animated animate__backInUp">
                                     <h1 class="font-Prata">All Services</h1>
                                 </div>
