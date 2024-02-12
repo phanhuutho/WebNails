@@ -3,16 +3,20 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
     color: var(--color-black);
-    background: var(--color-white);
+    background: var(--bg-site);
     font-size: 15px;
 }
 .logo-footer {
     max-width: 120px;
-    margin: 10px 0px;
+    margin: 5px 0px;
     background: var(--color-white);
+    padding: var(--padding-box);
+    border-radius: 50%;
 }
 .logo-footer img {
-    background: var(--color-white);
+    padding: var(--padding-box);
+    background: var(--color-theme);
+    border-radius: 50%;
 }
 footer .legend {
     color: var(--color-theme);
