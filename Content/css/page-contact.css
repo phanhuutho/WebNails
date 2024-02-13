@@ -2,7 +2,7 @@
     position: relative;
 }
 .bg-main {
-    background: var(--bg-site);
+    background: var(--color-white);
 }
 .bg-main .bg {
 
