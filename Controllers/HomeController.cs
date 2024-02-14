@@ -259,7 +259,7 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
-					    <p>You have a gift from <strong>{strNameBuyer}<{strEmailBuyer}></strong>.</p>
+					    <p>You have a gift from <strong>{strNameBuyer} - ({strEmailBuyer})</strong>.</p>
                         <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
                         <p>Amount: <strong>${strAmount} USD</strong>.</p>
                         <p>Code: <strong>{strCode}</strong></p><br/>
