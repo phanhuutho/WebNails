@@ -154,3 +154,10 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 .qpp_label_tiny.qpp_input_content label {
 	font-size: 0.6em;
 }
+
+.bg-main {
+	border: 5px solid var(--bg-site);
+	border-left: 0;
+	border-right: 0;
+	position: relative;
+}
