@@ -15,6 +15,8 @@ namespace WebNails.Models
         public int Amount { get; set; }
         public string Stock { get; set; } //Email Receiver
         public string Email { get; set; } //Email Buyer
+        public string NameReceiver { get; set; } //Name Receiver
+        public string NameBuyer { get; set; } //Name Buyer
         public string Message { get; set; }
         public PaymentStatus Status { get; set; } //0: pending; 1:success
         public bool IsUsed { get; set; }

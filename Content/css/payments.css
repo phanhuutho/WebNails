@@ -156,6 +156,8 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 }
 
 .bg-main {
-	background: var(--color-theme);
+	border: 5px solid var(--bg-site);
+	border-left: 0;
+	border-right: 0;
 	position: relative;
 }

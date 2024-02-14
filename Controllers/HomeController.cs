@@ -87,7 +87,7 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult Process(string amount, string stock, string email, string message, string img = "")
+        public ActionResult Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "")
         {
             var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
@@ -95,6 +95,8 @@ namespace WebNails.Controllers
             ViewBag.Amount = amount ?? "1";
             ViewBag.Stock = stock ?? "";
             ViewBag.Email = email ?? "";
+            ViewBag.NameReceiver = name_receiver ?? "";
+            ViewBag.NameBuyer = name_buyer ?? "";
             ViewBag.Img = img;
 
             var cookieDataBefore = new HttpCookie("DataBefore");
@@ -102,6 +104,8 @@ namespace WebNails.Controllers
             cookieDataBefore["Email"] = email;
             cookieDataBefore["Stock"] = stock;
             cookieDataBefore["Message"] = message;
+            cookieDataBefore["NameReceiver"] = name_receiver;
+            cookieDataBefore["NameBuyer"] = name_buyer;
             cookieDataBefore["Img"] = img;
             cookieDataBefore["Guid"] = strID.ToString();
             cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
@@ -120,6 +124,8 @@ namespace WebNails.Controllers
                     strOwner = EmailPaypal,
                     strStock = stock,
                     strEmail = email,
+                    strNameReceiver = name_receiver,
+                    strNameBuyer = name_buyer,
                     intAmount = int.Parse(amount),
                     strMessage = message
                 }, commandType: CommandType.StoredProcedure);
@@ -155,6 +161,8 @@ namespace WebNails.Controllers
             var strAmount = string.Empty;
             var strEmail = string.Empty;
             var strStock = string.Empty;
+            var strNameReceiver = string.Empty;
+            var strNameBuyer = string.Empty;
             var strMessage = string.Empty;
             var strImg = string.Empty;
             var strID = new Guid();
@@ -165,6 +173,8 @@ namespace WebNails.Controllers
                 strAmount = cookieDataBefore["Amount"];
                 strEmail = cookieDataBefore["Email"];
                 strStock = cookieDataBefore["Stock"];
+                strNameReceiver = cookieDataBefore["NameReceiver"];
+                strNameBuyer = cookieDataBefore["NameBuyer"];
                 strMessage = cookieDataBefore["Message"];
                 strImg = cookieDataBefore["Img"];
                 strID = Guid.Parse(cookieDataBefore["Guid"]);
@@ -176,7 +186,7 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                var strCode = GenerateUniqueCode();
+                //var strCode = GenerateUniqueCode();
                 using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
                 {
                     var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = strID }, commandType: CommandType.StoredProcedure).FirstOrDefault();
@@ -187,9 +197,9 @@ namespace WebNails.Controllers
 
                         if(objResult > 0)
                         {
-                            SendMailToOwner(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strImg);
-                            SendMailToBuyer(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strImg);
-                            SendMailToReceiver(strStock, strEmail, string.Format("{0}", strAmount), info.Code, strImg);
+                            SendMailToOwner(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg);
+                            SendMailToBuyer(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg);
+                            SendMailToReceiver(strStock, strEmail, string.Format("{0}", strAmount), info.Code, strNameReceiver, strNameBuyer, strImg);
                         }
                     }
                 }    
@@ -205,7 +215,7 @@ namespace WebNails.Controllers
             return View();
         }
 
-        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
+        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -218,7 +228,9 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: <strong>${strAmount} USD</strong></p>
+					    <p>Receiver name: {strNameReceiver}</p>
 					    <p>Receiver email: {strStock}</p>
+					    <p>Buyer name: {strNameBuyer}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
                         <p>Code: <strong>{strCode}</strong></p> 
@@ -234,12 +246,12 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode, string img = "")
+        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode, string strNameReceiver, string strNameBuyer, string img = "")
         {
             if (!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmailReceiver)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmailReceiver, strNameReceiver, System.Text.Encoding.UTF8)))
                 {
                     mail.HeadersEncoding = System.Text.Encoding.UTF8;
                     mail.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -247,7 +259,7 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
-					    <p>You have a gift from  <strong>{strEmailBuyer}</strong>.</p>
+					    <p>You have a gift from <strong>{strNameBuyer}<{strEmailBuyer}></strong>.</p>
                         <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
                         <p>Amount: <strong>${strAmount} USD</strong>.</p>
                         <p>Code: <strong>{strCode}</strong></p><br/>
@@ -264,7 +276,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string img = "")
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -276,7 +288,9 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
+					   <p>Receiver name: {strNameReceiver}</p>
 					   <p>Receiver email: {strStock}</p>
+					   <p>Buyer name: {strNameBuyer}</p>
 					   <p>Buyer email: {strEmail}</p>
 					   <p>Comment: {strMessage}</p>
                        <p>Code: <strong>{strCode}</strong></p> 
@@ -456,9 +470,9 @@ namespace WebNails.Controllers
 
                     if(objResult > 0)
                     {
-                        SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
-                        SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code);
-                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code);
+                        SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer);
+                        SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer);
+                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
                     }
 
                     return Json(new { Message = "Send mail success !" });
