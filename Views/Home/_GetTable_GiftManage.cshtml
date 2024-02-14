@@ -29,8 +29,8 @@
                             <td>@indexCurrent</td>
                             <td>@(string.Format("{0:MM/dd/yyyy}", item.DateTimeCreate))</td>
                             <td>@(item.Transactions)</td>
-                            <td>@(item.Email)</td>
-                            <td>@(item.Stock)</td>
+                            <td>@(item.NameBuyer) - @(item.Email)</td>
+                            <td>@(item.NameReceiver) - @(item.Stock)</td>
                             <td>@(string.Format("${0}",item.Amount))</td>
                             <td>
                                 @if (item.Status == PaymentStatus.Success)
