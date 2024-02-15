@@ -183,9 +183,9 @@ namespace WebNails.Controllers
 
                     if(info != null)
                     {
-                        var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = strID, bitIsUsed = true }, commandType: CommandType.StoredProcedure);
+                        var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = strID, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
 
-                        if(objResult > 0)
+                        if (objResult > 0)
                         {
                             SendMailToOwner(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strImg);
                             SendMailToBuyer(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strImg);
