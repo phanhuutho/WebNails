@@ -107,8 +107,8 @@ a:active,a:hover {
     width: 60%;
 }
 .btn-theme {
-    background: var(--color-theme);
-    border-color: var(--color-theme);
+    background: var(--bg-site);
+    border-color: var(--bg-site);
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-weight: bold;
@@ -117,8 +117,8 @@ a:active,a:hover {
 }
 
 .bg-theme {
-    background: var(--color-theme);
-    border-color: var(--color-theme);
+    background: var(--bg-site);
+    border-color: var(--bg-site);
 }
 
 .border {
