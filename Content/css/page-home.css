@@ -81,7 +81,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 90%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;

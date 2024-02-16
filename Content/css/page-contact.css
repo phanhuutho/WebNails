@@ -7,6 +7,12 @@
 .bg-main .bg {
 
 }
+.bg-main .contact-banner {
+    height: 810px;
+    border: 5px solid var(--bg-site);
+    border-left: 0;
+    border-right: 0;
+}
 .bg-contact .overlay {
     background-color: rgba(0, 0, 0, 0.05);
 }

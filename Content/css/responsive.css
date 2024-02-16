@@ -251,7 +251,7 @@
         font-size: 36px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner h1 {
-        font-size: 34px;
+        font-size: 32px;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner p {
         font-size: 28px;
@@ -362,7 +362,7 @@
 
     }
     .bg .bg-contact {
-        background-position: 10% 50% !important;
+        background-position: 50% 50% !important;
         background-image: url(../images/banner/contact/contact_banner_portrait.jpg);
         align-items: flex-end !important;
     }
@@ -460,7 +460,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 82.5% 50%;
+        background-position: 0% 50%;
         align-items: flex-end;
     }
     footer p {
