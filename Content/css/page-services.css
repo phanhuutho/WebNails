@@ -17,7 +17,7 @@ main {
 }
 .box-text {
     padding: 10px;
-    background-color: var(--bg-site);
+    background-color: var(--color-theme);
     height: 60px;
     width: 100%;
     display: flex;
