@@ -292,9 +292,6 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
-    <Content Include="Content\images\popup\coupon-02.jpg" />
-    <Content Include="Content\images\popup\coupon-03.jpg" />
-    <Content Include="Content\images\popup\coupon-04.jpg" />
     <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\price-list\prices-01.jpg" />
