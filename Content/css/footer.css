@@ -35,6 +35,13 @@ footer .circle span{
     line-height: 35px;
 }
 
+.multiple-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 140px;
+}
+
 .tel {
     position: fixed;
     bottom: 20px;
@@ -49,31 +56,33 @@ footer .circle span{
     border: 1px solid #FFFFFF;
 }
 .tel-withtext {
-    position: fixed;
-    bottom: 10px;
-    right: 5px;
-    width: 50px;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    width: 140px;
     padding: 5px;
-    background: var(--color-text-theme);
+    background: var(--color-theme);
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     box-shadow: 0 0 4px 0 rgba(2,2,2,0.28);
     border: 1px solid #FFFFFF;
+    margin-top: 8px;
 }
 
 .booking {
-    position: fixed;
-    bottom: 65px;
-    right: 5px;
-    width: 50px;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    width: 140px;
     padding: 5px;
-    background: var(--color-text-theme);
+    background: var(--color-theme);
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     box-shadow: 0 0 4px 0 rgba(2,2,2,0.28);
     border: 1px solid #FFFFFF;
+    margin-top: 8px;
 }
 .tel .fa{
     color: #FFFFFF;
@@ -83,8 +92,8 @@ footer .circle span{
 
 .tel-withtext a, .booking a, .tel-withtext .fa, .booking .fa {
     color: #FFFFFF;
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .tel-withtext a, .booking a {

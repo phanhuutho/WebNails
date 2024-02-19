@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    var ListOtherPhone = new List<dynamic>();
+    ListOtherPhone.Add(new { HyperLinkTell = "tel:(840)2201009", TextTell = "(840)-220-1009" });
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -167,6 +171,12 @@
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
+                    @{
+                        foreach (var item in ListOtherPhone)
+                        {
+                            <p class="text-left"><b style="visibility:hidden;">Tel:</b> <a href="@item.HyperLinkTell">@item.TextTell</a></p>
+                        }
+                    }
                 </div>
                 <div class="col-lg-3 col-md-4 mb-3 pt-4">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>
@@ -218,26 +228,31 @@
         </div>
     </footer>
     <!--Footer-->
-    <div class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "tel-withtext" : "tel")">
-        <a href="@ViewBag.HyperLinkTell">
-            @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
-            {
-                <i class="fa fa-phone-square"></i>
-            }
-            else
-            {
-                <i class="fa fa-phone"></i>
-            }
-        </a>
-    </div>
-    @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
-    {
-        <div class="booking">
-            <a href="@ViewBag.LinkBookingAppointment">
-                <i class="fa fa-calendar"></i>
+    <div class="multiple-contact">
+        <div class="tel-withtext">
+            <a href="@ViewBag.HyperLinkTell">
+                <i class="fa fa-phone-square"></i> @ViewBag.TextTell
             </a>
         </div>
-    }
+        @{
+            foreach (var item in ListOtherPhone)
+            {
+                <div class="tel-withtext">
+                    <a href="@item.HyperLinkTell">
+                        <i class="fa fa-phone-square"></i> @item.TextTell
+                    </a>
+                </div>
+            }
+        }
+        @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+        {
+            <div class="booking">
+                <a href="@ViewBag.LinkBookingAppointment">
+                    <i class="fa fa-calendar"></i> Booking
+                </a>
+            </div>
+        }
+    </div>
     @RenderSection("modal", required: false)
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/js/site.js"></script>

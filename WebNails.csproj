@@ -317,12 +317,16 @@
     <Content Include="Content\images\services-detail\waxing-tinting.jpg" />
     <Content Include="Content\images\services\services_additional_services.jpg" />
     <Content Include="Content\images\services\services_bg.jpg" />
+    <Content Include="Content\images\services\services_brow_lamination.jpg" />
+    <Content Include="Content\images\services\services_builder_gel.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
     <Content Include="Content\images\services\services_facial.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
     <Content Include="Content\images\services\services_gel_x.jpg" />
+    <Content Include="Content\images\services\services_henna_brow.jpg" />
+    <Content Include="Content\images\services\services_lash_lift.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />
     <Content Include="Content\images\services\services_little_kids.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
@@ -331,6 +335,8 @@
     <Content Include="Content\images\services\services_nails_enhancements.jpg" />
     <Content Include="Content\images\services\services_pedicure.jpg" />
     <Content Include="Content\images\services\services_pedicure_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_permanent_make_up.jpg" />
+    <Content Include="Content\images\services\services_poly_gel.jpg" />
     <Content Include="Content\images\services\services_waxing.jpg" />
     <Content Include="Content\js\bootstrap-pdf-viewer.js" />
     <Content Include="Content\js\bootstrap.bundle.js" />

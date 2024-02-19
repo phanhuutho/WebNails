@@ -33,6 +33,10 @@
     },
     {
       "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    },
+    {
+      "Status": true,
       "Src": "/Content/images/price-list/prices-02.jpg"
     },
     {
@@ -46,10 +50,6 @@
     {
       "Status": true,
       "Src": "/Content/images/price-list/prices-05.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-06.jpg"
     },
     {
       "Status": true,
