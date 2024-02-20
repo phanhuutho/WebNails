@@ -467,10 +467,10 @@
         font-size: 12px;
     }
     .menu-desktop .list-inline > li {
-        margin: 0 4px;
+        margin: 0 3px;
     }
     .menu-desktop .list-inline > li > a {
-        font-size: 0.75em;
+        font-size: 0.65em;
     }
 }
 @media (min-width: 1200px) {
