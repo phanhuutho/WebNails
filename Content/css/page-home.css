@@ -476,7 +476,7 @@ main .contact .container{
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 15% 50%;
     background-size: cover !important;
 }
 
@@ -490,7 +490,7 @@ main .contact .container{
 .beauty-spa .box-image .image4{
     background-image: url(../images/home/home_service_acrylic.jpg);
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 75% 50%;
     background-size: cover !important;
 }
 
@@ -649,7 +649,7 @@ main .contact .container{
     height: 500px;
     background-image: url(../images/home/home_business.jpg);
     background-repeat: no-repeat !important;
-    background-position: 25% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
 }
 .e-gift {
@@ -683,7 +683,7 @@ main .contact .container{
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 50%;
+    background-position: 45% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{
