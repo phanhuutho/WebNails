@@ -48,10 +48,12 @@ a:active,a:hover {
     margin: 10px 0px;
     background: var(--bg-site);
     padding: var(--padding-box);
+    border-radius: 50%;
 }
 .logo img{
     padding: var(--padding-box);
-    background: var(--bg-site);
+    background: var(--bg-site); 
+    border-radius: 50%;
 }
 
 /*font*/
