@@ -1,29 +1,17 @@
 {
-  "Name": "Vibrant Nail Spa",
-  "HyperLinkTell": "tel:(909)4405812",
-  "TextTell": "(909)-440-5812",
-  "GooglePlus": "https://www.google.com/search?q=Vibrant+Nail+Spa+92376",
-  "Address": "160 W Baseline Rd, Rialto, CA 92376",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/iuCFwE3rh1fjRvZeA",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13211.682396893151!2d-117.3718727!3d34.1227824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34da6f37dd8d7%3A0x4a27f61773fb4277!2sVibrant%20Nail%20Spa%20(%245-%2415%20Bonus%20Card%2C%20%2410%20OFF%20%2610%25%20OFF%20Coupon%20)!5e0!3m2!1sen!2s!4v1708192523410!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/7d803a516463/customer/home",
+  "Name": "Super Nails & Spa",
+  "HyperLinkTell": "tel:(903)7875990",
+  "TextTell": "(903)-787-5990",
+  "GooglePlus": "https://www.google.com/search?q=Super+Nails+75701",
+  "Address": "1940 E SE Loop 323, Tyler, TX 75701",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/LQSNUJi8SM85xZip6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13487.98343195724!2d-95.275625!3d32.311965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8649cc48b8b46775%3A0x4d3b1cf83248e49!2sSuper%20Nails%20%26%20Spa%20(20%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1708880753948!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-04.jpg"
     }
   ],
   "Prices": [
@@ -33,27 +21,7 @@
     },
     {
       "Status": true,
-      "Src": "/Content/images/price-list/prices-06.jpg"
-    },
-    {
-      "Status": true,
       "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-07.jpg"
     }
   ],
   "Telegram": {
@@ -65,7 +33,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/supernailstylertx/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
