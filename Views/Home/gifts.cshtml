@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Gift Card";
     var aHref = ViewBag.HyperLinkTell;
-    var IsPayment = true;
+    var IsPayment = false;
     if (IsPayment)
     {
         aHref = Url.Action("Payment", "Home", null, Request.Url.Scheme);
