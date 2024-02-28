@@ -1,29 +1,20 @@
 {
-  "Name": "Super Nails & Spa",
-  "HyperLinkTell": "tel:(903)7875990",
-  "TextTell": "(903)-787-5990",
-  "GooglePlus": "https://www.google.com/search?q=Super+Nails+75701",
-  "Address": "1940 E SE Loop 323, Tyler, TX 75701",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/LQSNUJi8SM85xZip6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13487.98343195724!2d-95.275625!3d32.311965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8649cc48b8b46775%3A0x4d3b1cf83248e49!2sSuper%20Nails%20%26%20Spa%20(20%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1708880753948!5m2!1sen!2s",
+  "Name": "Nail Tech Spa & Waxing",
+  "HyperLinkTell": "tel:(301)4249492",
+  "TextTell": "(301)-424-9492",
+  "GooglePlus": "https://www.google.com/search?q=Nail+Tech+Spa+%26+Waxing+20850",
+  "Address": "394 Hungerford Dr, Rockville, MD 20850",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/c26caiNCzZtN9UM78",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12387.245752757717!2d-77.1510046!3d39.0879926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd75db2931d1%3A0xdebe0f7dbfdad4a9!2sNail%20Tech%20Spa%20%26%20Waxing%20(5%25-10%25%20OFF%20and%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1709142301287!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01-new.jpg"
+      "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    }
-  ],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -33,7 +24,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/supernailstylertx/",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"

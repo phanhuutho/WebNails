@@ -1,6 +1,9 @@
 ﻿@{ 
     var ListOtherPhone = new List<dynamic>();
-    ListOtherPhone.Add(new { HyperLinkTell = "tel:(840)2201009", TextTell = "(840)-220-1009" });
+    ListOtherPhone.Add(new { HyperLinkTell = "", TextTell = "" });
+
+    var Prices = (List<WebNails.Models.PricesModel>)ViewBag.Prices;
+    Prices = Prices.Where(x => !string.IsNullOrEmpty(x.Src) && x.Status).ToList();
 }
 <!DOCTYPE html>
 <html>
@@ -174,12 +177,6 @@
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
-                    @{
-                        foreach (var item in ListOtherPhone)
-                        {
-                            <p class="text-left"><b>Text Message:</b> <span>@item.TextTell</span></p>
-                        }
-                    }
                 </div>
                 <div class="col-lg-3 col-md-4 mb-3 pt-4">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>
