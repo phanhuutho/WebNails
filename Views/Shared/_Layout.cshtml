@@ -1,6 +1,6 @@
 ﻿@{ 
     var ListOtherPhone = new List<dynamic>();
-    ListOtherPhone.Add(new { HyperLinkTell = "", TextTell = "" });
+    //ListOtherPhone.Add(new { HyperLinkTell = "tel:(840)2201009", TextTell = "(840)-220-1009" });
 
     var Prices = (List<WebNails.Models.PricesModel>)ViewBag.Prices;
     Prices = Prices.Where(x => !string.IsNullOrEmpty(x.Src) && x.Status).ToList();
@@ -75,9 +75,12 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
-                            </li>
+                            @if(Prices.Count > 0) 
+                            { 
+                                <li class="list-inline-item">
+                                    <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
+                                </li>
+                            }
                             @*<li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
                                 </li>*@
@@ -118,9 +121,12 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                <li>
-                    <a href="/price-list.html">Price List</a>
-                </li>
+                @if(Prices.Count > 0) 
+                { 
+                    <li>
+                        <a href="/price-list.html">Price List</a>
+                    </li>
+                }
                 @*<li>
                         <a href="/gallery.html">Gallery</a>
                     </li>*@
@@ -177,6 +183,12 @@
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
                     <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
+                    @{
+                        foreach (var item in ListOtherPhone)
+                        {
+                            <p class="text-left"><b>Text Message:</b> <span>@item.TextTell</span></p>
+                        }
+                    }
                 </div>
                 <div class="col-lg-3 col-md-4 mb-3 pt-4">
                     <p class="legend"><strong>BUSINESS HOURS:</strong></p>

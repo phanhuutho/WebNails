@@ -8,7 +8,7 @@
                             <div class="col-xl-6 col-lg-4 col-md-12">
                                 <div class="box-inner text-center py-4" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1>WELCOME TO</h1>
-                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-1"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Spa", "Spa<br/>")))</strong></h2>
+                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-1"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Tech", "Tech<br/>")))</strong></h2>
                                     <a class="btn btn-warning btn-theme btn-more btn-none-border" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
                                         <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "BOOK APPOINTMENT" : "CALL US")
                                     </a>

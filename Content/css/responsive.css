@@ -118,10 +118,10 @@
     .logo-brand .navbar-brand {
         display: inline-block;
         height: 100%;
-        background: var(--color-black);
+        background: var(--color-white);
     }
     .logo-brand img {
-        background: var(--color-black);
+        background: var(--color-white);
     }
     .menu-desktop {
         display: none;
@@ -141,7 +141,7 @@
     }
     .menu-mobile-tablet .menu-bars .fa {
         font-size: 18px;
-        color: var(--color-white);
+        color: var(--color-theme);
     }
     .menu-mobile-tablet .logo-brand {
         text-align: center;

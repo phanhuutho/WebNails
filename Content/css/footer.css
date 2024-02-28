@@ -2,23 +2,23 @@
 footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     font-family: "PT Serif Caption";
-    color: var(--color-white);
-    background: var(--color-black);
+    color: var(--color-black);
+    background: var(--color-white);
     font-size: 15px;
 }
 .logo-footer {
     max-width: 120px;
-    margin: 10px 0px;
-    background: var(--color-black);
+    margin: 0px 0px;
+    background: var(--color-white);
 }
 .logo-footer img {
-    background: var(--color-black);
+    background: var(--color-white);
 }
 footer .legend {
     color: var(--color-theme);
 }
 footer a {
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
 }
 footer .circle{
