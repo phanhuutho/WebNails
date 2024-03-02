@@ -193,13 +193,13 @@
     }
     .slider-home .sliders .slider-1 .box-image .image {
         background-image: url(../images/banner/home/home_banner_1_portrait.jpg) !important;
-        background-position: 35% 50% !important;
-        align-items: flex-end !important;
+        background-position: 70% 50% !important;
+        align-items: flex-start !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        align-items: center !important;
+        align-items: flex-end !important;
         background-image: url(../images/banner/home/home_banner_2_portrait.jpg) !important;
-        background-position: 100% 50% !important;
+        background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
@@ -214,7 +214,7 @@
         margin: 0 auto;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        align-items: flex-end !important;
+        align-items: center !important;
         background-position: 40% 50% !important;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg) !important;
     }
@@ -229,9 +229,9 @@
 
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 40% 50% !important;
         background-image: url(../images/banner/home/home_banner_5_portrait.jpg) !important;
-        align-items: center !important;
+        align-items: flex-end !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
         font-size: 42px;
@@ -346,11 +346,11 @@
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
         align-items: flex-end !important;
-        background-position: 0% 50% !important;
+        background-position: 25% 50% !important;
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 30% 50% !important;
+        background-position: 55% 50% !important;
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
@@ -405,34 +405,34 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
-        background-position: 85% 50%;
+        background-position: 60% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 27.5% 50%;
+        background-position: 85% 50%;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end;
         background-position: 55% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 75% 50%;
+        background-position: 15% 50%;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
-        background-position: 35% 50%;
+        background-position: 50% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 10% 50%;
+        background-position: 40% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50%;
+        background-position: 40% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
@@ -447,8 +447,8 @@
     }
     .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
         font-size: 42px;
-        color: var(--color-white);
-        text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
+        color: var(--color-black);
+        text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     }
     .slider-home .sliders .slider-2 .box-image .box-inner {
 
@@ -470,7 +470,7 @@
         margin: 0 3px;
     }
     .menu-desktop .list-inline > li > a {
-        font-size: 0.65em;
+        font-size: 0.95em;
     }
 }
 @media (min-width: 1200px) {
