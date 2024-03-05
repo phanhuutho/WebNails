@@ -193,11 +193,11 @@
     }
     .slider-home .sliders .slider-1 .box-image .image {
         background-image: url(../images/banner/home/home_banner_1_portrait.jpg) !important;
-        background-position: 70% 50% !important;
-        align-items: flex-start !important;
+        background-position: 50% 50% !important;
+        align-items: flex-end !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        align-items: flex-end !important;
+        align-items: center !important;
         background-image: url(../images/banner/home/home_banner_2_portrait.jpg) !important;
         background-position: 50% 50% !important;
     }
@@ -214,8 +214,8 @@
         margin: 0 auto;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        align-items: center !important;
-        background-position: 40% 50% !important;
+        align-items: flex-end !important;
+        background-position: 25% 50% !important;
         background-image: url(../images/banner/home/home_banner_4_portrait.jpg) !important;
     }
     .slider-home .sliders .slider-4 .box-image .box-inner {
@@ -405,12 +405,12 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
-        background-position: 60% 50%;
+        background-position: 95% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 85% 50%;
+        background-position: 30% 50%;
         justify-content: center;
         align-items: flex-end;
     }
@@ -419,13 +419,13 @@
         background-position: 55% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 15% 50%;
+        background-position: 85% 50%;
         align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end;
         justify-content: center;
-        background-position: 50% 50%;
+        background-position: 40% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
         background-position: 70% 50%;
