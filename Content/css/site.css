@@ -50,6 +50,8 @@ a:active,a:hover {
 }
 .logo img{
     background: var(--color-white);
+    border-radius: 50%;
+    padding: 5px;
 }
 
 /*font*/

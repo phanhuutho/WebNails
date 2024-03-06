@@ -13,6 +13,7 @@ footer {
 }
 .logo-footer img {
     background: var(--color-white);
+    border-radius: 50%;
 }
 footer .legend {
     color: var(--color-theme);
