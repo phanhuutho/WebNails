@@ -14,11 +14,14 @@
                         <th>STT</th>
                         <th>Date</th>
                         <th>Transaction</th>
-                        <th>Buyer</th>
-                        <th>Receiver</th>
+                        <th style="width:250px;">Buyer</th>
+                        <th style="width:250px;">Receiver</th>
                         <th>Amount</th>
                         <th>Status</th>
                         <th>Completed</th>
+                        <th style="width:100px; white-space:nowrap;">Code Sale</th>
+                        <th style="width:100px;">Cost</th>
+                        <th>Description</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -54,6 +57,9 @@
                                     </a>
                                 }
                             </td>
+                            <td>@(item.CodeSaleOff)</td>
+                            <td>@(item.AmountReal > 0 ? string.Format("${0:N2}", item.AmountReal) : string.Format("${0:N2}", item.Amount))</td>
+                            <td>@(item.ValidCode > 0 || !string.IsNullOrEmpty(item.DescriptionValidCode) ? item.DescriptionValidCode : "")</td>
                             <td>
                                 @if(item.Status == PaymentStatus.Pending) 
                                 { 

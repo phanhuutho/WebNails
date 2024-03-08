@@ -4,6 +4,8 @@
 
     var Prices = (List<WebNails.Models.PricesModel>)ViewBag.Prices;
     Prices = Prices.Where(x => !string.IsNullOrEmpty(x.Src) && x.Status).ToList();
+
+    var IsPayment = (bool)ViewBag.IsPayment;
 }
 <!DOCTYPE html>
 <html>
@@ -99,15 +101,18 @@
                                     <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
                                 </li>
                             }
-                            @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
+                            @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) && IsPayment)
                             {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gift-manage" href="/gift-manage.html">Gift Manage</a>
                                 </li>
                             }
-                            @*<li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-manage" href=""></a>
-                            </li>*@
+                            @if(IsPayment)
+                            {
+                                <li class="list-inline-item">
+                                    <a class="list-inline-item-link" id="menu-manage" href=""></a>
+                                </li>
+                            }
                         </ul>
                     </div>
                 </div>
@@ -139,15 +144,18 @@
                 <li>
                     <a href="/contact.html">Contact</a>
                 </li>
-                @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name))
+                @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) && IsPayment)
                 {
                     <li>
                         <a href="/gift-manage.html">Gift Manage</a>
                     </li>
                 }
-                @*<li>
-                    <a id="mobile-menu-manage" href=""></a>
-                </li>*@
+                @if(IsPayment)
+                { 
+                    <li>
+                        <a id="mobile-menu-manage" href=""></a>
+                    </li>
+                }
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
                         <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
@@ -265,17 +273,24 @@
     <script src="~/Content/js/site.js"></script>
     @RenderSection("scripts", required: false)
     <script type="text/javascript">
-        @*var menu_manage = {
-            href: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "/logout.html" : "/login.html")",
-            text: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "Logout" : "Login")"
-        };
+        @{
+            if (IsPayment)
+            {
+                <text>
+                var menu_manage = {
+                    href: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "/logout.html" : "/login.html")",
+                    text: "@(User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) ? "Logout" : "Login")"
+                };
 
-        $(document).ready(function () {
-            $("#menu-manage").attr("href", menu_manage.href);
-            $("#menu-manage").text(menu_manage.text);
-            $("#mobile-menu-manage").attr("href", menu_manage.href);
-            $("#mobile-menu-manage").text(menu_manage.text);
-        });*@
+                $(document).ready(function () {
+                    $("#menu-manage").attr("href", menu_manage.href);
+                    $("#menu-manage").text(menu_manage.text);
+                    $("#mobile-menu-manage").attr("href", menu_manage.href);
+                    $("#mobile-menu-manage").text(menu_manage.text);
+                });
+                </text>
+            }
+        }
     </script>
 </body>
 </html>

@@ -87,34 +87,46 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "")
+        public ActionResult Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "", string codesale = "")
         {
             var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-            ViewBag.EmailPaypal = EmailPaypal ?? "";
-            ViewBag.Amount = amount ?? "1";
-            ViewBag.Stock = stock ?? "";
-            ViewBag.Email = email ?? "";
-            ViewBag.NameReceiver = name_receiver ?? "";
-            ViewBag.NameBuyer = name_buyer ?? "";
-            ViewBag.Img = img;
-
-            var cookieDataBefore = new HttpCookie("DataBefore");
-            cookieDataBefore["Amount"] = amount;
-            cookieDataBefore["Email"] = email;
-            cookieDataBefore["Stock"] = stock;
-            cookieDataBefore["Message"] = message;
-            cookieDataBefore["NameReceiver"] = name_receiver;
-            cookieDataBefore["NameBuyer"] = name_buyer;
-            cookieDataBefore["Img"] = img;
-            cookieDataBefore["Guid"] = strID.ToString();
-            cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
-            Response.Cookies.Add(cookieDataBefore);
 
             using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
             {
                 var Domain = Request.Url.Host;
                 var Transactions = GenerateUniqueCode();
+
+                var IsValidCodeSale = false;
+                var ValidCode = 0;
+                var MinAmountSaleOff = (int)ViewBag.MinAmountSaleOff;
+                var DescriptionCode = "";
+                var Cost = float.Parse(amount);
+                if (!string.IsNullOrEmpty(codesale))
+                {
+                    var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = codesale, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    if(objNailCodeSale != null)
+                    {
+                        IsValidCodeSale = float.Parse(amount) >= float.Parse(MinAmountSaleOff.ToString());
+                        if (!IsValidCodeSale)
+                        {
+                            ValidCode = 1;
+                            DescriptionCode = $"Amount payment less than {string.Format("{0:N0}", MinAmountSaleOff)}. Code sale off not available.";
+                        }
+                        else
+                        {
+                            DescriptionCode = "Code sale off correct";
+                            var amount_update = Cost * (100 - objNailCodeSale.Sale) / 100;
+                            amount = string.Format("{0:N2}", amount_update);
+                        }
+                    }
+                    else
+                    {
+                        ValidCode = 2;
+                        DescriptionCode = "Code sale off incorrect";
+                    }
+                } 
+
                 var objResult = sqlConnect.Execute("spInfoPaypal_InsertBefore", new
                 {
                     strID = strID,
@@ -126,9 +138,37 @@ namespace WebNails.Controllers
                     strEmail = email,
                     strNameReceiver = name_receiver,
                     strNameBuyer = name_buyer,
-                    intAmount = int.Parse(amount),
-                    strMessage = message
+                    intAmount = float.Parse(amount),
+                    strMessage = message,
+                    strCodeSaleOff = codesale,
+                    intAmountReal = Cost,
+                    intValidCode = ValidCode,
+                    strDescriptionValidCode = DescriptionCode
                 }, commandType: CommandType.StoredProcedure);
+
+                ViewBag.EmailPaypal = EmailPaypal ?? "";
+                ViewBag.Amount = string.Format("{0:N2}", float.Parse(amount)) ?? string.Format("{0:N2}", float.Parse("1"));
+                ViewBag.Stock = stock ?? "";
+                ViewBag.Email = email ?? "";
+                ViewBag.NameReceiver = name_receiver ?? "";
+                ViewBag.NameBuyer = name_buyer ?? "";
+                ViewBag.Img = img;
+                ViewBag.Cost = Cost;
+                ViewBag.CodeSaleOff = codesale;
+
+                var cookieDataBefore = new HttpCookie("DataBefore");
+                cookieDataBefore["Amount"] = string.Format("{0:N2}", float.Parse(amount));
+                cookieDataBefore["Email"] = email;
+                cookieDataBefore["Stock"] = stock;
+                cookieDataBefore["Message"] = message;
+                cookieDataBefore["NameReceiver"] = name_receiver;
+                cookieDataBefore["NameBuyer"] = name_buyer;
+                cookieDataBefore["Img"] = img;
+                cookieDataBefore["Guid"] = strID.ToString();
+                cookieDataBefore["Cost"] = string.Format("{0:N2}", Cost);
+                cookieDataBefore["CodeSaleOff"] = codesale;
+                cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
+                Response.Cookies.Add(cookieDataBefore);
             }
 
             return View();
@@ -159,6 +199,8 @@ namespace WebNails.Controllers
             string responseCode;
             string SecureHash;
             var strAmount = string.Empty;
+            var strCost = string.Empty;
+            var strCodeSaleOff = string.Empty;
             var strEmail = string.Empty;
             var strStock = string.Empty;
             var strNameReceiver = string.Empty;
@@ -171,6 +213,8 @@ namespace WebNails.Controllers
             if (cookieDataBefore != null)
             {
                 strAmount = cookieDataBefore["Amount"];
+                strCost = cookieDataBefore["Cost"];
+                strCodeSaleOff = cookieDataBefore["CodeSaleOff"];
                 strEmail = cookieDataBefore["Email"];
                 strStock = cookieDataBefore["Stock"];
                 strNameReceiver = cookieDataBefore["NameReceiver"];
@@ -197,9 +241,9 @@ namespace WebNails.Controllers
 
                         if (objResult > 0)
                         {
-                            SendMailToOwner(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg);
-                            SendMailToBuyer(string.Format("{0}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg);
-                            SendMailToReceiver(strStock, strEmail, string.Format("{0}", strAmount), info.Code, strNameReceiver, strNameBuyer, strImg);
+                            SendMailToOwner(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
+                            SendMailToBuyer(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
+                            SendMailToReceiver(strStock, strEmail, string.Format("{0:N2}", strCost), info.Code, strNameReceiver, strNameBuyer, strImg);
                         }
                     }
                 }    
@@ -215,7 +259,7 @@ namespace WebNails.Controllers
             return View();
         }
 
-        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "")
+        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -228,6 +272,8 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: <strong>${strAmount} USD</strong></p>
+					    {(!string.IsNullOrEmpty(strCost) ? $"<p>Cost: {strCost}</p>" : "")}
+					    {(!string.IsNullOrEmpty(strCodeSaleOff) ? $"<p>Code Sale Off: {strCodeSaleOff}</p>" : "")}
 					    <p>Receiver name: {strNameReceiver}</p>
 					    <p>Receiver email: {strStock}</p>
 					    <p>Buyer name: {strNameBuyer}</p>
@@ -250,7 +296,6 @@ namespace WebNails.Controllers
         {
             if (!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
-                var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
                 using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmailReceiver, strNameReceiver, System.Text.Encoding.UTF8)))
                 {
                     mail.HeadersEncoding = System.Text.Encoding.UTF8;
@@ -276,7 +321,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "")
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -288,13 +333,15 @@ namespace WebNails.Controllers
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
-					   <p>Receiver name: {strNameReceiver}</p>
-					   <p>Receiver email: {strStock}</p>
-					   <p>Buyer name: {strNameBuyer}</p>
-					   <p>Buyer email: {strEmail}</p>
-					   <p>Comment: {strMessage}</p>
-                       <p>Code: <strong>{strCode}</strong></p> 
-                       <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+					    {(!string.IsNullOrEmpty(strCost) ? $"<p>Cost: {strCost}</p>" : "")}
+					    {(!string.IsNullOrEmpty(strCodeSaleOff) ? $"<p>Code Sale Off: {strCodeSaleOff}</p>" : "")}
+					    <p>Receiver name: {strNameReceiver}</p>
+					    <p>Receiver email: {strStock}</p>
+					    <p>Buyer name: {strNameBuyer}</p>
+					    <p>Buyer email: {strEmail}</p>
+					    <p>Comment: {strMessage}</p>
+                        <p>Code: <strong>{strCode}</strong></p> 
+                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -470,9 +517,9 @@ namespace WebNails.Controllers
 
                     if(objResult > 0)
                     {
-                        SendMailToOwner(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer);
-                        SendMailToBuyer(string.Format("{0}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer);
-                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
+                        SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                        SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
                     }
 
                     return Json(new { Message = "Send mail success !" });
@@ -499,6 +546,35 @@ namespace WebNails.Controllers
 
             var result = string.Format("{0}{1}{2}", strYear, strReverse, strTimes).ToUpper();
             return result;
+        }
+
+        public ActionResult CheckCodeSaleOff(string Code, int Amount)
+        {
+            var result = false;
+            var message = "";
+            var MinAmountSaleOff = (int)ViewBag.MinAmountSaleOff;
+            var IsValidCodeSale = Amount >= float.Parse(MinAmountSaleOff.ToString());
+            if (!IsValidCodeSale)
+            {
+                message = $"Amount payment less than {string.Format("{0:N0}", MinAmountSaleOff)}. Code sale off not available.";
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(Code))
+                {
+                    using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+                    {
+                        var Domain = Request.Url.Host;
+                        var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = Code, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                        result = objNailCodeSale != null;
+                        if (!result)
+                        {
+                            message = "Code sale off incorrect";
+                        }
+                    }
+                }
+            }
+            return Json(new { Status = result, Message = message });
         }
     }
 }

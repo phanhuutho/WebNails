@@ -188,6 +188,13 @@ namespace WebNails
                     action = "SendMail"
                 });
 
+            routes.MapRoute(
+                "CheckCodeSaleOff", "check-discount.html",
+                new
+                {
+                    controller = "Home",
+                    action = "CheckCodeSaleOff"
+                });
         }
     }
 }

@@ -12,7 +12,7 @@ namespace WebNails.Models
         public string Transactions { get; set; }
         public string Code { get; set; }
         public string Owner { get; set; } //Email Owner
-        public int Amount { get; set; }
+        public float Amount { get; set; }
         public string Stock { get; set; } //Email Receiver
         public string Email { get; set; } //Email Buyer
         public string NameReceiver { get; set; } //Name Receiver
@@ -22,6 +22,10 @@ namespace WebNails.Models
         public bool IsUsed { get; set; }
         public DateTime DateTimeCreate { get; set; }
         public DateTime DateTimeUpdateUsed { get; set; }
+        public string CodeSaleOff { get; set; }
+        public int AmountReal { get; set; }
+        public int ValidCode { get; set; }
+        public string DescriptionValidCode { get; set; }
     }
 
     public enum PaymentStatus

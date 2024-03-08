@@ -24,6 +24,7 @@ namespace WebNails.Controllers
             ViewBag.LinkGoogleMapAddress = dataInfo.LinkGoogleMapAddress;
             ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
             ViewBag.ShowCoupon = dataInfo.ShowCoupon;
+            ViewBag.MinAmountSaleOff = dataInfo.MinAmountSaleOff;
             ViewBag.Coupons = dataInfo.Coupons ?? new List<CouponModel>();
             ViewBag.Prices = dataInfo.Prices ?? new List<PricesModel>();
             ViewBag.Telegram = dataInfo.Telegram ?? new SocialModel();
@@ -31,6 +32,7 @@ namespace WebNails.Controllers
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
             ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
             ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
+            ViewBag.IsPayment = true;
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;
