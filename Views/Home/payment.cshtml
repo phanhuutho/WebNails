@@ -75,7 +75,7 @@
                 }
             });
 
-            $("#codesale").keydown(function () {
+            $("#codesale,#amount").keydown(function () {
                 clearTimeout(timer);
                 timer = setTimeout(CheckDiscount, 1000);
             });
@@ -84,7 +84,7 @@
         function CheckDiscount() {
             var strDiscount = $("#codesale").val();
             var intAmount = $("#amount").val();
-            if (!strDiscount && strDiscount != null && strDiscount != '') {
+            if (strDiscount != null && strDiscount != '' && intAmount != null && intAmount != '') {
                 $.ajax({
                     type: "POST",
                     url: "/check-discount.html",
