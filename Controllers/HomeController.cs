@@ -99,7 +99,6 @@ namespace WebNails.Controllers
 
                 var IsValidCodeSale = false;
                 var ValidCode = 0;
-                var MinAmountSaleOff = (int)ViewBag.MinAmountSaleOff;
                 var DescriptionCode = "";
                 var Cost = float.Parse(amount);
                 if (!string.IsNullOrEmpty(codesale))
@@ -107,11 +106,11 @@ namespace WebNails.Controllers
                     var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = codesale, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
                     if(objNailCodeSale != null)
                     {
-                        IsValidCodeSale = float.Parse(amount) >= float.Parse(MinAmountSaleOff.ToString());
+                        IsValidCodeSale = float.Parse(amount) >= float.Parse(objNailCodeSale.MinAmountSaleOff.ToString());
                         if (!IsValidCodeSale)
                         {
                             ValidCode = 1;
-                            DescriptionCode = $"Amount payment less than {string.Format("{0:N0}", MinAmountSaleOff)}. Code sale off not available.";
+                            DescriptionCode = $"Amount payment less than {string.Format("{0:N0}", objNailCodeSale.MinAmountSaleOff)}. Code sale off not available.";
                         }
                         else
                         {
@@ -553,25 +552,24 @@ namespace WebNails.Controllers
         {
             var result = false;
             var message = "";
-            var MinAmountSaleOff = (int)ViewBag.MinAmountSaleOff;
-            var IsValidCodeSale = Amount >= float.Parse(MinAmountSaleOff.ToString());
-            if (!IsValidCodeSale)
+            if (!string.IsNullOrEmpty(Code))
             {
-                message = $"Amount payment less than {string.Format("{0:N0}", MinAmountSaleOff)}. Code sale off not available.";
-            }
-            else
-            {
-                if (!string.IsNullOrEmpty(Code))
+                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
                 {
-                    using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+                    var Domain = Request.Url.Host;
+                    var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = Code, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    result = objNailCodeSale != null;
+                    if (result)
                     {
-                        var Domain = Request.Url.Host;
-                        var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = Code, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                        result = objNailCodeSale != null;
-                        if (!result)
+                        if(Amount < objNailCodeSale.MinAmountSaleOff)
                         {
-                            message = "Code sale off incorrect";
+                            result = false;
+                            message = $"Amount payment less than {string.Format("{0:N0}", objNailCodeSale.MinAmountSaleOff)}. Code sale off not available.";
                         }
+                    }
+                    else
+                    {
+                        message = "Code sale off incorrect";
                     }
                 }
             }

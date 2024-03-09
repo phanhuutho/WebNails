@@ -13,5 +13,6 @@ namespace WebNails.Models
         public bool IsDelete { get; set; }
         public DateTime ExpireDateFrom { get; set; }
         public DateTime ExpireDateTo { get; set; }
+        public int MinAmountSaleOff { get; set; }
     }
 }

@@ -24,7 +24,6 @@ namespace WebNails.Controllers
             ViewBag.LinkGoogleMapAddress = dataInfo.LinkGoogleMapAddress;
             ViewBag.LinkIFrameGoogleMap = dataInfo.LinkIFrameGoogleMap;
             ViewBag.ShowCoupon = dataInfo.ShowCoupon;
-            ViewBag.MinAmountSaleOff = dataInfo.MinAmountSaleOff;
             ViewBag.Coupons = dataInfo.Coupons ?? new List<CouponModel>();
             ViewBag.Prices = dataInfo.Prices ?? new List<PricesModel>();
             ViewBag.Telegram = dataInfo.Telegram ?? new SocialModel();
