@@ -195,6 +195,14 @@ namespace WebNails
                     controller = "Home",
                     action = "CheckCodeSaleOff"
                 });
+
+            routes.MapRoute(
+                "GetListNailCodeSaleByDomain", "get-discounts.html",
+                new
+                {
+                    controller = "Home",
+                    action = "GetListNailCodeSaleByDomain"
+                });
         }
     }
 }

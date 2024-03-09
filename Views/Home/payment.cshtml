@@ -29,7 +29,7 @@
                                 <input type="email" id="email" name="email" placeholder="Buyer email address" class="required" />
                             </div>
                             <div class="qpp_nice_label qpp_label_blur">
-                                <input type="text" id="codesale" name="codesale" placeholder="Code Sale Off" class="" />
+                                <input type="text" id="codesale" name="codesale" placeholder="Discount Code" class="" /><button type="button" class="btn btn-danger btn-theme" onclick="GetDiscounts()">Get Code Discount</button>
                             </div>
                             <div class="qpp_nice_label qpp_label_blur">
                                 <textarea rows="4" id="message" name="message" placeholder="Comment" class="required"></textarea>
@@ -57,7 +57,19 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalDiscounts" tabindex="-1" aria-labelledby="ModalDiscountLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
                 </div>
             </div>
         </div>
@@ -97,6 +109,28 @@
                     },
                 });
             }
+        }
+
+        function GetDiscounts() {
+            $.ajax({
+                type: "POST",
+                url: "/get-discounts.html",
+                success: function (result) {
+                    $(".modal-body", "#ModalDiscounts").html("");
+                    if (result && result.length > 0) {
+                        for (var i = 0; i < result.length; i++) {
+                            var item = result[i];
+                            $(".modal-body", "#ModalDiscounts").append("<p>- Code: <b><a href='javascript:void(0);' onclick='AutoInputDiscountCode(this)'>" + item.Code + "</a></b> for sale off <b>" + item.Sale + "%</b> amount value.</p>");
+                        }
+                    }
+                    $("#ModalDiscounts").modal("show");
+                },
+            });
+        }
+
+        function AutoInputDiscountCode(obj) {
+            $("#codesale").val($(obj).text());
+            $("#ModalDiscounts").modal("hide");
         }
     </script>
 }

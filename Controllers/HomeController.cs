@@ -548,6 +548,7 @@ namespace WebNails.Controllers
             return result;
         }
 
+        [HttpPost]
         public ActionResult CheckCodeSaleOff(string Code, int Amount)
         {
             var result = false;
@@ -575,6 +576,17 @@ namespace WebNails.Controllers
                 }
             }
             return Json(new { Status = result, Message = message });
+        }
+
+        [HttpPost]
+        public ActionResult GetListNailCodeSaleByDomain()
+        {
+            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            {
+                var Domain = Request.Url.Host;
+                var data = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSalesByDomain", new { @strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).ToList();
+                return Json(data);
+            }
         }
     }
 }
