@@ -1,19 +1,14 @@
 {
-  "Name": "Luxe Nails & Spa",
-  "HyperLinkTell": "tel:(281)9070771",
-  "TextTell": "(281)-907-0771",
-  "GooglePlus": "https://www.google.com/search?q=Luxe+Nails+77388",
-  "Address": "3730 Farm to Market 2920 #103, Spring, TX 77388",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/UMaDLJ7chc2WdRpF6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13811.23013812112!2d-95.4739664!3d30.0710509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8647349f1c2ced01%3A0x64fad6e13b095ba9!2sLuxe%20Nails%20%26%20Spa%20(%245%20Off%20Coupon)!5e0!3m2!1sen!2s!4v1709478889966!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/a96982b7c77b/customer/home",
-  "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Name": "Bay Colony Nails Spa League City",
+  "HyperLinkTell": "tel:(281)5385790",
+  "TextTell": "(281)-538-5790",
+  "GooglePlus": "https://www.google.com/search?q=Bay+Colony+Nails+Spa+77573",
+  "Address": "2640 League City Pkwy #124, League City, TX 77573",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/xfNMBCMrrEZMcXRW7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.3101235579898!2d-95.04221439999999!3d29.5073184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863f7d4b3ec58069%3A0x3b431b438ed188a!2sBay%20Colony%20Nails%20Spa%20League%20City!5e0!3m2!1sen!2s!4v1710177260350!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/11fdbc79539d/customer/home",
+  "ShowCoupon": false,
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
