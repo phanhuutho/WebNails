@@ -1,19 +1,14 @@
 {
-  "Name": "Luxe Nails & Spa",
-  "HyperLinkTell": "tel:(281)9070771",
-  "TextTell": "(281)-907-0771",
-  "GooglePlus": "https://www.google.com/search?q=Luxe+Nails+77388",
-  "Address": "3730 Farm to Market 2920 #103, Spring, TX 77388",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/UMaDLJ7chc2WdRpF6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13811.23013812112!2d-95.4739664!3d30.0710509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8647349f1c2ced01%3A0x64fad6e13b095ba9!2sLuxe%20Nails%20%26%20Spa%20(%245%20Off%20Coupon)!5e0!3m2!1sen!2s!4v1709478889966!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/a96982b7c77b/customer/home",
-  "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Name": "Lavish Nail Lounge",
+  "HyperLinkTell": "tel:(479)3724748",
+  "TextTell": "(479)-372-4748",
+  "GooglePlus": "https://www.google.com/search?q=Lavish+Nail+Spa+Lounge+72758",
+  "Address": "5001 W Pauline Whitaker Pkwy, Rogers, AR 72758",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/URz4NHuaaaGKJBN96",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.5933199185665!2d-94.1860122!3d36.2979164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c91185f80aaa33%3A0x380c74b3e0ce49b1!2sLavish%20Nail%20Lounge%20(20%25%20OFF%20New%20Customers%20on%20Mon-Wed)!5e0!3m2!1sen!2s!4v1710266910638!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/6924628f9429/customer/home",
+  "ShowCoupon": false,
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
