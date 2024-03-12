@@ -1,19 +1,14 @@
 {
-  "Name": "Luxe Nails & Spa",
-  "HyperLinkTell": "tel:(281)9070771",
-  "TextTell": "(281)-907-0771",
-  "GooglePlus": "https://www.google.com/search?q=Luxe+Nails+77388",
-  "Address": "3730 Farm to Market 2920 #103, Spring, TX 77388",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/UMaDLJ7chc2WdRpF6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13811.23013812112!2d-95.4739664!3d30.0710509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8647349f1c2ced01%3A0x64fad6e13b095ba9!2sLuxe%20Nails%20%26%20Spa%20(%245%20Off%20Coupon)!5e0!3m2!1sen!2s!4v1709478889966!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/a96982b7c77b/customer/home",
-  "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Name": "Luxy Nails Spa",
+  "HyperLinkTell": "tel:(770)7870825",
+  "TextTell": "(770)-787-0825",
+  "GooglePlus": "https://www.google.com/search?q=Luxy+Nails+Spa+30014",
+  "Address": "11184 GA-142, Covington, GA 30014",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/sr6oMmM8dcuBFgyE9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.8735479210895!2d-83.82598109999999!3d33.6085853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f43254cbd9e303%3A0xbab7bc76df7219c!2sLuxy%20Nails%20Spa%20(10%25%20OFF%20Any%20Services%20%2430%20%26%20more)!5e0!3m2!1sen!2s!4v1710267180105!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/1b8312088679/customer/home",
+  "ShowCoupon": false,
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
