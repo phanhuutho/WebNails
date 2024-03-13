@@ -9,12 +9,14 @@ footer {
 .logo-footer {
     max-width: 120px;
     margin: 0px 0px;
-    background: var(--color-white);
+    background: var(--color-theme);
     border-radius: 50%;
+    padding: 2px;
 }
 .logo-footer img {
     background: var(--color-white);
     border-radius: 50%;
+    padding: 5px;
 }
 footer .legend {
     color: var(--color-theme);
