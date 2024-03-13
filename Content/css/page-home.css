@@ -337,7 +337,7 @@ main .contact .container{
 }
 .about-us > div[class*='container']{
     position: relative;
-    background:var(--color-white);
+    background:var(--bg-site);
 }
 .about-us .row{
 
@@ -412,7 +412,7 @@ main .contact .container{
     display: none;
 }
 .beauty-spa .beauty-spa-inner > div[class*='container'] {
-    background:var(--color-white);
+    background:var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
     font-size: 300%; 
@@ -607,7 +607,7 @@ main .contact .container{
     background: var(--color-white);
 }
 .business, .e-gift {
-    background-color: var(--color-white);
+    background-color: var(--bg-site);
 }
 .business .business-inner{
     width: 100%;
@@ -649,7 +649,7 @@ main .contact .container{
     height: 500px;
     background-image: url(../images/home/home_business.jpg);
     background-repeat: no-repeat !important;
-    background-position: 25% 50%;
+    background-position: 55% 50%;
     background-size: cover !important;
 }
 .e-gift {
