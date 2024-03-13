@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #000000;
-    --color-theme: #b1900f;
-    --color-menu-legend: #b1900f;
+    --bg-site: #f1f1f1;
+    --color-theme: #010000;
+    --color-menu-legend: #010000;
     --color-black: #000000;
-    --color-white: #fffbe9;
-    --color-text-theme: #b1900f;
+    --color-white: #ffffff;
+    --color-text-theme: #010000;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -30,7 +30,7 @@ main{
 
 }
 header {
-    background: var(--color-white);
+    background: var(--bg-site);
 }
 .bg-header-left {
     background: var(--bg-site);
@@ -45,8 +45,10 @@ a:active,a:hover {
 /*Logo*/
 .logo, .navbar-brand img {
     max-width: 120px;
-    margin: 0px 0px;
-    background: var(--color-white);
+    margin: 5px 0px 5px 0px;
+    background: var(--color-theme);
+    border-radius: 50%;
+    padding: 2px;
 }
 .logo img{
     background: var(--color-white);
@@ -65,7 +67,7 @@ a:active,a:hover {
 /*divider*/
 .divider {
     max-width: 200px;
-    background-color: var(--bg-site);
+    background-color: var(--color-theme);
     height: 3px;
     margin: 0 auto;
 }
@@ -107,8 +109,8 @@ a:active,a:hover {
     width: 60%;
 }
 .btn-theme {
-    background: var(--bg-site);
-    border-color: var(--bg-site);
+    background: var(--color-theme);
+    border-color: var(--color-theme);
     color: var(--color-white);
     font-family: 'Fira Sans';
     font-weight: bold;
@@ -126,7 +128,7 @@ a:active,a:hover {
 }
 
 .border-theme {
-    border-color: var(--bg-site) !important;
+    border-color: var(--color-theme) !important;
     border-width: 5px;
     opacity: 1;
 }
