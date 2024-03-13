@@ -62,7 +62,6 @@
     .business .business-inner .box-inner {
         padding-top: 15px;
         margin-right: 0;
-        background: #FFFFFF;
         padding-bottom: 15px;
     }
     .business .business-inner .box-image {
@@ -85,7 +84,6 @@
     .e-gift .box-inner {
         padding-top: 15px;
         padding-bottom: 15px;
-        background: #FFFFFF;
     }
     .e-gift .box-image .image-e-gift {
         width: 100%;
@@ -118,7 +116,9 @@
     .logo-brand .navbar-brand {
         display: inline-block;
         height: 100%;
-        background: var(--color-white);
+        background: var(--color-theme);
+        border-radius: 50%;
+        padding: 2px;
     }
     .logo-brand img {
         background: var(--color-white);
