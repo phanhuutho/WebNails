@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #f1f1f1;
-    --color-theme: #010000;
-    --color-menu-legend: #010000;
+    --bg-site: #eee5bc;
+    --color-theme: #d30801;
+    --color-menu-legend: #d30801;
     --color-black: #000000;
     --color-white: #ffffff;
-    --color-text-theme: #010000;
+    --color-text-theme: #d30801;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -82,13 +82,13 @@ a:active,a:hover {
 .btn-border-black, .border-black {
     border-color: #666666 !important;
 }
-.btn-bg-white{
-    background: #FFFFFF;
-    color: #000000;
+.btn-bg-white {
+    background: var(--color-white);
+    color: var(--color-black);
 }
 .btn-call {
     padding: 20px 30px 20px 30px;
-    background-color: #000000;
+    background-color: var(--color-black);
     border: 0;
     border-radius: 5px;
     color: #FFFFFF;
@@ -102,7 +102,7 @@ a:active,a:hover {
 }
 .modal-content {
     border-width: 5px;
-    border-color: #000000;
+    border-color: var(--color-black);
 }
 .left-10-percent{
     left:10%;
