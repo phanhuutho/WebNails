@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #ccccff;
-    --color-theme: #332c54;
-    --color-menu-legend: #332c54;
+    --bg-site: #a8da73;
+    --color-theme: #336633;
+    --color-menu-legend: #336633;
     --color-black: #000000;
     --color-white: #ffffff;
-    --color-text-theme: #332c54;
+    --color-text-theme: #336633;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
