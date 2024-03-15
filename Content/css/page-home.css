@@ -53,7 +53,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 75% 50%;
+    background-position: 40% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -67,7 +67,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 50%;
+    background-position: 85% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 70% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -109,10 +109,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -137,10 +137,10 @@ main .contact .container{
 }
 
 .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: 'Fira Sans';
     font-size: 48px;
-    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+    text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
     font-weight: bold;
 }
 .slider-home .sliders .box-inner a.btn{
@@ -476,7 +476,7 @@ main .contact .container{
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 55% 50%;
+    background-position: 30% 50%;
     background-size: cover !important;
 }
 
@@ -649,7 +649,7 @@ main .contact .container{
     height: 500px;
     background-image: url(../images/home/home_business.jpg);
     background-repeat: no-repeat !important;
-    background-position: 55% 50%;
+    background-position: 40% 50%;
     background-size: cover !important;
 }
 .e-gift {
@@ -683,7 +683,7 @@ main .contact .container{
     height: 500px;
     background-image: url(../images/home/home_e_gift.jpg);
     background-repeat: no-repeat !important;
-    background-position: 35% 50%;
+    background-position: 40% 50%;
     background-size: cover !important;
 }
 .e-gift .box-inner .divider, .business .box-inner .divider, .beauty-spa .box-inner .divider, .contact .box-inner .divider, .about-us .box-inner .divider{

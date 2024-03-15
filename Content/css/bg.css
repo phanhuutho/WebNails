@@ -17,18 +17,18 @@
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .bg .bg-contact .description{
     font-family: Parisienne; 
     font-size: 48px; 
-    color: var(--color-black);
+    color: var(--color-white);
     font-weight: bold;
-    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+    text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
     line-height: 1.75;
 }
 .bg .bg-contact .description:first-letter {
