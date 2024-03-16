@@ -1,2 +1,4 @@
-﻿<p>Mon - Sat: 10:00am - 7:00pm</p>
-<p>Sun: 12:00pm - 5:00pm</p>
+﻿<p>Mon - Wed: 9:00am - 7:30pm</p>
+<p>Thu: 9:00am - 7:00pm</p>
+<p>Fri - Sat: 9:00am - 7:30pm</p>
+<p>Sun: 10:00am - 5:30pm</p>
