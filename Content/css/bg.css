@@ -26,9 +26,9 @@
 .bg .bg-contact .description{
     font-family: Parisienne; 
     font-size: 48px; 
-    color: var(--color-white);
+    color: var(--color-black);
     font-weight: bold;
-    text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     line-height: 1.75;
 }
 .bg .bg-contact .description:first-letter {
