@@ -351,7 +351,7 @@
         background-image: url(../images/banner/slider/your-nails-portrait.jpg) !important;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 60% 50% !important;
         background-image: url(../images/banner/slider/all-services-portrait.jpg) !important;
     }
     .slider-banner .slider-3 .box-slider .image {
@@ -428,11 +428,11 @@
         background-position: 50% 50%;
     }
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 20% 50%;
+        background-position: 55% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 15% 50%;
+        background-position: 30% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
