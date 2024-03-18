@@ -354,7 +354,7 @@
     }
     .slider-banner .slider-3 .box-slider .image {
         align-items: flex-end !important;
-        background-position: 45% 50% !important;
+        background-position: 50% 50% !important;
         background-image: url(../images/banner/slider/e-gift-portrait.jpg) !important;
     }
     .slider-banner .slider-4 .box-slider .image {
@@ -435,7 +435,7 @@
         align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 65% 50%;
+        background-position: 50% 50%;
         align-items: flex-end;
     }
     .slider-banner .slider-1 .box-slider {
