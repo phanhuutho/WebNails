@@ -31,7 +31,7 @@ namespace WebNails.Controllers
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
             ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
             ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
-            ViewBag.IsPayment = false;
+            ViewBag.IsPayment = true;
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;

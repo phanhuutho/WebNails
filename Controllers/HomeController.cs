@@ -146,7 +146,7 @@ namespace WebNails.Controllers
                 }, commandType: CommandType.StoredProcedure);
 
                 ViewBag.EmailPaypal = EmailPaypal ?? "";
-                ViewBag.Amount = string.Format("{0:N2}", float.Parse(amount)) ?? string.Format("{0:N2}", float.Parse("1"));
+                ViewBag.Amount = string.Format("{0}", amount) ?? string.Format("{0}", "1");
                 ViewBag.Stock = stock ?? "";
                 ViewBag.Email = email ?? "";
                 ViewBag.NameReceiver = name_receiver ?? "";
@@ -156,7 +156,7 @@ namespace WebNails.Controllers
                 ViewBag.CodeSaleOff = codesale;
 
                 var cookieDataBefore = new HttpCookie("DataBefore");
-                cookieDataBefore["Amount"] = string.Format("{0:N2}", float.Parse(amount));
+                cookieDataBefore["Amount"] = string.Format("{0}", amount);
                 cookieDataBefore["Email"] = email;
                 cookieDataBefore["Stock"] = stock;
                 cookieDataBefore["Message"] = message;

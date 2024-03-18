@@ -80,7 +80,15 @@
     <script type="text/javascript">
         var timer = null;
         $(document).ready(function () {
-            $("form").validate();
+            $("form").validate({
+                rules: {
+                    amount: {
+                        required: true,
+                        min: 1,
+                        digits: true
+                    }
+                }
+            });
             $("input[name='submit']").on("click", function () {
                 if ($("form").valid()) {
                     $("form").submit();
