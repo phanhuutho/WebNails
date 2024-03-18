@@ -1,15 +1,45 @@
 {
-  "Name": "Sunshine Nails & Spa",
-  "HyperLinkTell": "tel:(407)7889359",
-  "TextTell": "(407)-788-9359",
-  "GooglePlus": "https://www.google.com/search?q=Sunshine+Nails+32714",
-  "Address": "520 W State Rd 436, Altamonte Springs, FL 32714",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/VokHh3ccbYR75BSU6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.9522024514463!2d-81.40321080000001!3d28.6611498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7716a3a39984d%3A0xc9fb2d93bee190e8!2sSunshine%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1710752315961!5m2!1sen!2s",
+  "Name": "Vivian Nails Studio",
+  "HyperLinkTell": "tel:(619)7727476",
+  "TextTell": "(619)-772-7476",
+  "GooglePlus": "https://www.google.com/search?q=Vivian+Nails+Studio+91950",
+  "Address": "3410 Highland Ave Suite 7, National City, CA 91950",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wG42BDhRRcKsAF9x6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13436.922524518222!2d-117.089751!3d32.6533063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d953cbc270ee17%3A0x8b6efee88104ffc9!2sVivian%20Nails%20Studio%20(Coming%20Soon%3A%2020%25%20OFF%20Any%20Services%20%2430%20%26%20up)!5e0!3m2!1sen!2s!4v1710757905039!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": false,
-  "Coupons": [],
-  "Prices": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    }
+  ],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

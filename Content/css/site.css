@@ -1,11 +1,11 @@
 /*root*/
 :root {
-    --bg-site: #fecbdf;
-    --color-theme: #660033;
-    --color-menu-legend: #660033;
+    --bg-site: #e2ddd9;
+    --color-theme: #a27e69;
+    --color-menu-legend: #a27e69;
     --color-black: #000000;
     --color-white: #ffffff;
-    --color-text-theme: #660033;
+    --color-text-theme: #a27e69;
     --box-shadow: 0px 0px 10px #000000;
     --padding-box: 2px;
     --color-yellow-pastle: #f5efc1;
@@ -47,12 +47,10 @@ a:active,a:hover {
     max-width: 120px;
     margin: 5px 0px 5px 0px;
     background: var(--color-theme);
-    border-radius: 50%;
     padding: 2px;
 }
 .logo img{
     background: var(--color-white);
-    border-radius: 50%;
     padding: 5px;
 }
 
