@@ -361,7 +361,7 @@
 
     }
     .bg .bg-contact {
-        background-position: 55% 50% !important;
+        background-position: 30% 50% !important;
         background-image: url(../images/banner/contact/contact_banner_portrait.jpg);
         align-items: flex-end !important;
     }
@@ -459,7 +459,7 @@
         line-height: 25px;
     }
     .bg .bg-contact {
-        background-position: 50% 50%;
+        background-position: 15% 50%;
         align-items: flex-end;
     }
     footer p {
