@@ -53,7 +53,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-repeat: no-repeat !important;
-    background-position: 80% 50%;
+    background-position: 0% 50%;
     background-size: cover !important;
     display: flex;
     align-items: center;
@@ -67,10 +67,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-repeat: no-repeat !important;
-    background-position: 45% 50%;
+    background-position: 45% 15%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-3 .box-image .image {
@@ -81,10 +81,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-repeat: no-repeat !important;
-    background-position: 65% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .slider-home .sliders .slider-4 .box-image .image {
@@ -95,10 +95,10 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-repeat: no-repeat !important;
-    background-position: 90% 50%;
+    background-position: 50% 50%;
     background-size: cover !important;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .slider-home .sliders .slider-5 .box-image .image {
@@ -109,7 +109,7 @@ main .contact .container{
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-repeat: no-repeat !important;
-    background-position: 30% 50%;
+    background-position: 60% 50%;
     background-size: cover !important;
     display: flex;
     align-items: flex-end;
@@ -476,7 +476,7 @@ main .contact .container{
 .beauty-spa .box-image .image2{
     background-image: url(../images/home/home_service_pedicure.jpg);
     background-repeat: no-repeat !important;
-    background-position: 40% 50%;
+    background-position: 80% 50%;
     background-size: cover !important;
 }
 
