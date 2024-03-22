@@ -6,6 +6,7 @@
     Prices = Prices.Where(x => !string.IsNullOrEmpty(x.Src) && x.Status).ToList();
 
     var IsPayment = (bool)ViewBag.IsPayment;
+    var IsGallery = (bool)ViewBag.IsGallery;
 }
 <!DOCTYPE html>
 <html>
@@ -77,15 +78,18 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @if(Prices.Count > 0) 
+                            @if (Prices.Count > 0) 
                             { 
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
                                 </li>
                             }
-                            @*<li class="list-inline-item">
+                            @if (IsGallery) 
+                            {
+                                <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
-                                </li>*@
+                                </li>
+                            }
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-e-gift" href="/e-gift.html">Gift Card</a>
                             </li>
@@ -107,7 +111,7 @@
                                     <a class="list-inline-item-link" id="menu-gift-manage" href="/gift-manage.html">Gift Manage</a>
                                 </li>
                             }
-                            @if(IsPayment)
+                            @if (IsPayment)
                             {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-manage" href=""></a>
@@ -132,9 +136,12 @@
                         <a href="/price-list.html">Price List</a>
                     </li>
                 }
-                @*<li>
+                @if (IsGallery) 
+                {
+                    <li>
                         <a href="/gallery.html">Gallery</a>
-                    </li>*@
+                    </li>
+                }
                 <li>
                     <a href="/e-gift.html">Gift Card</a>
                 </li>

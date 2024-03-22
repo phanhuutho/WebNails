@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -31,7 +32,8 @@ namespace WebNails.Controllers
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
             ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
             ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
-            ViewBag.IsPayment = true;
+            ViewBag.IsPayment = bool.Parse(ConfigurationManager.AppSettings["IsPayment"] ?? "false");
+            ViewBag.IsGallery = bool.Parse(ConfigurationManager.AppSettings["IsGallery"] ?? "false");
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;

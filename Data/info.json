@@ -1,45 +1,15 @@
 {
-  "Name": "Vivian Nails Studio",
-  "HyperLinkTell": "tel:(619)7727476",
-  "TextTell": "(619)-772-7476",
-  "GooglePlus": "https://www.google.com/search?q=Vivian+Nails+Studio+91950",
-  "Address": "3410 Highland Ave Suite 7, National City, CA 91950",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wG42BDhRRcKsAF9x6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13436.922524518222!2d-117.089751!3d32.6533063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d953cbc270ee17%3A0x8b6efee88104ffc9!2sVivian%20Nails%20Studio%20(Coming%20Soon%3A%2020%25%20OFF%20Any%20Services%20%2430%20%26%20up)!5e0!3m2!1sen!2s!4v1710757905039!5m2!1sen!2s",
+  "Name": "Classy Nails",
+  "HyperLinkTell": "tel:(850)8780999",
+  "TextTell": "(850)-878-0999",
+  "GooglePlus": "https://www.google.com/search?q=Classy+Nails+32301",
+  "Address": "1213 Apalachee Pkwy, Tallahassee, FL 32301",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/u59cHrLA1jJYRbUPA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13759.94758343061!2d-84.263781!3d30.4364734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec5f85fb53f57f%3A0x716e3f7741ef8500!2sClassy%20Nails!5e0!3m2!1sen!2s!4v1711127093753!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": false,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
-    }
-  ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-04.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-05.jpg"
-    }
-  ],
+  "Coupons": [],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",

@@ -72,6 +72,7 @@
     .business .business-inner .box-image .image-business {
         position:relative;
         width: 100%;
+        height: 325px;
     }
     .e-gift .e-gift-inner {
         height: auto;
@@ -87,6 +88,7 @@
     }
     .e-gift .box-image .image-e-gift {
         width: 100%;
+        height: 325px;
     }
     .line-bottom {
         display: none;
@@ -112,6 +114,7 @@
     }
     .navbar-brand img {
         margin: 0 auto;
+        max-width: 70px;
     }
     .logo-brand .navbar-brand {
         display: inline-block;
@@ -143,7 +146,7 @@
         color: var(--color-theme);
     }
     .menu-mobile-tablet .logo-brand {
-        text-align: center;
+        text-align: right;
     }
     .slider-banner .banner .banner-detail .container .img-dot img {
         height: 200px !important;
@@ -175,6 +178,12 @@
     .slider-1 .box-image .box-inner {
         max-width: 300px;
     }
+    .slider-home {
+        height: 460px !important;
+    }
+    .slider-home .sliders .box-image, .slider-home .sliders .box-image .image {
+        height: 450px !important;
+    }
     .slider-home, .slider-home .sliders .slider-1 .box-image, .slider-home .sliders .slider-1 .box-image .image {
 
     }
@@ -182,7 +191,7 @@
         
     }
     .slider-home, .slider-home .sliders .slider-3 .box-image, .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 35% 100%;
+
     }
     .slider-home, .slider-home .sliders .slider-4 .box-image, .slider-home .sliders .slider-5 .box-image {
 
@@ -307,7 +316,7 @@
         font-size: 1.6em;
     }
     .beauty-spa .beauty-spa-inner .box-inner p {
-        font-size: 250%;
+        font-size: 230%;
     }
     .bg-about-us {
         height: auto;
