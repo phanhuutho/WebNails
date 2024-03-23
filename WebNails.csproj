@@ -377,6 +377,7 @@
     <Content Include="Data\data-gallery.json" />
     <Content Include="Data\home-data-gallery.json" />
     <Content Include="Data\callback-coupon.json" />
+    <Content Include="Data\setting.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

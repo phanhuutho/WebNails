@@ -32,8 +32,10 @@ namespace WebNails.Controllers
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
             ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
             ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
-            ViewBag.IsPayment = bool.Parse(ConfigurationManager.AppSettings["IsPayment"] ?? "false");
-            ViewBag.IsGallery = bool.Parse(ConfigurationManager.AppSettings["IsGallery"] ?? "false");
+            var jsonSetting = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/setting.json"));
+            var dataSetting = JsonConvert.DeserializeObject<dynamic>(jsonSetting);
+            ViewBag.IsPayment = bool.Parse(string.Format("{0}", dataSetting.IsPayment));
+            ViewBag.IsGallery = bool.Parse(string.Format("{0}", dataSetting.IsGallery));
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;

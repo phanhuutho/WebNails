@@ -44,14 +44,14 @@ a:active,a:hover {
 
 /*Logo*/
 .logo, .navbar-brand img {
-    max-width: 120px;
+    max-width: 100px;
     margin: 5px 0px 5px 0px;
     background: var(--color-theme);
     padding: 2px;
 }
 .logo img{
     background: var(--color-white);
-    padding: 5px;
+    padding: 3px;
 }
 
 /*font*/

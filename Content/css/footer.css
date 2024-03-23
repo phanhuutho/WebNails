@@ -14,7 +14,7 @@ footer {
 }
 .logo-footer img {
     background: var(--color-white);
-    padding: 5px;
+    padding: 3px;
 }
 footer .legend {
     color: var(--color-theme);
