@@ -7,6 +7,8 @@
 
     var IsPayment = (bool)ViewBag.IsPayment;
     var IsGallery = (bool)ViewBag.IsGallery;
+    var LogoTop_Rounded = ViewBag.LogoTop_Rounded ?? "0";
+    var LogoBottom_Rounded = ViewBag.LogoBottom_Rounded ?? "0";
 }
 <!DOCTYPE html>
 <html>
@@ -39,14 +41,14 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-2 col-md-2">
-                    <div class="logo rounded rounded-1">
+                    <div class="logo rounded rounded-@(LogoTop_Rounded)">
                         @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                         {
-                            <img src="~/Content/images/logo.png" class="img-fluid rounded rounded-1" alt="@ViewBag.Name" />
+                            <img src="~/Content/images/logo.png" class="img-fluid rounded rounded-@(LogoTop_Rounded)" alt="@ViewBag.Name" />
                         }
                         else
                         {
-                            <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid rounded rounded-1" alt="@ViewBag.Name" />
+                            <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid rounded rounded-@(LogoTop_Rounded)" alt="@ViewBag.Name" />
                         }
                     </div>
                 </div>
@@ -58,14 +60,14 @@
                             </button>
                         </div>
                         <div class="logo-brand">
-                            <a class="navbar-brand rounded rounded-1" href="javascript:void(0)">
+                            <a class="navbar-brand rounded rounded-@(LogoTop_Rounded)" href="javascript:void(0)">
                                 @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                                 {
-                                    <img src="~/Content/images/logo.png" class="img-fluid logo-mobile rounded rounded-1" alt="@ViewBag.Name" />
+                                    <img src="~/Content/images/logo.png" class="img-fluid logo-mobile rounded rounded-@(LogoTop_Rounded)" alt="@ViewBag.Name" />
                                 }
                                 else
                                 {
-                                    <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid logo-mobile rounded rounded-1" alt="@ViewBag.Name" />
+                                    <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid logo-mobile rounded rounded-@(LogoTop_Rounded)" alt="@ViewBag.Name" />
                                 }
                             </a>
                         </div>
@@ -182,14 +184,14 @@
             <div class="row">
                 <div class="col-lg-2 d-lg-block d-md-none d-none text-center text-lg-start">
                     <div class="d-flex h-100 align-items-center py-lg-3">
-                        <div class="logo-footer rounded rounded-1">
+                        <div class="logo-footer rounded rounded-@(LogoBottom_Rounded)">
                             @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                             {
-                                <img src="~/Content/images/logo.png" class="img-fluid rounded rounded-1" alt="@ViewBag.Name" />
+                                <img src="~/Content/images/logo.png" class="img-fluid rounded rounded-@(LogoBottom_Rounded)" alt="@ViewBag.Name" />
                             }
                             else
                             {
-                                <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid rounded rounded-1" alt="@ViewBag.Name" />
+                                <img src="@(string.Format("{0}", ViewBag.Logo))" class="img-fluid rounded rounded-@(LogoBottom_Rounded)" alt="@ViewBag.Name" />
                             }
                         </div>
                     </div>

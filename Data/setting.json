@@ -1,4 +1,17 @@
 {
   "IsPayment": false,
-  "IsGallery": false
+  "IsGallery": false,
+  "IsFade_HomeBanner": true,
+  "IsFace_PageBanner": true,
+  "LogoTop_Rounded": "circle",
+  "LogoBottom_Rounded": "circle",
+  "ImageServices_Home_Rounded": "1",
+  "ImageServices_Home_Text_ItemAlign": "end",
+  "ImageContact_Home_Rounded": "1",
+  "Button_Contact_Rounded": "1",
+  "Image_Contact_Rounded": "1",
+  "Image_Service_Rounded": "1",
+  "Image_Service_Text_ItemAlign": "end",
+  "Image_Gallery_Rounded": "1",
+  "Image_GiftCard_Rounded": "1"
 }

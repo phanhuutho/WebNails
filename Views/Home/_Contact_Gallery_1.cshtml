@@ -1,25 +1,29 @@
-﻿<section class="gallery">
+﻿@{ 
+    var Image_Contact_Rounded = ViewBag.Image_Contact_Rounded ?? "0";
+}
+
+<section class="gallery">
     <div class="overlay"></div>
     <div class="container">
         <div class="row h-100">
             <div class="col-lg-6 col-xl-3 col-md-6 my-3">
-                <div class="box-inner rounded rounded-1">
-                    <div class="bg bg-contact-1 rounded rounded-1"></div>
+                <div class="box-inner rounded rounded-@(Image_Contact_Rounded)">
+                    <div class="bg bg-contact-1 rounded rounded-@(Image_Contact_Rounded)"></div>
                 </div>
             </div>
             <div class="col-lg-6 col-xl-3 col-md-6 my-3">
-                <div class="box-inner rounded rounded-1">
-                    <div class="bg bg-contact-2 rounded rounded-1"></div>
+                <div class="box-inner rounded rounded-@(Image_Contact_Rounded)">
+                    <div class="bg bg-contact-2 rounded rounded-@(Image_Contact_Rounded)"></div>
                 </div>
             </div>
             <div class="col-lg-6 col-xl-3 col-md-6 my-3">
-                <div class="box-inner rounded rounded-1">
-                    <div class="bg bg-contact-3 rounded rounded-1"></div>
+                <div class="box-inner rounded rounded-@(Image_Contact_Rounded)">
+                    <div class="bg bg-contact-3 rounded rounded-@(Image_Contact_Rounded)"></div>
                 </div>
             </div>
             <div class="col-lg-6 col-xl-3 col-md-6 my-3">
-                <div class="box-inner rounded rounded-1">
-                    <div class="bg bg-contact-4 rounded rounded-1"></div>
+                <div class="box-inner rounded rounded-@(Image_Contact_Rounded)">
+                    <div class="bg bg-contact-4 rounded rounded-@(Image_Contact_Rounded)"></div>
                 </div>
             </div>
         </div>

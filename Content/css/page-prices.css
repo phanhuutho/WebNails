@@ -23,6 +23,11 @@
 .page-main {
     position: relative;
 }
+.page-main h1 span {
+    padding-bottom: 0px;
+    border-bottom: 2px solid var(--color-text-theme);
+    font-weight: 900;
+}
 .card {
     background-color: rgba(235,235,235,0.7);
 }

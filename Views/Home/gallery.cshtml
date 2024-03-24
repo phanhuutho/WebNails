@@ -3,6 +3,8 @@
     ViewBag.Title = "Gallery";
     var TabIndex = (int)(ViewBag.TabIndex ?? 1);
     var ShowMore = (bool)(ViewBag.ShowMore ?? false);
+
+    var IsFace_PageBanner = (bool)ViewBag.IsFace_PageBanner;
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -16,7 +18,7 @@
     @{Html.RenderPartial("_SliderPageSub");}
     <div class="page-main container-lg">
         <div class="row">
-            <div class="col-lg-12 text-center my-5"><h1><span class="font-Parisienne text-theme">Gallery</span></h1></div>
+            <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
         </div>
         <div class="row pb-5 gallery-list">
             @{
@@ -61,7 +63,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: true,
+                fade: @(IsFace_PageBanner ? "true" : "false"),
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,

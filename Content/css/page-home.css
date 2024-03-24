@@ -461,7 +461,7 @@ main .contact .container{
 .beauty-spa .box-image .image1, .beauty-spa .box-image .image2, .beauty-spa .box-image .image3, .beauty-spa .box-image .image4{
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 .beauty-spa .box-image .image1{

@@ -32,10 +32,6 @@ namespace WebNails.Controllers
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
             ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
             ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
-            var jsonSetting = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/setting.json"));
-            var dataSetting = JsonConvert.DeserializeObject<dynamic>(jsonSetting);
-            ViewBag.IsPayment = bool.Parse(string.Format("{0}", dataSetting.IsPayment));
-            ViewBag.IsGallery = bool.Parse(string.Format("{0}", dataSetting.IsGallery));
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;
@@ -56,6 +52,24 @@ namespace WebNails.Controllers
 
             var jsonCouponCallback = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/callback-coupon.json"));
             ViewBag.CouponCallback = JsonConvert.DeserializeObject<List<CouponCallbackModel>>(jsonCouponCallback); ;
+
+            var jsonSetting = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/setting.json"));
+            var dataSetting = JsonConvert.DeserializeObject<dynamic>(jsonSetting);
+            ViewBag.IsPayment = bool.Parse(string.Format("{0}", dataSetting.IsPayment));
+            ViewBag.IsGallery = bool.Parse(string.Format("{0}", dataSetting.IsGallery));
+            ViewBag.IsFade_HomeBanner = bool.Parse(string.Format("{0}", dataSetting.IsFade_HomeBanner));
+            ViewBag.IsFace_PageBanner = bool.Parse(string.Format("{0}", dataSetting.IsFace_PageBanner));
+            ViewBag.LogoTop_Rounded = string.Format("{0}", dataSetting.LogoTop_Rounded);
+            ViewBag.LogoBottom_Rounded = string.Format("{0}", dataSetting.LogoBottom_Rounded);
+            ViewBag.ImageServices_Home_Rounded = string.Format("{0}", dataSetting.ImageServices_Home_Rounded);
+            ViewBag.ImageServices_Home_Text_ItemAlign = string.Format("{0}", dataSetting.ImageServices_Home_Text_ItemAlign);
+            ViewBag.ImageContact_Home_Rounded = string.Format("{0}", dataSetting.ImageContact_Home_Rounded);
+            ViewBag.Button_Contact_Rounded = string.Format("{0}", dataSetting.Button_Contact_Rounded);
+            ViewBag.Image_Contact_Rounded = string.Format("{0}", dataSetting.Image_Contact_Rounded);
+            ViewBag.Image_Service_Rounded = string.Format("{0}", dataSetting.Image_Service_Rounded);
+            ViewBag.Image_Service_Text_ItemAlign = string.Format("{0}", dataSetting.Image_Service_Text_ItemAlign);
+            ViewBag.Image_Gallery_Rounded = string.Format("{0}", dataSetting.Image_Gallery_Rounded);
+            ViewBag.Image_GiftCard_Rounded = string.Format("{0}", dataSetting.Image_GiftCard_Rounded);
         }
     }
 }

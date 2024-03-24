@@ -4,6 +4,11 @@ main {
 .page-main {
     position: relative;
 }
+.page-main h1 span {
+    padding-bottom: 0px;
+    border-bottom: 2px solid var(--color-text-theme);
+    font-weight: 900;
+}
 .box-image {
     position: relative;
     height: auto;
@@ -17,22 +22,25 @@ main {
 }
 .box-text {
     padding: 10px;
-    background-color: var(--color-theme);
-    height: 60px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: var(--padding-box) solid var(--color-black);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
 }
 .box-text h2{
     font-family: Prata;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.5em;
     line-height: 1.25;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     color: var(--color-white);
+    text-shadow: -1px 0 var(--color-black), 0 1px var(--color-black), 1px 0 var(--color-black), 0 -1px var(--color-black);
 }
 .divider {
     background-color: var(--color-black);
