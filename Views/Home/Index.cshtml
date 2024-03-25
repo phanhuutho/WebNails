@@ -15,6 +15,7 @@
     <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
     <link href="~/Content/css/slider.css" rel="stylesheet">
     <link href="~/Content/css/page-home.css" rel="stylesheet">
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
 }
 <main>
     @{ Html.RenderPartial("_SliderHome_1"); }
@@ -42,7 +43,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="slider-coupon">
-                            @foreach(var item in Coupons)
+                            @foreach (var item in Coupons)
                             {
                                 var itemCallBack = CouponCallback.Where(x => x.Position == index && !string.IsNullOrEmpty(x.Callback)).DefaultIfEmpty(new WebNails.Models.CouponCallbackModel()).FirstOrDefault();
                                 <div class="coupon" @(index > 1 ? "style=display:none;" : "")>
@@ -89,9 +90,9 @@
                 sliderInit.slick('slickPlay');
             });
 
-            @{ 
-                if (showCoupon && Coupons.Count > 0) 
-                { 
+            @{
+                if (showCoupon && Coupons.Count > 0)
+                {
                     <text>
                     $("#ModalCoupon").modal("show");
 

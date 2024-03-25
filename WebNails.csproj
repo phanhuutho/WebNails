@@ -182,6 +182,7 @@
     <Content Include="Content\css\slick-theme.css" />
     <Content Include="Content\css\slick.css" />
     <Content Include="Content\css\slider.css" />
+    <Content Include="Content\custom-css\site.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\slick.svg" />
     <Content Include="Content\images\about-us\about-us_bg.jpg" />
