@@ -27,8 +27,8 @@
 .slider-home .sliders .slider-2 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
-    background-position: 35% 50%;
-    align-items: center;
+    background-position: 15% 50%;
+    align-items: flex-end;
 }
 
 .slider-home .sliders .slider-3 .box-image .image {
@@ -220,7 +220,7 @@
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 5% 50% !important;
+        background-position: 0% 50% !important;
         align-items: flex-end !important;
     }
 

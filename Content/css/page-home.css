@@ -224,6 +224,13 @@ main .contact .container{
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     font-weight: bold;
 }
+.slider-home .sliders .slider-4 .box-image .box-inner p {
+    font-family: "Fira Sans";
+    font-size: 36px;
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+    font-weight: bold;
+}
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
     font-size: 42px;
     color: var(--color-black);
