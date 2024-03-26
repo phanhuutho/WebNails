@@ -9,7 +9,7 @@
     var IsGallery = (bool)ViewBag.IsGallery;
     var LogoTop_Rounded = ViewBag.LogoTop_Rounded ?? "0";
     var LogoBottom_Rounded = ViewBag.LogoBottom_Rounded ?? "0";
-    var IsBookingAppointment = string.IsNullOrEmpty(ViewBag.LinkBookingAppointment ?? "");
+    var IsBookingAppointment = !string.IsNullOrEmpty(ViewBag.LinkBookingAppointment ?? "");
 }
 <!DOCTYPE html>
 <html>
