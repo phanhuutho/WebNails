@@ -20,15 +20,15 @@
 .slider-home .sliders .slider-1 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
-    background-position: 0% 50%;
+    background-position: 100% 50%;
     align-items: center;
 }
 
 .slider-home .sliders .slider-2 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
-    background-position: 45% 15%;
-    align-items: flex-end;
+    background-position: 35% 50%;
+    align-items: center;
 }
 
 .slider-home .sliders .slider-3 .box-image .image {
@@ -41,14 +41,14 @@
 .slider-home .sliders .slider-4 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
-    background-position: 50% 50%;
+    background-position: 90% 50%;
     align-items: center;
 }
 
 .slider-home .sliders .slider-5 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
-    background-position: 60% 50%;
+    background-position: 50% 50%;
     align-items: flex-end;
 }
 /* -------------------------------------------------- */
@@ -216,27 +216,27 @@
 
     .slider-home .sliders .slider-1 .box-image .image {
         align-items: center !important;
-        background-position: 10% 50% !important;
+        background-position: 100% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 15% 50% !important;
+        background-position: 5% 50% !important;
         align-items: flex-end !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end !important;
-        background-position: 55% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 25% 50% !important;
-        align-items: flex-end !important;
+        background-position: 90% 50% !important;
+        align-items: center !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
         align-items: flex-end !important;
-        background-position: 40% 50% !important;
+        background-position: 50% 50% !important;
     }
     /* -------------------------------------------------- */
 
@@ -303,27 +303,27 @@
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 45% 50% !important;
+        background-position: 100% 50% !important;
         align-items: flex-end !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
         align-items: flex-end !important;
-        background-position: 50% 50% !important;
+        background-position: 15% 50% !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
         align-items: flex-end !important;
-        background-position: 5% 50% !important;
+        background-position: 75% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
         align-items: flex-end !important;
-        background-position: 40% 50% !important;
+        background-position: 90% 50% !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 65% 50% !important;
+        background-position: 50% 50% !important;
         align-items: flex-end !important;
     }
     /* -------------------------------------------------- */
