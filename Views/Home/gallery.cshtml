@@ -4,7 +4,8 @@
     var TabIndex = (int)(ViewBag.TabIndex ?? 1);
     var ShowMore = (bool)(ViewBag.ShowMore ?? false);
 
-    var IsFace_PageBanner = (bool)ViewBag.IsFace_PageBanner;
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+    var Image_Gallery_Rounded = ViewBag.Image_Gallery_Rounded ?? "0";
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -28,9 +29,9 @@
                 foreach (var item in Model)
                 {
                     <div class="col-xl-3 col-lg-3 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_Gallery_Rounded)">
                             <a href="@item.Src" data-lightbox="gallery-item" data-title="">
-                                <img src="@item.Src" loading="lazy" class="img-fluid" />
+                                <img src="@item.Src" loading="lazy" class="img-fluid rounded rounded-@(Image_Gallery_Rounded)" />
                             </a>
                         </div>
                     </div>
@@ -66,7 +67,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: @(IsFace_PageBanner ? "true" : "false"),
+                fade: @(IsFade_PageBanner ? "true" : "false"),
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,
@@ -89,9 +90,9 @@
                     for (var i = 0; i < galleries.length; i++) {
                         var item = galleries[i];
                         var strHTML = '<div class="col-xl-3 col-lg-4 col-md-6 pt-4">';
-                        strHTML += '        <div class="box-inner">';
+                        strHTML += '        <div class="box-inner rounded rounded-@(Image_Gallery_Rounded)">';
                         strHTML += '            <a href="' + item.Src + '" data-lightbox="gallery-item" data-title="">';
-                        strHTML += '                <img src="' + item.Src + '" loading="lazy" class="img-fluid" />';
+                        strHTML += '                <img src="' + item.Src + '" loading="lazy" class="img-fluid rounded rounded-@(Image_Gallery_Rounded)" />';
                         strHTML += '            </a>';
                         strHTML += '        </div>';
                         strHTML += '    </div>';

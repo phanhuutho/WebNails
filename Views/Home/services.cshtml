@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Services";
 
-    var IsFace_PageBanner = (bool)ViewBag.IsFace_PageBanner;
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
     var Image_Service_Rounded = ViewBag.Image_Service_Rounded ?? "0";
     var Image_Service_Text_ItemAlign = ViewBag.Image_Service_Text_ItemAlign ?? "center";
 }
@@ -127,7 +127,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: @(IsFace_PageBanner ? "true" : "false"),
+                fade: @(IsFade_PageBanner ? "true" : "false"),
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,

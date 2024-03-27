@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "About Us";
 
-    var IsFace_PageBanner = (bool)ViewBag.IsFace_PageBanner;
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: @(IsFace_PageBanner ? "true" : "false"),
+                fade: @(IsFade_PageBanner ? "true" : "false"),
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,

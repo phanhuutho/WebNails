@@ -7,7 +7,8 @@
         aHref = Url.Action("Payment", "Home", null, Request.Url.Scheme);
     }
 
-    var IsFace_PageBanner = (bool)ViewBag.IsFace_PageBanner;
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+    var Image_GiftCard_Rounded = ViewBag.Image_GiftCard_Rounded ?? "0";
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -30,100 +31,100 @@
                 </div>
                 <div class="row justify-content-center py-1 pb-4">
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_1.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_1.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_1.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_2.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_2.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_2.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner  rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_3.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_3.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_3.jpg" loading="lazy" class="img-fluid  rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_4.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_4.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_4.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_5.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_5.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_5.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_6.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_6.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_6.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_7.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_7.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_7.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_8.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_8.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_8.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_9.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_9.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_9.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_10.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_10.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_10.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_11.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_11.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_11.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_12.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_12.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_12.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_13.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_13.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_13.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 pt-4">
-                        <div class="box-inner">
+                        <div class="box-inner rounded rounded-@(Image_GiftCard_Rounded)">
                             <a href="@(aHref + (IsPayment ? "?img=/Content/images/e-gift/gift_14.jpg" : ""))">
-                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_14.jpg" loading="lazy" class="img-fluid" />
+                                <img alt="e gift for you" src="~/Content/images/e-gift/gift_14.jpg" loading="lazy" class="img-fluid rounded rounded-@(Image_GiftCard_Rounded)" />
                             </a>
                         </div>
                     </div>
@@ -149,7 +150,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: @(IsFace_PageBanner ? "true" : "false"),
+                fade: @(IsFade_PageBanner ? "true" : "false"),
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,

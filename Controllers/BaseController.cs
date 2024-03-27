@@ -58,7 +58,7 @@ namespace WebNails.Controllers
             ViewBag.IsPayment = bool.Parse(string.Format("{0}", dataSetting.IsPayment));
             ViewBag.IsGallery = bool.Parse(string.Format("{0}", dataSetting.IsGallery));
             ViewBag.IsFade_HomeBanner = bool.Parse(string.Format("{0}", dataSetting.IsFade_HomeBanner));
-            ViewBag.IsFace_PageBanner = bool.Parse(string.Format("{0}", dataSetting.IsFace_PageBanner));
+            ViewBag.IsFade_PageBanner = bool.Parse(string.Format("{0}", dataSetting.IsFade_PageBanner));
             ViewBag.LogoTop_Rounded = string.Format("{0}", dataSetting.LogoTop_Rounded);
             ViewBag.LogoBottom_Rounded = string.Format("{0}", dataSetting.LogoBottom_Rounded);
             ViewBag.ImageServices_Home_Rounded = string.Format("{0}", dataSetting.ImageServices_Home_Rounded);

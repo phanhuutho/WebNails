@@ -1,8 +1,8 @@
 ﻿:root {
     --bg-site: #f5eacf;
-    --color-theme: #d9a422;
-    --color-menu-legend: #d9a422;
-    --color-text-theme: #d9a422;
+    --color-theme: #845201;
+    --color-menu-legend: #845201;
+    --color-text-theme: #845201;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -99,8 +99,8 @@
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 40% 50%;
-    align-items: flex-end;
+    background-position: 50% 50%;
+    align-items: center;
 }
 /* -------------------------------------------------- */
 
@@ -282,8 +282,8 @@
     }
 
     .bg .bg-contact {
-        background-position: 40% 50% !important;
-        align-items: flex-end !important;
+        background-position: 35% 50% !important;
+        align-items: center !important;
         height: 500px !important;
     }
     /* -------------------------------------------------- */
@@ -371,7 +371,7 @@
 
     .bg .bg-contact {
         background-position: 45% 50% !important;
-        align-items: flex-end !important;
+        align-items: center !important;
         height: 350px !important;
     }
     /* -------------------------------------------------- */
