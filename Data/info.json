@@ -1,20 +1,37 @@
 {
-  "Name": "Eric & Mia Nails Spa",
-  "HyperLinkTell": "tel:(719)5730043",
-  "TextTell": "(719)-573-0043",
-  "GooglePlus": "https://www.google.com/search?q=Eric+%26+Mia+Nails+80922",
-  "Address": "3747 Bloomington St, Colorado Springs, CO 80922",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/HRDazvSWzhge33yX6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.647037677537!2d-104.7163471!3d38.88631660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713499a5b0a6ea5%3A0xa8866b6bf0affd13!2sEric%20%26%20Mia%20Nails%20Spa!5e0!3m2!1sen!2s!4v1711473920280!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/b5ab6e1310f5/customer/home",
+  "Name": "Star Nails by Joseph",
+  "HyperLinkTell": "tel:(352)3793336",
+  "TextTell": "(352)-379-3336",
+  "GooglePlus": "https://www.google.com/search?q=Star+Nails+by+Joseph+32608",
+  "Address": "2126 SW 34th St, Gainesville, FL 32608",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/9hEwKAb9KDJ7rcUQ6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13872.006576694326!2d-82.3732499!3d29.6326955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a339515fa2eb%3A0xf1be34138f007c40!2sStar%20Nails%20by%20Joseph!5e0!3m2!1sen!2s!4v1711538939621!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +41,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/starnailsbyjoseph",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/starnailsbyjoseph",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

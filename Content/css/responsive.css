@@ -15,7 +15,7 @@
 
     }
     .menu-desktop .list-inline > li {
-        margin: 0 5px;
+        margin: 0 3px;
     }
     .menu-desktop .list-inline > li > a {
         font-size: 0.8em;
@@ -104,12 +104,6 @@
     }
     footer p {
         font-size: 12px;
-    }
-    .menu-desktop .list-inline > li {
-        margin: 0 3px;
-    }
-    .menu-desktop .list-inline > li > a {
-        font-size: 0.95em;
     }
 }
 @media (max-width: 767px) {
