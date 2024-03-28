@@ -122,9 +122,6 @@
     background-image: url(../images/banner/slider/your-nails.jpg);
     background-position: 60% 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
 }
 
 .slider-banner .slider-2 .box-slider .image {
@@ -136,8 +133,6 @@
     background-image: url(../images/banner/slider/all-services.jpg);
     background-position: 30% 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .slider-banner .slider-3 .box-slider .image {
@@ -149,8 +144,6 @@
     background-image: url(../images/banner/slider/e-gift.jpg);
     background-position: 50% 50%;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .slider-banner .slider-4 .box-slider .image {
