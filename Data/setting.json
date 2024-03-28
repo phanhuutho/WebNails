@@ -33,15 +33,15 @@
     {
       "Position": 2,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
