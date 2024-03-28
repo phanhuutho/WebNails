@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Contact";
+    var Banner_Contact = (List<Dictionary<string, string>>)ViewBag.Banner_Contact;
 }
 @section css{
     <link href="~/Content/css/page-contact.css" rel="stylesheet">
@@ -9,11 +10,11 @@
 }
 <main class="bg-main">
     <section class="bg contact-banner">
-        <div class="bg-contact">
+        <div class="bg-contact d-flex @(Banner_Contact[0]["Text_ItemAlign"])">
             <div class="overlay"></div>
             <div class="container-xl">
-                <div class="row justify-content-center justify-content-md-center">
-                    <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="row @(Banner_Contact[0]["Text_JustifyContent"])">
+                    <div class="col-xl-6 col-lg-6 col-md-8">
                         <div class="text-center py-md-3 py-2">
                             <h1 class="fs-1">
                                 <span class="description">

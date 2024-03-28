@@ -70,6 +70,73 @@ namespace WebNails.Controllers
             ViewBag.Image_Service_Text_ItemAlign = string.Format("{0}", dataSetting.Image_Service_Text_ItemAlign);
             ViewBag.Image_Gallery_Rounded = string.Format("{0}", dataSetting.Image_Gallery_Rounded);
             ViewBag.Image_GiftCard_Rounded = string.Format("{0}", dataSetting.Image_GiftCard_Rounded);
+
+            var BannerHome = (List<dynamic>)JsonConvert.DeserializeObject<List<dynamic>>(Convert.ToString(dataSetting.Banner_Home));
+            var BannerPage = (List<dynamic>)JsonConvert.DeserializeObject<List<dynamic>>(Convert.ToString(dataSetting.Banner_Page));
+            var BannerContact = (List<dynamic>)JsonConvert.DeserializeObject<List<dynamic>>(Convert.ToString(dataSetting.Banner_Contact));
+
+            List<Dictionary<string, string>> Banner_Homes = new List<Dictionary<string, string>>();
+            foreach(var item in BannerHome.OrderBy(x => x.Position))
+            {
+                var Text_ItemAlign = string.Format("align-items-xl-{0}", item.Text_ItemAlign.Large);
+                Text_ItemAlign += string.Format(" align-items-lg-{0}", item.Text_ItemAlign.Laptop);
+                Text_ItemAlign += string.Format(" align-items-md-{0}", item.Text_ItemAlign.Tablet);
+                Text_ItemAlign += string.Format(" align-items-{0}", item.Text_ItemAlign.Mobile);
+
+                var Text_JustifyContent = string.Format("justify-content-xl-{0}", item.Text_JustifyContent.Large);
+                Text_JustifyContent += string.Format(" justify-content-lg-{0}", item.Text_JustifyContent.Laptop);
+                Text_JustifyContent += string.Format(" justify-content-md-{0}", item.Text_JustifyContent.Tablet);
+                Text_JustifyContent += string.Format(" justify-content-{0}", item.Text_JustifyContent.Mobile);
+
+                var Banner_Item = new Dictionary<string, string>();
+                Banner_Item.Add("Text_ItemAlign", Text_ItemAlign);
+                Banner_Item.Add("Text_JustifyContent", Text_JustifyContent);
+
+                Banner_Homes.Add(Banner_Item);
+            }
+            ViewBag.Banner_Home = Banner_Homes;
+
+            List<Dictionary<string, string>> Banner_Pages = new List<Dictionary<string, string>>();
+            foreach (var item in BannerPage.OrderBy(x => x.Position))
+            {
+                var Text_ItemAlign = string.Format("align-items-xl-{0}", item.Text_ItemAlign.Large);
+                Text_ItemAlign += string.Format(" align-items-lg-{0}", item.Text_ItemAlign.Laptop);
+                Text_ItemAlign += string.Format(" align-items-md-{0}", item.Text_ItemAlign.Tablet);
+                Text_ItemAlign += string.Format(" align-items-{0}", item.Text_ItemAlign.Mobile);
+
+                var Text_JustifyContent = string.Format("justify-content-xl-{0}", item.Text_JustifyContent.Large);
+                Text_JustifyContent += string.Format(" justify-content-lg-{0}", item.Text_JustifyContent.Laptop);
+                Text_JustifyContent += string.Format(" justify-content-md-{0}", item.Text_JustifyContent.Tablet);
+                Text_JustifyContent += string.Format(" justify-content-{0}", item.Text_JustifyContent.Mobile);
+
+                var Banner_Item = new Dictionary<string, string>();
+                Banner_Item.Add("Text_ItemAlign", Text_ItemAlign);
+                Banner_Item.Add("Text_JustifyContent", Text_JustifyContent);
+
+                Banner_Pages.Add(Banner_Item);
+            }
+            ViewBag.Banner_Page = Banner_Pages;
+
+            List<Dictionary<string, string>> Banner_Contacts = new List<Dictionary<string, string>>();
+            foreach (var item in BannerContact.OrderBy(x => x.Position))
+            {
+                var Text_ItemAlign = string.Format("align-items-xl-{0}", item.Text_ItemAlign.Large);
+                Text_ItemAlign += string.Format(" align-items-lg-{0}", item.Text_ItemAlign.Laptop);
+                Text_ItemAlign += string.Format(" align-items-md-{0}", item.Text_ItemAlign.Tablet);
+                Text_ItemAlign += string.Format(" align-items-{0}", item.Text_ItemAlign.Mobile);
+
+                var Text_JustifyContent = string.Format("justify-content-xl-{0}", item.Text_JustifyContent.Large);
+                Text_JustifyContent += string.Format(" justify-content-lg-{0}", item.Text_JustifyContent.Laptop);
+                Text_JustifyContent += string.Format(" justify-content-md-{0}", item.Text_JustifyContent.Tablet);
+                Text_JustifyContent += string.Format(" justify-content-{0}", item.Text_JustifyContent.Mobile);
+
+                var Banner_Item = new Dictionary<string, string>();
+                Banner_Item.Add("Text_ItemAlign", Text_ItemAlign);
+                Banner_Item.Add("Text_JustifyContent", Text_JustifyContent);
+
+                Banner_Contacts.Add(Banner_Item);
+            }
+            ViewBag.Banner_Contact = Banner_Contacts;
         }
     }
 }

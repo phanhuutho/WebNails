@@ -31,25 +31,20 @@
 
     }
     .slider-home .sliders .slider-1 .box-image .image {
-        align-items: center;
         justify-content: center;
         background-position: 10% 50%;
     }
     .slider-home .sliders .slider-2 .box-image .image {
         background-position: 15% 50%;
         justify-content: center;
-        align-items: flex-end;
     }
     .slider-home .sliders .slider-3 .box-image .image {
-        align-items: flex-end;
         background-position: 55% 50%;
     }
     .slider-home .sliders .slider-4 .box-image .image {
         background-position: 25% 50%;
-        align-items: flex-end;
     }
     .slider-home .sliders .slider-5 .box-image .image {
-        align-items: flex-end;
         justify-content: center;
         background-position: 40% 50%;
     }
@@ -64,15 +59,12 @@
     }
     .slider-banner .slider-1 .box-slider .image {
         background-position: 70% 50%;
-        align-items: flex-end;
     }
     .slider-banner .slider-2 .box-slider .image {
         background-position: 15% 50%;
-        align-items: flex-end;
     }
     .slider-banner .slider-3 .box-slider .image {
         background-position: 50% 50%;
-        align-items: flex-end;
     }
     .slider-banner .slider-1 .box-slider {
         background: rgba(175,195,230,1);
@@ -99,7 +91,6 @@
     }
     .bg .bg-contact {
         background-position: 15% 50%;
-        align-items: flex-end;
         height: 500px !important;
     }
     .business .box-image .image-business, .e-gift .box-image .image-e-gift {
@@ -315,17 +306,14 @@
     }
     .slider-home .sliders .slider-1 .box-image .image {
         background-position: 45% 50% !important;
-        align-items: flex-end !important;
     }
     .slider-home .sliders .slider-2 .box-image .image {
-        align-items: flex-end !important;
         background-position: 50% 50% !important;
     }
     .slider-home .sliders .slider-2 .box-image .box-inner p {
         font-size: 17px;
     }
     .slider-home .sliders .slider-3 .box-image .image {
-        align-items: flex-end !important;
         background-position: 5% 50% !important;
     }
     .slider-home .sliders .slider-3 .box-image .image .box-inner {
@@ -333,7 +321,6 @@
         margin: 0 auto;
     }
     .slider-home .sliders .slider-4 .box-image .image {
-        align-items: flex-end !important;
         background-position: 40% 50% !important;
     }
     .slider-home .sliders .slider-4 .box-image .box-inner {
@@ -348,7 +335,6 @@
     }
     .slider-home .sliders .slider-5 .box-image .image {
         background-position: 65% 50% !important;
-        align-items: flex-end !important;
     }
     .slider-home .sliders .slider-5 .box-image .box-inner h1 {
         font-size: 42px;
@@ -462,14 +448,12 @@
     }
     .slider-banner .slider-1 .box-slider .image {
         justify-content: center;
-        align-items: flex-end !important;
         background-position: 100% 50% !important;
     }
     .slider-banner .slider-2 .box-slider .image {
         background-position: 65% 50% !important;
     }
     .slider-banner .slider-3 .box-slider .image {
-        align-items: flex-end !important;
         background-position: 50% 50% !important;
     }
     .slider-banner .slider-4 .box-slider .image {
@@ -480,7 +464,6 @@
     }
     .bg .bg-contact {
         background-position: 30% 50% !important;
-        align-items: flex-end !important;
         height: 350px !important;
     }
     .bg-contact .box-inner {

@@ -1,10 +1,13 @@
-﻿<div class="slider-banner">
+﻿@{
+    var Banner_Page = (List<Dictionary<string, string>>)ViewBag.Banner_Page;
+}
+<div class="slider-banner">
     <div class="sliders">
         <div class="slider-1">
             <div class="box-slider">
-                <div class="image">
+                <div class="image d-flex @(Banner_Page[0]["Text_ItemAlign"])">
                     <div class="container-xl">
-                        <div class="row justify-content-center justify-content-md-end">
+                        <div class="row @(Banner_Page[0]["Text_JustifyContent"])">
                             <div class="col-xl-4 col-lg-6 col-md-5">
                                 <div class="box-inner text-center py-4">
                                     <h1 class="font-Prata fs-1" data-animation-in="animate__animated animate__fadeInDown">Your Nails Specialist</h1>
@@ -20,10 +23,10 @@
         </div>
         <div class="slider-2">
             <div class="box-slider">
-                <div class="image">
+                <div class="image d-flex @(Banner_Page[1]["Text_ItemAlign"])">
                     <div class="container-xl">
-                        <div class="row justify-content-center justify-content-md-center">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
+                        <div class="row @(Banner_Page[1]["Text_JustifyContent"])">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="box-inner text-center py-3">
                                     <h1 class="font-Prata fs-1" data-animation-in="animate__animated animate__fadeInDown">All Services</h1>
                                     <div class="banner-button" data-animation-in="animate__animated animate__backInLeft">
@@ -38,10 +41,10 @@
         </div>
         <div class="slider-3">
             <div class="box-slider">
-                <div class="image">
+                <div class="image d-flex @(Banner_Page[2]["Text_ItemAlign"])">
                     <div class="container-xl">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="row @(Banner_Page[2]["Text_JustifyContent"])">
+                            <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="box-inner text-center py-4">
                                     <h1 class="font-Prata fs-1" data-animation-in="animate__animated animate__fadeInDown">E-Gift Purchase</h1>
                                     <div class="banner-button" data-animation-in="animate__animated animate__backInLeft">

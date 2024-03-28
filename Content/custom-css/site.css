@@ -21,35 +21,30 @@
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
     background-position: 100% 50%;
-    align-items: center;
 }
 
 .slider-home .sliders .slider-2 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
     background-position: 15% 50%;
-    align-items: flex-end;
 }
 
 .slider-home .sliders .slider-3 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
     background-position: 50% 50%;
-    align-items: flex-end;
 }
 
 .slider-home .sliders .slider-4 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
     background-position: 90% 50%;
-    align-items: center;
 }
 
 .slider-home .sliders .slider-5 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
     background-position: 50% 50%;
-    align-items: flex-end;
 }
 /* -------------------------------------------------- */
 
@@ -67,21 +62,18 @@
     height: 800px;
     background-image: url(../images/banner/slider/your-nails.jpg);
     background-position: 25% 50%;
-    align-items: center;
 }
 
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
     background-position: 50% 50%;
-    align-items: center;
 }
 
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
     background-position: 50% 50%;
-    align-items: flex-end;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -100,7 +92,6 @@
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
     background-position: 50% 50%;
-    align-items: center;
 }
 /* -------------------------------------------------- */
 
@@ -215,27 +206,22 @@
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        align-items: center !important;
         background-position: 100% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
         background-position: 0% 50% !important;
-        align-items: flex-end !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
-        align-items: flex-end !important;
         background-position: 50% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
         background-position: 90% 50% !important;
-        align-items: center !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        align-items: flex-end !important;
         background-position: 50% 50% !important;
     }
     /* -------------------------------------------------- */
@@ -256,22 +242,18 @@
 
     .slider-banner .slider-1 .box-slider .image {
         background-position: 30% 50% !important;
-        align-items: center !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
         background-position: 50% 50% !important;
-        align-items: center !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
         background-position: 50% 50% !important;
-        align-items: flex-end !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
         background-position: 50% 50% !important;
-        align-items: flex-end !important;
     }
     /* -------------------------------------------------- */
 
@@ -283,7 +265,6 @@
 
     .bg .bg-contact {
         background-position: 35% 50% !important;
-        align-items: center !important;
         height: 500px !important;
     }
     /* -------------------------------------------------- */
@@ -304,27 +285,22 @@
 
     .slider-home .sliders .slider-1 .box-image .image {
         background-position: 100% 50% !important;
-        align-items: flex-end !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        align-items: flex-end !important;
         background-position: 15% 50% !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
-        align-items: flex-end !important;
         background-position: 75% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
-        align-items: flex-end !important;
         background-position: 90% 50% !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
         background-position: 50% 50% !important;
-        align-items: flex-end !important;
     }
     /* -------------------------------------------------- */
 
@@ -343,22 +319,18 @@
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        align-items: flex-end !important;
         background-position: 15% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        align-items: center !important;
         background-position: 50% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        align-items: flex-end !important;
         background-position: 50% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
-        align-items: flex-end !important;
         background-position: 50% 50% !important;
     }
     /* -------------------------------------------------- */
@@ -371,7 +343,6 @@
 
     .bg .bg-contact {
         background-position: 45% 50% !important;
-        align-items: center !important;
         height: 350px !important;
     }
     /* -------------------------------------------------- */

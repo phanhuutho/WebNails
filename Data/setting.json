@@ -13,5 +13,146 @@
   "Image_Service_Rounded": "4",
   "Image_Service_Text_ItemAlign": "end",
   "Image_Gallery_Rounded": "1",
-  "Image_GiftCard_Rounded": "2"
+  "Image_GiftCard_Rounded": "2",
+  "Banner_Home": [
+    {
+      "Position": 1,
+      "Text_ItemAlign": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 2,
+      "Text_ItemAlign": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 3,
+      "Text_ItemAlign": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 4,
+      "Text_ItemAlign": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 5,
+      "Text_ItemAlign": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      }
+    }
+  ],
+  "Banner_Page": [
+    {
+      "Position": 1,
+      "Text_ItemAlign": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 2,
+      "Text_ItemAlign": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 3,
+      "Text_ItemAlign": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      }
+    }
+  ],
+  "Banner_Contact": [
+    {
+      "Position": 1,
+      "Text_ItemAlign": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
+      }
+    }
+  ]
 }
