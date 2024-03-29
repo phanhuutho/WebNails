@@ -1,37 +1,15 @@
 {
-  "Name": "Star Nails by Joseph",
-  "HyperLinkTell": "tel:(352)3793336",
-  "TextTell": "(352)-379-3336",
-  "GooglePlus": "https://www.google.com/search?q=Star+Nails+by+Joseph+32608",
-  "Address": "2126 SW 34th St, Gainesville, FL 32608",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/9hEwKAb9KDJ7rcUQ6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13872.006576694326!2d-82.3732499!3d29.6326955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a339515fa2eb%3A0xf1be34138f007c40!2sStar%20Nails%20by%20Joseph!5e0!3m2!1sen!2s!4v1711538939621!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Golden Nails & Spa",
+  "HyperLinkTell": "tel:(832)6885884",
+  "TextTell": "(832)-688-5884",
+  "GooglePlus": "https://www.google.com/search?q=Golden+Nails+77064",
+  "Address": "8245 Mills Rd, Houston, TX 77064",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/cxifjjN2NL5EHZKh7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.9230545636606!2d-95.5459975!3d29.952891800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640cddf5f79141d%3A0xd83c2936f6b7090f!2sGolden%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1711730568336!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/3c31fbfe0445/customer/home",
   "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
-    }
-  ],
-  "Prices": [
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/price-list/prices-03.jpg"
-    }
-  ],
+  "Coupons": [],
+  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -41,14 +19,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/starnailsbyjoseph",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "https://www.instagram.com/starnailsbyjoseph",
+    "Url": "",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

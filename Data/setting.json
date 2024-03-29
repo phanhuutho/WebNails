@@ -128,13 +128,13 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "center"
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
-        "Mobile": "start"
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
       }
     }
   ],
@@ -144,12 +144,12 @@
       "Text_ItemAlign": {
         "Large": "center",
         "Laptop": "center",
-        "Tablet": "center",
-        "Mobile": "center"
+        "Tablet": "end",
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "center",
-        "Laptop": "center",
+        "Large": "start",
+        "Laptop": "start",
         "Tablet": "center",
         "Mobile": "center"
       }
