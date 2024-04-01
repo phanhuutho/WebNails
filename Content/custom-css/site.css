@@ -91,7 +91,7 @@
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 50% 50%;
+    background-position: 20% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -264,7 +264,7 @@
     }
 
     .bg .bg-contact {
-        background-position: 80% 50% !important;
+        background-position: 20% 50% !important;
         height: 500px !important;
     }
     /* -------------------------------------------------- */
@@ -319,7 +319,7 @@
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 15% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
@@ -342,7 +342,7 @@
     }
 
     .bg .bg-contact {
-        background-position: 75% 50% !important;
+        background-position: 30% 50% !important;
         height: 310px !important;
     }
     /* -------------------------------------------------- */
