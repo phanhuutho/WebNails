@@ -1,14 +1,19 @@
 ﻿{
-  "Name": "Nail Spa (Specialize in ombré brows)",
-  "HyperLinkTell": "tel:(205)7774854",
-  "TextTell": "(205)-777-4854",
-  "GooglePlus": "https://www.google.com/search?q=Nail+Spa+%28Specialize+in+ombr%C3%A9+brows%29+35222",
-  "Address": "3328 Clairmont Ave, Birmingham, AL 35222",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/RnRhm3vEmBQ8Jzaz6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13306.150226838536!2d-86.7800694!3d33.5134068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88891a4b7272d8dd%3A0x9e7f26607d7f2c6e!2sNail%20Spa%20(Specialize%20in%20ombr%C3%A9%20brows)!5e0!3m2!1sen!2s!4v1711821626323!5m2!1sen!2s",
-  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/989b6a37a77d/customer/home",
+  "Name": "Miracle Nails",
+  "HyperLinkTell": "tel:(210)4032584",
+  "TextTell": "(210)-403-2584",
+  "GooglePlus": "https://www.google.com/search?q=Miracle+Nail+78258",
+  "Address": "18360 Blanco Rd Ste 132, San Antonio, TX 78258",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/bXP6r3LMhoVgJAew5",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13874.93995673031!2d-98.5069893!3d29.6113892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c62202e2da693%3A0x6eb01c8da065798d!2sMiracle%20Nails%20-%20Blanco%20Road!5e0!3m2!1sen!2s!4v1712249397319!5m2!1sen!2s",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
