@@ -431,7 +431,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\images\gallery\" />
-    <Folder Include="Content\images\popup\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

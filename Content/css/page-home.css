@@ -540,6 +540,7 @@ main .contact .container{
     font-weight: bold;
     font-size: 1.25em;
     line-height: 40px;
+    margin-bottom: 0px;
 }
 .beauty-spa .box-image h2{
     font-size: 1.75em;
