@@ -11,7 +11,7 @@
   "Button_Contact_Rounded": "1",
   "Image_Contact_Rounded": "0",
   "Image_Service_Rounded": "0",
-  "Image_Service_Text_ItemAlign": "center",
+  "Image_Service_Text_ItemAlign": "end",
   "Image_Gallery_Rounded": "0",
   "Image_GiftCard_Rounded": "0",
   "Banner_Home": [
@@ -98,12 +98,12 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "center"
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     },
@@ -128,12 +128,12 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "center"
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     }
