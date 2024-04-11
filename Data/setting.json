@@ -148,9 +148,9 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     }

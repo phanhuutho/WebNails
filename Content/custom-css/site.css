@@ -1,8 +1,8 @@
 ﻿:root {
     --bg-site: #fee8f6;
-    --color-theme: #fd99d6;
-    --color-menu-legend: #fd99d6;
-    --color-text-theme: #fd99d6;
+    --color-theme: #e475ba;
+    --color-menu-legend: #e475ba;
+    --color-text-theme: #e475ba;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -91,7 +91,7 @@
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 45% 50%;
+    background-position: 80% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -264,7 +264,7 @@
     }
 
     .bg .bg-contact {
-        background-position: 40% 50% !important;
+        background-position: 75% 50% !important;
         height: 500px !important;
     }
     /* -------------------------------------------------- */
@@ -342,7 +342,7 @@
     }
 
     .bg .bg-contact {
-        background-position: 70% 50% !important;
+        background-position: 85% 50% !important;
         height: 310px !important;
     }
     /* -------------------------------------------------- */
@@ -351,13 +351,13 @@
     .business .business-inner .box-image .image-business {
         position: relative;
         width: 100%;
-        height: 325px;
+        height: 290px !important;
     }
 
     .e-gift .box-image .image-e-gift {
         position: relative;
         width: 100%;
-        height: 325px;
+        height: 290px !important;
     }
     /* -------------------------------------------------- */
 }
