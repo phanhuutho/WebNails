@@ -25,9 +25,9 @@
     margin-bottom: 10px;
 }
 .btn-tel, .btn-contact {
-    background-color: var(--bg-site);
+    background-color: var(--color-theme);
     border-radius: 0;
-    border-color: var(--bg-site);
+    border-color: var(--color-theme);
     font-family: "Carme";
     text-transform: uppercase;
     font-size: 85%;
