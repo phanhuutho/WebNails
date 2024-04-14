@@ -1,5 +1,5 @@
 {
-  "IsPayment": true,
+  "IsPayment": false,
   "IsGallery": false,
   "IsFade_HomeBanner": true,
   "IsFade_PageBanner": true,
