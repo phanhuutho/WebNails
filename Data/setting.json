@@ -18,15 +18,15 @@
     {
       "Position": 1,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     },
@@ -39,9 +39,9 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
@@ -69,19 +69,19 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     },
     {
       "Position": 5,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
-        "Mobile": "center"
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
         "Large": "center",
@@ -110,9 +110,9 @@
     {
       "Position": 2,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "end"
       },
       "Text_JustifyContent": {
@@ -125,15 +125,15 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     }
