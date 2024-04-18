@@ -1,5 +1,5 @@
 {
-  "IsPayment": false,
+  "IsPayment": true,
   "IsGallery": false,
   "IsFade_HomeBanner": true,
   "IsFade_PageBanner": true,
@@ -148,9 +148,9 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     }

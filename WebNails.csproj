@@ -267,6 +267,8 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
+    <Content Include="Content\images\popup\coupon-02.jpg" />
+    <Content Include="Content\images\popup\coupon-03.jpg" />
     <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\services-detail\brow-lamination.jpg" />
@@ -468,6 +470,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties data_4info_1json__JsonSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

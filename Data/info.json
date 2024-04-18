@@ -1,17 +1,25 @@
 ﻿{
-  "Name": "Nail Spot",
-  "HyperLinkTell": "tel:(904)4199992",
-  "TextTell": "(904)-419-9992",
-  "GooglePlus": "https://www.google.com/search?q=Nail+Spot+32258",
-  "Address": "12640 Bartram Park Blvd Suite 3, Jacksonville, FL 32258",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/JPqMLzf71GVa2y2p6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13801.738075418558!2d-81.5485871!3d30.1389907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5cced60f067b3%3A0x753a29e0fc6a0436!2sNail%20Spot%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1713116755408!5m2!1sen!2s",
+  "Name": "Canny Nails & Spa",
+  "HyperLinkTell": "tel:(951)9531399",
+  "TextTell": "(951)-953-1399",
+  "GooglePlus": "https://www.google.com/search?q=canny+nails+spa+92592",
+  "Address": "32965 Temecula Pkwy Ste 120, Temecula, CA 92592",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/6VsHhfqZgkjBaUgd8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13310.495750844346!2d-117.0810171!3d33.4851404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db7fad299a3b1f%3A0xdcb4d973c3435c11!2sCanny%20Nails%20%26%20Spa%20(Free%20Gift)!5e0!3m2!1sen!2s!4v1713461031435!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
   "Prices": [],
