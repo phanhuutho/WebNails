@@ -1,25 +1,17 @@
 ﻿{
-  "Name": "Canny Nails & Spa",
-  "HyperLinkTell": "tel:(951)9531399",
-  "TextTell": "(951)-953-1399",
-  "GooglePlus": "https://www.google.com/search?q=canny+nails+spa+92592",
-  "Address": "32965 Temecula Pkwy Ste 120, Temecula, CA 92592",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/6VsHhfqZgkjBaUgd8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13310.495750844346!2d-117.0810171!3d33.4851404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db7fad299a3b1f%3A0xdcb4d973c3435c11!2sCanny%20Nails%20%26%20Spa%20(Free%20Gift)!5e0!3m2!1sen!2s!4v1713461031435!5m2!1sen!2s",
+  "Name": "Perfect Nails LLC",
+  "HyperLinkTell": "tel:(860)8016939",
+  "TextTell": "(860)-801-6939",
+  "GooglePlus": "https://www.google.com/search?q=Perfect+Nails+06053",
+  "Address": "589 Hartford Rd, New Britain, CT 06053",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/18Nvy7tz22dTM5Cy8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11913.183496888072!2d-72.7633054!3d41.7141339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7ad4e4ccef43b%3A0xa371bcb8e66bf5cb!2sPerfect%20Nails%20LLC%20(%245%20OFF%20Pedicures)!5e0!3m2!1sen!2s!4v1713889667763!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-02.jpg"
-    },
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
   "Prices": [],
