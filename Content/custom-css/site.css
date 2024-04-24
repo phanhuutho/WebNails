@@ -91,7 +91,7 @@
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 70% 50%;
+    background-position: 65% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -264,7 +264,7 @@
     }
 
     .bg .bg-contact {
-        background-position: 70% 50% !important;
+        background-position: 55% 50% !important;
         height: 500px !important;
     }
     /* -------------------------------------------------- */
@@ -342,7 +342,7 @@
     }
 
     .bg .bg-contact {
-        background-position: 85% 50% !important;
+        background-position: 65% 50% !important;
         height: 310px !important;
     }
     /* -------------------------------------------------- */
