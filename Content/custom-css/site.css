@@ -20,7 +20,7 @@
 .slider-home .sliders .slider-1 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
-    background-position: 0% 50%;
+    background-position: 25% 50%;
 }
 
 .slider-home .sliders .slider-2 .box-image .image {
@@ -44,7 +44,7 @@
 .slider-home .sliders .slider-5 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
-    background-position: 50% 50%;
+    background-position: 40% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -67,7 +67,7 @@
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 60% 50%;
+    background-position: 40% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image {
@@ -206,7 +206,7 @@
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 0% 50% !important;
+        background-position: 30% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
@@ -222,7 +222,7 @@
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 30% 50% !important;
     }
     /* -------------------------------------------------- */
 
@@ -245,7 +245,7 @@
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 70% 50% !important;
+        background-position: 20% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
@@ -284,7 +284,7 @@
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 20% 50% !important;
+        background-position: 45% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
@@ -300,7 +300,7 @@
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 40% 50% !important;
     }
     /* -------------------------------------------------- */
 
@@ -319,11 +319,11 @@
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 25% 50% !important;
+        background-position: 40% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 55% 50% !important;
+        background-position: 40% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {

@@ -17,14 +17,12 @@ $(document).ready(function(){
 
     $(".menu-bars button").on("click", function(){
         $(".list-menu").show("slow");
-        $(".menu-mobile-tablet, .call-us").hide();
         $(".list-menu .call-us").show();
         $("body").css("overflow","hidden");
     });
 
     $(".list-menu .btn-close").on("click", function(){
         $(".list-menu").hide();
-        $(".menu-mobile-tablet, .call-us").show();
         $("body").css("overflow","auto");
     });
 });

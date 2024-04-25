@@ -46,11 +46,11 @@ footer .circle span{
 
 .tel {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 5px;
+    right: 5px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 5px;
     background: var(--color-theme);
     text-align: center;
     cursor: pointer;
@@ -87,7 +87,7 @@ footer .circle span{
 .tel .fa{
     color: #FFFFFF;
     font-size: 18px;
-    line-height: 55px;
+    line-height: 48px;
 }
 
 .tel-withtext a, .booking a, .tel-withtext .fa, .booking .fa {
