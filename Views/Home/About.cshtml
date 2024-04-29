@@ -21,11 +21,135 @@
             <div class="overlay"></div>
             <div class="page-main container-lg py-5" id="about-us">
                 <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
-                        <div class="mb-4 text-lg-start text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
-                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                    <div class="col-xl-7 col-lg-12 mt-3 order-xl-1 col-md-12 order-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-4 text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
+                                @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-12 mt-3">
+                                        <div class="text-center">
+                                            <h1><span class="font-Parisienne">Philosophy</span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 py-3 text-center">
+                                        <div class="art-icon py-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                <path d="M20 14.4C24.1 20.9 20.7 25.3 17.4 27.4C14.1 29.5 8.69998 30.5 4.69998 24C0.599979 17.5 -0.500021 5.8 2.69998 3.8C5.99998 1.8 16 7.9 20 14.4Z" fill="#F5E1D3"></path>
+                                                <path d="M43.2001 37.3C39.2001 45.4 32.6001 44.7 28.6001 42.7C24.6001 40.7 20.0001 35.9 24.0001 27.8C28.0001 19.7 38.0001 11.4 43.1001 11.4C46.5001 14.5 47.2001 29.3 43.2001 37.3Z" fill="#F5E1D3"></path>
+                                                <path d="M19.9999 14.4C15.9999 7.9 5.99988 1.8 2.69988 3.8C-0.50012 5.8 0.59988 17.5 4.59988 24C7.89988 29.3 12.1999 29.5 15.3999 28.3C15.9999 31.1 16.1999 34.3 15.9999 37.4L16.9999 37.5C17.1999 34.2 16.9999 30.9 16.3999 27.9C16.7999 27.7 17.0999 27.5 17.4999 27.3C20.6999 25.3 24.0999 20.9 19.9999 14.4ZM16.8999 26.5C16.6999 26.7 16.3999 26.8 16.0999 26.9C15.7999 25.6 15.3999 24.3 14.9999 23.1C14.2999 21.1 13.4999 19.4 12.6999 18.1C11.8999 16.8 10.9999 15.9 10.1999 15.5L9.79988 16.4C10.3999 16.6 11.0999 17.4 11.8999 18.6C12.6999 19.8 13.4999 21.5 14.0999 23.4C14.4999 24.6 14.8999 25.9 15.1999 27.3C14.0999 27.8 12.7999 28 11.3999 27.8C9.49988 27.6 7.29988 26.4 5.39988 23.4C3.59988 20.4 2.29988 16 1.89988 12.1C1.69988 10.2 1.79988 8.4 1.99988 7.1C2.29988 5.7 2.69988 4.9 3.19988 4.7C3.69988 4.4 4.49988 4.3 5.89988 4.7C7.29988 5 8.89988 5.7 10.4999 6.8C13.7999 8.8 17.1999 11.9 19.0999 15C20.9999 18 21.0999 20.5 20.3999 22.3C19.8999 24.1 18.3999 25.6 16.8999 26.5Z" fill="black"></path>
+                                                <path d="M43.0999 11.5C37.9999 11.5 28.0999 19.8 23.9999 27.9C20.5999 34.7 23.2999 39.1 26.5999 41.6C24.2999 43.5 21.7999 45 18.8999 45.6L19.0999 46.6C22.1999 45.9 24.9999 44.3 27.4999 42.2C27.8999 42.4 28.1999 42.6 28.5999 42.8C32.5999 44.8 39.1999 45.5 43.1999 37.4C47.1999 29.3 46.4999 14.5 43.0999 11.5ZM42.2999 36.9C40.3999 40.7 37.9999 42.3 35.6999 42.8C33.2999 43.3 30.8999 42.7 29.0999 41.8C28.7999 41.7 28.5999 41.5 28.2999 41.4C29.3999 40.4 30.2999 39.3 31.1999 38.2C34.1999 34.4 36.2999 30.1 36.9999 27.1L35.9999 26.9C35.2999 29.7 33.2999 33.9 30.2999 37.7C29.3999 38.8 28.3999 39.9 27.2999 40.9C25.9999 40 24.7999 38.8 24.0999 37.2C23.0999 35.1 22.8999 32.2 24.7999 28.3C26.6999 24.4 30.0999 20.4 33.6999 17.4C35.4999 15.9 37.2999 14.6 38.8999 13.8C40.3999 13 41.5999 12.6 42.5999 12.5C43.0999 13.1 43.5999 14.3 44.0999 15.9C44.5999 17.7 44.7999 20 44.8999 22.5C44.9999 27.5 44.1999 33.1 42.2999 36.9Z" fill="black"></path>
+                                            </svg>
+                                        </div>
+                                        <h6 class="art-title">Green Beauty</h6>
+                                        <div class="art-description">
+                                            <p>All cosmetic forumulas are organic. The majority of all ingredients is natural.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 py-3 text-center">
+                                        <div class="art-icon py-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                <g clip-path="url(#clip0)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1C11.2386 1 9 3.23858 9 6V23V25V33C9 40.732 15.268 47 23 47H25C32.732 47 39 40.732 39 33V25V23V6C39 3.23858 36.7614 1 34 1C31.2386 1 29 3.23858 29 6V19H19V6C19 3.23858 16.7614 1 14 1Z" fill="#F5E1D3"></path>
+                                                    <circle cx="19" cy="29" r="1.5" fill="white" stroke="black"></circle>
+                                                    <circle cx="29" cy="29" r="1.5" fill="white" stroke="black"></circle>
+                                                    <rect x="23" y="38" width="1" height="3" fill="black"></rect>
+                                                    <rect x="20.6465" y="36.3535" width="1" height="3.08573" transform="rotate(-45 20.6465 36.3535)" fill="black"></rect>
+                                                    <rect x="23.7071" y="38.8892" width="1" height="3.64218" transform="rotate(-135 23.7071 38.8892)" fill="black"></rect>
+                                                    <path d="M13.5868 35.9239L3 33.9443" stroke="black"></path>
+                                                    <path d="M33.9089 35.9239L44.4957 33.9443" stroke="black"></path>
+                                                    <path d="M14.4957 40.5733L5 45.6558" stroke="black"></path>
+                                                    <path d="M33 40.5733L42.4957 45.6558" stroke="black"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 6C19 3.23858 16.7614 1 14 1C11.2386 1 9 3.23858 9 6L9 15L9 16L9 19.7143L9 32C9 40.2843 15.7157 47 24 47C32.2843 47 39 40.2843 39 32V19.7143L39 19.0001V18.0001L39 16L39 6C39 3.23858 36.7614 1 34 1C31.2386 1 29 3.23858 29 6V18.0001V19.0001H28.5859C29.512 19.4309 30.3537 19.9883 31.0828 20.6466C31.2099 20.7614 31.3336 20.8792 31.4537 21C31.7662 21.3142 32.0545 21.6484 32.3161 22H31.024H31.0218C30.8393 21.7971 30.6458 21.602 30.4421 21.4157C28.8233 19.9348 26.5571 19 24 19C21.4429 19 19.1766 19.9348 17.5579 21.4157C17.3542 21.6021 17.1607 21.7971 16.9782 22H16.9761H15.684C15.9455 21.6484 16.2338 21.3142 16.5463 21C16.6663 20.8793 16.7899 20.7616 16.9169 20.6469C17.6461 19.9884 18.4879 19.431 19.4141 19.0001H19V18.0001V6ZM40 15V16L40 18.0001V19.0001L40 19.7143L40 32C40 40.8366 32.8366 48 24 48C15.1634 48 8 40.8365 8 32L8 19.7143L8 19.0001V18.0001V6C8 2.6863 10.6863 0 14 0C17.3137 0 20 2.68629 20 6V18.0001V18.7489C21.2249 18.2672 22.5778 18 24 18C25.4222 18 26.7751 18.2672 28 18.7489V18.0001V6C28 2.6863 30.6863 0 34 0C37.3137 0 40 2.68629 40 6L40 15Z" fill="black"></path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="48" height="48" fill="white"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <h6 class="art-title">Cruelty-Free</h6>
+                                        <div class="art-description">
+                                            <p>Even nowadays some cosmetic products are tested on animals. That is not the case for us.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 py-3 text-center">
+                                        <div class="art-icon py-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                <rect x="2.5" y="12.5" width="19" height="32" rx="5.5" fill="#F5E1D3" stroke="black"></rect>
+                                                <rect x="8.5" y="4.5" width="7" height="8" fill="white" stroke="black"></rect>
+                                                <rect x="4" y="4" width="4" height="1" fill="black"></rect>
+                                                <path d="M26.768 6.1805C26.6597 5.28703 27.3571 4.5 28.2571 4.5H43.7429C44.6429 4.5 45.3403 5.28703 45.232 6.1805L41.7169 35.1805C41.6256 35.9336 40.9864 36.5 40.2278 36.5H31.7722C31.0136 36.5 30.3744 35.9336 30.2831 35.1805L26.768 6.1805Z" fill="#F5E1D3" stroke="black"></path>
+                                                <path d="M30.928 8.375L33.072 26.0625" stroke="black"></path>
+                                                <path d="M32.5 36.5H39.5V44.5H32.5V36.5Z" stroke="black"></path>
+                                                <rect x="2.5" y="20.5" width="9" height="15" fill="white" stroke="black"></rect>
+                                            </svg>
+                                        </div>
+                                        <h6 class="art-title">Professional Care</h6>
+                                        <div class="art-description">
+                                            <p>All products we use are professional and have proven effeciency. No compromises.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 py-3 text-center">
+                                        <div class="art-icon py-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                <path d="M10.2461 39.7502L19.3238 19.5H24H28.6762L37.7539 39.7502C39.3851 43.389 36.7228 47.5 32.7351 47.5H15.2649C11.2772 47.5 8.61493 43.389 10.2461 39.7502Z" fill="#F5E1D3" stroke="black"></path>
+                                                <path d="M18.5 26.5L18 25.5L18.5 23.5L19.5 21.5H28.5L29 22L29.5 23.5L30 25V26V27.5L28.5 28L26.5 27.5L25.5 27L24.5 25.5H22.5H20L18.5 26.5Z" fill="white"></path>
+                                                <rect x="20" y="14" width="8" height="11" fill="white"></rect>
+                                                <path d="M19.5 19V13.5H28.5V19" stroke="black"></path>
+                                                <rect x="17.5" y="10.5" width="13" height="3" fill="white" stroke="black"></rect>
+                                                <path d="M15.5 27.4998C17.3333 26.6664 21.4 25.0998 23 25.4998C25 25.9998 27 30.4998 31.5 26.4998" stroke="black"></path>
+                                                <path d="M24 34.8166C22.64 33.2166 20 34.0966 20 36.3366C20 38.5766 22.4 39.6966 24 41.2966C25.6 39.6966 28 38.5766 28 36.3366C28 34.0966 25.36 33.2166 24 34.8166Z" fill="white" stroke="black" stroke-miterlimit="10"></path>
+                                                <circle cx="38.5" cy="10.5" r="2" fill="#F2EEE9" stroke="black"></circle>
+                                                <circle cx="28.5" cy="2.5" r="2" fill="#F2EEE9" stroke="black"></circle>
+                                            </svg>
+                                        </div>
+                                        <h6 class="art-title">Non-Toxic Formula</h6>
+                                        <div class="art-description">
+                                            <p>Don’t worry, all our nails polishes and other products are non-toxic. We do care about you and our specialists.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 py-3 text-center">
+                                        <div class="art-icon py-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                <circle cx="24" cy="15.5" r="14.5" fill="#F5E1D3" stroke="black"></circle>
+                                                <path d="M43 14.5C43 24.9934 34.4934 33.5 24 33.5C13.5066 33.5 5 24.9934 5 14.5" stroke="black"></path>
+                                                <rect x="22.5" y="33.5" width="3" height="7" fill="white" stroke="black"></rect>
+                                                <path d="M15.5275 44.5C15.7762 42.25 17.6837 40.5 20 40.5H28C30.3163 40.5 32.2238 42.25 32.4725 44.5H15.5275Z" fill="white" stroke="black"></path>
+                                                <circle cx="5" cy="16" r="1.5" fill="white" stroke="black"></circle>
+                                                <circle cx="43" cy="16" r="1.5" fill="white" stroke="black"></circle>
+                                                <path d="M31 8.5L26.5 12.5" stroke="black"></path>
+                                                <path d="M32 12.5L29 15.5" stroke="black"></path>
+                                            </svg>
+                                        </div>
+                                        <h6 class="art-title">Personalized Experience</h6>
+                                        <div class="art-description">
+                                            <p>Each guest is our favourite guest. Come and make sure that our service is exceptional.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 py-3 text-center">
+                                        <div class="art-icon py-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                <path d="M14.5 24.3503C10.59 19.7454 3 22.2781 3 28.7249C3 35.1717 9.9 38.3951 14.5 43C19.1 38.3951 26 35.1717 26 28.7249C26 22.2781 18.41 19.7454 14.5 24.3503Z" fill="#F5E1D3" stroke="black" stroke-miterlimit="10"></path>
+                                                <path d="M36.5 9.79068C33.61 6.28221 28 8.21187 28 13.1237C28 18.0356 33.1 20.4915 36.5 24C39.9 20.4915 45 18.0356 45 13.1237C45 8.21187 39.39 6.28221 36.5 9.79068Z" fill="#F5E1D3" stroke="black" stroke-miterlimit="10"></path>
+                                                <path d="M7 29C7 27.3431 8.34315 26 10 26" stroke="black"></path>
+                                            </svg>
+                                        </div>
+                                        <h6 class="art-title">We Love What We Do</h6>
+                                        <div class="art-description">
+                                            <p>People that you’ll meet in our studio are doing job they love. Come and make sure there is a difference.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
+                    <div class="col-xl-5 col-lg-12 text-center my-1 order-xl-2 col-md-12 order-1">
                         <img src="/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
                     </div>
                 </div>
