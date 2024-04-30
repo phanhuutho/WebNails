@@ -24,10 +24,10 @@
         "Mobile": "center"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
+        "Mobile": "start"
       }
     },
     {
