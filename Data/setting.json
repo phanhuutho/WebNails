@@ -21,13 +21,13 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "center"
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
         "Large": "end",
         "Laptop": "end",
         "Tablet": "end",
-        "Mobile": "end"
+        "Mobile": "center"
       }
     },
     {
@@ -63,30 +63,30 @@
     {
       "Position": 4,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "end",
         "Laptop": "end",
         "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     },
     {
       "Position": 5,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     }
@@ -95,10 +95,10 @@
     {
       "Position": 1,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
       },
       "Text_JustifyContent": {
         "Large": "center",
@@ -125,15 +125,15 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     }
