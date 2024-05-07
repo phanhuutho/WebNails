@@ -9,7 +9,7 @@
                     <div class="container-lg">
                         <div class="row @(Banner_Home[0]["Text_JustifyContent"])">
                             <div class="col-auto col-xl-6">
-                                <div class="box-inner text-center py-lg-5 py-md-3 py-2" data-animation-in="animate__animated animate__fadeInDown">
+                                <div class="box-inner text-center py-lg-5 p-md-3 py-2" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="fs-1">WELCOME TO</h1>
                                     <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-3"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name)))</strong></h2>
                                     <a class="btn btn-warning btn-theme btn-more btn-none-border" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
@@ -76,7 +76,7 @@
                     <div class="container-lg">
                         <div class="row @(Banner_Home[4]["Text_JustifyContent"])">
                             <div class="col-auto">
-                                <div class="box-inner text-center py-3" data-animation-in="animate__animated animate__fadeInDown">
+                                <div class="box-inner text-center py-md-3" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="font-Prata fs-1">All Services</h1>
                                 </div>
                             </div>
