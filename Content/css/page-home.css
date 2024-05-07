@@ -693,7 +693,7 @@ main .contact .container{
     font-weight: bold;
     color: var(--color-text-theme);
     font-size: 2.5em;
-    line-height: 2;
+    line-height: 1.5;
     font-family: "Parisienne";
 }
 .e-gift h2, .business h2 {

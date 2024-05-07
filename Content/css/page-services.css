@@ -1,12 +1,18 @@
+.bg .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
 main {
 
 }
 .page-main {
     position: relative;
 }
+.page-main h1 {
+    color: var(--color-black);
+}
 .page-main h1 span {
     padding-bottom: 0px;
-    border-bottom: 2px solid var(--color-text-theme);
+    border-bottom: 2px solid var(--color-black);
     font-weight: 900;
 }
 .box-image {

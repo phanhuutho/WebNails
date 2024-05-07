@@ -1,11 +1,60 @@
 ﻿:root {
-    --bg-site: #fff5e9;
-    --color-theme: #d3a153;
-    --color-menu-legend: #d3a153;
-    --color-text-theme: #d3a153;
+    --bg-site: #000000;
+    --color-theme: #f4bf4b;
+    --color-menu-legend: #f4bf4b;
+    --color-text-theme: #f4bf4b;
     --color-black: #000000;
-    --color-white: #ffffff;
+    --color-white: #fcfaec;
 }
+
+/*Logo*/
+.logo, .navbar-brand img {
+    background: var(--bg-site);
+}
+.logo img {
+    background: var(--bg-site);
+}
+.logo-footer {
+    background: var(--bg-site);
+}
+.logo-footer img {
+    background: var(--bg-site);
+}
+/* -------------------------------------------------- */
+
+/*Menu*/
+.menu-desktop .list-inline > li > a {
+    color: var(--color-white);
+}
+/* -------------------------------------------------- */
+
+/*Footer*/
+footer {
+    color: var(--color-white);
+    background: var(--bg-site);
+}
+footer a {
+    color: var(--color-white);
+}
+/* -------------------------------------------------- */
+
+/*Main*/
+main {
+    background: var(--color-black);
+}
+.bg-main {
+    background: var(--color-black);
+}
+/* -------------------------------------------------- */
+
+/*Home*/
+.beauty-spa, .about-us, .business-gift {
+    background: var(--color-black);
+}
+.beauty-spa .beauty-spa-inner > div[class*='container'], .about-us > div[class*='container'], .business, .e-gift {
+    background: var(--color-white);
+}
+/* -------------------------------------------------- */
 
 /*Banner Home*/
 .slider-home {
@@ -61,19 +110,19 @@
 .slider-banner .slider-1 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 50% 50%;
+    background-position: 35% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 40% 50%;
+    background-position: 50% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 35% 50%;
+    background-position: 50% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -241,15 +290,15 @@
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 35% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 20% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 40% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -273,6 +322,12 @@
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    /*Logo*/
+    .logo-brand .navbar-brand {
+        background: var(--bg-site);
+    }
+    /* -------------------------------------------------- */
+
     /*Banner Home*/
     .slider-home {
         height: 320px !important;
@@ -319,15 +374,15 @@
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 40% 50% !important;
+        background-position: 55% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 40% 50% !important;
+        background-position: 45% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 40% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {

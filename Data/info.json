@@ -1,20 +1,45 @@
 ﻿{
-  "Name": "Pro Nails Spa",
-  "HyperLinkTell": "tel:(360)6985063",
-  "TextTell": "(360)-698-5063",
-  "GooglePlus": "https://www.google.com/search?q=Pro+Nails+Spa+98383",
-  "Address": "3299 NW Randall Way #103, Silverdale, WA 98383",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/gVw3k1oW78SSeuXo7",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10749.29224820973!2d-122.6951548!3d47.6587201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54903ab8ba8f9d81%3A0xc63696606ede5757!2sPro%20Nails%20Spa%20(%2410%20OFF%20Pedicure)!5e0!3m2!1sen!2s!4v1714239844439!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Global Nails Spa Katy",
+  "HyperLinkTell": "tel:(832)4376942",
+  "TextTell": "(832)-437-6942",
+  "GooglePlus": "https://www.google.com/search?q=Global+Nails+Spa+Katy+TX",
+  "Address": "3030 Falcon Landing Blvd, Katy, TX 77494",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/CFk6md6k4vHJnsPm8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13856.737240979157!2d-95.7923419!3d29.7433786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86412137f7d58c8b%3A0x277b69e8d39af5f6!2sGlobal%20Nails%20Spa%20Katy%20(10%25%20-%2015%25%20OFF%20Coupon%20and%20More%20Promotions)!5e0!3m2!1sen!2s!4v1714994411141!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/872da99f6cf5gn/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,7 +49,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/globalnailsspakaty/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
