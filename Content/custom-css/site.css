@@ -1,10 +1,15 @@
 ﻿:root {
-    --bg-site: #fff5e9;
-    --color-theme: #d3a153;
-    --color-menu-legend: #d3a153;
-    --color-text-theme: #d3a153;
+    --bg-site: #ffdfd2;
+    --color-theme: #713b2f;
+    --color-menu-legend: #713b2f;
+    --color-text-theme: #713b2f;
     --color-black: #000000;
     --color-white: #ffffff;
+}
+
+/*Menu*/
+.menu-desktop .list-inline > li > a {
+    color: var(--color-black);
 }
 
 /*Banner Home*/
