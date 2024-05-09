@@ -1,5 +1,6 @@
 ﻿:root {
     --bg-site: #ffdfd2;
+    --bg-main: #c8947c;
     --color-theme: #713b2f;
     --color-menu-legend: #713b2f;
     --color-text-theme: #713b2f;
@@ -7,10 +8,44 @@
     --color-white: #ffffff;
 }
 
+/*Header*/
+header {
+    background: var(--bg-main);
+}
+/* -------------------------------------------------- */
+
+/*Footer*/
+footer {
+    background: var(--bg-main);
+}
+/* -------------------------------------------------- */
+
 /*Menu*/
 .menu-desktop .list-inline > li > a {
     color: var(--color-black);
 }
+/* -------------------------------------------------- */
+
+/*Main*/
+main {
+    background: var(--bg-main);
+}
+.beauty-spa {
+    background: var(--bg-main);
+}
+.about-us {
+    background: var(--bg-main);
+}
+.business-gift {
+    background: var(--bg-main);
+}
+.contact .bg-contact .overlay {
+    background-color: rgba(255, 225, 210, 0.7);
+}
+.bg .overlay {
+    background-color: rgba(255, 225, 210, 0.6);
+}
+/* -------------------------------------------------- */
 
 /*Banner Home*/
 .slider-home {
