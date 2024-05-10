@@ -39,12 +39,6 @@ main {
 .business-gift {
     background: var(--bg-main);
 }
-.contact .bg-contact .overlay {
-    background-color: rgba(255, 225, 210, 0.7);
-}
-.bg .overlay {
-    background-color: rgba(255, 225, 210, 0.6);
-}
 /* -------------------------------------------------- */
 
 /*Banner Home*/
@@ -113,7 +107,7 @@ main {
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 35% 50%;
+    background-position: 40% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -131,7 +125,7 @@ main {
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 65% 50%;
+    background-position: 55% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -367,7 +361,7 @@ main {
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 40% 50% !important;
+        background-position: 20% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -382,7 +376,7 @@ main {
     }
 
     .bg .bg-contact {
-        background-position: 45% 50% !important;
+        background-position: 55% 50% !important;
         height: 310px !important;
     }
     /* -------------------------------------------------- */
