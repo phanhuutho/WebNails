@@ -95,10 +95,10 @@
     {
       "Position": 1,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
       },
       "Text_JustifyContent": {
         "Large": "center",
