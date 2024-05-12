@@ -60,13 +60,13 @@ main {
 .slider-home .sliders .slider-2 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
-    background-position: 70% 50%;
+    background-position: 50% 50%;
 }
 
 .slider-home .sliders .slider-3 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
-    background-position: 30% 50%;
+    background-position: 50% 50%;
 }
 
 .slider-home .sliders .slider-4 .box-image .image {
@@ -78,7 +78,7 @@ main {
 .slider-home .sliders .slider-5 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
-    background-position: 40% 50%;
+    background-position: 50% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -244,19 +244,19 @@ main {
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 75% 50% !important;
+        background-position: 60% 50% !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 35% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 55% 50% !important;
+        background-position: 45% 50% !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 30% 50% !important;
+        background-position: 50% 50% !important;
     }
     /* -------------------------------------------------- */
 
@@ -322,19 +322,19 @@ main {
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 90% 50% !important;
+        background-position: 60% 50% !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 25% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 35% 50% !important;
+        background-position: 60% 50% !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 40% 50% !important;
+        background-position: 50% 50% !important;
     }
     /* -------------------------------------------------- */
 

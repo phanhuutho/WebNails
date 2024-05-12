@@ -69,9 +69,9 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
