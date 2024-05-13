@@ -30,6 +30,23 @@ footer {
 main {
     background: var(--bg-main);
 }
+.outline-button-theme {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    border: 2px solid var(--color-theme);
+    border-radius: 30px;
+    background: var(--color-white);
+    padding: 3px;
+}
+.outline-button-default {
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--color-theme);
+    border-radius: 0.375rem;
+    background: var(--color-white);
+    padding: 3px;
+}
 .beauty-spa {
     background: var(--bg-main);
 }
