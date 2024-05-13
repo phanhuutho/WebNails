@@ -77,32 +77,42 @@
                     <div class="tabs-mobile">
                         <div class="row">
                             <div class="col-@(IsBookingAppointment ? "4" : "6") pb-3">
-                                <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="@(ViewBag.HyperLinkTell)">
-                                    <i class="fa fa-phone"></i><br /><span class="small">Call</span>
-                                </a>
+                                <div class="outline-button-default">
+                                    <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="@(ViewBag.HyperLinkTell)">
+                                        <i class="fa fa-phone"></i><br /><span class="small">Call</span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-@(IsBookingAppointment ? "4" : "6") pb-3">
-                                <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="@(ViewBag.LinkGoogleMapAddress)" target="_blank">
-                                    <i class="fa fa-location-arrow"></i><br /><span class="small">Direction</span>
-                                </a>
+                                <div class="outline-button-default">
+                                    <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="@(ViewBag.LinkGoogleMapAddress)" target="_blank">
+                                        <i class="fa fa-location-arrow"></i><br /><span class="small">Direction</span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-@(IsBookingAppointment ? "4" : "6") pb-3">
-                                <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="/e-gift.html">
-                                    <i class="fa fa-gift"></i><br /><span class="small">Gift Card</span>
-                                </a>
+                                <div class="outline-button-default">
+                                    <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="/e-gift.html">
+                                        <i class="fa fa-gift"></i><br /><span class="small">Gift Card</span>
+                                    </a>
+                                </div>
                             </div>
                             @if (IsBookingAppointment)
                             {
                                 <div class="col-6 pb-3">
-                                    <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="@(ViewBag.LinkBookingAppointment)" target="_blank">
-                                        <i class="fa fa-calendar"></i><br /><span class="small">Booking</span>
-                                    </a>
+                                    <div class="outline-button-default">
+                                        <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="@(ViewBag.LinkBookingAppointment)" target="_blank">
+                                            <i class="fa fa-calendar"></i><br /><span class="small">Booking</span>
+                                        </a>
+                                    </div>
                                 </div>
                             }
                             <div class="col-6 pb-3">
-                                <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="/services.html">
-                                    <i class="fa fa-gears"></i><br /><span class="small">Services</span>
-                                </a>
+                                <div class="outline-button-default">
+                                    <a class="btn btn-warning bg-theme btn-none-border w-100 text-white" href="/services.html">
+                                        <i class="fa fa-gears"></i><br /><span class="small">Services</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
