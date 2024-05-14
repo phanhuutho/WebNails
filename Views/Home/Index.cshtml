@@ -59,6 +59,19 @@
             </div>
         </div>
     }
+    <div class="modal fade" id="ModalMenuServices" tabindex="-1" aria-labelledby="ModalMenuServicesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-bg">
+                    <h1 class="modal-title fs-5" id="ModalMenuServicesLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-bg">
+
+                </div>
+            </div>
+        </div>
+    </div>
 }
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
@@ -146,6 +159,14 @@
 
         function ServiceDetail(name) {
             location.href = "/services/" + name + ".html";
+        }
+
+        function OpenMenu(obj) {
+            var title = $(obj).find("h2", ".box-text").text();
+            var menubody = $(obj).find(".row", ".d-none").html();
+            $(".modal-title", "#ModalMenuServices").html("").append(title);
+            $(".modal-body", "#ModalMenuServices").html("").append(menubody);
+            $("#ModalMenuServices").modal("show");
         }
     </script>
 }

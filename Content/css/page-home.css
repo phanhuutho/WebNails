@@ -809,6 +809,21 @@ main .contact .container{
     background-color: var(--color-white);
 }
 
+.modal-header-bg {
+    background: var(--bg-site);
+    color: var(--color-theme);
+}
+
+.modal-body-bg {
+    background: var(--color-theme);
+    color: var(--bg-site);
+}
+
+.modal-body span {
+    display: inline-block;
+    width: 0px;
+}
+
 @-webkit-keyframes dash {
     to {
       stroke-dashoffset: 0;

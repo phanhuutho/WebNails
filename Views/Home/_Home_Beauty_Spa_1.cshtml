@@ -20,37 +20,145 @@
             </div>
             <div class="row justify-content-center mx-md-3">
                 <div class="col-xl-3 col-lg-6 col-md-6 text-center my-3">
-                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)">
+                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)" onclick="OpenMenu(this)">
                         <div class="image1 rounded rounded-@(ImageServices_Home_Rounded) align-items-@(ImageServices_Home_Text_ItemAlign)">
                             <div class="text-center">
                                 <h2 class="font-Prata">MANICURE</h2>
                             </div>
+                            <div class="d-none" id="manicure">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row small">
+                                            <div class="col-10">Regular Manicure</div>
+                                            <div class="col-2 text-end">$20<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Regular Manicure With French</div>
+                                            <div class="col-2 text-end">$25<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Gel Manicures</div>
+                                            <div class="col-2 text-end">$35<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Gel Manicures w/French</div>
+                                            <div class="col-2 text-end">$40<span>&nbsp;</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6 text-center my-3">
-                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)">
+                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)" onclick="OpenMenu(this)">
                         <div class="image2 rounded rounded-@(ImageServices_Home_Rounded) align-items-@(ImageServices_Home_Text_ItemAlign)">
                             <div class="text-center">
                                 <h2 class="font-Prata">PEDICURE</h2>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 text-center my-3">
-                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)">
-                        <div class="image3 rounded rounded-@(ImageServices_Home_Rounded) align-items-@(ImageServices_Home_Text_ItemAlign)">
-                            <div class="text-center">
-                                <h2 class="font-Prata">DIP POWDER</h2>
+                            <div class="d-none" id="pedicure">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row small">
+                                            <div class="col-10">Classic</div>
+                                            <div class="col-2 text-end">$31<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Deluxe</div>
+                                            <div class="col-2 text-end">$36<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">College</div>
+                                            <div class="col-2 text-end">$46<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Volcano</div>
+                                            <div class="col-2 text-end">$56<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Volcano + CBD</div>
+                                            <div class="col-2 text-end">$70<span>&nbsp;</span></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6 text-center my-3">
-                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)">
+                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)" onclick="OpenMenu(this)">
+                        <div class="image3 rounded rounded-@(ImageServices_Home_Rounded) align-items-@(ImageServices_Home_Text_ItemAlign)">
+                            <div class="text-center">
+                                <h2 class="font-Prata">DIP POWDER</h2>
+                            </div>
+                            <div class="d-none" id="dip-powder">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row small">
+                                            <div class="col-10">Powder Color Full Set w/Gel</div>
+                                            <div class="col-2 text-end">$55<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Pink and White Powder Full Set</div>
+                                            <div class="col-2 text-end">$60<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Pink and White Powder Fill</div>
+                                            <div class="col-2 text-end">$50<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Ombre Full Set</div>
+                                            <div class="col-2 text-end">$55<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Ombre Fill</div>
+                                            <div class="col-2 text-end">$50<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Dip with Soak</div>
+                                            <div class="col-2 text-end">$50<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Dip No Soak</div>
+                                            <div class="col-2 text-end">$45<span>&nbsp;</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Dip Pink and White</div>
+                                            <div class="col-2 text-end">$55<span>+</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 text-center my-3">
+                    <div class="box-image rounded rounded-@(ImageServices_Home_Rounded)" onclick="OpenMenu(this)">
                         <div class="image4 rounded rounded-@(ImageServices_Home_Rounded) align-items-@(ImageServices_Home_Text_ItemAlign)">
                             <div class="text-center">
                                 <h2 class="font-Prata">ACRYLIC</h2>
+                            </div>
+                            <div class="d-none" id="acrylic">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row small">
+                                            <div class="col-10">Acrylic Full Set w/Regular Polish</div>
+                                            <div class="col-2 text-end">$35<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Acrylic Fill w/Regular Polish</div>
+                                            <div class="col-2 text-end">$30<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Acrylic Full Set w/Gel Polish</div>
+                                            <div class="col-2 text-end">$50<span>+</span></div>
+                                        </div>
+                                        <div class="row small">
+                                            <div class="col-10">Acrylic Fill w/Gel Polish</div>
+                                            <div class="col-2 text-end">$40<span>+</span></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
