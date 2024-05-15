@@ -3,14 +3,14 @@
   "IsGallery": false,
   "IsFade_HomeBanner": true,
   "IsFade_PageBanner": true,
-  "LogoTop_Rounded": "circle",
-  "LogoBottom_Rounded": "circle",
-  "ImageServices_Home_Rounded": "circle",
+  "LogoTop_Rounded": "0",
+  "LogoBottom_Rounded": "0",
+  "ImageServices_Home_Rounded": "0",
   "ImageServices_Home_Text_ItemAlign": "center",
-  "ImageContact_Home_Rounded": "circle",
-  "Button_Contact_Rounded": "1",
-  "Image_Contact_Rounded": "circle",
-  "Image_Service_Rounded": "circle",
+  "ImageContact_Home_Rounded": "0",
+  "Button_Contact_Rounded": "0",
+  "Image_Contact_Rounded": "0",
+  "Image_Service_Rounded": "0",
   "Image_Service_Text_ItemAlign": "center",
   "Image_Gallery_Rounded": "0",
   "Image_GiftCard_Rounded": "0",
@@ -21,27 +21,27 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "center"
-      },
-      "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
-        "Mobile": "start"
-      }
-    },
-    {
-      "Position": 2,
-      "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
         "Mobile": "end"
       },
       "Text_JustifyContent": {
         "Large": "start",
         "Laptop": "start",
         "Tablet": "start",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 2,
+      "Text_ItemAlign": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     },
@@ -95,10 +95,10 @@
     {
       "Position": 1,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
-        "Mobile": "center"
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
       },
       "Text_JustifyContent": {
         "Large": "center",
@@ -125,15 +125,15 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "end",
         "Laptop": "end",
         "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     }

@@ -2,16 +2,18 @@ var position_active = 0;
 $(document).ready(function(){
     $(".list-inline-item-link").each(function(index,element){
         if($(element).hasClass("active"))
-        position_active = index;
+            position_active = index;
     });
 
     $(".list-inline-item-link").hover(
         function () {
             $(".list-inline-item-link").removeClass("active");
+            $(".list-inline-item").removeClass("active");
         }, 
         function () {
             var elementActive = $(".list-inline-item-link")[position_active];
             $(elementActive).addClass("active");
+            $(elementActive).parent(".list-inline-item").addClass("active");
         }
     );
 
@@ -29,6 +31,7 @@ $(document).ready(function(){
 
 function ActiveMenu(ElementId){
     $("#" + ElementId).addClass("active");
+    $("#" + ElementId).parent(".list-inline-item").addClass("active");
 }
 
 function ReloadSliderImageMobile(){
