@@ -61,6 +61,11 @@
                                 <i class="fa fa-bars"></i>
                             </button>
                         </div>
+                        <div class="text-name">
+                            <div class="d-flex h-100 align-items-center justify-content-center">
+                                <span class="font-Parisienne fs-2 fw-bold text-theme">@ViewBag.Name</span>
+                            </div>
+                        </div>
                         <div class="logo-brand">
                             <a class="navbar-brand rounded rounded-@(LogoTop_Rounded)" href="javascript:void(0)">
                                 @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))

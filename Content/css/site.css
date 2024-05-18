@@ -160,3 +160,10 @@ a:active,a:hover {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.text-name {
+    position: absolute;
+    left: 30px;
+    height: 75px;
+    width: calc(100% - 110px);
+}
