@@ -21,13 +21,13 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "end"
+        "Mobile": "center"
       },
       "Text_JustifyContent": {
         "Large": "start",
         "Laptop": "start",
         "Tablet": "start",
-        "Mobile": "center"
+        "Mobile": "start"
       }
     },
     {
@@ -125,16 +125,16 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
         "Mobile": "center"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
       }
     }
   ],
