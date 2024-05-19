@@ -52,6 +52,8 @@
     padding-left: 2px;
     padding-right: 2px;
     border-radius: 25px;
+    margin-left: -4px;
+    margin-right: -4px;
 }
 .navbar-nav > li:first-child {
     margin-left: 0 !important;
