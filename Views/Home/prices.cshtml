@@ -12,24 +12,243 @@
 <main class="bg-main">
     <div class="overlay"></div>
     <div class="page-main">
-        <section class="py-2 container">
+        <section class="py-2 container-fluid">
             <div class="row">
-                <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
-            </div>
-            <div class="row justify-content-center">
-                @if (Prices.Count > 0)
-                {
-                    foreach (var item in Prices)
-                    {
-                        <div class="col-lg-12 py-2 text-center">
-                            <img class="img-fluid" src="@item.Src" alt="" />
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="manicure">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Manicure</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Spa Manicure</b></div>
+                                                    <div class="col-3 text-end"><b>$25<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Includes trimming and shaping, cuticle grooming,buffing, lotion massage & our choice of Regular polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>MK Spa Manicure</b></div>
+                                                    <div class="col-3 text-end"><b>$32<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Includes everything of Spa Manicure plus sugar scrub exfoliation, a soothing mud masque, extended lotion massage, hot towel wrap, & your choice of Regular polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Ultimate MK Spa Manicure</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Includes everything of MK Spa Manicure plus an intensely hydrating paraffin treatment and collagen cream-infused gloves that are slipped on to deliver anti-aging benefits.A hot towel wrap and extended massage are the final touches. Your selection of Regular polish adds a personalized touch.</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    }
-                }
-                else
-                {
-                    <div class="col-lg-12 py-2"></div>
-                }
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="dip-powder">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Dip Powder</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>DIPPING NAILS</b></div>
+                                                    <div class="col-3 text-end"><b>$52<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>PINK & WHITE DIPPING</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>DIPPING NAIL WITH TIP</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>OMBRE DIPPING</b></div>
+                                                    <div class="col-3 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>* Dip Powder Removal with service *</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>* Dip Powder Removal w/o service *</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="gel-polish">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Gel Polish</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>SPA GEL MANICURE</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Includes trimming and shaping, cuticle grooming, buffing, lotion massage. Application with any Gel lacquer of your choice. Flawless for up to 2 to 3 weeks.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>MK GEL SPA MANICURE</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Includes nail trim, share, cuticle groom, and a hydrating lower arm and hand massage. Application with Gel lacquer or your choice. Flawless for up to 2 to 3 weeks.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>THE ULTIMATE MK GEL SPA MANICURE</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Special treatment for hands and skin. *Soften and takes off dry skin with hand scrub and lotion and Paraffin wax* Appliication with any Gel lacquer of your choice. Flawless for up to 2 to 3 weeks.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>BUILDER GEL or FLEX GEL MANICURE</b></div>
+                                                    <div class="col-3 text-end"><b>$50<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Builder Gel or Flex Gel Base coat can be used on the natural nails that has an extra elastic and flexible nature. It's designed to give extra strength to thin and brittle nails that split easily. This is a great alternative for your natural nails after taking off acrylics or dip powder.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>* Gel Removal with service *</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>* Gel Removal w/o service *</b></div>
+                                                    <div class="col-3 text-end"><b>$12<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="acrylic">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">Acrylic</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>ACRYLIC WITH REGULAR POLISH - FULL SET</b></div>
+                                                    <div class="col-3 text-end"><b>$50<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>ACRYLIC WITH REGULAR POLISH - REFILL</b></div>
+                                                    <div class="col-3 text-end"><b>$40<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>ACRYLIC WITH GEL POLISH - FULL SET</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>ACRYLIC WITH GEL POLISH - REFILL</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>ACRYLIC WITH COLOR POWDER - FULL SET</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>ACRYLIC WITH COLOR POWDER - REFILL</b></div>
+                                                    <div class="col-3 text-end"><b>$50<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Acrylic with white tip</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pink and White - Full Set</b></div>
+                                                    <div class="col-3 text-end"><b>$70<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pink and WhitePink - Refill</b></div>
+                                                    <div class="col-3 text-end"><b>$65<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Refill Pink Only</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Ombre</b></div>
+                                                    <div class="col-3 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Ombre Refill</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>HYBRID GEL OVERLAY or EXTENDED TIP - FULL SET</b></div>
+                                                    <div class="col-3 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>HYBRID GEL OVERLAY or EXTENDED TIP - REFILL</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>SPECIAL SHAPE</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>EXTRA LENGTH</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>NAIL FIX</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Take Off Acrylic with services</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Take Off Acrylic w/o services</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>+</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
