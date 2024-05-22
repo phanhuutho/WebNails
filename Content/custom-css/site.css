@@ -112,19 +112,19 @@ main {
 .slider-banner .slider-1 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 70% 50%;
+    background-position: 40% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 50% 50%;
+    background-position: 15% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 50% 50%;
+    background-position: 20% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -142,7 +142,7 @@ main {
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 50% 50%;
+    background-position: 20% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -298,15 +298,15 @@ main {
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 40% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 10% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 15% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -321,7 +321,7 @@ main {
     }
 
     .bg .bg-contact {
-        background-position: 50% 50% !important;
+        background-position: 25% 50% !important;
         height: 500px !important;
     }
     /* -------------------------------------------------- */
@@ -376,15 +376,15 @@ main {
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 25% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 10% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 10% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -399,7 +399,7 @@ main {
     }
 
     .bg .bg-contact {
-        background-position: 50% 50% !important;
+        background-position: 25% 50% !important;
         height: 310px !important;
     }
     /* -------------------------------------------------- */
