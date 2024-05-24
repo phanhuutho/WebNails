@@ -1,15 +1,36 @@
 ﻿{
-  "Name": "MK Nails",
-  "HyperLinkTell": "tel:(317)6888093",
-  "TextTell": "(317)-688-8093",
-  "GooglePlus": "https://www.google.com/search?q=MK+Nails+46033",
-  "Address": "2007 E Greyhound Pass suite 5, Carmel, IN 46033",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yz8jpGpSDb1bKoFT8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.370040084334!2d-86.1242219!3d40.0007963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814afa9df690955%3A0xb09091fb218900b!2s(%2410%20OFF%20Coupons%20%26%20More%20Promotion)%20MK%20Nails!5e0!3m2!1sen!2s!4v1715962512429!5m2!1sen!2s",
+  "Name": "VEDA NAILS & SPA",
+  "HyperLinkTell": "tel:(636)5291916",
+  "TextTell": "(636)-529-1916",
+  "GooglePlus": "https://www.google.com/search?q=Veda+Nails+63088",
+  "Address": "8 Stonegate Center, Valley Park, MO 63088",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/fQJtpcmiX8BnKvQJ7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12478.337470138444!2d-90.495!3d38.5663889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8d17d71e9c5a7%3A0x1d5ea11788838aab!2sVEDA%20NAILS%20%26%20SPA!5e0!3m2!1sen!2s!4v1716568540066!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
