@@ -10,12 +10,12 @@
     <div class="overlay"></div>
     <div class="page-main">
         <section class="py-2 container">
-            <div class="row">
+            <div class="row justify-content-center">
                 @if (Prices.Count > 0)
                 {
                     foreach (var item in Prices)
                     {
-                        <div class="col-lg-12 py-2">
+                        <div class="col-lg-12 py-2 text-center">
                             <img class="img-fluid" src="@item.Src" alt="" />
                         </div>
                     }
