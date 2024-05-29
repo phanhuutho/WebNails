@@ -12,24 +12,596 @@
 <main class="bg-main">
     <div class="overlay"></div>
     <div class="page-main">
-        <section class="py-2 container">
+        <section class="py-2 container-fluid">
             <div class="row">
-                <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
-            </div>
-            <div class="row justify-content-center">
-                @if (Prices.Count > 0)
-                {
-                    foreach (var item in Prices)
-                    {
-                        <div class="col-lg-12 py-2 text-center">
-                            <img class="img-fluid" src="@item.Src" alt="" />
+                <div class="col-md-12" id="package-deal">
+                    <div class="box-inner m-md-3 p-md-3 my-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="box-image my-3">
+                                        <div class="text-center py-4">
+                                            <h2 class="font-Prata">PACKAGE DEAL</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-text">
+                                    <div class="box-prices">
+                                        <div class="row">
+                                            <div class="col-9"><b>TEEN FACIAL + EXPRESS PEDICURE + GEL MANICURE</b></div>
+                                            <div class="col-3 text-end">ONLY <b>$120<span>&nbsp;</span></b></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-9"><b>DELUXE PEDICURE + EYELASH EXTENSION + EYEBROW WAX</b></div>
+                                            <div class="col-3 text-end">ONLY <b>$160<span>&nbsp;</span></b></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-9"><b>ANTI-AGING FACIAL + VOLCANOL PEDI + DIPPING POWDER</b></div>
+                                            <div class="col-3 text-end">ONLY <b>$200<span>&nbsp;</span></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    }
-                }
-                else
-                {
-                    <div class="col-lg-12 py-2"></div>
-                }
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="manicure">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">MANICURE</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Princess Manicure</b></div>
+                                                    <div class="col-12"><p>For our little princess | 10 years old & younger Nails trimmed & shaped, Light massage, Polish & Nail Art.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Princess Spa Pedicure</b></div>
+                                                    <div class="col-12"><p>For our little princess | 10 years old & younger Foot Soak, Nails trimmed & shaped. Light massage, Polish & Nail Art.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Classic Manicure</b></div>
+                                                    <div class="col-12"><p>Cuticle care, Nails trimmed, Shaped, Hydrating, Massage, Hot Towed wrap, polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>French Gel Manicure</b></div>
+                                                    <div class="col-12"><p>Cuticle care, Nails trimmed, Shaped, Hydrating, Massage, Hot Towed wrap, polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Gel Manicure</b></div>
+                                                    <div class="col-12"><p>Cuticle care, Nails trimmed, Shaped, Hydrating, Massage, Hot Towed wrap, polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Deluxe Manicure</b></div>
+                                                    <div class="col-12"><p>Softening hand soak, Nails trimmed & shaped Cuticle care. A gentle exfoliating scrub, Therapeutic hot stone massage, Hot towel wrap, Polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Lavender Manicure Special</b></div>
+                                                    <div class="col-12"><p>Lavender sugar scrub, hydration mask, or paraffin wrap, unwind as we massage your neck & shoulder (5 min.).</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Ultimate Manicure</b></div>
+                                                    <div class="col-12"><p>Softening hand soak, Nails trimmed & shaped Cuticle care. Gentle exfoliating scrub, Therapeutic hot stone massage, Rejuvenating paraffin dip, Hot towel wrap & Polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>VOESH Special Manicure</b></div>
+                                                    <div class="col-12"><p>Vegan, Paraben, Cruelty-free. Enjoy fully detoxify & hydrate your skin with ten different scents, exfoliate your skin with a sugar scrub, followed with hydration mask with paraffin wrap or collagen glove, enjoy with 10 min. massage neck, shoulder & arms, polish. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Jelly Manicure</b></div>
+                                                    <div class="col-12"><p>Soak your hand with a bath filled with blossom jelly & fresh rose petals. Exfoliate with a blossom sugar scrub, followed by a refreshing hydration mask & paraffin or collagen glove wraps. Relax for 15 min. massage for shoulder, arms & hands, polish. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Organic Manicure</b></div>
+                                                    <div class="col-12"><p>Exfoliate with an organic sugar scrub, fresh rose petals. followed by a hydration mask and paraffin wraps. Unwind to 15 min. massage for shoulder, arms, hands. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>VOESH Glimmer Special Manicure</b></div>
+                                                    <div class="col-12"><p>The Ultimate relaxation begins with a golden sea salt soak. Exfoliate with a gold-inspired sugar scrub, hydrate your skin with a soothing & calming golden mud mask, refinish of vanilla bean, paraffin & warm towel wrap, hot stone massage, cool it off with golden cooling gel massage from knee to toes, Relax to an additional Voels vegan formula massage butter. This Ultimate Luxury Manicure will revitalized your skin feeling refreshed and shimmering skin. 15 min. massage neck, shoulder and arms. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Dip Nails</b></div>
+                                                    <div class="col-12"><p>Dipping Powder has no odor, no liquid, no primer, and no UV light, lasts up to 2 weeks, and helps your nail grow out stranger and healthier.</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="pedicure">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">PEDICURES</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Classic Spa Pedicure</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Gel Pedicure</b></div>
+                                                    <div class="col-12"><p>Softening, detoxifying sea salt soak, nail pedicure, Cuticle trim/care, Hydrating massage creme, Hot Stone Massage, Hot towel wrap, Polish. 5 min. massage extra.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Deluxe Spa Pedicure</b></div>
+                                                    <div class="col-12"><p>Softening, detoxifying sea salt soak, nail pedicure, Cuticle trim/care, Hydrating massage creme, Fresh cucumber for vitamin-rich antioxidants to the skin. Gentle exfoliation scrub. Therapeutic hot stone massage, Hot towel wrap, Polish.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Ultimate Spa Pedicure</b></div>
+                                                    <div class="col-12"><p>Softening, detoxifying sea salt soak. Nails pedicure Cuticle trim/care, Fresh cucumber or citrus providing vitamin-rich antioxidants to the skin, Gentle exfoliation scrub, Intensive hydrating masque, Therapeutic hot stone massage, Rejuvenating paraffin dip, Hot towel wrap, Polish. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Jelly Pedicure</b></div>
+                                                    <div class="col-12"><p>Bath filled with blossom Jelly and fresh rose petals. Relax to 7 min. foot bath soaks as we massage your neck and shoulder. Exfoliate with a blossom sugar scrub. Followed with heel treatment. Hydrate skin with fresh cucumber or organic with a refreshing mask, paraffin, or collagen sock. Relax to an additional 8 min. massage with hot stone from knee to toe. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Organic Pedicure</b></div>
+                                                    <div class="col-12"><p>Exfoliate skin with an organic sugar scrub, followed with heel treatment, hydrate skin with fresh cucumber or organic with hydrate mask and paraffin or collagen sock wrap give into 15 min. massage neck, shoulder. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>VOESH Spa Ultimate Pedicure</b></div>
+                                                    <div class="col-12"><p>Detoxifying & Deodorizing Sea soak, exfoliation of dead skin with 100% Sugar scrub, tighten pores with mud masque, soften the callus & buff away, hydrate & soothe skin with massage creme, therapeutic hot stone massage, collagen sock: anti-aging, enriched with collagen, nourishes, hydrate the skin with hot towel wrap & polish. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>VOESH Glimmer Special Pedicure</b></div>
+                                                    <div class="col-12"><p>The Ultimate relaxation begins with a golden sea salt soak. Exfoliate with a gold-inspired sugar scrub. Followed by our signature heel treatment. Hydrate your skin with a soothing and calming golden mud mask, benefits of vanilla bean paraffin and warm towel wraps, hot stone massages cool it off with golden cooling gel massage from knee to toe. Relax to additional Voels vegan formula massage butter. This Ultimate Luxury Pedicure will revitalized your skin feeling refreshed and shimmering skin. 10 min. massage extra neck & shoulder. Additional 15 min. massage with hot stone from knee to toe. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Volcano Spa Pedicure</b></div>
+                                                    <div class="col-12"><p>The Ultimate relaxation begins with a bath-filled organic blossom Jelly and fresh rose petals, 10 min. foot bath soaks as we massage your neck and shoulder. Exfoliate with blossom sugar scrub followed with heel treatment, hydrate skin with a refreshing mask, paraffin, or collagen wrap. Relax for an additional 15 min. massage with hot stone from knee to toe. Complimentary a glass of wine.</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="artificial">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">ARTIFICIAL NAIL CARE</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Set with Gel / Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Set with Regular Color / Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Pink & White Full Set / Fill White /Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Set Glitter Tip / Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Set Glitter Whole Nail / Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Set Powder Color / Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Set Fading Two Color / Fill</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="add-on">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">ADD-ON TREATMENTS</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Extra Long Acrylic Tips</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Nail Shaping</b></div>
+                                                    <div class="col-12"><p>(Almond, Ballerina/Coffin, Stiletto, etc)</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Multiple 3 or more gel color</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Nail Art</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>French Design</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Nail Repair</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Polish Change</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Gel Polish Change</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Gel Polish with Pedicure</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Gel Polish Removal with Service</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Gel Polish Removal</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Buffer Shine</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Callous Treatment</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Paraffin Treatment Hands / Feet</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Extra Massage 15 minutes</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Acrylic/Hard Gel Removal</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Collagen Gloves</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Collagen Socks</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Massage Add On</b></div>
+                                                    <div class="col-12">
+                                                        <p>Add Hand, Foot, Shoulder, or Neck Massage to your Manicure, Pedicure treatments per $1/min.</p>
+                                                        <p>Cleanliness and sanitization is a vital part of our services. We use an FDA-registered medical-grade heat sterilizer for our instruments, the lining of the pedicure basin is replaced after each client, files & buffers are discarded after each use. If you would like to keep them, please let your technician know after the service.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="waxing">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">WAX | HAIR REMOVAL</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Eyebrow</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Upper Lip</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Cheeks</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Chin</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Sideburns</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Face</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Neck</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Chest</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Toes</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Under Arm</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Half Arm</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Arm</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Half Leg</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Full Leg</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Bikini</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Brazilian</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Abdomen + Chest</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Back</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="eyelash-extensions">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">EYELASH EXTENSIONS</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Individual Classic Full Set</b></div>
+                                                    <div class="col-3 text-end"><b>$120<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Individual Classic Fill</b></div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Individual Hybrid Full Set</b></div>
+                                                    <div class="col-3 text-end"><b>$120<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Individual Hybrid Fill</b></div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Individual Volume Dramatic Full Set</b></div>
+                                                    <div class="col-3 text-end"><b>$140<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Individual Volume Dramatic Fill</b></div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Mega Volume Full Set</b></div>
+                                                    <div class="col-3 text-end"><b>$160<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Mega Volume Fill</b></div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Fill over 3 week</b></div>
+                                                    <div class="col-3 text-end"><b>$10 extra<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Fill over 4 week</b></div>
+                                                    <div class="col-3 text-end"><b>$20 extra<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Over 5 Week</b></div>
+                                                    <div class="col-3 text-end"><b>new set<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>3 Strands Full Set (No Refill)</b></div>
+                                                    <div class="col-3 text-end"><b>$40<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Premium Eyelash Perm Lift</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Premium Eyebrow Tint with Eyebrow Wax</b></div>
+                                                    <div class="col-3 text-end"><b>$50<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="facial">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">FACIAL SERVICES</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>TEEN FACIAL (ANE)</b></div>
+                                                    <div class="col-12"><p>Deep clean, toner, hydrate, mask. Moisturize, Refresh (40 mins).</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>SEAWEED FACIAL</b></div>
+                                                    <div class="col-12"><p>Thour deep clean, tilting, hydrate, skin dewy + glowing seaweed mask, paraffin wax for hand and feet (60 mins).</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>ANTI-AGING</b></div>
+                                                    <div class="col-12"><p>Cleanser peeling gel, lifting, hydrate glowing tone, pioneering of positional skin. Rejuvenating cream serum beleza, paraffin wax for hand and feet (60 mins).</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="free-drink">
+                            <div class="box-inner m-md-3 p-md-3 my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">FREE DRINK</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Limit 1 per customer.</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <ol>
+                                                            <li>Water</li>
+                                                            <li>Apple Juice</li>
+                                                            <li>Cranberry Juice</li>
+                                                            <li>Mimosa</li>
+                                                            <li>Hot Tea</li>
+                                                            <li>Coffee</li>
+                                                            <li>Mimosa (3% Alcohol)</li>
+                                                            <li>Poinsettia (3% Alcohol)</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Must be 21 years old to serve wine, show ID.</b></div>
+                                                    <div class="col-12"><p></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
