@@ -27,7 +27,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('manicure')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_manicure.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>MANICURE</h2>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('pedicure')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_pedicure.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>PEDICURE</h2>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('artificial')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_enhancements.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>ARTIFICIAL</h2>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('waxing')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_waxing.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>WAXING</h2>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('facial')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_facial.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>FACIAL</h2>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('add-on')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_additional_services.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>ADD-ON</h2>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('eyelash-extensions')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_eyelash_extension.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>EYELASH EXTENSIONS</h2>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenDetail('free-drink')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_drink.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>FREE DRINK</h2>
@@ -139,5 +139,9 @@
                 sliderInit.slick('slickPlay');
             });
         });
+
+        function OpenDetail(id) {
+            location.href = '/price-list.html#' + id;
+        }
     </script>
 }
