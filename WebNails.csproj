@@ -401,6 +401,7 @@
     <Content Include="Content\images\services\services_brow_lamination.jpg" />
     <Content Include="Content\images\services\services_builder_gel.jpg" />
     <Content Include="Content\images\services\services_dip_powder_nails.jpg" />
+    <Content Include="Content\images\services\services_drink.jpg" />
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
     <Content Include="Content\images\services\services_facial.jpg" />
