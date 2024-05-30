@@ -12,12 +12,24 @@
 header {
     background: var(--bg-main);
 }
+.logo, .navbar-brand img {
+    background: var(--bg-main);
+}
+.logo img {
+    background: var(--bg-main);
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
 footer {
     background: var(--bg-main);
     color: var(--color-white);
+}
+.logo-footer {
+    background: var(--bg-main);
+}
+.logo-footer img {
+    background: var(--bg-main);
 }
 footer a {
     color: var(--color-white);
