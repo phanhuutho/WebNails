@@ -17,6 +17,11 @@
 }
 @section custom_css{
     <link href="~/Content/custom-css/site.css" rel="stylesheet">
+    <style type="text/css">
+        main {
+            background: var(--color-white);
+        }
+    </style>
 }
 <main>
     @{Html.RenderPartial("_SliderPageSub");}

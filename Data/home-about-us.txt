@@ -1,11 +1,5 @@
 ﻿<p>
-    Welcome to NAILS TECH. 
-    Located at a beautiful place in Pasadena, MD 21122, NAILS TECH offers the ultimate in pampering and restoring your beauty with our whole-hearted, careful & professional staff. 
-    Comprehending customer is not an easy task. 
-    It’s even harder when it comes to nail art & caring services.
-</p>
-
-<p>
-    Because customers’ hobbies, personalities are various, we always listen to our customers and we’ll be there whenever you need! 
-    Whether you want your nails designed for special occasions or daily décor, our professional, skillful & friendly staff would help you to choose the most suitable nail model.
+    Nails Tech is a premier nail and spa salon in Pasadenas that offers a wide variety of nail services for men and women. 
+    Our team of highly trained and experienced technicians use only the highest quality products to create beautiful, long-lasting nails. 
+    We are committed to providing our clients with a luxurious and relaxing experience, from the moment they walk in the door to the moment they leave.
 </p>

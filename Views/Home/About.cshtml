@@ -21,11 +21,26 @@
             <div class="overlay"></div>
             <div class="page-main container-lg py-5" id="about-us">
                 <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
-                        <div class="mb-4 text-lg-start text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
-                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                    <div class="col-xl-7 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-4 text-lg-start text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
+                                @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-about-us mt-4">
+                                    <img src="~/Content/images/home/home_about_us_1.jpg" class="img-fluid img-thumbnail p-0" />
+                                    <img src="~/Content/images/home/home_about_us_2.jpg" class="img-fluid img-thumbnail p-0" />
+                                    <img src="~/Content/images/home/home_about_us_3.jpg" class="img-fluid img-thumbnail p-0" />
+                                    <img src="~/Content/images/home/home_about_us_4.jpg" class="img-fluid img-thumbnail p-0" />
+                                    <img src="~/Content/images/home/home_about_us_5.jpg" class="img-fluid img-thumbnail p-0" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
+                    <div class="col-xl-5 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
                         <img src="/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
                     </div>
                 </div>
@@ -41,6 +56,7 @@
         ActiveMenu("menu-about-us");
 
         var sliderInit = $('.sliders');
+        var sliderAboutUs = $('.slider-about-us');
 
         $(document).ready(function () {
             sliderInit.slick({
@@ -60,6 +76,20 @@
 
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
+            });
+
+            sliderAboutUs.slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
             });
         });
     </script>
