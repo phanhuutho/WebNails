@@ -43,3 +43,12 @@
 .pdf-viewer .pdf-viewer-page-view {
     margin:0 auto;
 }
+
+.box-prices {
+    font-size: 14px;
+}
+
+.text-end span {
+    display: inline-block;
+    width: 10px;
+}

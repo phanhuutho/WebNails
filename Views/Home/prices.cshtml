@@ -12,24 +12,629 @@
 <main class="bg-main">
     <div class="overlay"></div>
     <div class="page-main">
-        <section class="py-2 container">
+        <section class="py-2 container-fluid">
             <div class="row">
-                <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
-            </div>
-            <div class="row justify-content-center">
-                @if (Prices.Count > 0)
-                {
-                    foreach (var item in Prices)
-                    {
-                        <div class="col-lg-12 py-2 text-center">
-                            <img class="img-fluid" src="@item.Src" alt="" />
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="manicure">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">MANICURE</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Manicure-Classic</b><br/>(15 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$25<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Manicure Gel And Spa</b><br />(30mins)</div>
+                                                    <div class="col-3 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Change The Basic</b><br />(10 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Manicure-Gel</b><br />(20 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$40<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Manicure Buffer Shiny</b></div>
+                                                    <div class="col-3 text-end"><b>$35<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    }
-                }
-                else
-                {
-                    <div class="col-lg-12 py-2"></div>
-                }
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="pedicure">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">PEDICURES</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure Basic</b><br />(30 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$37<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure-College</b><br />(45 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure-Honey</b><br />(55 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$70<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure-VIP</b><br />(70 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$90<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure Deluxe</b><br />(35 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$50<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure-Hot Stone</b><br />(50 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pedicure-LuXury Spa</b><br />(55 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$80<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Relax Spa</b><br />(35 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$47<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="kids">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">LITTLE ANGEL</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Kid Manicure</b></div>
+                                                    <div class="col-3 text-end"><b>$17<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Kid Hand</b></div>
+                                                    <div class="col-3 text-end"><b>$12<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Mani & Pedi Packages</b></div>
+                                                    <div class="col-3 text-end"><b>$40<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Kid Pedicure</b></div>
+                                                    <div class="col-3 text-end"><b>$26<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Toe Polish</b></div>
+                                                    <div class="col-3 text-end"><b>$16<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="gel-polish">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">POLISH CHANGE</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Regular Polish Hands</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Gel Polish Hands</b></div>
+                                                    <div class="col-3 text-end"><b>$30<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Regular Polish Feet</b></div>
+                                                    <div class="col-3 text-end"><b>$20<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Gel Polish Feet</b></div>
+                                                    <div class="col-3 text-end"><b>$30<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="gel-x">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">APEES GEL-X</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Full Set Gel-X</b></div>
+                                                    <div class="col-3 text-end"><b>$65<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Fill Gel-X</b></div>
+                                                    <div class="col-3 text-end"><b>$50<span>+</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="full-sets">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">FULL SETS</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Acrylic (Regular Polish)</b></div>
+                                                    <div class="col-3 text-end"><b>$46<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Dipping Powder</b><br />(Tip Add On $5)</div>
+                                                    <div class="col-3 text-end"><b>$50<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Dipping Powder With Manicure</b><br />(Tip Add On $5)</div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Liquid Gel</b></div>
+                                                    <div class="col-3 text-end"><b>$68<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Acrylic (Gel Polish)</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>French Dipping Powder</b><br />(Tip Add On $5)</div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pink & White</b></div>
+                                                    <div class="col-3 text-end"><b>$72<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="fill">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">FILL</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Acrylic (Regular Polish)</b></div>
+                                                    <div class="col-3 text-end"><b>$37<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Pink & White</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Acrylic (Gel Polish)</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Liquid Gel</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="waxing">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">WAXING</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Eyebrow</b></div>
+                                                    <div class="col-3 text-end"><b>$12<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Length</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Full Face</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Stomach</b></div>
+                                                    <div class="col-3 text-end"><b>$35<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Full Hand</b></div>
+                                                    <div class="col-3 text-end"><b>$20<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Full Arm</b></div>
+                                                    <div class="col-3 text-end"><b>$55<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Back</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Leg Full</b></div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Brazilian</b></div>
+                                                    <div class="col-3 text-end"><b>$60<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Chin</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Sideburn</b></div>
+                                                    <div class="col-3 text-end"><b>$20<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Shoulders</b></div>
+                                                    <div class="col-3 text-end"><b>$30<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Under Arm</b></div>
+                                                    <div class="col-3 text-end"><b>$30<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Half Arm</b></div>
+                                                    <div class="col-3 text-end"><b>$35<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Chest</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Leg Half</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Bikini</b></div>
+                                                    <div class="col-3 text-end"><b>$45<span>+</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="add-on">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">ADDITIONAL EXTRA</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Herbal Neck Treatment</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Gel Polish Application</b></div>
+                                                    <div class="col-3 text-end"><b>$20<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Callus Treatment</b></div>
+                                                    <div class="col-3 text-end"><b>$7<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="repairs">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">REPAIRS</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-8"><b>Acrylic (Regular Polish)</b></div>
+                                                    <div class="col-4 text-end"><b>Price Vary<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-8"><b>Dipping Powder</b><br />(Tip Add On $5)</div>
+                                                    <div class="col-4 text-end"><b>Price Vary<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-8"><b>Liquid Gel</b></div>
+                                                    <div class="col-4 text-end"><b>Price Vary<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-8"><b>Acrylic (Gel Polish)</b></div>
+                                                    <div class="col-4 text-end"><b>Price Vary<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-8"><b>Pink & White</b></div>
+                                                    <div class="col-4 text-end"><b>Price Vary<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="extra">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">EXTRA</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Cut Down With Services</b></div>
+                                                    <div class="col-3 text-end"><b>$3<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Cut Down W/o Services Feet</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Paraffin Feet</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Shiny Nail Buffer</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Design</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Special Shapes</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Matte Top Coat</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Cat Eye</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Take Off Gel</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Take Off Acrylic</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Cut Down W/o Services Hands</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Paraffin Hands</b></div>
+                                                    <div class="col-3 text-end"><b>$12<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>French</b></div>
+                                                    <div class="col-3 text-end"><b>$7<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Manicure With Acrylic</b></div>
+                                                    <div class="col-3 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Extra Massage</b><br />(10 Mins/20 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$20/28<span></span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Combination Colors</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Chrome Design</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Ombre</b></div>
+                                                    <div class="col-3 text-end"><b>$20<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Take Off Dip</b></div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Length</b></div>
+                                                    <div class="col-3 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="eyelash-extensions">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">EYELASH EXTENSION</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-9"><b>Full Set Individual</b><br />(1h40 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$170<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Fill Individual</b><br />(1h)</div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Eyelash Removal</b><br />(10 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Full Set Cluster</b><br />(40 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$70<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Fill Cluster</b><br />(30 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$40<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-9"><b>Eyebrow Wax & Tint</b><br />(20 Mins)</div>
+                                                    <div class="col-3 text-end"><b>$35<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="drinks">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-image my-3">
+                                                <div class="text-center py-4">
+                                                    <h2 class="font-Prata">DRINKS MENU</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-12"><b>Soft Drinks</b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Alcoholic Drinks</b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Juice</b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><b>Sparkling</b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
