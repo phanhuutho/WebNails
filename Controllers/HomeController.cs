@@ -63,18 +63,17 @@ namespace WebNails.Controllers
             return View();
         }
 
-        public ActionResult Gallery(int TabIndex = 1)
+        public ActionResult Gallery()
         {
             var Galleries = (List<GalleryModel>)ViewBag.Gallery ?? new List<GalleryModel>();
 
-            ViewBag.TabIndex = TabIndex;
             ViewBag.ShowMore = Galleries.Skip(16).Take(16).Count() > 0;
 
             Galleries = Galleries.Skip(0).Take(16).ToList();
             return View(Galleries);
         }
 
-        public ActionResult GalleryLoadMore(int TabIndex = 1, int Page = 1)
+        public ActionResult GalleryLoadMore(int Page = 1)
         {
             var dataGalleries = (List<GalleryModel>)ViewBag.Gallery ?? new List<GalleryModel>();
             var ShowMore = dataGalleries.Skip(Page * 16).Take(16).Count() > 0;

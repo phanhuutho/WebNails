@@ -47,7 +47,7 @@ namespace WebNails.Controllers
 
             var jsonGallery = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/data-gallery.json"));
             var dataGallery = JsonConvert.DeserializeObject<List<GalleryModel>>(jsonGallery);
-            ViewBag.Gallery = dataGallery;
+            ViewBag.Gallery = dataGallery.OrderBy(x => x.Position).ToList();
 
             var jsonCouponCallback = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/callback-coupon.json"));
             ViewBag.CouponCallback = JsonConvert.DeserializeObject<List<CouponCallbackModel>>(jsonCouponCallback); ;
