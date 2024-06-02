@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #dcccbf;
+    --bg-site: #f7efe4;
     --bg-main: #fffcf5;
-    --color-theme: #644117;
-    --color-menu-legend: #644117;
-    --color-text-theme: #644117;
+    --color-theme: #d47e0b;
+    --color-menu-legend: #d47e0b;
+    --color-text-theme: #d47e0b;
     --color-black: #000000;
     --color-white: #ffffff;
 }
