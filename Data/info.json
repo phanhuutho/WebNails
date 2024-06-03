@@ -1,14 +1,19 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Royal Nails and Spa",
+  "HyperLinkTell": "tel:(850)2154645",
+  "TextTell": "(850)-215-4645",
+  "GooglePlus": "https://www.google.com/search?q=royal+nails+spa+fl+32401",
+  "Address": "1328 W 15th St, Panama City, FL 32401",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yyeUAA3KSEEdnAQ87",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13796.353932116037!2d-85.6828266!3d30.1774663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889381fad3cef179%3A0xf53ec13ac0fc8541!2sRoyal%20Nails%20and%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1717437735490!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
