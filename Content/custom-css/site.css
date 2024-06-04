@@ -110,6 +110,9 @@ main {
 .business-gift {
     background: var(--bg-main);
 }
+.slick-prev:before, .slick-next:before {
+    color: var(--color-theme);
+}
 /* -------------------------------------------------- */
 
 /*Banner Home*/

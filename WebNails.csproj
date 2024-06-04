@@ -139,6 +139,7 @@
     <Compile Include="Models\NailCodeSale.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\RegisterCouponModel.cs" />
+    <Compile Include="Models\ReviewModel.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\PagingHelper.cs" />
@@ -428,6 +429,7 @@
     <Content Include="Data\home-data-gallery.json" />
     <Content Include="Data\callback-coupon.json" />
     <Content Include="Data\setting.json" />
+    <Content Include="Data\data-reviews.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -482,6 +484,7 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\GiftManage.cshtml" />
     <Content Include="Views\Home\_GetTable_GiftManage.cshtml" />
+    <Content Include="Views\Home\_Reviews.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
