@@ -6,7 +6,7 @@
   "Address": "3201 Mountain Rd Suite 111, Pasadena, MD 21122",
   "LinkGoogleMapAddress": "https://maps.app.goo.gl/WFYFRcCyPDeGCVew5",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12380.702641314152!2d-76.5347105!3d39.125234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7feb081c4ffd5%3A0xc692714eadeeba94!2s(10%25%20OFF%20New%20Customers)%20NAILS%20TECH!5e0!3m2!1sen!2s!4v1717094453394!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/f931ea3a275e/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {

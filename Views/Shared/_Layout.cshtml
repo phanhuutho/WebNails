@@ -62,6 +62,11 @@
                                 <i class="fa fa-bars"></i>
                             </button>
                         </div>
+                        <div class="text-name">
+                            <div class="d-flex h-100 align-items-center justify-content-center">
+                                <span class="font-Prata fs-2 fw-bold text-theme">@ViewBag.Name</span>
+                            </div>
+                        </div>
                         <div class="logo-brand">
                             <a class="navbar-brand rounded rounded-@(LogoTop_Rounded)" href="javascript:void(0)">
                                 @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
@@ -162,6 +167,14 @@
                             {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-manage" href=""></a>
+                                </li>
+                            }
+                        </ul>
+                        <ul class="list-inline">
+                            @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+                            {
+                                <li class="actived">
+                                    <a class="actived-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Now <i class="fa fa-long-arrow-right"></i></a>
                                 </li>
                             }
                         </ul>
