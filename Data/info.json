@@ -8,12 +8,7 @@
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13796.353932116037!2d-85.6828266!3d30.1774663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889381fad3cef179%3A0xf53ec13ac0fc8541!2sRoyal%20Nails%20and%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1717437735490!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
