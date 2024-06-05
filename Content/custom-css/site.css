@@ -250,6 +250,13 @@ main {
     background-position: 50% 50%;
 }
 
+.reviews .slick-track {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-images .image1 {
     background-image: url(../images/home/home_contact_image_1.jpg);
     background-position: 40% 70%;
@@ -414,6 +421,14 @@ main {
         padding: 0;
     }
     /* -------------------------------------------------- */
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-next {
+        right: 0;
+    }
 
     /*Banner Home*/
     .slider-home {
