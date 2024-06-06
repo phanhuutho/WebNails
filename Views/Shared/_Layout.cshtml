@@ -41,9 +41,9 @@
 <body>
     <!--Menu - Header-->
     <header>
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-lg-2 col-md-2">
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-xl-auto col-lg-2 col-md-2">
                     <div class="logo rounded rounded-@(LogoTop_Rounded)">
                         @if (string.IsNullOrEmpty(string.Format("{0}", ViewBag.Logo)))
                         {
@@ -55,7 +55,7 @@
                         }
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-10">
+                <div class="col-xl-auto col-lg-10 col-md-10">
                     <div class="menu-mobile-tablet">
                         <div class="menu-bars">
                             <button type="button">
@@ -122,62 +122,71 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu-desktop">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-home" href="/index.html">Home</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
-                            </li>
-                            @if (Prices.Count > 0 || true) 
-                            { 
+                    <div class="menu-desktop row">
+                        <div class="col-xl-auto col-lg-12 text-xl-end text-center">
+                            <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
+                                    <a class="list-inline-item-link" id="menu-home" href="/index.html">Home</a>
                                 </li>
-                            }
-                            @if (IsGallery) 
-                            {
                                 <li class="list-inline-item">
-                                    <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
+                                    <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                                 </li>
-                            }
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-e-gift" href="/e-gift.html">Gift Card</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-about-us" href="/about-us.html">About Us</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="list-inline-item-link" id="menu-contact" href="/contact.html">Contact</a>
-                            </li>
-                            @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
-                            {
+                                @if (Prices.Count > 0 || true)
+                                {
+                                    <li class="list-inline-item">
+                                        <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
+                                    </li>
+                                }
+                                @if (IsGallery)
+                                {
+                                    <li class="list-inline-item">
+                                        <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
+                                    </li>
+                                }
                                 <li class="list-inline-item">
-                                    <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
+                                    <a class="list-inline-item-link" id="menu-e-gift" href="/e-gift.html">Gift Card</a>
                                 </li>
-                            }
-                            @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) && IsPayment)
-                            {
                                 <li class="list-inline-item">
-                                    <a class="list-inline-item-link" id="menu-gift-manage" href="/gift-manage.html">Gift Manage</a>
+                                    <a class="list-inline-item-link" id="menu-about-us" href="/about-us.html">About Us</a>
                                 </li>
-                            }
-                            @if (IsPayment)
-                            {
                                 <li class="list-inline-item">
-                                    <a class="list-inline-item-link" id="menu-manage" href=""></a>
+                                    <a class="list-inline-item-link" id="menu-contact" href="/contact.html">Contact</a>
                                 </li>
-                            }
-                        </ul>
-                        <ul class="list-inline">
-                            @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
-                            {
-                                <li class="actived">
-                                    <a class="actived-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Now <i class="fa fa-long-arrow-right"></i></a>
-                                </li>
-                            }
-                        </ul>
+                                @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+                                {
+                                    <li class="list-inline-item">
+                                        <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
+                                    </li>
+                                }
+                                @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) && IsPayment)
+                                {
+                                    <li class="list-inline-item">
+                                        <a class="list-inline-item-link" id="menu-gift-manage" href="/gift-manage.html">Gift Manage</a>
+                                    </li>
+                                }
+                                @if (IsPayment)
+                                {
+                                    <li class="list-inline-item">
+                                        <a class="list-inline-item-link" id="menu-manage" href=""></a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                        <div class="col-xl-auto col-lg-12 text-xl-end text-center">
+                            <ul class="list-unstyled row me-xl-3 justify-content-xl-end justify-content-center">
+                                @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+                                {
+                                    <li class="col-xl-auto col-lg-auto col-md-auto">
+                                        <a href="@(ViewBag.HyperLinkTell)" target="_blank">
+                                            <i class="fa fa-phone-square"></i> @ViewBag.TextTell
+                                        </a>
+                                    </li>
+                                    <li class="actived col-xl-auto col-lg-auto col-md-auto text-center">
+                                        <a class="actived-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Now <i class="fa fa-long-arrow-right"></i></a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

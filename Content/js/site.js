@@ -7,13 +7,13 @@ $(document).ready(function(){
 
     $(".list-inline-item-link").hover(
         function () {
-            $(".list-inline-item-link").removeClass("active");
-            $(".list-inline-item").removeClass("active");
+            //$(".list-inline-item-link").removeClass("active");
+            //$(".list-inline-item").removeClass("active");
         }, 
         function () {
-            var elementActive = $(".list-inline-item-link")[position_active];
-            $(elementActive).addClass("active");
-            $(elementActive).parent(".list-inline-item").addClass("active");
+            //var elementActive = $(".list-inline-item-link")[position_active];
+            //$(elementActive).addClass("active");
+            //$(elementActive).parent(".list-inline-item").addClass("active");
         }
     );
 

@@ -46,37 +46,56 @@ footer a {
 .menu-desktop .list-inline > li > a {
     color: var(--color-white);
     font-family: 'Jost', sans-serif;
-    padding-top: 9px;
-    padding-bottom: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-transform: capitalize;
     font-weight: unset;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.menu-desktop .list-inline .actived {
-    background: var(--color-theme);
+.menu-desktop .list-inline > li {
+    margin-right: 7px;
+}
+
+.menu-desktop .list-unstyled li {
     padding-top: 6px;
     padding-bottom: 6px;
-    margin-right: 0;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-left: 5px;
 }
 
-.menu-desktop .list-inline .actived:hover {
+.menu-desktop .list-unstyled li a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.menu-desktop .list-unstyled li i.fa {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.menu-desktop .list-unstyled .actived {
+    background: var(--color-theme);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.menu-desktop .list-unstyled .actived .actived-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.menu-desktop .list-unstyled .actived:hover {
     animation: actived 1s;
 
 }
 
-.menu-desktop .list-inline .actived:hover i {
+.menu-desktop .list-unstyled .actived:hover i {
 
 }
-.menu-desktop .list-inline .actived .actived-link:hover {
+.menu-desktop .list-unstyled .actived .actived-link:hover {
     border: unset;
     border-radius: unset;
-    padding-left: 6px;
-    padding-right: 6px;
     background: none;
 }
 /* -------------------------------------------------- */
@@ -228,6 +247,12 @@ main {
 
 }
 
+.about-us .box-inner h3 {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .about-us .box-inner ul {
     padding-left: 10px;
 }
@@ -323,17 +348,27 @@ main {
 /*CSS Tablet*/
 @media (max-width: 991px) {
     /*Menu*/
-    .menu-desktop .list-inline > li > a {
-        padding-left: 4px;
-        padding-right: 4px;
-        font-size: 0.8em;
+    .menu-desktop ul {
+        padding-top: 0px;
+        margin-bottom: 0px;
     }
-    .menu-desktop .list-inline .actived .actived-link:hover {
+    .menu-desktop .list-inline > li {
+        margin-right: 3px;
+    }
+    .menu-desktop .list-inline > li > a {
+        font-size: 0.9em;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .menu-desktop .list-unstyled .actived .actived-link:hover {
         padding-left: 4px;
         padding-right: 4px;
     }
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-        padding-top: 7px;
+        padding-top: 5px;
+    }
+    .menu-desktop .list-unstyled li {
+        font-size: 0.9em;
     }
     /* -------------------------------------------------- */
 
