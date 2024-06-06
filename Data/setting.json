@@ -110,10 +110,10 @@
     {
       "Position": 2,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
+        "Mobile": "center"
       },
       "Text_JustifyContent": {
         "Large": "center",
@@ -125,15 +125,15 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     }

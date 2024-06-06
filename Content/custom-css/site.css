@@ -145,7 +145,7 @@ main {
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 50% 50%;
+    background-position: 35% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -163,7 +163,7 @@ main {
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 50% 50%;
+    background-position: 30% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -319,7 +319,7 @@ main {
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 70% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
@@ -327,7 +327,7 @@ main {
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 35% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -397,15 +397,15 @@ main {
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 65% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 45% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 20% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
