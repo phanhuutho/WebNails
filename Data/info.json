@@ -1,14 +1,19 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Sugarcoat Lenox",
+  "HyperLinkTell": "tel:(404)9689095",
+  "TextTell": "(404)-968-9095",
+  "GooglePlus": "https://www.google.com/search?q=sugarcoat+lenox+30326",
+  "Address": "3393 Peachtree Rd NE Suite 5025C, Atlanta, GA 30326",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/5dFa2h4JijWyLSMEA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13254.663574633812!2d-84.3624199!3d33.8467259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50f2c7e604a39%3A0xbb0cfb1f28fc987f!2sSugarcoat%20Lenox!5e0!3m2!1sen!2s!4v1717785587600!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
