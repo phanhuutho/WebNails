@@ -10,13 +10,13 @@
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 /* -------------------------------------------------- */
 
 /*Footer*/
 footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 /* -------------------------------------------------- */
 
