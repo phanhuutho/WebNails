@@ -24,44 +24,29 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "start",
-        "Laptop": "start",
-        "Tablet": "start",
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     },
     {
       "Position": 2,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
     {
       "Position": 3,
-      "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
-        "Mobile": "center"
-      }
-    },
-    {
-      "Position": 4,
       "Text_ItemAlign": {
         "Large": "center",
         "Laptop": "center",
@@ -72,6 +57,21 @@
         "Large": "start",
         "Laptop": "start",
         "Tablet": "start",
+        "Mobile": "center"
+      }
+    },
+    {
+      "Position": 4,
+      "Text_ItemAlign": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "center"
       }
     },
