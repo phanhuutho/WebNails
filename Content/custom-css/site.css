@@ -269,7 +269,12 @@ main {
 }
 
 .about-us .box-inner ul li {
-
+    font-family: 'Cormorant Infant', serif;
+    font-size: 29px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    word-wrap: break-word;
+    letter-spacing: 0;
 }
 
 .business .business-inner .box-image .image-business {
@@ -355,6 +360,13 @@ main {
     background-position: 50% 50%;
 }
 /* -------------------------------------------------- */
+
+/*CSS Laptop*/
+@media (max-width: 1199px) {
+    .about-us .box-inner ul li {
+        font-size: 31px;
+    }
+}
 
 /*CSS Tablet*/
 @media (max-width: 991px) {
@@ -461,6 +473,9 @@ main {
     .about-us .box-inner h6 {
         font-size: 40px;
     }
+    .about-us .box-inner ul li {
+        font-size: 22px;
+    }
     /* -------------------------------------------------- */
 }
 /* -------------------------------------------------- */
@@ -558,7 +573,7 @@ main {
 
     /*Page Home*/
     .about-us .box-inner ul li {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .business .business-inner .box-image .image-business {
