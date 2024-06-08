@@ -111,14 +111,14 @@ main {
     border: 2px solid var(--color-theme);
     border-radius: 30px;
     background: var(--color-white);
-    padding: 3px;
+    padding: 1px;
 }
 .outline-button-default {
     height: 100%;
     width: 100%;
     border-radius: 0.375rem;
     background: var(--color-white);
-    padding: 3px;
+    padding: 1px;
 }
 .beauty-spa {
     background: var(--bg-main);
@@ -264,11 +264,11 @@ main {
     font-size: 48px;
 }
 
-.about-us .box-inner ul {
+.about-us .box-inner ul, #about-us .box-inner ul {
     padding-left: 10px;
 }
 
-.about-us .box-inner ul li {
+.about-us .box-inner ul li, #about-us .box-inner ul li {
     font-family: 'Cormorant Infant', serif;
     font-size: 29px;
     margin-bottom: 5px;
@@ -363,7 +363,7 @@ main {
 
 /*CSS Laptop*/
 @media (max-width: 1199px) {
-    .about-us .box-inner ul li {
+    .about-us .box-inner ul li, #about-us .box-inner ul li {
         font-size: 31px;
     }
 }
@@ -470,10 +470,10 @@ main {
     /* -------------------------------------------------- */
 
     /*Page Home*/
-    .about-us .box-inner h6 {
+    .about-us .box-inner h6, #about-us .box-inner h6 {
         font-size: 40px;
     }
-    .about-us .box-inner ul li {
+    .about-us .box-inner ul li, #about-us .box-inner ul li {
         font-size: 22px;
     }
     /* -------------------------------------------------- */
@@ -572,7 +572,7 @@ main {
     /* -------------------------------------------------- */
 
     /*Page Home*/
-    .about-us .box-inner ul li {
+    .about-us .box-inner ul li, #about-us .box-inner ul li {
         font-size: 20px;
     }
 
@@ -588,7 +588,7 @@ main {
         height: 290px !important;
     }
 
-    .about-us .box-inner h6 {
+    .about-us .box-inner h6, #about-us .box-inner h6 {
         font-size: 25px;
     }
     /* -------------------------------------------------- */
