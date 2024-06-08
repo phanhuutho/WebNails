@@ -301,8 +301,10 @@
     <Content Include="Content\images\services\services_nails_enhancements.jpg" />
     <Content Include="Content\images\services\services_pedicure.jpg" />
     <Content Include="Content\images\services\services_pedicure_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_permanent_makeup.jpg" />
     <Content Include="Content\images\services\services_permanent_make_up.jpg" />
     <Content Include="Content\images\services\services_poly_gel.jpg" />
+    <Content Include="Content\images\services\services_skin_care.jpg" />
     <Content Include="Content\images\services\services_waxing.jpg" />
     <Content Include="Content\js\bootstrap-pdf-viewer.js" />
     <Content Include="Content\js\bootstrap.bundle.js" />
