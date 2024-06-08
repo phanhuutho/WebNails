@@ -430,6 +430,7 @@
     <Content Include="Data\callback-coupon.json" />
     <Content Include="Data\setting.json" />
     <Content Include="Data\data-reviews.json" />
+    <Content Include="Content\fonts\quentin.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

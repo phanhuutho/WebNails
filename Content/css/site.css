@@ -61,6 +61,10 @@ a:active,a:hover {
 .font-Parisienne{
     font-family: 'Parisienne' !important;
 }
+@font-face {
+    font-family: 'Quentin';
+    src: url('../fonts/quentin.woff');
+}
 
 /*divider*/
 .divider {

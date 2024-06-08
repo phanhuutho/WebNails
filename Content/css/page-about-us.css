@@ -17,9 +17,19 @@
     margin-bottom: 15px;
 }
 #about-us h3 {
-    font-family: 'Cormorant Infant', serif;
     font-weight: 600;
+    margin-bottom: 6px;
+    font-family: Quentin;
+    font-size: 30px;
+    color: var(--color-theme);
+}
+#about-us h6 {
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 400;
     text-transform: uppercase;
+    line-height: 1.1em;
+    word-wrap: break-word;
+    font-size: 48px;
 }
 #staff h2 {
     font-weight: bold;
