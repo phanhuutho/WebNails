@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #f4ffd1;
+    --bg-site: #fff9e3;
     --bg-main: #ffffff;
-    --color-theme: #16490c;
-    --color-menu-legend: #16490c;
-    --color-text-theme: #16490c;
+    --color-theme: #b19634;
+    --color-menu-legend: #b19634;
+    --color-text-theme: #b19634;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -23,6 +23,13 @@ footer {
 /*Menu*/
 .menu-desktop .list-inline > li > a {
     color: var(--color-black);
+}
+/* -------------------------------------------------- */
+
+/*Logo*/
+.logo, .navbar-brand img {
+    max-width: 120px;
+    margin: 5px 0px 5px 0px;
 }
 /* -------------------------------------------------- */
 
@@ -330,6 +337,14 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    .logo-brand .navbar-brand {
+        padding: 0;
+    }
+    .logo-brand img {
+        background: var(--bg-site);
+        margin: 0;
+    }
+
     /*Banner Home*/
     .slider-home {
         height: 320px !important;
