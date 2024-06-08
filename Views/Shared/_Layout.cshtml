@@ -153,40 +153,48 @@
                 </div>
                 <div class="col-lg-3 col-md-4 mb-3">
                     <p class="legend"><strong>FOLLOW US:</strong></p>
-                    <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
-                        <div class="circle">
-                            <span class="fa fa-google-plus"></span>
-                        </div>
-                    </a>
-                    <a href="@ViewBag.HyperLinkTell" class="social-icon-link" title="Phone">
-                        <div class="circle bg-primary">
-                            <span class="fa fa-phone"></span>
-                        </div>
-                    </a>
-                    <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
-                        <div class="circle bg-success">
-                            <span class="fa fa-map-marker"></span>
-                        </div>
-                    </a>
-                    @{
-                        var ListSocials = new List<WebNails.Models.SocialModel>();
-                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Telegram);
-                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Facebook);
-                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Instagram);
-                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Twitter);
-                        ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Youtube);
+                    <div class="m-0">
+                        <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
+                            <div class="circle">
+                                <span class="fa fa-google-plus"></span>
+                            </div>
+                        </a>
+                        <a href="@ViewBag.HyperLinkTell" class="social-icon-link" title="Phone">
+                            <div class="circle bg-primary">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                        </a>
+                        <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
+                            <div class="circle bg-success">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                        </a>
+                        @{
+                            var ListSocials = new List<WebNails.Models.SocialModel>();
+                            ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Telegram);
+                            ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Facebook);
+                            ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Instagram);
+                            ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Twitter);
+                            ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Youtube);
 
-                        ListSocials = ListSocials.Where(x => !string.IsNullOrEmpty(x.Url)).OrderBy(x => x.Position).ToList();
-                        foreach (var social in ListSocials)
-                        {
-                            <a href="@social.Url" class="social-icon-link" title="@social.Title">
-                                <div class="circle" style="background: @social.BackgroundColor">
-                                    <span class="@social.ClassIcon"></span>
-                                </div>
-                            </a>
+                            ListSocials = ListSocials.Where(x => !string.IsNullOrEmpty(x.Url)).OrderBy(x => x.Position).ToList();
+                            foreach (var social in ListSocials)
+                            {
+                                <a href="@social.Url" class="social-icon-link" title="@social.Title">
+                                    <div class="circle" style="background: @social.BackgroundColor">
+                                        <span class="@social.ClassIcon"></span>
+                                    </div>
+                                </a>
+                            }
+
                         }
-
-                    }
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- other content -->
+                    <div class="seal mt-3">
+                        <script type="text/javascript" src="https://www.rapidscansecure.com/siteseal/siteseal.js?code=64,6CC0FDC27DD4FBCD1B8ACC5AB9FADE7AB1A1120D"></script>
+                    </div>
+                    <!-- other content -->
                 </div>
             </div>
         </div>
