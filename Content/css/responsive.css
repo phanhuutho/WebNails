@@ -478,7 +478,7 @@
         font-size: 11px;
     }
     .btn-tel, .btn-contact {
-        font-size: 67.5%;
+        font-size: 75%;
     }
 }
 @media (min-width: 576px) {

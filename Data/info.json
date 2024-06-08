@@ -1,15 +1,37 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Secret Nail And Day Spa",
+  "HyperLinkTell": "tel:(904)7797666",
+  "TextTell": "(904)-779-7666",
+  "GooglePlus": "https://www.google.com/search?q=Secret+Nail+Day+Spa+32222",
+  "Address": "9680 Argyle Forest Blvd # 24, Jacksonville, FL 32222",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/5bTs1tRPkMBhmSGZ9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13793.892841103234!2d-81.8305399!3d30.1950387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5c1cad1c29323%3A0xf133cfbba2cb5138!2s(10%25%20OFF%20New%20Customers)%20Secret%20nail%20and%20day%20spa!5e0!3m2!1sen!2s!4v1717870255657!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
-  "Prices": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
