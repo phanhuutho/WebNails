@@ -18,9 +18,9 @@ header {
     background: var(--bg-main);
 }
 
-    .logo img {
-        background: var(--bg-main);
-    }
+.logo img {
+    background: var(--bg-main);
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
@@ -32,9 +32,9 @@ footer {
     background: var(--bg-main);
 }
 
-    .logo-footer img {
-        background: var(--bg-main);
-    }
+.logo-footer img {
+    background: var(--bg-main);
+}
 /* -------------------------------------------------- */
 
 /*Menu*/
