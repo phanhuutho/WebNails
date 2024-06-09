@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #f2e5d3;
+    --bg-site: #fadbdb;
     --bg-main: #ffffff;
-    --color-theme: #225440;
-    --color-menu-legend: #225440;
-    --color-text-theme: #225440;
+    --color-theme: #c23434;
+    --color-menu-legend: #c23434;
+    --color-text-theme: #c23434;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -18,9 +18,9 @@ header {
     background: var(--bg-main);
 }
 
-    .logo img {
-        background: var(--bg-main);
-    }
+.logo img {
+    background: var(--bg-main);
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
@@ -32,9 +32,9 @@ footer {
     background: var(--bg-main);
 }
 
-    .logo-footer img {
-        background: var(--bg-main);
-    }
+.logo-footer img {
+    background: var(--bg-main);
+}
 /* -------------------------------------------------- */
 
 /*Menu*/
@@ -163,7 +163,7 @@ main {
 .bg .bg-contact {
     height: 800px;
     background-image: url(../images/banner/contact/contact_banner.jpg);
-    background-position: 50% 50%;
+    background-position: 35% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -420,7 +420,7 @@ main {
     }
 
     .bg .bg-contact {
-        background-position: 50% 50% !important;
+        background-position: 40% 50% !important;
         height: 310px !important;
     }
     /* -------------------------------------------------- */
