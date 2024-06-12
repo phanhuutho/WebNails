@@ -1,10 +1,10 @@
 ﻿:root {
     --bg-site: #fadbdb;
     --bg-main: #ffffff;
-    --color-theme: #c23434;
-    --color-menu-legend: #c23434;
-    --color-text-theme: #c23434;
-    --color-black: #000000;
+    --color-theme: #ed3137;
+    --color-menu-legend: #ed3137;
+    --color-text-theme: #ed3137;
+    --color-black: #424242;
     --color-white: #ffffff;
 }
 
@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 115px;
     background: var(--color-theme);
 }
 
@@ -30,6 +30,7 @@ footer {
 
 .logo-footer {
     background: var(--color-theme);
+    max-width: 150px;
 }
 
 .logo-footer img {
