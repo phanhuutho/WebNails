@@ -1,9 +1,9 @@
 ﻿:root {
     --bg-site: #fef8e9;
     --bg-main: #000000;
-    --color-theme: #daa520;
-    --color-menu-legend: #daa520;
-    --color-text-theme: #daa520;
+    --color-theme: #ffb934;
+    --color-menu-legend: #ffb934;
+    --color-text-theme: #ffb934;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -72,6 +72,14 @@ footer a {
     font-size: 20px;
     position: relative;
     top: 3px;
+}
+
+.menu-desktop .list-unstyled li a.phone-link {
+    color: var(--color-white);
+}
+
+.menu-desktop .list-unstyled li a.phone-link i.fa {
+    color: var(--color-white);
 }
 
 .menu-desktop .list-unstyled .actived {
