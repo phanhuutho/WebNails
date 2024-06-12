@@ -1,22 +1,30 @@
 ﻿:root {
-    --bg-site: #ffe1e1;
+    --bg-site: #f6e4e4;
     --bg-main: #ffffff;
-    --color-theme: #d8697a;
-    --color-menu-legend: #d8697a;
-    --color-text-theme: #d8697a;
+    --color-theme: #ff96a5;
+    --color-menu-legend: #ff96a5;
+    --color-text-theme: #ff96a5;
     --color-black: #000000;
     --color-white: #ffffff;
 }
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
+}
+
+.logo, .logo img {
+    padding: 0;
 }
 /* -------------------------------------------------- */
 
 /*Footer*/
 footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
+}
+
+.logo-footer, .logo-footer img {
+    padding: 0;
 }
 /* -------------------------------------------------- */
 
@@ -46,6 +54,9 @@ main {
     border-radius: 0.375rem;
     background: var(--color-white);
     padding: 3px;
+}
+.outline-button-default .small {
+    font-size: 77.5%;
 }
 .beauty-spa {
     background: var(--bg-main);
@@ -330,6 +341,9 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    .logo-brand .navbar-brand, .navbar-brand img {
+        padding: 0;
+    }
     /*Banner Home*/
     .slider-home {
         height: 320px !important;
