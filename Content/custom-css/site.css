@@ -18,9 +18,12 @@ header {
     background: var(--bg-main);
 }
 
-    .logo img {
-        background: var(--bg-main);
-    }
+.logo img {
+    background: var(--bg-main);
+}
+.logo, .logo img {
+
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
@@ -32,9 +35,12 @@ footer {
     background: var(--bg-main);
 }
 
-    .logo-footer img {
-        background: var(--bg-main);
-    }
+.logo-footer img {
+    background: var(--bg-main);
+}
+.logo-footer, .logo-footer img {
+
+}
 /* -------------------------------------------------- */
 
 /*Menu*/
@@ -67,6 +73,9 @@ main {
     border-radius: 0.375rem;
     background: var(--color-white);
     padding: 3px;
+}
+.outline-button-default .small {
+    font-size: 77.5%;
 }
 .beauty-spa {
     background: var(--bg-main);
@@ -351,6 +360,12 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    /*Header*/
+    .logo-brand .navbar-brand, .navbar-brand img {
+
+    }
+    /* -------------------------------------------------- */
+
     /*Banner Home*/
     .slider-home {
         height: 320px !important;
