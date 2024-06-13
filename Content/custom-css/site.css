@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #f2e5d3;
+    --bg-site: #cecece;
     --bg-main: #ffffff;
-    --color-theme: #225440;
-    --color-menu-legend: #225440;
-    --color-text-theme: #225440;
+    --color-theme: #000000;
+    --color-menu-legend: #000000;
+    --color-text-theme: #000000;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -15,11 +15,11 @@ header {
 
 .logo, .navbar-brand img {
     max-width: 125px;
-    background: var(--bg-main);
+    background: var(--color-theme);
 }
 
 .logo img {
-    background: var(--bg-main);
+    background: var(--color-white);
 }
 .logo, .logo img {
 
@@ -32,11 +32,11 @@ footer {
 }
 
 .logo-footer {
-    background: var(--bg-main);
+    background: var(--color-theme);
 }
 
 .logo-footer img {
-    background: var(--bg-main);
+    background: var(--color-white);
 }
 .logo-footer, .logo-footer img {
 
