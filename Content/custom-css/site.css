@@ -148,13 +148,13 @@ main {
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 50% 50%;
+    background-position: 40% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 50% 50%;
+    background-position: 75% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -332,11 +332,11 @@ main {
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 45% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 75% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -363,6 +363,9 @@ main {
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
 
+    }
+    .navbar-brand img {
+        background: var(--color-white);
     }
     /* -------------------------------------------------- */
 
@@ -416,7 +419,7 @@ main {
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 50% 50% !important;
+        background-position: 35% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
