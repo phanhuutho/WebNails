@@ -124,7 +124,7 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @if (Prices.Count > 0) 
+                            @if (Prices.Count > 0 || true) 
                             { 
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
@@ -176,7 +176,7 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                @if(Prices.Count > 0) 
+                @if(Prices.Count > 0 || true) 
                 { 
                     <li>
                         <a href="/price-list.html">Price List</a>
@@ -343,6 +343,9 @@
                 });
                 </text>
             }
+        }
+        function OpenDetail(id) {
+            location.href = "/price-list.html#" + id;
         }
     </script>
 </body>

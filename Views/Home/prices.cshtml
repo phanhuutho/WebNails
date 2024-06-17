@@ -12,24 +12,493 @@
 <main class="bg-main">
     <div class="overlay"></div>
     <div class="page-main">
-        <section class="py-2 container">
+        <section class="py-5 container-fluid">
             <div class="row">
-                <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
-            </div>
-            <div class="row justify-content-center">
-                @if (Prices.Count > 0)
-                {
-                    foreach (var item in Prices)
-                    {
-                        <div class="col-lg-12 py-2 text-center">
-                            <img class="img-fluid" src="@item.Src" alt="" />
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="dip-powder">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata px-3">DIPPING POWDER HEALTHY NAILS</h2>
+                                                    <p>
+                                                        Dipping Powder gives women beautiful and healthy nails with:
+                                                    </p>
+                                                    <ul class="list-unstyled">
+                                                        <li><span>&bull;</span> Nutrients and Vitamin A, E, D. B5, D3, and Calcium</li>
+                                                        <li><span>&bull;</span> No UV light</li>
+                                                        <li><span>&bull;</span> Odorless, and fast drying</li>
+                                                        <li><span>&bull;</span> Long lasting</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>OVERLAY DIPPING</b></div>
+                                                    <div class="col-2 text-end"><b>$47<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>OVERLAY FRENCH DIPPING</b></div>
+                                                    <div class="col-2 text-end"><b>$52<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>OVERLAY OMBRE DIPPING</b></div>
+                                                    <div class="col-2 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>OVERLAY DIPPING WITH GEL POLISH</b></div>
+                                                    <div class="col-2 text-end"><b>$52<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET DIP</b></div>
+                                                    <div class="col-2 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET FRENCH</b></div>
+                                                    <div class="col-2 text-end"><b>$60<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET OMBRE</b></div>
+                                                    <div class="col-2 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    }
-                }
-                else
-                {
-                    <div class="col-lg-12 py-2"></div>
-                }
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="little-kid">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata">KID MANICURE & PEDICURE</h2>
+                                                    <p>For children who are 10 years old & under</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>MANICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$20<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>COLOR CHANGE ON HAND</b></div>
+                                                    <div class="col-2 text-end"><b>$6<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>COLOR CHANGE ON TOES</b></div>
+                                                    <div class="col-2 text-end"><b>$8<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL ADD ON</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL COLOR ADD ON PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL FRENCH ADD ON PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$20<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-0">
+                    <div class="row">
+                        <div class="col-12" id="manicure">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata">MANICURE</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>BASIC MANICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$20<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Service includes nails shape, cuticle trimming, and lotion massage.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>DELUXE MANICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$35<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>It comes with our basic manicure and Organic Paraffin Wax Treatment with 5 minutes lotion massage. Finish with warm towels.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL MANICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$40<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Basic Manicure with Gel Polish, and finish with lotion massage.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL MANICURE WITH FRENCH</b></div>
+                                                    <div class="col-2 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="additional-services">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata">ADDITIONAL SERVICES</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL COLOR CHANGE</b></div>
+                                                    <div class="col-2 text-end"><b>$25<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL COLOR CHANGE FRENCH</b></div>
+                                                    <div class="col-2 text-end"><b>$30<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>REGULAR COLOR CHANGE NAILS</b></div>
+                                                    <div class="col-2 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>REGULAR COLOR CHANGE TOES</b></div>
+                                                    <div class="col-2 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>NAILS CUT</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>TOES CUT</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>TOES NAILS ACRYLIC</b></div>
+                                                    <div class="col-2 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Each Nail</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>NAIL REPAIR</b></div>
+                                                    <div class="col-2 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>MATTE TOP COAT</b></div>
+                                                    <div class="col-2 text-end"><b>$6<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL REMOVE</b></div>
+                                                    <div class="col-2 text-end"><b>$7<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>ACRYLIC REMOVE</b></div>
+                                                    <div class="col-2 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>DIP REMOVE</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>NAILS SHINING BUFFER</b></div>
+                                                    <div class="col-2 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-0 order-lg-1">
+                    <div class="row">
+                        <div class="col-12" id="pedicure">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata">SPA PEDICURE</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>ORGANIC JELLY SPA PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$85<span>&nbsp;</span></b></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Jelly Spa Pedicure turns water into a luxurious encasing comfort, with provides the ultimate relief for stress and aching muscles.
+                                                            Add Jelly Pedicure to warm water and it becomes trans-lucent, fluffy jelly, which will retain it heat up to four times longer than regular water.
+                                                        </p>
+                                                        <p>This treatment include:</p>
+                                                        <ul>
+                                                            <li>5 minutes soak in jelly</li>
+                                                            <li>Exfoliation w/ Sugar Scrub</li>
+                                                            <li>15 minutes foot massage</li>
+                                                            <li>Cuticle grooming</li>
+                                                            <li>Callus remove and Mask Organic Paraffin Wax Treatment</li>
+                                                            <li>Hot stone massage, and finish with warm towel.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>BOMB SPA PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$68<span>&nbsp;</span></b></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Pedi Bomb made of Organic Bamboo Charcoal ingredients use to absorb minerals, toxins, impurities and more. It helps to relax, improve, circulation, detoxify, and soothe your skin.
+                                                        </p>
+                                                        <ul>
+                                                            <li>Nail grooming</li>
+                                                            <li>Paraffin Wax Treatment</li>
+                                                            <li>Sugar scrub combined with real Orange fruit</li>
+                                                            <li>10 minutes massage</li>
+                                                            <li>Callus remove</li>
+                                                            <li>Hot stone with warm towels.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>TROPICAL SPA PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Discover nature's most smoothing botanical with treatment options that refresh and renew. Come with specials:
+                                                        </p>
+                                                        <ul>
+                                                            <li>Callus remove</li>
+                                                            <li>Paraffin Wax Treatment</li>
+                                                            <li>Sugar Scrub combines with real Orange fruit</li>
+                                                            <li>7 minutes massage</li>
+                                                            <li>Hot stone with warm towels.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>PAMPER SPA PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$42<span>&nbsp;</span></b></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            This is an extension to our Basic Pedicure Service includes Basic Pedicure plus:
+                                                        </p>
+                                                        <ul>
+                                                            <li>Callus Remove</li>
+                                                            <li>Sugar Scrub Treatment</li>
+                                                            <li>5 minutes massage with Hot Stone and warm towels.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>BASIC SPA PEDICURE</b></div>
+                                                    <div class="col-2 text-end"><b>$30<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>Relax in our massage chair and soak your feet and get pampered. Service includes nails shape, cuticle trimming, and 4 minutes lotion massage.</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>CALLUS REMOVAL</b></div>
+                                                    <div class="col-2 text-end"><b>$7<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>PARAFFIN WAX</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>SUGAR SCRUB</b></div>
+                                                    <div class="col-2 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>GEL COLOR</b></div>
+                                                    <div class="col-2 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="acrylic">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata">ACRYLIC NAILS</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET ACRYLIC</b></div>
+                                                    <div class="col-2 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET ACRYLIC WITH GEL</b></div>
+                                                    <div class="col-2 text-end"><b>$50<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET PINK AND WHITE</b></div>
+                                                    <div class="col-2 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL SET WHITE TIP</b></div>
+                                                    <div class="col-2 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>LIQUID FULL SET</b></div>
+                                                    <div class="col-2 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>OMBRE FULL SET</b></div>
+                                                    <div class="col-2 text-end"><b>$65<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>POWDER FULL SET</b></div>
+                                                    <div class="col-2 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FILL WITH REGULAR POLISH</b></div>
+                                                    <div class="col-2 text-end"><b>$35<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FILL WITH GEL POLISH</b></div>
+                                                    <div class="col-2 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>BACK FILL</b></div>
+                                                    <div class="col-2 text-end"><b>$55<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>LIQUID FILL WITH GEL</b></div>
+                                                    <div class="col-2 text-end"><b>$50<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>SPECIAL SHAPE</b></div>
+                                                    <div class="col-2 text-end"><b>$7<span>&nbsp;</span></b></div>
+                                                    <div class="col-12"><p>(COFFIN, OVAL, ALMOND, STILETTO)</p></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>LENGTH</b></div>
+                                                    <div class="col-2 text-end"><b>$5<span>&nbsp;</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" id="waxing">
+                            <div class="box-inner my-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <div class="box-header my-3">
+                                                <div class="text-center py-md-4 py-1">
+                                                    <h2 class="font-Prata">WAXING</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <div class="box-prices">
+                                                <div class="row">
+                                                    <div class="col-10"><b>EYEBROWS</b></div>
+                                                    <div class="col-2 text-end"><b>$15<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>UPPER LIP</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>CHIN</b></div>
+                                                    <div class="col-2 text-end"><b>$10<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL FACE</b></div>
+                                                    <div class="col-2 text-end"><b>$45<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL ARMS</b></div>
+                                                    <div class="col-2 text-end"><b>$40<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>HALF ARMS</b></div>
+                                                    <div class="col-2 text-end"><b>$25<span>&nbsp;</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>UUNDERARMS</b></div>
+                                                    <div class="col-2 text-end"><b>$20<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL LEGS</b></div>
+                                                    <div class="col-2 text-end"><b>$55<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>HALF LEGS</b></div>
+                                                    <div class="col-2 text-end"><b>$35<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>CHEST</b></div>
+                                                    <div class="col-2 text-end"><b>$40<span>+</span></b></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-10"><b>FULL BACK</b></div>
+                                                    <div class="col-2 text-end"><b>$55<span>+</span></b></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

@@ -456,4 +456,16 @@ main {
         height: 290px !important;
     }
     /* -------------------------------------------------- */
+
+    /*Page Prices*/
+    .card-body {
+        padding: 0.5rem;
+    }
+    .box-header p, .box-header li {
+        font-size: 75%;
+    }
+    .box-prices {
+        font-size: 77%;
+    }
+    /* -------------------------------------------------- */
 }

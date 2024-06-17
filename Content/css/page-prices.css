@@ -43,3 +43,8 @@
 .pdf-viewer .pdf-viewer-page-view {
     margin:0 auto;
 }
+
+.text-end span {
+    display: inline-block;
+    width: 5px;
+}
