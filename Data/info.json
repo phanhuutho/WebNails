@@ -16,6 +16,10 @@
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
   "Prices": [
