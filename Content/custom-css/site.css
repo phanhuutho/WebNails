@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #e7edf7;
+    --bg-site: #dcf8f9;
     --bg-main: #ffffff;
-    --color-theme: #2e3f59;
-    --color-menu-legend: #2e3f59;
-    --color-text-theme: #2e3f59;
+    --color-theme: #0097a2;
+    --color-menu-legend: #0097a2;
+    --color-text-theme: #0097a2;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -351,6 +351,9 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    .logo-brand .navbar-brand {
+        background: var(--color-white);
+    }
     /*Banner Home*/
     .slider-home {
         height: 320px !important;

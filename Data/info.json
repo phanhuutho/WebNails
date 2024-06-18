@@ -1,15 +1,45 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Gloss Nails Studio",
+  "HyperLinkTell": "tel:(661)7132066",
+  "TextTell": "(661)-713-2066",
+  "GooglePlus": "https://www.google.com/search?q=Gloss+Nails+91390",
+  "Address": "28018 Seco Canyon Rd, Santa Clarita, CA 91390",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/J1UPTSb4kWQxYsfM9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13158.66207946141!2d-118.5340308!3d34.4606376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c27d9e11296e7b%3A0xfaa593f2372a828b!2sGloss%20Nails%20Studio%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1718724317182!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
-  "Prices": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    }
+  ],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
