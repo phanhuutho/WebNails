@@ -71,6 +71,11 @@ a:active,a:hover {
 .btn-none-border{
     border: 0 !important;
 }
+
+.border {
+    border-color: var(--bg-site) !important;
+}
+
 .btn-border, .border {
     border-width: 1px !important;
 }
@@ -121,10 +126,6 @@ a:active,a:hover {
 .bg-site {
     background: var(--bg-site);
     border-color: var(--bg-site);
-}
-
-.border {
-    border-color: var(--bg-site) !important;
 }
 
 .border-theme {

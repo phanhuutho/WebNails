@@ -188,6 +188,17 @@ main {
     background-position: 50% 50%;
 }
 
+.reviews .btn-more {
+    background-color: #fff !important;
+    color: #000000 !important;
+    border-radius: 10px;
+    font-family: "Carme";
+    border-color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 7px 20px;
+}
+
 .contact-images .image1 {
     background-image: url(../images/home/home_contact_image_1.jpg);
     background-position: 40% 70%;

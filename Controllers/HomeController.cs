@@ -86,6 +86,15 @@ namespace WebNails.Controllers
             return Json(new { Galleries, ShowMore });
         }
 
+        public ActionResult Reviews(int TabIndex = 1)
+        {
+            var Reviews = (List<ReviewModel>)ViewBag.Reviews ?? new List<ReviewModel>();
+            ViewBag.TabIndex = TabIndex;
+
+            Reviews = Reviews.Where(x => x.TabIndex == TabIndex).ToList();
+            return View(Reviews);
+        }
+
         [HttpPost]
         public ActionResult Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "", string codesale = "")
         {

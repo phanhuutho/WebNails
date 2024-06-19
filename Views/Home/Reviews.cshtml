@@ -1,0 +1,103 @@
+﻿@model List<WebNails.Models.ReviewModel>
+@{
+    ViewBag.Title = "Reviews";
+    var TabIndex = (int)(ViewBag.TabIndex ?? 1);
+
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+}
+
+@section css{
+    <link href="~/Content/css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/css/slick.css" rel="stylesheet">
+    <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/slider.css" rel="stylesheet">
+    <link href="~/Content/css/page-reviews.css" rel="stylesheet">
+}
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
+}
+
+<main>
+    @{Html.RenderPartial("_SliderPageSub");}
+    <div class="page-main container-lg">
+        <div class="row">
+            <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
+        </div>
+        <div class="row justify-content-center py-5">
+            <div class="col-md-3">
+                <div class="border border-black text-center py-3 @(TabIndex == 1 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(1)">
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="border border-black text-center py-3 @(TabIndex == 2 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(2)">
+                    <span>Google</span>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5 reviews-list">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 pb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-name">
+                                @(item.Name)<span class="small">@Html.Raw(string.IsNullOrEmpty(item.Moment) ? "" : " - " + item.Moment)</span>
+                            </div>
+                            <div class="card-header-star">
+                                @for (var i = 0; i < item.Star; i++)
+                                {
+                                    <i class="fa fa-star text-theme"></i>
+                                }
+                            </div>
+                            <div class="card-header-logo rounded-1" style="@(TabIndex == 1 ? "color:#1877f2" : "color:#d93e2d")">
+                                @(Html.Raw(TabIndex == 1 ? "<i class='fa fa-facebook-square'></i>" : "<i class='fa fa-google-plus-square'></i>"))
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <span class="fa fa-quote-left"></span>
+                                @Html.Raw(item.Text)
+                                <span class="fa fa-quote-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</main>
+
+@section scripts{
+    <script src="~/Content/js/slick.min.js"></script>
+    <script src="~/Content/js/slick-animation.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("menu-reviews");
+
+        var sliderInit = $('.sliders');
+        $(document).ready(function () {
+            sliderInit.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: @(IsFade_PageBanner ? "true" : "false"),
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+            sliderInit.slickAnimation();
+
+            sliderInit.on('touchstart', e => {
+                sliderInit.slick('slickPlay');
+            });
+        });
+
+        function ChangeTabIndex(tab) {
+            location.href = "/reviews.html?TabIndex=" + tab;
+        }
+    </script>
+}
