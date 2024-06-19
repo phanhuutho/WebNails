@@ -42,7 +42,7 @@
                     <div class="card">
                         <div class="card-header">
                             <div class="card-header-name">
-                                @(item.Name)<span class="small">@Html.Raw(string.IsNullOrEmpty(item.Moment) ? "" : " - " + item.Moment)</span>
+                                <b>@(item.Name)</b><span class="small">@Html.Raw(string.IsNullOrEmpty(item.Moment) ? "" : " - " + item.Moment)</span>
                             </div>
                             <div class="card-header-star">
                                 @for (var i = 0; i < item.Star; i++)
