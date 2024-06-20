@@ -1,11 +1,11 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "V Nail Spa",
+  "HyperLinkTell": "tel:(352)7371727",
+  "TextTell": "(352)-737-1727",
+  "GooglePlus": "https://www.google.com/search?q=V+Nail+Spa+32605",
+  "Address": "2011 NW 43rd St, Gainesville, FL 32605",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/htr7f5kXmXEWTw2M9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13866.60319313952!2d-82.3880759!3d29.671906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a573ea4d68c5%3A0xa540a3a6bbe43fe7!2sV%20Nail%20Spa%20(%245%20OFF%20Pedicures)!5e0!3m2!1sen!2s!4v1718897147775!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -14,7 +14,16 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
