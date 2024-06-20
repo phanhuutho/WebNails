@@ -12,6 +12,12 @@
 header {
     background: var(--bg-main);
 }
+.logo {
+    max-width: 120px;
+}
+.logo, .logo img {
+    background: unset;
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
@@ -21,6 +27,9 @@ footer {
 }
 footer a {
     color: var(--color-white);
+}
+.logo-footer, .logo-footer img {
+    background: unset;
 }
 /* -------------------------------------------------- */
 
