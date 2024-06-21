@@ -50,6 +50,9 @@
     display: inline-block;
     width: 3px;
 }
+.card-body .box-prices p {
+    margin-bottom: 0;
+}
 
 @media (max-width: 767px) {
     .card-body {
