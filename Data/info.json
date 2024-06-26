@@ -17,7 +17,7 @@
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
-    "Url": "https://www.instagram.com/ljnailsallure/",
+    "Url": "",
     "Position": 1,
     "ClassIcon": "fa fa-telegram",
     "BackgroundColor": "#34a9e4"
@@ -31,7 +31,7 @@
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/ljnailsallure/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
