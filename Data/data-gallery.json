@@ -34,23 +34,5 @@
     "Src": "/Content/images/gallery/images-0006.jpg",
     "Position": 1,
     "TabIndex": 1
-  },
-  {
-    "Status": true,
-    "Src": "/Content/images/gallery/images-0007.jpg",
-    "Position": 1,
-    "TabIndex": 1
-  },
-  {
-    "Status": true,
-    "Src": "/Content/images/gallery/images-0008.jpg",
-    "Position": 1,
-    "TabIndex": 1
-  },
-  {
-    "Status": true,
-    "Src": "/Content/images/gallery/images-0009.jpg",
-    "Position": 1,
-    "TabIndex": 1
   }
 ]

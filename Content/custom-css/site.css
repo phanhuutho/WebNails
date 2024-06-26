@@ -267,6 +267,8 @@ main {
     /*Menu*/
     .menu-desktop .list-inline > li > a {
         font-size: 0.7rem;
+        padding-left: 3px;
+        padding-right: 3px;
     }
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
         padding-top: 6px;
