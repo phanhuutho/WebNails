@@ -38,6 +38,8 @@ footer a {
 .menu-desktop .list-inline > li > a {
     color: var(--color-white);
     font-size: 0.8rem;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
     padding-top: 7px;
@@ -266,12 +268,12 @@ main {
 @media (max-width: 991px) {
     /*Menu*/
     .menu-desktop .list-inline > li > a {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         padding-left: 3px;
         padding-right: 3px;
     }
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-        padding-top: 6px;
+        padding-top: 5px;
     }
     /* -------------------------------------------------- */
 
