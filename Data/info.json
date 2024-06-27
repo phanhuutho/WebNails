@@ -1,15 +1,45 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "A Nails Spa",
+  "HyperLinkTell": "tel:(762)2399053",
+  "TextTell": "(762)-239-9053",
+  "GooglePlus": "https://www.google.com/search?q=A+Nails+Spa+30531",
+  "Address": "Habersham CO Shopping Center, 273, Cornelia, GA 30531",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/fvamv5EA6HW2jN9o6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13150.64231379184!2d-83.5271166!3d34.5114883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8858ade2a3f06723%3A0xc3a9e5e64dcc7764!2sA%20Nails%20Spa%20(Grand%20Opening%3A%2020%25%20Off%20%26%2015%25%20Off%20Coupons)!5e0!3m2!1sen!2s!4v1719504035174!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
-  "Prices": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
