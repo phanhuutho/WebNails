@@ -101,25 +101,25 @@ main {
 .slider-home .sliders .slider-1 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
-    background-position: 50% 50%;
+    background-position: 60% 50%;
 }
 
 .slider-home .sliders .slider-2 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
-    background-position: 100% 50%;
+    background-position: 90% 50%;
 }
 
 .slider-home .sliders .slider-3 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
-    background-position: 15% 50%;
+    background-position: 20% 50%;
 }
 
 .slider-home .sliders .slider-4 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
-    background-position: 5% 50%;
+    background-position: 10% 50%;
 }
 
 .slider-home .sliders .slider-5 .box-image .image {
@@ -142,19 +142,19 @@ main {
 .slider-banner .slider-1 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 100% 50%;
+    background-position: 90% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 100% 50%;
+    background-position: 90% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 0% 50%;
+    background-position: 15% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -178,17 +178,17 @@ main {
 
 /*Page Home*/
 .beauty-spa .box-image .image1 {
-    background-image: url(../images/home/home_service_manicure.jpg);
+    background-image: url(../images/home/home_service_hair_color.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image2 {
-    background-image: url(../images/home/home_service_pedicure.jpg);
+    background-image: url(../images/home/home_service_hair_cut.jpg);
     background-position: 80% 50%;
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_hair_style.jpg);
     background-position: 50% 50%;
 }
 
@@ -309,7 +309,7 @@ main {
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 65% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
@@ -317,7 +317,7 @@ main {
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 5% 50% !important;
+        background-position: 15% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
@@ -352,7 +352,7 @@ main {
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 0% 50% !important;
+        background-position: 15% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -397,7 +397,7 @@ main {
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 95% 50% !important;
+        background-position: 90% 50% !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {

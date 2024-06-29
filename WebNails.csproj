@@ -251,6 +251,9 @@
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_hair_color.jpg" />
+    <Content Include="Content\images\home\home_service_hair_cut.jpg" />
+    <Content Include="Content\images\home\home_service_hair_style.jpg" />
     <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
@@ -267,6 +270,7 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
+    <Content Include="Content\images\popup\coupon-02.jpg" />
     <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\services-detail\brow-lamination.jpg" />
@@ -288,8 +292,12 @@
     <Content Include="Content\images\services\services_eyebrows_wax.jpg" />
     <Content Include="Content\images\services\services_eyelash_extension.jpg" />
     <Content Include="Content\images\services\services_facial.jpg" />
+    <Content Include="Content\images\services\services_facial_threading.jpg" />
     <Content Include="Content\images\services\services_gel_polish.jpg" />
     <Content Include="Content\images\services\services_gel_x.jpg" />
+    <Content Include="Content\images\services\services_hair_color.jpg" />
+    <Content Include="Content\images\services\services_hair_cut.jpg" />
+    <Content Include="Content\images\services\services_hair_style.jpg" />
     <Content Include="Content\images\services\services_henna_brow.jpg" />
     <Content Include="Content\images\services\services_lash_lift.jpg" />
     <Content Include="Content\images\services\services_lip_wax.jpg" />

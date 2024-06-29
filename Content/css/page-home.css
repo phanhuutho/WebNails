@@ -184,6 +184,10 @@ main .contact .container{
     margin-bottom: 0;
     line-height: calc(2rem + 1.5vw);
 }
+.slider-home .sliders .slider-2 .box-image .box-inner h2 {
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+}
 .slider-home .sliders .slider-2 .box-image .box-inner p {
     font-family: "Fira Sans";
     font-size: 20px;
@@ -197,6 +201,10 @@ main .contact .container{
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     font-weight: bold;
 }
+.slider-home .sliders .slider-3 .box-image .box-inner h2 {
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+}
 .slider-home .sliders .slider-3 .box-image .box-inner p {
     font-family: "Fira Sans";
     font-size: 36px;
@@ -209,6 +217,10 @@ main .contact .container{
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
     font-weight: bold;
+}
+.slider-home .sliders .slider-4 .box-image .box-inner h2 {
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
 }
 .slider-home .sliders .slider-4 .box-image .box-inner p {
     font-family: "Fira Sans";
@@ -429,8 +441,8 @@ main .contact .container{
 }
 .beauty-spa .box-image{
     position: relative;
-    width: 260px;
-    height: 260px;
+    max-width: 300px;
+    height: 400px;
     margin: 0 auto;
     transition: opacity 1s;
     -webkit-transition: opacity 1s;

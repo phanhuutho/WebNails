@@ -6,12 +6,12 @@
   "LogoTop_Rounded": "0",
   "LogoBottom_Rounded": "0",
   "ImageServices_Home_Rounded": "0",
-  "ImageServices_Home_Text_ItemAlign": "center",
+  "ImageServices_Home_Text_ItemAlign": "end",
   "ImageContact_Home_Rounded": "0",
   "Button_Contact_Rounded": "0",
   "Image_Contact_Rounded": "0",
   "Image_Service_Rounded": "0",
-  "Image_Service_Text_ItemAlign": "center",
+  "Image_Service_Text_ItemAlign": "end",
   "Image_Gallery_Rounded": "0",
   "Image_GiftCard_Rounded": "0",
   "Banner_Home": [
@@ -48,30 +48,30 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     },
     {
       "Position": 4,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     },
@@ -101,9 +101,9 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
@@ -116,24 +116,24 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "center",
-        "Laptop": "center",
-        "Tablet": "center",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
+        "Mobile": "end"
+      },
+      "Text_JustifyContent": {
+        "Large": "end",
+        "Laptop": "end",
+        "Tablet": "end",
         "Mobile": "center"
       }
     }

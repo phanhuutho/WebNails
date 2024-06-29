@@ -181,13 +181,25 @@
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
 }
+.slider-banner .slider-1 .box-slider .box-inner h2 {
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+}
 .slider-banner .slider-2 .box-slider .box-inner h1 {
     font-size: 42px;
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
 }
+.slider-banner .slider-2 .box-slider .box-inner h2 {
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+}
 .slider-banner .slider-3 .box-slider .box-inner h1 {
     font-size: 38px;
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
+}
+.slider-banner .slider-3 .box-slider .box-inner h2 {
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
 }
