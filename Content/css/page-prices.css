@@ -51,3 +51,25 @@
 .bg-main .overlay {
     background-color: unset;
 }
+
+.card-body .card-title h2 {
+    font-weight: bold;
+}
+
+.card-body .box-prices span {
+    display: inline-block;
+    width: 3px;
+}
+
+@media (max-width: 767px) {
+    .card-body {
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 7px;
+    }
+
+    .card-body .box-prices {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
