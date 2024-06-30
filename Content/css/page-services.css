@@ -63,3 +63,13 @@ main {
 .modal-body-content ul li {
     font-size: 13px;
 }
+
+/*Page Service*/
+.bg .bg-services {
+    background-image: unset;
+    background-color: var(--bg-site);
+}
+.bg .bg-services .overlay {
+    background-color: unset;
+}
+/* -------------------------------------------------- */

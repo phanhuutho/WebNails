@@ -28,3 +28,11 @@
     border-bottom: 2px solid var(--color-text-theme);
     font-weight: 900;
 }
+
+.bg .bg-about-us {
+    background-image: unset;
+    background-color: var(--bg-site);
+}
+.bg .overlay {
+    background-color: unset;
+}

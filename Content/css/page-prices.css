@@ -43,3 +43,11 @@
 .pdf-viewer .pdf-viewer-page-view {
     margin:0 auto;
 }
+
+.bg-main {
+    background-image: unset;
+    background-color: var(--bg-site);
+}
+.bg-main .overlay {
+    background-color: unset;
+}

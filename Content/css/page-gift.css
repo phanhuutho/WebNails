@@ -13,3 +13,12 @@
     padding: var(--padding-box);
     background-color: var(--color-black);
 }
+
+.bg .bg-gift {
+    background-image: unset;
+    background-color: var(--bg-site);
+}
+
+.bg .overlay {
+    background-color: unset;
+}
