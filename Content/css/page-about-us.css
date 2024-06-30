@@ -36,3 +36,20 @@
 .bg .overlay {
     background-color: unset;
 }
+
+.btn-more {
+    background-color: #fff !important;
+    color: #000000 !important;
+    border-radius: 10px;
+    font-family: "Carme";
+    border-color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 7px 20px;
+}
+
+@media (max-width: 767px) {
+    .page-main h1 {
+        font-size: 175%;
+    }
+}
