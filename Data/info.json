@@ -1,19 +1,14 @@
 ﻿{
-  "Name": "GLOW Nails & Spa",
-  "HyperLinkTell": "tel:(949)7816045",
-  "TextTell": "(949)-781-6045",
-  "GooglePlus": "https://www.google.com/search?q=Glow+Nails+92626",
-  "Address": "3019 Harbor Blvd, Costa Mesa, CA 92626",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wqv1ENpy3mQMFaof6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.319975372935!2d-117.9201517!3d33.6809928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf0c131464d1%3A0xb9eac60a8ddb3f46!2s(%245%20OFF%20%26%2015%25%20OFF%20Coupon)%20GLOW%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1716565212404!5m2!1sen!2s",
+  "Name": "Bella Nails & Lash",
+  "HyperLinkTell": "tel:(303)2802376",
+  "TextTell": "(303)-280-2376",
+  "GooglePlus": "https://www.google.com/search?q=bella+nails+80234",
+  "Address": "12910 Zuni St #800, Westminster, CO 80234",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/TJqMA1tqeu74xajy8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12237.938701982137!2d-105.0144981!3d39.9305471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c759957289b6d%3A0x50ab8e4f1bca9704!2sBella%20Nails%20%26%20Lash!5e0!3m2!1sen!2s!4v1719938002256!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
@@ -24,7 +19,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/Bellanailwestminster/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"

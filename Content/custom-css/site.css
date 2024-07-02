@@ -12,6 +12,14 @@
 header {
     background: var(--bg-main);
 }
+.logo, .navbar-brand img {
+    background: unset;
+    padding: 0;
+}
+.logo img {
+    background: unset;
+    padding: 0;
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
@@ -21,6 +29,12 @@ footer {
 }
 footer a {
     color: var(--color-white);
+}
+.logo-footer {
+    background: unset;
+}
+.logo-footer img {
+    background: unset;
 }
 /* -------------------------------------------------- */
 
@@ -334,6 +348,13 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    .logo-brand .navbar-brand {
+        background: unset;
+        padding: 0;
+    }
+    .navbar-brand img {
+        max-width: 90px;
+    }
     /*Banner Home*/
     .slider-home {
         height: 320px !important;
