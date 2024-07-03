@@ -1,35 +1,35 @@
 ﻿:root {
-    --bg-site: #f7efe4;
-    --bg-main: #fffcf5;
-    --color-theme: #d47e0b;
-    --color-menu-legend: #d47e0b;
-    --color-text-theme: #d47e0b;
+    --bg-site: #fff7f2;
+    --bg-main: #ffffff;
+    --color-theme: #b8410e;
+    --color-menu-legend: #b8410e;
+    --color-text-theme: #b8410e;
     --color-black: #000000;
     --color-white: #ffffff;
 }
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 .logo, .navbar-brand img {
     max-width: 125px;
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 .logo img{
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 /* -------------------------------------------------- */
 
 /*Footer*/
 footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 .logo-footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 .logo-footer img {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 /* -------------------------------------------------- */
 
@@ -346,6 +346,12 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    .logo-brand .navbar-brand {
+        background: unset;
+    }
+    .logo-brand img {
+        max-width: 110px;
+    }
     /*Banner Home*/
     .slider-home {
         height: 320px !important;
