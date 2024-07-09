@@ -8,12 +8,7 @@
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13389.571125038956!2d-96.3331146!3d32.9670376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864bfe8882fcb83f%3A0x9755ef5b826254b!2sWorld%20Nails%20Salon%20Royse%20City!5e0!3m2!1sen!2s!4v1720544874931!5m2!1sen!2s",
   "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/8d60122051d4/customer/home",
   "ShowCoupon": true,
-  "Coupons": [
-    {
-      "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
