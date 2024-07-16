@@ -1,0 +1,38 @@
+﻿@model List<WebNails.Models.ReviewModel>
+<section class="reviews py-5 bg-light">
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h1 class="fs-1 font-Parisienne fw-bold color-theme">Reviews</h1>
+                <p class="text-center">HEAR FROM OUR CLIENTS</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="slider-reviews">
+                    @foreach (var item in Model)
+                    {
+                        <div class="my-3">
+                            <div class="box-inner h-100">
+                                <div class="border border-theme h-100 p-5">
+                                    <div class="box-image">
+                                        <h4 class="text-center">@item.Name</h4>
+                                        <p class="text-center">
+                                            @for (var i = 0; i < item.Star; i++)
+                                            {
+                                                <i class="fa fa-star text-theme"></i>
+                                            }
+                                        </p>
+                                    </div>
+                                    <div class="box-text text-center">
+                                        @Html.Raw(item.Text)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

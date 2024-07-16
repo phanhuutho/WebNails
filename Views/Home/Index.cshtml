@@ -7,6 +7,9 @@
     CouponCallback = CouponCallback ?? new List<WebNails.Models.CouponCallbackModel>();
 
     var IsFade_HomeBanner = (bool)ViewBag.IsFade_HomeBanner;
+
+    var Reviews = (List<WebNails.Models.ReviewModel>)ViewBag.Reviews;
+    Reviews = Reviews ?? new List<WebNails.Models.ReviewModel>();
 }
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
@@ -27,8 +30,14 @@
     @{ Html.RenderPartial("_Home_About_Us_1"); }
     <div class="divider mt-5 mt-md-0 mw-100"></div>
     @{ Html.RenderPartial("_Home_Services_1"); }
+    <div class="divider my-5 my-md-1 mw-100"></div>
+    @{ Html.RenderPartial("_Home_About_Us_2"); }
+    <div class="divider my-5 my-md-1 mw-100"></div>
+    @{ Html.RenderPartial("_Home_Skin_Beauty"); }
     <div class="divider mb-5 mb-md-1 mw-100"></div>
     @{ Html.RenderPartial("_Home_Business_Gift_1"); }
+    <div class="divider mt-5 mt-md-0 mw-100"></div>
+    @{ Html.RenderPartial("_Reviews", Reviews); }
     <div class="divider mt-5 mt-md-0 mw-100"></div>
     @{ Html.RenderPartial("_Home_Contact_1"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
@@ -70,6 +79,7 @@
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
         var sliderAboutUs = $('.slider-about-us');
+        var sliderReviews = $('.slider-reviews');
 
         $(document).ready(function () {
 
@@ -136,6 +146,20 @@
                 touchMove: false,
                 fade: true,
                 cssEase: 'linear'
+            });
+
+            sliderReviews.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false,
+                adaptiveHeight: true
             });
         });
 

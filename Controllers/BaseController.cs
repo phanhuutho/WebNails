@@ -137,6 +137,9 @@ namespace WebNails.Controllers
                 Banner_Contacts.Add(Banner_Item);
             }
             ViewBag.Banner_Contact = Banner_Contacts;
+
+            var jsonReviews = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/data-reviews.json"));
+            ViewBag.Reviews = JsonConvert.DeserializeObject<List<ReviewModel>>(jsonReviews);
         }
     }
 }

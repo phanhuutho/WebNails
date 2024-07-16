@@ -2,13 +2,12 @@
     <div class="overlay"></div>
     <div class="container rounded border border-1 border-theme">
         <div class="row">
-            <hr class="border-theme rounded-top mb-0" />
-            <div class="col-xl-6 col-lg-6 order-lg-1 col-md-12 order-1 py-md-5 py-3">
+            <div class="col-xl-6 col-lg-6 col-md-12 py-3">
                 <div class="box-image">
-                    <img src="~/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
+                    <img src="~/Content/images/home/home_about_us_2.jpg" class="img-fluid img-thumbnail p-0" />
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 order-lg-1 col-md-12 order-1 py-md-5 py-3">
+            <div class="col-xl-6 col-lg-6 col-md-12 py-3">
                 <div class="about-us-inner ms-xl-5 ms-md-3 mx-1">
                     <div class="box-inner">
                         <h1 class="text-center text-lg-start mb-4 mb-md-5"><span>Delivering Outstanding Experiences Every Visit</span></h1>
@@ -19,7 +18,9 @@
                         </p>
                         <div class="row">
                             <div class="col-md-auto">
-                                <img src="~/Content/images/svg/Skilled.svg" />
+                                <div class="" style="width: 70px; height: 70px; background: #ffffff; padding: 15px; border-radius: 50%;">
+                                    <img src="~/Content/images/svg/Skilled.svg" class="img-fluid" />
+                                </div>
                             </div>
                             <div class="col-md-auto">
                                 <h3>Skilled Professionals</h3>
@@ -28,7 +29,9 @@
                         </div>
                         <div class="row">
                             <div class="col-md-auto">
-                                <img src="~/Content/images/svg/Personalized.svg" />
+                                <div class="" style="width: 70px; height: 70px; background: #ffffff; padding: 15px; border-radius: 50%;">
+                                    <img src="~/Content/images/svg/Personalized.svg" class="img-fluid" />
+                                </div>
                             </div>
                             <div class="col-md-auto">
                                 <h3>Personalized Experience</h3>
@@ -37,7 +40,9 @@
                         </div>
                         <div class="row">
                             <div class="col-md-auto">
-                                <img src="~/Content/images/svg/Friendly-Relaxing.svg" />
+                                <div class="" style="width: 70px; height: 70px; background: #ffffff; padding: 15px; border-radius: 50%; ">
+                                    <img src="~/Content/images/svg/Friendly-Relaxing.svg" class="img-fluid" />
+                                </div>
                             </div>
                             <div class="col-md-auto">
                                 <h3>Friendly & Relaxing Experience</h3>
@@ -46,16 +51,23 @@
                         </div>
                         <div class="row">
                             <div class="col-md-auto">
-                                <img src="~/Content/images/svg/Booking.svg" />
+                                <div class="" style="width: 70px; height: 70px; background: #ffffff; padding: 15px; border-radius: 50%; ">
+                                    <img src="~/Content/images/svg/Booking.svg" class="img-fluid" />
+                                </div>
                             </div>
                             <div class="col-md-auto">
                                 <h3>Online Booking</h3>
                                 <p>Choose a date and time convenient for you.</p>
                             </div>
                         </div>
-                        <div class="text-center text-lg-start">
-                            <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
-                        </div>
+                        @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+                        {
+                            <div class="text-center mt-3">
+                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@(ViewBag.LinkBookingAppointment)" target="_blank">
+                                    <span>Book Appointment</span> <i class="fa fa-calendar"></i>
+                                </a>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
