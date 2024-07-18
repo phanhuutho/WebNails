@@ -3,8 +3,41 @@
     line-height: 25px;
 }
 
+.box-prices span {
+    display: inline-block;
+    width: 1px;
+}
+
+.box-prices p {
+    font-style: italic;
+    padding-left: 0px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.box-prices .row.pb-1 {
+    height: 75px;
+}
+
 @media (max-width: 767px) {
     h3 {
-        font-size: calc(1.3rem);
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+
+    .box-prices {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .box-prices .row.pb-1 {
+        height: auto;
+    }
+
+    .box-prices p {
+        font-size: 11px;
     }
 }
