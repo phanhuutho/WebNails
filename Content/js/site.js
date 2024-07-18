@@ -5,15 +5,24 @@ $(document).ready(function(){
             position_active = index;
     });
 
-    $(".list-inline-item-link").hover(
+    //$(".list-inline-item-link").hover(
+    //    function () {
+    //        $(".list-inline-item-link").removeClass("active");
+    //        $(".list-inline-item").removeClass("active");
+    //    }, 
+    //    function () {
+    //        var elementActive = $(".list-inline-item-link")[position_active];
+    //        $(elementActive).addClass("active");
+    //        $(elementActive).parent(".list-inline-item").addClass("active");
+    //    }
+    //);
+
+    $(".img-hover-zoom").hover(
         function () {
-            $(".list-inline-item-link").removeClass("active");
-            $(".list-inline-item").removeClass("active");
+            $(this).find("a.learn-more").show();
         }, 
         function () {
-            var elementActive = $(".list-inline-item-link")[position_active];
-            $(elementActive).addClass("active");
-            $(elementActive).parent(".list-inline-item").addClass("active");
+            $(this).find("a.learn-more").hide();
         }
     );
 

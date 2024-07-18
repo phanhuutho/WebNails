@@ -5,13 +5,17 @@
     <link href="~/Content/css/slick.css" rel="stylesheet">
     <link href="~/Content/css/slick-theme.css" rel="stylesheet">
     <link href="~/Content/css/slider.css" rel="stylesheet">
+    <link href="~/Content/css/page-services-detail.css" rel="stylesheet">
+}
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
 }
 <main>
     @{Html.RenderPartial("~/Views/Home/_SliderPageSub.cshtml");}
     <section class="bg">
         <div class="bg-services">
             <div class="overlay"></div>
-            <div class="page-main container-lg py-5">
+            <div class="page-main container-lg py-5 position-relative">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 mt-3">
                         @Html.Raw(Model)

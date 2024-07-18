@@ -6,7 +6,7 @@
   "Address": "6134 Westheimer Rd ste c, Houston, TX 77057",
   "LinkGoogleMapAddress": "https://maps.app.goo.gl/NXiHM6P8JP27xaGx9",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13857.408403391599!2d-95.4912483!3d29.7385214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c31176272bab%3A0x261b2dd577950554!2sLe%20Bijou%20Nails%20and%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1721066319259!5m2!1sen!2s",
-  "LinkBookingAppointment": "abc",
+  "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [],
   "Prices": [],
@@ -19,14 +19,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/Lebijousalonandspa/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/lebijounailsandspa/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

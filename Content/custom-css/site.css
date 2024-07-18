@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #ffe8f8;
+    --bg-site: #ebbcc8;
     --bg-main: #ffffff;
-    --color-theme: #b51381;
-    --color-menu-legend: #b51381;
-    --color-text-theme: #b51381;
+    --color-theme: #673231;
+    --color-menu-legend: #673231;
+    --color-text-theme: #673231;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -153,24 +153,28 @@ main {
 .about-us .box-inner h1 span {
     border-bottom: none;
 }
+.beauty-spa .box-image {
+    width: 480px;
+    height: 640px;
+}
 .beauty-spa .box-image .image1 {
-    background-image: url(../images/home/home_service_manicure.jpg);
+    background-image: url(../images/home/home_service_nails.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image2 {
-    background-image: url(../images/home/home_service_pedicure.jpg);
-    background-position: 80% 50%;
+    background-image: url(../images/home/home_service_wax.jpg);
+    background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_facial.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
-    background-position: 45% 50%;
+    background-image: url(../images/home/home_service_hair.jpg);
+    background-position: 50% 50%;
 }
 
 .business .business-inner .box-image .image-business {

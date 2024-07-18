@@ -1,0 +1,10 @@
+﻿.box-inner p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+@media (max-width: 767px) {
+    h3 {
+        font-size: calc(1.3rem);
+    }
+}
