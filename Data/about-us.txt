@@ -1,16 +1,14 @@
-﻿<p>
-    Welcome to Le Bijou Nails and Spa, Your Haven for Unparalleled Relaxation and Transformation.
+﻿<h3 class="text-theme mb-3 mb-md-4">
+    Where Beauty Meets Exceptional Service: Discover the Le Bijou Nails and Spa Experience
+</h3>
+
+<p>
+    At Le Bijou Nails and Spa, we take pride in being a women-owned establishment that is committed to delivering exceptional beauty and wellness services. 
+    With years of industry experience and a deep understanding of our clients needs, we strive to provide a welcoming and inclusive environment where everyone feels comfortable and valued.
 </p>
 
 <p>
-    Our dedicated team of professionals is here to guide you on a journey of rejuvenation and self-care. 
-    Indulge in our luxurious treatments designed to enhance your natural beauty and restore your inner balance. 
-    Le Bijou Nails and Spa offers a variety of services to help you feel refreshed and renewed.
-</p>
-
-<p>
-    Our services range from facials, body care, hair styling and nail care. 
-    All services are specifically designed to provide expert treatment to our clients. 
-    Immerse yourself in an oasis of tranquillity and let us pamper you with our exceptional services. 
-    Discover the power of self-care and embrace a new level of well-being at Le Bijou Nails and Spa. 
+    Our team of skilled professionals is dedicated to staying on top of the latest trends and techniques, ensuring that you receive the highest quality of service. 
+    Whether you're seeking a rejuvenating facial, a relaxing manicure/pedicure, or other personalized treatments, our women-owned salon is here to cater to your unique beauty desires. 
+    Step into Le Bijou Nails and Spa, and let us inspire you to embrace your own individuality and radiate confidence from within.
 </p>

@@ -20,13 +20,32 @@
         <div class="bg-about-us">
             <div class="overlay"></div>
             <div class="page-main container-lg py-5" id="about-us">
-                <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
-                        <div class="mb-4 text-lg-start text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
-                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                <div class="bg-site p-3">
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
+                            <div class="mb-4 text-lg-start text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
+                            @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                        </div>
+                        <div class="col-xl-4 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
+                            <img src="/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
+                        </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
-                        <img src="/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
+                </div>
+                <div class="bg-site p-3 my-5">
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-lg-6 text-center my-1 col-md-12">
+                            <img src="~/Content/images/about-us/about_us_nikki_tran.jpg" class="img-fluid img-thumbnail p-0" />
+                        </div>
+                        <div class="col-xl-8 col-lg-6 mt-3 col-md-12">
+                            <h3 class="text-theme">Visionary Founder Behind Le Bijou Nails and Spa: <b>Nikki Tran</b></h3>
+                            <p>
+                                Nikki, the visionary behind Le Bijou Nails and Spa, is a passionate entrepreneur with a mission to create a one-stop destination where individuals can indulge in both fun and pampering.
+                                With a keen eye for design and an unwavering commitment to excellence, Nikki has meticulously crafted a studio that exudes glamour and sophistication.
+                                Her goal is to provide a space where every client can escape the demands of daily life and immerse themselves in an atmosphere of luxury.
+                                Nikki believes that self-care should be an enjoyable experience, and she has curated a team of talented professionals who share her dedication to creating unforgettable moments for each individual.
+                                With Nikki at the helm, Le Bijou Nails and Spa stands as a testament to her unwavering pursuit of providing an exceptional and glamorous sanctuary for all who enter its doors.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

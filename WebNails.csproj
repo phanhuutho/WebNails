@@ -188,6 +188,7 @@
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\slick.svg" />
     <Content Include="Content\images\about-us\about-us_bg.jpg" />
+    <Content Include="Content\images\about-us\about_us_nikki_tran.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\background_darkwood.jpg" />
     <Content Include="Content\images\banner\contact\contact_banner.jpg" />
@@ -236,6 +237,52 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\Hair\hair-0001.jpg" />
+    <Content Include="Content\images\gallery\Hair\hair-0002.jpg" />
+    <Content Include="Content\images\gallery\Hair\hair-0003.jpg" />
+    <Content Include="Content\images\gallery\Hair\hair-0004.jpg" />
+    <Content Include="Content\images\gallery\Hair\hair-0005.jpg" />
+    <Content Include="Content\images\gallery\Hair\hair-0006.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0001.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0002.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0003.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0004.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0005.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0006.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0007.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0008.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0009.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0010.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0011.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0012.jpg" />
+    <Content Include="Content\images\gallery\Make-Up\make-up-0013.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0001.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0002.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0003.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0004.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0005.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0006.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0007.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0008.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0009.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0010.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0011.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0012.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0013.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0014.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0015.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0016.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0017.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0018.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0019.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0020.jpg" />
+    <Content Include="Content\images\gallery\Nails\nails-0021.jpg" />
+    <Content Include="Content\images\gallery\Salon\salon-0001.jpg" />
+    <Content Include="Content\images\gallery\Salon\salon-0002.jpg" />
+    <Content Include="Content\images\gallery\Salon\salon-0003.jpg" />
+    <Content Include="Content\images\gallery\Salon\salon-0004.jpg" />
+    <Content Include="Content\images\gallery\Salon\salon-0005.jpg" />
+    <Content Include="Content\images\gallery\Salon\salon-0006.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_2.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
@@ -491,7 +538,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

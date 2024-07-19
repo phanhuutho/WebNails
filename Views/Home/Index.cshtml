@@ -168,8 +168,12 @@
             location.href = "register-coupon.html?imgCoupon=" + imgCoupon;
         }
 
-        function ServiceDetail(name) {
-            location.href = "/services/" + name + ".html";
+        function ServiceDetail(name, id) {
+            var url = "/services/" + name + ".html";
+            if (id != undefined && id != '') {
+                url = url + "#" + id;
+            }
+            location.href = url;
         }
     </script>
 }

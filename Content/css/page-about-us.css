@@ -9,7 +9,6 @@
 }
 .page-main h1 span {
     padding-bottom: 0px;
-    border-bottom: 2px solid var(--color-text-theme);
     font-weight: 900;
 }
 #about-us p {

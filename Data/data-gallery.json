@@ -1,8 +1,278 @@
 [
   {
     "Status": true,
-    "Src": "/Content/images/gallery/nail-art-1.jpg",
-    "Position": 1,
+    "Src": "/Content/images/gallery/Nails/nails-0001.jpg",
+    "Position": 1000,
     "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0002.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0003.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0004.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0005.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0006.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0007.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0008.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0009.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0010.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0011.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0012.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0013.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0014.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0015.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0016.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0017.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0018.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0019.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0020.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Nails/nails-0021.jpg",
+    "Position": 1000,
+    "TabIndex": 1
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0001.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0002.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0003.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0004.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0005.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0006.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0007.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0008.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0009.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0010.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0011.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0012.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Make-Up/make-up-0013.jpg",
+    "Position": 1000,
+    "TabIndex": 2
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Salon/salon-0001.jpg",
+    "Position": 1000,
+    "TabIndex": 3
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Salon/salon-0002.jpg",
+    "Position": 1000,
+    "TabIndex": 3
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Salon/salon-0003.jpg",
+    "Position": 1000,
+    "TabIndex": 3
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Salon/salon-0004.jpg",
+    "Position": 1000,
+    "TabIndex": 3
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Salon/salon-0005.jpg",
+    "Position": 1000,
+    "TabIndex": 3
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Salon/salon-0006.jpg",
+    "Position": 1000,
+    "TabIndex": 3
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Hair/hair-0001.jpg",
+    "Position": 1000,
+    "TabIndex": 4
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Hair/hair-0002.jpg",
+    "Position": 1000,
+    "TabIndex": 4
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Hair/hair-0003.jpg",
+    "Position": 1000,
+    "TabIndex": 4
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Hair/hair-0004.jpg",
+    "Position": 1000,
+    "TabIndex": 4
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Hair/hair-0005.jpg",
+    "Position": 1000,
+    "TabIndex": 4
+  },
+  {
+    "Status": true,
+    "Src": "/Content/images/gallery/Hair/hair-0006.jpg",
+    "Position": 1000,
+    "TabIndex": 4
   }
 ]
