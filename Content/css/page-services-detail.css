@@ -5,19 +5,19 @@
 
 .box-prices span {
     display: inline-block;
-    width: 1px;
+    width: 0px;
 }
 
 .box-prices p {
     font-style: italic;
     padding-left: 0px;
     margin-bottom: 0;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 17px;
 }
 
 .box-prices .row.pb-1 {
-    height: 75px;
+    /*height: 75px;*/
 }
 
 @media (max-width: 767px) {
@@ -29,7 +29,7 @@
     }
 
     .box-prices {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 25px;
     }
 
