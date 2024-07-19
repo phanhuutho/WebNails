@@ -15,7 +15,7 @@ header {
 
 .logo {
     max-width: 100px;
-    background: var(--color-theme);
+    background: var(--bg-main);
 }
 
 .logo img {
@@ -32,7 +32,7 @@ footer {
 }
 
 .logo-footer {
-    background: var(--color-theme);
+    background: var(--bg-main);
 }
 
 .logo-footer img {
