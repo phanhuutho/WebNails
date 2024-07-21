@@ -140,6 +140,10 @@ a:active,a:hover {
     color: var(--color-theme);
 }
 
+.text-site {
+    color: var(--bg-site);
+}
+
 .img-hover-zoom {
     overflow: hidden;
 }

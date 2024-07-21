@@ -234,6 +234,17 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\home_gallery_1.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_2.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_3.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_4.jpg" />
+    <Content Include="Content\images\gallery\home_gallery_5.jpg" />
+    <Content Include="Content\images\home\drink_lido_kiss.jpg" />
+    <Content Include="Content\images\home\drink_strawberry_mimosa.jpg" />
+    <Content Include="Content\images\home\drink_tequila_charms.jpg" />
+    <Content Include="Content\images\home\drink_tequila_sunrise.jpg" />
+    <Content Include="Content\images\home\drink_your_poison_blue.jpg" />
+    <Content Include="Content\images\home\drink_your_poison_green.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -248,6 +259,7 @@
     <Content Include="Content\images\home\home_contact_image_8.jpg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
     <Content Include="Content\images\home\home_service_acrylic.jpg" />
+    <Content Include="Content\images\home\home_service_add_on.jpg" />
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
@@ -255,6 +267,7 @@
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
     <Content Include="Content\images\home\home_service_pedicure.jpg" />
+    <Content Include="Content\images\home\home_service_pedicure_manicure.jpg" />
     <Content Include="Content\images\home\home_service_waxing.jpg" />
     <Content Include="Content\images\icon-1-1.png" />
     <Content Include="Content\images\icon-2-1.png" />
@@ -427,10 +440,11 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\GiftManage.cshtml" />
     <Content Include="Views\Home\_GetTable_GiftManage.cshtml" />
+    <Content Include="Views\Home\_Home_Gallery.cshtml" />
+    <Content Include="Views\Home\_Home_Drink.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

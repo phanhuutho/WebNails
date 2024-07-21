@@ -1,22 +1,14 @@
-﻿<section class="about-us py-md-5 px-md-0 px-3">
+﻿<section class="about-us pt-5 px-md-0 px-3">
     <div class="overlay"></div>
-    <div class="container rounded border border-1 border-theme">
-        <div class="row">
-            <hr class="border-theme rounded-top mb-0" />
-            <div class="col-xl-6 col-lg-6 order-lg-1 col-md-12 order-2 py-md-5 py-3">
-                <div class="about-us-inner ms-xl-5 ms-md-3 mx-1">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10 text-center py-md-3 py-0">
+                <div class="about-us-inner">
                     <div class="box-inner">
-                        <h1 class="text-center text-lg-start mb-4 mb-md-5"><span>About Us</span></h1>
+                        <h2 class="font-Parisienne text-site fw-bold ">Welcome To</h2>
+                        <h1 class="py-4 py-md-4"><span>La Madame Nail Lounge</span></h1>
                         @Html.Raw(string.Format("{0}", ViewBag.HomeAboutUs))
-                        <div class="text-center text-lg-start">
-                            <a class="btn btn-default btn-more btn-border btn-border-black" href="about-us.html">VIEW MORE</a>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 order-lg-2 col-md-12 order-1 py-md-5 py-3">
-                <div class="box-image">
-                    <img src="~/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
                 </div>
             </div>
         </div>

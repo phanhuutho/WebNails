@@ -1,25 +1,27 @@
 ﻿:root {
-    --bg-site: #ffe8f8;
+    --bg-site: #f9e1e1;
     --bg-main: #ffffff;
-    --color-theme: #b51381;
-    --color-menu-legend: #b51381;
-    --color-text-theme: #b51381;
+    --color-theme: #ec4b73;
+    --color-menu-legend: #ec4b73;
+    --color-text-theme: #ec4b73;
     --color-black: #000000;
     --color-white: #ffffff;
 }
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo, .navbar-brand img {
-    max-width: 125px;
-    background: var(--bg-main);
+    max-width: 150px;
+    background: var(--bg-site);
+    padding: 0;
 }
 
 .logo img {
-    background: var(--bg-main);
+    background: var(--bg-site);
+    padding: 0;
 }
 .logo, .logo img {
 
@@ -28,15 +30,15 @@ header {
 
 /*Footer*/
 footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo-footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo-footer img {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 .logo-footer, .logo-footer img {
 
@@ -54,6 +56,14 @@ footer {
 /* -------------------------------------------------- */
 
 /*Main*/
+.slick-dots li button:before {
+    color: var(--color-white);
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: var(--color-theme);
+    opacity: 1;
+}
 main {
     background: var(--bg-main);
 }
@@ -78,10 +88,37 @@ main {
     font-size: 77.5%;
 }
 .beauty-spa {
-    background: var(--bg-main);
+    background: var(--color-black);
+}
+.beauty-spa .beauty-spa-inner > div[class*='container'] {
+    background: var(--color-black);
+}
+.beauty-spa .box-image {
+    width: 290px;
+    height: 290px;
+}
+.beauty-spa h2 {
+    font-size: 18px;
+    color: var(--bg-site);
 }
 .about-us {
-    background: var(--bg-main);
+    background: var(--color-black);
+    color: var(--color-white);
+    min-height: unset;
+}
+.about-us > div[class*='container'] {
+    background: var(--color-black);
+}
+.about-us .box-inner h1 span {
+    font-family: "Prata";
+    color: var(--bg-site);
+    font-weight: bold;
+    border-bottom: none;
+    font-size: 1em;
+}
+.about-us .box-inner p {
+    font-weight: 700;
+    font-size: 1.125em;
 }
 .business-gift {
     background: var(--bg-main);
@@ -101,31 +138,31 @@ main {
 .slider-home .sliders .slider-1 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_1.jpg);
-    background-position: 60% 50%;
+    background-position: 100% 50%;
 }
 
 .slider-home .sliders .slider-2 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_2.jpg);
-    background-position: 30% 50%;
+    background-position: 50% 50%;
 }
 
 .slider-home .sliders .slider-3 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_3.jpg);
-    background-position: 40% 50%;
+    background-position: 60% 50%;
 }
 
 .slider-home .sliders .slider-4 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_4.jpg);
-    background-position: 65% 50%;
+    background-position: 85% 50%;
 }
 
 .slider-home .sliders .slider-5 .box-image .image {
     height: 800px;
     background-image: url(../images/banner/home/home_banner_5.jpg);
-    background-position: 50% 50%;
+    background-position: 70% 50%;
 }
 /* -------------------------------------------------- */
 
@@ -178,22 +215,22 @@ main {
 
 /*Page Home*/
 .beauty-spa .box-image .image1 {
-    background-image: url(../images/home/home_service_manicure.jpg);
+    background-image: url(../images/home/home_service_nails_enhancements.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image2 {
-    background-image: url(../images/home/home_service_pedicure.jpg);
+    background-image: url(../images/home/home_service_add_on.jpg);
     background-position: 80% 50%;
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_pedicure_manicure.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-position: 45% 50%;
 }
 
@@ -293,23 +330,23 @@ main {
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 65% 50% !important;
+        background-position: 100% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 30% 50% !important;
+        background-position: 50% 50% !important;
     }
 
     .slider-home .sliders .slider-3 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 45% 50% !important;
     }
 
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 70% 50% !important;
+        background-position: 80% 50% !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 70% 50% !important;
     }
     /* -------------------------------------------------- */
 
@@ -362,7 +399,7 @@ main {
 @media (max-width: 767px) {
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
-
+        background: var(--bg-site);
     }
     /* -------------------------------------------------- */
 
@@ -377,23 +414,23 @@ main {
     }
 
     .slider-home .sliders .slider-1 .box-image .image {
-        background-position: 75% 50% !important;
+        background-position: 100% 50% !important;
     }
 
     .slider-home .sliders .slider-2 .box-image .image {
-        background-position: 30% 50% !important;
-    }
-
-    .slider-home .sliders .slider-3 .box-image .image {
         background-position: 40% 50% !important;
     }
 
+    .slider-home .sliders .slider-3 .box-image .image {
+        background-position: 55% 50% !important;
+    }
+
     .slider-home .sliders .slider-4 .box-image .image {
-        background-position: 35% 50% !important;
+        background-position: 90% 50% !important;
     }
 
     .slider-home .sliders .slider-5 .box-image .image {
-        background-position: 50% 50% !important;
+        background-position: 65% 50% !important;
     }
     /* -------------------------------------------------- */
 
@@ -441,6 +478,15 @@ main {
     /* -------------------------------------------------- */
 
     /*Page Home*/
+    .about-us .box-inner h1 span {
+        font-size: 0.825em;
+    }
+
+    .beauty-spa .box-image {
+        width: 260px;
+        height: 260px;
+    }
+
     .business .business-inner .box-image .image-business {
         position: relative;
         width: 100%;

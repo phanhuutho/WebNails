@@ -5,7 +5,7 @@
   "IsFade_PageBanner": true,
   "LogoTop_Rounded": "0",
   "LogoBottom_Rounded": "0",
-  "ImageServices_Home_Rounded": "0",
+  "ImageServices_Home_Rounded": "circle",
   "ImageServices_Home_Text_ItemAlign": "center",
   "ImageContact_Home_Rounded": "0",
   "Button_Contact_Rounded": "0",
@@ -33,9 +33,9 @@
     {
       "Position": 2,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
+        "Large": "center",
+        "Laptop": "center",
+        "Tablet": "center",
         "Mobile": "end"
       },
       "Text_JustifyContent": {
@@ -48,16 +48,16 @@
     {
       "Position": 3,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
         "Mobile": "center"
+      },
+      "Text_JustifyContent": {
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
+        "Mobile": "start"
       }
     },
     {
@@ -69,25 +69,25 @@
         "Mobile": "end"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
     {
       "Position": 5,
       "Text_ItemAlign": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "end"
-      },
-      "Text_JustifyContent": {
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
         "Mobile": "center"
+      },
+      "Text_JustifyContent": {
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
+        "Mobile": "start"
       }
     }
   ],

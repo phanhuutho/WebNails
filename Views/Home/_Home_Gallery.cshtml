@@ -1,0 +1,32 @@
+﻿@{
+    var gallery = (IEnumerable<WebNails.Models.GalleryModel>)ViewBag.HomeGallery;
+}
+<section class="about-us pt-3 px-md-0 px-3">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10 text-center py-md-3 py-0">
+                <div class="about-us-inner">
+                    <div class="box-inner">
+                        <h2 class="font-Parisienne text-site fw-bold ">La Madame Nail Lounge</h2>
+                        <h1 class="py-4 py-md-4"><span>Our Gallery</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-md-12">
+                <div class="gallery-list">
+                    @{
+                        foreach (var item in gallery)
+                        {
+                            <div class="box-inner px-1">
+                                <img src="@item.Src" loading="lazy" class="img-fluid" />
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

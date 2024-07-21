@@ -21,16 +21,10 @@
 }
 <main>
     @{ Html.RenderPartial("_SliderHome_1"); }
-    <div class="mb-5 mb-md-1 mw-100"></div>
-    @{ Html.RenderPartial("_Home_Beauty_Spa_1"); }
-    <div class="divider my-5 my-md-1 mw-100"></div>
     @{ Html.RenderPartial("_Home_About_Us_1"); }
-    <div class="divider mt-5 mt-md-0 mw-100"></div>
-    @{ Html.RenderPartial("_Home_Services_1"); }
-    <div class="divider mb-5 mb-md-1 mw-100"></div>
-    @{ Html.RenderPartial("_Home_Business_Gift_1"); }
-    <div class="divider mt-5 mt-md-0 mw-100"></div>
-    @{ Html.RenderPartial("_Home_Contact_1"); }
+    @{ Html.RenderPartial("_Home_Beauty_Spa_1"); }
+    @{ Html.RenderPartial("_Home_Gallery"); }
+    @{ Html.RenderPartial("_Home_Drink"); }
     @{ Html.RenderPartial("_Home_Map_1"); }
 </main>
 @section modal{
@@ -70,6 +64,7 @@
         var sliderInit = $('.sliders');
         var sliderCoupon = $('.slider-coupon');
         var sliderAboutUs = $('.slider-about-us');
+        var sliderGallery = $('.gallery-list');
 
         $(document).ready(function () {
 
@@ -136,6 +131,36 @@
                 touchMove: false,
                 fade: true,
                 cssEase: 'linear'
+            });
+
+            sliderGallery.slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             });
         });
 
