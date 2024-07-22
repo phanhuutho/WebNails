@@ -185,6 +185,7 @@
     <Content Include="Content\custom-css\site.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\slick.svg" />
+    <Content Include="Content\images\about-us\about-us.jpg" />
     <Content Include="Content\images\about-us\about-us_bg.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\background_darkwood.jpg" />

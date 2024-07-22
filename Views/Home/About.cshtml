@@ -18,15 +18,21 @@
     @{Html.RenderPartial("_SliderPageSub");}
     <section class="bg">
         <div class="bg-about-us">
-            <div class="overlay"></div>
             <div class="page-main container-lg py-5" id="about-us">
-                <div class="row align-items-center">
-                    <div class="col-xl-8 col-lg-6 mt-3 order-lg-1 col-md-12 order-2">
-                        <div class="mb-4 text-lg-start text-center"><h1><span class="font-Parisienne">About Us</span></h1></div>
-                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 text-center py-md-3 py-0">
+                        <h2 class="font-Parisienne text-site fw-bold">Welcome To</h2>
+                        <h1 class="py-4 py-md-4"><span class="text-site">La Madame Nail Lounge</span></h1>
                     </div>
-                    <div class="col-xl-4 col-lg-6 text-center my-1 order-lg-2 col-md-12 order-1">
-                        <img src="/Content/images/home/home_about_us.jpg" class="img-fluid img-thumbnail p-0" />
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center my-1 col-md-12">
+                        <img src="/Content/images/about-us/about-us.jpg" class="img-fluid img-thumbnail p-0" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 mt-3 col-md-12">
+                        @Html.Raw(string.Format("{0}", ViewBag.AboutUs).Replace("%Link-Booking%", ViewBag.LinkBookingAppointment))
                     </div>
                 </div>
             </div>

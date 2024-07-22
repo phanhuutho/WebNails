@@ -1,16 +1,81 @@
-﻿<p>
-    Welcome you to Fashion Nails, we are pleased to offer a full service Salon for our valued customers. 
-    We always assure that the salon is totally clean and the tools are sanitized clearly for each use. 
-    You are freely to enjoy the relax moments with luxurious and elegant space, escaping from all the life’s pressure and stress to make the most of wonderful time.
+﻿<div class="mb-4 text-lg-start text-center"><h1><span class="text-site">ABOUT US</span></h1></div>
+
+<p>
+    La Madame Nail Lounge – located at 14314 Potranco Rd STE 107, San Antonio, TX 78245.
 </p>
 
 <p>
-    We provide you with the variety of services such as: Manicure, Pedicure, UV Gel, and Lightconcept (LCN), and Waxing with a large selection of color for customer to choose from. 
-    In addition, we also use natural organic and high quality brand name product products like Nu Skin for all provided services. 
-    Especially, with our friendly, enthusiastic and professional staff, you are able to be treated carefully and thoroughly in all time.
+    Our salon takes pride in providing our valued customers all good services and top high quality products as well as materials. 
+    You can find all nail related services, from Manicure, Pedicure to Artificial Nails. 
+    At La Madame Nail Lounge, a wide choice is provided to customers, so you can use any services that you like. 
+    All of our services are at decent prices, so there is no hesitation when you use one or even more services at our salon.
 </p>
 
 <p>
-    The long time of working in this area, we understand deeply what your expectation is and always try our best to give you the most satisfaction when using any services. 
-    We bring to you the confidence by our passion and talent!
+    Come to us now and enjoy the most wonderful moment.
+</p>
+
+<div class="mb-4 text-lg-start text-center"><h1><span class="text-site">WHY US ?</span></h1></div>
+
+<p>
+    We guarantee our work quality, consistency.
+</p>
+
+<p>
+    We have a relaxing, clean, professional, friendly environment.
+</p>
+
+<p>
+    We follow sanitation procedures, spa disposable liner, buffer, pumice, file.
+</p>
+
+<p>
+    Wide variety choices of chrome colors, Gel nail colors, shellac, dip powder nails, color powder, metallic nails, glowing colors, beads, jewel & rhinestone, nails stamp, nails foils, color pigment, and nail lacquers…(over 3,000 colors)
+</p>
+
+<p>
+    Complimentary drinks with all services.
+</p>
+
+<div class="mb-4 text-lg-start text-center"><h1><span class="text-site">OUR POLICY</span></h1></div>
+
+<p>
+    Walk-in or appointment is welcome. However, your appointment is automatically canceled after 10 mins of the scheduled time, and will be rescheduled.
+</p>
+
+<p>
+    We are not responsible for the personal lost item, lost gift card. No refund on service or gift card.
+</p>
+
+<p>
+    No personal/ business checks accepted.
+</p>
+
+<div class="mb-4 text-lg-start text-center"><h1><span class="text-site">PARTY</span></h1></div>
+
+<p>
+    La Madame Nail Lounge offers specialized services for wedding parties, proms, birthday, graduation, bridal shower, client meeting, and corporate groups.
+</p>
+
+<p>
+    $50 trusted deposit requires for the party of 10 people and up. You can bring your own wine, snack, and decoration.
+</p>
+
+<p>
+    No personal/ business checks accepted.
+</p>
+
+<div class="mb-4 text-lg-start text-center"><h1><span class="text-site">GIFT CARD</span></h1></div>
+
+<p>
+    Purchase online www.lamadamenaillounge.come or instore 
+</p>
+
+<div class="mb-4 text-lg-start text-center"><h1><span class="text-site">SATISFACTION GUARANTEED</span></h1></div>
+
+<p>
+    We‘d like our clients to be happy and satisfied with their services. 
+    If you are ever dissatisfied with any service in the salon we will gladly make the corrections necessary to exceed your expectations within 07 days of the original service. 
+    If you are unhappy with your service, please let us know so we can make it right. 
+    Our goal is to ensure each service and visit meets your satisfaction.
 </p>
