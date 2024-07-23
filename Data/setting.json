@@ -98,7 +98,7 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "end"
+        "Mobile": "start"
       },
       "Text_JustifyContent": {
         "Large": "end",
@@ -113,12 +113,12 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "end"
+        "Mobile": "start"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
         "Mobile": "center"
       }
     },
@@ -128,13 +128,13 @@
         "Large": "center",
         "Laptop": "center",
         "Tablet": "center",
-        "Mobile": "end"
+        "Mobile": "center"
       },
       "Text_JustifyContent": {
-        "Large": "end",
-        "Laptop": "end",
-        "Tablet": "end",
-        "Mobile": "center"
+        "Large": "start",
+        "Laptop": "start",
+        "Tablet": "start",
+        "Mobile": "start"
       }
     }
   ],

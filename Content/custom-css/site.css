@@ -179,19 +179,19 @@ main {
 .slider-banner .slider-1 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/your-nails.jpg);
-    background-position: 40% 50%;
+    background-position: 15% 50%;
 }
 
 .slider-banner .slider-2 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/all-services.jpg);
-    background-position: 15% 50%;
+    background-position: 65% 50%;
 }
 
 .slider-banner .slider-3 .box-slider .image {
     height: 800px;
     background-image: url(../images/banner/slider/e-gift.jpg);
-    background-position: 20% 50%;
+    background-position: 70% 50%;
 }
 
 .slider-banner .slider-4 .box-slider .image {
@@ -365,15 +365,15 @@ main {
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 40% 50% !important;
+        background-position: 20% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 10% 50% !important;
+        background-position: 65% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 15% 50% !important;
+        background-position: 75% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {
@@ -449,15 +449,15 @@ main {
     }
 
     .slider-banner .slider-1 .box-slider .image {
-        background-position: 25% 50% !important;
+        background-position: 10% 50% !important;
     }
 
     .slider-banner .slider-2 .box-slider .image {
-        background-position: 10% 50% !important;
+        background-position: 90% 50% !important;
     }
 
     .slider-banner .slider-3 .box-slider .image {
-        background-position: 10% 50% !important;
+        background-position: 75% 50% !important;
     }
 
     .slider-banner .slider-4 .box-slider .image {

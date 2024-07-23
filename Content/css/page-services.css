@@ -1,6 +1,10 @@
 main {
 
 }
+.bg .bg-services {
+    background-color: var(--color-black);
+    background-image: unset;
+}
 .page-main {
     position: relative;
 }
