@@ -50,12 +50,24 @@ main {
     background-color: var(--color-black);
 }
 .page-main .row > [class*='col-'] {
-    display: flex;
+
 }
 .page-main .box-inner {
     padding: var(--padding-box);
     background-color: var(--color-black);
     cursor: pointer;
+}
+
+.page-main .box-inner hr {
+    border-width: 1px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.page-main .box-inner .card-text p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 11px;
 }
 
 .modal-body-content ul {

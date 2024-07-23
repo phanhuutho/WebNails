@@ -19,87 +19,237 @@
     @{Html.RenderPartial("_SliderPageSub");}
     <section class="bg">
         <div class="bg-services">
-            <div class="page-main container-lg py-5">
+            <div class="page-main container-xl py-5">
                 <div class="row">
-                    <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_manicure.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>MANICURE</h2>
+                    <div class="col-md-12">
+                        <div class="box-inner my-3 py-3">
+                            <div class="card bg-site">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-5 col-lg-6 col-md-12">
+                                            <div class="box-image">
+                                                <img src="~/Content/images/services/services_nails_enhancements.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-6 col-md-12">
+                                            <div class="h-100 w-100 d-flex align-items-center">
+                                                <div class="card-inner w-100 mt-lg-0 mt-3">
+                                                    <h4 class="font-Prata text-theme">NAIL ENHANCEMENTS</h4>
+                                                    <hr class="border-bottom border-theme" />
+                                                    <div class="card-text">
+                                                        <p>FULL SET WITH THE DIPPING POWDER</p>
+                                                        <p>
+                                                            * The good things about The Dipping Powder: make the natural looking nails and UV lamp free.
+                                                            This is a very good idea to skip all the traditional nail enhancements.
+                                                            It does last longer than any manicure you’ve had in the past.
+                                                            Most important is to helps clients’ nails grow out stronger and be healthier.
+                                                        </p>
+                                                        <p>FULL SET (Solar/Nail Extension/Acrylic) WITH SHELLAC/GEL ON TOP</p>
+                                                        <p>FULL SET BY ACRYLIC COLOR POWDER (The Whole Nails)</p>
+                                                        <p>FULL SET PINK AND WHITE/COLOR TIP (BY ACRYLIC POWDER)</p>
+                                                        <p>FULL SET WITH PLASTIC WHITE/PEARL TIPS</p>
+                                                        <p>FULL SET WITH PLASTIC COLORED TIPS</p>
+                                                        <p>FULL SET WITH REGULAR NAIL POLISH ON TOP</p>
+                                                        <p>
+                                                            * Additional charge $5 (five) for various shapes: Oval / Almond / Stiletto-Pointy / Ballerina-Coffin / Narrow Square.
+                                                        </p>
+                                                        <p>* Additional charge from $5 and up, for the Extra Length (please ask for the details).</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_pedicure.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>PEDICURE</h2>
+                    <div class="col-md-12">
+                        <div class="box-inner my-3 py-3">
+                            <div class="card bg-site">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-6 col-md-12 order-0 order-lg-1">
+                                            <div class="box-image">
+                                                <img src="~/Content/images/services/services_additional_services.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-9 col-lg-6 col-md-12 order-1 order-lg-0">
+                                            <div class="h-100 w-100 d-flex align-items-center">
+                                                <div class="card-inner w-100 mt-lg-0 mt-3">
+                                                    <h4 class="font-Prata text-theme">ADD ON SERVICES</h4>
+                                                    <hr class="border-bottom border-theme" />
+                                                    <div class="card-text">
+                                                        <p>Take off Gel/Shellac/Powder color (Individual service)</p>
+                                                        <p>Take off Gel/Shellac, then gets the Regular re-fill acrylic or Manicure or Pedicure $5 add-on</p>
+                                                        <p>Gel/Shellac on Hands or Toes (Individual service)</p>
+                                                        <p>Gel/Shellac combo with Manicure or Pedicure</p>
+                                                        <p>Regular Polish change on Hands/Toes/French</p>
+                                                        <p>Nails cut down on hands/toes (Individual service) French/American/Color tips</p>
+                                                        <p>FNail Art / Nail Repair (Depends on the specified service)</p>
+                                                        <p>Extra Foot Massage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_dip_powder_nails.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>DIP POWDER</h2>
+                    <div class="col-md-12">
+                        <div class="box-inner my-3 py-3">
+                            <div class="card bg-site">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-6 col-md-12">
+                                            <div class="box-image">
+                                                <img src="~/Content/images/services/services_pedicure_manicure.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-6 col-md-12">
+                                            <div class="h-100 w-100 d-flex align-items-center">
+                                                <div class="card-inner w-100 mt-lg-0 mt-3">
+                                                    <h4 class="font-Prata text-theme">PEDICURE & MANICURE</h4>
+                                                    <hr class="border-bottom border-theme" />
+                                                    <div class="card-text">
+                                                        <p>
+                                                            <span>#01. THE PRINCESS SPA (design just for children 11 and under)</span><br />
+                                                            <span>
+                                                                A royal treatment, the Princess will soak in a soapy bath as her toes are trimmed & shaped.
+                                                                After a shimmering lotion is applied, her tootsies will be polished in a color of her choice.
+                                                            </span>
+                                                        </p>
+                                                        <p>
+                                                            <span>#02. THE CLASSIC PEDICURE</span><br />
+                                                            <span>Includes: Warm Towels & Lotion massage.</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>#03. THE ORIGIN SPA</span><br />
+                                                            <span>Includes: Sugar scrub, Warm towels & lotion massage.</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>#04. GREEN TEA SPA</span><br />
+                                                            <span>Includes: Sugar scrub, Warm Towels, Paraffin wax & lotion massage.</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>#05. LA LAVENDER SPA</span><br />
+                                                            <span>Includes: Sugar scrub, Warm Towels, Paraffin wax & lotion massage.</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>#06. THE ATHLETIC SPA</span><br />
+                                                            <span>Includes: Sugar scrub, hot stones, Warm Towels, paraffin wax & lotion massage.</span>
+                                                        </p>
+                                                        <p>
+                                                            <span>#07. WHITE ORCHID SPA SERVICE</span><br />
+                                                            <span>Includes: Sugar scrub, hot stones, Warm Towels, paraffin wax & lotion massage.</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <hr class="border-bottom border-theme mt-xl-0 mt-3 d-lg-block d-none" />
+                                            <div class="card-text">
+                                                <p>
+                                                    <span>#08. MILK & HONEY BEE SPA</span><br />
+                                                    <span>Includes: Sugar scrub with Honey, hot stones, Warm Towels, paraffin wax & lotion massage.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#09. CHAMPAGNE & ROSE ALOHA</span><br />
+                                                    <span>Includes: Sugar scrub with Champagne base, hot stones, Warm Towels, paraffin wax & lotion massage.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#10. JUICY FRESH CUCUMBER SPA</span><br />
+                                                    <span>Includes: Sugar scrub, hot stones, Warm Towels, paraffin wax & lotion massage with fresh Cucumber.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#11. SUNRISE TO SUNSET SPA</span><br />
+                                                    <span>Includes: Sugar scrub, hot stones, warm towels, paraffin wax & lotion massage with fresh tomatoes.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#12. ALOE VERA TREATMENT</span><br />
+                                                    <span>Sugar scrub, hot stones, Warm Towels, paraffin wax & lotion massage with fresh Aloe Vera.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#13. LA VIE EST BELLE – Life Is Beautiful !</span><br />
+                                                    <span>Comes with the unique heated pillow, Warm Towels, exfoliating scrub, Floral Tea base, hot stones, lotion, and the paraffin treatment – You’ll Love.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#14. THE “LA MADAME” SPA – Only at LaMadame</span><br />
+                                                    <span>Heated pillow, warm towels, exfoliating scrub, Ginger and Honey mixture benefits, hot stones, lotion, paraffin treatment. You’ll Love.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#15. CANNA CURE – CBD SPA SERVICE</span><br />
+                                                    <span>CBD Hemp serum, heated pillow, warm towels, exfloliating, scrub, hot stones, lotion, and the paraffin treatment.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#16. THE V.I.P LUXURY SPA</span><br />
+                                                    <span>Comes with a unique heated pillow, Warm Towels, Honey, Ginger, Limes, hot stones, lotion, the paraffin treatment and Neck & Shoulder massage.</span>
+                                                </p>
+                                                <p>
+                                                    <span>#17. MEN’S SERVICE “GoodBoy”</span><br />
+                                                    <span>(Specifically designed for Gentleman)</span><br />
+                                                    <span>Gentleman, time to get your feet in shape! This treatment moisturizes and invigorates while leaving skin hydrated and looking incredibly groomed and refreshed.</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_acrylic.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ACRYLIC</h2>
+                    <div class="col-md-12">
+                        <div class="box-inner my-3 py-3">
+                            <div class="card bg-site">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-12 order-0 order-lg-1">
+                                            <div class="box-image">
+                                                <img src="~/Content/images/services/services_waxing.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-9 col-lg-8 col-md-12 order-1 order-lg-0">
+                                            <div class="h-100 w-100 d-flex align-items-center">
+                                                <div class="card-inner w-100 mt-lg-0 mt-3">
+                                                    <h4 class="font-Prata text-theme">WAXING</h4>
+                                                    <hr class="border-bottom border-theme" />
+                                                    <div class="card-text">
+                                                        <p>Eyebrow / Lip / Chin</p>
+                                                        <p>Neck / Sideburns / Full Face Under Arm / Half Arm / Full Arm</p>
+                                                        <p>Chest / Back / Stomach</p>
+                                                        <p>Half Leg / Full Leg</p>
+                                                        <p>Bikini / Brazilian</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_waxing.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>WAXING</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_additional_services.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ADDITIONAL</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_little_kids.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>KIDS</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_gel_polish.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>GEL POLISH</h2>
+                    <div class="col-md-12">
+                        <div class="box-inner my-3 py-3">
+                            <div class="card bg-site">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4">
+                                            <div class="box-image">
+                                                <img src="~/Content/images/services/services_little_kids.jpg" class="img-fluid" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8">
+                                            <div class="h-100 w-100 d-flex align-items-center">
+                                                <div class="card-inner w-100 mt-lg-0 mt-3">
+                                                    <h4 class="font-Prata text-theme">CHILDREN 07 & UNDER</h4>
+                                                    <hr class="border-bottom border-theme" />
+                                                    <div class="card-text">
+                                                        <p>Hand Polish / Toe Polish / Mani & Pedi</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
