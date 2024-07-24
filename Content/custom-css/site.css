@@ -193,7 +193,7 @@ main {
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_nails_enhancements.jpg);
     background-position: 45% 50%;
 }
 
@@ -362,7 +362,7 @@ main {
 @media (max-width: 767px) {
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
-
+        background: unset;
     }
     /* -------------------------------------------------- */
 

@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Glee Nail Bar and Spa Allen",
+  "HyperLinkTell": "tel:(469)6569711",
+  "TextTell": "(469)-656-9711",
+  "GooglePlus": "https://www.google.com/search?q=glee+nails+allen+75013",
+  "Address": "790 W Exchange Pkwy #130, Allen, TX 75013",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/ypBng9PzQ8Lg9gu6A",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13366.61136813877!2d-96.673773!3d33.1182095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c171850732327%3A0xb500b0db1430aaf9!2sGlee%20Nail%20Bar%20and%20Spa%20Allen%20(10%25%20OFF%20%26%2020%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1721835843842!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/f098a3423097/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -14,7 +14,24 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
