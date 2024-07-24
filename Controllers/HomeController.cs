@@ -38,6 +38,11 @@ namespace WebNails.Controllers
             return View();
         }
 
+        public ActionResult QA()
+        {
+            return View();
+        }
+
         public ActionResult Gifts()
         {
             return View();
@@ -72,17 +77,17 @@ namespace WebNails.Controllers
             var Galleries = (List<GalleryModel>)ViewBag.Gallery ?? new List<GalleryModel>();
 
             ViewBag.TabIndex = TabIndex;
-            ViewBag.ShowMore = Galleries.Where(x => x.TabIndex == TabIndex).Skip(16).Take(16).Count() > 0;
+            ViewBag.ShowMore = Galleries.Where(x => x.TabIndex == TabIndex).Skip(12).Take(12).Count() > 0;
 
-            Galleries = Galleries.Where(x => x.TabIndex == TabIndex).Skip(0).Take(16).ToList();
+            Galleries = Galleries.Where(x => x.TabIndex == TabIndex).Skip(0).Take(12).ToList();
             return View(Galleries);
         }
 
         public ActionResult GalleryLoadMore(int TabIndex = 1, int Page = 1)
         {
             var dataGalleries = (List<GalleryModel>)ViewBag.Gallery ?? new List<GalleryModel>();
-            var ShowMore = dataGalleries.Where(x => x.TabIndex == TabIndex).Skip(Page * 16).Take(16).Count() > 0;
-            var Galleries = dataGalleries.Where(x => x.TabIndex == TabIndex).Select(x => new { x.Src }).Skip((Page - 1) * 16).Take(16).ToList();
+            var ShowMore = dataGalleries.Where(x => x.TabIndex == TabIndex).Skip(Page * 12).Take(12).Count() > 0;
+            var Galleries = dataGalleries.Where(x => x.TabIndex == TabIndex).Select(x => new { x.Src }).Skip((Page - 1) * 12).Take(12).ToList();
             return Json(new { Galleries, ShowMore });
         }
 

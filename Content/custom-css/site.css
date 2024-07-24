@@ -65,7 +65,7 @@ footer {
     opacity: 1;
 }
 main {
-    background: var(--bg-main);
+    background: var(--color-black);
 }
 .outline-button-theme {
     display: inline-block;

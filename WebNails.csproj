@@ -177,6 +177,7 @@
     <Content Include="Content\css\page-register-coupon.css" />
     <Content Include="Content\css\page-services.css" />
     <Content Include="Content\css\payments.css" />
+    <Content Include="Content\css\qa.css" />
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\css\slick-theme.css" />
@@ -234,12 +235,30 @@
     <Content Include="Content\images\e-gift\gift_8.jpg" />
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
+    <Content Include="Content\images\e-gift\La-Madame-Nail-Lounge-78245.jpg" />
     <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\gallery\home_gallery_1.jpg" />
     <Content Include="Content\images\gallery\home_gallery_2.jpg" />
     <Content Include="Content\images\gallery\home_gallery_3.jpg" />
     <Content Include="Content\images\gallery\home_gallery_4.jpg" />
     <Content Include="Content\images\gallery\home_gallery_5.jpg" />
+    <Content Include="Content\images\gallery\images-0001.jpg" />
+    <Content Include="Content\images\gallery\images-0002.jpg" />
+    <Content Include="Content\images\gallery\images-0003.jpg" />
+    <Content Include="Content\images\gallery\images-0004.jpg" />
+    <Content Include="Content\images\gallery\images-0005.jpg" />
+    <Content Include="Content\images\gallery\images-0006.jpg" />
+    <Content Include="Content\images\gallery\images-0007.jpg" />
+    <Content Include="Content\images\gallery\images-0008.jpg" />
+    <Content Include="Content\images\gallery\images-0009.jpg" />
+    <Content Include="Content\images\gallery\images-0010.jpg" />
+    <Content Include="Content\images\gallery\images-0011.jpg" />
+    <Content Include="Content\images\gallery\images-0012.jpg" />
+    <Content Include="Content\images\gallery\images-0013.jpg" />
+    <Content Include="Content\images\gallery\images-0014.jpg" />
+    <Content Include="Content\images\gallery\images-0015.jpg" />
+    <Content Include="Content\images\gallery\images-0016.jpg" />
+    <Content Include="Content\images\gallery\images-0017.jpg" />
     <Content Include="Content\images\home\drink_lido_kiss.jpg" />
     <Content Include="Content\images\home\drink_strawberry_mimosa.jpg" />
     <Content Include="Content\images\home\drink_tequila_charms.jpg" />
@@ -444,6 +463,7 @@
     <Content Include="Views\Home\_GetTable_GiftManage.cshtml" />
     <Content Include="Views\Home\_Home_Gallery.cshtml" />
     <Content Include="Views\Home\_Home_Drink.cshtml" />
+    <Content Include="Views\Home\qa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

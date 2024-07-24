@@ -4,12 +4,22 @@
 @section css{
     <link href="~/Content/css/payments.css" rel="stylesheet" />
 }
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
+}
 <main class="bg-main py-5">
-    <div class="container-lg">
+    <div class="container bg-site">
         <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-                <div class="qpp-style default py-2">
-                    <div id="plain">
+            <div class="col-lg-4 col-md-12">
+                <div class="bg-site h-100">
+                    <div class="w-100 h-100 d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="~/Content/images/e-gift/La-Madame-Nail-Lounge-78245.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="qpp-style default py-2 d-flex align-items-center h-100">
+                    <div id="plain" class="w-100">
                         <form action="/process.html" method="post">
                             <input type="hidden" name="img" id="img" value="@ViewBag.Img" />
                             <h2 id="qpp_reload" class="qpp-header">Payment Form</h2>

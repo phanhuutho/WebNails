@@ -24,11 +24,11 @@
         <div class="row">
             <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
         </div>
-        <div class="row pb-5 gallery-list">
+        <div class="row pb-5 gallery-list justify-content-center">
             @{
                 foreach (var item in Model)
                 {
-                    <div class="col-xl-3 col-lg-3 col-md-6 pt-4">
+                    <div class="col-xl-4 col-lg-4 col-md-6 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Gallery_Rounded)">
                             <a href="@item.Src" data-lightbox="gallery-item" data-title="">
                                 <img src="@item.Src" loading="lazy" class="img-fluid rounded rounded-@(Image_Gallery_Rounded)" />
@@ -89,7 +89,7 @@
                     var galleries = data.Galleries;
                     for (var i = 0; i < galleries.length; i++) {
                         var item = galleries[i];
-                        var strHTML = '<div class="col-xl-3 col-lg-4 col-md-6 pt-4">';
+                        var strHTML = '<div class="col-xl-4 col-lg-4 col-md-6 pt-4">';
                         strHTML += '        <div class="box-inner rounded rounded-@(Image_Gallery_Rounded)">';
                         strHTML += '            <a href="' + item.Src + '" data-lightbox="gallery-item" data-title="">';
                         strHTML += '                <img src="' + item.Src + '" loading="lazy" class="img-fluid rounded rounded-@(Image_Gallery_Rounded)" />';
