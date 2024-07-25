@@ -1,9 +1,9 @@
 ﻿:root {
     --bg-site: #fef8e9;
     --bg-main: #000000;
-    --color-theme: #daa520;
-    --color-menu-legend: #daa520;
-    --color-text-theme: #daa520;
+    --color-theme: #ad8a2e;
+    --color-menu-legend: #ad8a2e;
+    --color-text-theme: #ad8a2e;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -197,10 +197,16 @@ main {
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_hair.png);
     background-position: 45% 50%;
 }
 
+.business .business-inner .box-image {
+    padding: 15px 15px;
+}
+.business .business-inner .box-inner {
+    height: 100%;
+}
 .business .business-inner .box-image .image-business {
     width: 500px;
     height: 500px;
@@ -281,8 +287,12 @@ main {
 /*CSS Tablet*/
 @media (max-width: 991px) {
     /*Menu*/
+    .menu-desktop .list-inline > li > a {
+        font-size: 0.8em;
+    }
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-        padding-top: 7px;
+        padding-top: 8px;
+        padding-bottom: 10px;
     }
     /* -------------------------------------------------- */
 
@@ -450,7 +460,11 @@ main {
         width: 100%;
         height: 290px !important;
     }
-
+    .business .business-inner .box-inner {
+        height: 300px;
+        padding-top: 0;
+        margin-top: 0;
+    }
     .e-gift .box-image .image-e-gift {
         position: relative;
         width: 100%;
