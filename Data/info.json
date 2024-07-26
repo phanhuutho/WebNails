@@ -1,11 +1,11 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "V Nails and Spa",
+  "HyperLinkTell": "tel:(254)8262078",
+  "TextTell": "(254)-826-2078",
+  "GooglePlus": "https://www.google.com/search?q=v+nails+west+tx+76691",
+  "Address": "202 N Main St, West, TX 76691",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/on8LFGmDQTcg4Sct8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13563.256679371767!2d-97.0918261!3d31.8028141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864f0aa9c10f906d%3A0xb667874c1a330b2d!2sV%20Nails%20and%20Spa!5e0!3m2!1sen!2s!4v1722013028426!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -14,7 +14,52 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-07.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-08.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-09.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-10.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-11.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +69,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/vnailspaofwest",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/vnailspa.west/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

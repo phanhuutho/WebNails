@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #e7edf7;
+    --bg-site: #ffe1e1;
     --bg-main: #ffffff;
-    --color-theme: #2e3f59;
-    --color-menu-legend: #2e3f59;
-    --color-text-theme: #2e3f59;
+    --color-theme: #184b96;
+    --color-menu-legend: #184b96;
+    --color-text-theme: #184b96;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -193,7 +193,7 @@ main {
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-position: 45% 50%;
 }
 
