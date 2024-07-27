@@ -46,7 +46,7 @@
 .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
     border: 2px solid var(--color-theme);
     background: var(--color-white);
-    padding-top: 10px;
+    padding-top: 7px;
     padding-bottom: 9px;
     margin-right: 0;
     padding-left: 2px;
