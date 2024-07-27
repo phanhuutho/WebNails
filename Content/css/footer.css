@@ -30,7 +30,8 @@ footer .circle{
     background: #d93e2d;
     text-align: center;
     float:left;
-    margin-right: 5px;
+    margin-right: 5px; 
+    margin-bottom: 5px;
 }
 footer .circle span{
     color: var(--color-white);
