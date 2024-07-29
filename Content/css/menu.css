@@ -12,13 +12,13 @@
 .menu-desktop .list-inline > li > a {
     color: var(--color-black);
     font-weight: 700;
-    font-family: "Lato", sans-serif;
+    font-family: "Castoro Titling";
     font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .02em;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 11px;
     padding-left: 7px;
     padding-right: 7px;
     position: relative;
@@ -26,7 +26,7 @@
 .menu-desktop .list-inline > li > a:hover,.menu-desktop .list-inline > li > a.active{
     color: var(--color-white);
     background: var(--color-theme);
-    border-radius: 25px;
+    border-radius: 5px;
 }
 .menu-desktop .list-inline > li > a:before{
     content: " ";
@@ -44,14 +44,14 @@
     background-color: var(--color-theme);
 }
 .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-    border: 2px solid var(--color-theme);
+    border: 0px solid var(--color-theme);
     background: var(--color-white);
     padding-top: 10px;
     padding-bottom: 9px;
     margin-right: 0;
     padding-left: 2px;
     padding-right: 2px;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-left: -4px;
     margin-right: -4px;
 }
@@ -128,7 +128,7 @@
 .list-menu li a{
     color: var(--color-black);
     font-weight: 700;
-    font-family: "Lato", sans-serif;
+    font-family: "Castoro Titling";
     font-size: 1.5em;
     text-transform: uppercase;
     text-decoration: none;

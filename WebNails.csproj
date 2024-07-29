@@ -234,6 +234,31 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\images-0001.jpg" />
+    <Content Include="Content\images\gallery\images-0002.jpg" />
+    <Content Include="Content\images\gallery\images-0003.jpg" />
+    <Content Include="Content\images\gallery\images-0004.jpg" />
+    <Content Include="Content\images\gallery\images-0005.jpg" />
+    <Content Include="Content\images\gallery\images-0006.jpg" />
+    <Content Include="Content\images\gallery\images-0007.jpg" />
+    <Content Include="Content\images\gallery\images-0008.jpg" />
+    <Content Include="Content\images\gallery\images-0009.jpg" />
+    <Content Include="Content\images\gallery\images-0010.jpg" />
+    <Content Include="Content\images\gallery\images-0011.jpg" />
+    <Content Include="Content\images\gallery\images-0012.jpg" />
+    <Content Include="Content\images\gallery\images-0013.jpg" />
+    <Content Include="Content\images\gallery\images-0014.jpg" />
+    <Content Include="Content\images\gallery\images-0015.jpg" />
+    <Content Include="Content\images\gallery\images-0016.jpg" />
+    <Content Include="Content\images\gallery\images-0017.jpg" />
+    <Content Include="Content\images\gallery\images-0018.jpg" />
+    <Content Include="Content\images\gallery\images-0019.jpg" />
+    <Content Include="Content\images\gallery\images-0020.jpg" />
+    <Content Include="Content\images\gallery\images-0021.jpg" />
+    <Content Include="Content\images\gallery\images-0022.jpg" />
+    <Content Include="Content\images\gallery\images-0023.jpg" />
+    <Content Include="Content\images\gallery\images-0024.jpg" />
+    <Content Include="Content\images\gallery\images-0025.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -248,9 +273,11 @@
     <Content Include="Content\images\home\home_contact_image_8.jpg" />
     <Content Include="Content\images\home\home_e_gift.jpg" />
     <Content Include="Content\images\home\home_service_acrylic.jpg" />
+    <Content Include="Content\images\home\home_service_add_on.jpg" />
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_gel_polish.jpg" />
     <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
@@ -373,6 +400,8 @@
     <Content Include="Data\home-data-gallery.json" />
     <Content Include="Data\callback-coupon.json" />
     <Content Include="Data\setting.json" />
+    <Content Include="Content\fonts\Vergilia.ttf" />
+    <Content Include="Content\fonts\RayLigAlternateRegular.otf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\datepicker.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -430,7 +459,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

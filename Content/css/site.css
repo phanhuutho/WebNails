@@ -18,6 +18,7 @@
     --color-gold: #cdaa6a;
     --color-gray: #dfdfdf;
 }
+
 html {
     background-repeat: repeat;
     background-position: center center;
@@ -60,6 +61,12 @@ a:active,a:hover {
 }
 .font-Parisienne{
     font-family: 'Parisienne' !important;
+}
+.font-Josefin{
+    font-family: 'Josefin Sans' !important;
+}
+.font-Castoro-Titling{
+    font-family: 'Castoro Titling' !important;
 }
 
 /*divider*/
@@ -113,7 +120,7 @@ a:active,a:hover {
     font-family: 'Fira Sans';
     font-weight: bold;
     letter-spacing: 3px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
 .bg-theme {

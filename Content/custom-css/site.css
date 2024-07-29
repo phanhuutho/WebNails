@@ -65,18 +65,18 @@ main {
     display: inline-block;
     height: 100%;
     width: auto;
-    border: 2px solid var(--color-theme);
-    border-radius: 30px;
+    border: 0px solid var(--color-theme);
+    border-radius: 5px;
     background: var(--color-white);
-    padding: 3px;
+    padding: 2px;
 }
 .outline-button-default {
     height: 100%;
     width: 100%;
-    border: 2px solid var(--color-theme);
+    border: 0px solid var(--color-theme);
     border-radius: 0.375rem;
     background: var(--color-white);
-    padding: 3px;
+    padding: 1px;
 }
 .outline-button-default .small {
     font-size: 77.5%;
@@ -187,17 +187,17 @@ main {
 }
 
 .beauty-spa .box-image .image2 {
-    background-image: url(../images/home/home_service_pedicure.jpg);
-    background-position: 80% 50%;
+    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_gel_polish.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_add_on.jpg);
     background-position: 45% 50%;
 }
 
@@ -287,7 +287,8 @@ main {
         padding-right: 5px;
     }
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-        padding-top: 7px;
+        padding-top: 8px;
+        padding-bottom: 10px;
     }
     /* -------------------------------------------------- */
 }
@@ -296,8 +297,8 @@ main {
 @media (max-width: 991px) {
     /*Menu*/
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-        padding-top: 4px;
-        padding-bottom: 8px;
+        padding-top: 5px;
+        padding-bottom: 9px;
     }
     .menu-desktop .list-inline > li > a {
         font-size: 0.62em;
@@ -385,7 +386,8 @@ main {
 /*CSS Mobile*/
 @media (max-width: 767px) {
     .tabs-mobile span.small {
-        font-size: 0.775em;
+        font-size: 0.7em;
+        font-family: 'Josefin Sans';
     }
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {

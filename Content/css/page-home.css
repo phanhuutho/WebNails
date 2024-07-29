@@ -123,10 +123,9 @@ main .contact .container{
 
 .slider-home .sliders .slider-1 .box-inner h1, .slider-home .sliders .slider-1 .box-inner h2 {
     color: var(--color-theme);
-    font-family: 'Fira Sans';
+    font-family: 'Castoro Titling';
     font-size: 48px;
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
-    font-weight: bold;
 }
 .slider-home .sliders .box-inner a.btn{
     font-family: 'Fira Sans';
@@ -185,11 +184,10 @@ main .contact .container{
     line-height: calc(2rem + 1.5vw);
 }
 .slider-home .sliders .slider-2 .box-image .box-inner p {
-    font-family: "Fira Sans";
+    font-family: "Josefin Sans";
     font-size: 20px;
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
-    font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner h1 {
     font-size: 42px;
@@ -198,11 +196,10 @@ main .contact .container{
     font-weight: bold;
 }
 .slider-home .sliders .slider-3 .box-image .box-inner p {
-    font-family: "Fira Sans";
+    font-family: "Josefin Sans";
     font-size: 36px;
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
-    font-weight: bold;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner h1 {
     font-size: 42px;
@@ -211,11 +208,10 @@ main .contact .container{
     font-weight: bold;
 }
 .slider-home .sliders .slider-4 .box-image .box-inner p {
-    font-family: "Fira Sans";
+    font-family: "Josefin Sans";
     font-size: 36px;
     color: var(--color-black);
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
-    font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner h1 {
     font-size: 42px;
@@ -224,10 +220,10 @@ main .contact .container{
     font-weight: bold;
 }
 .slider-home .sliders .slider-5 .box-image .box-inner p {
+    font-family: "Josefin Sans";
     font-size: 22px;
-    color: var(--color-white);
-    text-shadow: 0px 0px 3px var(--color-black);
-    font-weight: bold;
+    color: var(--color-black);
+    text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
 }
 
 .slider-index .sliders .slider-1 .box-inner h1, .slider-index .sliders .slider-1 .box-inner h2 {
@@ -345,8 +341,8 @@ main .contact .container{
     max-width: 100%;
 }
 .about-us .box-inner h1 span{
-    font-size: 1.5em; 
-    font-family: "Parisienne"; 
+    font-size: 1.25em; 
+    font-family: "Castoro Titling"; 
     color: var(--color-theme);
     font-weight: bold;
     border-bottom: 2px solid var(--color-text-theme);
@@ -408,8 +404,8 @@ main .contact .container{
     background:var(--bg-site);
 }
 .beauty-spa .beauty-spa-inner .box-inner p{
-    font-size: 300%; 
-    font-family: "Parisienne"; 
+    font-size: 200%; 
+    font-family: "Josefin Sans"; 
     color: var(--color-theme);
 }
 .beauty-spa .beauty-spa-inner .box-inner div{
@@ -583,8 +579,8 @@ main .contact .container{
     height: 270px;
 }
 .services .box-inner p{
-    font-family: "Carme";
-    font-weight: bolder;
+    font-family: "Josefin Sans";
+    font-weight: 500;
     text-align: center;
     font-size: 19px;
     color: #000000;
@@ -691,14 +687,14 @@ main .contact .container{
 .contact h2 {
     font-weight: bold;
     color: var(--color-text-theme);
-    font-size: 2.5em;
+    font-size: 1.75em;
     line-height: 2;
-    font-family: "Parisienne";
+    font-family: "Castoro Titling";
 }
 .e-gift h2, .business h2 {
     font-weight: bold;
-    font-family: "Parisienne";
-    font-size: 2.5em;
+    font-family: "Castoro Titling";
+    font-size: 1.75em;
     line-height: 1.5;
     color: var(--color-text-theme);
 }
@@ -711,6 +707,7 @@ main .contact .container{
     text-transform: uppercase;
     font-weight: bolder;
     padding: 7px 20px;
+    border-radius: 5px;
 }
 .contact .btn-more:hover, .e-gift .btn-more:hover, .business .btn-more:hover, .beauty-spa .btn-more:hover, .about-us .btn-more:hover{
     background-color: #dddddd !important;

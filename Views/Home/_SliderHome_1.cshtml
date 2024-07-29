@@ -11,7 +11,7 @@
                             <div class="col-auto col-xl-6">
                                 <div class="box-inner text-center py-lg-5 py-md-3 py-2" data-animation-in="animate__animated animate__fadeInDown">
                                     <h1 class="fs-1">WELCOME TO</h1>
-                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-3"><strong>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Spa", "Spa<br/>")))</strong></h2>
+                                    <h2 data-animation-in="animate__animated animate__pulse animate__infinite" class="fs-3"><span>@(Html.Raw(string.Format("{0}", ViewBag.Name).Replace("Spa", "Spa<br/>")))</span></h2>
                                     <div class="outline-button-theme">
                                         <a class="btn btn-warning btn-theme btn-more btn-none-border" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
                                             <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "BOOK APPOINTMENT" : "CALL US")
@@ -31,7 +31,7 @@
                         <div class="row @(Banner_Home[1]["Text_JustifyContent"])">
                             <div class="col-auto">
                                 <div class="box-inner text-center py-1" data-animation-in="animate__animated animate__fadeInDown">
-                                    <h1 class="font-Prata fs-1">Bringing Joy<br/>in life with colors</h1>
+                                    <h1 class="font-Castoro-Titling fs-2">Bringing Joy<br/>in life with colors</h1>
                                     <p class="fs-4">Modern touch, Beautiful feel</p>
                                 </div>
                             </div>
@@ -46,8 +46,8 @@
                     <div class="container-lg">
                         <div class="row @(Banner_Home[2]["Text_JustifyContent"])">
                             <div class="col-auto">
-                                <div class="box-inner text-center py-1" data-animation-in="animate__animated animate__fadeInDown">
-                                    <h1 class="font-Prata fs-1">Beauty starts with nail</h1>
+                                <div class="box-inner text-center py-3" data-animation-in="animate__animated animate__fadeInDown">
+                                    <h1 class="font-Castoro-Titling fs-4">Beauty starts with nail</h1>
                                     <p class="fs-3">Have A Seat And Relax</p>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                         <div class="row @(Banner_Home[3]["Text_JustifyContent"])">
                             <div class="col-auto">
                                 <div class="box-inner text-center py-1" data-animation-in="animate__animated animate__fadeInDown">
-                                    <h1 class="font-Prata fs-2">A Trendy Luxury Stroke</h1>
+                                    <h1 class="font-Castoro-Titling fs-4">A Trendy Luxury Stroke</h1>
                                     <p class="fs-3">Come. Relax. Enjoy.</p>
                                 </div>
                             </div>
@@ -78,8 +78,8 @@
                     <div class="container-lg">
                         <div class="row @(Banner_Home[4]["Text_JustifyContent"])">
                             <div class="col-auto">
-                                <div class="box-inner text-center py-5" data-animation-in="animate__animated animate__fadeInDown">
-                                    <h1 class="font-Prata fs-1">All Services</h1>
+                                <div class="box-inner text-center py-3" data-animation-in="animate__animated animate__fadeInDown">
+                                    <h1 class="font-Castoro-Titling fs-1">All Services</h1>
                                 </div>
                             </div>
                         </div>

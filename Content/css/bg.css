@@ -24,7 +24,7 @@
     justify-content: center;
 }
 .bg .bg-contact .description{
-    font-family: Parisienne; 
+    font-family: "Castoro Titling"; 
     color: var(--color-black);
     font-weight: bold;
     text-shadow: -1px 0 var(--color-white), 0 1px var(--color-white), 1px 0 var(--color-white), 0 -1px var(--color-white);
