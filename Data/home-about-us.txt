@@ -1,8 +1,9 @@
 ﻿<p>
-    L’Amour Nails – one of the best Nail salons located conveniently in Austin Texas, 78746. 
-    We guarantee your satisfaction by the passion and many years’ experience of our technicians.
+    <a href="/" class="text-theme text-decoration-none fw-bold">OCEAN NAILS & SPA 29464</a> elevates the typical urban nail salon experience by defining it as relaxing. 
+    Founded the idea that simple pleasures like a manicure and pedicure don’t have anything less than exquisite. 
 </p>
 
 <p>
-    When walking through our door, you would be pampered carefully by the well-trained, enthusiastic and whole-hearted staff. 
+    <a href="/" class="text-theme text-decoration-none fw-bold">OCEAN NAILS & SPA 29464</a> have created a destination that’s anchored on the benefits of all things holistic and natural. 
+    We make it our business to know everything that you need-from what you drink you’d like to sip while getting your nails done, to which treatments would best fit your mood or style.
 </p>

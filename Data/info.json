@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "OCEAN NAILS & SPA",
+  "HyperLinkTell": "tel:(843)5573767",
+  "TextTell": "(843)-557-3767",
+  "GooglePlus": "https://www.google.com/search?q=ocean+nails+29464",
+  "Address": "1303 Ben Sawyer Blvd Ste 8, Mt Pleasant, SC 29464",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/5xEEZZFdEFcNfArp8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13415.781068243741!2d-79.8586892!3d32.7937105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe710e8ea4f433%3A0xc8eee1823b1c9bda!2sOCEAN%20NAILS%20%26%20SPA%20(5%25%2C%20%2415%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1722355977065!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/151afdd4db52/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -24,14 +24,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/oceannailsandspa1303/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/oceannails1303/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
