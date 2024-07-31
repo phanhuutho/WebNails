@@ -156,3 +156,9 @@
     display: inline-block;
     width: 0px;
 }
+
+@media (max-width: 767px) {
+    .page-main .box-prices {
+        font-size: 13px;
+    }
+}
