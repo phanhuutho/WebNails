@@ -390,6 +390,14 @@ main .contact .container{
 .about-us-image .box-image img.img-thumbnail {
 
 }
+.about-us .sgv-icon {
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 .beauty-spa {
     background: var(--color-white);
 }
