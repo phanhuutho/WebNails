@@ -13,9 +13,11 @@
                                 <h2>Business Hour</h2>
                                 <div class="divider mb-3"></div>
                                 @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
-                                <a class="btn btn-default btn-more btn-border btn-border-black" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
-                                    @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us") <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i>
-                                </a>
+                                <div class="outline-button-theme">
+                                    <a class="btn btn-default btn-theme btn-none-border btn-border-black text-uppercase" href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank">
+                                        <i class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "fa fa-calendar" : "fa fa-phone")"></i> @(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -32,7 +34,9 @@
                             <div class="text-center">
                                 <h2>E-gift Purchase</h2>
                                 <div class="divider mb-3"></div>
-                                <a class="btn btn-default btn-more btn-border btn-border-black" href="e-gift.html">VIEW MORE</a>
+                                <div class="outline-button-theme">
+                                    <a class="btn btn-default btn-theme btn-none-border btn-border-black text-uppercase" href="e-gift.html">VIEW MORE</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -7,16 +7,20 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="box-tel">
-                <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel rounded rounded-@(Button_Contact_Rounded)">
-                    <span>@ViewBag.TextTell</span>
-                </a>
+                <div class="outline-button-theme w-100">
+                    <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-default btn-theme btn-none-border btn-border-black btn-tel rounded rounded-@(Button_Contact_Rounded)">
+                        <span>@ViewBag.TextTell</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="col-lg-6">
             <div class="box-contact">
-                <a href="@ViewBag.LinkGoogleMapAddress" target="_blank" class="btn btn-success btn-contact rounded rounded-@(Button_Contact_Rounded)">
-                    <span>@ViewBag.Address</span>
-                </a>
+                <div class="outline-button-theme w-100">
+                    <a href="@ViewBag.LinkGoogleMapAddress" target="_blank" class="btn btn-default btn-theme btn-none-border btn-border-black btn-contact rounded rounded-@(Button_Contact_Rounded)">
+                        <span>@ViewBag.Address</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

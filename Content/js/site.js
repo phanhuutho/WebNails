@@ -19,10 +19,10 @@ $(document).ready(function(){
 
     $(".img-hover-zoom").hover(
         function () {
-            $(this).find("a.learn-more").show();
+            $(this).find("div.learn-more").show();
         }, 
         function () {
-            $(this).find("a.learn-more").hide();
+            $(this).find("div.learn-more").hide();
         }
     );
 

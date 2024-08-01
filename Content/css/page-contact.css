@@ -30,7 +30,7 @@
     border-color: var(--color-theme);
     font-family: "Carme";
     text-transform: uppercase;
-    font-size: 85%;
+    font-size: 75%;
     font-weight: bolder;
     box-sizing: border-box;
     width: 100%;
@@ -38,7 +38,7 @@
 }
 .btn-tel span, .btn-contact span{
     line-height: 4;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 .btn-tel:hover, .btn-contact:hover, .btn-tel:first-child:active, .btn-contact:first-child:active {
     background-color: var(--color-theme);

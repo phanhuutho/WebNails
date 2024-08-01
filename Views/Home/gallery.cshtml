@@ -26,23 +26,31 @@
         </div>
         <div class="row justify-content-center py-5">
             <div class="col-md-3">
-                <div class="border border-dark text-center py-3 @(TabIndex == 1 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(1)">
-                    <span>Nails</span>
+                <div class="outline-button-theme w-100">
+                    <div class="text-center py-3 @(TabIndex == 1 ? "btn-theme" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(1)">
+                        <span>Nails</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="border border-dark text-center py-3 @(TabIndex == 2 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(2)">
-                    <span>Permanent Makeup</span>
+                <div class="outline-button-theme w-100">
+                    <div class="text-center py-3 @(TabIndex == 2 ? "btn-theme" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(2)">
+                        <span>Permanent Makeup</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="border border-dark text-center py-3 @(TabIndex == 3 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(3)">
-                    <span>The Salon</span>
+                <div class="outline-button-theme w-100">
+                    <div class="text-center py-3 @(TabIndex == 3 ? "btn-theme" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(3)">
+                        <span>The Salon</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="border border-dark text-center py-3 @(TabIndex == 4 ? "bg-theme text-white" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(4)">
-                    <span>Hair</span>
+                <div class="outline-button-theme w-100">
+                    <div class="text-center py-3 @(TabIndex == 4 ? "btn-theme" : "") fw-bold cursor-pointer" onclick="ChangeTabIndex(4)">
+                        <span>Hair</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,7 +72,9 @@
         {
             <div class="row justify-content-center pb-5 gallery-loadmore">
                 <div class="col-md-12 text-center">
-                    <button class="btn btn-primary btn-theme" onclick="LoadMore()">LOAD MORE</button>
+                    <div class="outline-button-theme">
+                        <button class="btn btn-primary btn-theme btn-none-border btn-border-black" onclick="LoadMore()">LOAD MORE</button>
+                    </div>
                 </div>
             </div>
         }

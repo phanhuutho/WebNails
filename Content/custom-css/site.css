@@ -10,7 +10,7 @@
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo, .navbar-brand img {
@@ -27,7 +27,7 @@ header {
 
 /*Footer*/
 footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo-footer {
@@ -50,18 +50,36 @@ footer {
 .menu-desktop .list-inline > li > a {
     color: var(--color-black);
 }
+.menu-desktop .list-inline > li > a:hover, .menu-desktop .list-inline > li > a.active {
+    color: var(--color-black);
+    background: linear-gradient(to left, var(--color-theme), var(--bg-site), var(--color-white), var(--bg-site), var(--color-theme));
+}
+.menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
+    border-radius: 0;
+}
+.menu-desktop .list-inline > li > a:hover, .menu-desktop .list-inline > li > a.active {
+    border-radius: 0;
+}
 /* -------------------------------------------------- */
 
 /*Main*/
 main {
     background: var(--bg-main);
 }
+.btn-theme {
+    background: linear-gradient(to left, var(--color-theme), var(--bg-site), var(--color-white), var(--bg-site), var(--color-theme));
+    color: var(--color-theme);
+    border-radius: 0;
+}
+.btn-border-black, .border-black {
+    border-color: #000000 !important;
+}
 .outline-button-theme {
     display: inline-block;
-    height: 100%;
+    height: auto;
     width: auto;
     border: 2px solid var(--color-theme);
-    border-radius: 30px;
+    border-radius: 0;
     background: var(--color-white);
     padding: 3px;
 }
