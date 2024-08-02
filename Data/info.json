@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Kosmo Nail Bar",
+  "HyperLinkTell": "tel:(469)2946438",
+  "TextTell": "(469)-294-6438",
+  "GooglePlus": "https://www.google.com/search?q=kosmo+nail+bar+75035",
+  "Address": "10935 Rolater Rd Suite 170, Frisco, TX 75035",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/22PRAS3aVDv53Sw77",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13363.546969898836!2d-96.7858581!3d33.1383399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3d1951e66097%3A0x8184f1848ddef3a6!2sKosmo%20Nail%20Bar%20(10%20-%2015%25%20OFF%2C%20%245%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1722617026512!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/8b7de3cf4028/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -24,14 +24,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/kosmonailbar75035/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/kosmonailbarfrisco/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

@@ -216,6 +216,10 @@
     <Content Include="Content\images\contact\contact_image_2.jpg" />
     <Content Include="Content\images\contact\contact_image_3.jpg" />
     <Content Include="Content\images\contact\contact_image_4.jpg" />
+    <Content Include="Content\images\contact\contact_image_5.jpg" />
+    <Content Include="Content\images\contact\contact_image_6.jpg" />
+    <Content Include="Content\images\contact\contact_image_7.jpg" />
+    <Content Include="Content\images\contact\contact_image_8.jpg" />
     <Content Include="Content\images\contact\service_bg.jpg" />
     <Content Include="Content\images\dots.png" />
     <Content Include="Content\images\e-gift\gift_1.jpg" />
@@ -251,6 +255,7 @@
     <Content Include="Content\images\home\home_service_bg.jpg" />
     <Content Include="Content\images\home\home_service_dip_powder_nails.jpg" />
     <Content Include="Content\images\home\home_service_eyelash_extensions.jpg" />
+    <Content Include="Content\images\home\home_service_facial.jpg" />
     <Content Include="Content\images\home\home_service_little_kids.jpg" />
     <Content Include="Content\images\home\home_service_manicure.jpg" />
     <Content Include="Content\images\home\home_service_nails_enhancements.jpg" />
@@ -264,6 +269,7 @@
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
     <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\logo-scaled.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />

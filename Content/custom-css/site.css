@@ -1,25 +1,25 @@
 ﻿:root {
-    --bg-site: #e7edf7;
+    --bg-site: #b2e2dd;
     --bg-main: #ffffff;
-    --color-theme: #2e3f59;
-    --color-menu-legend: #2e3f59;
-    --color-text-theme: #2e3f59;
+    --color-theme: #987748;
+    --color-menu-legend: #987748;
+    --color-text-theme: #987748;
     --color-black: #000000;
     --color-white: #ffffff;
 }
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo, .navbar-brand img {
-    max-width: 125px;
-    background: var(--bg-main);
+    max-width: 135px;
+    background: unset;
 }
 
 .logo img {
-    background: var(--bg-main);
+    background: unset;
 }
 .logo, .logo img {
 
@@ -177,6 +177,10 @@ main {
 /* -------------------------------------------------- */
 
 /*Page Home*/
+.beauty-spa .box-image {
+    width: 260px;
+    height: 340px;
+}
 .beauty-spa .box-image .image1 {
     background-image: url(../images/home/home_service_manicure.jpg);
     background-position: 50% 50%;
@@ -188,12 +192,12 @@ main {
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_facial.jpg);
     background-position: 45% 50%;
 }
 
@@ -255,7 +259,7 @@ main {
 /*Page Contact*/
 .bg-contact-1 {
     background-image: url(../images/contact/contact_image_1.jpg);
-    background-position: 75% 50%;
+    background-position: 50% 50%;
 }
 
 .bg-contact-2 {
@@ -270,6 +274,25 @@ main {
 
 .bg-contact-4 {
     background-image: url(../images/contact/contact_image_4.jpg);
+    background-position: 50% 50%;
+}
+.bg-contact-5 {
+    background-image: url(../images/contact/contact_image_5.jpg);
+    background-position: 50% 50%;
+}
+
+.bg-contact-6 {
+    background-image: url(../images/contact/contact_image_6.jpg);
+    background-position: 50% 50%;
+}
+
+.bg-contact-7 {
+    background-image: url(../images/contact/contact_image_7.jpg);
+    background-position: 50% 50%;
+}
+
+.bg-contact-8 {
+    background-image: url(../images/contact/contact_image_8.jpg);
     background-position: 50% 50%;
 }
 /* -------------------------------------------------- */

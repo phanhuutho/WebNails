@@ -5,7 +5,7 @@
     background: var(--color-white);
 }
 .bg-main .bg {
-
+    height: 300px;
 }
 .bg-main .contact-banner {
     height: 810px;
