@@ -63,3 +63,16 @@ main {
 .modal-body-content ul li {
     font-size: 13px;
 }
+.page-menus span {
+    display: inline-block;
+    width: 1px;
+}
+
+@media (max-width: 991px) {
+    .page-menus b {
+        font-size: 13px;
+    }
+    .page-menus p {
+        font-size: 13px;
+    }
+}
