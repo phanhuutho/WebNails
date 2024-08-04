@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "Allure Nail Bar",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "BE UNIQUE NAILS & SPA",
+  "HyperLinkTell": "tel:(623)2484079",
+  "TextTell": "(623)-248-4079",
+  "GooglePlus": "https://www.google.com/search?q=Be+Unique+Nails+85392",
+  "Address": "1721 N Dysart Rd Ste. A-106, Avondale, AZ 85392",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/kCzavrTahmHdNQg5A",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13313.280931537658!2d-112.3389105!3d33.4670125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b3935ec089ee3%3A0x3401856a0313c6dc!2sBE%20UNIQUE%20NAILS%20%26%20SPA%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1722792256275!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/6b77c3e8f4d5/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -24,14 +24,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/beuniquenailsspa.avondale/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/beuniquenailsspa.avondale/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

@@ -116,6 +116,12 @@ a:active,a:hover {
     border-radius: 30px;
 }
 
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active {
+    background: var(--color-theme) !important;
+    border-color: var(--color-theme) !important;
+    color: var(--color-black) !important;
+}
+
 .bg-theme {
     background: var(--color-theme);
     border-color: var(--color-theme);

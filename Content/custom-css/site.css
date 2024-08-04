@@ -1,11 +1,11 @@
 ﻿:root {
-    --bg-site: #ffe8f8;
-    --bg-main: #ffffff;
-    --color-theme: #b51381;
-    --color-menu-legend: #b51381;
-    --color-text-theme: #b51381;
-    --color-black: #000000;
-    --color-white: #ffffff;
+    --bg-site: #ffffff;
+    --bg-main: #000000;
+    --color-theme: #ffaeae;
+    --color-menu-legend: #ffaeae;
+    --color-text-theme: #ffaeae;
+    --color-black: #ffffff;
+    --color-white: #000000;
 }
 
 /*Header*/
@@ -61,9 +61,9 @@ main {
     display: inline-block;
     height: 100%;
     width: auto;
-    border: 2px solid var(--color-theme);
+    border: 0px solid var(--color-theme);
     border-radius: 30px;
-    background: var(--color-white);
+    background: var(--color-theme);
     padding: 3px;
 }
 .outline-button-default {

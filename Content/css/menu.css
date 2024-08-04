@@ -44,16 +44,16 @@
     background-color: var(--color-theme);
 }
 .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-    border: 2px solid var(--color-theme);
-    background: var(--color-white);
+    border: 0px solid var(--color-theme);
+    background: var(--color-theme);
     padding-top: 10px;
     padding-bottom: 9px;
     margin-right: 0;
     padding-left: 2px;
     padding-right: 2px;
     border-radius: 25px;
-    margin-left: -4px;
-    margin-right: -4px;
+    margin-left: -2px;
+    margin-right: -2px;
 }
 .navbar-nav > li:first-child {
     margin-left: 0 !important;

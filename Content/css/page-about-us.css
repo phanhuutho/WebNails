@@ -1,7 +1,7 @@
 .page-main {
     position: relative;
     font-family: "Vesper Libre";
-    color: var(--color-black);
+    color: var(--color-white);
 }
 .page-main h1 {
     font-size: 250%;
