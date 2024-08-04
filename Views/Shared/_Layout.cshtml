@@ -124,13 +124,13 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @if (Prices.Count > 0) 
-                            { 
+                            @if (Prices.Count > 0)
+                            {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
                                 </li>
                             }
-                            @if (IsGallery) 
+                            @if (IsGallery)
                             {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
@@ -176,13 +176,13 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                @if(Prices.Count > 0) 
-                { 
+                @if (Prices.Count > 0)
+                {
                     <li>
                         <a href="/price-list.html">Price List</a>
                     </li>
                 }
-                @if (IsGallery) 
+                @if (IsGallery)
                 {
                     <li>
                         <a href="/gallery.html">Gallery</a>
@@ -203,8 +203,8 @@
                         <a href="/gift-manage.html">Gift Manage</a>
                     </li>
                 }
-                @if(IsPayment)
-                { 
+                @if (IsPayment)
+                {
                     <li>
                         <a id="mobile-menu-manage" href=""></a>
                     </li>
@@ -220,6 +220,12 @@
     </header>
     <!--Menu - Header-->
     <!--Main-->
+    <div class="divider mw-100"></div>
+    <div class="">
+        <div class="text-center">
+            <h5 class="fs-5 fw-bold my-1 pt-1 font-vesper-libre">We provide discount for military, medical, school staff and students with proof of ID</h5>
+        </div>
+    </div>
     @RenderBody()
     <!--Main-->
     <!--Footer-->
