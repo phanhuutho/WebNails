@@ -274,11 +274,31 @@ main {
 }
 /* -------------------------------------------------- */
 
+@media (max-width: 1199px) {
+    /*Menu*/
+    .menu-desktop .list-inline > li > a {
+        color: var(--color-black);
+        font-size: 0.8em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
+        padding-top: 7px;
+    }
+    /* -------------------------------------------------- */
+}
+
 /*CSS Tablet*/
 @media (max-width: 991px) {
     /*Menu*/
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-        padding-top: 7px;
+        padding-top: 4px;
+        padding-bottom: 8px;
+    }
+    .menu-desktop .list-inline > li > a {
+        font-size: 0.62em;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     /* -------------------------------------------------- */
 
@@ -360,9 +380,12 @@ main {
 
 /*CSS Mobile*/
 @media (max-width: 767px) {
+    .tabs-mobile span.small {
+        font-size: 0.775em;
+    }
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
-
+        background: unset;
     }
     /* -------------------------------------------------- */
 

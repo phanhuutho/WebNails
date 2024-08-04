@@ -148,7 +148,7 @@
                             @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
                             {
                                 <li class="list-inline-item">
-                                    <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Book Appointment</a>
+                                    <a class="list-inline-item-link" id="menu-booking" href="@(ViewBag.LinkBookingAppointment)" target="_blank">Booking</a>
                                 </li>
                             }
                             @if (User != null && User.Identity != null && !string.IsNullOrEmpty(User.Identity.Name) && IsPayment)
@@ -211,7 +211,7 @@
                 }
                 <li>
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
-                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Book Appointment" : "call us")</span>
+                        <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
                     </a>
                 </li>
             </ul>
@@ -272,6 +272,7 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                     </a>
+                    <div class="clearfix"></div>
                     @{
                         var ListSocials = new List<WebNails.Models.SocialModel>();
                         ListSocials.Add((WebNails.Models.SocialModel)ViewBag.Telegram);
