@@ -1,19 +1,14 @@
 {
-  "Name": "Sugar Polish Nail Bar West Midtown",
-  "HyperLinkTell": "tel:(770)7977601",
-  "TextTell": "(770)-797-7601",
-  "GooglePlus": "https://www.google.com/search?q=Sugar+Polish+Nail+Bar+West+Midtown+30318",
-  "Address": "1000 Marietta St NW UNIT 302, Atlanta, GA 30318",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/y9aXpFpzQeExNPpDA",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.290052711058!2d-84.41317212368507!3d33.779007232107595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5055a0ad61f9d%3A0x405ca046da00bdb1!2sSugar%20Polish%20Nail%20Bar%20West%20Midtown%20(10%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1699895041014!5m2!1sen!2s",
+  "Name": "Sugar Polish Nail Bar Ponce De Leon",
+  "HyperLinkTell": "tel:(404)2541801",
+  "TextTell": "(404)-254-1801",
+  "GooglePlus": "https://www.google.com/search?q=Sugar+polish+ponce+de+leon+30306",
+  "Address": "696 Cleburne Terrace NE Suite B, Atlanta, GA 30306",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/MGBLBsnoPayvkcEKA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13266.044625187726!2d-84.3536915!3d33.773296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5073b51a4edd5%3A0x3a9a45aceb3ef2b9!2sSugar%20Polish%20Nail%20Bar%20Ponce%20De%20Leon%20(40%25%20OFF%20Grand%20Opening)!5e0!3m2!1sen!2s!4v1722876021874!5m2!1sen!2s",
   "LinkBookingAppointment": "",
-  "ShowCoupon": false,
-  "Coupons": [
-    {
-      "Status": false,
-      "Src": "/Content/images/popup/coupon-01.jpg"
-    }
-  ],
+  "ShowCoupon": true,
+  "Coupons": [],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
