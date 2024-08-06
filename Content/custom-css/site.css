@@ -1,6 +1,6 @@
 ﻿:root {
     --bg-site: #fef8e9;
-    --bg-main: #ffffff;
+    --bg-main: #000000;
     --color-theme: #daa520;
     --color-menu-legend: #daa520;
     --color-text-theme: #daa520;
@@ -29,10 +29,15 @@ header {
 /*Footer*/
 footer {
     background: var(--bg-main);
+    color: var(--color-white);
 }
 
 .logo-footer {
     background: var(--bg-main);
+}
+
+footer a {
+    color: var(--color-white);
 }
 
 .logo-footer img {
@@ -49,7 +54,7 @@ footer {
 }
 
 .menu-desktop .list-inline > li > a {
-    color: var(--color-black);
+    color: var(--color-white);
 }
 /* -------------------------------------------------- */
 
