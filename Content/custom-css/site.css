@@ -1,6 +1,6 @@
 ﻿:root {
-    --bg-site: #fadbdb;
-    --bg-main: #ffffff;
+    --bg-site: #fcced8;
+    --bg-main: #faf5f2;
     --color-theme: #c23434;
     --color-menu-legend: #c23434;
     --color-text-theme: #c23434;
@@ -14,8 +14,8 @@ header {
 }
 
 .logo {
-    max-width: 100px;
-    background: var(--color-theme);
+    max-width: 150px;
+    background: unset;
 }
 
 .logo img {
@@ -32,7 +32,8 @@ footer {
 }
 
 .logo-footer {
-    background: var(--color-theme);
+    background: unset;
+    max-width: 150px;
 }
 
 .logo-footer img {
@@ -386,6 +387,9 @@ main {
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
         background: unset;
+    }
+    .navbar-brand img {
+        max-width: 150px;
     }
     /* -------------------------------------------------- */
 
