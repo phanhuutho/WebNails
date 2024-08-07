@@ -242,8 +242,20 @@ main {
 }
 /* -------------------------------------------------- */
 
+@media (max-width: 1199px) {
+    .menu-desktop .list-inline > li {
+        margin: 0 4px;
+    }
+    .menu-desktop .list-inline > li > a {
+        font-size: .9em;
+    }
+}
+
 /*CSS Tablet*/
 @media (max-width: 991px) {
+    .menu-desktop .list-inline > li > a {
+        font-size: .725em;
+    }
     /*Banner Home*/
     .slider-home {
         height: 510px !important;
