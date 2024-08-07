@@ -234,6 +234,11 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\images-0001.jpg" />
+    <Content Include="Content\images\gallery\images-0002.jpg" />
+    <Content Include="Content\images\gallery\images-0003.jpg" />
+    <Content Include="Content\images\gallery\images-0004.jpg" />
+    <Content Include="Content\images\gallery\images-0005.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -436,7 +441,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
