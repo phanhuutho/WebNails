@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #fadbdb;
-    --bg-main: #ffffff;
-    --color-theme: #ff4365;
-    --color-menu-legend: #ff4365;
-    --color-text-theme: #ff4365;
+    --bg-site: #fef8e9;
+    --bg-main: #000000;
+    --color-theme: #daa520;
+    --color-menu-legend: #daa520;
+    --color-text-theme: #daa520;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -15,7 +15,7 @@ header {
 
 .logo {
     max-width: 100px;
-    background: var(--color-white);
+    background: var(--color-black);
 }
 
 .logo img {
@@ -29,10 +29,15 @@ header {
 /*Footer*/
 footer {
     background: var(--bg-main);
+    color: var(--color-white);
 }
 
 .logo-footer {
-    background: var(--color-white);
+    background: var(--color-black);
+}
+
+footer a {
+    color: var(--color-white);
 }
 
 .logo-footer img {
@@ -49,7 +54,7 @@ footer {
 }
 
 .menu-desktop .list-inline > li > a {
-    color: var(--color-black);
+    color: var(--color-white);
 }
 /* -------------------------------------------------- */
 
@@ -277,7 +282,6 @@ main {
 @media (max-width: 1199px) {
     /*Menu*/
     .menu-desktop .list-inline > li > a {
-        color: var(--color-black);
         font-size: 0.8em;
         padding-left: 5px;
         padding-right: 5px;

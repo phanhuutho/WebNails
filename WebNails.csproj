@@ -264,6 +264,7 @@
     <Content Include="Content\images\icon3--300x300.png" />
     <Content Include="Content\images\lines.png" />
     <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\logo-gold.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
