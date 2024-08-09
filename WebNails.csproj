@@ -427,6 +427,7 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\GiftManage.cshtml" />
     <Content Include="Views\Home\_GetTable_GiftManage.cshtml" />
+    <Content Include="Views\Home\Policy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
