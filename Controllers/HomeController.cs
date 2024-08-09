@@ -28,6 +28,11 @@ namespace WebNails.Controllers
             return View();
         }
 
+        public ActionResult Policy()
+        {
+            return View();
+        }
+
         public ActionResult Contact()
         {
             return View();

@@ -1,1 +1,105 @@
-﻿
+﻿@{
+    ViewBag.Title = "Policy";
+
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+}
+@section css{
+    <link href="~/Content/css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/css/slick.css" rel="stylesheet">
+    <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
+    <link href="~/Content/css/slider.css" rel="stylesheet">
+}
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
+}
+<main>
+    @{Html.RenderPartial("_SliderPageSub");}
+    <div class="page-main container-lg py-5" id="about-us">
+        <div class="row align-items-center">
+            <div class="mt-3 col-md-12">
+                <div class="mb-4 text-center"><h1><span class="font-Parisienne fw-bold text-theme">Policy</span></h1></div>
+            </div>
+            <div class="mt-3 col-md-12">
+                <div class="card bg-site">
+                    <div class="card-body font-Vesper">
+                        <p>Guarantee</p>
+                        <p>Please remember, nails are jewels, not tools. Be kind to your nails and they will look beautiful for weeks after your service.</p>
+                        <ul>
+                            <li>
+                                Enhancements, gel polish manicures, dipping and other nail services are guaranteed to fix within 7 days of your initial service.
+                                If you notice breakages, chips, lifting or any other issues within this time, please call us to schedule a free repair appointment with original color of service.
+                            </li>
+                            <li>We will not be responsible after 7 days without notice.</li>
+                            <li>Repairs after guarantee time for breakages, tears, and any other issues will be charged.</li>
+                            <li>Traditional polish services are not guaranteed.</li>
+                        </ul>
+                        <p>
+                            <a href="/" class="text-theme text-decoration-none fw-bold">@(string.Format("{0}", ViewBag.Name))</a> is known for its nature-friendly, professional, high-quality services.
+                            Our highly trained and qualified staff ensures that you can trust our services.
+                            We use only branded and high-grade products for the best results and your safety.
+                            We take hygiene and sanitation standards seriously, and all precautions are taken to guarantee it.
+                            With a relaxing atmosphere and a wide range of quality services, you will have a fantastic experience at <a href="/" class="text-theme text-decoration-none fw-bold">@(string.Format("{0}", ViewBag.Name))!</a>
+                        </p>
+                        <p>Our salon has the following policy for the mutual convenience of our clients and our salon.</p>
+                        <p>
+                            We reserve the right to refuse service to anyone.
+                            Health issues or diabetes must be communicated before service.
+                        </p>
+                        <p>We are not responsible for lost or stolen personal items and gift cards.</p>
+                        <p>
+                            We do not provide refunds on services.
+                            However, we will resolve your issues with the services itself.
+                        </p>
+                        <p>
+                            Our prices are available on the menu.
+                            Please confirm the prices with the nail techs before receiving the services.
+                        </p>
+                        <p>Please give us advance notice for canceling appointments.</p>
+                        <p>
+                            Ask for the service which you would like to have.
+                            If you need clarification, please talk to the salon manager.
+                        </p>
+                        <p>
+                            If you are unsatisfied with our service, please inform the salon manager immediately, and we will do our best to remedy the situation or call us at <a href="@(string.Format("{0}", ViewBag.HyperLinkTell))" class="text-theme text-decoration-none fw-bold">@(string.Format("{0}", ViewBag.TextTell)).</a>
+                        </p>
+                        <p><a href="/" class="text-theme text-decoration-none fw-bold">@(string.Format("{0}", ViewBag.Name))</a> would like to thank you for your continued patronage!</p>
+                        <p>
+                            It is our pleasure to serve you. Thank you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section scripts{
+    <script src="~/Content/js/slick.min.js"></script>
+    <script src="~/Content/js/slick-animation.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("menu-policy");
+
+        var sliderInit = $('.sliders');
+
+        $(document).ready(function () {
+            sliderInit.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: @(IsFade_PageBanner ? "true" : "false"),
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+            sliderInit.slickAnimation();
+
+            sliderInit.on('touchstart', e => {
+                sliderInit.slick('slickPlay');
+            });
+        });
+    </script>
+}

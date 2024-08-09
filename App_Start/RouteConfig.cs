@@ -52,6 +52,14 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "Policy", "policy.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Policy"
+                });
+
+            routes.MapRoute(
                 "Services", "services.html",
                 new
                 {
