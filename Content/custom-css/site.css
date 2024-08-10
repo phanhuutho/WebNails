@@ -1,25 +1,25 @@
 ﻿:root {
-    --bg-site: #fadbdb;
+    --bg-site: #ffeae9;
     --bg-main: #ffffff;
-    --color-theme: #c23434;
-    --color-menu-legend: #c23434;
-    --color-text-theme: #c23434;
+    --color-theme: #802601;
+    --color-menu-legend: #802601;
+    --color-text-theme: #802601;
     --color-black: #000000;
     --color-white: #ffffff;
 }
 
 /*Header*/
 header {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo {
-    max-width: 100px;
-    background: var(--color-theme);
+    max-width: 110px;
+    background: unset;
 }
 
 .logo img {
-    background: var(--bg-main);
+    background: unset;
 }
 .logo, .logo img {
 
@@ -28,15 +28,15 @@ header {
 
 /*Footer*/
 footer {
-    background: var(--bg-main);
+    background: var(--bg-site);
 }
 
 .logo-footer {
-    background: var(--color-theme);
+    background: unset;
 }
 
 .logo-footer img {
-    background: var(--bg-main);
+    background: unset;
 }
 .logo-footer, .logo-footer img {
 
