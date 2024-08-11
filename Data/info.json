@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "GLOW Nails & Spa",
-  "HyperLinkTell": "tel:(949)7816045",
-  "TextTell": "(949)-781-6045",
-  "GooglePlus": "https://www.google.com/search?q=Glow+Nails+92626",
-  "Address": "3019 Harbor Blvd, Costa Mesa, CA 92626",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wqv1ENpy3mQMFaof6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.319975372935!2d-117.9201517!3d33.6809928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf0c131464d1%3A0xb9eac60a8ddb3f46!2s(%245%20OFF%20%26%2015%25%20OFF%20Coupon)%20GLOW%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1716565212404!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "GRANBURY NAILS BAR",
+  "HyperLinkTell": "tel:(682)2053313",
+  "TextTell": "(682)-205-3313",
+  "GooglePlus": "https://www.google.com/search?q=+Granbury+Nails+Bar+76048",
+  "Address": "1340 East US Hwy 377, Granbury, TX 76048",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/rR5a8LU46Cr75JaE9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13469.291499778836!2d-97.7685174!3d32.4372914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e211eb39816cd%3A0x3d235e9c85584f97!2sGRANBURY%20NAILS%20BAR%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1723391705436!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/d64962510633/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
