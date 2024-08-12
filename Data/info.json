@@ -1,20 +1,33 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Amazon Nails Bar",
+  "HyperLinkTell": "tel:(253)2710720",
+  "TextTell": "(253)-271-0720",
+  "GooglePlus": "https://www.google.com/search?q=Amazon+Nails+98338",
+  "Address": "10109 224th St E, Graham, WA 98338",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/gZpkN4fVVoLd5oZM9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10873.13050061878!2d-122.2961973!3d47.054306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54911d4bf9f21e27%3A0x8c5194243921062f!2sAmazon%20Nails%20Bar%20(20%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1723486783102!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://nailsolutionplus.firebaseapp.com/?storeKey=-NwqvqucWCl54AMRqtWC",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +37,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/amazon10109",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/amazon_nails_bar/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
