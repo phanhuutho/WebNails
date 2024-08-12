@@ -1,20 +1,37 @@
 ﻿{
-  "Name": "MK Nails",
-  "HyperLinkTell": "tel:(317)6888093",
-  "TextTell": "(317)-688-8093",
-  "GooglePlus": "https://www.google.com/search?q=MK+Nails+46033",
-  "Address": "2007 E Greyhound Pass suite 5, Carmel, IN 46033",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yz8jpGpSDb1bKoFT8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.370040084334!2d-86.1242219!3d40.0007963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814afa9df690955%3A0xb09091fb218900b!2s(%2410%20OFF%20Coupons%20%26%20More%20Promotion)%20MK%20Nails!5e0!3m2!1sen!2s!4v1715962512429!5m2!1sen!2s",
+  "Name": "Star Nails",
+  "HyperLinkTell": "tel:(760)7964546",
+  "TextTell": "(760)-796-4546",
+  "GooglePlus": "https://www.google.com/search?q=Star+Nails+92069",
+  "Address": "730 Nordahl Rd, San Marcos, CA 92069",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/PkYioVG3cnPT4r1Z8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13364.280353712686!2d-117.1197738!3d33.1335232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf4d12ed6df27%3A0xeae2770e3439caef!2sStar%20Nails%20(15%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1723485392288!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +41,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/starnailssanmarcos/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/starnails_nordahl",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
