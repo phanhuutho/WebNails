@@ -26,41 +26,208 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
+                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)" onclick="ModalDetail(this, 'MANICURE')">
                             <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_manicure.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>MANICURE</h2>
                                 </div>
                             </div>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Regular Manicure</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$35</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Gel Manicure</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$45</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
+                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)" onclick="ModalDetail(this, 'PEDICURE')">
                             <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_pedicure.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>PEDICURE</h2>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_dip_powder_nails.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>DIP POWDER</h2>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Sugar Pedicure</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$35</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <a class="text-black" href="javascript:void(0)" onclick="OpenDetail('deluxe-pedicure')"><span>Deluxe Pedicure (VOESH)</span></a>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$55</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Volcano Spa Pedicure (7 step)</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$70</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Luxury Collagen Spa Pedicure</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$70</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>* The Amazing BOMB Spa Pedicure 9 step</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$80</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Jelly Spa Pedicure</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$70</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <a class="text-black" href="javascript:void(0)" onclick="OpenDetail('volcano-spa-pedicure')"><span>Volcano Spa Pedicure (7 step)</span></a>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$70</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
+                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)" onclick="ModalDetail(this, 'NAIL ENHANCEMENTS')">
                             <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_acrylic.jpg" />
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_enhancements.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ACRYLIC</h2>
+                                    <h2>NAIL ENHANCEMENTS</h2>
+                                </div>
+                            </div>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-6"><span>&nbsp;</span></div>
+                                        <div class="col-3 text-end">
+                                            <span>Full Set</span>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span>Full In</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"><span>Acrylic</span></div>
+                                        <div class="col-3 text-end">
+                                            <span>$50</span>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span>$40</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"><span>Solar with Gel</span></div>
+                                        <div class="col-3 text-end">
+                                            <span>$55</span>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span>$45</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"><span>Color Powder</span></div>
+                                        <div class="col-3 text-end">
+                                            <span>$55</span>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span>$45</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"><span>Solar Ombre</span></div>
+                                        <div class="col-3 text-end">
+                                            <span>$65</span>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span>$55</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6"><span>Pink & White</span></div>
+                                        <div class="col-3 text-end">
+                                            <span>$65</span>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span>$50</span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>* GEL X</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$60</span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span><b>Dip Nails</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Basic Dip Color</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$50</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Dip with Tip</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$60</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <span>Dip Ombre</span>
+                                        </div>
+                                        <div class="col-2 text-end">
+                                            <span>$65</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

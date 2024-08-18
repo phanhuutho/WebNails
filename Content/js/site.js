@@ -27,6 +27,17 @@ $(document).ready(function(){
         $(".list-menu").hide();
         $("body").css("overflow","auto");
     });
+
+    $("img[img-hover]").hover(
+        function () {
+            var img_hover = $(this).attr("img-hover");
+            $(this).attr("src", img_hover);
+        },
+        function () {
+            var img_default = $(this).attr("img-default");
+            $(this).attr("src", img_default);
+        }
+    )
 });
 
 function ActiveMenu(ElementId){
@@ -40,4 +51,17 @@ function ReloadSliderImageMobile(){
         $("img", ".slider-4").attr("src", "/Content/images/banner/home/home_banner_4_mobile.jpg");
         $("img", ".slider-5").attr("src", "/Content/images/banner/home/home_banner_5_mobile.jpg");
     }
+}
+
+function ModalDetail(obj, title) {
+    var $this = $(obj);
+    var strHtmlDetail = $this.find(".box-prices", ".box-modal").html();
+    var $modal = $("#ModalDetail");
+    $modal.find(".modal-title").html("").append(title);
+    $modal.find(".modal-body").html("").append("<div class='box-prices'>" + strHtmlDetail + "</div>");
+    $modal.modal('show');
+}
+
+function OpenDetail(name) {
+    location.href = "/services/" + name + ".html";
 }

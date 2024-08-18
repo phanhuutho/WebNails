@@ -188,13 +188,17 @@ main {
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_nails_enhancements.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-position: 45% 50%;
+}
+
+.beauty-spa .box-image h2 {
+    font-size: 1.35em;
 }
 
 .business .business-inner .box-image .image-business {
@@ -462,6 +466,10 @@ main {
         height: 310px !important;
     }
     /* -------------------------------------------------- */
+
+    #ModalDetail .modal-dialog .modal-body .box-prices span {
+        font-size: 9.25pt;
+    }
 
     /*Page Home*/
     .business .business-inner .box-image .image-business {

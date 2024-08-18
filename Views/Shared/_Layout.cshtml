@@ -323,6 +323,17 @@
         </div>
     }
     @RenderSection("modal", required: false)
+    <div class="modal fade" id="ModalDetail" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2"></div>
+            </div>
+        </div>
+    </div>
     <script src="~/Content/js/bootstrap.bundle.min.js"></script>
     <script src="~/Content/js/site.js"></script>
     @RenderSection("scripts", required: false)
