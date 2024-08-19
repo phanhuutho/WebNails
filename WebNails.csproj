@@ -283,6 +283,13 @@
     <Content Include="Content\images\services-detail\jasmine-soothe-2.jpg" />
     <Content Include="Content\images\services-detail\kids-menu.jpg" />
     <Content Include="Content\images\services-detail\lash-lift.jpg" />
+    <Content Include="Content\images\services-detail\lavender-eruption-1.png" />
+    <Content Include="Content\images\services-detail\lavender-eruption-2.png" />
+    <Content Include="Content\images\services-detail\lavender-eruption-3.png" />
+    <Content Include="Content\images\services-detail\lavender-eruption-4.png" />
+    <Content Include="Content\images\services-detail\lavender-eruption-5.png" />
+    <Content Include="Content\images\services-detail\lavender-eruption-6.png" />
+    <Content Include="Content\images\services-detail\lavender-eruption-7.png" />
     <Content Include="Content\images\services-detail\lavender-relieve-1.jpg" />
     <Content Include="Content\images\services-detail\lavender-relieve-2.jpg" />
     <Content Include="Content\images\services-detail\mango-delight-1.jpg" />

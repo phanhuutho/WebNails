@@ -124,13 +124,13 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @if (Prices.Count > 0) 
-                            { 
+                            @if (Prices.Count > 0)
+                            {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
                                 </li>
                             }
-                            @if (IsGallery) 
+                            @if (IsGallery)
                             {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
@@ -176,13 +176,13 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                @if(Prices.Count > 0) 
-                { 
+                @if (Prices.Count > 0)
+                {
                     <li>
                         <a href="/price-list.html">Price List</a>
                     </li>
                 }
-                @if (IsGallery) 
+                @if (IsGallery)
                 {
                     <li>
                         <a href="/gallery.html">Gallery</a>
@@ -203,8 +203,8 @@
                         <a href="/gift-manage.html">Gift Manage</a>
                     </li>
                 }
-                @if(IsPayment)
-                { 
+                @if (IsPayment)
+                {
                     <li>
                         <a id="mobile-menu-manage" href=""></a>
                     </li>
@@ -324,6 +324,17 @@
     }
     @RenderSection("modal", required: false)
     <div class="modal fade" id="ModalDetail" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalServiceDetail" tabindex="-1" role="dialog" aria-hidden="true" style="display:none;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header p-2">
