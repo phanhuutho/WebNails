@@ -290,6 +290,11 @@ main {
         padding-top: 7px;
     }
     /* -------------------------------------------------- */
+
+    #ModalServiceDetail .modal-dialog .modal-body p {
+        font-size: 15px;
+        margin-bottom: 0.75rem;
+    }
 }
 
 /*CSS Tablet*/
@@ -379,6 +384,11 @@ main {
         height: 500px !important;
     }
     /* -------------------------------------------------- */
+
+    #ModalServiceDetail .modal-dialog .modal-body p {
+        font-size: 15px;
+        margin-bottom: 0.5rem;
+    }
 }
 /* -------------------------------------------------- */
 

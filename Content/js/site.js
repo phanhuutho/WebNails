@@ -65,3 +65,11 @@ function ModalDetail(obj, title) {
 function OpenDetail(name) {
     location.href = "/services/" + name + ".html";
 }
+
+function ModalServiceDetail(obj) {
+    var $this = $(obj);
+    var strHtmlDetail = $this.find(".box-modal").html();
+    var $modal = $("#ModalServiceDetail");
+    $modal.find(".modal-body").html("").append(strHtmlDetail);
+    $modal.modal('show');
+}

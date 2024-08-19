@@ -96,7 +96,6 @@ a:active,a:hover {
     display: flex;
     align-items: center;
     height: 100%;
-    max-width: 640px;
 }
 .modal-content {
     border-width: 5px;
