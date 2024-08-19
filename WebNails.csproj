@@ -350,6 +350,7 @@
     <Content Include="Data\services\microblading.html" />
     <Content Include="Data\services\nail-enhancements.html" />
     <Content Include="Data\services\pedicure-manicure.html" />
+    <Content Include="Data\services\volcano-spa-pedicure.html" />
     <Content Include="Data\services\waxing-tinting.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

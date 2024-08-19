@@ -36,7 +36,7 @@ main {
     font-family: Prata;
     font-weight: bold;
     font-size: 1.5em;
-    line-height: 1.25;
+    line-height: 40px;
     margin-top: 1rem;
     margin-bottom: 0;
     color: var(--color-white);
