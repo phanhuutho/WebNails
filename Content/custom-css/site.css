@@ -1,9 +1,9 @@
 ﻿:root {
     --bg-site: #fef8e9;
-    --bg-main: #ffffff;
-    --color-theme: #daa520;
-    --color-menu-legend: #daa520;
-    --color-text-theme: #daa520;
+    --bg-main: #f1f1f1;
+    --color-theme: #cba51e;
+    --color-menu-legend: #d40233;
+    --color-text-theme: #d40233;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -14,7 +14,7 @@ header {
 }
 
 .logo, .navbar-brand img {
-    max-width: 125px;
+    max-width: 115px;
     background: var(--bg-main);
 }
 

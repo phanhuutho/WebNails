@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "MK Nails",
-  "HyperLinkTell": "tel:(317)6888093",
-  "TextTell": "(317)-688-8093",
-  "GooglePlus": "https://www.google.com/search?q=MK+Nails+46033",
-  "Address": "2007 E Greyhound Pass suite 5, Carmel, IN 46033",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yz8jpGpSDb1bKoFT8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.370040084334!2d-86.1242219!3d40.0007963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814afa9df690955%3A0xb09091fb218900b!2s(%2410%20OFF%20Coupons%20%26%20More%20Promotion)%20MK%20Nails!5e0!3m2!1sen!2s!4v1715962512429!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Zen Nails INC",
+  "HyperLinkTell": "tel:(801)6539900",
+  "TextTell": "(801)-653-9900",
+  "GooglePlus": "https://www.google.com/search?q=Zen+Nail+Spa+84065",
+  "Address": "1868 W 12600 S, Riverton, UT 84065",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/rDmMqRHqBuRoGk448",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12131.414212777863!2d-111.9419555!3d40.5227279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752871b4cb9f6f7%3A0xe117fbfbfe92e34a!2sZen%20Nails%20INC%20(20%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1724174347293!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/f6646053f87c/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
@@ -24,14 +28,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/zennailsandspariverton/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/now_i_am_zennails/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

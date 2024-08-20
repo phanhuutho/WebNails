@@ -17,7 +17,7 @@ footer {
     padding: 3px;
 }
 footer .legend {
-    color: var(--color-theme);
+    color: var(--color-text-theme);
 }
 footer a {
     color: var(--color-black);

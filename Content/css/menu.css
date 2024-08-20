@@ -25,7 +25,7 @@
 }
 .menu-desktop .list-inline > li > a:hover,.menu-desktop .list-inline > li > a.active{
     color: var(--color-white);
-    background: var(--color-theme);
+    background: var(--color-menu-legend);
     border-radius: 25px;
 }
 .menu-desktop .list-inline > li > a:before{
@@ -44,7 +44,7 @@
     background-color: var(--color-theme);
 }
 .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
-    border: 2px solid var(--color-theme);
+    border: 2px solid var(--color-menu-legend);
     background: var(--color-white);
     padding-top: 10px;
     padding-bottom: 9px;
