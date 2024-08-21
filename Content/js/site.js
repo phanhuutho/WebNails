@@ -73,3 +73,14 @@ function ModalServiceDetail(obj) {
     $modal.find(".modal-body").html("").append(strHtmlDetail);
     $modal.modal('show');
 }
+
+function ShowImageDetail(obj) {
+    var $this = $(obj);
+    var $boxImages = $this.parents(".box-images");
+    var src = $this.attr("src");
+    $boxImages.find(".image-show img").attr("src", src);
+    $boxImages.find(".image-items img").removeClass("opacity-100");
+    $boxImages.find(".image-items img").removeClass("opacity-50");
+    $boxImages.find(".image-items img").addClass("opacity-50");
+    $this.addClass("opacity-100");
+}
