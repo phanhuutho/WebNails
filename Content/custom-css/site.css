@@ -385,6 +385,10 @@ main {
     }
     /* -------------------------------------------------- */
 
+    #ModalDetail .modal-dialog .modal-body .box-prices span {
+        font-size: 11pt;
+    }
+
     #ModalServiceDetail .modal-dialog .modal-body p {
         font-size: 15px;
         margin-bottom: 0.5rem;
@@ -478,7 +482,7 @@ main {
     /* -------------------------------------------------- */
 
     #ModalDetail .modal-dialog .modal-body .box-prices span {
-        font-size: 9.25pt;
+        font-size: 8.75pt;
     }
 
     /*Page Home*/

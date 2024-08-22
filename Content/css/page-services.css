@@ -63,3 +63,8 @@ main {
 .modal-body-content ul li {
     font-size: 13px;
 }
+
+.box-prices .text-end span:last-child {
+    display: inline-block;
+    width: 5px;
+}
