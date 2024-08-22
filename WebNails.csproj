@@ -396,11 +396,13 @@
     <Content Include="Data\BodyRegisterCoupon.html" />
     <Content Include="Data\business-hours.txt" />
     <Content Include="Data\home-about-us.txt" />
+    <Content Include="Data\services\amazing-bomb-spa-pedicure.html" />
     <Content Include="Data\services\brow-lamination.html" />
     <Content Include="Data\services\custom-nails.html" />
     <Content Include="Data\services\deluxe-pedicure.html" />
     <Content Include="Data\services\eyelash-extensions.html" />
     <Content Include="Data\services\facial-skin-management.html" />
+    <Content Include="Data\services\jelly-spa-pedicure.html" />
     <Content Include="Data\services\kids-menu.html" />
     <Content Include="Data\services\lash-lift.html" />
     <Content Include="Data\services\luxury-collagen-spa-pedicure.html" />
