@@ -278,6 +278,11 @@ main {
 }
 /* -------------------------------------------------- */
 
+.box-prices .text-end span:last-child {
+    display: inline-block;
+    width: 5px;
+}
+
 @media (max-width: 1199px) {
     /*Menu*/
     .menu-desktop .list-inline > li > a {
