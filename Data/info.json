@@ -6,7 +6,7 @@
   "Address": "3519 Walton Way Ext, Augusta, GA 30909",
   "LinkGoogleMapAddress": "https://maps.app.goo.gl/AU7vWquxhmnh3ipr7",
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13310.315069625713!2d-82.0718029!3d33.4863161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9d2454c00b5bb%3A0x3acf9d9b7ede604c!2sRainbow%20Nails%20(15%25%20Off%20New%20Customer)!5e0!3m2!1sen!2s!4v1723043903156!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/dbd76dc129f5/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
