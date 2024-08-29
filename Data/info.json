@@ -1,20 +1,37 @@
 ﻿{
-  "Name": "GLOW Nails & Spa",
-  "HyperLinkTell": "tel:(949)7816045",
-  "TextTell": "(949)-781-6045",
-  "GooglePlus": "https://www.google.com/search?q=Glow+Nails+92626",
-  "Address": "3019 Harbor Blvd, Costa Mesa, CA 92626",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wqv1ENpy3mQMFaof6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.319975372935!2d-117.9201517!3d33.6809928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf0c131464d1%3A0xb9eac60a8ddb3f46!2s(%245%20OFF%20%26%2015%25%20OFF%20Coupon)%20GLOW%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1716565212404!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Shangri-la Nail And Spa",
+  "HyperLinkTell": "tel:(707)7622546",
+  "TextTell": "(707)-762-2546",
+  "GooglePlus": "https://www.google.com/search?q=Shangri-la+nail+and+spa+94954",
+  "Address": "1371 N McDowell Blvd STE 110, Petaluma, CA 94954",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/ovy4MKahBRdAjmqE9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12528.961794111125!2d-122.6668999!3d38.2739187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085b4fb53d61deb%3A0x34568a77cb7dca21!2sShangri-la%20nail%20and%20spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1724955860162!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/d2d3827e0da2/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +41,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/shangrilanailspa.petaluma/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/shangri_la_nail_petaluma/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
