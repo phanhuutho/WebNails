@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Viva Salon & Spa",
+  "HyperLinkTell": "tel:(757)4167919",
+  "TextTell": "(757)-416-7919",
+  "GooglePlus": "https://www.google.com/search?q=Viva+Salon+Spa+23505",
+  "Address": "7525 Tidewater Dr Unit 9, Norfolk, VA 23505",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/QZFRhpaYruZTAoFx7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12760.109092976305!2d-76.2563528!3d36.9136123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba974efe560af3%3A0x3f049fa4c4ba8fa5!2sViva%20Salon%20%26%20Spa%20(15%25%20OFF%20New%20Customers%20-%20Must%20show%20coupon%20at%20check%20out)!5e0!3m2!1sen!2s!4v1725207711860!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
