@@ -234,6 +234,14 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\image-0001.jpg" />
+    <Content Include="Content\images\gallery\image-0002.jpg" />
+    <Content Include="Content\images\gallery\image-0003.jpg" />
+    <Content Include="Content\images\gallery\image-0004.jpg" />
+    <Content Include="Content\images\gallery\image-0005.jpg" />
+    <Content Include="Content\images\gallery\image-0006.jpg" />
+    <Content Include="Content\images\gallery\image-0007.jpg" />
+    <Content Include="Content\images\gallery\image-0008.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -267,6 +275,7 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\popup\coupon-01.jpg" />
+    <Content Include="Content\images\popup\coupon-02.jpg" />
     <Content Include="Content\images\prev.png" />
     <Content Include="Content\images\price-list\bg-price-list.jpg" />
     <Content Include="Content\images\services-detail\brow-lamination.jpg" />
@@ -430,7 +439,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
