@@ -160,3 +160,7 @@ a:active,a:hover {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.slick-prev:before, .slick-next:before, .slick-dots li.slick-active button:before {
+    color: var(--color-theme) !important;
+}
