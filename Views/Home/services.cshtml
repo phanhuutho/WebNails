@@ -25,82 +25,496 @@
                     <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenModalService(this,'MANICURE')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_manicure.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>MANICURE</h2>
                                 </div>
                             </div>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Tropical Delight Manicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$30</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Experience all the features of our standard manicure with an added exfoliating organic sugar scrub, reflexology massage, hot towel wrap, and finish with organic oil and polish.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Gel Manicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$40</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Includes shaping, cuticle care, buffing, massage, gel polish application, and soak-off service.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Dream Gel Manicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$90</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Revitalize and fortify natural nails, promoting a healthy appearance post-product removal.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenModalService(this,'PEDICURE')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_pedicure.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>PEDICURE</h2>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_dip_powder_nails.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>DIP POWDER</h2>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Organic Signature</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$60</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Bring overworked feet back to life with a purifying green tea foot bath and a rejuvenating natural scrub that helps with a 12-minute aromatherapy hot stone massage, before your choice of polish to top it off.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Botanical Bliss</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$75</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Soak tired feet in soothing oatmeal bath and essential oils before a rejuvenating homemade coffee and honey natural scrub.
+                                            Then, a 16-minute aromatherapy rose hot stone massage with your choice of polish and a cooling spritz of rose water mist.
+                                            To seal the deal, a perfect 10 spa treatment.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Diamond Luxury (Most popular)</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$90</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Indulge in a luxurious foot treatment with zero gravity chair that helps spinal decompression and muscles are relaxed, reduce stress on the heart, airway and nasal passages are opened up.
+                                            Treatment includes 20 min reflexology massage using organic butter cream.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Wellness & Beauty Pedicure (Best Choice)</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$110</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Enhance your well-being with natural products that cater to your “second heart”.
+                                            The pedicure featuring RENU SPA 10 revitalizes the skin, promotes blood circulation, and eases pain, targeting spider veins on the legs as well.
+                                            Himalayan hot stones, ancient and pure mineral crystals, offer numerous health benefits.
+                                            Their consistent use can strengthen immunity, diminish inflammation, counteract odors, soften the skin, and aid in skin whitening, while also releasing anions during use.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Spring Fresh</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$40</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Soak in aromatic essential oils, shape, cuticle care, exfoliating with sugar scrub, foot massage, hot towel wrap, soothing lotion, and polish.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Quick Clean</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$30</b></span><span>+</span>
+                                        </div>
+                                        <div class="col-12">
+                                            In a hurry? Soak, shape, cuticle, and polish.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Add Gel to Any Pedicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$15</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 mt-3">
+                                            <p class="mb-1"><b>SPECIALS</b></p>
+                                            <ol class="mb-1 ps-2">
+                                                <li>New Visitor: Enjoy a 10% discount.</li>
+                                                <li>Senior Citizen: Get 10% off on Mondays and Tuesdays by appointment.</li>
+                                                <li>Referral Program: Earn a $10 reward towards your next service for each referral.</li>
+                                                <li>Diamond Day: Receive a 5% discount on all services every Wednesday.</li>
+                                            </ol>
+                                            <p><i><b>Remember:</b> Only one discount per visit, discounts cannot be combined. </i></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_acrylic.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenModalService(this,'NAIL ENHANCEMENT')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_enhancements.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ACRYLIC</h2>
+                                    <h2>NAIL ENHANCEMENT</h2>
+                                </div>
+                            </div>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <b>Solar & Gel</b>
+                                        </div>
+                                        <div class="col-7 text-end">
+                                            <span><b>Full set $65 | Fill $55</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <b>Regular Polish</b>
+                                        </div>
+                                        <div class="col-7 text-end">
+                                            <span><b>Full set $55 | Fill $50</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <b>Pink & White</b>
+                                        </div>
+                                        <div class="col-8 text-end">
+                                            <span><b>Full set $65 | Fill $50 | Backfill $55</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Pink Fill</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$50</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <b>T.A.P Gel</b>
+                                        </div>
+                                        <div class="col-7 text-end">
+                                            <span><b>Full set $65+ | Fill $55</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Gel-X</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$65</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Dipping Powder</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$50</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Dip with Removal</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$55</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Dipping Powder with Manicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$55</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Pink & White Dipping</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$60</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Ombre Dipping</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$65</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_waxing.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>WAXING</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_additional_services.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ADDITIONAL</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenModalService(this,'KIDS (9 years old & under)')">
                                 <img class="img-fluid" alt="" src="~/Content/images/services/services_little_kids.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
                                     <h2>KIDS</h2>
                                 </div>
                             </div>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Manicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$16</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Pedicure</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$25</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Mani & Pedi Combo</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$40</b></span><span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-12">
+                                            Includes soaking, shaping, cuticle care, heel buffing, foot massage, hot towel wrap, application of soothing lotion, and polish. (Includes 2 free designs)
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Shellac Add-on</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$15</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Shellac Change (No Manicure)</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$20</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Polish Change</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$10</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Color Change (For A Service)</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$10</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_gel_polish.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="OpenModalService(this,'WAXING')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_waxing.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>GEL POLISH</h2>
+                                    <h2>WAXING</h2>
+                                </div>
+                            </div>
+                            <div class="box-modal d-none">
+                                <div class="box-prices">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Full Face</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$10</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Eyebrows</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$17</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Lips</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$13</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Chins</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$13</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Eyebrows + Lips + Chin</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$40</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Sideburns</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$20</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Whole Face</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$45</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Eyebrows + Lips</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$27</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Eyebrows + Chin</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$27</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Underarms</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$25</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Half Arms</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$37</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Full Arms</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$57</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Chest/Back</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$55</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Half Legs</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$45</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Full Legs</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$57</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Bikini</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$50</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Brazilian</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$58</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Back & Shoulders</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$70</b></span><span>+</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <b>Eyebrow Tinting</b>
+                                        </div>
+                                        <div class="col-3 text-end">
+                                            <span><b>$35</b></span><span>&nbsp;</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +524,19 @@
         </div>
     </section>
 </main>
-
+@section modal{
+    <div class="modal fade" id="ModalDetailService" tabindex="-1" aria-labelledby="ModalDetailServiceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+}
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>

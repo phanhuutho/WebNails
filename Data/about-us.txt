@@ -1,16 +1,23 @@
 ﻿<p>
-    Welcome you to Fashion Nails, we are pleased to offer a full service Salon for our valued customers. 
-    We always assure that the salon is totally clean and the tools are sanitized clearly for each use. 
-    You are freely to enjoy the relax moments with luxurious and elegant space, escaping from all the life’s pressure and stress to make the most of wonderful time.
+    Welcome to <b>Luxury Nails & Foot Massage</b>, your premier nail salon and spa destination in <b>Portland, OR 97229.</b>
 </p>
 
 <p>
-    We provide you with the variety of services such as: Manicure, Pedicure, UV Gel, and Lightconcept (LCN), and Waxing with a large selection of color for customer to choose from. 
-    In addition, we also use natural organic and high quality brand name product products like Nu Skin for all provided services. 
-    Especially, with our friendly, enthusiastic and professional staff, you are able to be treated carefully and thoroughly in all time.
+    Our mission is to provide you with a relaxing and rejuvenating experience through our comprehensive range of high-quality services.
 </p>
 
 <p>
-    The long time of working in this area, we understand deeply what your expectation is and always try our best to give you the most satisfaction when using any services. 
-    We bring to you the confidence by our passion and talent!
+    We specialize in <b>manicures, pedicures, dipping, acrylic, and gel nails</b>, ensuring your hands and feet look and feel their best.
+</p>
+
+<p>
+    Additionally, we offer expert waxing services to complete your pampering session.
+</p>
+
+<p>
+    At <b>Luxury Nails & Foot Massage</b>, we pride ourselves on our professional staff, state-of-the-art facilities, and unwavering commitment to customer satisfaction.
+</p>
+
+<p>
+    Come and experience the ultimate in luxury and relaxation.
 </p>
