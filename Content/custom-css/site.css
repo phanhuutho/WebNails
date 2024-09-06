@@ -463,6 +463,10 @@ main {
     }
     /* -------------------------------------------------- */
 
+    .specials .description {
+        font-size: 18px !important;
+    }
+
     .box-prices {
         font-size: 7.717pt;
     }
