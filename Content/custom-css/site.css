@@ -1,9 +1,9 @@
 ﻿:root {
     --bg-site: #fadbdb;
     --bg-main: #ffffff;
-    --color-theme: #c23434;
-    --color-menu-legend: #c23434;
-    --color-text-theme: #c23434;
+    --color-theme: #ad0931;
+    --color-menu-legend: #ad0931;
+    --color-text-theme: #ad0931;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -385,7 +385,7 @@ main {
     }
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
-        background: unset;
+
     }
     /* -------------------------------------------------- */
 

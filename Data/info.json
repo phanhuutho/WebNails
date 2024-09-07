@@ -1,20 +1,41 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Rose Nails Spa",
+  "HyperLinkTell": "tel:(931)9195045",
+  "TextTell": "(931)-919-5045",
+  "GooglePlus": "https://www.google.com/search?q=Rose+Nails+37043",
+  "Address": "2720 Madison St, Clarksville, TN 37043",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/35Rw6UPEvodrC15i6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12828.445188042784!2d-87.2512642!3d36.5031754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864df39143b9257%3A0x3c3baf2f6f0afc5b!2sRose%20Nails%20Spa!5e0!3m2!1sen!2s!4v1725728860539!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,7 +45,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/rosenailsga/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
