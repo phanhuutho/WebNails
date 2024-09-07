@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "Allure Nail Bar",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Diva Nails & Spa",
+  "HyperLinkTell": "tel:(662)2865350",
+  "TextTell": "(662)-286-5350",
+  "GooglePlus": "https://www.google.com/search?q=Diva+Nails+38834",
+  "Address": "1717 Virginia Ln, Corinth, MS 38834",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/Za2h5iEmputNgTx27",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13086.896640494133!2d-88.5042831!3d34.9133712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887dc0eec783f509%3A0x79f6e3d488047c16!2sDiva%20Nails%20%26%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1725724061616!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/8ed5fb124538/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],

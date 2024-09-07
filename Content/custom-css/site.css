@@ -15,7 +15,7 @@ header {
 
 .logo, .navbar-brand img {
     max-width: 125px;
-    background: var(--bg-main);
+    background: var(--color-theme);
 }
 
 .logo img {
@@ -32,7 +32,7 @@ footer {
 }
 
 .logo-footer {
-    background: var(--bg-main);
+    background: var(--color-theme);
 }
 
 .logo-footer img {
@@ -384,8 +384,11 @@ main {
         font-size: 0.775em;
     }
     /*Header*/
-    .logo-brand .navbar-brand, .navbar-brand img {
-        background: unset;
+    .logo-brand .navbar-brand {
+        background: var(--color-theme);
+    }
+    .navbar-brand img {
+        background: var(--bg-main);
     }
     /* -------------------------------------------------- */
 
