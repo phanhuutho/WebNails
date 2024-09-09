@@ -1,3 +1,2 @@
-﻿<p>Mon - Fri: 9:00am - 6:30pm</p>
-<p>Sat: 9:00am - 6:00pm</p>
-<p>Sun: 10:00am - 5:00pm</p>
+﻿<p>Mon - Fri: 9:30am - 7:30pm</p>
+<p>Sun: 11:00am - 6:00pm</p>

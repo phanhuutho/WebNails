@@ -1,9 +1,9 @@
 ﻿:root {
     --bg-site: #fef8e9;
-    --bg-main: #ffffff;
-    --color-theme: #daa520;
-    --color-menu-legend: #daa520;
-    --color-text-theme: #daa520;
+    --bg-main: #660000;
+    --color-theme: #c8903d;
+    --color-menu-legend: #c8903d;
+    --color-text-theme: #c8903d;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -31,6 +31,10 @@ footer {
     background: var(--bg-main);
 }
 
+footer, footer a {
+    color: var(--color-white);
+}
+
 .logo-footer {
     background: var(--bg-main);
 }
@@ -49,7 +53,7 @@ footer {
 }
 
 .menu-desktop .list-inline > li > a {
-    color: var(--color-black);
+    color: var(--color-white);
 }
 /* -------------------------------------------------- */
 
@@ -277,7 +281,6 @@ main {
 @media (max-width: 1199px) {
     /*Menu*/
     .menu-desktop .list-inline > li > a {
-        color: var(--color-black);
         font-size: 0.8em;
         padding-left: 5px;
         padding-right: 5px;
@@ -386,6 +389,7 @@ main {
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
         background: unset;
+        max-width: 90px;
     }
     /* -------------------------------------------------- */
 
