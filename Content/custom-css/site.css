@@ -467,6 +467,10 @@ main {
     }
     /* -------------------------------------------------- */
 
+    .box-prices {
+        font-size: 8.25pt;
+    }
+
     /*Page Home*/
     .business .business-inner .box-image .image-business {
         position: relative;
