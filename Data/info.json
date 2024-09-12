@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "Allure Nail Bar",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "EAGLE BEAUTY LOUNGE",
+  "HyperLinkTell": "tel:(208)2849720",
+  "TextTell": "(208)-284-9720",
+  "GooglePlus": "https://www.google.com/search?q=Eagle+Beauty+Lounge+83713",
+  "Address": "5360 N Eagle Rd #103, Boise, ID 83713",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/bjbMyz3SLfJTf4ou6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11546.996568631786!2d-116.3534148!3d43.6533873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae5580664e9a35%3A0x9656d661d3a5478a!2sEAGLE%20BEAUTY%20LOUNGE%20(20%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1726160532492!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
