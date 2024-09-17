@@ -243,7 +243,11 @@
                 <div class="col-lg-5 col-md-5 mb-3 pt-4">
                     <p class="legend"><strong>CONTACT US:</strong></p>
                     <p class="text-left"><b>Address:</b> <a href="@ViewBag.LinkGoogleMapAddress" target="_blank">@ViewBag.Address</a></p>
-                    <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
+                    @if (ViewBag.HyperLinkTell != "")
+                    {
+                        <p class="text-left"><b>Tel:</b> <a href="@ViewBag.HyperLinkTell">@ViewBag.TextTell</a></p>
+                    }
+                    
                     @{
                         foreach (var item in ListOtherPhone)
                         {
@@ -256,22 +260,37 @@
                     @Html.Raw(string.Format("{0}", ViewBag.BusinessHours))
                 </div>
                 <div class="col-lg-2 col-md-3 mb-3 pt-4">
-                    <p class="legend"><strong>FOLLOW US:</strong></p>
-                    <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
-                        <div class="circle">
-                            <span class="fa fa-google-plus"></span>
-                        </div>
-                    </a>
-                    <a href="@ViewBag.HyperLinkTell" class="social-icon-link" title="Phone">
-                        <div class="circle bg-primary">
-                            <span class="fa fa-phone"></span>
-                        </div>
-                    </a>
-                    <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
-                        <div class="circle bg-success">
-                            <span class="fa fa-map-marker"></span>
-                        </div>
-                    </a>
+                    @if (ViewBag.GooglePlus != "" || ViewBag.HyperLinkTell != "" || ViewBag.LinkGoogleMapAddress != "")
+                    { 
+                        <p class="legend"><strong>FOLLOW US:</strong></p>
+                        if (ViewBag.GooglePlus != "")
+                        { 
+                            <a href="@ViewBag.GooglePlus" class="social-icon-link" title="Google">
+                                <div class="circle">
+                                    <span class="fa fa-google-plus"></span>
+                                </div>
+                            </a>
+                        }
+                    
+                        if (ViewBag.HyperLinkTell != "")
+                        { 
+                            <a href="@ViewBag.HyperLinkTell" class="social-icon-link" title="Phone">
+                                <div class="circle bg-primary">
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                            </a>
+                        }
+                    
+                        if (ViewBag.LinkGoogleMapAddress != "")
+                        { 
+                            <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
+                                <div class="circle bg-success">
+                                    <span class="fa fa-map-marker"></span>
+                                </div>
+                            </a>
+                        }
+                    }
+
                     <div class="clearfix"></div>
                     @{
                         var ListSocials = new List<WebNails.Models.SocialModel>();
@@ -302,18 +321,22 @@
         </div>
     </footer>
     <!--Footer-->
-    <div class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "tel-withtext" : "tel")">
-        <a href="@ViewBag.HyperLinkTell">
-            @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
-            {
-                <i class="fa fa-phone-square"></i>
-            }
-            else
-            {
-                <i class="fa fa-phone"></i>
-            }
-        </a>
-    </div>
+    @if (ViewBag.HyperLinkTell != "")
+    {
+        <div class="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "tel-withtext" : "tel")">
+            <a href="@ViewBag.HyperLinkTell">
+                @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
+                {
+                    <i class="fa fa-phone-square"></i>
+                }
+                else
+                {
+                    <i class="fa fa-phone"></i>
+                }
+            </a>
+        </div>
+    }
+    
     @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
     {
         <div class="booking">
