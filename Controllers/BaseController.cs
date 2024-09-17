@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using WebNails.Models;
@@ -32,6 +35,7 @@ namespace WebNails.Controllers
             ViewBag.Instagram = dataInfo.Instagram ?? new SocialModel();
             ViewBag.Twitter = dataInfo.Twitter ?? new SocialModel();
             ViewBag.Youtube = dataInfo.Youtube ?? new SocialModel();
+            ViewBag.Token = dataInfo.Token ?? "";
 
             var txtBusinessHours = System.IO.File.ReadAllText(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/business-hours.txt"));
             ViewBag.BusinessHours = txtBusinessHours;
@@ -137,6 +141,28 @@ namespace WebNails.Controllers
                 Banner_Contacts.Add(Banner_Item);
             }
             ViewBag.Banner_Contact = Banner_Contacts;
+        }
+
+        public async Task<string> GetStringJsonFromURL(string url)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+                return result;
+            }
+        }
+        public async Task<string> PostStringJsonFromURL(string url, string dataJson)
+        {
+            var requestContent = new StringContent(dataJson, Encoding.UTF8, "application/json");
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(url, requestContent);
+                response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+                return result;
+            }
         }
     }
 }
