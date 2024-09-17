@@ -430,71 +430,70 @@ namespace WebNails.Controllers
             return RedirectToAction("Login");
         }
 
-        public ActionResult GetGiftManage(string search = "")
+        public async Task<ActionResult> GetGiftManage(string search = "")
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            var Token = ViewBag.Token;
+
+            var Domain = Request.Url.Host;
+
+            var intSkip = Utilities.PagingHelper.Skip;
+
+            var intCountSort = Utilities.PagingHelper.CountSort;
+
+            var result = await GetStringJsonFromURL(string.Format("{0}/Home/GetGiftManage?token={1}&Domain={2}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, Token, Domain, intSkip, intCountSort, search));
+            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
+
+            var Count = objResult.Count;
+            var data = JsonConvert.DeserializeObject<InfoPaypal>(objResult.data);
+
+            ViewBag.Count = Count;
+
+            return PartialView("_GetTable_GiftManage", data);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> UpdateCompleted(Guid id)
+        {
+            var Token = ViewBag.Token;
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/Home/UpdateCompleted?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { id }));
+            var objResult = JsonConvert.DeserializeObject<int>(result);
+
+            if (objResult > 0)
             {
-                var Domain = Request.Url.Host;
-
-                var intSkip = Utilities.PagingHelper.Skip;
-
-                var param = new DynamicParameters();
-                param.Add("@intSkip", intSkip);
-                param.Add("@intTake", Utilities.PagingHelper.CountSort);
-                param.Add("@strDomain", Domain);
-                param.Add("@strValue", search);
-                param.Add("@intTotalRecord", dbType: DbType.Int32, direction: ParameterDirection.Output);
-
-                var objResult = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByNailDomain", param, commandType: CommandType.StoredProcedure);
-
-                ViewBag.Count = param.Get<int>("@intTotalRecord");
-
-                return PartialView("_GetTable_GiftManage", objResult);
+                return Json(new { Message = "Update completed success !" });
+            }
+            else
+            {
+                return Json(new { Message = "Update completed fail !" });
             }
         }
 
         [HttpPost]
-        public ActionResult UpdateCompleted(Guid id)
+        public async Task<ActionResult> SendMail(Guid id)
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-            {
-                var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = id, bitIsUsed = true}, commandType: CommandType.StoredProcedure);
+            var Token = ViewBag.Token;
 
-                if(objResult > 0)
+            var result = await PostStringJsonFromURL(string.Format("{0}/Home/SendMail?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { id }));
+            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
+
+            var Count = objResult.Count;
+            var info = JsonConvert.DeserializeObject<InfoPaypal>(objResult.data);
+
+            if (info != null)
+            {
+                if (Count > 0)
                 {
-                    return Json(new { Message = "Update completed success !" });
+                    SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                    SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                    SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
                 }
-                else
-                {
-                    return Json(new { Message = "Update completed fail !" });
-                }
+
+                return Json(new { Message = "Send mail success !" });
             }
-        }
-
-        [HttpPost]
-        public ActionResult SendMail(Guid id)
-        {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            else
             {
-                var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = id }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-
-                if(info != null)
-                {
-                    var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = id, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
-
-                    if(objResult > 0)
-                    {
-                        SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
-                        SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
-                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
-                    }
-
-                    return Json(new { Message = "Send mail success !" });
-                }
-                else
-                {
-                    return Json(new { Message = "Send mail fail !" });
-                }
+                return Json(new { Message = "Send mail fail !" });
             }
         }
 
@@ -516,43 +515,30 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult CheckCodeSaleOff(string Code, int Amount)
+        public async Task<ActionResult> CheckCodeSaleOff(string Code, int Amount)
         {
-            var result = false;
-            var message = "";
-            if (!string.IsNullOrEmpty(Code))
-            {
-                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-                {
-                    var Domain = Request.Url.Host;
-                    var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = Code, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    result = objNailCodeSale != null;
-                    if (result)
-                    {
-                        if(Amount < objNailCodeSale.MinAmountSaleOff)
-                        {
-                            result = false;
-                            message = $"Amount payment less than {string.Format("{0:N0}", objNailCodeSale.MinAmountSaleOff)}. Code sale off not available.";
-                        }
-                    }
-                    else
-                    {
-                        message = "Code sale off incorrect";
-                    }
-                }
-            }
-            return Json(new { Status = result, Message = message });
+            var Token = ViewBag.Token;
+            var Domain = Request.Url.Host;
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/Home/CheckCodeSaleOff?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { Domain, Code, Amount }));
+            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
+
+            var status = objResult.Status;
+            var message = objResult.Message;
+
+            return Json(new { Status = status, Message = message });
         }
 
         [HttpPost]
-        public ActionResult GetListNailCodeSaleByDomain()
+        public async Task<ActionResult> GetListNailCodeSaleByDomain()
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-            {
-                var Domain = Request.Url.Host;
-                var data = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSalesByDomain", new { @strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).ToList();
-                return Json(data);
-            }
+            var Token = ViewBag.Token;
+            var Domain = Request.Url.Host;
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { Domain }));
+            var objResult = JsonConvert.DeserializeObject<NailCodeSale>(result);
+
+            return Json(objResult);
         }
     }
 }
