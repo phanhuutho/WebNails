@@ -102,7 +102,6 @@ namespace WebNails.Controllers
             var dataJson = new
             {
                 EmailPaypal,
-                Domain,
                 strID,
                 Transactions,
                 amount,
@@ -111,10 +110,9 @@ namespace WebNails.Controllers
                 message,
                 name_receiver,
                 name_buyer,
-                img,
                 codesale
             };
-            var result = await PostStringJsonFromURL(string.Format("{0}/Payment/Process?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(dataJson));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Payment/Process?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(dataJson));
             var AmountResult = JsonConvert.DeserializeObject(result).Amount;
 
             ViewBag.EmailPaypal = EmailPaypal ?? "";
@@ -167,6 +165,7 @@ namespace WebNails.Controllers
         public async Task<ActionResult> Finish()
         {
             var Token = ViewBag.Token;
+            var Domain = Request.Url.Host;
             string responseCode;
             string SecureHash;
             var strAmount = string.Empty;
@@ -201,7 +200,7 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                var result = await PostStringJsonFromURL(string.Format("{0}/Payment/Process?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { strID }));
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Payment/Process?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { strID }));
                 var objResult = JsonConvert.DeserializeObject<dynamic>(result);
                 var count = int.Parse(string.Format(objResult.count));
                 var info = JsonConvert.DeserializeObject<InfoPaypal>(objResult.info);
@@ -384,9 +383,9 @@ namespace WebNails.Controllers
 
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/Home/Login?token={1}&Domain={2}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(model));
-            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
-            var IsLogin = bool.Parse(string.Format(objResult.IsLogin));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(model));
+            var objResult = JsonConvert.DeserializeObject<LoginResult>(result);
+            var IsLogin = objResult.IsLogin;
 
             if (IsLogin)
             {
@@ -440,11 +439,11 @@ namespace WebNails.Controllers
 
             var intCountSort = Utilities.PagingHelper.CountSort;
 
-            var result = await GetStringJsonFromURL(string.Format("{0}/Home/GetGiftManage?token={1}&Domain={2}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, Token, Domain, intSkip, intCountSort, search));
-            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
+            var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, Token, Domain, intSkip, intCountSort, search));
+            var objResult = JsonConvert.DeserializeObject<GiftManagelResult>(result);
 
             var Count = objResult.Count;
-            var data = JsonConvert.DeserializeObject<InfoPaypal>(objResult.data);
+            var data = objResult.Data;
 
             ViewBag.Count = Count;
 
@@ -456,7 +455,9 @@ namespace WebNails.Controllers
         {
             var Token = ViewBag.Token;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/Home/UpdateCompleted?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { id }));
+            var Domain = Request.Url.Host;
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/UpdateCompleted?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { id }));
             var objResult = JsonConvert.DeserializeObject<int>(result);
 
             if (objResult > 0)
@@ -474,11 +475,13 @@ namespace WebNails.Controllers
         {
             var Token = ViewBag.Token;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/Home/SendMail?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { id }));
-            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
+            var Domain = Request.Url.Host;
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { id }));
+            var objResult = JsonConvert.DeserializeObject<SendMailResult>(result);
 
             var Count = objResult.Count;
-            var info = JsonConvert.DeserializeObject<InfoPaypal>(objResult.data);
+            var info = objResult.Data;
 
             if (info != null)
             {
@@ -520,8 +523,8 @@ namespace WebNails.Controllers
             var Token = ViewBag.Token;
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/Home/CheckCodeSaleOff?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { Domain, Code, Amount }));
-            var objResult = JsonConvert.DeserializeObject<dynamic>(result);
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
+            var objResult = JsonConvert.DeserializeObject<CheckCodeSaleResult>(result);
 
             var status = objResult.Status;
             var message = objResult.Message;
@@ -535,8 +538,8 @@ namespace WebNails.Controllers
             var Token = ViewBag.Token;
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, Token), JsonConvert.SerializeObject(new { Domain }));
-            var objResult = JsonConvert.DeserializeObject<NailCodeSale>(result);
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, Token, Domain), "");
+            var objResult = JsonConvert.DeserializeObject<List<NailCodeSale>>(result);
 
             return Json(objResult);
         }

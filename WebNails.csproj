@@ -136,6 +136,7 @@
     <Compile Include="Models\InfoPaypal.cs" />
     <Compile Include="Models\InfoPaypalModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\ModelResult.cs" />
     <Compile Include="Models\NailCodeSale.cs" />
     <Compile Include="Models\PricesModel.cs" />
     <Compile Include="Models\RegisterCouponModel.cs" />
