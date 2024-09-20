@@ -300,6 +300,7 @@
     <Content Include="Content\images\services\services_little_kids.jpg" />
     <Content Include="Content\images\services\services_manicure.jpg" />
     <Content Include="Content\images\services\services_manicure_gel_polish.jpg" />
+    <Content Include="Content\images\services\services_microblading_ombre_brows.jpg" />
     <Content Include="Content\images\services\services_nails_acrylic.jpg" />
     <Content Include="Content\images\services\services_nails_enhancements.jpg" />
     <Content Include="Content\images\services\services_pedicure.jpg" />
