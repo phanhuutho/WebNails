@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "Allure Nail Bar",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Vanity Nail Spa",
+  "HyperLinkTell": "tel:(954)9561995",
+  "TextTell": "(954)-956-1995",
+  "GooglePlus": "https://www.google.com/search?q=Vanity+Nails+33063",
+  "Address": "3390 NW 62nd Ave, Margate, FL 33063",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/6xHWSJBZq9HgvG419",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14310.855947583565!2d-80.204218!3d26.2709445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d904b4f13c3487%3A0x62552c200c0a4648!2sVanity%20Nail%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2s!4v1726854871888!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
