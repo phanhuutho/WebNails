@@ -14,12 +14,16 @@ using Dapper;
 using System.Data;
 using System.Web.Security;
 using System.Threading.Tasks;
+using WebNails.Utilities;
 
 namespace WebNails.Controllers
 {
     public class HomeController : BaseController
     {
         private readonly string ApiPayment = ConfigurationManager.AppSettings["ApiPayment"];
+        private readonly string TokenKeyAPI = System.Configuration.ConfigurationManager.AppSettings["TokenKeyAPI"];
+        private readonly string SaltKeyAPI = System.Configuration.ConfigurationManager.AppSettings["SaltKeyAPI"];
+        private readonly string VectorKeyAPI = System.Configuration.ConfigurationManager.AppSettings["VectorKeyAPI"];
 
         public ActionResult Index()
         {
@@ -94,7 +98,6 @@ namespace WebNails.Controllers
         {
             var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-            var Token = ViewBag.Token;
             var Cost = float.Parse(amount);
             var Domain = Request.Url.Host;
             var Transactions = GenerateUniqueCode();
@@ -112,8 +115,13 @@ namespace WebNails.Controllers
                 name_buyer,
                 codesale
             };
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Payment/Process?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(dataJson));
-            var AmountResult = JsonConvert.DeserializeObject(result).Amount;
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+            var AmountResult = JsonConvert.DeserializeObject(result);
 
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = string.Format("{0}", AmountResult) ?? string.Format("{0}", "1");
@@ -164,7 +172,6 @@ namespace WebNails.Controllers
 
         public async Task<ActionResult> Finish()
         {
-            var Token = ViewBag.Token;
             var Domain = Request.Url.Host;
             string responseCode;
             string SecureHash;
@@ -200,7 +207,11 @@ namespace WebNails.Controllers
 
                 responseCode = "0";
 
-                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Payment/Process?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { strID }));
+                var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                var jsonStringToken = JsonConvert.SerializeObject(Token);
+                var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
                 var objResult = JsonConvert.DeserializeObject<dynamic>(result);
                 var count = int.Parse(string.Format(objResult.count));
                 var info = JsonConvert.DeserializeObject<InfoPaypal>(objResult.info);
@@ -375,15 +386,17 @@ namespace WebNails.Controllers
         [HttpPost]
         public async Task<ActionResult> Login(LoginModel model)
         {
-            var Token = ViewBag.Token;
-
             var queryString = Request.UrlReferrer.Query;
 
             var queryDictionary = HttpUtility.ParseQueryString(queryString);
 
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(model));
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncryptToken = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}", ApiPayment, strEncryptToken, Domain), JsonConvert.SerializeObject(model));
             var objResult = JsonConvert.DeserializeObject<LoginResult>(result);
             var IsLogin = objResult.IsLogin;
 
@@ -431,15 +444,17 @@ namespace WebNails.Controllers
 
         public async Task<ActionResult> GetGiftManage(string search = "")
         {
-            var Token = ViewBag.Token;
-
             var Domain = Request.Url.Host;
 
             var intSkip = Utilities.PagingHelper.Skip;
 
             var intCountSort = Utilities.PagingHelper.CountSort;
 
-            var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, Token, Domain, intSkip, intCountSort, search));
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, strEncrypt, Domain, intSkip, intCountSort, search));
             var objResult = JsonConvert.DeserializeObject<GiftManagelResult>(result);
 
             var Count = objResult.Count;
@@ -453,11 +468,13 @@ namespace WebNails.Controllers
         [HttpPost]
         public async Task<ActionResult> UpdateCompleted(Guid id)
         {
-            var Token = ViewBag.Token;
-
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/UpdateCompleted?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { id }));
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/UpdateCompleted?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
             var objResult = JsonConvert.DeserializeObject<int>(result);
 
             if (objResult > 0)
@@ -473,11 +490,13 @@ namespace WebNails.Controllers
         [HttpPost]
         public async Task<ActionResult> SendMail(Guid id)
         {
-            var Token = ViewBag.Token;
-
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { id }));
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
             var objResult = JsonConvert.DeserializeObject<SendMailResult>(result);
 
             var Count = objResult.Count;
@@ -520,10 +539,13 @@ namespace WebNails.Controllers
         [HttpPost]
         public async Task<ActionResult> CheckCodeSaleOff(string Code, int Amount)
         {
-            var Token = ViewBag.Token;
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}", ApiPayment, Token, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
             var objResult = JsonConvert.DeserializeObject<CheckCodeSaleResult>(result);
 
             var status = objResult.Status;
@@ -535,10 +557,13 @@ namespace WebNails.Controllers
         [HttpPost]
         public async Task<ActionResult> GetListNailCodeSaleByDomain()
         {
-            var Token = ViewBag.Token;
             var Domain = Request.Url.Host;
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, Token, Domain), "");
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, strEncrypt, Domain), "");
             var objResult = JsonConvert.DeserializeObject<List<NailCodeSale>>(result);
 
             return Json(objResult);
