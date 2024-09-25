@@ -148,9 +148,13 @@ namespace WebNails.Controllers
             using (var httpClient = new HttpClient())
             {
                 var response = await httpClient.GetAsync(url);
-                response.EnsureSuccessStatusCode();
-                var result = await response.Content.ReadAsStringAsync();
-                return result;
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    response.EnsureSuccessStatusCode();
+                    var result = await response.Content.ReadAsStringAsync();
+                    return result;
+                }
+                return "";
             }
         }
         public async Task<string> PostStringJsonFromURL(string url, string dataJson)
@@ -159,9 +163,13 @@ namespace WebNails.Controllers
             using (var httpClient = new HttpClient())
             {
                 var response = await httpClient.PostAsync(url, requestContent);
-                response.EnsureSuccessStatusCode();
-                var result = await response.Content.ReadAsStringAsync();
-                return result;
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    response.EnsureSuccessStatusCode();
+                    var result = await response.Content.ReadAsStringAsync();
+                    return result;
+                }
+                return "";
             }
         }
     }
