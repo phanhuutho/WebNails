@@ -15,7 +15,7 @@ header {
 
 .logo, .navbar-brand img {
     max-width: 125px;
-    background: var(--bg-main);
+    background: var(--color-theme);
 }
 
 .logo img {
@@ -32,7 +32,7 @@ footer {
 }
 
 .logo-footer {
-    background: var(--bg-main);
+    background: var(--color-theme);
 }
 
 .logo-footer img {
@@ -176,6 +176,10 @@ main {
 }
 /* -------------------------------------------------- */
 
+.box-prices .row {
+    margin-bottom: 7px;
+}
+
 /*Page Home*/
 .beauty-spa .box-image .image1 {
     background-image: url(../images/home/home_service_manicure.jpg);
@@ -188,12 +192,12 @@ main {
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_nails_enhancements.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
+    background-image: url(../images/home/home_service_waxing.jpg);
     background-position: 45% 50%;
 }
 
@@ -384,8 +388,12 @@ main {
         font-size: 0.775em;
     }
     /*Header*/
-    .logo-brand .navbar-brand, .navbar-brand img {
-        background: unset;
+    .logo-brand .navbar-brand {
+        background: var(--color-theme);
+    }
+    .navbar-brand img {
+        background: var(--bg-main);
+        max-width: 80px;
     }
     /* -------------------------------------------------- */
 
@@ -462,6 +470,10 @@ main {
         height: 310px !important;
     }
     /* -------------------------------------------------- */
+
+    .box-prices {
+        font-size: 7pt;
+    }
 
     /*Page Home*/
     .business .business-inner .box-image .image-business {

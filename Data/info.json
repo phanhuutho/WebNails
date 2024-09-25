@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "MK Nails",
-  "HyperLinkTell": "tel:(317)6888093",
-  "TextTell": "(317)-688-8093",
-  "GooglePlus": "https://www.google.com/search?q=MK+Nails+46033",
-  "Address": "2007 E Greyhound Pass suite 5, Carmel, IN 46033",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yz8jpGpSDb1bKoFT8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.370040084334!2d-86.1242219!3d40.0007963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814afa9df690955%3A0xb09091fb218900b!2s(%2410%20OFF%20Coupons%20%26%20More%20Promotion)%20MK%20Nails!5e0!3m2!1sen!2s!4v1715962512429!5m2!1sen!2s",
+  "Name": "SOHO Nail & Spa",
+  "HyperLinkTell": "tel:(636)5360760",
+  "TextTell": "(636)-536-0760",
+  "GooglePlus": "https://www.google.com/search?q=Soho+Nails+63017",
+  "Address": "1631 Clarkson Rd, Chesterfield, MO 63017",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/pgWW58WVMRCECUp26",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12464.486266627833!2d-90.5656727!3d38.646085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8d52996e85b33%3A0xaff021a6caa0151a!2sSOHO%20Nail%20%26%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2sus!4v1727282407424!5m2!1sen!2sus",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
@@ -24,14 +28,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/SohoNailsAndSpaChesterfield/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/sohonailsandspa63017/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
@@ -50,5 +54,5 @@
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
   },
-  "Token": ""
+  "Token": "23f3f00c-6547-4ed6-b80c-27b5cfa1fa84"
 }

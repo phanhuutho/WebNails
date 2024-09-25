@@ -41,3 +41,11 @@ function ReloadSliderImageMobile(){
         $("img", ".slider-5").attr("src", "/Content/images/banner/home/home_banner_5_mobile.jpg");
     }
 }
+
+function OpenModalService(obj, title) {
+    var $detail = $(obj).parent(".box-inner").find(".box-modal").html();
+    var $modal = $("#ModalDetailService");
+    $modal.find(".modal-title").html(title);
+    $modal.find(".modal-body").html("").append($detail);
+    $modal.modal("show");
+}
