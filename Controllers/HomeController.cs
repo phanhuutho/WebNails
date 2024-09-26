@@ -120,7 +120,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
             var AmountResult = JsonConvert.DeserializeObject(result);
 
             ViewBag.EmailPaypal = EmailPaypal ?? "";
@@ -211,7 +211,7 @@ namespace WebNails.Controllers
                 var jsonStringToken = JsonConvert.SerializeObject(Token);
                 var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Finish?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Finish?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
                 var objResult = JsonConvert.DeserializeObject<PaypalResult>(result);
                 objResult = objResult ?? new PaypalResult { Count = 0, Data = null };
 
@@ -398,7 +398,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncryptToken = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}", ApiPayment, strEncryptToken, Domain), JsonConvert.SerializeObject(model));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}&Domain={2}", ApiPayment, strEncryptToken, Domain), JsonConvert.SerializeObject(model));
             var objResult = JsonConvert.DeserializeObject<LoginResult>(result);
             objResult = objResult ?? new LoginResult { IsLogin = false };
 
@@ -458,7 +458,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, strEncrypt, Domain, intSkip, intCountSort, search));
+            var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&Domain={2}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, strEncrypt, Domain, intSkip, intCountSort, search));
             var objResult = JsonConvert.DeserializeObject<GiftManagelResult>(result);
             objResult = objResult ?? new GiftManagelResult { Count = 0, Data = new List<InfoPaypal>() };
 
@@ -479,7 +479,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/UpdateCompleted?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/UpdateCompleted?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
             var objResult = JsonConvert.DeserializeObject<int>(result);
 
             if (objResult > 0)
@@ -501,7 +501,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
             var objResult = JsonConvert.DeserializeObject<SendMailResult>(result);
             objResult = objResult ?? new SendMailResult {  Count = 0, Data = null };
 
@@ -551,7 +551,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
             var objResult = JsonConvert.DeserializeObject<CheckCodeSaleResult>(result);
             objResult = objResult ?? new CheckCodeSaleResult { Status = false, Message = "Code Invalid" };
 
@@ -570,7 +570,7 @@ namespace WebNails.Controllers
             var jsonStringToken = JsonConvert.SerializeObject(Token);
             var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, strEncrypt, Domain), "");
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), "");
             var objResult = JsonConvert.DeserializeObject<List<NailCodeSale>>(result);
             objResult = objResult ?? new List<NailCodeSale>();
 
