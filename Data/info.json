@@ -1,11 +1,11 @@
 ﻿{
   "Name": "SOHO Nail & Spa",
-  "HyperLinkTell": "tel:(636)5360760",
-  "TextTell": "(636)-536-0760",
-  "GooglePlus": "https://www.google.com/search?q=Soho+Nails+63017",
-  "Address": "1631 Clarkson Rd, Chesterfield, MO 63017",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/pgWW58WVMRCECUp26",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12464.486266627833!2d-90.5656727!3d38.646085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8d52996e85b33%3A0xaff021a6caa0151a!2sSOHO%20Nail%20%26%20Spa%20(15%25%20OFF%20New%20Customers)!5e0!3m2!1sen!2sus!4v1727282407424!5m2!1sen!2sus",
+  "HyperLinkTell": "tel:(314)5282299",
+  "TextTell": "(314)-528-2299",
+  "GooglePlus": "https://www.google.com/search?q=SOHO+Nail+Bar+MO+63126",
+  "Address": "9567 Watson Rd, Saint Louis, MO 63126",
+  "LinkGoogleMapAddress": "",
+  "LinkIFrameGoogleMap": "",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -28,14 +28,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "https://www.facebook.com/SohoNailsAndSpaChesterfield/",
+    "Url": "",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "https://www.instagram.com/sohonailsandspa63017/",
+    "Url": "",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"

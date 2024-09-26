@@ -267,11 +267,14 @@
                             <span class="fa fa-phone"></span>
                         </div>
                     </a>
-                    <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
-                        <div class="circle bg-success">
-                            <span class="fa fa-map-marker"></span>
-                        </div>
-                    </a>
+                    @if (ViewBag.LinkGoogleMapAddress != "")
+                    {
+                        <a href="@ViewBag.LinkGoogleMapAddress" class="social-icon-link" title="Map">
+                            <div class="circle bg-success">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                        </a>
+                    }
                     <div class="clearfix"></div>
                     @{
                         var ListSocials = new List<WebNails.Models.SocialModel>();
