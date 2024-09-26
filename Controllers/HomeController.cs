@@ -21,9 +21,9 @@ namespace WebNails.Controllers
     public class HomeController : BaseController
     {
         private readonly string ApiPayment = ConfigurationManager.AppSettings["ApiPayment"];
-        private readonly string TokenKeyAPI = System.Configuration.ConfigurationManager.AppSettings["TokenKeyAPI"];
-        private readonly string SaltKeyAPI = System.Configuration.ConfigurationManager.AppSettings["SaltKeyAPI"];
-        private readonly string VectorKeyAPI = System.Configuration.ConfigurationManager.AppSettings["VectorKeyAPI"];
+        private readonly string TokenKeyAPI = ConfigurationManager.AppSettings["TokenKeyAPI"];
+        private readonly string SaltKeyAPI = ConfigurationManager.AppSettings["SaltKeyAPI"];
+        private readonly string VectorKeyAPI = ConfigurationManager.AppSettings["VectorKeyAPI"];
 
         public ActionResult Index()
         {
@@ -211,10 +211,12 @@ namespace WebNails.Controllers
                 var jsonStringToken = JsonConvert.SerializeObject(Token);
                 var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
-                var objResult = JsonConvert.DeserializeObject<dynamic>(result);
-                var count = int.Parse(string.Format(objResult.count));
-                var info = JsonConvert.DeserializeObject<InfoPaypal>(objResult.info);
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Finish?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
+                var objResult = JsonConvert.DeserializeObject<PaypalResult>(result);
+                objResult = objResult ?? new PaypalResult { Count = 0, Data = null };
+
+                var count = objResult.Count;
+                var info = objResult.Data;
 
                 if (count > 0)
                 {
@@ -398,11 +400,13 @@ namespace WebNails.Controllers
 
             var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}", ApiPayment, strEncryptToken, Domain), JsonConvert.SerializeObject(model));
             var objResult = JsonConvert.DeserializeObject<LoginResult>(result);
+            objResult = objResult ?? new LoginResult { IsLogin = false };
+
             var IsLogin = objResult.IsLogin;
 
             if (IsLogin)
             {
-                var ticket = new FormsAuthenticationTicket(1, model.Username, System.DateTime.Now, System.DateTime.Now.AddHours(1), true, "UserLogged", FormsAuthentication.FormsCookiePath);
+                var ticket = new FormsAuthenticationTicket(1, model.Username, DateTime.Now, DateTime.Now.AddHours(1), true, "UserLogged", FormsAuthentication.FormsCookiePath);
                 var strEncrypt = FormsAuthentication.Encrypt(ticket);
                 var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, strEncrypt);
                 Response.Cookies.Add(cookie);
@@ -436,7 +440,7 @@ namespace WebNails.Controllers
             var cookie = Request.Cookies[FormsAuthentication.FormsCookieName];
             if (cookie != null)
             {
-                cookie.Expires = System.DateTime.Now.AddDays(-1);
+                cookie.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(cookie);
             }
             return RedirectToAction("Login");
@@ -446,9 +450,9 @@ namespace WebNails.Controllers
         {
             var Domain = Request.Url.Host;
 
-            var intSkip = Utilities.PagingHelper.Skip;
+            var intSkip = PagingHelper.Skip;
 
-            var intCountSort = Utilities.PagingHelper.CountSort;
+            var intCountSort = PagingHelper.CountSort;
 
             var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
             var jsonStringToken = JsonConvert.SerializeObject(Token);
@@ -456,6 +460,7 @@ namespace WebNails.Controllers
 
             var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, strEncrypt, Domain, intSkip, intCountSort, search));
             var objResult = JsonConvert.DeserializeObject<GiftManagelResult>(result);
+            objResult = objResult ?? new GiftManagelResult { Count = 0, Data = new List<InfoPaypal>() };
 
             var Count = objResult.Count;
             var data = objResult.Data;
@@ -498,6 +503,7 @@ namespace WebNails.Controllers
 
             var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
             var objResult = JsonConvert.DeserializeObject<SendMailResult>(result);
+            objResult = objResult ?? new SendMailResult {  Count = 0, Data = null };
 
             var Count = objResult.Count;
             var info = objResult.Data;
@@ -547,6 +553,7 @@ namespace WebNails.Controllers
 
             var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
             var objResult = JsonConvert.DeserializeObject<CheckCodeSaleResult>(result);
+            objResult = objResult ?? new CheckCodeSaleResult { Status = false, Message = "Code Invalid" };
 
             var status = objResult.Status;
             var message = objResult.Message;
@@ -565,6 +572,7 @@ namespace WebNails.Controllers
 
             var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}", ApiPayment, strEncrypt, Domain), "");
             var objResult = JsonConvert.DeserializeObject<List<NailCodeSale>>(result);
+            objResult = objResult ?? new List<NailCodeSale>();
 
             return Json(objResult);
         }

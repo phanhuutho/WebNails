@@ -17,6 +17,12 @@ namespace WebNails.Models
         public InfoPaypal Data { get; set; }
     }
 
+    public class PaypalResult
+    {
+        public int Count { get; set; }
+        public InfoPaypal Data { get; set; }
+    }
+
     public class CheckCodeSaleResult
     {
         public bool Status { get; set; }
