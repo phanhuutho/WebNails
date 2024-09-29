@@ -62,7 +62,7 @@ namespace WebNails.Controllers
         [HttpPost]
         public ActionResult RegisterCoupon(RegisterCouponModel item)
         {
-            SendMailRegisterCoupon(item);
+            //SendMailRegisterCoupon(item);
             return View("register_coupon_success");
         }
 
@@ -421,7 +421,7 @@ namespace WebNails.Controllers
 
                 var queryDictionary = HttpUtility.ParseQueryString(queryString);
 
-                var Domain = Request.Url.Host;
+                var Domain = "oceannailsandspasc.com"; //Request.Url.Host;
 
                 var checklogin = sqlConnect.Query("spUserSite_GetByUsernameAndPassword", new { strUsername = model.Username, strPassword = model.Password, strDomain = Domain }, commandType: CommandType.StoredProcedure).Count() == 1;
                 if (checklogin)
@@ -471,7 +471,7 @@ namespace WebNails.Controllers
         {
             using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
             {
-                var Domain = Request.Url.Host;
+                var Domain = "oceannailsandspasc.com"; //Request.Url.Host;
 
                 var intSkip = Utilities.PagingHelper.Skip;
 
@@ -561,7 +561,7 @@ namespace WebNails.Controllers
             {
                 using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
                 {
-                    var Domain = Request.Url.Host;
+                    var Domain = "oceannailsandspasc.com"; //Request.Url.Host;
                     var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = Code, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
                     result = objNailCodeSale != null;
                     if (result)
@@ -586,7 +586,7 @@ namespace WebNails.Controllers
         {
             using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
             {
-                var Domain = Request.Url.Host;
+                var Domain = "oceannailsandspasc.com"; //Request.Url.Host;
                 var data = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSalesByDomain", new { @strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).ToList();
                 return Json(data);
             }
