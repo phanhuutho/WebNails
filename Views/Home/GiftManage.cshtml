@@ -119,5 +119,18 @@
                 });
             }
         }
+
+        function ShowHideSendMail(obj) {
+            var $btnSendMail = $(obj).parents(".send-mail").find("#btnSendMail");
+            var dataShowHide = $(obj).attr("data-show-hide");
+            if (dataShowHide == "0") {
+                $btnSendMail.show();
+                $(obj).attr("data-show-hide", "1");
+            }
+            else {
+                $btnSendMail.hide();
+                $(obj).attr("data-show-hide", "0");
+            }
+        }
     </script>
 }
