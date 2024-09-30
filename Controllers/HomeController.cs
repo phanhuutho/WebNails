@@ -202,10 +202,10 @@ namespace WebNails.Controllers
                 //Capture exception for manual investigation
             }
 
-            ProcessVerificationResponse(verificationResponse);
+            ProcessVerificationResponse(verificationResponse, ipnRequest);
         }
 
-        private void ProcessVerificationResponse(string verificationResponse)
+        private void ProcessVerificationResponse(string verificationResponse, HttpRequestBase ipnRequest)
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("verificationResponse: " + verificationResponse);
