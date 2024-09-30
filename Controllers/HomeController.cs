@@ -13,6 +13,9 @@ using System.Data.SqlClient;
 using Dapper;
 using System.Data;
 using System.Web.Security;
+using System.Text;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace WebNails.Controllers
 {
@@ -92,170 +95,138 @@ namespace WebNails.Controllers
             var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
 
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-            {
-                var Domain = Request.Url.Host;
-                var Transactions = GenerateUniqueCode();
+            var Cost = float.Parse(amount);
 
-                var IsValidCodeSale = false;
-                var ValidCode = 0;
-                var DescriptionCode = "";
-                var Cost = float.Parse(amount);
-                if (!string.IsNullOrEmpty(codesale))
-                {
-                    var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = codesale, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    if(objNailCodeSale != null)
-                    {
-                        IsValidCodeSale = float.Parse(amount) >= float.Parse(objNailCodeSale.MinAmountSaleOff.ToString());
-                        if (!IsValidCodeSale)
-                        {
-                            ValidCode = 1;
-                            DescriptionCode = $"Amount payment less than {string.Format("{0:N0}", objNailCodeSale.MinAmountSaleOff)}. Code sale off not available.";
-                        }
-                        else
-                        {
-                            DescriptionCode = "Code sale off correct";
-                            var amount_update = Cost * (100 - objNailCodeSale.Sale) / 100;
-                            amount = string.Format("{0:N2}", amount_update);
-                        }
-                    }
-                    else
-                    {
-                        ValidCode = 2;
-                        DescriptionCode = "Code sale off incorrect";
-                    }
-                } 
-
-                var objResult = sqlConnect.Execute("spInfoPaypal_InsertBefore", new
-                {
-                    strID = strID,
-                    strDomain = Domain,
-                    strTransactions = Transactions,
-                    strCode = Transactions,
-                    strOwner = EmailPaypal,
-                    strStock = stock,
-                    strEmail = email,
-                    strNameReceiver = name_receiver,
-                    strNameBuyer = name_buyer,
-                    intAmount = float.Parse(amount),
-                    strMessage = message,
-                    strCodeSaleOff = codesale,
-                    intAmountReal = Cost,
-                    intValidCode = ValidCode,
-                    strDescriptionValidCode = DescriptionCode
-                }, commandType: CommandType.StoredProcedure);
-
-                ViewBag.EmailPaypal = EmailPaypal ?? "";
-                ViewBag.Amount = string.Format("{0}", amount) ?? string.Format("{0}", "1");
-                ViewBag.Stock = stock ?? "";
-                ViewBag.Email = email ?? "";
-                ViewBag.NameReceiver = name_receiver ?? "";
-                ViewBag.NameBuyer = name_buyer ?? "";
-                ViewBag.Img = img;
-                ViewBag.Cost = Cost;
-                ViewBag.CodeSaleOff = codesale;
-
-                var cookieDataBefore = new HttpCookie("DataBefore");
-                cookieDataBefore["Amount"] = string.Format("{0}", amount);
-                cookieDataBefore["Email"] = email;
-                cookieDataBefore["Stock"] = stock;
-                cookieDataBefore["Message"] = message;
-                cookieDataBefore["NameReceiver"] = name_receiver;
-                cookieDataBefore["NameBuyer"] = name_buyer;
-                cookieDataBefore["Img"] = img;
-                cookieDataBefore["Guid"] = strID.ToString();
-                cookieDataBefore["Cost"] = string.Format("{0:N2}", Cost);
-                cookieDataBefore["CodeSaleOff"] = codesale;
-                cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
-                Response.Cookies.Add(cookieDataBefore);
-            }
+            ViewBag.Invoice = strID;
+            ViewBag.EmailPaypal = EmailPaypal ?? "";
+            ViewBag.Amount = string.Format("{0}", amount) ?? string.Format("{0}", "1");
+            ViewBag.Stock = stock ?? "";
+            ViewBag.Email = email ?? "";
+            ViewBag.NameReceiver = name_receiver ?? "";
+            ViewBag.NameBuyer = name_buyer ?? "";
+            ViewBag.Img = img;
+            ViewBag.Cost = Cost;
+            ViewBag.CodeSaleOff = codesale;
 
             return View();
         }
 
         public ActionResult PaymentResponse()
         {
-            var data = new RouteValueDictionary();
-            foreach (var key in Request.Form.AllKeys)
-            {
-                data.Add(key, Request[key]);
-            }
-            foreach (var key in Request.QueryString.AllKeys)
-            {
-                data.Add(key, Request[key]);
-            }
-            foreach (var key in Request.Headers.AllKeys)
-            {
-                data.Add(key, Request[key]);
-            }
-
             TempData["PayerID"] = Request["PayerID"];
-            return RedirectToAction("Finish", data);
+            return RedirectToAction("Finish");
         }
 
         public ActionResult Finish()
         {
-            string responseCode;
-            string SecureHash;
-            var strAmount = string.Empty;
-            var strCost = string.Empty;
-            var strCodeSaleOff = string.Empty;
-            var strEmail = string.Empty;
-            var strStock = string.Empty;
-            var strNameReceiver = string.Empty;
-            var strNameBuyer = string.Empty;
-            var strMessage = string.Empty;
-            var strImg = string.Empty;
-            var strID = new Guid();
-
-            HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
-            if (cookieDataBefore != null)
-            {
-                strAmount = cookieDataBefore["Amount"];
-                strCost = cookieDataBefore["Cost"];
-                strCodeSaleOff = cookieDataBefore["CodeSaleOff"];
-                strEmail = cookieDataBefore["Email"];
-                strStock = cookieDataBefore["Stock"];
-                strNameReceiver = cookieDataBefore["NameReceiver"];
-                strNameBuyer = cookieDataBefore["NameBuyer"];
-                strMessage = cookieDataBefore["Message"];
-                strImg = cookieDataBefore["Img"];
-                strID = Guid.Parse(cookieDataBefore["Guid"]);
-            }
-
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
             {
-                SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
-
-                responseCode = "0";
-
-                //var strCode = GenerateUniqueCode();
-                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-                {
-                    var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = strID }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-
-                    if(info != null)
-                    {
-                        var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = strID, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
-
-                        if (objResult > 0)
-                        {
-                            SendMailToOwner(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
-                            SendMailToBuyer(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
-                            SendMailToReceiver(strStock, strEmail, string.Format("{0:N2}", strCost), info.Code, strNameReceiver, strNameBuyer, strImg);
-                        }
-                    }
-                }    
+                ViewBag.SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
+                ViewBag.ResponseCode = "0";
             }
             else
             {
-                SecureHash = "<font color='red'><strong>FAIL</strong></font>";
-                responseCode = "-1";
+                ViewBag.SecureHash = "<font color='red'><strong>FAIL</strong></font>";
+                ViewBag.ResponseCode = "-1";
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public HttpStatusCodeResult PaypalIPN()
+        {
+            //Store the IPN received from PayPal
+            LogRequest(Request);
+
+            //Fire and forget verification task
+            Task.Run(() => VerifyTask(Request));
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
+        }
+
+        private void LogRequest(HttpRequestBase request)
+        {
+            StringBuilder sb = new StringBuilder();
+            var data = new RouteValueDictionary();
+            foreach (var key in request.Form.AllKeys)
+            {
+                data.Add(key, request[key]);
+                sb.AppendLine(key + ": " + request[key]);
+            }
+            foreach (var key in request.QueryString.AllKeys)
+            {
+                data.Add(key, request[key]);
+                sb.AppendLine(key + ": " + request[key]);
+            }
+            foreach (var key in request.Headers.AllKeys)
+            {
+                data.Add(key, request[key]);
+                sb.AppendLine(key + ": " + request[key]);
+            }
+            sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\log.txt", sb.ToString());
+            sb.Clear();
+        }
+
+        private void VerifyTask(HttpRequestBase ipnRequest)
+        {
+            var verificationResponse = string.Empty;
+
+            try
+            {
+                var verificationRequest = (HttpWebRequest)WebRequest.Create("https://www.paypal.com/cgi-bin/webscr");
+
+                //Set values for the verification request
+                verificationRequest.Method = "POST";
+                verificationRequest.ContentType = "application/x-www-form-urlencoded";
+                var param = Request.BinaryRead(ipnRequest.ContentLength);
+                var strRequest = Encoding.ASCII.GetString(param);
+
+                //Add cmd=_notify-validate to the payload
+                strRequest = "cmd=_notify-validate&" + strRequest;
+                verificationRequest.ContentLength = strRequest.Length;
+
+                //Attach payload to the verification request
+                var streamOut = new StreamWriter(verificationRequest.GetRequestStream(), Encoding.ASCII);
+                streamOut.Write(strRequest);
+                streamOut.Close();
+
+                //Send the request to PayPal and get the response
+                var streamIn = new StreamReader(verificationRequest.GetResponse().GetResponseStream());
+                verificationResponse = streamIn.ReadToEnd();
+                streamIn.Close();
+
+            }
+            catch
+            {
+                //Capture exception for manual investigation
             }
 
-            ViewBag.SecureHash = SecureHash;
-            ViewBag.ResponseCode = responseCode;
-            return View();
+            ProcessVerificationResponse(verificationResponse);
+        }
+
+        private void ProcessVerificationResponse(string verificationResponse)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("verificationResponse: " + verificationResponse);
+            if (verificationResponse.Equals("VERIFIED"))
+            {
+                // check that Payment_status=Completed
+                // check that Txn_id has not been previously processed
+                // check that Receiver_email is your Primary PayPal email
+                // check that Payment_amount/Payment_currency are correct
+                // process payment
+            }
+            else if (verificationResponse.Equals("INVALID"))
+            {
+                //Log for manual investigation
+            }
+            else
+            {
+                //Log error
+            }
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\log.txt", sb.ToString());
+            sb.Clear();
         }
 
         private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
