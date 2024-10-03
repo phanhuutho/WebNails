@@ -170,10 +170,9 @@ namespace WebNails.Controllers
 
         private void VerifyTask(HttpRequestBase ipnRequest)
         {
-            var verificationResponse = string.Empty;
-
             try
             {
+                var verificationResponse = string.Empty;
                 var verificationRequest = (HttpWebRequest)WebRequest.Create("https://www.paypal.com/cgi-bin/webscr");
 
                 //Set values for the verification request
@@ -196,13 +195,12 @@ namespace WebNails.Controllers
                 verificationResponse = streamIn.ReadToEnd();
                 streamIn.Close();
 
+                ProcessVerificationResponse(verificationResponse, ipnRequest);
             }
             catch
             {
                 //Capture exception for manual investigation
             }
-
-            ProcessVerificationResponse(verificationResponse, ipnRequest);
         }
 
         private void ProcessVerificationResponse(string verificationResponse, HttpRequestBase ipnRequest)
@@ -216,6 +214,10 @@ namespace WebNails.Controllers
                 // check that Receiver_email is your Primary PayPal email
                 // check that Payment_amount/Payment_currency are correct
                 // process payment
+                if (ipnRequest.HttpMethod == "POST" && ipnRequest["payment_status"] == "Completed" && ipnRequest["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
+                {
+                    sb.AppendLine("VERIFIED: OK");
+                }
             }
             else if (verificationResponse.Equals("INVALID"))
             {
