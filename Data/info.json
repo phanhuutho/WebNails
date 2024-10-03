@@ -8,7 +8,12 @@
   "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
@@ -44,5 +49,6 @@
     "Position": 5,
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
-  }
+  },
+  "Token": ""
 }
