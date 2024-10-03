@@ -1,17 +1,25 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "MJ Nail Bar",
+  "HyperLinkTell": "tel:(334)3630819",
+  "TextTell": "(334)-363-0819",
+  "GooglePlus": "https://www.google.com/search?q=MJ+NAIL+BAR+36801",
+  "Address": "2770 Enterprise Dr, Opelika, AL 36801",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/YQvALiY5k491VeHS9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13442.499253080507!2d-85.4079709!3d32.6161807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888ced19e598c731%3A0x51a1ee58b1a1151d!2sMJ%20Nail%20Bar%20(20%25%20OFF%20Grand%20Opening%20Coming%20Soon)!5e0!3m2!1sen!2sus!4v1727979085644!5m2!1sen!2sus",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-03.jpg"
     }
   ],
   "Prices": [],
