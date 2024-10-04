@@ -108,6 +108,9 @@ namespace WebNails.Controllers
             ViewBag.Cost = Cost;
             ViewBag.CodeSaleOff = codesale;
 
+            //insert InforPaypal, use store Insert InforPaypal Before
+            StringBuilder sb = new StringBuilder();
+
             return View();
         }
 
@@ -164,7 +167,7 @@ namespace WebNails.Controllers
                 sb.AppendLine(key + ": " + request[key]);
             }
             sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
-            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\log.txt", sb.ToString());
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\LogRequest.txt", sb.ToString());
             sb.Clear();
         }
 
@@ -227,7 +230,7 @@ namespace WebNails.Controllers
             {
                 //Log error
             }
-            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\log.txt", sb.ToString());
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse.txt", sb.ToString());
             sb.Clear();
         }
 
