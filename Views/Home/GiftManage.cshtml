@@ -57,8 +57,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header modal-primary">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h5 class="modal-title" id="myModalLabel">Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" aria-hidden="true">&nbsp;</button>
                 </div>
                 <div class="modal-body">
                     <div id="alert-message"></div>
@@ -117,6 +117,19 @@
                         GetGiftManage(parseInt('@(page)'));
                     }
                 });
+            }
+        }
+
+        function ShowHideSendMail(obj) {
+            var $btnSendMail = $(obj).parents(".send-mail").find("#btnSendMail");
+            var dataShowHide = $(obj).attr("data-show-hide");
+            if (dataShowHide == "0") {
+                $btnSendMail.show();
+                $(obj).attr("data-show-hide", "1");
+            }
+            else {
+                $btnSendMail.hide();
+                $(obj).attr("data-show-hide", "0");
             }
         }
     </script>
