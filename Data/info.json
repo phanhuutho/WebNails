@@ -1,11 +1,11 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Sassy Nails",
+  "HyperLinkTell": "tel:(916)8721564",
+  "TextTell": "(916)-872-1564",
+  "GooglePlus": "https://www.google.com/search?q=Sassy+Nail+CA+95661",
+  "Address": "8300 Sierra College Blvd Suite H, Roseville, CA 95661",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/iEqpYHqPa1jvu8mu7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12447.192311612604!2d-121.2268218!3d38.7453956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809b1fd0ca7b6511%3A0x5671978a0d984be2!2sSassy%20Nails%20-%20Granite%20Bay!5e0!3m2!1sen!2s!4v1728064747976!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -14,7 +14,40 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-06.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-07.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-08.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -31,7 +64,7 @@
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/sassy.nailsgranitebay/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
@@ -50,5 +83,5 @@
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
   },
-  "Token": ""
+  "Token": "23f3f00c-6547-4ed6-b80c-27b5cfa1fa84"
 }
