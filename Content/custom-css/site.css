@@ -16,10 +16,12 @@ header {
 .logo {
     max-width: 100px;
     background: var(--color-theme);
+    padding: 0;
 }
 
 .logo img {
     background: var(--bg-main);
+    padding: 0;
 }
 .logo, .logo img {
 
@@ -37,9 +39,10 @@ footer {
 
 .logo-footer img {
     background: var(--bg-main);
+    padding: 0;
 }
 .logo-footer, .logo-footer img {
-
+    padding: 0;
 }
 /* -------------------------------------------------- */
 
