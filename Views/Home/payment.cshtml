@@ -136,12 +136,14 @@
                 type: "POST",
                 url: "/get-discounts.html",
                 success: function (result) {
-                    $(".modal-body", "#ModalDiscounts").html("");
                     if (result && result.length > 0) {
                         for (var i = 0; i < result.length; i++) {
                             var item = result[i];
                             $(".modal-body", "#ModalDiscounts").append("<p>- Code: <b><a href='javascript:void(0);' onclick='AutoInputDiscountCode(this)' data-minimum-amount='" + item.MinAmountSaleOff + "' data-code='" + item.Code + "'>" + item.Code + "</a></b> for sale off <b>" + item.Sale + "%</b> amount value.</p>");
                         }
+                    }
+                    else {
+                        $(".modal-body", "#ModalDiscounts").html("No code discount");
                     }
                     $("#ModalDiscounts").modal("show");
                 },

@@ -25,5 +25,6 @@ namespace WebNails.Models
         public SocialModel Instagram { get; set; }
         public SocialModel Twitter { get; set; }
         public SocialModel Youtube { get; set; }
+        public string Token { get; set; }
     }
 }
