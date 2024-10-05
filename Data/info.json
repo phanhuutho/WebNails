@@ -1,14 +1,19 @@
 ﻿{
   "Name": "D’OR NAILS BAR AND LASHES",
-  "HyperLinkTell": "",
-  "TextTell": "",
+  "HyperLinkTell": "tel:(970)5799999",
+  "TextTell": "(970)-579-9999",
   "GooglePlus": "https://www.google.com/search?q=D%E2%80%99OR+NAILS+BAR+AND+LASHES+CO+80534",
   "Address": "4365 Ledge Rock Dr Suite 130, Johnstown, CO 80534",
   "LinkGoogleMapAddress": "",
   "LinkIFrameGoogleMap": "",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [],
+  "Coupons": [
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-01.jpg"
+    }
+  ],
   "Prices": [],
   "Telegram": {
     "Title": "Telegram",
