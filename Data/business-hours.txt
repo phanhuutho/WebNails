@@ -1,1 +1,2 @@
-﻿<p>Coming soon</p>
+﻿﻿<p>Mon - Sat: 9:30am - 7:00pm</p>
+<p>Sun: 10:30am - 5:00pm</p>
