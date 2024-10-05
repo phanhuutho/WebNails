@@ -1,20 +1,24 @@
 ﻿{
-  "Name": "GLOW Nails & Spa",
-  "HyperLinkTell": "tel:(949)7816045",
-  "TextTell": "(949)-781-6045",
-  "GooglePlus": "https://www.google.com/search?q=Glow+Nails+92626",
-  "Address": "3019 Harbor Blvd, Costa Mesa, CA 92626",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wqv1ENpy3mQMFaof6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.319975372935!2d-117.9201517!3d33.6809928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf0c131464d1%3A0xb9eac60a8ddb3f46!2s(%245%20OFF%20%26%2015%25%20OFF%20Coupon)%20GLOW%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1716565212404!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "House Of Polish",
+  "HyperLinkTell": "tel:(805)3881811",
+  "TextTell": "(805)-388-1811",
+  "GooglePlus": "https://www.google.com/search?q=house+of+polish+93010",
+  "Address": "2286 Pickwick Dr, Camarillo, CA 93010",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/bWwyfrBo19ZcEx2E9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13196.239301833255!2d-119.0395165!3d34.2214908!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e8373088966273%3A0x7882be5aa6f579c4!2sHouse%20Of%20Polish%20(October%20Special%20-%2020%25%20OFF%20All%20Services)!5e0!3m2!1sen!2s!4v1728152531645!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/0db9671e5842/customer/home",
   "ShowCoupon": true,
-  "Coupons": [
+  "Coupons": [],
+  "Prices": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
     }
   ],
-  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +28,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/people/Houseofpolish805/100068419908868/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/houseofpolish805/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
@@ -50,5 +54,5 @@
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
   },
-  "Token": ""
+  "Token": "23f3f00c-6547-4ed6-b80c-27b5cfa1fa84"
 }
