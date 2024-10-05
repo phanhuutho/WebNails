@@ -64,7 +64,7 @@ namespace WebNails.Controllers
         [HttpPost]
         public ActionResult RegisterCoupon(RegisterCouponModel item)
         {
-            //SendMailRegisterCoupon(item);
+            SendMailRegisterCoupon(item);
             return View("register_coupon_success");
         }
 
