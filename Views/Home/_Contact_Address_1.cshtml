@@ -1,17 +1,40 @@
 ﻿@{
     var ListOtherPhone = new List<dynamic>();
-    //ListOtherPhone.Add(new { HyperLinkTell = "tel:(840)2201009", TextTell = "(840)-220-1009" });
+    ListOtherPhone.Add(new { HyperLinkTell = "tel:(706)6671747", TextTell = "(706)-667-1747" });
     var Button_Contact_Rounded = ViewBag.Button_Contact_Rounded ?? "0";
 }
 <section class="py-4 container-lg">
     <div class="row">
-        <div class="col-lg-6">
-            <div class="box-tel">
-                <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel rounded rounded-@(Button_Contact_Rounded)">
-                    <span>@ViewBag.TextTell</span>
-                </a>
+        @if (ListOtherPhone.Count > 0)
+        {
+            <div class="col-lg-3">
+                <div class="box-tel">
+                    <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel rounded rounded-@(Button_Contact_Rounded)">
+                        <span>@ViewBag.TextTell</span>
+                    </a>
+                </div>
             </div>
-        </div>
+            foreach (var item in ListOtherPhone)
+            {
+                <div class="col-lg-3">
+                    <div class="box-tel">
+                        <a href="@item.HyperLinkTell" target="_self" class="btn btn-success btn-tel rounded rounded-@(Button_Contact_Rounded)">
+                            <span>@item.TextTell</span>
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-lg-6">
+                <div class="box-tel">
+                    <a href="@ViewBag.HyperLinkTell" target="_self" class="btn btn-success btn-tel rounded rounded-@(Button_Contact_Rounded)">
+                        <span>@ViewBag.TextTell</span>
+                    </a>
+                </div>
+            </div>
+        }
         <div class="col-lg-6">
             <div class="box-contact">
                 <a href="@ViewBag.LinkGoogleMapAddress" target="_blank" class="btn btn-success btn-contact rounded rounded-@(Button_Contact_Rounded)">
