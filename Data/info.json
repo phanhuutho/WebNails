@@ -1,20 +1,20 @@
 ﻿{
-  "Name": "MK Nails",
-  "HyperLinkTell": "tel:(317)6888093",
-  "TextTell": "(317)-688-8093",
-  "GooglePlus": "https://www.google.com/search?q=MK+Nails+46033",
-  "Address": "2007 E Greyhound Pass suite 5, Carmel, IN 46033",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yz8jpGpSDb1bKoFT8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.370040084334!2d-86.1242219!3d40.0007963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814afa9df690955%3A0xb09091fb218900b!2s(%2410%20OFF%20Coupons%20%26%20More%20Promotion)%20MK%20Nails!5e0!3m2!1sen!2s!4v1715962512429!5m2!1sen!2s",
+  "Name": "Friendly Nails",
+  "HyperLinkTell": "tel:(336)8555290",
+  "TextTell": "(336)-855-5290",
+  "GooglePlus": "https://www.google.com/search?q=Friendly+Nails+27410",
+  "Address": "5603 W Friendly Ave C, Greensboro, NC 27410",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/5NtiLYm6sR26PZcFA",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12896.742965333757!2d-79.88518!3d36.08896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531b7b555afc0d%3A0xcd26173b8e1367b!2sFriendly%20Nails%20(10%25%20OFF%20New%20customers%20or%20%2410%20OFF%20for%20Services%20%2499.99%2B)!5e0!3m2!1sen!2s!4v1728236678563!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
-  "Coupons": [
+  "Coupons": [],
+  "Prices": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
+      "Src": "/Content/images/price-list/prices-01.jpg"
     }
   ],
-  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -50,5 +50,5 @@
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
   },
-  "Token": ""
+  "Token": "23f3f00c-6547-4ed6-b80c-27b5cfa1fa84"
 }
