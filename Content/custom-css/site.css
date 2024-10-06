@@ -35,6 +35,10 @@ footer a {
     color: var(--color-white);
 }
 
+footer .small {
+
+}
+
 .logo-footer {
     background: var(--bg-main);
 }
@@ -290,6 +294,10 @@ main {
         padding-top: 7px;
     }
     /* -------------------------------------------------- */
+    
+    footer .small {
+        font-size: .725em;
+    }
 }
 
 /*CSS Tablet*/
@@ -305,6 +313,10 @@ main {
         padding-right: 5px;
     }
     /* -------------------------------------------------- */
+
+    footer .small {
+        font-size: .75em;
+    }
 
     /*Banner Home*/
     .slider-home {
@@ -392,6 +404,10 @@ main {
         background: unset;
     }
     /* -------------------------------------------------- */
+
+    footer .small {
+        font-size: .7em;
+    }
 
     /*Banner Home*/
     .slider-home {
