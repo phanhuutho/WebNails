@@ -1,20 +1,36 @@
 ﻿{
-  "Name": "GLOW Nails & Spa",
-  "HyperLinkTell": "tel:(949)7816045",
-  "TextTell": "(949)-781-6045",
-  "GooglePlus": "https://www.google.com/search?q=Glow+Nails+92626",
-  "Address": "3019 Harbor Blvd, Costa Mesa, CA 92626",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/wqv1ENpy3mQMFaof6",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13280.319975372935!2d-117.9201517!3d33.6809928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdf0c131464d1%3A0xb9eac60a8ddb3f46!2s(%245%20OFF%20%26%2015%25%20OFF%20Coupon)%20GLOW%20Nails%20%26%20Spa!5e0!3m2!1sen!2s!4v1716565212404!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Lux Nail Bar",
+  "HyperLinkTell": "tel:(480)9990999",
+  "TextTell": "(480)-999-0999",
+  "GooglePlus": "https://www.google.com/search?q=Lux+Nail+Bar+85226",
+  "Address": "3431 W Frye Rd #7, Chandler, AZ 85226",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/ybzmLRyvfCM1xJCj7",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13339.513171921244!2d-111.9009871!3d33.2958469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b00d76ca447f5%3A0x666bd3dccfdb6f5d!2sLux%20Nail%20Bar!5e0!3m2!1sen!2s!4v1728232951371!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/119d7454ffaf/customer/home",
   "ShowCoupon": true,
-  "Coupons": [
+  "Coupons": [],
+  "Prices": [
     {
       "Status": true,
-      "Src": "/Content/images/popup/coupon-01.jpg"
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-05.jpg"
     }
   ],
-  "Prices": [],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
@@ -24,14 +40,14 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/luxnailbarchandler",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/luxnailbaraz/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
@@ -50,5 +66,5 @@
     "ClassIcon": "fa fa-youtube-play",
     "BackgroundColor": "#ff0000"
   },
-  "Token": ""
+  "Token": "23f3f00c-6547-4ed6-b80c-27b5cfa1fa84"
 }
