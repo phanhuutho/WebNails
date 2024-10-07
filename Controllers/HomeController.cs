@@ -110,7 +110,20 @@ namespace WebNails.Controllers
 
             //insert InforPaypal, use store Insert InforPaypal Before
             StringBuilder sb = new StringBuilder();
-
+            sb.AppendLine("strID: " + strID);
+            sb.AppendLine("EmailPaypal: " + EmailPaypal);
+            sb.AppendLine("Cost: " + Cost);
+            sb.AppendLine("ViewBag.Invoice: " + ViewBag.Invoice);
+            sb.AppendLine("ViewBag.EmailPaypal: " + ViewBag.EmailPaypal);
+            sb.AppendLine("ViewBag.Amount: " + ViewBag.Amount);
+            sb.AppendLine("ViewBag.Stock: " + ViewBag.Stock);
+            sb.AppendLine("ViewBag.Email: " + ViewBag.Email);
+            sb.AppendLine("ViewBag.NameReceiver: " + ViewBag.NameReceiver);
+            sb.AppendLine("ViewBag.NameBuyer: " + ViewBag.NameBuyer);
+            sb.AppendLine("ViewBag.Img: " + ViewBag.Img);
+            sb.AppendLine("ViewBag.Cost: " + ViewBag.Cost);
+            sb.AppendLine("ViewBag.CodeSaleOff: " + ViewBag.CodeSaleOff);
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\LogRequest.txt", sb.ToString());
             return View();
         }
 
@@ -426,6 +439,7 @@ namespace WebNails.Controllers
             }
             return RedirectToAction("Login");
         }
+        
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
