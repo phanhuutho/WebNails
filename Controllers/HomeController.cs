@@ -149,7 +149,7 @@ namespace WebNails.Controllers
                 ViewBag.SecureHash = "<font color='red'><strong>FAIL</strong></font>";
                 ViewBag.ResponseCode = "-1";
             }
-            sb.AppendLine("EmailPaypal: " + ViewBag.ResponseCode);
+            sb.AppendLine("ViewBag.ResponseCode: " + ViewBag.ResponseCode);
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\Finish.txt", sb.ToString());
             return View();
         }
