@@ -129,11 +129,26 @@ namespace WebNails.Controllers
 
         public ActionResult PaymentResponse()
         {
+            var data = new RouteValueDictionary();
+            foreach (var key in Request.Form.AllKeys)
+            {
+                data.Add(key, Request[key]);
+            }
+            foreach (var key in Request.QueryString.AllKeys)
+            {
+                data.Add(key, Request[key]);
+            }
+            foreach (var key in Request.Headers.AllKeys)
+            {
+                data.Add(key, Request[key]);
+            }
+
             TempData["PayerID"] = Request["PayerID"];
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("PayerID: " + Request["PayerID"]);
+            sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\PaymentResponse.txt", sb.ToString());
-            return RedirectToAction("Finish");
+            return RedirectToAction("Finish", data);
         }
 
         public ActionResult Finish()
