@@ -123,18 +123,22 @@ namespace WebNails.Controllers
             sb.AppendLine("ViewBag.Img: " + ViewBag.Img);
             sb.AppendLine("ViewBag.Cost: " + ViewBag.Cost);
             sb.AppendLine("ViewBag.CodeSaleOff: " + ViewBag.CodeSaleOff);
-            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\LogRequest.txt", sb.ToString());
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\Process.txt", sb.ToString());
             return View();
         }
 
         public ActionResult PaymentResponse()
         {
             TempData["PayerID"] = Request["PayerID"];
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("PayerID: " + Request["PayerID"]);
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\PaymentResponse.txt", sb.ToString());
             return RedirectToAction("Finish");
         }
 
         public ActionResult Finish()
         {
+            StringBuilder sb = new StringBuilder();
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
             {
                 ViewBag.SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
@@ -145,6 +149,8 @@ namespace WebNails.Controllers
                 ViewBag.SecureHash = "<font color='red'><strong>FAIL</strong></font>";
                 ViewBag.ResponseCode = "-1";
             }
+            sb.AppendLine("EmailPaypal: " + ViewBag.ResponseCode);
+            System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\Finish.txt", sb.ToString());
             return View();
         }
 
