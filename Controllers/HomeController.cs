@@ -16,6 +16,7 @@ using System.Web.Security;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace WebNails.Controllers
 {
@@ -110,6 +111,7 @@ namespace WebNails.Controllers
 
             //insert InforPaypal, use store Insert InforPaypal Before
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new CultureInfo("en-us")));
             sb.AppendLine("strID: " + strID);
             sb.AppendLine("EmailPaypal: " + EmailPaypal);
             sb.AppendLine("Cost: " + Cost);
@@ -123,6 +125,7 @@ namespace WebNails.Controllers
             sb.AppendLine("ViewBag.Img: " + ViewBag.Img);
             sb.AppendLine("ViewBag.Cost: " + ViewBag.Cost);
             sb.AppendLine("ViewBag.CodeSaleOff: " + ViewBag.CodeSaleOff);
+            sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\Process.txt", sb.ToString());
             return View();
         }
@@ -145,8 +148,10 @@ namespace WebNails.Controllers
 
             TempData["PayerID"] = Request["PayerID"];
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new CultureInfo("en-us")));
             sb.AppendLine("PayerID: " + Request["PayerID"]);
             sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
+            sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\PaymentResponse.txt", sb.ToString());
             return RedirectToAction("Finish", data);
         }
@@ -164,7 +169,9 @@ namespace WebNails.Controllers
                 ViewBag.SecureHash = "<font color='red'><strong>FAIL</strong></font>";
                 ViewBag.ResponseCode = "-1";
             }
+            sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new CultureInfo("en-us")));
             sb.AppendLine("ViewBag.ResponseCode: " + ViewBag.ResponseCode);
+            sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\Finish.txt", sb.ToString());
             return View();
         }
@@ -184,6 +191,7 @@ namespace WebNails.Controllers
         private void LogRequest(HttpRequestBase request)
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new CultureInfo("en-us")));
             var data = new RouteValueDictionary();
             foreach (var key in request.Form.AllKeys)
             {
@@ -201,6 +209,7 @@ namespace WebNails.Controllers
                 sb.AppendLine(key + ": " + request[key]);
             }
             sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
+            sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\LogRequest.txt", sb.ToString());
             sb.Clear();
         }
@@ -243,6 +252,7 @@ namespace WebNails.Controllers
         private void ProcessVerificationResponse(string verificationResponse, HttpRequestBase ipnRequest)
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new CultureInfo("en-us")));
             sb.AppendLine("verificationResponse: " + verificationResponse);
             if (verificationResponse.Equals("VERIFIED"))
             {
@@ -264,6 +274,7 @@ namespace WebNails.Controllers
             {
                 //Log error
             }
+            sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse.txt", sb.ToString());
             sb.Clear();
         }

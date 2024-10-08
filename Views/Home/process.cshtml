@@ -7,7 +7,7 @@
     var UrlShopping = Url.Action("Payment", "Home", null, Request.Url.Scheme);
     var UrlCancel = Url.Action("Payment", "Home", null, Request.Url.Scheme);
     var UrlReturn = Url.Action("PaymentResponse", "Home", null, Request.Url.Scheme);
-    var UrlNotify = Url.Action("PaypalIPN", "Home", null, Request.Url.Scheme);
+    var UrlNotify = Url.Action("PaypalIPN", "Home", new { strID = Invoice }, Request.Url.Scheme);
 }
 @section css{
     <style type="text/css">
