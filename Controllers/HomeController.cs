@@ -183,6 +183,7 @@ namespace WebNails.Controllers
             LogRequest(Request);
 
             //Fire and forget verification task
+            System.Threading.Thread.Sleep(500);
             Task.Run(() => VerifyTask(Request));
 
             return new HttpStatusCodeResult(HttpStatusCode.OK);
