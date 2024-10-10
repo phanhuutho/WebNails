@@ -216,9 +216,9 @@ namespace WebNails.Controllers
 
         private void VerifyTask(HttpRequestBase ipnRequest)
         {
+            var verificationResponse = string.Empty;
             try
             {
-                var verificationResponse = string.Empty;
                 var verificationRequest = (HttpWebRequest)WebRequest.Create("https://www.paypal.com/cgi-bin/webscr");
 
                 //Set values for the verification request
@@ -240,13 +240,13 @@ namespace WebNails.Controllers
                 var streamIn = new StreamReader(verificationRequest.GetResponse().GetResponseStream());
                 verificationResponse = streamIn.ReadToEnd();
                 streamIn.Close();
-
-                ProcessVerificationResponse(verificationResponse, ipnRequest);
             }
             catch
             {
                 //Capture exception for manual investigation
             }
+
+            ProcessVerificationResponse(verificationResponse, ipnRequest);
         }
 
         private void ProcessVerificationResponse(string verificationResponse, HttpRequestBase ipnRequest)
