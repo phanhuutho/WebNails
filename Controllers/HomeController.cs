@@ -100,13 +100,14 @@ namespace WebNails.Controllers
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
             var Cost = float.Parse(amount);
             var Domain = Request.Url.Host;
-            var Transactions = GenerateUniqueCode();
+            var strCode = GenerateUniqueCode();
 
             var dataJson = new
             {
                 EmailPaypal,
                 strID,
-                Transactions,
+                Code = strCode,
+                Transactions = string.Format("{0}", strID),
                 amount,
                 stock,
                 email,
@@ -123,6 +124,7 @@ namespace WebNails.Controllers
             var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
             var AmountResult = JsonConvert.DeserializeObject(result);
 
+            ViewBag.Invoice = strID;
             ViewBag.EmailPaypal = EmailPaypal ?? "";
             ViewBag.Amount = string.Format("{0}", AmountResult) ?? string.Format("{0}", "1");
             ViewBag.Stock = stock ?? "";
@@ -132,20 +134,6 @@ namespace WebNails.Controllers
             ViewBag.Img = img;
             ViewBag.Cost = Cost;
             ViewBag.CodeSaleOff = codesale;
-
-            var cookieDataBefore = new HttpCookie("DataBefore");
-            cookieDataBefore["Amount"] = string.Format("{0}", AmountResult);
-            cookieDataBefore["Email"] = email;
-            cookieDataBefore["Stock"] = stock;
-            cookieDataBefore["Message"] = message;
-            cookieDataBefore["NameReceiver"] = name_receiver;
-            cookieDataBefore["NameBuyer"] = name_buyer;
-            cookieDataBefore["Img"] = img;
-            cookieDataBefore["Guid"] = strID.ToString();
-            cookieDataBefore["Cost"] = string.Format("{0:N2}", Cost);
-            cookieDataBefore["CodeSaleOff"] = codesale;
-            cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
-            Response.Cookies.Add(cookieDataBefore);
 
             return View();
         }
@@ -161,79 +149,69 @@ namespace WebNails.Controllers
             {
                 data.Add(key, Request[key]);
             }
-            foreach (var key in Request.Headers.AllKeys)
-            {
-                data.Add(key, Request[key]);
-            }
 
             TempData["PayerID"] = Request["PayerID"];
             return RedirectToAction("Finish", data);
         }
 
-        public async Task<ActionResult> Finish()
+        public ActionResult Finish()
         {
-            var Domain = Request.Url.Host;
-            string responseCode;
-            string SecureHash;
-            var strAmount = string.Empty;
-            var strCost = string.Empty;
-            var strCodeSaleOff = string.Empty;
-            var strEmail = string.Empty;
-            var strStock = string.Empty;
-            var strNameReceiver = string.Empty;
-            var strNameBuyer = string.Empty;
-            var strMessage = string.Empty;
-            var strImg = string.Empty;
-            var strID = new Guid();
-
-            HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
-            if (cookieDataBefore != null)
-            {
-                strAmount = cookieDataBefore["Amount"];
-                strCost = cookieDataBefore["Cost"];
-                strCodeSaleOff = cookieDataBefore["CodeSaleOff"];
-                strEmail = cookieDataBefore["Email"];
-                strStock = cookieDataBefore["Stock"];
-                strNameReceiver = cookieDataBefore["NameReceiver"];
-                strNameBuyer = cookieDataBefore["NameBuyer"];
-                strMessage = cookieDataBefore["Message"];
-                strImg = cookieDataBefore["Img"];
-                strID = Guid.Parse(cookieDataBefore["Guid"]);
-            }
-
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
             {
-                SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
-
-                responseCode = "0";
-
-                var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
-                var jsonStringToken = JsonConvert.SerializeObject(Token);
-                var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
-
-                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Finish?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
-                var objResult = JsonConvert.DeserializeObject<PaypalResult>(result);
-                objResult = objResult ?? new PaypalResult { Count = 0, Data = null };
-
-                var count = objResult.Count;
-                var info = objResult.Data;
-
-                if (count > 0)
-                {
-                    SendMailToOwner(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
-                    SendMailToBuyer(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
-                    SendMailToReceiver(strStock, strEmail, string.Format("{0:N2}", strCost), info.Code, strNameReceiver, strNameBuyer, strImg);
-                }
+                ViewBag.SecureHash = "<font color='blue'><strong>THANKS YOU !!!</strong></font>";
+                ViewBag.ResponseCode = "0";
             }
             else
             {
-                SecureHash = "<font color='red'><strong>FAIL</strong></font>";
-                responseCode = "-1";
+                ViewBag.SecureHash = "<font color='red'><strong>FAIL</strong></font>";
+                ViewBag.ResponseCode = "-1";
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public HttpStatusCodeResult PaypalIPN()
+        {
+            //Store the IPN received from PayPal
+            LogRequest(Request);
+
+            //Fire and forget verification task
+            Task.Run(() => VerifyTask(Request));
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
+        }
+
+        private async void LogRequest(HttpRequestBase request)
+        {
+            var data = new RouteValueDictionary();
+            foreach (var key in request.Form.AllKeys)
+            {
+                data.Add(key, request[key]);
+            }
+            foreach (var key in request.QueryString.AllKeys)
+            {
+                data.Add(key, request[key]);
             }
 
-            ViewBag.SecureHash = SecureHash;
-            ViewBag.ResponseCode = responseCode;
-            return View();
+            var Domain = Request.Url.Host;
+            var strID = data["strID"];
+
+            var dataJson = new
+            {
+                strID
+            };
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+            var AmountResult = JsonConvert.DeserializeObject(result);
+        }
+
+        private void VerifyTask(HttpRequestBase ipnRequest)
+        {
+
         }
 
         private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
