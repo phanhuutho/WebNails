@@ -183,7 +183,7 @@ namespace WebNails.Controllers
             LogRequest(Request);
 
             //Fire and forget verification task
-            System.Threading.Thread.Sleep(500);
+            System.Threading.Thread.Sleep(5000);
             Task.Run(() => VerifyTask(Request));
 
             return new HttpStatusCodeResult(HttpStatusCode.OK);
@@ -209,6 +209,8 @@ namespace WebNails.Controllers
                 data.Add(key, request[key]);
                 sb.AppendLine(key + ": " + request[key]);
             }
+            data.Add("Host", request.Url.Host);
+            data.Add("AbsoluteUri", request.Url.AbsoluteUri);
             sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
             sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\LogRequest.txt", sb.ToString());
