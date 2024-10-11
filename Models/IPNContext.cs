@@ -7,7 +7,7 @@ namespace WebNails.Models
 {
     public class IPNContext
     {
-        public HttpRequest IPNRequest { get; set; }
+        public HttpRequestBase IPNRequest { get; set; }
 
         public string RequestBody { get; set; }
 

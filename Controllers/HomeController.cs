@@ -177,16 +177,25 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public HttpStatusCodeResult PaypalIPN()
+        public ActionResult PaypalIPN()
         {
             //Store the IPN received from PayPal
+            IPNContext ipnContext = new IPNContext()
+            {
+                IPNRequest = Request
+            };
+
+            using (StreamReader reader = new StreamReader(ipnContext.IPNRequest.InputStream, Encoding.ASCII))
+            {
+                ipnContext.RequestBody = reader.ReadToEnd();
+            }
+
             LogRequest(Request);
 
             //Fire and forget verification task
-            System.Threading.Thread.Sleep(5000);
-            Task.Run(() => VerifyTask(Request));
+            Task.Run(() => VerifyTask(ipnContext));
 
-            return new HttpStatusCodeResult(HttpStatusCode.OK);
+            return Content("");
         }
 
         private void LogRequest(HttpRequestBase request)
@@ -204,11 +213,6 @@ namespace WebNails.Controllers
                 data.Add(key, request[key]);
                 sb.AppendLine(key + ": " + request[key]);
             }
-            foreach (var key in request.Headers.AllKeys)
-            {
-                data.Add(key, request[key]);
-                sb.AppendLine(key + ": " + request[key]);
-            }
             data.Add("Host", request.Url.Host);
             data.Add("AbsoluteUri", request.Url.AbsoluteUri);
             sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
@@ -217,9 +221,8 @@ namespace WebNails.Controllers
             sb.Clear();
         }
 
-        private void VerifyTask(HttpRequestBase ipnRequest)
+        private void VerifyTask(IPNContext ipnContext)
         {
-            var verificationResponse = string.Empty;
             try
             {
                 var verificationRequest = (HttpWebRequest)WebRequest.Create("https://www.paypal.com/cgi-bin/webscr");
@@ -227,54 +230,60 @@ namespace WebNails.Controllers
                 //Set values for the verification request
                 verificationRequest.Method = "POST";
                 verificationRequest.ContentType = "application/x-www-form-urlencoded";
-                var param = Request.BinaryRead(ipnRequest.ContentLength);
-                var strRequest = Encoding.ASCII.GetString(param);
-
                 //Add cmd=_notify-validate to the payload
-                strRequest = "cmd=_notify-validate&" + strRequest;
+                string strRequest = "_notify-validate&" + ipnContext.RequestBody;
                 verificationRequest.ContentLength = strRequest.Length;
-
                 //Attach payload to the verification request
-                var streamOut = new StreamWriter(verificationRequest.GetRequestStream(), Encoding.ASCII);
-                streamOut.Write(strRequest);
-                streamOut.Close();
-
+                using (StreamWriter writer = new StreamWriter(verificationRequest.GetRequestStream(), Encoding.ASCII))
+                {
+                    writer.Write(strRequest);
+                }
                 //Send the request to PayPal and get the response
-                var streamIn = new StreamReader(verificationRequest.GetResponse().GetResponseStream());
-                verificationResponse = streamIn.ReadToEnd();
-                streamIn.Close();
+                using (StreamReader reader = new StreamReader(verificationRequest.GetResponse().GetResponseStream()))
+                {
+                    ipnContext.Verification = reader.ReadToEnd();
+                }
             }
-            catch
+            catch (Exception ex)
             {
+                StringBuilder sb = new StringBuilder();
                 //Capture exception for manual investigation
+                sb.AppendLine("Exception: " + ex);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\VerifyTask_Exception.txt", sb.ToString());
             }
 
-            ProcessVerificationResponse(verificationResponse, ipnRequest);
+            ProcessVerificationResponse(ipnContext);
         }
 
-        private void ProcessVerificationResponse(string verificationResponse, HttpRequestBase ipnRequest)
+        private void ProcessVerificationResponse(IPNContext ipnRequest)
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new CultureInfo("en-us")));
-            sb.AppendLine("verificationResponse: " + verificationResponse);
-            if (verificationResponse.Equals("VERIFIED"))
+            sb.AppendLine("verificationResponse: " + ipnRequest.Verification);
+            var dict = HttpUtility.ParseQueryString(ipnRequest.RequestBody);
+            if (ipnRequest.Verification.ToUpper().Equals("VERIFIED"))
             {
                 // check that Payment_status=Completed
                 // check that Txn_id has not been previously processed
                 // check that Receiver_email is your Primary PayPal email
                 // check that Payment_amount/Payment_currency are correct
                 // process payment
-                if (ipnRequest.HttpMethod == "POST" && ipnRequest["payment_status"] == "Completed" && ipnRequest["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
+                if (ipnRequest.IPNRequest.HttpMethod == "POST" && ipnRequest.IPNRequest["payment_status"] == "Completed" && ipnRequest.IPNRequest["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
                 {
                     sb.AppendLine("VERIFIED: OK");
                 }
             }
-            else if (verificationResponse.Equals("INVALID"))
+            else if (ipnRequest.Verification.ToUpper().Equals("INVALID"))
             {
+                sb.AppendLine("VERIFIED: INVALID");
+                sb.AppendLine("INVALID: " + ipnRequest.RequestBody);
                 //Log for manual investigation
             }
             else
             {
+                sb.AppendLine("VERIFIED: ERROR");
+                sb.AppendLine("ERROR: " + ipnRequest.RequestBody);
                 //Log error
             }
             sb.AppendLine("====================================================================");
