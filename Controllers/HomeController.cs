@@ -193,7 +193,7 @@ namespace WebNails.Controllers
             return Content("");
         }
 
-        private async void LogRequest(HttpRequestBase request)
+        private void LogRequest(HttpRequestBase request)
         {
             var data = new RouteValueDictionary();
             foreach (var key in request.Form.AllKeys)
@@ -204,21 +204,6 @@ namespace WebNails.Controllers
             {
                 data.Add(key, request[key]);
             }
-
-            var Domain = Request.Url.Host;
-            var strID = data["strID"];
-
-            var dataJson = new
-            {
-                strID
-            };
-
-            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
-            var jsonStringToken = JsonConvert.SerializeObject(Token);
-            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
-
-            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
-            var AmountResult = JsonConvert.DeserializeObject(result);
         }
 
         private void VerifyTask(IPNContext ipnContext)
@@ -254,7 +239,7 @@ namespace WebNails.Controllers
             ProcessVerificationResponse(ipnContext);
         }
 
-        private void ProcessVerificationResponse(IPNContext ipnRequest)
+        private async void ProcessVerificationResponse(IPNContext ipnRequest)
         {
             if (ipnRequest.Verification.ToUpper().Equals("VERIFIED"))
             {
@@ -266,7 +251,20 @@ namespace WebNails.Controllers
                 var dict = HttpUtility.ParseQueryString(ipnRequest.RequestBody);
                 if (dict["payment_status"] == "Completed" && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
                 {
+                    var Domain = Request.Url.Host;
+                    var strID = dict["strID"];
 
+                    var dataJson = new
+                    {
+                        strID
+                    };
+
+                    var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                    var jsonStringToken = JsonConvert.SerializeObject(Token);
+                    var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                    var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                    var AmountResult = JsonConvert.DeserializeObject(result);
                 }
             }
             else if (ipnRequest.Verification.ToUpper().Equals("INVALID"))
