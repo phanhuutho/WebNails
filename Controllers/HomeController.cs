@@ -233,6 +233,7 @@ namespace WebNails.Controllers
                 //Add cmd=_notify-validate to the payload
                 string strRequest = "_notify-validate&" + ipnContext.RequestBody;
                 verificationRequest.ContentLength = strRequest.Length;
+                verificationRequest.UseDefaultCredentials = true;
                 //Attach payload to the verification request
                 using (StreamWriter writer = new StreamWriter(verificationRequest.GetRequestStream(), Encoding.ASCII))
                 {
