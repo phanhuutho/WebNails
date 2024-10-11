@@ -213,8 +213,6 @@ namespace WebNails.Controllers
                 data.Add(key, request[key]);
                 sb.AppendLine(key + ": " + request[key]);
             }
-            data.Add("Host", request.Url.Host);
-            data.Add("AbsoluteUri", request.Url.AbsoluteUri);
             sb.AppendLine("data: " + JsonConvert.SerializeObject(data));
             sb.AppendLine("====================================================================");
             System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\LogRequest.txt", sb.ToString());
@@ -231,7 +229,7 @@ namespace WebNails.Controllers
                 verificationRequest.Method = "POST";
                 verificationRequest.ContentType = "application/x-www-form-urlencoded";
                 //Add cmd=_notify-validate to the payload
-                string strRequest = "_notify-validate&" + ipnContext.RequestBody;
+                string strRequest = "cmd=_notify-validate&" + ipnContext.RequestBody;
                 verificationRequest.ContentLength = strRequest.Length;
                 verificationRequest.UseDefaultCredentials = true;
                 //Attach payload to the verification request
