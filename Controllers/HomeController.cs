@@ -228,6 +228,7 @@ namespace WebNails.Controllers
                 //Set values for the verification request
                 verificationRequest.Method = "POST";
                 verificationRequest.ContentType = "application/x-www-form-urlencoded";
+                verificationRequest.UserAgent = "PaypalIPN";
                 //Add cmd=_notify-validate to the payload
                 string strRequest = "cmd=_notify-validate&" + ipnContext.RequestBody;
                 verificationRequest.ContentLength = strRequest.Length;
