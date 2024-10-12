@@ -185,25 +185,10 @@ namespace WebNails.Controllers
                 ipnContext.RequestBody = reader.ReadToEnd();
             }
 
-            LogRequest(Request);
-
             //Fire and forget verification task
             Task.Run(() => VerifyTask(ipnContext));
 
             return Content("");
-        }
-
-        private void LogRequest(HttpRequestBase request)
-        {
-            var data = new RouteValueDictionary();
-            foreach (var key in request.Form.AllKeys)
-            {
-                data.Add(key, request[key]);
-            }
-            foreach (var key in request.QueryString.AllKeys)
-            {
-                data.Add(key, request[key]);
-            }
         }
 
         private void VerifyTask(IPNContext ipnContext)
@@ -233,22 +218,30 @@ namespace WebNails.Controllers
             }
             catch (Exception ex)
             {
+                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + JsonConvert.SerializeObject(dict));
+                sb.AppendLine("Exception: " + ex);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\VerifyTask_Exception.txt", sb.ToString());
                 //Capture exception for manual investigation
             }
 
             ProcessVerificationResponse(ipnContext);
         }
 
-        private async void ProcessVerificationResponse(IPNContext ipnRequest)
+        private async void ProcessVerificationResponse(IPNContext ipnContext)
         {
-            if (ipnRequest.Verification.ToUpper().Equals("VERIFIED"))
+            if (ipnContext.Verification.ToUpper().Equals("VERIFIED"))
             {
                 // check that Payment_status=Completed
                 // check that Txn_id has not been previously processed
                 // check that Receiver_email is your Primary PayPal email
                 // check that Payment_amount/Payment_currency are correct
                 // process payment
-                var dict = HttpUtility.ParseQueryString(ipnRequest.RequestBody);
+                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
                 if (dict["payment_status"] == "Completed" && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
                 {
                     var Domain = Request.Url.Host;
@@ -256,7 +249,11 @@ namespace WebNails.Controllers
 
                     var dataJson = new
                     {
-                        strID
+                        strID,
+                        TXN_ID = dict["txn_id"],
+                        PaymentStatus = dict["payment_status"],
+                        Verifysign = dict["verify_sign"],
+                        Parent_TXN_ID = dict["parent_txn_id"]
                     };
 
                     var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
@@ -264,15 +261,36 @@ namespace WebNails.Controllers
                     var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
                     var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
-                    var AmountResult = JsonConvert.DeserializeObject(result);
+                    var intResult = JsonConvert.DeserializeObject<string>(result);
+
+                    if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) > 0)
+                    {
+                        //SendMailToOwner();
+                        //SendMailToReceiver();
+                        //SendMailToBuyer();
+                    }
+                }
+                else if (dict["payment_status"] == "Refunded") //REFUNDED
+                {
+
                 }
             }
-            else if (ipnRequest.Verification.ToUpper().Equals("INVALID"))
+            else if (ipnContext.Verification.ToUpper().Equals("INVALID"))
             {
                 //Log for manual investigation
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse_Invalid.txt", sb.ToString());
             }
             else
             {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse_Other.txt", sb.ToString());
                 //Log error
             }
         }
