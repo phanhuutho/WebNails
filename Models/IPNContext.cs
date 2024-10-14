@@ -12,5 +12,7 @@ namespace WebNails.Models
         public string RequestBody { get; set; }
 
         public string Verification { get; set; } = String.Empty;
+
+        public bool Has_TXN_ID { get; set; }
     }
 }

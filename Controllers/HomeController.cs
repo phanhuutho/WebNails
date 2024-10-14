@@ -172,7 +172,7 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult PaypalIPN()
+        public async Task<ActionResult> PaypalIPN()
         {
             //Store the IPN received from PayPal
             IPNContext ipnContext = new IPNContext()
@@ -185,8 +185,51 @@ namespace WebNails.Controllers
                 ipnContext.RequestBody = reader.ReadToEnd();
             }
 
-            //Fire and forget verification task
-            Task.Run(() => VerifyTask(ipnContext));
+            try
+            {
+                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+                var Domain = Request.Url.Host;
+                var strTXT_ID = dict["txt_id"];
+                var strID = dict["strID"];
+                var strAmount = dict["mc_gross"];
+                
+                var dataJson = new
+                {
+                    strID = Guid.Parse(strID),
+                    txt_id = strTXT_ID,
+                    intAmount = float.Parse(strAmount)
+                };
+
+                var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                var jsonStringToken = JsonConvert.SerializeObject(Token);
+                var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/CheckHasTXN?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                var intResult = JsonConvert.DeserializeObject<string>(result);
+
+                if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) == 0)
+                {
+                    ipnContext.Has_TXN_ID = false;
+                }
+                else
+                {
+                    ipnContext.Has_TXN_ID = true;
+                }
+                //Fire and forget verification task
+                VerifyTask(ipnContext);
+            }
+            catch (Exception ex)
+            {
+                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + JsonConvert.SerializeObject(dict));
+                sb.AppendLine("Exception: " + ex);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\PaypalIPN_Exception.txt", sb.ToString());
+                //Capture exception for manual investigation
+            }
 
             return Content("");
         }
@@ -236,13 +279,8 @@ namespace WebNails.Controllers
         {
             if (ipnContext.Verification.ToUpper().Equals("VERIFIED"))
             {
-                // check that Payment_status=Completed
-                // check that Txn_id has not been previously processed
-                // check that Receiver_email is your Primary PayPal email
-                // check that Payment_amount/Payment_currency are correct
-                // process payment
                 var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
-                if (dict["payment_status"] == "Completed" && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
+                if (dict["payment_status"] == "Completed" && !ipnContext.Has_TXN_ID && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
                 {
                     var Domain = Request.Url.Host;
                     var strID = dict["strID"];
@@ -272,7 +310,7 @@ namespace WebNails.Controllers
                 }
                 else if (dict["payment_status"] == "Refunded") //REFUNDED
                 {
-
+                    //Update Status Refund
                 }
             }
             else if (ipnContext.Verification.ToUpper().Equals("INVALID"))
