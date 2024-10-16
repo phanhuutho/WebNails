@@ -564,18 +564,11 @@ namespace WebNails.Controllers
                 var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, strEncrypt);
                 Response.Cookies.Add(cookie);
 
-                if (queryDictionary.Count > 0)
-                {
-                    return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
-                }
-                else
-                {
-                    return Json(new { ReturnUrl = "/gift-manage.html", IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
-                }
+                return Json(new { ReturnUrl = "/gift-manage.html", IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
             }
             else
             {
-                return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = false, Message = "Login Fail" }, JsonRequestBehavior.AllowGet);
+                return Json(new { ReturnUrl = "", IsLogin = false, Message = "Login Fail" }, JsonRequestBehavior.AllowGet);
             }
         }
 
