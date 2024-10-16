@@ -73,6 +73,18 @@ namespace WebNails.Controllers
         public ActionResult Payment(string img = "")
         {
             ViewBag.Img = img;
+
+            var Domain = Request.Url.Host;
+            var Token = new TokenPage { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+
+            HttpCookie cookie = new HttpCookie("TokenPage");
+            cookie.Value = strEncrypt;
+            cookie.Expires = Token.TimeExpire ?? DateTime.Now;
+            Response.Cookies.Add(cookie);
+
             return View();
         }
 
@@ -95,6 +107,7 @@ namespace WebNails.Controllers
             return Json(new { Galleries, ShowMore });
         }
 
+        [Token]
         [HttpPost]
         public async Task<ActionResult> Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "", string codesale = "")
         {
