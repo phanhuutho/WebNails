@@ -141,7 +141,7 @@ namespace WebNails.Controllers
 
             ViewBag.Invoice = strID;
             ViewBag.EmailPaypal = EmailPaypal ?? "";
-            ViewBag.Amount = string.Format("{0}", AmountResult) ?? string.Format("{0}", "1");
+            ViewBag.Amount = string.Format("{0}", AmountResult) ?? string.Format("{0}", amount);
             ViewBag.Stock = stock ?? "";
             ViewBag.Email = email ?? "";
             ViewBag.NameReceiver = name_receiver ?? "";
