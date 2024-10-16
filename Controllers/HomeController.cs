@@ -280,18 +280,20 @@ namespace WebNails.Controllers
             if (ipnContext.Verification.ToUpper().Equals("VERIFIED"))
             {
                 var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+
+                var Domain = Request.Url.Host;
+                var strID = Guid.Parse(dict["strID"]);
+
                 if (dict["payment_status"] == "Completed" && !ipnContext.Has_TXN_ID && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
                 {
-                    var Domain = Request.Url.Host;
-                    var strID = dict["strID"];
-
                     var dataJson = new
                     {
                         strID,
+                        Transactions = string.Format("{0}", strID),
                         TXN_ID = dict["txn_id"],
                         PaymentStatus = dict["payment_status"],
                         Verifysign = dict["verify_sign"],
-                        Parent_TXN_ID = dict["parent_txn_id"]
+                        Detail = JsonConvert.SerializeObject(dict)
                     };
 
                     var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
@@ -303,14 +305,55 @@ namespace WebNails.Controllers
 
                     if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) > 0)
                     {
-                        //SendMailToOwner();
-                        //SendMailToReceiver();
-                        //SendMailToBuyer();
+                        Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                        jsonStringToken = JsonConvert.SerializeObject(Token);
+                        strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                        result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/GetInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                        var objInfoPaypal = JsonConvert.DeserializeObject<InfoPaypal>(result);
+
+                        if (objInfoPaypal != null && objInfoPaypal.Status == PaymentStatus.Success && objInfoPaypal.IsUsed == false && objInfoPaypal.IsRefund == false)
+                        {
+                            var strAmount = string.Format("{0:N2}", objInfoPaypal.Amount);
+                            var strStock = string.Format("{0}", objInfoPaypal.Stock);
+                            var strEmail = string.Format("{0}", objInfoPaypal.Email);
+                            var strMessage = string.Format("{0}", objInfoPaypal.Message);
+                            var strCode = string.Format("{0}", objInfoPaypal.Code);
+                            var strNameReceiver = string.Format("{0}", objInfoPaypal.NameReceiver);
+                            var strNameBuyer = string.Format("{0}", objInfoPaypal.NameBuyer);
+                            var strCost = string.Format("{0:N2}", objInfoPaypal.AmountReal);
+                            var strCodeSaleOff = string.Format("{0}", objInfoPaypal.CodeSaleOff);
+
+                            SendMailToOwner(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, "", strCost, strCodeSaleOff);
+                            SendMailToReceiver(strStock, strEmail, strAmount, strCode, strNameReceiver, strNameBuyer, "");
+                            SendMailToBuyer(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, "", strCost, strCodeSaleOff);
+
+                        }
                     }
                 }
                 else if (dict["payment_status"] == "Refunded") //REFUNDED
                 {
-                    //Update Status Refund
+                    var dataJson = new
+                    {
+                        strID,
+                        TXN_ID = dict["txn_id"],
+                        PaymentStatus = dict["payment_status"],
+                        Verifysign = dict["verify_sign"],
+                        Parent_TXN_ID = dict["parent_txn_id"],
+                        Detail = JsonConvert.SerializeObject(dict)
+                    };
+
+                    var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                    var jsonStringToken = JsonConvert.SerializeObject(Token);
+                    var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                    var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/UpdateRefund?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                    var intResult = JsonConvert.DeserializeObject<string>(result);
+
+                    if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) == 0)
+                    {
+                        // Currently, do not something
+                    }
                 }
             }
             else if (ipnContext.Verification.ToUpper().Equals("INVALID"))
@@ -338,11 +381,11 @@ namespace WebNails.Controllers
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(EmailPaypal)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], Encoding.UTF8), new MailAddress(EmailPaypal)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                    mail.BodyEncoding = System.Text.Encoding.UTF8;
+                    mail.HeadersEncoding = Encoding.UTF8;
+                    mail.SubjectEncoding = Encoding.UTF8;
+                    mail.BodyEncoding = Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: <strong>${strAmount} USD</strong></p>
@@ -370,11 +413,11 @@ namespace WebNails.Controllers
         {
             if (!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmailReceiver, strNameReceiver, System.Text.Encoding.UTF8)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], Encoding.UTF8), new MailAddress(strEmailReceiver, strNameReceiver, Encoding.UTF8)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                    mail.BodyEncoding = System.Text.Encoding.UTF8;
+                    mail.HeadersEncoding = Encoding.UTF8;
+                    mail.SubjectEncoding = Encoding.UTF8;
+                    mail.BodyEncoding = Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
@@ -399,11 +442,11 @@ namespace WebNails.Controllers
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmail)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], Encoding.UTF8), new MailAddress(strEmail)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                    mail.BodyEncoding = System.Text.Encoding.UTF8;
+                    mail.HeadersEncoding = Encoding.UTF8;
+                    mail.SubjectEncoding = Encoding.UTF8;
+                    mail.BodyEncoding = Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
@@ -438,11 +481,11 @@ namespace WebNails.Controllers
             strBody = strBody.Replace("{Phone}", item.Phone);
             strBody = strBody.Replace("{Birthday}", item.Birthday);
 
-            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.UTF8), new MailAddress(EmailContact)))
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, Encoding.UTF8), new MailAddress(EmailContact)))
             {
-                mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                mail.BodyEncoding = System.Text.Encoding.UTF8;
+                mail.HeadersEncoding = Encoding.UTF8;
+                mail.SubjectEncoding = Encoding.UTF8;
+                mail.BodyEncoding = Encoding.UTF8;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                 mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
@@ -455,11 +498,11 @@ namespace WebNails.Controllers
                 mySmtpClient.Send(mail);
             }
 
-            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.UTF8), new MailAddress(item.Email)))
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, Encoding.UTF8), new MailAddress(item.Email)))
             {
-                mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                mail.BodyEncoding = System.Text.Encoding.UTF8;
+                mail.HeadersEncoding = Encoding.UTF8;
+                mail.SubjectEncoding = Encoding.UTF8;
+                mail.BodyEncoding = Encoding.UTF8;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                 mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
@@ -609,9 +652,9 @@ namespace WebNails.Controllers
             {
                 if (Count > 0)
                 {
-                    SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
-                    SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
-                    SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
+                    SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, "", string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                    SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, "", string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                    SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer, "");
                 }
 
                 return Json(new { Message = "Send mail success !" });
