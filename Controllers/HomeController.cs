@@ -202,7 +202,7 @@ namespace WebNails.Controllers
             {
                 var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
                 var Domain = Request.Url.Host;
-                var strTXT_ID = dict["txt_id"];
+                var strTXT_ID = dict["txn_id"];
                 var strID = ipnContext.IPNRequest["strID"];
                 var strAmount = dict["mc_gross"];
                 
@@ -210,7 +210,7 @@ namespace WebNails.Controllers
                 {
                     strID = Guid.Parse(strID),
                     txt_id = strTXT_ID,
-                    intAmount = float.Parse(strAmount)
+                    intAmount = float.Parse(strAmount, System.Globalization.CultureInfo.InvariantCulture.NumberFormat)
                 };
 
                 var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
@@ -294,7 +294,11 @@ namespace WebNails.Controllers
 
                 var Domain = Request.Url.Host;
 
-                if (dict["payment_status"] == "Completed" && !ipnContext.Has_TXN_ID && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
+                var payment_status = dict["payment_status"];
+                var receiver_email = dict["receiver_email"];
+                var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
+
+                if (payment_status == "Completed" && !ipnContext.Has_TXN_ID && receiver_email.ToLower() == EmailPaypal.ToLower())
                 {
                     var dataJson = new
                     {
@@ -341,7 +345,7 @@ namespace WebNails.Controllers
                         }
                     }
                 }
-                else if (dict["payment_status"] == "Refunded") //REFUNDED
+                else if (payment_status == "Refunded") //REFUNDED
                 {
                     var dataJson = new
                     {
