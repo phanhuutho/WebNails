@@ -129,7 +129,8 @@ namespace WebNails.Controllers
                 message,
                 name_receiver,
                 name_buyer,
-                codesale
+                codesale,
+                img
             };
 
             var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
@@ -337,10 +338,11 @@ namespace WebNails.Controllers
                             var strNameBuyer = string.Format("{0}", objInfoPaypal.NameBuyer);
                             var strCost = string.Format("{0:N2}", objInfoPaypal.AmountReal);
                             var strCodeSaleOff = string.Format("{0}", objInfoPaypal.CodeSaleOff);
+                            var strImg = string.Format("{0}", objInfoPaypal.Img);
 
-                            SendMailToOwner(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, "", strCost, strCodeSaleOff);
-                            SendMailToReceiver(strStock, strEmail, strAmount, strCode, strNameReceiver, strNameBuyer, "");
-                            SendMailToBuyer(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, "", strCost, strCodeSaleOff);
+                            SendMailToOwner(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, strImg, strCost, strCodeSaleOff);
+                            SendMailToReceiver(strStock, strEmail, strAmount, strCode, strNameReceiver, strNameBuyer, strImg);
+                            SendMailToBuyer(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, strImg, strCost, strCodeSaleOff);
 
                         }
                     }
