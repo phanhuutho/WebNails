@@ -185,7 +185,7 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult PaypalIPN()
+        public async Task<ActionResult> PaypalIPN()
         {
             //Store the IPN received from PayPal
             IPNContext ipnContext = new IPNContext()
@@ -217,8 +217,8 @@ namespace WebNails.Controllers
                 var jsonStringToken = JsonConvert.SerializeObject(Token);
                 var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                var result = Task.Run(() => PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/CheckHasTXN?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson)));
-                var intResult = JsonConvert.DeserializeObject<string>(result.Result);
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/CheckHasTXN?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                var intResult = JsonConvert.DeserializeObject<string>(result);
 
                 if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) == 0)
                 {
@@ -229,7 +229,7 @@ namespace WebNails.Controllers
                     ipnContext.Has_TXN_ID = true;
                 }
                 //Fire and forget verification task
-                Task.Run(() => VerifyTask(ipnContext, Guid.Parse(strID)));
+                VerifyTask(ipnContext, Guid.Parse(strID));
             }
             catch (Exception ex)
             {
@@ -286,7 +286,7 @@ namespace WebNails.Controllers
             ProcessVerificationResponse(ipnContext, strID);
         }
 
-        private void ProcessVerificationResponse(IPNContext ipnContext, Guid strID)
+        private async void ProcessVerificationResponse(IPNContext ipnContext, Guid strID)
         {
             if (ipnContext.Verification.ToUpper().Equals("VERIFIED"))
             {
@@ -310,8 +310,8 @@ namespace WebNails.Controllers
                     var jsonStringToken = JsonConvert.SerializeObject(Token);
                     var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                    var result = Task.Run(() => PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson)));
-                    var intResult = JsonConvert.DeserializeObject<string>(result.Result);
+                    var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                    var intResult = JsonConvert.DeserializeObject<string>(result);
 
                     if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) > 0)
                     {
@@ -319,8 +319,8 @@ namespace WebNails.Controllers
                         jsonStringToken = JsonConvert.SerializeObject(Token);
                         strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                        result = Task.Run(() => PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/GetInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID })));
-                        var objInfoPaypal = JsonConvert.DeserializeObject<InfoPaypal>(result.Result);
+                        result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/GetInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
+                        var objInfoPaypal = JsonConvert.DeserializeObject<InfoPaypal>(result);
 
                         if (objInfoPaypal != null && objInfoPaypal.Status == PaymentStatus.Success && objInfoPaypal.IsUsed == false && objInfoPaypal.IsRefund == false)
                         {
@@ -357,8 +357,8 @@ namespace WebNails.Controllers
                     var jsonStringToken = JsonConvert.SerializeObject(Token);
                     var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                    var result = Task.Run(() => PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/UpdateRefund?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson)));
-                    var intResult = JsonConvert.DeserializeObject<string>(result.Result);
+                    var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/UpdateRefund?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                    var intResult = JsonConvert.DeserializeObject<string>(result);
 
                     if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) == 0)
                     {
