@@ -233,12 +233,10 @@ namespace WebNails.Controllers
             }
             catch (Exception ex)
             {
-                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
-                var keys = dict.AllKeys;
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
                 sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
-                sb.AppendLine("RequestBody: " + JsonConvert.SerializeObject(dict));
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
                 sb.AppendLine("Exception: " + ex);
                 sb.AppendLine("====================================================================");
                 System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\PaypalIPN_Exception.txt", sb.ToString());
@@ -275,11 +273,10 @@ namespace WebNails.Controllers
             }
             catch (Exception ex)
             {
-                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
                 sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
-                sb.AppendLine("RequestBody: " + JsonConvert.SerializeObject(dict));
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
                 sb.AppendLine("Exception: " + ex);
                 sb.AppendLine("====================================================================");
                 System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\VerifyTask_Exception.txt", sb.ToString());
@@ -375,6 +372,7 @@ namespace WebNails.Controllers
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
                 sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
                 sb.AppendLine("====================================================================");
                 System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse_Invalid.txt", sb.ToString());
             }
@@ -383,6 +381,7 @@ namespace WebNails.Controllers
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
                 sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
                 sb.AppendLine("====================================================================");
                 System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse_Other.txt", sb.ToString());
                 //Log error
