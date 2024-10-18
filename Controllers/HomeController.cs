@@ -203,7 +203,7 @@ namespace WebNails.Controllers
                 var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
                 var Domain = Request.Url.Host;
                 var strTXT_ID = dict["txt_id"];
-                var strID = dict["strID"];
+                var strID = ipnContext.IPNRequest["strID"];
                 var strAmount = dict["mc_gross"];
                 
                 var dataJson = new
@@ -229,11 +229,12 @@ namespace WebNails.Controllers
                     ipnContext.Has_TXN_ID = true;
                 }
                 //Fire and forget verification task
-                Task.Run(() => VerifyTask(ipnContext));
+                Task.Run(() => VerifyTask(ipnContext, Guid.Parse(strID)));
             }
             catch (Exception ex)
             {
                 var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+                var keys = dict.AllKeys;
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
                 sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
@@ -247,7 +248,7 @@ namespace WebNails.Controllers
             return Content("");
         }
 
-        private void VerifyTask(IPNContext ipnContext)
+        private void VerifyTask(IPNContext ipnContext, Guid strID)
         {
             try
             {
@@ -285,17 +286,16 @@ namespace WebNails.Controllers
                 //Capture exception for manual investigation
             }
 
-            ProcessVerificationResponse(ipnContext);
+            ProcessVerificationResponse(ipnContext, strID);
         }
 
-        private void ProcessVerificationResponse(IPNContext ipnContext)
+        private void ProcessVerificationResponse(IPNContext ipnContext, Guid strID)
         {
             if (ipnContext.Verification.ToUpper().Equals("VERIFIED"))
             {
                 var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
 
                 var Domain = Request.Url.Host;
-                var strID = Guid.Parse(dict["strID"]);
 
                 if (dict["payment_status"] == "Completed" && !ipnContext.Has_TXN_ID && dict["receiver_email"] == ConfigurationManager.AppSettings["EmailPaypal"])
                 {
