@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "MK Nails",
-  "HyperLinkTell": "tel:(317)6888093",
-  "TextTell": "(317)-688-8093",
-  "GooglePlus": "https://www.google.com/search?q=MK+Nails+46033",
-  "Address": "2007 E Greyhound Pass suite 5, Carmel, IN 46033",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/yz8jpGpSDb1bKoFT8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12225.370040084334!2d-86.1242219!3d40.0007963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814afa9df690955%3A0xb09091fb218900b!2s(%2410%20OFF%20Coupons%20%26%20More%20Promotion)%20MK%20Nails!5e0!3m2!1sen!2s!4v1715962512429!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Infinity Nails LLC",
+  "HyperLinkTell": "tel:(980)2253231",
+  "TextTell": "(980)-225-3231",
+  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+28134",
+  "Address": "12744 Lancaster Hwy, Pineville, NC 28134",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/ZDHxSEPR9JCWSHuD9",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13062.116967263031!2d-80.878459!3d35.068507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569cbfd985345d%3A0x4d2a4ce7e2563882!2sInfinity%20Nails%20LLC%20(Happy%20Hour%3A%205-10%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1729360018541!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/d9cd867a6467/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
@@ -14,7 +14,24 @@
       "Src": "/Content/images/popup/coupon-01.jpg"
     }
   ],
-  "Prices": [],
+  "Prices": [
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-02.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-03.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/price-list/prices-04.jpg"
+    }
+  ],
   "Telegram": {
     "Title": "Telegram",
     "Url": "",
