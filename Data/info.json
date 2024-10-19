@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "Broadway Nails & Lashes",
+  "HyperLinkTell": "tel:(210)3142896",
+  "TextTell": "(210)-314-2896",
+  "GooglePlus": "https://www.google.com/search?q=broadway+nails+and+lashes+78217",
+  "Address": "8522 Broadway #107, San Antonio, TX 78217",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/Znv7sw654ngFQKJA6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13887.80178091887!2d-98.4625501!3d29.5178036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865cf52f52014299%3A0xa1b88b4aef656ddc!2sBroadway%20Nails%20%26%20Lashes%20(%2410%20OFF%20%26%2015%25%20OFF%20Coupon)!5e0!3m2!1sen!2s!4v1729363064334!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://www.fresha.com/a/broadway-nails-and-lashes-san-antonio-8522-broadway-qn6suuja/all-offer?menu=true&pId=954452",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
@@ -24,21 +28,21 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/BroadwayNailsAndLashes/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
   },
   "Instagram": {
     "Title": "Instagram",
-    "Url": "",
+    "Url": "https://www.instagram.com/broadwaynailsandlashes/",
     "Position": 3,
     "ClassIcon": "fa fa-instagram",
     "BackgroundColor": "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
   },
   "Twitter": {
     "Title": "Twitter",
-    "Url": "",
+    "Url": "https://twitter.com/broadwaynailssa",
     "Position": 4,
     "ClassIcon": "fa fa-twitter",
     "BackgroundColor": "#1d9bf0"

@@ -1,9 +1,9 @@
 ﻿<p>
-    Welcome to Escape Nail & Spa.
+    Welcome to Broadway Nails & Lashes.
 </p>
 
 <p>
-    Located at a beautiful place in Fort Worth, TX 76244, Escape Nail & Spa offers the ultimate in pampering and restoring your beauty with our whole-hearted, careful & professional staff.
+    Located at a beautiful place in Fort Worth, TX 76244. Broadway Nails & Lashes offers the ultimate in pampering and restoring your beauty with our whole-hearted, careful & professional staff.
 </p>
 
 <p>
@@ -19,7 +19,7 @@
 </p>
 
 <p>
-    Besides designing nail models, Escape Nail & Spa also provides nail care services, body waxing & other spa services.
+    Besides designing nail models, Broadway Nails & Lashes also provides nail care services, body waxing & other spa services.
 </p>
 
 <p>
