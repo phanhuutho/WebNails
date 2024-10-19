@@ -3,8 +3,11 @@
     var EmailPaypal = string.Format("{0}", ViewBag.EmailPaypal);
     var Amount = string.Format("{0}", ViewBag.Amount);
     var Email = string.Format("{0}", ViewBag.Email);
+    var Invoice = string.Format("{0}", ViewBag.Invoice);
     var UrlShopping = Url.Action("Payment", "Home", null, Request.Url.Scheme);
+    var UrlCancel = Url.Action("Payment", "Home", null, Request.Url.Scheme);
     var UrlReturn = Url.Action("PaymentResponse", "Home", null, Request.Url.Scheme);
+    var UrlNotify = Url.Action("PaypalIPN", "Home", new { strID = Invoice }, Request.Url.Scheme);
 }
 @section css{
     <style type="text/css">
@@ -39,6 +42,16 @@
             hiddenField_Email.type = 'hidden';
             hiddenField_Email.name = 'email';
             hiddenField_Email.value = '@Email';
+
+            const hiddenField_Invoice = document.createElement('input');
+            hiddenField_Invoice.type = 'hidden';
+            hiddenField_Invoice.name = 'invoice';
+            hiddenField_Invoice.value = '@Invoice';
+
+            const hiddenField_CertID = document.createElement('input');
+            hiddenField_Invoice.type = 'hidden';
+            hiddenField_Invoice.name = 'cert_id';
+            hiddenField_Invoice.value = '@Invoice';
 
             const hiddenField_ItemName = document.createElement('input');
             hiddenField_ItemName.type = 'hidden';
@@ -95,6 +108,11 @@
             hiddenField_Return.name = 'return';
             hiddenField_Return.value = '@Html.Raw(UrlReturn)';
 
+            const hiddenField_Notify = document.createElement('input');
+            hiddenField_Notify.type = 'hidden';
+            hiddenField_Notify.name = 'notify_url';
+            hiddenField_Notify.value = '@Html.Raw(UrlNotify)';
+
             const hiddenField_NoShipping = document.createElement('input');
             hiddenField_NoShipping.type = 'hidden';
             hiddenField_NoShipping.name = 'no_shipping';
@@ -121,6 +139,8 @@
             form.appendChild(hiddenField_Business);
             form.appendChild(hiddenField_Email);
             form.appendChild(hiddenField_CMD);
+            form.appendChild(hiddenField_Invoice);
+            form.appendChild(hiddenField_CertID);
             form.appendChild(hiddenField_ItemName);
             form.appendChild(hiddenField_ItemNumber);
             form.appendChild(hiddenField_Quantity);
@@ -131,6 +151,7 @@
             //form.appendChild(hiddenField_Upload);
             form.appendChild(hiddenField_ShoppingURL);
             form.appendChild(hiddenField_Return);
+            form.appendChild(hiddenField_Notify);
             form.appendChild(hiddenField_NoShipping);
             form.appendChild(hiddenField_NoNote);
             form.appendChild(hiddenField_Submit);

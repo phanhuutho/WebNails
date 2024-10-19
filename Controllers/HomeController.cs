@@ -13,11 +13,20 @@ using System.Data.SqlClient;
 using Dapper;
 using System.Data;
 using System.Web.Security;
+using System.Threading.Tasks;
+using WebNails.Utilities;
+using System.Text;
+using System.IO;
 
 namespace WebNails.Controllers
 {
     public class HomeController : BaseController
     {
+        private readonly string ApiPayment = ConfigurationManager.AppSettings["ApiPayment"];
+        private readonly string TokenKeyAPI = ConfigurationManager.AppSettings["TokenKeyAPI"];
+        private readonly string SaltKeyAPI = ConfigurationManager.AppSettings["SaltKeyAPI"];
+        private readonly string VectorKeyAPI = ConfigurationManager.AppSettings["VectorKeyAPI"];
+
         public ActionResult Index()
         {
             return View();
@@ -57,13 +66,25 @@ namespace WebNails.Controllers
         [HttpPost]
         public ActionResult RegisterCoupon(RegisterCouponModel item)
         {
-            SendMailRegisterCoupon(item);
+            //SendMailRegisterCoupon(item);
             return View("register_coupon_success");
         }
 
         public ActionResult Payment(string img = "")
         {
             ViewBag.Img = img;
+
+            var Domain = Request.Url.Host;
+            var Token = new TokenPage { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+
+            HttpCookie cookie = new HttpCookie("TokenPage");
+            cookie.Value = strEncrypt;
+            cookie.Expires = Token.TimeExpire ?? DateTime.Now;
+            Response.Cookies.Add(cookie);
+
             return View();
         }
 
@@ -86,89 +107,49 @@ namespace WebNails.Controllers
             return Json(new { Galleries, ShowMore });
         }
 
+        [Token]
         [HttpPost]
-        public ActionResult Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "", string codesale = "")
+        public async Task<ActionResult> Process(string amount, string stock, string email, string message, string name_receiver, string name_buyer, string img = "", string codesale = "")
         {
             var strID = Guid.NewGuid();
             var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
+            var Cost = float.Parse(amount);
+            var Domain = Request.Url.Host;
+            var strCode = GenerateUniqueCode();
 
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            var dataJson = new
             {
-                var Domain = Request.Url.Host;
-                var Transactions = GenerateUniqueCode();
+                EmailPaypal,
+                strID,
+                Code = strCode,
+                Transactions = string.Format("{0}", strID),
+                amount,
+                stock,
+                email,
+                message,
+                name_receiver,
+                name_buyer,
+                codesale,
+                img
+            };
 
-                var IsValidCodeSale = false;
-                var ValidCode = 0;
-                var DescriptionCode = "";
-                var Cost = float.Parse(amount);
-                if (!string.IsNullOrEmpty(codesale))
-                {
-                    var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = codesale, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    if(objNailCodeSale != null)
-                    {
-                        IsValidCodeSale = float.Parse(amount) >= float.Parse(objNailCodeSale.MinAmountSaleOff.ToString());
-                        if (!IsValidCodeSale)
-                        {
-                            ValidCode = 1;
-                            DescriptionCode = $"Amount payment less than {string.Format("{0:N0}", objNailCodeSale.MinAmountSaleOff)}. Code sale off not available.";
-                        }
-                        else
-                        {
-                            DescriptionCode = "Code sale off correct";
-                            var amount_update = Cost * (100 - objNailCodeSale.Sale) / 100;
-                            amount = string.Format("{0:N2}", amount_update);
-                        }
-                    }
-                    else
-                    {
-                        ValidCode = 2;
-                        DescriptionCode = "Code sale off incorrect";
-                    }
-                } 
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
 
-                var objResult = sqlConnect.Execute("spInfoPaypal_InsertBefore", new
-                {
-                    strID = strID,
-                    strDomain = Domain,
-                    strTransactions = Transactions,
-                    strCode = Transactions,
-                    strOwner = EmailPaypal,
-                    strStock = stock,
-                    strEmail = email,
-                    strNameReceiver = name_receiver,
-                    strNameBuyer = name_buyer,
-                    intAmount = float.Parse(amount),
-                    strMessage = message,
-                    strCodeSaleOff = codesale,
-                    intAmountReal = Cost,
-                    intValidCode = ValidCode,
-                    strDescriptionValidCode = DescriptionCode
-                }, commandType: CommandType.StoredProcedure);
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/Process?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+            var AmountResult = JsonConvert.DeserializeObject(result);
 
-                ViewBag.EmailPaypal = EmailPaypal ?? "";
-                ViewBag.Amount = string.Format("{0}", amount) ?? string.Format("{0}", "1");
-                ViewBag.Stock = stock ?? "";
-                ViewBag.Email = email ?? "";
-                ViewBag.NameReceiver = name_receiver ?? "";
-                ViewBag.NameBuyer = name_buyer ?? "";
-                ViewBag.Img = img;
-                ViewBag.Cost = Cost;
-                ViewBag.CodeSaleOff = codesale;
-
-                var cookieDataBefore = new HttpCookie("DataBefore");
-                cookieDataBefore["Amount"] = string.Format("{0}", amount);
-                cookieDataBefore["Email"] = email;
-                cookieDataBefore["Stock"] = stock;
-                cookieDataBefore["Message"] = message;
-                cookieDataBefore["NameReceiver"] = name_receiver;
-                cookieDataBefore["NameBuyer"] = name_buyer;
-                cookieDataBefore["Img"] = img;
-                cookieDataBefore["Guid"] = strID.ToString();
-                cookieDataBefore["Cost"] = string.Format("{0:N2}", Cost);
-                cookieDataBefore["CodeSaleOff"] = codesale;
-                cookieDataBefore.Expires.Add(new TimeSpan(0, 60, 0));
-                Response.Cookies.Add(cookieDataBefore);
-            }
+            ViewBag.Invoice = strID;
+            ViewBag.EmailPaypal = EmailPaypal ?? "";
+            ViewBag.Amount = string.Format("{0}", AmountResult) ?? string.Format("{0}", amount);
+            ViewBag.Stock = stock ?? "";
+            ViewBag.Email = email ?? "";
+            ViewBag.NameReceiver = name_receiver ?? "";
+            ViewBag.NameBuyer = name_buyer ?? "";
+            ViewBag.Img = img;
+            ViewBag.Cost = Cost;
+            ViewBag.CodeSaleOff = codesale;
 
             return View();
         }
@@ -184,10 +165,6 @@ namespace WebNails.Controllers
             {
                 data.Add(key, Request[key]);
             }
-            foreach (var key in Request.Headers.AllKeys)
-            {
-                data.Add(key, Request[key]);
-            }
 
             TempData["PayerID"] = Request["PayerID"];
             return RedirectToAction("Finish", data);
@@ -195,67 +172,226 @@ namespace WebNails.Controllers
 
         public ActionResult Finish()
         {
-            string responseCode;
-            string SecureHash;
-            var strAmount = string.Empty;
-            var strCost = string.Empty;
-            var strCodeSaleOff = string.Empty;
-            var strEmail = string.Empty;
-            var strStock = string.Empty;
-            var strNameReceiver = string.Empty;
-            var strNameBuyer = string.Empty;
-            var strMessage = string.Empty;
-            var strImg = string.Empty;
-            var strID = new Guid();
-
-            HttpCookie cookieDataBefore = Request.Cookies["DataBefore"];
-            if (cookieDataBefore != null)
-            {
-                strAmount = cookieDataBefore["Amount"];
-                strCost = cookieDataBefore["Cost"];
-                strCodeSaleOff = cookieDataBefore["CodeSaleOff"];
-                strEmail = cookieDataBefore["Email"];
-                strStock = cookieDataBefore["Stock"];
-                strNameReceiver = cookieDataBefore["NameReceiver"];
-                strNameBuyer = cookieDataBefore["NameBuyer"];
-                strMessage = cookieDataBefore["Message"];
-                strImg = cookieDataBefore["Img"];
-                strID = Guid.Parse(cookieDataBefore["Guid"]);
-            }
-
             if (Request.QueryString["PayerID"] != null && Request.QueryString["PayerID"] == string.Format("{0}", TempData["PayerID"]))
             {
-                SecureHash = "<font color='blue'><strong>CORRECT</strong></font>";
-
-                responseCode = "0";
-
-                //var strCode = GenerateUniqueCode();
-                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-                {
-                    var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = strID }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-
-                    if(info != null)
-                    {
-                        var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = strID, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
-
-                        if (objResult > 0)
-                        {
-                            SendMailToOwner(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
-                            SendMailToBuyer(string.Format("{0:N2}", strAmount), strStock, strEmail, strMessage, info.Code, strNameReceiver, strNameBuyer, strImg, string.Format("{0:N2}", strCost), strCodeSaleOff);
-                            SendMailToReceiver(strStock, strEmail, string.Format("{0:N2}", strCost), info.Code, strNameReceiver, strNameBuyer, strImg);
-                        }
-                    }
-                }    
+                ViewBag.SecureHash = "<font color='blue'><strong>THANKS YOU !!!</strong></font>";
+                ViewBag.ResponseCode = "0";
             }
             else
             {
-                SecureHash = "<font color='red'><strong>FAIL</strong></font>";
-                responseCode = "-1";
+                ViewBag.SecureHash = "<font color='red'><strong>FAIL</strong></font>";
+                ViewBag.ResponseCode = "-1";
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> PaypalIPN()
+        {
+            //Store the IPN received from PayPal
+            IPNContext ipnContext = new IPNContext()
+            {
+                IPNRequest = Request
+            };
+
+            using (StreamReader reader = new StreamReader(ipnContext.IPNRequest.InputStream, Encoding.ASCII))
+            {
+                ipnContext.RequestBody = reader.ReadToEnd();
             }
 
-            ViewBag.SecureHash = SecureHash;
-            ViewBag.ResponseCode = responseCode;
-            return View();
+            try
+            {
+                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+                var Domain = Request.Url.Host;
+                var strTXT_ID = dict["txn_id"];
+                var strID = ipnContext.IPNRequest["strID"];
+                var strAmount = dict["mc_gross"];
+                
+                var dataJson = new
+                {
+                    strID = Guid.Parse(strID),
+                    txt_id = strTXT_ID,
+                    intAmount = float.Parse(strAmount, System.Globalization.CultureInfo.InvariantCulture.NumberFormat)
+                };
+
+                var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                var jsonStringToken = JsonConvert.SerializeObject(Token);
+                var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/CheckHasTXN?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                var intResult = JsonConvert.DeserializeObject<string>(result);
+
+                if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) == 0)
+                {
+                    ipnContext.Has_TXN_ID = false;
+                }
+                else
+                {
+                    ipnContext.Has_TXN_ID = true;
+                }
+                //Fire and forget verification task
+                VerifyTask(ipnContext, Guid.Parse(strID));
+            }
+            catch (Exception ex)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
+                sb.AppendLine("Exception: " + ex);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\PaypalIPN_Exception.txt", sb.ToString());
+                //Capture exception for manual investigation
+            }
+
+            return Content("");
+        }
+
+        private void VerifyTask(IPNContext ipnContext, Guid strID)
+        {
+            try
+            {
+                var verificationRequest = (HttpWebRequest)WebRequest.Create("https://www.paypal.com/cgi-bin/webscr");
+
+                //Set values for the verification request
+                verificationRequest.Method = "POST";
+                verificationRequest.ContentType = "application/x-www-form-urlencoded";
+                verificationRequest.UserAgent = "PaypalIPN";
+                //Add cmd=_notify-validate to the payload
+                string strRequest = "cmd=_notify-validate&" + ipnContext.RequestBody;
+                verificationRequest.ContentLength = strRequest.Length;
+                verificationRequest.UseDefaultCredentials = true;
+                //Attach payload to the verification request
+                using (StreamWriter writer = new StreamWriter(verificationRequest.GetRequestStream(), Encoding.ASCII))
+                {
+                    writer.Write(strRequest);
+                }
+                //Send the request to PayPal and get the response
+                using (StreamReader reader = new StreamReader(verificationRequest.GetResponse().GetResponseStream()))
+                {
+                    ipnContext.Verification = reader.ReadToEnd();
+                }
+            }
+            catch (Exception ex)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
+                sb.AppendLine("Exception: " + ex);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\VerifyTask_Exception.txt", sb.ToString());
+                //Capture exception for manual investigation
+            }
+
+            ProcessVerificationResponse(ipnContext, strID);
+        }
+
+        private async void ProcessVerificationResponse(IPNContext ipnContext, Guid strID)
+        {
+            if (ipnContext.Verification.ToUpper().Equals("VERIFIED"))
+            {
+                var dict = HttpUtility.ParseQueryString(ipnContext.RequestBody);
+
+                var Domain = Request.Url.Host;
+
+                var payment_status = dict["payment_status"];
+                var receiver_email = dict["receiver_email"];
+                var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
+
+                if (payment_status == "Completed" && !ipnContext.Has_TXN_ID && receiver_email.ToLower() == EmailPaypal.ToLower())
+                {
+                    var dataJson = new
+                    {
+                        strID,
+                        Transactions = string.Format("{0}", strID),
+                        TXN_ID = dict["txn_id"],
+                        PaymentStatus = dict["payment_status"],
+                        Verifysign = dict["verify_sign"],
+                        Detail = JsonConvert.SerializeObject(dict)
+                    };
+
+                    var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                    var jsonStringToken = JsonConvert.SerializeObject(Token);
+                    var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                    var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/InsertInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                    var intResult = JsonConvert.DeserializeObject<string>(result);
+
+                    if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) > 0)
+                    {
+                        Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                        jsonStringToken = JsonConvert.SerializeObject(Token);
+                        strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                        result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/GetInfoPaypal?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { strID }));
+                        var objInfoPaypal = JsonConvert.DeserializeObject<InfoPaypal>(result);
+
+                        if (objInfoPaypal != null && objInfoPaypal.Status == PaymentStatus.Success && objInfoPaypal.IsUsed == false && objInfoPaypal.IsRefund == false)
+                        {
+                            var strAmount = string.Format("{0:N2}", objInfoPaypal.Amount);
+                            var strStock = string.Format("{0}", objInfoPaypal.Stock);
+                            var strEmail = string.Format("{0}", objInfoPaypal.Email);
+                            var strMessage = string.Format("{0}", objInfoPaypal.Message);
+                            var strCode = string.Format("{0}", objInfoPaypal.Code);
+                            var strNameReceiver = string.Format("{0}", objInfoPaypal.NameReceiver);
+                            var strNameBuyer = string.Format("{0}", objInfoPaypal.NameBuyer);
+                            var strCost = string.Format("{0:N2}", objInfoPaypal.AmountReal);
+                            var strCodeSaleOff = string.Format("{0}", objInfoPaypal.CodeSaleOff);
+                            var strImg = string.Format("{0}", objInfoPaypal.Img);
+
+                            SendMailToOwner(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, strImg, strCost, strCodeSaleOff);
+                            SendMailToReceiver(strStock, strEmail, strAmount, strCode, strNameReceiver, strNameBuyer, strImg);
+                            SendMailToBuyer(strAmount, strStock, strEmail, strMessage, strCode, strNameReceiver, strNameBuyer, strImg, strCost, strCodeSaleOff);
+
+                        }
+                    }
+                }
+                else if (payment_status == "Refunded") //REFUNDED
+                {
+                    var dataJson = new
+                    {
+                        strID,
+                        TXN_ID = dict["txn_id"],
+                        PaymentStatus = dict["payment_status"],
+                        Verifysign = dict["verify_sign"],
+                        Parent_TXN_ID = dict["parent_txn_id"],
+                        Detail = JsonConvert.SerializeObject(dict)
+                    };
+
+                    var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+                    var jsonStringToken = JsonConvert.SerializeObject(Token);
+                    var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+                    var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Paypal/UpdateRefund?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(dataJson));
+                    var intResult = JsonConvert.DeserializeObject<string>(result);
+
+                    if (!string.IsNullOrEmpty(intResult) && int.Parse(intResult) == 0)
+                    {
+                        // Currently, do not something
+                    }
+                }
+            }
+            else if (ipnContext.Verification.ToUpper().Equals("INVALID"))
+            {
+                //Log for manual investigation
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse_Invalid.txt", sb.ToString());
+            }
+            else
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("DATE LOG: " + DateTime.Now.ToString(new System.Globalization.CultureInfo("en-us")));
+                sb.AppendLine("strID: " + ipnContext.IPNRequest["strID"]);
+                sb.AppendLine("RequestBody: " + ipnContext.RequestBody);
+                sb.AppendLine("====================================================================");
+                System.IO.File.AppendAllText(@"C:\\DataWeb\PaypalIPN\ProcessVerificationResponse_Other.txt", sb.ToString());
+                //Log error
+            }
         }
 
         private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
@@ -263,11 +399,11 @@ namespace WebNails.Controllers
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
                 var EmailPaypal = ConfigurationManager.AppSettings["EmailPaypal"];
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(EmailPaypal)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], Encoding.UTF8), new MailAddress(EmailPaypal)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                    mail.BodyEncoding = System.Text.Encoding.UTF8;
+                    mail.HeadersEncoding = Encoding.UTF8;
+                    mail.SubjectEncoding = Encoding.UTF8;
+                    mail.BodyEncoding = Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: <strong>${strAmount} USD</strong></p>
@@ -295,11 +431,11 @@ namespace WebNails.Controllers
         {
             if (!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmailReceiver, strNameReceiver, System.Text.Encoding.UTF8)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], Encoding.UTF8), new MailAddress(strEmailReceiver, strNameReceiver, Encoding.UTF8)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                    mail.BodyEncoding = System.Text.Encoding.UTF8;
+                    mail.HeadersEncoding = Encoding.UTF8;
+                    mail.SubjectEncoding = Encoding.UTF8;
+                    mail.BodyEncoding = Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Gift For You";
                     mail.Body = $@"<p>Hello,</p><br/>
@@ -324,11 +460,11 @@ namespace WebNails.Controllers
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
-                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], System.Text.Encoding.UTF8), new MailAddress(strEmail)))
+                using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["EmailName"], Encoding.UTF8), new MailAddress(strEmail)))
                 {
-                    mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                    mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                    mail.BodyEncoding = System.Text.Encoding.UTF8;
+                    mail.HeadersEncoding = Encoding.UTF8;
+                    mail.SubjectEncoding = Encoding.UTF8;
+                    mail.BodyEncoding = Encoding.UTF8;
                     mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                     mail.Subject = "Checkout Paypal Gift Purchase - " + strEmail;
                     mail.Body = $@"<p>Amount pay: {strAmount}</p>
@@ -363,11 +499,11 @@ namespace WebNails.Controllers
             strBody = strBody.Replace("{Phone}", item.Phone);
             strBody = strBody.Replace("{Birthday}", item.Birthday);
 
-            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.UTF8), new MailAddress(EmailContact)))
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, Encoding.UTF8), new MailAddress(EmailContact)))
             {
-                mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                mail.BodyEncoding = System.Text.Encoding.UTF8;
+                mail.HeadersEncoding = Encoding.UTF8;
+                mail.SubjectEncoding = Encoding.UTF8;
+                mail.BodyEncoding = Encoding.UTF8;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                 mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
@@ -380,11 +516,11 @@ namespace WebNails.Controllers
                 mySmtpClient.Send(mail);
             }
 
-            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, System.Text.Encoding.UTF8), new MailAddress(item.Email)))
+            using (MailMessage mail = new MailMessage(new MailAddress(ConfigurationManager.AppSettings["EmailSystem"], ViewBag.Name, Encoding.UTF8), new MailAddress(item.Email)))
             {
-                mail.HeadersEncoding = System.Text.Encoding.UTF8;
-                mail.SubjectEncoding = System.Text.Encoding.UTF8;
-                mail.BodyEncoding = System.Text.Encoding.UTF8;
+                mail.HeadersEncoding = Encoding.UTF8;
+                mail.SubjectEncoding = Encoding.UTF8;
+                mail.BodyEncoding = Encoding.UTF8;
                 mail.IsBodyHtml = bool.Parse(ConfigurationManager.AppSettings["IsBodyHtmlEmailSystem"]);
                 mail.Subject = ViewBag.Name + " - Naperville";
                 mail.Body = strBody;
@@ -408,37 +544,36 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(LoginModel model)
+        public async Task<ActionResult> Login(LoginModel model)
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            var queryString = Request.UrlReferrer.Query;
+
+            var queryDictionary = HttpUtility.ParseQueryString(queryString);
+
+            var Domain = Request.Url.Host;
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncryptToken = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/Login?token={1}&Domain={2}", ApiPayment, strEncryptToken, Domain), JsonConvert.SerializeObject(model));
+            var objResult = JsonConvert.DeserializeObject<LoginResult>(result);
+            objResult = objResult ?? new LoginResult { IsLogin = false };
+
+            var IsLogin = objResult.IsLogin;
+
+            if (IsLogin)
             {
-                var queryString = Request.UrlReferrer.Query;
+                var ticket = new FormsAuthenticationTicket(1, model.Username, DateTime.Now, DateTime.Now.AddHours(1), true, "UserLogged", FormsAuthentication.FormsCookiePath);
+                var strEncrypt = FormsAuthentication.Encrypt(ticket);
+                var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, strEncrypt);
+                Response.Cookies.Add(cookie);
 
-                var queryDictionary = HttpUtility.ParseQueryString(queryString);
-
-                var Domain = Request.Url.Host;
-
-                var checklogin = sqlConnect.Query("spUserSite_GetByUsernameAndPassword", new { strUsername = model.Username, strPassword = model.Password, strDomain = Domain }, commandType: CommandType.StoredProcedure).Count() == 1;
-                if (checklogin)
-                {
-                    var ticket = new FormsAuthenticationTicket(1, model.Username, System.DateTime.Now, System.DateTime.Now.AddHours(1), true, "UserLogged", FormsAuthentication.FormsCookiePath);
-                    var strEncrypt = FormsAuthentication.Encrypt(ticket);
-                    var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, strEncrypt);
-                    Response.Cookies.Add(cookie);
-
-                    if (queryDictionary.Count > 0)
-                    {
-                        return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
-                    }
-                    else
-                    {
-                        return Json(new { ReturnUrl = "/gift-manage.html", IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
-                    }
-                }
-                else
-                {
-                    return Json(new { ReturnUrl = queryDictionary.Get("ReturnUrl"), IsLogin = false, Message = "Login Fail" }, JsonRequestBehavior.AllowGet);
-                }
+                return Json(new { ReturnUrl = "/gift-manage.html", IsLogin = true, Message = "" }, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return Json(new { ReturnUrl = "", IsLogin = false, Message = "Login Fail" }, JsonRequestBehavior.AllowGet);
             }
         }
 
@@ -456,77 +591,88 @@ namespace WebNails.Controllers
             var cookie = Request.Cookies[FormsAuthentication.FormsCookieName];
             if (cookie != null)
             {
-                cookie.Expires = System.DateTime.Now.AddDays(-1);
+                cookie.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(cookie);
             }
             return RedirectToAction("Login");
         }
 
-        public ActionResult GetGiftManage(string search = "")
+        public async Task<ActionResult> GetGiftManage(string search = "")
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            var Domain = Request.Url.Host;
+
+            var intSkip = PagingHelper.Skip;
+
+            var intCountSort = PagingHelper.CountSort;
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await GetStringJsonFromURL(string.Format("{0}/{2}/Home/GetGiftManage?token={1}&Domain={2}&intSkip={3}&intCountSort={4}&search={5}", ApiPayment, strEncrypt, Domain, intSkip, intCountSort, search));
+            var objResult = JsonConvert.DeserializeObject<GiftManagelResult>(result);
+            objResult = objResult ?? new GiftManagelResult { Count = 0, Data = new List<InfoPaypal>() };
+
+            var Count = objResult.Count;
+            var data = objResult.Data;
+
+            ViewBag.Count = Count;
+
+            return PartialView("_GetTable_GiftManage", data);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> UpdateCompleted(Guid id)
+        {
+            var Domain = Request.Url.Host;
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/UpdateCompleted?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
+            var objResult = JsonConvert.DeserializeObject<int>(result);
+
+            if (objResult > 0)
             {
-                var Domain = Request.Url.Host;
-
-                var intSkip = Utilities.PagingHelper.Skip;
-
-                var param = new DynamicParameters();
-                param.Add("@intSkip", intSkip);
-                param.Add("@intTake", Utilities.PagingHelper.CountSort);
-                param.Add("@strDomain", Domain);
-                param.Add("@strValue", search);
-                param.Add("@intTotalRecord", dbType: DbType.Int32, direction: ParameterDirection.Output);
-
-                var objResult = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByNailDomain", param, commandType: CommandType.StoredProcedure);
-
-                ViewBag.Count = param.Get<int>("@intTotalRecord");
-
-                return PartialView("_GetTable_GiftManage", objResult);
+                return Json(new { Message = "Update completed success !" });
+            }
+            else
+            {
+                return Json(new { Message = "Update completed fail !" });
             }
         }
 
         [HttpPost]
-        public ActionResult UpdateCompleted(Guid id)
+        public async Task<ActionResult> SendMail(Guid id)
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-            {
-                var objResult = sqlConnect.Execute("spInfoPaypal_UpdateIsUsed", new { strID = id, bitIsUsed = true}, commandType: CommandType.StoredProcedure);
+            var Domain = Request.Url.Host;
 
-                if(objResult > 0)
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/SendMail?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { id }));
+            var objResult = JsonConvert.DeserializeObject<SendMailResult>(result);
+            objResult = objResult ?? new SendMailResult {  Count = 0, Data = null };
+
+            var Count = objResult.Count;
+            var info = objResult.Data;
+
+            if (info != null)
+            {
+                if (Count > 0)
                 {
-                    return Json(new { Message = "Update completed success !" });
+                    SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, "", string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                    SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, "", string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
+                    SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer, "");
                 }
-                else
-                {
-                    return Json(new { Message = "Update completed fail !" });
-                }
+
+                return Json(new { Message = "Send mail success !" });
             }
-        }
-
-        [HttpPost]
-        public ActionResult SendMail(Guid id)
-        {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
+            else
             {
-                var info = sqlConnect.Query<InfoPaypal>("spInfoPaypal_GetInfoPaypalByID", new { strID = id }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-
-                if(info != null)
-                {
-                    var objResult = sqlConnect.Execute("spInfoPaypal_UpdateStatus", new { strID = id, intStatus = (int)PaymentStatus.Success }, commandType: CommandType.StoredProcedure);
-
-                    if(objResult > 0)
-                    {
-                        SendMailToOwner(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
-                        SendMailToBuyer(string.Format("{0:N2}", info.Amount), info.Stock, info.Email, info.Message, info.Code, info.NameReceiver, info.NameBuyer, string.Format("{0:N2}", info.AmountReal), info.CodeSaleOff);
-                        SendMailToReceiver(info.Stock, info.Email, string.Format("{0:N2}", info.Amount), info.Code, info.NameReceiver, info.NameBuyer);
-                    }
-
-                    return Json(new { Message = "Send mail success !" });
-                }
-                else
-                {
-                    return Json(new { Message = "Send mail fail !" });
-                }
+                return Json(new { Message = "Send mail fail !" });
             }
         }
 
@@ -548,43 +694,38 @@ namespace WebNails.Controllers
         }
 
         [HttpPost]
-        public ActionResult CheckCodeSaleOff(string Code, int Amount)
+        public async Task<ActionResult> CheckCodeSaleOff(string Code, int Amount)
         {
-            var result = false;
-            var message = "";
-            if (!string.IsNullOrEmpty(Code))
-            {
-                using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-                {
-                    var Domain = Request.Url.Host;
-                    var objNailCodeSale = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSaleByCode", new { strCode = Code, strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    result = objNailCodeSale != null;
-                    if (result)
-                    {
-                        if(Amount < objNailCodeSale.MinAmountSaleOff)
-                        {
-                            result = false;
-                            message = $"Amount payment less than {string.Format("{0:N0}", objNailCodeSale.MinAmountSaleOff)}. Code sale off not available.";
-                        }
-                    }
-                    else
-                    {
-                        message = "Code sale off incorrect";
-                    }
-                }
-            }
-            return Json(new { Status = result, Message = message });
+            var Domain = Request.Url.Host;
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/CheckCodeSaleOff?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), JsonConvert.SerializeObject(new { Code, Amount }));
+            var objResult = JsonConvert.DeserializeObject<CheckCodeSaleResult>(result);
+            objResult = objResult ?? new CheckCodeSaleResult { Status = false, Message = "Code Invalid" };
+
+            var status = objResult.Status;
+            var message = objResult.Message;
+
+            return Json(new { Status = status, Message = message });
         }
 
         [HttpPost]
-        public ActionResult GetListNailCodeSaleByDomain()
+        public async Task<ActionResult> GetListNailCodeSaleByDomain()
         {
-            using (var sqlConnect = new SqlConnection(ConfigurationManager.ConnectionStrings["ContextDatabase"].ConnectionString))
-            {
-                var Domain = Request.Url.Host;
-                var data = sqlConnect.Query<NailCodeSale>("spNailCodeSale_GetNailCodeSalesByDomain", new { @strDomain = Domain, strDateNow = DateTime.Now }, commandType: CommandType.StoredProcedure).ToList();
-                return Json(data);
-            }
+            var Domain = Request.Url.Host;
+
+            var Token = new { Token = ViewBag.Token, Domain = Domain, TimeExpire = DateTime.Now.AddMinutes(5) };
+            var jsonStringToken = JsonConvert.SerializeObject(Token);
+            var strEncrypt = Sercurity.EncryptToBase64(jsonStringToken, TokenKeyAPI, SaltKeyAPI, VectorKeyAPI);
+
+            var result = await PostStringJsonFromURL(string.Format("{0}/{2}/Home/GetListNailCodeSaleByDomain?token={1}&Domain={2}", ApiPayment, strEncrypt, Domain), "");
+            var objResult = JsonConvert.DeserializeObject<List<NailCodeSale>>(result);
+            objResult = objResult ?? new List<NailCodeSale>();
+
+            return Json(objResult);
         }
     }
 }

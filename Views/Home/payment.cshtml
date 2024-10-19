@@ -4,6 +4,9 @@
 @section css{
     <link href="~/Content/css/payments.css" rel="stylesheet" />
 }
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
+}
 <main class="bg-main py-5">
     <div class="container-lg">
         <div class="row justify-content-center">
@@ -43,6 +46,15 @@
                         <div class="qpp-validating-form">Validating payment information...</div>
                         <div class="qpp-processing-form">Waiting for PayPal...</div>
                         <div style="clear:both;"></div>
+                    </div>
+                    <div class="card mt-3 bg-warning">
+                        <div class="card-body">
+                            <div class="text-danger">
+                                <span>
+                                    Note: Please don't close page paypal, and click button <b>Return Merchant</b> to finish payment buy gift card.
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,12 +136,14 @@
                 type: "POST",
                 url: "/get-discounts.html",
                 success: function (result) {
-                    $(".modal-body", "#ModalDiscounts").html("");
                     if (result && result.length > 0) {
                         for (var i = 0; i < result.length; i++) {
                             var item = result[i];
                             $(".modal-body", "#ModalDiscounts").append("<p>- Code: <b><a href='javascript:void(0);' onclick='AutoInputDiscountCode(this)' data-minimum-amount='" + item.MinAmountSaleOff + "' data-code='" + item.Code + "'>" + item.Code + "</a></b> for sale off <b>" + item.Sale + "%</b> amount value.</p>");
                         }
+                    }
+                    else {
+                        $(".modal-body", "#ModalDiscounts").html("No code discount");
                     }
                     $("#ModalDiscounts").modal("show");
                 },

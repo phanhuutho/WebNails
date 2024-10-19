@@ -36,11 +36,15 @@
                             <td>@(item.NameReceiver) - @(item.Stock)</td>
                             <td>@(string.Format("${0}",item.Amount))</td>
                             <td>
-                                @if (item.Status == PaymentStatus.Success)
+                                @if (item.IsRefund)
+                                {
+                                    <span class="badge bg-warning">Refund</span>
+                                }
+                                else if (item.Status == PaymentStatus.Success)
                                 {
                                     <span class="badge bg-success">Success</span>
                                 }
-                                else if(item.Status == PaymentStatus.Pending)
+                                else if (item.Status == PaymentStatus.Pending)
                                 {
                                     <span class="badge bg-danger">Pending</span>
                                 }
@@ -50,7 +54,11 @@
                                 {
                                     <i class="fa fa-check-square-o"></i>
                                 }
-                                else if(item.Status == PaymentStatus.Success)
+                                else if (item.IsRefund)
+                                {
+                                    <i class="fa fa-ban"></i>
+                                }                            
+                                else if (item.Status == PaymentStatus.Success)
                                 { 
                                     <a href="javascript:void(0)" onclick="UpdateCompleted('@item.ID')">
                                         <i class="fa fa-square-o"></i>
@@ -60,12 +68,16 @@
                             <td>@(item.CodeSaleOff)</td>
                             <td>@(item.AmountReal > 0 ? string.Format("${0:N2}", item.AmountReal) : string.Format("${0:N2}", item.Amount))</td>
                             <td>@(item.ValidCode > 0 || !string.IsNullOrEmpty(item.DescriptionValidCode) ? item.DescriptionValidCode : "")</td>
-                            <td>
-                                @if(item.Status == PaymentStatus.Pending) 
-                                { 
-                                    <a class="btn btn-warning" href="javascript:void(0)" onclick="SendMail('@item.ID')">
+                            <td class="send-mail">
+                                @if (item.Status == PaymentStatus.Pending)
+                                {
+                                    <a class="btn btn-warning" id="btnSendMail" href="javascript:void(0)" onclick="SendMail('@item.ID')" style="display:none;">
                                         Send email
                                     </a>
+                                    <div class="form-check form-switch pt-2">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="switchShowHideSendMail" data-show-hide="0" onchange="ShowHideSendMail(this)">
+                                        <label class="form-check-label text-nowrap" for="switchShowHideSendMail">Show/Hide Send Mail</label>
+                                    </div>
                                 }
                             </td>
                         </tr>
