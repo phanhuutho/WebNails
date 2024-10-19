@@ -36,11 +36,15 @@
                             <td>@(item.NameReceiver) - @(item.Stock)</td>
                             <td>@(string.Format("${0}",item.Amount))</td>
                             <td>
-                                @if (item.Status == PaymentStatus.Success)
+                                @if (item.IsRefund)
+                                {
+                                    <span class="badge bg-warning">Refund</span>
+                                }
+                                else if (item.Status == PaymentStatus.Success)
                                 {
                                     <span class="badge bg-success">Success</span>
                                 }
-                                else if(item.Status == PaymentStatus.Pending)
+                                else if (item.Status == PaymentStatus.Pending)
                                 {
                                     <span class="badge bg-danger">Pending</span>
                                 }
@@ -50,7 +54,11 @@
                                 {
                                     <i class="fa fa-check-square-o"></i>
                                 }
-                                else if(item.Status == PaymentStatus.Success)
+                                else if (item.IsRefund)
+                                {
+                                    <i class="fa fa-ban"></i>
+                                }                            
+                                else if (item.Status == PaymentStatus.Success)
                                 { 
                                     <a href="javascript:void(0)" onclick="UpdateCompleted('@item.ID')">
                                         <i class="fa fa-square-o"></i>
