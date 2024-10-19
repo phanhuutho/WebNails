@@ -1,9 +1,9 @@
 ﻿:root {
-    --bg-site: #ffe8f8;
-    --bg-main: #ffffff;
-    --color-theme: #f9418d;
-    --color-menu-legend: #f9418d;
-    --color-text-theme: #f9418d;
+    --bg-site: #f7efdb;
+    --bg-main: #000000;
+    --color-theme: #cba355;
+    --color-menu-legend: #cba355;
+    --color-text-theme: #cba355;
     --color-black: #000000;
     --color-white: #ffffff;
 }
@@ -29,6 +29,11 @@ header {
 /*Footer*/
 footer {
     background: var(--bg-main);
+    color: var(--color-white);
+}
+
+footer a {
+    color: var(--color-white);
 }
 
 .logo-footer {
@@ -49,7 +54,7 @@ footer {
 }
 
 .menu-desktop .list-inline > li > a {
-    color: var(--color-black);
+    color: var(--color-white);
 }
 /* -------------------------------------------------- */
 
@@ -277,7 +282,6 @@ main {
 @media (max-width: 1199px) {
     /*Menu*/
     .menu-desktop .list-inline > li > a {
-        color: var(--color-black);
         font-size: 0.8em;
         padding-left: 5px;
         padding-right: 5px;
