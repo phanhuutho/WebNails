@@ -1,11 +1,11 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
+  "Name": "Luxury Nails",
+  "HyperLinkTell": "tel:(682)3330089",
+  "TextTell": "(682)-333-0089",
+  "GooglePlus": "https://www.google.com/search?q=Luxury+Nails+76086",
+  "Address": "310 S Main St, Weatherford, TX 76086",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/vbBDrqWmKd7jokYQ6",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13421.502566205734!2d-97.798246!3d32.7557658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8651fe0fb5ebe163%3A0xf7acbaecad31ec29!2sLuxury%20Nails!5e0!3m2!1sen!2s!4v1729360955436!5m2!1sen!2s",
   "LinkBookingAppointment": "",
   "ShowCoupon": true,
   "Coupons": [
@@ -24,7 +24,7 @@
   },
   "Facebook": {
     "Title": "Facebook",
-    "Url": "",
+    "Url": "https://www.facebook.com/Luxurynailsweatherford76086/",
     "Position": 2,
     "ClassIcon": "fa fa-facebook-f",
     "BackgroundColor": "#1877f2"
