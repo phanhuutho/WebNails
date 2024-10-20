@@ -239,6 +239,40 @@
     <Content Include="Content\images\e-gift\gift_9.jpg" />
     <Content Include="Content\images\e-gift\gift_bg.jpg" />
     <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\gallery\artificial-nails-0001.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0002.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0003.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0004.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0005.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0006.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0007.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0008.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0009.jpg" />
+    <Content Include="Content\images\gallery\artificial-nails-0010.jpg" />
+    <Content Include="Content\images\gallery\brow-tinting-0001.jpg" />
+    <Content Include="Content\images\gallery\brow-tinting-0002.jpg" />
+    <Content Include="Content\images\gallery\brow-tinting-0003.jpg" />
+    <Content Include="Content\images\gallery\brow-tinting-0004.jpg" />
+    <Content Include="Content\images\gallery\brow-tinting-0005.jpg" />
+    <Content Include="Content\images\gallery\eyelash-extensions-0001.jpg" />
+    <Content Include="Content\images\gallery\eyelash-extensions-0002.jpg" />
+    <Content Include="Content\images\gallery\eyelash-extensions-0003.jpg" />
+    <Content Include="Content\images\gallery\eyelash-extensions-0004.jpg" />
+    <Content Include="Content\images\gallery\eyelash-extensions-0005.jpg" />
+    <Content Include="Content\images\gallery\hair-0001.jpg" />
+    <Content Include="Content\images\gallery\hair-0002.jpg" />
+    <Content Include="Content\images\gallery\hair-0003.jpg" />
+    <Content Include="Content\images\gallery\hair-0004.jpg" />
+    <Content Include="Content\images\gallery\hair-0005.jpg" />
+    <Content Include="Content\images\gallery\hair-0006.jpg" />
+    <Content Include="Content\images\gallery\hair-0007.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0001.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0002.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0003.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0004.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0005.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0006.jpg" />
+    <Content Include="Content\images\gallery\our-premier-spa-0007.jpg" />
     <Content Include="Content\images\home\home_about_us.jpg" />
     <Content Include="Content\images\home\home_about_us_bg.jpg" />
     <Content Include="Content\images\home\home_business.jpg" />
@@ -436,7 +470,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\gallery\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
