@@ -26,6 +26,7 @@ namespace WebNails.Controllers
         private readonly string TokenKeyAPI = ConfigurationManager.AppSettings["TokenKeyAPI"];
         private readonly string SaltKeyAPI = ConfigurationManager.AppSettings["SaltKeyAPI"];
         private readonly string VectorKeyAPI = ConfigurationManager.AppSettings["VectorKeyAPI"];
+        private readonly string ShowQRCode = ConfigurationManager.AppSettings["ShowQRCode"];
 
         public ActionResult Index()
         {
@@ -394,7 +395,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
+        private void SendMailToOwner(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "", string strUrlQRcode = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -414,8 +415,17 @@ namespace WebNails.Controllers
 					    <p>Buyer name: {strNameBuyer}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
-                        <p>Code: <strong>{strCode}</strong></p> 
-                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' width='360px' /></p>";
+                        <p>Code: <strong>{strCode}</strong></p>";
+
+                    if (!string.IsNullOrEmpty(img))
+                    {
+                        mail.Body += $@"<p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+                    }
+
+                    if (!string.IsNullOrEmpty(strUrlQRcode) && !string.IsNullOrEmpty(ShowQRCode) && ShowQRCode == "1")
+                    {
+                        mail.Body += $@"<p><img width='480' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + "/" + strUrlQRcode}' height='480px' /></p>";
+                    }
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -427,7 +437,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode, string strNameReceiver, string strNameBuyer, string img = "")
+        private void SendMailToReceiver(string strEmailReceiver, string strEmailBuyer, string strAmount, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strUrlQRcode = "")
         {
             if (!string.IsNullOrEmpty(strEmailReceiver) && !string.IsNullOrEmpty(strEmailBuyer))
             {
@@ -443,8 +453,17 @@ namespace WebNails.Controllers
                         <p>Please visit us at <strong>{ViewBag.Name}</strong> - Address: <strong>{ViewBag.Address}</strong> - Phone: <strong>{ViewBag.TextTell}</strong> to redeem your gift.</p>
                         <p>Amount: <strong>${strAmount} USD</strong>.</p>
                         <p>Code: <strong>{strCode}</strong></p><br/>
-					    <p>Thank you!</p> 
-                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+					    <p>Thank you!</p>";
+
+                    if (!string.IsNullOrEmpty(img))
+                    {
+                        mail.Body += $@"<p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+                    }
+
+                    if (!string.IsNullOrEmpty(strUrlQRcode) && !string.IsNullOrEmpty(ShowQRCode) && ShowQRCode == "1")
+                    {
+                        mail.Body += $@"<p><img width='480' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + "/" + strUrlQRcode}' height='480px' /></p>";
+                    }
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);
@@ -456,7 +475,7 @@ namespace WebNails.Controllers
             }
         }
 
-        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "")
+        private void SendMailToBuyer(string strAmount, string strStock, string strEmail, string strMessage, string strCode, string strNameReceiver, string strNameBuyer, string img = "", string strCost = "", string strCodeSaleOff = "", string strUrlQRcode = "")
         {
             if (!string.IsNullOrEmpty(strAmount) && !string.IsNullOrEmpty(strStock) && !string.IsNullOrEmpty(strEmail) && !string.IsNullOrEmpty(strMessage))
             {
@@ -475,8 +494,17 @@ namespace WebNails.Controllers
 					    <p>Buyer name: {strNameBuyer}</p>
 					    <p>Buyer email: {strEmail}</p>
 					    <p>Comment: {strMessage}</p>
-                        <p>Code: <strong>{strCode}</strong></p> 
-                        <p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+                        <p>Code: <strong>{strCode}</strong></p>";
+
+                    if (!string.IsNullOrEmpty(img))
+                    {
+                        mail.Body += $@"<p><img width='320' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + img}' /></p>";
+                    }
+
+                    if (!string.IsNullOrEmpty(strUrlQRcode) && !string.IsNullOrEmpty(ShowQRCode) && ShowQRCode == "1")
+                    {
+                        mail.Body += $@"<p><img width='480' src='{Url.RequestContext.HttpContext.Request.Url.Scheme + "://" + Url.RequestContext.HttpContext.Request.Url.Authority + "/" + strUrlQRcode}' height='480px' /></p>";
+                    }
 
                     SmtpClient mySmtpClient = new SmtpClient(ConfigurationManager.AppSettings["HostEmailSystem"], int.Parse(ConfigurationManager.AppSettings["PortEmailSystem"]));
                     NetworkCredential networkCredential = new NetworkCredential(ConfigurationManager.AppSettings["EmailSystem"], ConfigurationManager.AppSettings["PasswordEmailSystem"]);

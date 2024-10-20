@@ -29,6 +29,7 @@ namespace WebNails.Models
         public bool IsRefund { get; set; }
         public DateTime DateTimeUpdateRefund { get; set; }
         public string Img { get; set; }
+        public string PathQRCode { get; set; }
     }
 
     public enum PaymentStatus
