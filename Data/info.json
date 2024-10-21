@@ -1,17 +1,21 @@
 ﻿{
-  "Name": "Infinity Nail Brookhaven",
-  "HyperLinkTell": "tel:(404)4815506",
-  "TextTell": "(404)-481-5506",
-  "GooglePlus": "https://www.google.com/search?q=Infinity+Nails+Brookhaven+30319",
-  "Address": "4260 Peachtree Rd #101, Brookhaven, GA 30319",
-  "LinkGoogleMapAddress": "https://maps.app.goo.gl/orTZQg5a7se2ucFz8",
-  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13251.424326854903!2d-84.3358765!3d33.8675997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f509c13b124299%3A0x6e8bb8f9f058a679!2sInfinity%20Nail%20Brookhaven%20(%245%20Off%20Pedicures%20%2445%2B)!5e0!3m2!1sen!2s!4v1714845633780!5m2!1sen!2s",
-  "LinkBookingAppointment": "",
+  "Name": "US Nails Spa",
+  "HyperLinkTell": "tel:(919)5728989",
+  "TextTell": "(919)-572-8989",
+  "GooglePlus": "https://www.google.com/search?q=US+NAILS+SPA+27713",
+  "Address": "6698, 8200 Renaissance Pkwy #1007, Durham, NC 27713",
+  "LinkGoogleMapAddress": "https://maps.app.goo.gl/98ayaJtnHwp9SRwE8",
+  "LinkIFrameGoogleMap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12927.011698211805!2d-78.9541523!3d35.9040665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace8eac01f48ab%3A0x9b33d724fcf32c91!2sUS%20Nails%20Spa%20(%245%20Off%20Coupon)!5e0!3m2!1sen!2s!4v1729527446615!5m2!1sen!2s",
+  "LinkBookingAppointment": "https://vipcustomercares.com/sys/appt-book/f3fd3a8aa041/customer/home",
   "ShowCoupon": true,
   "Coupons": [
     {
       "Status": true,
       "Src": "/Content/images/popup/coupon-01.jpg"
+    },
+    {
+      "Status": true,
+      "Src": "/Content/images/popup/coupon-02.jpg"
     }
   ],
   "Prices": [],
