@@ -124,13 +124,13 @@
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-services" href="/services.html">Services</a>
                             </li>
-                            @if (Prices.Count > 0) 
-                            { 
+                            @if (Prices.Count > 0)
+                            {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-price-list" href="/price-list.html">Price List</a>
                                 </li>
                             }
-                            @if (IsGallery) 
+                            @if (IsGallery)
                             {
                                 <li class="list-inline-item">
                                     <a class="list-inline-item-link" id="menu-gallery" href="/gallery.html">Gallery</a>
@@ -144,6 +144,18 @@
                             </li>
                             <li class="list-inline-item">
                                 <a class="list-inline-item-link" id="menu-contact" href="/contact.html">Contact</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-specials" href="/specials.html">Specials</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-parties" href="/parties.html">Parties</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-safety" href="/safety.html">Safety</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="list-inline-item-link" id="menu-policies" href="/policies.html">Policies</a>
                             </li>
                             @if (!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)))
                             {
@@ -176,7 +188,7 @@
                 <li>
                     <a href="/services.html">Services</a>
                 </li>
-                @if(Prices.Count > 0) 
+                @if (Prices.Count > 0) 
                 { 
                     <li>
                         <a href="/price-list.html">Price List</a>
@@ -203,7 +215,7 @@
                         <a href="/gift-manage.html">Gift Manage</a>
                     </li>
                 }
-                @if(IsPayment)
+                @if (IsPayment)
                 { 
                     <li>
                         <a id="mobile-menu-manage" href=""></a>
@@ -213,6 +225,18 @@
                     <a href="@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? ViewBag.LinkBookingAppointment : ViewBag.HyperLinkTell)" target="_blank" class="call-us">
                         <span>@(!string.IsNullOrEmpty(string.Format("{0}", ViewBag.LinkBookingAppointment)) ? "Booking" : "call us")</span>
                     </a>
+                </li>
+                <li>
+                    <a href="/specials.html">Specials</a>
+                </li>
+                <li>
+                    <a href="/parties.html">Parties</a>
+                </li>
+                <li>
+                    <a href="/safety.html">Safety</a>
+                </li>
+                <li>
+                    <a href="/policies.html">Policies</a>
                 </li>
             </ul>
             <button title="Close (Esc)" type="button" class="btn-close">&nbsp;</button>

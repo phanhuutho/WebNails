@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "SPECIAL OFFERS";
+
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+
+    var showCoupon = (bool)ViewBag.ShowCoupon;
+    var Coupons = (List<WebNails.Models.CouponModel>)ViewBag.Coupons;
+    Coupons = Coupons.Where(x => x.Src != "" && x.Status).ToList();
+}
+@section css{
+    <link href="~/Content/css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/css/slick.css" rel="stylesheet">
+    <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
+    <link href="~/Content/css/slider.css" rel="stylesheet">
+}
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
+}
+<main>
+    @{Html.RenderPartial("_SliderPageSub");}
+    <div class="page-main container-lg py-5" id="about-us">
+        <div class="row align-items-center">
+            <div class="col-xl-12">
+                <div class="box-text text-center">
+                    <p>
+                        <img src="/Content/images/specials/special-offers-01.jpg" class="img-fluid p-0" />
+                    </p>
+                    <p>
+                        <img src="/Content/images/specials/special-offers-02.jpg" class="img-fluid p-0" />
+                    </p>
+                    @if (showCoupon && Coupons.Count > 0)
+                    {
+                        foreach (var item in Coupons)
+                        {
+                            <p>
+                                <img src="@item.Src" class="img-fluid p-0" />
+                            </p>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section scripts{
+    <script src="~/Content/js/slick.min.js"></script>
+    <script src="~/Content/js/slick-animation.js"></script>
+    <script src="~/Content/js/lightbox.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("menu-specials");
+
+        var sliderInit = $('.sliders');
+
+        $(document).ready(function () {
+            sliderInit.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: @(IsFade_PageBanner ? "true" : "false"),
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+            sliderInit.slickAnimation();
+
+            sliderInit.on('touchstart', e => {
+                sliderInit.slick('slickPlay');
+            });
+        });
+    </script>
+}

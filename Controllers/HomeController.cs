@@ -57,6 +57,26 @@ namespace WebNails.Controllers
             return View();
         }
 
+        public ActionResult Policies()
+        {
+            return View();
+        }
+
+        public ActionResult Parties()
+        {
+            return View();
+        }
+
+        public ActionResult Safety()
+        {
+            return View();
+        }
+
+        public ActionResult Specials()
+        {
+            return View();
+        }
+
         [HttpGet]
         public ActionResult RegisterCoupon(string imgCoupon = "")
         {

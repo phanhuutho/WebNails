@@ -25,82 +25,52 @@
                     <div class="col-lg-12 d-block text-center my-5"><h1 class="fs-1"><span class="font-Parisienne text-theme fw-bold">@(ViewBag.Title)</span></h1></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_manicure.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="ServiceDetail('manicures-pedicures')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_manicures_pedicures.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>MANICURE</h2>
+                                    <h2>MANICURES & PEDICURES</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_pedicure.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="ServiceDetail('artificial-nails')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_artificials_nails.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>PEDICURE</h2>
+                                    <h2>ARTIFICIAL NAILS</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_dip_powder_nails.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="ServiceDetail('facial')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_facial.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>DIP POWDER</h2>
+                                    <h2>FACIAL</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_nails_acrylic.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="ServiceDetail('hair-services')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_hair_services.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ACRYLIC</h2>
+                                    <h2>HAIR SERVICES</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
+                    <div class="col-md-6 col-lg-4 col-xl-4 pt-4">
                         <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_waxing.jpg" />
+                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)" onclick="ServiceDetail('lashes-brow-waxing')">
+                                <img class="img-fluid" alt="" src="~/Content/images/services/services_lashes_brow_waxing.jpg" />
                                 <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>WAXING</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_additional_services.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>ADDITIONAL</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_little_kids.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>KIDS</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 pt-4">
-                        <div class="box-inner rounded rounded-@(Image_Service_Rounded)">
-                            <div class="box-image img-hover-zoom rounded rounded-@(Image_Service_Rounded)">
-                                <img class="img-fluid" alt="" src="~/Content/images/services/services_gel_polish.jpg" />
-                                <div class="box-text text-center align-items-@(Image_Service_Text_ItemAlign)">
-                                    <h2>GEL POLISH</h2>
+                                    <h2>LASHES - BROW - WAXING</h2>
                                 </div>
                             </div>
                         </div>
@@ -139,5 +109,9 @@
                 sliderInit.slick('slickPlay');
             });
         });
+
+        function ServiceDetail(name) {
+            location.href = "/services/" + name + ".html";
+        }
     </script>
 }

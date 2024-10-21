@@ -1,34 +1,44 @@
-﻿@model string
+﻿@{
+    ViewBag.Title = "PARTIES / EVENTS";
 
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+}
 @section css{
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
     <link href="~/Content/css/slick.css" rel="stylesheet">
     <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
     <link href="~/Content/css/slider.css" rel="stylesheet">
 }
 @section custom_css{
     <link href="~/Content/custom-css/site.css" rel="stylesheet">
 }
 <main>
-    @{Html.RenderPartial("~/Views/Home/_SliderPageSub.cshtml");}
-    <section class="bg">
-        <div class="bg-services">
-            <div class="page-main container-lg py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 mt-3">
-                        @Html.Raw(Model)
-                    </div>
+    @{Html.RenderPartial("_SliderPageSub");}
+    <div class="page-main container-lg py-5" id="about-us">
+        <div class="row align-items-center">
+            <div class="col-xl-12">
+                <div class="box-text">
+                    <p>
+                        <img src="/Content/images/parties/parties-event-01.jpg" class="img-fluid p-0" />
+                    </p>
+                    <p>
+                        <img src="/Content/images/parties/parties-event-02.jpg" class="img-fluid p-0" />
+                    </p>
+                    <p>
+                        <img src="/Content/images/parties/parties-event-03.jpg" class="img-fluid p-0" />
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </main>
-
 @section scripts{
     <script src="~/Content/js/slick.min.js"></script>
     <script src="~/Content/js/slick-animation.js"></script>
+    <script src="~/Content/js/lightbox.js"></script>
     <script type="text/javascript">
-        ActiveMenu("menu-services");
+        ActiveMenu("menu-parties");
 
         var sliderInit = $('.sliders');
 
@@ -40,7 +50,7 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                fade: true,
+                fade: @(IsFade_PageBanner ? "true" : "false"),
                 draggable: false,
                 pauseOnFocus: false,
                 pauseOnHover: false,
@@ -51,8 +61,6 @@
             sliderInit.on('touchstart', e => {
                 sliderInit.slick('slickPlay');
             });
-
-            $("title", "head").text($("h2.title").text());
         });
     </script>
 }

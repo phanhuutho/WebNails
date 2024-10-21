@@ -211,6 +211,38 @@ namespace WebNails
                     controller = "Home",
                     action = "GetListNailCodeSaleByDomain"
                 });
+
+            routes.MapRoute(
+                "Policies", "policies.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Policies"
+                });
+
+            routes.MapRoute(
+                "Parties", "parties.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Parties"
+                });
+
+            routes.MapRoute(
+                "Safety", "safety.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Safety"
+                });
+
+            routes.MapRoute(
+                "Specials", "specials.html",
+                new
+                {
+                    controller = "Home",
+                    action = "Specials"
+                });
         }
     }
 }

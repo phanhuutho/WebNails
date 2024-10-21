@@ -178,23 +178,23 @@ main {
 
 /*Page Home*/
 .beauty-spa .box-image .image1 {
-    background-image: url(../images/home/home_service_manicure.jpg);
+    background-image: url(../images/home/home_service_manicures_pedicures.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image2 {
-    background-image: url(../images/home/home_service_pedicure.jpg);
-    background-position: 80% 50%;
+    background-image: url(../images/home/home_service_artificials_nails.jpg);
+    background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image3 {
-    background-image: url(../images/home/home_service_dip_powder_nails.jpg);
+    background-image: url(../images/home/home_service_facial.jpg);
     background-position: 50% 50%;
 }
 
 .beauty-spa .box-image .image4 {
-    background-image: url(../images/home/home_service_acrylic.jpg);
-    background-position: 45% 50%;
+    background-image: url(../images/home/home_service_hair_services.jpg);
+    background-position: 50% 50%;
 }
 
 .business .business-inner .box-image .image-business {
@@ -279,8 +279,8 @@ main {
     .menu-desktop .list-inline > li > a {
         color: var(--color-black);
         font-size: 0.8em;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
     .menu-desktop .list-inline .list-inline-item:hover, .menu-desktop .list-inline .list-inline-item.active {
         padding-top: 7px;
@@ -297,8 +297,8 @@ main {
     }
     .menu-desktop .list-inline > li > a {
         font-size: 0.62em;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
     }
     /* -------------------------------------------------- */
 

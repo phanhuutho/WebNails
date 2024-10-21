@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "POLICIES";
+
+    var IsFade_PageBanner = (bool)ViewBag.IsFade_PageBanner;
+}
+@section css{
+    <link href="~/Content/css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/css/slick.css" rel="stylesheet">
+    <link href="~/Content/css/slick-theme.css" rel="stylesheet">
+    <link href="~/Content/css/lightbox.min.css" rel="stylesheet" />
+    <link href="~/Content/css/slider.css" rel="stylesheet">
+}
+@section custom_css{
+    <link href="~/Content/custom-css/site.css" rel="stylesheet">
+}
+<main>
+    @{Html.RenderPartial("_SliderPageSub");}
+    <div class="page-main container-lg py-5" id="about-us">
+        <div class="row align-items-center">
+            <div class="col-xl-12">
+                <div class="mb-4 text-center"><h1><span class="font-Parisienne">Policies</span></h1></div>
+                <div class="box-text">
+                    <p>So that you and other guests relax & escape –  please silence or turn cell phones off during your visit.</p>
+                    <p>
+                        We love children, friends & family –  for safety & all guest’s relaxation, we ask that all stay seated in our reception area during your visit.
+                        Only guests receiving service are allowed in styling or treatment areas. (Please make arrangements for children if needed).
+                    </p>
+                    <p>Refunds/Returns</p>
+                    <p>
+                        No Refunds on All Services.
+                        We work hard everyday to deliver the absolute best in service and value integrity and quality however if you ever have a concern with your services, we ask that you notify us within (2) days of receiving your original service and we will be happy to make arrangements for you to come in within (1) week to address your concerns.
+                    </p>
+                    <p>CANCELLATION POLICY</p>
+                    <p>
+                        Your online scheduled services are very important to us.
+                        In order to accommodate your salon/spa service needs, your online scheduled service appointment blocks off time specifically for you and ensures no other appoinments are made for the specific team member.
+                        This helps ensure you recieve the best experience and highest level of attention.
+                        Please be sure to schedule your appointments accordingly for only services that are needed on that day.
+                        Please do not hestitate to contact us directly with any questions or concerns.
+                    </p>
+                    <p>
+                        Appointments scheduled online can only be canceled or rescheduled by calling the salon from Monday – Saturday 10am – 7pm, Sunday 12pm – 6pm.
+                        Or email BroadwayNailssa@gmail.com, voice message after hours is not allowed.
+                    </p>
+                    <p>
+                        Please allow 5 hours notice when canceling or re-scheduling your appointment.
+                    </p>
+                    <p>
+                        No-shows will be charged the full amount of the booking.
+                        Partial refunds (50%) will be given to those who cancel within one to four hours.
+                    </p>
+                    <p>We value your time, please value ours as well.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section scripts{
+    <script src="~/Content/js/slick.min.js"></script>
+    <script src="~/Content/js/slick-animation.js"></script>
+    <script src="~/Content/js/lightbox.js"></script>
+    <script type="text/javascript">
+        ActiveMenu("menu-policies");
+
+        var sliderInit = $('.sliders');
+
+        $(document).ready(function () {
+            sliderInit.slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: @(IsFade_PageBanner ? "true" : "false"),
+                draggable: false,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                touchMove: false
+            });
+            sliderInit.slickAnimation();
+
+            sliderInit.on('touchstart', e => {
+                sliderInit.slick('slickPlay');
+            });
+        });
+    </script>
+}
