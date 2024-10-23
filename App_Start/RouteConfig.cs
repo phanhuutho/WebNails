@@ -133,6 +133,14 @@ namespace WebNails
                 });
 
             routes.MapRoute(
+                "PaypalIPN", "paypal-ipn.html",
+                new
+                {
+                    controller = "Home",
+                    action = "PaypalIPN"
+                });
+
+            routes.MapRoute(
                 "Register Coupon", "register-coupon.html",
                 new
                 {
