@@ -24,6 +24,15 @@ header {
 .logo, .logo img {
 
 }
+
+.menu-desktop {
+    display: initial;
+    width: 100%;
+}
+.menu-desktop ul {
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 /* -------------------------------------------------- */
 
 /*Footer*/
@@ -386,6 +395,26 @@ main {
     /*Header*/
     .logo-brand .navbar-brand, .navbar-brand img {
         background: unset;
+        max-width: 80px;
+    }
+    .logo-brand .navbar-brand {
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+    .menu-desktop {
+        display: none !important;
+    }
+    .menu-mobile-tablet .logo-brand {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .menu-mobile-tablet .outline-button-theme {
+        margin-right: 35px;
+    }
+    .menu-mobile-tablet .btn-theme {
+        letter-spacing: 0;
     }
     /* -------------------------------------------------- */
 
